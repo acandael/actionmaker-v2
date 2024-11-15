@@ -45,7 +45,7 @@ export function CategoryFilters({
           />
 
           {/* Dark Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/40 transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/25 to-black/15 transition-opacity duration-300" />
 
           {/* Content Container */}
           <div className="absolute inset-x-0 bottom-0 p-6 flex flex-col items-start">
