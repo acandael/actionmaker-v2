@@ -23,7 +23,7 @@ if (!activity) {
 
 <Layout title={`${activity.title} - ActionMaker`}>
   {/* Hero Section */}
-  <section class="relative min-h-[60vh] flex items-center">
+  <section class="relative min-h-[60vh] flex items-center mb-20">
     <div class="absolute inset-0 z-0">
       <img
         src={activity.image}
@@ -46,7 +46,7 @@ if (!activity) {
   <section class="max-w-7xl mx-auto px-4 py-12">
     <div class="grid lg:grid-cols-3 gap-12">
       {/* Main Content */}
-      <div class="lg:col-span-2 space-y-12">
+      <div class="lg:col-span-2 space-y-24">
         <div class="prose prose-lg max-w-none">
           <h2 class="text-3xl font-bold mb-6">Over deze activiteit</h2>
           <p>{activity.fullDescription}</p>
@@ -57,7 +57,7 @@ if (!activity) {
               <ul class="space-y-3">
                 {activity.features.map((feature) => (
                   <li class="flex items-center gap-3">
-                    <CheckCircle2 class="h-5 w-5 text-green-500 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -77,10 +77,10 @@ if (!activity) {
 
       {/* Sidebar */}
       <div class="lg:col-span-1">
-        <Card class="p-6 sticky top-24">
+        <Card className="p-8 sticky top-24">
           <div class="space-y-6">
             <div class="flex items-center gap-4">
-              <Users class="h-5 w-5 text-muted-foreground" />
+              <Users className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Groepsgrootte</p>
                 <p class="font-medium">{activity.groupSize}</p>
@@ -88,7 +88,7 @@ if (!activity) {
             </div>
             
             <div class="flex items-center gap-4">
-              <Clock class="h-5 w-5 text-muted-foreground" />
+              <Clock className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Duur</p>
                 <p class="font-medium">{activity.duration}</p>
@@ -96,7 +96,7 @@ if (!activity) {
             </div>
 
             <div class="flex items-center gap-4">
-              <Euro class="h-5 w-5 text-muted-foreground" />
+              <Euro className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Prijs</p>
                 <p class="font-medium">{activity.price}</p>
@@ -104,16 +104,16 @@ if (!activity) {
             </div>
 
             <div class="flex items-center gap-4">
-              <Calendar class="h-5 w-5 text-muted-foreground" />
+              <Calendar className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Beschikbaarheid</p>
                 <p class="font-medium">{activity.availability}</p>
               </div>
             </div>
 
-            <Button class="w-full bg-red-600 hover:bg-red-700 text-white group">
+            <Button className="w-full bg-red-600 hover:bg-red-700 text-white group">
               Direct boeken
-              <ArrowRight class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
         </Card>
