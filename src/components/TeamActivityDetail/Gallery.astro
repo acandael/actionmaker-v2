@@ -1,0 +1,171 @@
+---
+import { Card } from "@/components/ui/card";
+
+interface Props {
+  images?: string[];
+}
+
+const { images = [] } = Astro.props;
+
+// Ensure we have at least 6 images by duplicating if necessary
+const galleryImages = images.length > 0 
+  ? images.slice(0, 6) 
+  : [
+      'https://images.unsplash.com/photo-1523832080381-5f16f0dd0360?auto=format&fit=crop&q=80&w=800',
+      'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&q=80&w=800',
+      'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&q=80&w=800',
+      'https://images.unsplash.com/photo-1529516548873-9ce57c8f155e?auto=format&fit=crop&q=80&w=800',
+      'https://images.unsplash.com/photo-1515474594679-6a12d48b0805?auto=format&fit=crop&q=80&w=800',
+      'https://images.unsplash.com/photo-1584226761916-f5de1e0d8138?auto=format&fit=crop&q=80&w=800'
+    ];
+---
+
+<div class="space-y-6">
+  <h2 class="text-3xl font-bold">Foto's van de activiteit</h2>
+  <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+    {galleryImages.map((image, index) => (
+      <Card class="group overflow-hidden cursor-pointer">
+        <div 
+          class="aspect-[4/3] relative"
+          data-gallery-item={index}
+        >
+          <img
+            src={image}
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+        </div>
+      </Card>
+    ))}
+  </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div 
+  class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center"
+  id="galleryModal"
+>
+  <button 
+    class="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
+    id="closeGallery"
+    aria-label="Close gallery"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+
+  <button 
+    class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors z-10"
+    id="prevImage"
+    aria-label="Previous image"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  <button 
+    class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors z-10"
+    id="nextImage"
+    aria-label="Next image"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+
+  <div class="relative w-full h-full flex items-center justify-center p-4">
+    <img 
+      src="" 
+      alt="" 
+      class="max-h-[90vh] max-w-[90vw] object-contain"
+      id="modalImage"
+    />
+  </div>
+</div>
+
+<script>
+  let currentImageIndex = 0;
+  const galleryItems = document.querySelectorAll('[data-gallery-item]');
+  const modal = document.getElementById('galleryModal');
+  const modalImage = document.getElementById('modalImage') as HTMLImageElement;
+  const closeButton = document.getElementById('closeGallery');
+  const prevButton = document.getElementById('prevImage');
+  const nextButton = document.getElementById('nextImage');
+
+  function openModal(index: number) {
+    if (!modal || !modalImage) return;
+    
+    currentImageIndex = index;
+    const image = galleryItems[index].querySelector('img');
+    if (image) {
+      modalImage.src = image.src;
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    if (!modal) return;
+    
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  function showPrevImage() {
+    if (!modalImage) return;
+    
+    currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
+    const image = galleryItems[currentImageIndex].querySelector('img');
+    if (image) {
+      modalImage.src = image.src;
+    }
+  }
+
+  function showNextImage() {
+    if (!modalImage) return;
+    
+    currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
+    const image = galleryItems[currentImageIndex].querySelector('img');
+    if (image) {
+      modalImage.src = image.src;
+    }
+  }
+
+  // Event Listeners
+  galleryItems.forEach((item, index) => {
+    item.addEventListener('click', () => openModal(index));
+  });
+
+  closeButton?.addEventListener('click', closeModal);
+  prevButton?.addEventListener('click', showPrevImage);
+  nextButton?.addEventListener('click', showNextImage);
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (modal?.style.display === 'flex') {
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowLeft') showPrevImage();
+      if (e.key === 'ArrowRight') showNextImage();
+    }
+  });
+
+  // Close modal when clicking outside the image
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // Preload images for smoother transitions
+  window.addEventListener('load', () => {
+    galleryItems.forEach(item => {
+      const img = item.querySelector('img');
+      if (img) {
+        const preloadImage = new Image();
+        preloadImage.src = img.src;
+      }
+    });
+  });
+</script>

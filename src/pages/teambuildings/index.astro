@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { TeamActivitiesList } from '@/components/TeamActivitiesList';
+import { categories } from '@/components/TeamActivities/categories-data';
+import { activities } from '@/components/TeamActivities/activities-data';
+
+// Get category from URL parameters
+const { category: categoryId } = Astro.params;
+const searchCategory = Astro.url.searchParams.get('category');
+
+// Use either route param or search param
+const selectedCategoryId = categoryId || searchCategory;
+const category = categories.find(c => c.id === selectedCategoryId);
+
+// Filter activities
+const filteredActivities = selectedCategoryId
+  ? activities.filter(activity => 
+      activity.category === selectedCategoryId || 
+      activity.categories?.includes(selectedCategoryId)
+    )
+  : activities;
+
+const title = category 
+  ? `${category.title} - ActionMaker` 
+  : 'Teambuilding Activities - ActionMaker';
+---
+
+<Layout title={title}>
+  <main class="min-h-screen pt-24 pb-32">
+    <TeamActivitiesList 
+      client:load 
+      selectedCategory={selectedCategoryId}
+      initialActivities={filteredActivities}
+    />
+  </main>
+</Layout>

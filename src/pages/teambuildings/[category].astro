@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { TeamActivitiesList } from '@/components/TeamActivitiesList';
+import { categories } from '@/components/TeamActivities/categories-data';
+import { activities } from '@/components/TeamActivities/activities-data';
+
+export function getStaticPaths() {
+  return categories.map(category => ({
+    params: { category: category.id },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+
+// Filter activities for this category
+const filteredActivities = activities.filter(activity => 
+  activity.category === category.id || 
+  activity.categories?.includes(category.id)
+);
+
+const title = `${category.title} - ActionMaker`;
+---
+
+<Layout title={title}>
+  <main class="min-h-screen pt-24 pb-32">
+    <TeamActivitiesList 
+      client:load 
+      selectedCategory={category.id}
+      initialActivities={filteredActivities}
+    />
+  </main>
+</Layout>

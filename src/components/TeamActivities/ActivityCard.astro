@@ -1,0 +1,110 @@
+---
+import { Users, Building2, TreePine, MapPin, Brush, Utensils } from 'lucide-react';
+import { Card, CardContent } from "@/components/ui/card";
+
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  iconName: string;
+  index: number;
+  id: string;
+}
+
+const { title, description, image, iconName, index, id } = Astro.props;
+
+const iconComponents = {
+  Users,
+  Building2,
+  TreePine,
+  MapPin,
+  Brush,
+  Utensils
+};
+
+const IconComponent = iconComponents[iconName as keyof typeof iconComponents];
+---
+
+<a 
+  href={`/teambuildings/${id}`}
+  class="block group cursor-pointer"
+  data-activity-link={id}
+>
+  <Card 
+    class="group overflow-hidden transition-all duration-300 hover:shadow-xl translate-y-8 opacity-0"
+    data-activity-card
+    data-index={index}
+  >
+    <CardContent class="p-0 relative">
+      <div class="relative h-72 overflow-hidden">
+        <img
+          src={image}
+          alt={title}
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div class="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:opacity-70"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-8">
+          <div class="bg-primary/20 backdrop-blur-sm p-4 rounded-full mb-4 transform transition-transform duration-300 group-hover:scale-110">
+            <IconComponent class="w-6 h-6 text-white" />
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-center tracking-wide">
+            {title}
+          </h3>
+          <p class="text-sm text-center max-w-xs opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            {description}
+          </p>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+</a>
+
+<style>
+  [data-activity-card] {
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+  }
+
+  [data-activity-card].show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  [data-activity-card][data-index="0"] { transition-delay: 0s; }
+  [data-activity-card][data-index="1"] { transition-delay: 100ms; }
+  [data-activity-card][data-index="2"] { transition-delay: 200ms; }
+  [data-activity-card][data-index="3"] { transition-delay: 300ms; }
+  [data-activity-card][data-index="4"] { transition-delay: 400ms; }
+  [data-activity-card][data-index="5"] { transition-delay: 500ms; }
+</style>
+
+<script>
+  const cards = document.querySelectorAll('[data-activity-card]');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        requestAnimationFrame(() => {
+          entry.target.classList.add('show');
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2,
+    rootMargin: '50px 0px'
+  });
+
+  cards.forEach(card => observer.observe(card));
+
+  // Add click handler for better mobile support
+  document.querySelectorAll('[data-activity-link]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = (e.currentTarget as HTMLAnchorElement).href;
+      if (href) {
+        window.location.href = href;
+      }
+    });
+  });
+</script>

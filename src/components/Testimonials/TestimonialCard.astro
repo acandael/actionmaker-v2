@@ -1,0 +1,45 @@
+---
+import { Card, CardContent } from "@/components/ui/card";
+import { Quote } from 'lucide-react';
+
+interface Props {
+  name: string;
+  role: string;
+  content: string;
+  image: string;
+}
+
+const { name, role, content, image } = Astro.props;
+const initials = name.split(' ').map(n => n[0]).join('');
+---
+
+<Card class="relative">
+  <CardContent class="pt-12 pb-8 px-8">
+    <div class="absolute -top-6 left-8">
+      <div class="h-12 w-12 ring-4 ring-background rounded-full overflow-hidden bg-muted">
+        <img 
+          src={image} 
+          alt={name}
+          class="h-full w-full object-cover"
+          onerror={`this.style.display='none'`}
+        />
+        <div class="absolute inset-0 flex items-center justify-center text-muted-foreground font-medium">
+          {initials}
+        </div>
+      </div>
+    </div>
+
+    <Quote class="absolute top-8 right-8 h-6 w-6 text-muted-foreground/10" />
+    
+    <blockquote class="mb-6">
+      <p class="text-muted-foreground leading-relaxed relative z-10">
+        {content}
+      </p>
+    </blockquote>
+
+    <footer>
+      <div class="font-semibold">{name}</div>
+      <div class="text-sm text-muted-foreground">{role}</div>
+    </footer>
+  </CardContent>
+</Card>

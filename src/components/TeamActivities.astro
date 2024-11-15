@@ -1,0 +1,66 @@
+---
+import CategoryCard from './TeamActivities/CategoryCard.astro';
+import SectionTitle from './TeamActivities/SectionTitle.astro';
+import { categories } from './TeamActivities/categories-data';
+---
+
+<section class="py-24 px-4 bg-background">
+  <div class="max-w-7xl mx-auto">
+    <SectionTitle 
+      subtitle="Welke Soort Teambuilding Zoek Je?"
+      title="Maak Je Keuze"
+    />
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {categories.map((category, index) => (
+        <CategoryCard 
+          id={category.id}
+          title={category.title}
+          description={category.description}
+          image={category.image}
+          index={index}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  [data-category-card] {
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+  }
+
+  [data-category-card].show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  [data-category-card][data-index="0"] { transition-delay: 0s; }
+  [data-category-card][data-index="1"] { transition-delay: 100ms; }
+  [data-category-card][data-index="2"] { transition-delay: 200ms; }
+  [data-category-card][data-index="3"] { transition-delay: 300ms; }
+  [data-category-card][data-index="4"] { transition-delay: 400ms; }
+  [data-category-card][data-index="5"] { transition-delay: 500ms; }
+</style>
+
+<script>
+  const cards = document.querySelectorAll('[data-category-card]');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        requestAnimationFrame(() => {
+          entry.target.classList.add('show');
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2,
+    rootMargin: '50px 0px'
+  });
+
+  cards.forEach(card => observer.observe(card));
+</script>

@@ -1,0 +1,21 @@
+---
+import '@/styles/globals.css';
+import Layout from '../layouts/Layout.astro';
+import Hero from '@/components/Hero.astro';
+import Features from '@/components/Features.astro';
+import TeamActivities from '@/components/TeamActivities.astro';
+import Testimonials from '@/components/Testimonials.astro';
+import { FAQ } from '@/components/FAQ';
+import CTA from '@/components/CTA.astro';
+---
+
+<Layout title="Team Building Activities">
+  <main class="min-h-screen">
+    <Hero />
+    <Features />
+    <TeamActivities />
+    <Testimonials />
+    <FAQ client:load />
+    <CTA />
+  </main>
+</Layout>

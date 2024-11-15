@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { TeamActivitiesList } from '@/components/TeamActivitiesList';
+---
+
+<Layout title="Teambuilding Activities - ActionMaker">
+  <main class="min-h-screen pt-24 pb-32">
+    <TeamActivitiesList client:load />
+  </main>
+</Layout>
