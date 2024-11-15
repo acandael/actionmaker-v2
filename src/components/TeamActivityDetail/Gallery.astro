@@ -1,5 +1,6 @@
 ---
 import { Card } from "@/components/ui/card";
+import { Image } from 'astro:assets';
 
 interface Props {
   images?: string[];
@@ -7,34 +8,50 @@ interface Props {
 
 const { images = [] } = Astro.props;
 
-// Ensure we have at least 6 images by duplicating if necessary
-const galleryImages = images.length > 0 
-  ? images.slice(0, 6) 
-  : [
-      'https://images.unsplash.com/photo-1523832080381-5f16f0dd0360?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1529516548873-9ce57c8f155e?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1515474594679-6a12d48b0805?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1584226761916-f5de1e0d8138?auto=format&fit=crop&q=80&w=800'
-    ];
+// Default gallery images if none provided
+const defaultImages = [
+  '/images/activities/default/gallery-1.jpg',
+  '/images/activities/default/gallery-2.jpg',
+  '/images/activities/default/gallery-3.jpg',
+  '/images/activities/default/gallery-4.jpg',
+  '/images/activities/default/gallery-5.jpg',
+  '/images/activities/default/gallery-6.jpg'
+];
+
+// Use provided images or fallback to defaults
+const galleryImages = images.length > 0 ? images.slice(0, 6) : defaultImages;
 ---
 
 <div class="space-y-6">
   <h2 class="text-3xl font-bold">Foto's van de activiteit</h2>
   <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
     {galleryImages.map((image, index) => (
-      <Card class="group overflow-hidden cursor-pointer">
+      <Card 
+        className="group overflow-hidden cursor-pointer"
+        data-gallery-trigger
+      >
         <div 
           class="aspect-[4/3] relative"
           data-gallery-item={index}
         >
-          <img
-            src={image}
-            alt=""
-            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            loading="lazy"
-          />
+          {image.startsWith('http') ? (
+            <img
+              src={image}
+              alt=""
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+          ) : (
+            <Image
+              src={image}
+              alt=""
+              width={800}
+              height={600}
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              format="webp"
+            />
+          )}
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
         </div>
       </Card>
@@ -46,6 +63,9 @@ const galleryImages = images.length > 0
 <div 
   class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center"
   id="galleryModal"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Image gallery"
 >
   <button 
     class="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
@@ -89,6 +109,7 @@ const galleryImages = images.length > 0
 
 <script>
   let currentImageIndex = 0;
+  const galleryTriggers = document.querySelectorAll('[data-gallery-trigger]');
   const galleryItems = document.querySelectorAll('[data-gallery-item]');
   const modal = document.getElementById('galleryModal');
   const modalImage = document.getElementById('modalImage') as HTMLImageElement;
@@ -136,8 +157,8 @@ const galleryImages = images.length > 0
   }
 
   // Event Listeners
-  galleryItems.forEach((item, index) => {
-    item.addEventListener('click', () => openModal(index));
+  galleryTriggers.forEach((trigger, index) => {
+    trigger.addEventListener('click', () => openModal(index));
   });
 
   closeButton?.addEventListener('click', closeModal);

@@ -1,20 +1,22 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { activities } from '@/components/TeamActivities/activities-data';
+import { getActivity, getActivities } from '@/lib/content';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2 } from 'lucide-react';
 import BookingForm from '@/components/TeamActivityDetail/BookingForm.astro';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
+import { Image } from 'astro:assets';
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
+  const activities = await getActivities();
   return activities.map(activity => ({
-    params: { slug: activity.id },
-    props: { activity },
+    params: { slug: activity.id }
   }));
 }
 
-const { activity } = Astro.props;
+const { slug } = Astro.params;
+const activity = await getActivity(slug);
 
 if (!activity) {
   return Astro.redirect('/404');
@@ -25,11 +27,23 @@ if (!activity) {
   {/* Hero Section */}
   <section class="relative min-h-[60vh] flex items-center">
     <div class="absolute inset-0 z-0">
-      <img
-        src={activity.image}
-        alt={activity.title}
-        class="w-full h-full object-cover"
-      />
+      {activity.image.startsWith('http') ? (
+        <img
+          src={activity.image}
+          alt={activity.title}
+          class="w-full h-full object-cover"
+        />
+      ) : (
+        <Image
+          src={activity.image}
+          alt={activity.title}
+          width={1920}
+          height={1080}
+          class="w-full h-full object-cover"
+          format="webp"
+          quality={80}
+        />
+      )}
       <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-transparent"></div>
     </div>
 
@@ -48,8 +62,7 @@ if (!activity) {
       {/* Main Content */}
       <div class="lg:col-span-2 space-y-12">
         <div class="prose prose-lg max-w-none">
-          <h2 class="text-3xl font-bold mb-6">Over deze activiteit</h2>
-          <p>{activity.fullDescription}</p>
+          <activity.Content />
 
           {activity.features && (
             <div class="mt-8">
@@ -57,7 +70,7 @@ if (!activity) {
               <ul class="space-y-3">
                 {activity.features.map((feature) => (
                   <li class="flex items-center gap-3">
-                    <CheckCircle2 class="h-5 w-5 text-green-500 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -68,7 +81,7 @@ if (!activity) {
 
         {activity.gallery && <Gallery images={activity.gallery} />}
 
-        {/* Booking Form Section - Moved inside main content */}
+        {/* Booking Form Section */}
         <div class="pt-12 border-t">
           <h2 class="text-3xl font-bold mb-8">Vraag meer informatie aan</h2>
           <BookingForm activityTitle={activity.title} />
@@ -77,10 +90,10 @@ if (!activity) {
 
       {/* Sidebar */}
       <div class="lg:col-span-1">
-        <Card class="p-6 sticky top-24">
+        <Card className="p-6 sticky top-24">
           <div class="space-y-6">
             <div class="flex items-center gap-4">
-              <Users class="h-5 w-5 text-muted-foreground" />
+              <Users className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Groepsgrootte</p>
                 <p class="font-medium">{activity.groupSize}</p>
@@ -88,7 +101,7 @@ if (!activity) {
             </div>
             
             <div class="flex items-center gap-4">
-              <Clock class="h-5 w-5 text-muted-foreground" />
+              <Clock className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Duur</p>
                 <p class="font-medium">{activity.duration}</p>
@@ -96,7 +109,7 @@ if (!activity) {
             </div>
 
             <div class="flex items-center gap-4">
-              <Euro class="h-5 w-5 text-muted-foreground" />
+              <Euro className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Prijs</p>
                 <p class="font-medium">{activity.price}</p>
@@ -104,20 +117,20 @@ if (!activity) {
             </div>
 
             <div class="flex items-center gap-4">
-              <Calendar class="h-5 w-5 text-muted-foreground" />
+              <Calendar className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Beschikbaarheid</p>
                 <p class="font-medium">{activity.availability}</p>
               </div>
             </div>
 
-            <Button class="w-full bg-red-600 hover:bg-red-700 text-white group">
+            <Button className="w-full bg-red-600 hover:bg-red-700 text-white group">
               Direct boeken
-              <ArrowRight class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
         </Card>
       </div>
     </div>
   </section>
-</Layout></content>
+</Layout>

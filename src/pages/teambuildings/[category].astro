@@ -1,10 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { TeamActivitiesList } from '@/components/TeamActivitiesList';
-import { categories } from '@/components/TeamActivities/categories-data';
-import { activities } from '@/components/TeamActivities/activities-data';
+import { getCategories, getActivitiesByCategory } from '@/lib/content';
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
+  const categories = await getCategories();
   return categories.map(category => ({
     params: { category: category.id },
     props: { category },
@@ -14,10 +14,7 @@ export function getStaticPaths() {
 const { category } = Astro.props;
 
 // Filter activities for this category
-const filteredActivities = activities.filter(activity => 
-  activity.category === category.id || 
-  activity.categories?.includes(category.id)
-);
+const activities = await getActivitiesByCategory(category.id);
 
 const title = `${category.title} - ActionMaker`;
 ---
@@ -27,7 +24,7 @@ const title = `${category.title} - ActionMaker`;
     <TeamActivitiesList 
       client:load 
       selectedCategory={category.id}
-      initialActivities={filteredActivities}
+      initialActivities={activities}
     />
   </main>
 </Layout>
