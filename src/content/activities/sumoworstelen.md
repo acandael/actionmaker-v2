@@ -3,7 +3,7 @@ title: "Sumoworstelen"
 description: "Een hilarische activiteit waarbij deelnemers in opblaasbare sumopakken tegen elkaar strijden."
 image: "/src/assets/activities/sumoworstelen/sumoworstelen-1.jpg"
 category: "sport"
-categories: ["sport", "fun"]
+categories: ["actief", "indoor", "outdoor"]
 duration: "1 - 2 uur"
 groupSize: "8 - 30 personen"
 price: "Vanaf €30 p.p."

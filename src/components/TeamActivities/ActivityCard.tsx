@@ -1,14 +1,19 @@
-import React from 'react';
+import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface ActivityCardProps {
   title: string;
   description: string;
   image: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
 }
 
-export function ActivityCard({ title, description, image, icon }: ActivityCardProps) {
+export function ActivityCard({
+  title,
+  description,
+  image,
+  icon,
+}: ActivityCardProps) {
   return (
     <Card className="group overflow-hidden transition-all duration-300 hover:shadow-xl">
       <CardContent className="p-0 relative">
@@ -20,9 +25,11 @@ export function ActivityCard({ title, description, image, icon }: ActivityCardPr
           />
           <div className="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:opacity-70" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8">
-            <div className="bg-primary/20 backdrop-blur-sm p-4 rounded-full mb-4 transform transition-transform duration-300 group-hover:scale-110">
-              {icon}
-            </div>
+            {icon && (
+              <div className="absolute top-4 right-4 bg-primary rounded-full p-2">
+                {icon}
+              </div>
+            )}
             <h3 className="text-2xl font-bold mb-3 text-center tracking-wide">
               {title}
             </h3>

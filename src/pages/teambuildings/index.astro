@@ -1,35 +1,44 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { TeamActivitiesList } from '@/components/TeamActivitiesList';
-import { getCategories, getActivities, getActivitiesByCategory } from '@/lib/content';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
-// Get category from URL parameters
-const { category: categoryId } = Astro.params;
-const searchCategory = Astro.url.searchParams.get('category');
+// Get categories from content collection
+const categoriesCollection = await getCollection('categories');
+const categories = categoriesCollection.map(category => ({
+  id: category.id,
+  title: category.data.title,
+  description: category.data.description
+}));
 
-// Use either route param or search param
-const selectedCategoryId = categoryId || searchCategory;
+// Get all activities
+const rawActivities = await getCollection('activities');
 
-// Fetch data
-const categories = await getCategories();
-const category = categories.find(c => c.id === selectedCategoryId);
-
-// Filter activities
-const activities = selectedCategoryId
-  ? await getActivitiesByCategory(selectedCategoryId)
-  : await getActivities();
-
-const title = category 
-  ? `${category.title} - ActionMaker` 
-  : 'Teambuilding Activities - ActionMaker';
+// Transform collection entries to TeamActivity type
+const activities = rawActivities.map((activity: CollectionEntry<'activities'>) => ({
+  id: activity.slug,
+  title: activity.data.title,
+  description: activity.data.description,
+  image: activity.data.image,
+  category: activity.data.category,
+  categories: activity.data.categories || [],
+  duration: activity.data.duration,
+  groupSize: activity.data.groupSize,
+  price: activity.data.price,
+  availability: activity.data.availability,
+  features: activity.data.features || [],
+  gallery: activity.data.gallery || []
+}));
 ---
 
-<Layout title={title}>
+<Layout title="Teambuilding Activities - ActionMaker">
   <main class="min-h-screen pt-24 pb-32">
     <TeamActivitiesList 
       client:load 
-      selectedCategory={selectedCategoryId}
       initialActivities={activities}
+      categories={categories}
+      selectedCategory={null}
     />
   </main>
 </Layout>

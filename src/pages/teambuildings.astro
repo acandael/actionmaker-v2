@@ -1,10 +1,47 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { TeamActivitiesList } from '@/components/TeamActivitiesList';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+// Get category from URL parameters
+const searchCategory = Astro.url.searchParams.get('category');
+
+// Get categories from content collection
+const categoriesCollection = await getCollection('categories');
+const categories = categoriesCollection.map(category => ({
+  id: category.id,
+  title: category.data.title,
+  description: category.data.description
+}));
+
+// Get all activities
+const rawActivities = await getCollection('activities');
+
+// Transform collection entries to TeamActivity type
+const activities = rawActivities.map((activity: CollectionEntry<'activities'>) => ({
+  id: activity.slug,
+  title: activity.data.title,
+  description: activity.data.description,
+  image: activity.data.image,
+  category: activity.data.category,
+  categories: activity.data.categories,
+  duration: activity.data.duration,
+  groupSize: activity.data.groupSize,
+  price: activity.data.price,
+  availability: activity.data.availability,
+  features: activity.data.features || [],
+  gallery: activity.data.gallery || []
+}));
 ---
 
 <Layout title="Teambuilding Activities - ActionMaker">
   <main class="min-h-screen pt-24 pb-32">
-    <TeamActivitiesList client:load />
+    <TeamActivitiesList 
+      client:load 
+      selectedCategory={searchCategory}
+      initialActivities={activities}
+      categories={categories}
+    />
   </main>
-</Layout>
+</Layout> 

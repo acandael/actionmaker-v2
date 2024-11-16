@@ -3,7 +3,7 @@ title: "Pistoolkruisboogschieten"
 description: "Een unieke combinatie van precisieschieten met pistoolkruisbogen."
 image: "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-1.jpg"
 category: "sport"
-categories: ["sport", "precisie"]
+categories: ["indoor", "outdoor"]
 duration: "2 - 3 uur"
 groupSize: "8 - 30 personen"
 price: "Vanaf €35 p.p."
@@ -19,7 +19,6 @@ gallery:
   - "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-4.jpg"
   - "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-5.jpg"
   - "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-6.jpg"
-  - "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-7.jpg"
 ---
 
 Pistoolkruisboogschieten combineert het beste van twee werelden: de precisie van een kruisboog met de handzaamheid van een pistool. Deze unieke activiteit biedt een spannende uitdaging voor iedereen die wil kennismaken met deze bijzondere vorm van schietsport.

@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getActivity, getActivities } from '@/lib/content';
+import { getCollection, getEntry } from 'astro:content';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2 } from 'lucide-react';
@@ -9,34 +9,36 @@ import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
-  const activities = await getActivities();
+  const activities = await getCollection('activities');
   return activities.map(activity => ({
-    params: { slug: activity.id }
+    params: { slug: activity.slug }
   }));
 }
 
 const { slug } = Astro.params;
-const activity = await getActivity(slug);
+const activity = await getEntry('activities', slug);
 
 if (!activity) {
   return Astro.redirect('/404');
 }
+
+const { Content } = await activity.render();
 ---
 
-<Layout title={`${activity.title} - ActionMaker`}>
+<Layout title={`${activity.data.title} - ActionMaker`}>
   {/* Hero Section */}
   <section class="relative min-h-[60vh] flex items-center">
     <div class="absolute inset-0 z-0">
-      {activity.image.startsWith('http') ? (
+      {activity.data.image.startsWith('http') ? (
         <img
-          src={activity.image}
-          alt={activity.title}
+          src={activity.data.image}
+          alt={activity.data.title}
           class="w-full h-full object-cover"
         />
       ) : (
         <Image
-          src={activity.image}
-          alt={activity.title}
+          src={activity.data.image}
+          alt={activity.data.title}
           width={1920}
           height={1080}
           class="w-full h-full object-cover"
@@ -49,10 +51,10 @@ if (!activity) {
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 py-24">
       <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-        {activity.title}
+        {activity.data.title}
       </h1>
       <p class="text-xl text-white/90 max-w-2xl">
-        {activity.description}
+        {activity.data.description}
       </p>
     </div>
   </section>
@@ -64,14 +66,14 @@ if (!activity) {
         <div class="prose prose-lg max-w-none">
           <h2 class="text-3xl font-bold mb-6">Over deze activiteit</h2>
           <div class="prose-p:text-muted-foreground prose-headings:text-foreground prose-strong:text-foreground">
-            <activity.Content />
+            <Content />
           </div>
 
-          {activity.features && (
+          {activity.data.features && (
             <div class="mt-8 not-prose">
               <h3 class="text-xl font-semibold mb-4">Wat kun je verwachten?</h3>
               <ul class="space-y-3">
-                {activity.features.map((feature) => (
+                {activity.data.features.map((feature) => (
                   <li class="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
                     <span>{feature}</span>
@@ -82,12 +84,12 @@ if (!activity) {
           )}
         </div>
 
-        {activity.gallery && <Gallery images={activity.gallery} />}
+        {activity.data.gallery && <Gallery images={activity.data.gallery} />}
 
         {/* Booking Form Section */}
         <div class="pt-12 border-t">
           <h2 class="text-3xl font-bold mb-8">Vraag meer informatie aan</h2>
-          <BookingForm activityTitle={activity.title} />
+          <BookingForm activityTitle={activity.data.title} />
         </div>
       </div>
 
@@ -99,7 +101,7 @@ if (!activity) {
               <Users className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Groepsgrootte</p>
-                <p class="font-medium">{activity.groupSize}</p>
+                <p class="font-medium">{activity.data.groupSize}</p>
               </div>
             </div>
             
@@ -107,7 +109,7 @@ if (!activity) {
               <Clock className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Duur</p>
-                <p class="font-medium">{activity.duration}</p>
+                <p class="font-medium">{activity.data.duration}</p>
               </div>
             </div>
 
@@ -115,7 +117,7 @@ if (!activity) {
               <Euro className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Prijs</p>
-                <p class="font-medium">{activity.price}</p>
+                <p class="font-medium">{activity.data.price}</p>
               </div>
             </div>
 
@@ -123,7 +125,7 @@ if (!activity) {
               <Calendar className="h-5 w-5 text-muted-foreground" />
               <div>
                 <p class="text-sm text-muted-foreground">Beschikbaarheid</p>
-                <p class="font-medium">{activity.availability}</p>
+                <p class="font-medium">{activity.data.availability}</p>
               </div>
             </div>
 

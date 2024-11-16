@@ -3,7 +3,7 @@ title: "Blaaspijpschieten"
 description: "Een unieke en uitdagende activiteit waarbij precisie en concentratie centraal staan."
 image: "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-1.jpg"
 category: "sport"
-categories: ["sport", "precisie"]
+categories: ["indoor", "outdoor"]
 duration: "1.5 - 2 uur"
 groupSize: "8 - 30 personen"
 price: "Vanaf €30 p.p."
@@ -19,7 +19,6 @@ gallery:
   - "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-4.jpg"
   - "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-5.jpg"
   - "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-6.jpg"
-  - "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-7.jpg"
 ---
 
 Blaaspijpschieten is erg populair. Het is een spannende en uitdagende activiteit voor alle leeftijden. Er wordt een korte geschiedenis van het blaaspijpschieten gegeven. Daarna oefenen en competitie met blaaspijpen van 3 verschillende lengtes.

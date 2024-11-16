@@ -3,7 +3,7 @@ title: "Laser Kleiduifschieten"
 description: "Een moderne en milieuvriendelijke variant van kleiduifschieten."
 image: "/src/assets/activities/laserkleiduifschieten/laserkleiduifschieten-1.jpg"
 category: "sport"
-categories: ["sport", "precisie"]
+categories: ["indoor"]
 duration: "2 - 3 uur"
 groupSize: "8 - 30 personen"
 price: "Vanaf €40 p.p."

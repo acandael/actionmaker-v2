@@ -1,33 +1,31 @@
 import { defineCollection, z } from "astro:content";
-import { imageSchema } from "@/lib/schemas";
-
-const categories = defineCollection({
-  type: "data",
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    image: imageSchema,
-  }),
-});
 
 const activities = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    image: imageSchema,
+    image: z.string(),
     category: z.string(),
-    categories: z.array(z.string()).optional(),
-    duration: z.string().optional(),
-    groupSize: z.string().optional(),
-    price: z.string().optional(),
-    availability: z.string().optional(),
+    categories: z.array(z.string()),
+    duration: z.string(),
+    groupSize: z.string(),
+    price: z.string(),
+    availability: z.string(),
     features: z.array(z.string()).optional(),
-    gallery: z.array(imageSchema).optional(),
+    gallery: z.array(z.string()).optional(),
+  }),
+});
+
+const categories = defineCollection({
+  type: "data",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
   }),
 });
 
 export const collections = {
-  categories: categories,
   activities: activities,
+  categories: categories,
 };

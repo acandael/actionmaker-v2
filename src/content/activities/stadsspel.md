@@ -3,7 +3,7 @@ title: "Stadsspel"
 description: "Een interactieve ontdekkingstocht door de stad"
 image: "/src/assets/activities/stadsspel/stadsspel-1.jpg"
 category: "outdoor"
-categories: ["outdoor", "teamwork"]
+categories: ["outdoor", "cultureel"]
 duration: "2 - 3 uur"
 groupSize: "10 - 50 personen"
 price: "Vanaf €35 p.p."

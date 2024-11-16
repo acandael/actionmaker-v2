@@ -3,7 +3,7 @@ title: "Indoor Lasershooting"
 description: "Een spannend lasergame avontuur in een indoor arena."
 image: "/src/assets/activities/indoor-lasershooting/indoorlasershooting-1.jpg"
 category: "sport"
-categories: ["sport", "teamwork"]
+categories: ["indoor"]
 duration: "1.5 - 2 uur"
 groupSize: "8 - 40 personen"
 price: "Vanaf €35 p.p."
