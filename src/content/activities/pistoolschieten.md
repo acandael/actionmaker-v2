@@ -1,29 +1,28 @@
 ---
 title: "Pistoolschieten"
-description: "Wie heeft een vaste hand om met luchtdruk pistoolschieten doel de roos te treffen. Wij schieten met een kaliber .177."
-image: "/images/activities/pistoolschieten/pistoolschieten-1.jpg"
-category: "indoor"
-categories: ["indoor", "actief"]
+description: "Een spannende schietactiviteit onder professionele begeleiding."
+image: "/src/assets/activities/pistoolschieten/pistoolschieten-1.jpg"
+category: "sport"
+categories: ["sport", "precisie"]
 duration: "2 - 3 uur"
-groupSize: "8 - 20 personen"
-price: "Vanaf €38 p.p."
+groupSize: "8 - 30 personen"
+price: "Vanaf €40 p.p."
 availability: "Het hele jaar door"
 features:
-  - "Professionele luchtdrukpistolen"
-  - "Uitgebreide veiligheidsinstructies"
-  - "Verschillende doelwitten"
-  - "Competitie-element"
+  - "Professionele instructeurs"
+  - "Alle materiaal inbegrepen"
+  - "Veilige omgeving"
+  - "Competitie-element mogelijk"
 gallery:
-  - "/images/activities/pistoolschieten/pistoolschieten-2.jpg"
-  - "/images/activities/pistoolschieten/pistoolschieten-3.jpg"
-  - "/images/activities/pistoolschieten/pistoolschieten-4.jpg"
-  - "/images/activities/pistoolschieten/pistoolschieten-5.jpg"
-  - "/images/activities/pistoolschieten/pistoolschieten-6.jpg"
-  - "/images/activities/pistoolschieten/pistoolschieten-7.jpg"
+  - "/src/assets/activities/pistoolschieten/pistoolschieten-2.jpg"
+  - "/src/assets/activities/pistoolschieten/pistoolschieten-3.jpg"
+  - "/src/assets/activities/pistoolschieten/pistoolschieten-4.jpg"
+  - "/src/assets/activities/pistoolschieten/pistoolschieten-5.jpg"
+  - "/src/assets/activities/pistoolschieten/pistoolschieten-6.jpg"
 ---
 
-Pistoolschieten met luchtdrukwapens is een activiteit die precisie, concentratie en een vaste hand vereist. Deze indoor activiteit is perfect voor teambuilding omdat het zowel individuele focus als teamspirit combineert.
+Pistoolschieten is een uitdagende activiteit die precisie, concentratie en een vaste hand vereist. Onder begeleiding van ervaren instructeurs leren deelnemers de basistechnieken van het pistoolschieten in een veilige en gecontroleerde omgeving.
 
-De sessie start met een uitgebreide veiligheidsbriefing en technische uitleg door onze gecertificeerde instructeurs. Deelnemers leren de juiste schiethouding, ademhalingstechniek en richtprincipes. We gebruiken moderne luchtdrukpistolen van kaliber .177, die zowel veilig als accuraat zijn.
+De sessie begint met een uitgebreide veiligheidsinstructie en uitleg over de techniek. Deelnemers leren over de juiste schiethouding, ademhalingstechniek en trekkercontrole. Na de basistraining volgen verschillende oefeningen waarbij deelnemers hun vaardigheden kunnen verbeteren.
 
-Na de basistraining volgen verschillende uitdagende schietoefeningen en competities. Teams nemen het tegen elkaar op in verschillende disciplines, van precisieschieten tot snelheidswedstrijden. Dit creëert een gezonde competitiesfeer waarbij teamleden elkaar aanmoedigen en ondersteunen.
+De activiteit kan worden afgesloten met een onderlinge competitie, waarbij teams of individuen het tegen elkaar opnemen in verschillende schietdisciplines. Dit zorgt niet alleen voor extra spanning en plezier, maar stimuleert ook het competitie-element binnen de groep.

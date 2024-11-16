@@ -1,7 +1,7 @@
 ---
 title: "Chocoladeworkshop"
 description: "Een chocoladeworkshop onder leiding van een professionele chocolatier."
-image: "/images/activities/chocoladeworkshop/chocoladeworkshop-1.jpg"
+image: "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-1.jpg"
 category: "culinair"
 categories: ["culinair", "workshop"]
 duration: "2.5 - 3 uur"
@@ -14,12 +14,12 @@ features:
   - "Eigen creaties maken"
   - "Proeverij van verschillende chocolades"
 gallery:
-  - "/images/activities/chocoladeworkshop/chocoladeworkshop-2.jpg"
-  - "/images/activities/chocoladeworkshop/chocoladeworkshop-3.jpg"
-  - "/images/activities/chocoladeworkshop/chocoladeworkshop-4.jpg"
-  - "/images/activities/chocoladeworkshop/chocoladeworkshop-5.jpg"
-  - "/images/activities/chocoladeworkshop/chocoladeworkshop-6.jpg"
-  - "/images/activities/chocoladeworkshop/chocoladeworkshop-7.jpg"
+  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-2.jpg"
+  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-3.jpg"
+  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-4.jpg"
+  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-5.jpg"
+  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-6.jpg"
+  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-7.jpg"
 ---
 
 De chocoladeworkshop is een heerlijke combinatie van teambuilding en culinair genot. Onder leiding van een professionele chocolatier ontdekken deelnemers de kunst van het chocolade maken en de rijke geschiedenis van deze geliefde lekkernij.

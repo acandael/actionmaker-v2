@@ -86,7 +86,7 @@ export const activities: TeamActivity[] = [
     ],
   },
   {
-    id: "laserkleischieten",
+    id: "laserkleiduifschieten",
     title: "Laserkleischieten",
     description:
       'Laserkleischieten is sensationeel en veilig. Voor kinderen in de richting van "Starfox".',

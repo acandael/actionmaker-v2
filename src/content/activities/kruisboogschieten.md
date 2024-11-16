@@ -1,29 +1,29 @@
 ---
 title: "Kruisboogschieten"
-description: "De kruisboog is een eeuwenoud mechanisch wapen. Na een uitleg door een ervaren schutter beginnen we met een initiatie kruisboogschieten."
-image: "/images/activities/kruisboogschieten/kruisboogschieten-1.jpg"
-category: "outdoor"
-categories: ["outdoor", "actief"]
+description: "Een spannende activiteit met historische kruisbogen."
+image: "/src/assets/activities/kruisboogschieten/kruisboogschieten-1.jpg"
+category: "sport"
+categories: ["sport", "precisie"]
 duration: "2 - 3 uur"
-groupSize: "8 - 20 personen"
-price: "Vanaf €42 p.p."
-availability: "Maart t/m Oktober"
+groupSize: "8 - 30 personen"
+price: "Vanaf €35 p.p."
+availability: "Het hele jaar door"
 features:
-  - "Professionele kruisbogen"
-  - "Ervaren instructeurs"
-  - "Veiligheidsuitrusting"
+  - "Professionele begeleiding"
+  - "Alle materiaal inbegrepen"
   - "Verschillende doelwitten"
+  - "Competitie-element mogelijk"
 gallery:
-  - "/images/activities/kruisboogschieten/kruisboogschieten-2.jpg"
-  - "/images/activities/kruisboogschieten/kruisboogschieten-3.jpg"
-  - "/images/activities/kruisboogschieten/kruisboogschieten-4.jpg"
-  - "/images/activities/kruisboogschieten/kruisboogschieten-5.jpg"
-  - "/images/activities/kruisboogschieten/kruisboogschieten-6.jpg"
-  - "/images/activities/kruisboogschieten/kruisboogschieten-7.jpg"
+  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-2.jpg"
+  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-3.jpg"
+  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-4.jpg"
+  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-5.jpg"
+  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-6.jpg"
+  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-7.jpg"
 ---
 
-Kruisboogschieten combineert historische traditie met moderne precisiesport. Deze activiteit biedt deelnemers de kans om zich te verdiepen in een fascinerend stuk geschiedenis terwijl ze nieuwe vaardigheden ontwikkelen.
+Kruisboogschieten is een historische sport die precisie, concentratie en een vaste hand vereist. Onder begeleiding van ervaren instructeurs leren deelnemers de basistechnieken van het kruisboogschieten in een veilige en gecontroleerde omgeving.
 
-De sessie begint met een introductie in de geschiedenis van de kruisboog en zijn evolutie door de eeuwen heen. Onze ervaren instructeurs geven een grondige uitleg over veiligheid, techniek en het correct hanteren van de kruisboog. Deelnemers leren de basis van het richten, laden en schieten met dit historische wapen.
+De sessie begint met een uitgebreide instructie over veiligheid en techniek. Deelnemers leren over de geschiedenis van de kruisboog, de juiste schiethouding en het richten op het doel. Na de basistraining volgen verschillende oefeningen waarbij deelnemers hun vaardigheden kunnen verbeteren.
 
-Het praktische gedeelte bestaat uit verschillende oefeningen en competities. Teams nemen het tegen elkaar op in uitdagende opdrachten die precisie, concentratie en teamwork vereisen. De combinatie van historische context en moderne sportbeoefening maakt dit tot een unieke teambuilding ervaring.
+De activiteit kan worden afgesloten met een spannende competitie, waarbij teams of individuen het tegen elkaar opnemen in verschillende uitdagingen. Dit zorgt niet alleen voor extra spanning en plezier, maar stimuleert ook de teamspirit en het competitieve element binnen de groep.

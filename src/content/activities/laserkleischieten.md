@@ -1,7 +1,7 @@
 ---
 title: "Laser Kleiduifschieten"
 description: "Een moderne en milieuvriendelijke variant van kleiduifschieten."
-image: "/src/assets/activities/laserkleiduifschieten/laserkleiduifschieten-1.jpg"
+image: "/src/assets/activities/laserkleischieten/laserkleischieten-1.jpg"
 category: "sport"
 categories: ["sport", "precisie"]
 duration: "2 - 3 uur"
@@ -14,11 +14,11 @@ features:
   - "Milieuvriendelijk"
   - "Competitie-element mogelijk"
 gallery:
-  - "/src/assets/activities/laserkleiduifschieten/laserkleiduifschieten-2.jpg"
-  - "/src/assets/activities/laserkleiduifschieten/laserkleiduifschieten-3.jpg"
-  - "/src/assets/activities/laserkleiduifschieten/laserkleiduifschieten-4.jpg"
-  - "/src/assets/activities/laserkleiduifschieten/laserkleiduifschieten-5.jpg"
-  - "/src/assets/activities/laserkleiduifschieten/laserkleiduifschieten-6.jpg"
+  - "/src/assets/activities/laserkleischieten/laserkleischieten-2.jpg"
+  - "/src/assets/activities/laserkleischieten/laserkleischieten-3.jpg"
+  - "/src/assets/activities/laserkleischieten/laserkleischieten-4.jpg"
+  - "/src/assets/activities/laserkleischieten/laserkleischieten-5.jpg"
+  - "/src/assets/activities/laserkleischieten/laserkleischieten-6.jpg"
 ---
 
 Laserkleischieten biedt een moderne en veilige variant op het traditionele kleischieten. Deze innovatieve activiteit combineert de uitdaging van het schieten met moderne technologie, waardoor het perfect geschikt is voor teambuilding events.

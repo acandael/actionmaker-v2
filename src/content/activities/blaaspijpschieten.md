@@ -1,29 +1,25 @@
 ---
 title: "Blaaspijpschieten"
-description: "Blaaspijpschieten is een spannende en intrigerende activiteit voor alle leeftijden. Leer de geschiedenis van het blaaspijpschieten kennen."
-image: "/images/activities/blaaspijpschieten/blaaspijpschieten-1.jpg"
-category: "outdoor"
-categories: ["outdoor", "actief"]
-duration: "1.5 - 2.5 uur"
-groupSize: "8 - 20 personen"
-price: "Vanaf €35 p.p."
-availability: "Maart t/m Oktober"
+description: "Een unieke en uitdagende activiteit waarbij precisie en concentratie centraal staan."
+image: "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-1.jpg"
+category: "sport"
+categories: ["sport", "precisie"]
+duration: "1.5 - 2 uur"
+groupSize: "8 - 30 personen"
+price: "Vanaf €30 p.p."
+availability: "Het hele jaar door"
 features:
-  - "Professionele blaaspijpen"
-  - "Veilige opzet"
+  - "Professionele begeleiding"
+  - "Alle materiaal inbegrepen"
   - "Verschillende doelwitten"
-  - "Competitie-element"
+  - "Competitie-element mogelijk"
 gallery:
-  - "/images/activities/blaaspijpschieten/blaaspijpschieten-2.jpg"
-  - "/images/activities/blaaspijpschieten/blaaspijpschieten-3.jpg"
-  - "/images/activities/blaaspijpschieten/blaaspijpschieten-4.jpg"
-  - "/images/activities/blaaspijpschieten/blaaspijpschieten-5.jpg"
-  - "/images/activities/blaaspijpschieten/blaaspijpschieten-6.jpg"
-  - "/images/activities/blaaspijpschieten/blaaspijpschieten-7.jpg"
+  - "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-2.jpg"
+  - "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-3.jpg"
+  - "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-4.jpg"
+  - "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-5.jpg"
+  - "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-6.jpg"
+  - "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-7.jpg"
 ---
 
-Blaaspijpschieten is een fascinerende activiteit die zijn oorsprong vindt in verschillende culturen wereldwijd. Deze unieke sport combineert precisie, ademhalingstechniek en concentratie, wat het tot een perfecte teambuilding activiteit maakt.
-
-Deelnemers krijgen eerst een introductie in de geschiedenis en techniek van het blaaspijpschieten. Onze ervaren instructeurs demonstreren de juiste ademhalingstechniek en houding, essentieel voor accurate schoten. Veiligheid staat hierbij voorop, en alle materialen worden vooraf grondig gecontroleerd.
-
-Na de training volgen verschillende uitdagende opdrachten waarbij teams het tegen elkaar opnemen. Van precisieschieten tot snelheidswedstrijden, elke opdracht vraagt om een andere aanpak en strategie. Dit zorgt niet alleen voor een spannende competitie, maar bevordert ook de communicatie en samenwerking binnen het team.
+Blaaspijpschieten is erg populair. Het is een spannende en uitdagende activiteit voor alle leeftijden. Er wordt een korte geschiedenis van het blaaspijpschieten gegeven. Daarna oefenen en competitie met blaaspijpen van 3 verschillende lengtes.
