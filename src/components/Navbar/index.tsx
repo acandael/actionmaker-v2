@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -9,48 +9,47 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
-import { NavLinks } from './NavLinks';
-import { NavLogo } from './NavLogo';
-import { LanguageToggle } from './LanguageToggle';
-import { cn } from '@/lib/utils';
+import { NavLinks } from "./NavLinks";
+import { NavLogo } from "./NavLogo";
+import { LanguageToggle } from "./LanguageToggle";
+import { cn } from "@/lib/utils";
 
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 0);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
   }, [isOpen]);
 
-  const isHomePage = mounted && window.location.pathname === '/';
+  const isHomePage = mounted && window.location.pathname === "/";
   const navbarClass = mounted
     ? cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled || !isHomePage ? "bg-black/90 backdrop-blur-sm py-0 shadow-lg" : "bg-transparent py-2"
+        isScrolled || !isHomePage
+          ? "bg-black/90 backdrop-blur-sm py-0 shadow-lg"
+          : "bg-transparent py-2"
       )
     : "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black/90 backdrop-blur-sm py-0 shadow-lg";
 
   return (
-    <header 
-      className={navbarClass}
-      role="banner"
-    >
-      <nav 
+    <header className={navbarClass} role="banner">
+      <nav
         className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between"
         role="navigation"
         aria-label="Main navigation"
@@ -70,9 +69,9 @@ export function Navbar() {
         <div className="md:hidden flex items-center">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button 
-                variant="ghost" 
-                size="icon" 
+              <Button
+                variant="ghost"
+                size="icon"
                 className={cn(
                   "text-white hover:bg-white/10",
                   isOpen && "bg-white/10 text-white hover:bg-white/20"
@@ -86,8 +85,8 @@ export function Navbar() {
                 )}
               </Button>
             </SheetTrigger>
-            <SheetContent 
-              side="right" 
+            <SheetContent
+              side="right"
               className="bg-black/95 backdrop-blur-md border-neutral-800"
             >
               <SheetHeader>
