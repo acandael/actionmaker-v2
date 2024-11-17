@@ -2,26 +2,33 @@ export const testimonials = [
   {
     name: "Luc Pierson",
     role: "European Commission",
-    content: "Nog eens bedankt voor Uw inzet, creativiteit en vooral flexibele aanpak, we hadden het weer mee wat een grote bonus was voor de activiteiten en daar heb je goed op ingespeeld !",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?fit=crop&w=128&h=128&q=80",
+    content:
+      "Nog eens bedankt voor Uw inzet, creativiteit en vooral flexibele aanpak, we hadden het weer mee wat een grote bonus was voor de activiteiten en daar heb je goed op ingespeeld !",
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?fit=crop&w=256&h=256&q=80",
   },
   {
     name: "Anja Capelle",
     role: "The Reference",
     content: "De initiatie is mega in de smaak gevallen. Bedankt!",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fit=crop&w=128&h=128&q=80",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fit=crop&w=256&h=256&q=80",
   },
   {
     name: "Julie Dejonckheere",
     role: "Consultant",
-    content: "Hallo Frederiek, Alles was zeker naar wens. De reacties nadien waren heel positief!",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fit=crop&w=128&h=128&q=80",
+    content:
+      "Hallo Frederiek, Alles was zeker naar wens. De reacties nadien waren heel positief!",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fit=crop&w=256&h=256&q=80",
   },
   {
     name: "Tom Vanoirbeek",
     role: "Adecco",
-    content: "Dag Frederiek, Nogmaals bedankt voor het zeer fijne event. Ik heb ondertussen niets dan positieve echo's gehoord van de mensen.",
-    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?fit=crop&w=128&h=128&q=80",
+    content:
+      "Dag Frederiek, Nogmaals bedankt voor het zeer fijne event. Ik heb ondertussen niets dan positieve echo's gehoord van de mensen.",
+    image:
+      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?fit=crop&w=256&h=256&q=80",
   },
 ];
 

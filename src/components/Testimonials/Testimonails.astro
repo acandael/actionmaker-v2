@@ -1,0 +1,24 @@
+---
+import TestimonialCard from './TestimonialCard.astro';
+import ClientLogos from './ClientLogos.astro';
+import { testimonials, clients } from './testimonials-data';
+---
+
+<section class="py-24 px-4 bg-gradient-to-b from-background to-muted/50">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl font-bold mb-4">
+        Wat Zeggen Onze Klanten?
+      </h2>
+      <div class="w-24 h-1 bg-red-600 mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-32">
+      {testimonials.map((testimonial) => (
+        <TestimonialCard {...testimonial} />
+      ))}
+    </div>
+
+    <ClientLogos clients={clients} />
+  </div>
+</section>
