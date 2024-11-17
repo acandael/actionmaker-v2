@@ -5,7 +5,6 @@ image: "/src/assets/activities/smaaktest/smaaktest-1.jpg"
 categories: ["indoor", "culinair"]
 duration: "met quiz +/- 90 min, zonder quiz +/- 60 min"
 groupSize: "Maximum 20/24 deelnemers (= 4 tafels) per animator"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "Interactieve opdrachten"

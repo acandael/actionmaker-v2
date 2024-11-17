@@ -5,7 +5,6 @@ image: "/src/assets/activities/infrarood-biatlon/infrarood-biatlon-1.jpg"
 categories: ["outdoor", "indoor"]
 duration: "+- 1u30 uur"
 groupSize: "Max. 25 deelnemers per animator"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "ontspanning"

@@ -5,7 +5,6 @@ image: "/src/assets/activities/virtual-reality/virtual-reality-1.jpg"
 categories: ["indoor"]
 duration: "+/- 3u."
 groupSize: "Maximaal 15 personen"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "teamwork"

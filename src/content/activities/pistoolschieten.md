@@ -5,7 +5,6 @@ image: "/src/assets/activities/pistoolschieten/pistoolschieten-1.jpg"
 categories: ["outdoor", "indoor"]
 duration: "2 - 3 uur"
 groupSize: "8 - 30 personen"
-price: "Vanaf €40 p.p."
 availability: "Het hele jaar door"
 features:
   - "Professionele instructeurs"

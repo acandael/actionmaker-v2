@@ -6,7 +6,6 @@ category: "outdoor"
 categories: ["outdoor", "cultureel"]
 duration: "+/- 3u."
 groupSize: "Minimum 8 personen"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "Basketten in de stad"

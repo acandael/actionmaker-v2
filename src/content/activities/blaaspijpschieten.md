@@ -5,7 +5,6 @@ image: "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-1.jpg"
 categories: ["indoor", "outdoor"]
 duration: "1.5 - 2 uur"
 groupSize: "8 - 30 personen"
-price: "Vanaf €30 p.p."
 availability: "Het hele jaar door"
 features:
   - "Professionele begeleiding"

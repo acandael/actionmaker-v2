@@ -9,7 +9,6 @@ const activities = defineCollection({
     categories: z.array(z.string()),
     duration: z.string(),
     groupSize: z.string(),
-    price: z.string(),
     availability: z.string(),
     features: z.array(z.string()).optional(),
     gallery: z.array(z.string()).optional(),

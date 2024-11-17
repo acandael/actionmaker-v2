@@ -5,7 +5,6 @@ image: "/src/assets/activities/brugse-metten-tocht/brugse-metten-tocht-1.jpg"
 categories: ["outdoor", "cultureel"]
 duration: "+/- 3u."
 groupSize: "Maximum 25 deelnemers per animator"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "fotozoektocht: doorheen Brugge"

@@ -5,7 +5,6 @@ image: "/src/assets/activities/scherminitiatie/scherminitiatie-1.jpg"
 categories: ["actief", "indoor", "outdoor"]
 duration: "2 - 3 uur"
 groupSize: "8 - 30 personen"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "Professionele scherminstructeurs"

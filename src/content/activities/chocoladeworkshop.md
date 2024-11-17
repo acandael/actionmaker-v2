@@ -5,7 +5,6 @@ image: "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-1.jpg"
 categories: ["culinair", "workshop"]
 duration: "2.5 - 3 uur"
 groupSize: "8 - 25 personen"
-price: "Vanaf €45 p.p."
 availability: "Het hele jaar door"
 features:
   - "Professionele chocolatier"

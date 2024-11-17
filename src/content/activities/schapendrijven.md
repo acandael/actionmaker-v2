@@ -5,7 +5,6 @@ image: "/src/assets/activities/schapendrijven/schapendrijven-1.jpg"
 categories: ["outdoor", "workshop"]
 duration: "+/- 3u."
 groupSize: "Minimum 8 personen"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "Basistechnieken schapen drijven"

@@ -5,7 +5,6 @@ image: "/src/assets/activities/bijlwerpen/bijlwerpen-1.jpg"
 categories: ["outdoor", "actief"]
 duration: "+- 1 uur"
 groupSize: "maximum 20 deelnemers per animator"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "verrassend gemakkelijk"

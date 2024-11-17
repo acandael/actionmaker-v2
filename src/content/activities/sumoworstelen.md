@@ -5,7 +5,6 @@ image: "/src/assets/activities/sumoworstelen/sumoworstelen-1.jpg"
 categories: ["actief", "indoor", "outdoor"]
 duration: "1 - 2 uur"
 groupSize: "8 - 30 personen"
-price: "Vanaf €30 p.p."
 availability: "Het hele jaar door"
 features:
   - "Opblaasbare sumopakken"

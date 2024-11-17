@@ -5,7 +5,6 @@ image: "/src/assets/activities/stadsspel/stadsspel-1.jpg"
 categories: ["outdoor", "cultureel"]
 duration: "+- 3 uur"
 groupSize: "Max. 25 deelnemers per animator"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "Interactieve opdrachten"

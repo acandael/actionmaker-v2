@@ -5,7 +5,6 @@ image: "/src/assets/activities/alpacaworkshop/alpacaworkshop-1.jpg"
 categories: ["outdoor", "workshop"]
 duration: "+/- 3u."
 groupSize: "Maximaal 15 personen"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "Teamwork"

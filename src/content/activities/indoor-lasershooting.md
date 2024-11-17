@@ -5,7 +5,6 @@ image: "/src/assets/activities/indoor-lasershooting/indoorlasershooting-1.jpg"
 categories: ["indoor"]
 duration: "1.5 - 2 uur"
 groupSize: "8 - 40 personen"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "Professionele uitrusting"

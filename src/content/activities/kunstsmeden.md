@@ -5,7 +5,6 @@ image: "/src/assets/activities/kunstsmeden/kunstsmeden-1.jpg"
 categories: ["workshop"]
 duration: "+/- 2u."
 groupSize: "Maximum 20 deelnemers per sessie"
-price: "Vanaf €35 p.p."
 availability: "Het hele jaar door"
 features:
   - "ervaren smid"
