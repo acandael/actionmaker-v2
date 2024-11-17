@@ -2,7 +2,6 @@
 title: "Djembe workshop"
 description: "Als één team muziek maken creëert een unieke ervaring en zorgt voor een positief groepsgevoel."
 image: "/src/assets/activities/djembe/djembe-1.jpg"
-category: "outdoor"
 categories: ["workshop"]
 duration: "+/- 3u."
 groupSize: "Maximaal 15 personen"

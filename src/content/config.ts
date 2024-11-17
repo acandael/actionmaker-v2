@@ -6,7 +6,6 @@ const activities = defineCollection({
     title: z.string(),
     description: z.string(),
     image: z.string(),
-    category: z.string(),
     categories: z.array(z.string()),
     duration: z.string(),
     groupSize: z.string(),

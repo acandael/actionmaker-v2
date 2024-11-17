@@ -2,7 +2,6 @@
 title: "Pistoolschieten"
 description: "Een spannende schietactiviteit onder professionele begeleiding."
 image: "/src/assets/activities/pistoolschieten/pistoolschieten-1.jpg"
-category: "outdoor"
 categories: ["outdoor", "indoor"]
 duration: "2 - 3 uur"
 groupSize: "8 - 30 personen"

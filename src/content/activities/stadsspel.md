@@ -2,7 +2,6 @@
 title: "Stadsspel"
 description: "Een interactieve ontdekkingstocht door de stad"
 image: "/src/assets/activities/stadsspel/stadsspel-1.jpg"
-category: "outdoor"
 categories: ["outdoor", "cultureel"]
 duration: "+- 3 uur"
 groupSize: "Max. 25 deelnemers per animator"

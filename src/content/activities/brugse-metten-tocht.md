@@ -2,7 +2,6 @@
 title: "Brugse Metten Tocht"
 description: "Deze tocht is gemaakt voor de liefhebbers van Brugge. Het is een tocht door de binnenstad van Brugge met opdrachten en activiteiten."
 image: "/src/assets/activities/brugse-metten-tocht/brugse-metten-tocht-1.jpg"
-category: "outdoor"
 categories: ["outdoor", "cultureel"]
 duration: "+/- 3u."
 groupSize: "Maximum 25 deelnemers per animator"

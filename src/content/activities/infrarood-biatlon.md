@@ -2,7 +2,6 @@
 title: "Infrarood biatlon"
 description: "Bij het infrarood biatlonschieten wordt er met omgebouwde biatlongeweren geschoten op een biatlon doel, de sportpistolen worden op een normaal doel gericht"
 image: "/src/assets/activities/infrarood-biatlon/infrarood-biatlon-1.jpg"
-category: "outdoor"
 categories: ["outdoor", "indoor"]
 duration: "+- 1u30 uur"
 groupSize: "Max. 25 deelnemers per animator"

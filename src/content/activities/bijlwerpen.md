@@ -2,7 +2,6 @@
 title: "Bijlwerpen"
 description: "Het bijlwerpen komt van oorsprong uit Skandinavië. Het wint aan populairiteit zowel als sport of als recreatieve (hoogst therapeutische) activiteit."
 image: "/src/assets/activities/bijlwerpen/bijlwerpen-1.jpg"
-category: "sport"
 categories: ["outdoor", "actief"]
 duration: "+- 1 uur"
 groupSize: "maximum 20 deelnemers per animator"

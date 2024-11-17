@@ -2,7 +2,6 @@
 title: "Blaaspijpschieten"
 description: "Een unieke en uitdagende activiteit waarbij precisie en concentratie centraal staan."
 image: "/src/assets/activities/blaaspijpschieten/blaaspijpschieten-1.jpg"
-category: "sport"
 categories: ["indoor", "outdoor"]
 duration: "1.5 - 2 uur"
 groupSize: "8 - 30 personen"

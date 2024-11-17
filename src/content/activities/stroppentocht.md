@@ -2,7 +2,6 @@
 title: "Stroppentocht"
 description: "Deze tocht is gemaakt voor de liefhebbers van Gent. Het is een tocht door de binnenstad van Gent met opdrachten en activiteiten."
 image: "/src/assets/activities/stroppentocht/stroppentocht-1.jpg"
-category: "outdoor"
 categories: ["outdoor", "cultureel"]
 duration: "+/- 3u."
 groupSize: "Maximum 25 deelnemers per animator"

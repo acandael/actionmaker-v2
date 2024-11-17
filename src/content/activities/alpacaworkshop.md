@@ -2,7 +2,6 @@
 title: "Alpaca workshop"
 description: "Dankzij hun unieke karakter zijn alpaca’s enorm geschikt om samen op zoek te gaan naar de verschillende manieren om een situatie binnen een team aan te pakken."
 image: "/src/assets/activities/alpacaworkshop/alpacaworkshop-1.jpg"
-category: "outdoor"
 categories: ["outdoor", "workshop"]
 duration: "+/- 3u."
 groupSize: "Maximaal 15 personen"

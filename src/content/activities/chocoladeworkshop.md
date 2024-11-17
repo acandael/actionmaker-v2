@@ -2,7 +2,6 @@
 title: "Chocoladeworkshop"
 description: "Een chocoladeworkshop onder leiding van een professionele chocolatier."
 image: "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-1.jpg"
-category: "culinair"
 categories: ["culinair", "workshop"]
 duration: "2.5 - 3 uur"
 groupSize: "8 - 25 personen"
