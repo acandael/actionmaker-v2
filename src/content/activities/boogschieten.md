@@ -2,7 +2,7 @@
 title: "Boogschieten"
 description: "Een uitdagende activiteit die precisie en focus combineert."
 image: "/src/assets/activities/boogschieten/boogschieten-1.jpg"
-category: "sport"
+category: "outdoor"
 categories: ["outdoor", "indoor"]
 duration: "2 - 3 uur"
 groupSize: "8 - 30 personen"

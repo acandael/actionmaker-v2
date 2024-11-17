@@ -2,8 +2,8 @@
 title: "Pistoolschieten"
 description: "Een spannende schietactiviteit onder professionele begeleiding."
 image: "/src/assets/activities/pistoolschieten/pistoolschieten-1.jpg"
-category: "sport"
-categories: ["sport", "precisie"]
+category: "outdoor"
+categories: ["outdoor", "indoor"]
 duration: "2 - 3 uur"
 groupSize: "8 - 30 personen"
 price: "Vanaf €40 p.p."

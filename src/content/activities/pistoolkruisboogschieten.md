@@ -2,7 +2,7 @@
 title: "Pistoolkruisboogschieten"
 description: "Een unieke combinatie van precisieschieten met pistoolkruisbogen."
 image: "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-1.jpg"
-category: "sport"
+category: "outdoor"
 categories: ["indoor", "outdoor"]
 duration: "2 - 3 uur"
 groupSize: "8 - 30 personen"
