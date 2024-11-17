@@ -87,7 +87,7 @@ const { Content } = await activity.render();
         {activity.data.gallery && <Gallery images={activity.data.gallery} />}
 
         {/* Booking Form Section */}
-        <div class="pt-12 border-t">
+        <div id="booking-form" class="pt-12 border-t">
           <h2 class="text-3xl font-bold mb-8">Vraag meer informatie aan</h2>
           <BookingForm activityTitle={activity.data.title} />
         </div>
@@ -120,11 +120,12 @@ const { Content } = await activity.render();
                 <p class="font-medium">{activity.data.availability}</p>
               </div>
             </div>
-
-            <Button className="w-full bg-red-600 hover:bg-red-700 text-white group">
-              Direct boeken
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <a class="block" href="#booking-form">
+              <Button className="w-full bg-red-600 hover:bg-red-700 text-white group">
+                Vraag een offerte
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </a>
           </div>
         </Card>
       </div>
