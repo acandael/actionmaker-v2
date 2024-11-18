@@ -1,0 +1,57 @@
+---
+import { Card } from '@/components/ui/card';
+---
+
+<section class="py-24 px-4 bg-background">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-20">Oprichter</h2>
+    
+    <Card className="p-8 md:p-12">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        {/* Image */}
+        <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1523832080381-5f16f0dd0360?auto=format&fit=crop&q=80&w=800"
+            alt="Frederiek Troubleyn"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+        </div>
+
+        {/* Content */}
+        <div class="space-y-6">
+          <div class="space-y-2">
+            <h3 class="text-2xl font-bold">
+              Frederiek Troubleyn
+            </h3>
+            <p class="text-red-600 font-medium">
+              CEO, ex-Belgisch kampioen sabelschermen
+            </p>
+          </div>
+
+          <div class="space-y-4 text-muted-foreground">
+            <p>
+              Mijn vader had zijn eigen evenementenbureau. Na mijn opleiding als
+              topsportschermer begon ik met het organiseren van scherminitiaties.
+            </p>
+            <p>
+              Het frustreerde mij dat veel teambuilding bedrijven te weinig naar de
+              klant luisterden en steeds dezelfde activiteiten organiseerden, vaak
+              op amateuristische wijze.
+            </p>
+            <p>
+              Daarom begon ik 15 jaar geleden met het uitbouwen van een breed
+              gamma aan unieke activiteiten. Hierbij stond persoonlijk contact met
+              de klant voorop.
+            </p>
+            <p>
+              Het is mijn overtuiging dat bedrijven een leuke dag moeten hebben
+              zonder zorgen, zodat hun werknemers als een versterkt team uit de
+              ervaring komen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Card>
+  </div>
+</section>

@@ -36,12 +36,13 @@ const activities = rawActivities.map((activity: CollectionEntry<'activities'>) =
 ---
 
 <Layout title="Teambuilding Activities - ActionMaker">
-  <main class="min-h-screen pt-24 pb-32">
+   <div class="pt-20">
     <TeamActivitiesList 
-      client:load 
-      selectedCategory={searchCategory}
-      initialActivities={activities}
-      categories={categories}
-    />
-  </main>
+    client:load 
+    selectedCategory={searchCategory}
+    initialActivities={activities}
+    categories={categories}
+  />
+   </div>
+ 
 </Layout> 

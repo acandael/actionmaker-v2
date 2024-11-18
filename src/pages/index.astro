@@ -9,13 +9,11 @@ import { FAQ } from '@/components/FAQ';
 import CTA from '@/components/CTA/CTA.astro';
 ---
 
-<Layout title="Team Building Activities">
-  <main class="min-h-screen">
+<Layout title="Team Building Activities" isHomePage={true}>
     <Hero />
     <Features />
     <TeamActivities />
     <Testimonials />
     <FAQ client:load />
     <CTA />
-  </main>
 </Layout>

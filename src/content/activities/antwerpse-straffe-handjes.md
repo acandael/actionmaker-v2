@@ -22,4 +22,4 @@ gallery:
   - "/src/assets/activities/antwerpse-straffe-handjes/antwerpse-straffe-handjes-7.jpg"
 ---
 
-Leuke weetjes over Antwerpen ontdekken en gelijktijdig de teamgeest versterken binnen je team, dan bevelen we de ludieke Straffe Handjes-tocht aan. Een flinke scheut teamactiviteiten, een vleugje zoektocht en een korrel gastronomie, kortom de ideale mix voor een middagje Antwerpen.
+Een flinke scheut teamactiviteiten, een vleugje zoektocht en een korrel gastronomie, kortom de ideale mix voor een middagje Antwerpen.

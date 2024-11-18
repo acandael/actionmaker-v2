@@ -1,0 +1,65 @@
+---
+import { Heart, Shield, Users, Target } from 'lucide-react';
+
+const values = [
+  {
+    icon: Heart,
+    title: "Passie voor teambuilding",
+    description: "We zijn gepassioneerd over het creëren van betekenisvolle teambuildingservaringen die teams echt versterken."
+  },
+  {
+    icon: Shield,
+    title: "Kwaliteit gegarandeerd",
+    description: "Al onze activiteiten worden geleid door gecertificeerde professionals met jarenlange ervaring."
+  },
+  {
+    icon: Users,
+    title: "Persoonlijke aanpak",
+    description: "We luisteren naar uw wensen en stellen een programma samen dat perfect aansluit bij uw team."
+  },
+  {
+    icon: Target,
+    title: "Resultaatgericht",
+    description: "Onze activiteiten zijn ontworpen om concrete resultaten te behalen in teambuilding en groepsdynamiek."
+  }
+];
+---
+
+<section class="py-24 px-4 bg-background">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl font-bold mb-4">
+        Onze Waarden
+      </h2>
+      <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+        Bij ActionMaker streven we naar excellentie in alles wat we doen
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {values.map((value, index) => (
+        <div 
+          class="group p-8 rounded-2xl bg-white hover:bg-gradient-to-b hover:from-white hover:to-red-50/50 shadow-md hover:shadow-xl transition-all duration-500 ease-out"
+          data-aos="fade-up"
+          data-aos-delay={index * 100}
+        >
+          {/* Icon Container */}
+          <div class="relative mb-6 inline-block">
+            <div class="absolute inset-0 bg-red-100 rounded-2xl transform rotate-6 transition-transform duration-300 group-hover:rotate-12"></div>
+            <div class="relative w-16 h-16 rounded-2xl bg-red-500 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110">
+              <value.icon class="w-8 h-8 text-white" />
+            </div>
+          </div>
+
+          {/* Content */}
+          <h3 class="text-xl font-semibold mb-4 group-hover:text-red-600 transition-colors duration-300">
+            {value.title}
+          </h3>
+          <p class="text-muted-foreground leading-relaxed">
+            {value.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
