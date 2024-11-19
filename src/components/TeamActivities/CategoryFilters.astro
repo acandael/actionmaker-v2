@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  categories: {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+  }[];
+  selectedCategory: string | null;
+}
+
+const { categories, selectedCategory } = Astro.props;
+---
+
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+  <a
+    href="/teambuildings"
+    class={`relative group overflow-hidden rounded-lg aspect-[4/3] ${
+      !selectedCategory ? 'ring-2 ring-primary' : ''
+    }`}
+  >
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20 z-10"></div>
+    <img
+      src="/images/categories/all.jpg"
+      alt="Alle activiteiten"
+      class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+    />
+    <div class="absolute inset-x-0 bottom-0 p-4 z-20">
+      <h3 class="text-white font-semibold">Alle activiteiten</h3>
+    </div>
+  </a>
+
+  {
+    categories.map((category) => (
+      <a
+        href={`/teambuildings?category=${category.id}`}
+        class={`relative group overflow-hidden rounded-lg aspect-[4/3] ${
+          selectedCategory === category.id ? 'ring-2 ring-primary' : ''
+        }`}
+      >
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20 z-10" />
+        <img
+          src={category.image}
+          alt={category.title}
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <div class="absolute inset-x-0 bottom-0 p-4 z-20">
+          <h3 class="text-white font-semibold">{category.title}</h3>
+        </div>
+      </a>
+    ))
+  }
+</div>
+

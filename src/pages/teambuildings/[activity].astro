@@ -1,138 +1,67 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { getCollection, getEntry } from 'astro:content';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2 } from 'lucide-react';
-import BookingForm from '@/components/TeamActivityDetail/BookingForm.astro';
-import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
-import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import ActivityCard from '@/components/TeamActivities/ActivityCard.astro';
 
-const { activity: activityId } = Astro.params;
+// Get the category ID from the URL
+const { activity: categoryId } = Astro.params;
 
-// Get the activity from content collection
-const activity = await getEntry('activities', activityId);
+// Get all activities that belong to this category
+const activities = await getCollection('activities');
+const categoryActivities = activities.filter((activity) =>
+  activity.data.categories.includes(categoryId)
+);
 
-if (!activity) {
+// Get the category details
+const categories = await getCollection('categories');
+const category = categories.find((cat) => cat.id === categoryId);
+
+if (!category) {
   return Astro.redirect('/404');
 }
-
-const { Content } = await activity.render();
 ---
 
-<Layout title={`${activity.data.title} - ActionMaker`}>
+<Layout title={`${category.data.title} Teambuilding Activities - ActionMaker`}>
   {/* Hero Section */}
-  <section class="relative min-h-[60vh] flex items-center">
+  <section class="relative min-h-[40vh] flex items-center">
     <div class="absolute inset-0 z-0">
-      {
-        activity.data.image.startsWith('http') ? (
-          <img
-            src={activity.data.image}
-            alt={activity.data.title}
-            class="w-full h-full object-cover"
-          />
-        ) : (
-          <Image
-            src={activity.data.image}
-            alt={activity.data.title}
-            width={1920}
-            height={1080}
-            class="w-full h-full object-cover"
-            format="webp"
-            quality={80}
-          />
-        )
-      }
+      <img src={category.data.image} alt={category.data.title} class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-transparent">
       </div>
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 py-24">
       <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-        {activity.data.title}
+        {category.data.title}
       </h1>
       <p class="text-xl text-white/90 max-w-2xl">
-        {activity.data.description}
+        {category.data.description}
       </p>
     </div>
   </section>
 
   <section class="max-w-7xl mx-auto px-4 py-12">
-    <div class="grid lg:grid-cols-3 gap-12">
-      {/* Main Content */}
-      <div class="lg:col-span-2 space-y-12">
-        <div class="prose prose-lg max-w-none">
-          <h2 class="text-3xl font-bold mb-6">Over deze activiteit</h2>
-          <div
-            class="prose-p:text-muted-foreground prose-headings:text-foreground prose-strong:text-foreground"
-          >
-            <Content />
-          </div>
-
-          {
-            activity.data.features && (
-              <div class="mt-8 not-prose">
-                <h3 class="text-xl font-semibold mb-4">Wat kun je verwachten?</h3>
-                <ul class="space-y-3">
-                  {activity.data.features.map((feature) => (
-                    <li class="flex items-center gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )
-          }
-        </div>
-
-        {activity.data.gallery && <Gallery images={activity.data.gallery} />}
-
-        {/* Booking Form Section */}
-        <div id="booking-form" class="pt-12 border-t">
-          <h2 class="text-3xl font-bold mb-8">Vraag offerte aan</h2>
-          <BookingForm activityTitle={activity.data.title} />
-        </div>
-      </div>
-
-      {/* Sidebar */}
-      <div class="lg:col-span-1">
-        <Card className="p-6 sticky top-24">
-          <div class="space-y-6">
-            <div class="flex items-center gap-4">
-              <Users className="h-5 w-5 text-muted-foreground" />
-              <div>
-                <p class="text-sm text-muted-foreground">Groepsgrootte</p>
-                <p class="font-medium">{activity.data.groupSize}</p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-4">
-              <Clock className="h-5 w-5 text-muted-foreground" />
-              <div>
-                <p class="text-sm text-muted-foreground">Duur</p>
-                <p class="font-medium">{activity.data.duration}</p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-4">
-              <Calendar className="h-5 w-5 text-muted-foreground" />
-              <div>
-                <p class="text-sm text-muted-foreground">Beschikbaarheid</p>
-                <p class="font-medium">{activity.data.availability}</p>
-              </div>
-            </div>
-            <a class="block" href="#booking-form">
-              <Button className="w-full bg-red-600 hover:bg-red-700 text-white group">
-                Vraag een offerte
-                <ArrowRight
-                  className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
-                />
-              </Button>
-            </a>
-          </div>
-        </Card>
-      </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        categoryActivities.map((activity) => (
+          <ActivityCard
+            title={activity.data.title}
+            description={activity.data.description}
+            image={activity.data.image}
+            duration={activity.data.duration}
+            groupSize={activity.data.groupSize}
+            href={`/activities/${activity.id}`}
+          />
+        ))
+      }
     </div>
+
+    {
+      categoryActivities.length === 0 && (
+        <div class="text-center py-12">
+          <p class="text-xl text-muted-foreground">Geen activiteiten gevonden in deze categorie.</p>
+        </div>
+      )
+    }
   </section>
 </Layout>
