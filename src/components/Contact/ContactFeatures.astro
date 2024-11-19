@@ -1,46 +1,38 @@
 ---
-import { Card } from "@/components/ui/card";
-import { ArrowUpDown, Users, Trophy } from "lucide-react";
+import { Card } from '@/components/ui/card';
+import { ArrowUpDown, Users, Trophy } from 'lucide-react';
 
 const features = [
   {
     icon: ArrowUpDown,
-    title: "Flexibel",
-    color: "text-blue-600",
-    bgColor: "bg-blue-50",
+    title: 'Flexibel',
   },
   {
     icon: Users,
-    title: "Persoonlijk",
-    color: "text-green-600",
-    bgColor: "bg-green-50",
+    title: 'Persoonlijk',
   },
   {
     icon: Trophy,
-    title: "Gekwalificeerde Animatoren",
-    color: "text-purple-600",
-    bgColor: "bg-purple-50",
+    title: 'Gekwalificeerde Animatoren',
   },
 ];
 ---
 
-<Card class="p-8">
+<Card className="p-8">
   <div class="space-y-6">
-    <img
-      src="/logo.svg"
-      alt="ActionMaker"
-      class="h-12 w-auto"
-    />
+    <img src="/logo.png" alt="ActionMaker" class="h-16 w-auto" />
 
     <div class="space-y-4">
-      {features.map((feature) => (
-        <div class="flex items-center gap-4">
-          <div class={`p-2 rounded-lg ${feature.bgColor}`}>
-            <feature.icon className={`w-5 h-5 ${feature.color}`} />
+      {
+        features.map((feature) => (
+          <div class="flex items-center gap-4">
+            <div class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-red-50">
+              <feature.icon className="h-6 w-6 text-red-600" />
+            </div>
+            <span class="font-medium">{feature.title}</span>
           </div>
-          <span class="font-medium">{feature.title}</span>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </Card>

@@ -4,23 +4,23 @@ import { Users, Trophy, Calendar, Star } from 'lucide-react';
 const stats = [
   {
     icon: Users,
-    value: "500+",
-    label: "Tevreden klanten",
+    value: '500+',
+    label: 'Tevreden klanten',
   },
   {
     icon: Trophy,
-    value: "50+",
-    label: "Unieke activiteiten",
+    value: '50+',
+    label: 'Unieke activiteiten',
   },
   {
     icon: Calendar,
-    value: "15+",
-    label: "Jaar ervaring",
+    value: '15+',
+    label: 'Jaar ervaring',
   },
   {
     icon: Star,
-    value: "98%",
-    label: "Positieve reviews",
+    value: '98%',
+    label: 'Positieve reviews',
   },
 ];
 ---
@@ -28,30 +28,28 @@ const stats = [
 <section class="py-24 px-4 bg-muted/50">
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-      {stats.map((stat, index) => (
-        <div 
-          class="group relative p-8 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
-          data-aos="fade-up"
-          data-aos-delay={index * 100}
-        >
-          <div class="flex flex-col items-center text-center space-y-4">
-            <div class="p-3 bg-red-50 rounded-lg group-hover:scale-110 transition-transform duration-300">
-              <stat.icon class="w-6 h-6 text-red-600" />
-            </div>
-            <div class="space-y-2">
-              <div class="text-3xl font-bold text-red-600">
-                {stat.value}
+      {
+        stats.map((stat, index) => (
+          <div
+            class="group relative p-8 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
+          >
+            <div class="flex flex-col items-center text-center space-y-4">
+              <div class="p-3 bg-red-50 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                <stat.icon className="w-6 h-6 text-red-600" />
               </div>
-              <div class="text-sm text-muted-foreground">
-                {stat.label}
+              <div class="space-y-2">
+                <div class="text-3xl font-bold text-red-600">{stat.value}</div>
+                <div class="text-sm text-muted-foreground">{stat.label}</div>
               </div>
             </div>
-          </div>
 
-          {/* Decorative Elements */}
-          <div class="absolute inset-0 bg-gradient-to-br from-red-500/0 to-red-500/0 group-hover:from-red-500/5 group-hover:to-transparent transition-all duration-500 rounded-xl"></div>
-        </div>
-      ))}
+            {/* Decorative Elements */}
+            <div class="absolute inset-0 bg-gradient-to-br from-red-500/0 to-red-500/0 group-hover:from-red-500/5 group-hover:to-transparent transition-all duration-500 rounded-xl" />
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>

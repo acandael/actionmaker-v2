@@ -1,13 +1,13 @@
 ---
-import { Card } from "@/components/ui/card";
-import { Mail, Phone } from "lucide-react";
+import { Card } from '@/components/ui/card';
+import { Mail, Phone } from 'lucide-react';
 ---
 
-<Card class="p-8 bg-blue-50/50">
+<Card className="p-8">
   <div class="space-y-8">
-    <div class="relative aspect-square rounded-xl overflow-hidden">
+    <div class="aspect-[4/3] relative rounded-xl overflow-hidden">
       <img
-        src="https://images.unsplash.com/photo-1528605105345-5344ea20e269?auto=format&fit=crop&q=80&w=800"
+        src="/over-actionmaker.jpg"
         alt="Team building activity"
         class="w-full h-full object-cover"
       />
@@ -17,20 +17,21 @@ import { Mail, Phone } from "lucide-react";
     <div class="space-y-4">
       <h2 class="text-xl font-semibold">We helpen je graag verder</h2>
       <p class="text-muted-foreground">
-        Via een persoonlijke en flexibele aanpak bezorgt ActionMaker jou medewerkers een leuke dag zonder zorgen.
+        Via een persoonlijke en flexibele aanpak bezorgt ActionMaker jou medewerkers een leuke dag
+        zonder zorgen.
       </p>
     </div>
 
     <div class="space-y-4">
-      <a 
-        href="tel:+32485462505" 
+      <a
+        href="tel:+32485462505"
         class="flex items-center gap-3 text-lg hover:text-red-600 transition-colors"
       >
         <Phone className="h-5 w-5" />
         0485 46 25 05
       </a>
-      <a 
-        href="mailto:info@actionmaker.be" 
+      <a
+        href="mailto:info@actionmaker.be"
         class="flex items-center gap-3 text-lg hover:text-red-600 transition-colors"
       >
         <Mail className="h-5 w-5" />
@@ -38,8 +39,8 @@ import { Mail, Phone } from "lucide-react";
       </a>
     </div>
 
-    <a 
-      href="/over-actionmaker" 
+    <a
+      href="/over-actionmaker"
       class="inline-block text-red-600 hover:text-red-700 font-medium transition-colors"
     >
       Lees meer over ActionMaker
