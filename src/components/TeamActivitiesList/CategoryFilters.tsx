@@ -1,6 +1,6 @@
-import React from "react";
-import { Card } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
+import React from 'react';
+import { Card } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 interface Category {
   id: string;
@@ -26,23 +26,19 @@ export function CategoryFilters({
           key={category.id}
           href={
             selectedCategory === category.id
-              ? "/teambuildings"
-              : `/teambuildings/${category.id}`
+              ? '/teambuildings'
+              : `/teambuildings?category=${category.id}`
           }
           className="block"
         >
           <Card
             className={cn(
-              "group relative h-52 cursor-pointer overflow-hidden transition-all duration-300",
-              selectedCategory === category.id
-                ? "ring-2 ring-red-500 shadow-lg"
-                : "hover:shadow-xl"
+              'group relative h-52 cursor-pointer overflow-hidden transition-all duration-300',
+              selectedCategory === category.id ? 'ring-2 ring-red-500 shadow-lg' : 'hover:shadow-xl'
             )}
             onClick={(e) => {
               e.preventDefault();
-              onCategorySelect(
-                selectedCategory === category.id ? null : category.id
-              );
+              onCategorySelect(selectedCategory === category.id ? null : category.id);
             }}
           >
             {/* Background Image */}
@@ -65,10 +61,10 @@ export function CategoryFilters({
               {/* Category Description */}
               <p
                 className={cn(
-                  "text-sm text-white/90",
-                  "transition-opacity duration-300",
-                  "line-clamp-2",
-                  "drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]"
+                  'text-sm text-white/90',
+                  'transition-opacity duration-300',
+                  'line-clamp-2',
+                  'drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]'
                 )}
               >
                 {category.description}
@@ -87,8 +83,8 @@ export function CategoryFilters({
             {/* Interactive Overlay */}
             <div
               className={cn(
-                "absolute inset-0 bg-black/0 transition-opacity duration-300",
-                "group-hover:bg-black/20"
+                'absolute inset-0 bg-black/0 transition-opacity duration-300',
+                'group-hover:bg-black/20'
               )}
             />
           </Card>

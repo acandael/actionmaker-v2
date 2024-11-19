@@ -42,19 +42,11 @@ export function TeamActivitiesList({
 
   // Handle category selection
   const handleCategorySelect = (categoryId: string | null) => {
-    // Update URL and trigger navigation
-    const url = new URL(window.location.href);
-
-    if (categoryId === selectedCategory || !categoryId) {
-      // If deselecting or clicking same category, remove category param
-      url.searchParams.delete('category');
-      window.history.pushState({}, '', url.toString());
-      window.location.reload();
+    // Navigate to teambuildings page with category parameter
+    if (categoryId) {
+      window.location.href = `/teambuildings?category=${categoryId}`;
     } else {
-      // If selecting new category, add category param
-      url.searchParams.set('category', categoryId);
-      window.history.pushState({}, '', url.toString());
-      window.location.reload();
+      window.location.href = '/teambuildings';
     }
   };
 

@@ -2,7 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import ActivityCard from '@/components/TeamActivities/ActivityCard.astro';
-import { CategoryFilters } from '@/components/TeamActivitiesList/CategoryFilters';
+import { TeamActivitiesList } from '@/components/TeamActivitiesList';
 
 // Get the category from the URL parameter
 const categoryId = Astro.url.searchParams.get('category');
@@ -11,10 +11,26 @@ const categoryId = Astro.url.searchParams.get('category');
 const activities = await getCollection('activities');
 const categories = await getCollection('categories');
 
+// Map activities to match the TeamActivity interface
+const mappedActivities = activities.map((activity) => ({
+  id: activity.id,
+  title: activity.data.title || '',
+  description: activity.data.description || '',
+  image: activity.data.image || '',
+  category: '', // Default empty string if not needed
+  categories: activity.data.categories || [],
+  duration: activity.data.duration || '',
+  groupSize: activity.data.groupSize || '',
+  price: '', // Add if you have this data
+  availability: activity.data.availability || '',
+  features: activity.data.features,
+  gallery: activity.data.gallery,
+}));
+
 // Filter activities if a category is selected
 const filteredActivities = categoryId
-  ? activities.filter((activity) => activity.data.categories.includes(categoryId))
-  : activities;
+  ? mappedActivities.filter((activity) => activity.categories.includes(categoryId))
+  : mappedActivities;
 
 // Get category details if a category is selected
 const selectedCategory = categoryId ? categories.find((cat) => cat.id === categoryId) : null;
@@ -26,75 +42,13 @@ const categoriesData = categories.map((cat) => ({
   description: cat.data.description,
   image: cat.data.image,
 }));
-
-// Handle category selection
-const handleCategorySelect = (categoryId: string | null) => {
-  const url = new URL(window.location.href);
-  if (categoryId) {
-    url.searchParams.set('category', categoryId);
-  } else {
-    url.searchParams.delete('category');
-  }
-  window.location.href = url.toString();
-};
 ---
 
 <Layout title={`${selectedCategory?.data.title || 'Alle'} Teambuilding Activities - ActionMaker`}>
-  {/* Hero Section */}
-  {
-    selectedCategory && (
-      <section class="relative min-h-[40vh] flex items-center">
-        <div class="absolute inset-0 z-0">
-          <img
-            src={selectedCategory.data.image}
-            alt={selectedCategory.data.title}
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-transparent" />
-        </div>
-
-        <div class="relative z-10 max-w-7xl mx-auto px-4 py-24">
-          <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-            {selectedCategory.data.title}
-          </h1>
-          <p class="text-xl text-white/90 max-w-2xl">{selectedCategory.data.description}</p>
-        </div>
-      </section>
-    )
-  }
-
-  {/* Category Filters */}
-  <div class="max-w-7xl mx-auto px-4 py-8">
-    <CategoryFilters
-      categories={categoriesData}
-      selectedCategory={categoryId}
-      onCategorySelect={handleCategorySelect}
-      client:load
-    />
-  </div>
-
-  <section class="max-w-7xl mx-auto px-4 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {
-        filteredActivities.map((activity) => (
-          <ActivityCard
-            title={activity.data.title}
-            description={activity.data.description}
-            image={activity.data.image}
-            duration={activity.data.duration}
-            groupSize={activity.data.groupSize}
-            href={`/teambuildings/${activity.id}`}
-          />
-        ))
-      }
-    </div>
-
-    {
-      filteredActivities.length === 0 && (
-        <div class="text-center py-12">
-          <p class="text-xl text-muted-foreground">Geen activiteiten gevonden in deze categorie.</p>
-        </div>
-      )
-    }
-  </section>
+  <TeamActivitiesList
+    initialActivities={filteredActivities}
+    categories={categoriesData}
+    selectedCategory={categoryId}
+    client:load
+  />
 </Layout>
