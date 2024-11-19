@@ -23,7 +23,10 @@ export function ActivityGrid({ activities }: ActivityGridProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {activities.map((activity) => {
-        const href = `/teambuildings/${activity.id}`;
+        // Remove .md extension from the ID if it exists
+        const cleanId = activity.id.replace(/\.md$/, '');
+        const href = `/teambuildings/${cleanId}`;
+
         return (
           <a key={activity.id} href={href} onClick={(e) => handleClick(e, href)} className="block">
             <Card className="group overflow-hidden transition-all duration-300 hover:shadow-xl">

@@ -10,9 +10,11 @@ interface Props {
 }
 
 const { id, title, description, image, index } = Astro.props;
+const href = `/teambuildings?category=${id}`;
+console.log('Category href:', href);
 ---
 
-<a href={`/teambuildings?category=${id}`} class="block group" data-category-link={id}>
+<a {href} class="block group" data-category-link={id}>
   <Card
     className="group overflow-hidden transition-all duration-300 hover:shadow-xl translate-y-8 opacity-0"
     data-category-card

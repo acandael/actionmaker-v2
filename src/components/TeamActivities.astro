@@ -7,7 +7,7 @@ import { CategoryIcon } from './TeamActivities/CategoryIcon';
 // Get categories from content collection
 const categories = await getCollection('categories');
 
-const transformedCategories = categories.map(category => ({
+const transformedCategories = categories.map((category) => ({
   id: category.id,
   title: category.data.title,
   description: category.data.description,
@@ -16,23 +16,22 @@ const transformedCategories = categories.map(category => ({
 
 <section class="py-24 px-4 bg-background">
   <div class="max-w-7xl mx-auto">
-    <SectionTitle
-      subtitle="Welke Soort Teambuilding Zoek Je?"
-      title="Maak Je Keuze"
-    />
+    <SectionTitle subtitle="Welke Soort Teambuilding Zoek Je?" title="Maak Je Keuze" />
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {transformedCategories.map((category) => (
-        <a href={`/teambuildings/${category.id}`}>
-          <ActivityCard
-            title={category.title}
-            description={category.description}
-            image={`/images/categories/${category.id}.jpg`}
-          >
-            <CategoryIcon category={category.id} client:load />
-          </ActivityCard>
-        </a>
-      ))}
+      {
+        transformedCategories.map((category) => (
+          <a href={`/teambuildings?category=${category.id}`}>
+            <ActivityCard
+              title={category.title}
+              description={category.description}
+              image={`/images/categories/${category.id}.jpg`}
+            >
+              <CategoryIcon category={category.id} client:load />
+            </ActivityCard>
+          </a>
+        ))
+      }
     </div>
   </div>
 </section>

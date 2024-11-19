@@ -42,7 +42,6 @@ export function TeamActivitiesList({
 
   // Handle category selection
   const handleCategorySelect = (categoryId: string | null) => {
-    // Navigate to teambuildings page with category parameter
     if (categoryId) {
       window.location.href = `/teambuildings?category=${categoryId}`;
     } else {
@@ -64,10 +63,7 @@ export function TeamActivitiesList({
       </div>
 
       <CategoryFilters
-        categories={categories.map((cat) => ({
-          ...cat,
-          image: `/images/categories/${cat.id}.jpg`,
-        }))}
+        categories={categories}
         selectedCategory={selectedCategory}
         onCategorySelect={handleCategorySelect}
       />

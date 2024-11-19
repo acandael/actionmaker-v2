@@ -1,7 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import ActivityCard from '@/components/TeamActivities/ActivityCard.astro';
 import { TeamActivitiesList } from '@/components/TeamActivitiesList';
 
 // Get the category from the URL parameter
@@ -52,3 +51,4 @@ const categoriesData = categories.map((cat) => ({
     client:load
   />
 </Layout>
+
