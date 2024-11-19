@@ -1,7 +1,7 @@
-import React from "react";
-import { CategoryFilters } from "./CategoryFilters";
-import { ActivityGrid } from "./ActivityGrid";
-import { Separator } from "@/components/ui/separator";
+import React from 'react';
+import { CategoryFilters } from './CategoryFilters';
+import { ActivityGrid } from './ActivityGrid';
+import { Separator } from '@/components/ui/separator';
 
 interface TeamActivity {
   id: string;
@@ -35,6 +35,11 @@ export function TeamActivitiesList({
   categories = [],
   selectedCategory = null,
 }: TeamActivitiesListProps) {
+  // Filter activities based on selected category
+  const filteredActivities = selectedCategory
+    ? initialActivities.filter((activity) => activity.categories.includes(selectedCategory))
+    : initialActivities;
+
   // Handle category selection
   const handleCategorySelect = (categoryId: string | null) => {
     // Update URL and trigger navigation
@@ -42,13 +47,13 @@ export function TeamActivitiesList({
 
     if (categoryId === selectedCategory || !categoryId) {
       // If deselecting or clicking same category, remove category param
-      url.searchParams.delete("category");
-      window.history.pushState({}, "", url.toString());
+      url.searchParams.delete('category');
+      window.history.pushState({}, '', url.toString());
       window.location.reload();
     } else {
       // If selecting new category, add category param
-      url.searchParams.set("category", categoryId);
-      window.history.pushState({}, "", url.toString());
+      url.searchParams.set('category', categoryId);
+      window.history.pushState({}, '', url.toString());
       window.location.reload();
     }
   };
@@ -59,14 +64,10 @@ export function TeamActivitiesList({
     <div className="max-w-7xl mx-auto px-4">
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold tracking-tight mb-4">
-          {currentCategory
-            ? `${currentCategory.title}`
-            : "Vind je teambuilding in ons breed gamma"}
+          {currentCategory ? `${currentCategory.title}` : 'Vind je teambuilding in ons breed gamma'}
         </h1>
         {currentCategory && (
-          <p className="text-lg text-muted-foreground">
-            {currentCategory.description}
-          </p>
+          <p className="text-lg text-muted-foreground">{currentCategory.description}</p>
         )}
       </div>
 
@@ -83,14 +84,14 @@ export function TeamActivitiesList({
         <Separator className="max-w-2xl mx-auto" />
       </div>
 
-      {initialActivities.length === 0 ? (
+      {filteredActivities.length === 0 ? (
         <div className="text-center py-12">
           <p className="text-lg text-muted-foreground">
             Geen activiteiten gevonden voor deze categorie.
           </p>
         </div>
       ) : (
-        <ActivityGrid activities={initialActivities} />
+        <ActivityGrid activities={filteredActivities} />
       )}
     </div>
   );
