@@ -1,5 +1,6 @@
 ---
 import { Card } from '@/components/ui/card';
+import { Image } from 'astro:assets';
 
 interface Props {
   id: string;
@@ -10,20 +11,20 @@ interface Props {
 }
 
 const { id, title, description, image, index } = Astro.props;
-const href = `/teambuildings?category=${id}`;
-console.log('Category href:', href);
 ---
 
-<a {href} class="block group" data-category-link={id}>
+<a href={`/teambuildings?category=${id}`} class="block group" data-category-link={id}>
   <Card
     className="group overflow-hidden transition-all duration-300 hover:shadow-xl translate-y-8 opacity-0"
     data-category-card
     data-index={index}
   >
     <div class="relative h-72 overflow-hidden">
-      <img
+      <Image
         src={image}
         alt={title}
+        width={800}
+        height={600}
         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
       />
       <div

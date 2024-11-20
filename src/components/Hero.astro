@@ -1,57 +1,44 @@
 ---
+import { Image } from 'astro:assets';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+
+// Import your hero image
+import heroImage from '../assets/hero.jpg';
 ---
 
-<section class="relative min-h-[90vh] flex items-center justify-center" aria-label="Hero section">
-  <!-- Background Image with Preload -->
+<section class="relative min-h-screen flex items-center -mt-[64px]">
   <div class="absolute inset-0 z-0">
-    <img
-      src="/hero.jpg"
-      alt=""
-      role="presentation"
+    <Image
+      src={heroImage}
+      alt="Team building activities"
       class="w-full h-full object-cover"
-      loading="eager"
-      fetchpriority="high"
+      quality="high"
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/20"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-transparent"></div>
   </div>
 
-  <!-- Content -->
-  <div class="relative z-10 max-w-5xl mx-auto px-4 text-center text-white">
-    <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6 tracking-tight">
-      Een breed gamma van
-      <br />
-      <span class="text-red-500 inline-block mt-2">unieke</span> teambuildings
-    </h1>
-    <p class="text-lg sm:text-xl md:text-2xl mb-12 text-white/90 max-w-2xl mx-auto">
-      Versterk je team met een leuke dag zonder zorgen
-    </p>
-    <a href="/teambuildings">
-      <Button
-        size="lg"
-        className="bg-red-600 hover:bg-red-700 text-white group px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-        aria-label="Vind je ideale teambuilding"
-        client:load
-      >
-        Vind je ideale teambuilding
-        <ArrowRight
-          className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"
-          aria-hidden="true"
-        />
-      </Button>
-    </a>
-  </div>
-
-  <!-- Scroll Indicator -->
-  <div
-    class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer"
-    id="scroll-indicator"
-    role="button"
-    aria-label="Scroll naar beneden"
-  >
-    <div class="w-1 h-12 rounded-full bg-white/30">
-      <div class="w-full h-1/2 bg-white rounded-full animate-pulse"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 py-24 mt-16">
+    <div class="max-w-3xl">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+        Teambuilding Activiteiten voor Bedrijven
+      </h1>
+      <p class="text-xl text-white/90 mb-8">
+        Versterk de band tussen je medewerkers met onze unieke teambuilding activiteiten.
+      </p>
+      <div>
+        <Button
+          client:load
+          className="bg-red-600 hover:bg-red-700 text-white group h-auto py-6 px-8 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+        >
+          <a href="/teambuildings" class="flex items-center gap-2">
+            Vind je teambuilding
+            <ArrowRight
+              className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </a>
+        </Button>
+      </div>
     </div>
   </div>
 </section>
