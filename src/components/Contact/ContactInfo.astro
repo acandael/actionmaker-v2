@@ -1,14 +1,20 @@
 ---
 import { Card } from '@/components/ui/card';
+import { Image } from 'astro:assets';
 import { Mail, Phone } from 'lucide-react';
+
+// Import your contact image
+import contactImage from '../../assets/over-actionmaker.jpg'; // adjust path to match your image location
 ---
 
 <Card className="p-8">
   <div class="space-y-8">
     <div class="aspect-[4/3] relative rounded-xl overflow-hidden">
-      <img
-        src="/over-actionmaker.jpg"
+      <Image
+        src={contactImage}
         alt="Team building activity"
+        width={534}
+        height={400}
         class="w-full h-full object-cover"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>

@@ -1,5 +1,6 @@
 ---
-
+import { Image } from 'astro:assets';
+import contactImage from '../../assets/over-actionmaker.jpg';
 ---
 
 <section class="relative py-24 px-4 bg-background">
@@ -29,11 +30,12 @@
       {/* Image */}
       <div class="relative">
         <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/over-actionmaker.jpg"
+          <Image
+            src={contactImage}
             alt="Team building activity"
+            width={534}
+            height={400}
             class="w-full h-full object-cover"
-            loading="eager"
           />
           <div class="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent"></div>
         </div>
