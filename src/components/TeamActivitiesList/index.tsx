@@ -55,7 +55,7 @@ export function TeamActivitiesList({
   const currentCategory = categories.find((c) => c.id === selectedCategory);
 
   return (
-    <div className="max-w-7xl mx-auto px-4">
+    <div className="max-w-7xl mx-auto px-4 pt-20">
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold tracking-tight mb-4">
           {currentCategory ? `${currentCategory.title}` : 'Vind je teambuilding in ons breed gamma'}
