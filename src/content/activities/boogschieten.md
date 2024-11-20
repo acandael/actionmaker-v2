@@ -1,22 +1,24 @@
 ---
-title: "Boogschieten"
-description: "Een uitdagende activiteit die precisie en focus combineert."
-image: "/src/assets/activities/boogschieten/boogschieten-1.jpg"
-categories: ["outdoor", "indoor"]
-duration: "2 - 3 uur"
-groupSize: "8 - 30 personen"
-availability: "Het hele jaar door"
+title: 'Boogschieten'
+description: 'Boogschieten teambuilding'
+image: '/images/activities/boogschieten/boogschieten-1.jpg'
 features:
-  - "Professionele begeleiding"
-  - "Alle materiaal inbegrepen"
-  - "Verschillende doelwitten"
-  - "Competitie-element mogelijk"
+  - 'ervaren instructeurs'
+  - 'basistechnieken boogschieten'
+  - 'teamspirit'
 gallery:
-  - "/src/assets/activities/boogschieten/boogschieten-2.jpg"
-  - "/src/assets/activities/boogschieten/boogschieten-3.jpg"
-  - "/src/assets/activities/boogschieten/boogschieten-4.jpg"
-  - "/src/assets/activities/boogschieten/boogschieten-5.jpg"
-  - "/src/assets/activities/boogschieten/boogschieten-6.jpg"
+  [
+    '/images/activities/boogschieten/boogschieten-2.jpg',
+    '/images/activities/boogschieten/boogschieten-3.jpg',
+    '/images/activities/boogschieten/boogschieten-4.jpg',
+    '/images/activities/boogschieten/boogschieten-5.jpg',
+    '/images/activities/boogschieten/boogschieten-6.jpg',
+    '/images/activities/boogschieten/boogschieten-7.jpg',
+  ]
+categories: ['outdoor', 'actief']
+duration: '2-3 uur'
+groupSize: '8-50 personen'
+availability: 'Op aanvraag'
 ---
 
 Boogschieten is een klassieke sport die concentratie, techniek en precisie vereist. Onder begeleiding van ervaren instructeurs leren deelnemers de basistechnieken van het boogschieten in een veilige en ontspannen omgeving.

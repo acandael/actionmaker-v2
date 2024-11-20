@@ -1,12 +1,19 @@
 ---
 title: 'Indoor Lasershooting'
-description: 'Tactisch lasergamen'
-image: '/images/activities/indoor-lasershooting/indoor-lasershooting-1.jpg'
+description: 'Indoor lasershooting is een spannende teamactiviteit waarbij strategie, communicatie en teamwork centraal staan.'
+image: '/images/activities/indoor-lasershooting/indoorlasershooting-1.jpg'
+features:
+  - 'spannende teamactiviteit'
+  - 'communicatie'
+  - 'teamwork'
 gallery:
   [
-    '/images/activities/indoor-lasershooting/indoor-lasershooting-1.jpg',
-    '/images/activities/indoor-lasershooting/indoor-lasershooting-2.jpg',
-    '/images/activities/indoor-lasershooting/indoor-lasershooting-3.jpg',
+    '/images/activities/indoor-lasershooting/indoorlasershooting-2.jpg',
+    '/images/activities/indoor-lasershooting/indoorlasershooting-3.jpg',
+    '/images/activities/indoor-lasershooting/indoorlasershooting-4.jpg',
+    '/images/activities/indoor-lasershooting/indoorlasershooting-5.jpg',
+    '/images/activities/indoor-lasershooting/indoorlasershooting-6.jpg',
+    '/images/activities/indoor-lasershooting/indoorlasershooting-7.jpg',
   ]
 categories: ['indoor']
 duration: '1-2 uur'

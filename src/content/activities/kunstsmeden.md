@@ -1,24 +1,25 @@
 ---
-title: "Kunstsmeden"
-description: "Het smidsberoep is een zeer oud beroep en heeft in het verleden vele werkstukken voortgebracht."
-image: "/src/assets/activities/kunstsmeden/kunstsmeden-1.jpg"
-categories: ["workshop"]
-duration: "+/- 2u."
-groupSize: "Maximum 20 deelnemers per sessie"
-availability: "Het hele jaar door"
+title: 'Kunstsmeden'
+description: 'Het smidsberoep is een zeer oud beroep en heeft in het verleden vele werkstukken voortgebracht.'
+image: '/images/activities/kunstsmeden/kunstsmeden-1.jpg'
+categories: ['workshop']
+duration: '+/- 2u.'
+groupSize: 'Maximum 20 deelnemers per sessie'
+availability: 'Het hele jaar door'
 features:
-  - "ervaren smid"
-  - "een uniek cadeau"
-  - "veiligheidsbril"
+  - 'ervaren smid'
+  - 'een uniek cadeau'
+  - 'veiligheidsbril'
 
 gallery:
-  - "/src/assets/activities/kunstsmeden/kunstsmeden-1.jpg"
-  - "/src/assets/activities/kunstsmeden/kunstsmeden-2.jpg"
-  - "/src/assets/activities/kunstsmeden/kunstsmeden-3.jpg"
-  - "/src/assets/activities/kunstsmeden/kunstsmeden-4.jpg"
-  - "/src/assets/activities/kunstsmeden/kunstsmeden-5.jpg"
-  - "/src/assets/activities/kunstsmeden/kunstsmeden-6.jpg"
-  - "/src/assets/activities/kunstsmeden/kunstsmeden-7.jpg"
+  [
+    '/images/activities/kunstsmeden/kunstsmeden-2.jpg',
+    '/images/activities/kunstsmeden/kunstsmeden-3.jpg',
+    '/images/activities/kunstsmeden/kunstsmeden-4.jpg',
+    '/images/activities/kunstsmeden/kunstsmeden-5.jpg',
+    '/images/activities/kunstsmeden/kunstsmeden-6.jpg',
+    '/images/activities/kunstsmeden/kunstsmeden-7.jpg',
+  ]
 ---
 
 Tot halverwege de twintigste eeuw had vrijwel iedere plaats zijn eigen smederij. Sindsdien is het beroep veel zeldzamer geworden. Machinaal smeden op industriële schaal wordt nog wel veel toegepast.

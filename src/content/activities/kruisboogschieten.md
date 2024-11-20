@@ -1,23 +1,25 @@
 ---
-title: "Kruisboogschieten"
-description: "Een spannende activiteit met historische kruisbogen."
-image: "/src/assets/activities/kruisboogschieten/kruisboogschieten-1.jpg"
-categories: ["indoor", "outdoor"]
-duration: "2 - 3 uur"
-groupSize: "8 - 30 personen"
-availability: "Het hele jaar door"
+title: 'Kruisboogschieten'
+description: 'Een spannende activiteit met historische kruisbogen.'
+image: '/images/activities/kruisboogschieten/kruisboogschieten-1.jpg'
+categories: ['indoor', 'outdoor']
+duration: '2 - 3 uur'
+groupSize: '8 - 30 personen'
+availability: 'Het hele jaar door'
 features:
-  - "Professionele begeleiding"
-  - "Alle materiaal inbegrepen"
-  - "Verschillende doelwitten"
-  - "Competitie-element mogelijk"
+  - 'Professionele begeleiding'
+  - 'Alle materiaal inbegrepen'
+  - 'Verschillende doelwitten'
+  - 'Competitie-element mogelijk'
 gallery:
-  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-2.jpg"
-  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-3.jpg"
-  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-4.jpg"
-  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-5.jpg"
-  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-6.jpg"
-  - "/src/assets/activities/kruisboogschieten/kruisboogschieten-7.jpg"
+  [
+    '/images/activities/kruisboogschieten/kruisboogschieten-2.jpg',
+    '/images/activities/kruisboogschieten/kruisboogschieten-3.jpg',
+    '/images/activities/kruisboogschieten/kruisboogschieten-4.jpg',
+    '/images/activities/kruisboogschieten/kruisboogschieten-5.jpg',
+    '/images/activities/kruisboogschieten/kruisboogschieten-6.jpg',
+    '/images/activities/kruisboogschieten/kruisboogschieten-7.jpg',
+  ]
 ---
 
 Kruisboogschieten is een historische sport die precisie, concentratie en een vaste hand vereist. Onder begeleiding van ervaren instructeurs leren deelnemers de basistechnieken van het kruisboogschieten in een veilige en gecontroleerde omgeving.

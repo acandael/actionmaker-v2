@@ -1,23 +1,25 @@
 ---
-title: "Chocoladeworkshop"
-description: "Een chocoladeworkshop onder leiding van een professionele chocolatier."
-image: "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-1.jpg"
-categories: ["culinair", "workshop"]
-duration: "2.5 - 3 uur"
-groupSize: "8 - 25 personen"
-availability: "Het hele jaar door"
+title: 'Chocoladeworkshop'
+description: 'Een chocoladeworkshop onder leiding van een professionele chocolatier.'
+image: '/src/assets/activities/chocoladeworkshop/chocoladeworkshop-1.jpg'
+categories: ['culinair', 'workshop']
+duration: '2.5 - 3 uur'
+groupSize: '8 - 25 personen'
+availability: 'Het hele jaar door'
 features:
-  - "Professionele chocolatier"
-  - "Alle ingrediënten inbegrepen"
-  - "Eigen creaties maken"
-  - "Proeverij van verschillende chocolades"
+  - 'Professionele chocolatier'
+  - 'Alle ingrediënten inbegrepen'
+  - 'Eigen creaties maken'
+  - 'Proeverij van verschillende chocolades'
 gallery:
-  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-2.jpg"
-  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-3.jpg"
-  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-4.jpg"
-  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-5.jpg"
-  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-6.jpg"
-  - "/src/assets/activities/chocoladeworkshop/chocoladeworkshop-7.jpg"
+  [
+    '/images/activities/chocoladeworkshop/chocoladeworkshop-2.jpg',
+    '/images/activities/chocoladeworkshop/chocoladeworkshop-3.jpg',
+    '/images/activities/chocoladeworkshop/chocoladeworkshop-4.jpg',
+    '/images/activities/chocoladeworkshop/chocoladeworkshop-5.jpg',
+    '/images/activities/chocoladeworkshop/chocoladeworkshop-6.jpg',
+    '/images/activities/chocoladeworkshop/chocoladeworkshop-7.jpg',
+  ]
 ---
 
 De chocoladeworkshop is een heerlijke combinatie van teambuilding en culinair genot. Onder leiding van een professionele chocolatier ontdekken deelnemers de kunst van het chocolade maken en de rijke geschiedenis van deze geliefde lekkernij.

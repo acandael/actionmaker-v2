@@ -1,20 +1,28 @@
 ---
-title: "Sumoworstelen"
-description: "Een hilarische activiteit waarbij deelnemers in opblaasbare sumopakken tegen elkaar strijden."
-image: "/src/assets/activities/sumoworstelen/sumoworstelen-1.jpg"
-categories: ["actief", "indoor", "outdoor"]
-duration: "1 - 2 uur"
-groupSize: "8 - 30 personen"
-availability: "Het hele jaar door"
+title: 'Sumoworstelen'
+description: 'Een hilarische activiteit waarbij deelnemers in opblaasbare sumopakken tegen elkaar strijden.'
+image: '/images/activities/sumoworstelen/sumoworstelen-1.jpg'
+categories: ['actief', 'indoor', 'outdoor']
+duration: '1 - 2 uur'
+groupSize: '8 - 30 personen'
+availability: 'Het hele jaar door'
 features:
-  - "Opblaasbare sumopakken"
-  - "Veilige matten"
-  - "Professionele begeleiding"
-  - "Toernooi-formule mogelijk"
+  - 'Opblaasbare sumopakken'
+  - 'Veilige matten'
+  - 'Professionele begeleiding'
+  - 'Toernooi-formule mogelijk'
 gallery:
-  - "/src/assets/activities/sumoworstelen/sumoworstelen-2.jpg"
-  - "/src/assets/activities/sumoworstelen/sumoworstelen-3.jpg"
-  - "/src/assets/activities/sumoworstelen/sumoworstelen-4.jpg"
-  - "/src/assets/activities/sumoworstelen/sumoworstelen-5.jpg"
-  - "/src/assets/activities/sumoworstelen/sumoworstelen-6.jpg"
+  [
+    '/images/activities/sumoworstelen/sumoworstelen-2.jpg',
+    '/images/activities/sumoworstelen/sumoworstelen-3.jpg',
+    '/images/activities/sumoworstelen/sumoworstelen-4.jpg',
+    '/images/activities/sumoworstelen/sumoworstelen-5.jpg',
+    '/images/activities/sumoworstelen/sumoworstelen-6.jpg',
+    '/images/activities/sumoworstelen/sumoworstelen-7.jpg',
+  ]
 ---
+
+Sumoworstelen is duwen en trekken totdat je tegenstander erbij neervalt. Met 2 of 4 personen betreedt u de mat en start u met de bekende Japanse sumogroet. Op het startsignaal van de spelbegeleider gaat de wedstrijd van start en moeten de deelnemers elkaar van de mat af duwen voor een half punt of omgooien voor een heel punt. Tot slot mag de winnaar van de match een overwinningsjump op de verliezer maken. Iedereen kan meerdere keren deelnemen.
+
+Nieuwigheid is de sumo tweeling, het is een erg leuke variant op het welbekende sumo worstel spel, maar bij deze vergt het dus goed teamwork met je sumo-partner.
+Een partijtje sumoworstelen vergt veel van de conditie en van de lachspieren van de toeschouwers, dus houdt uw camera klaar!

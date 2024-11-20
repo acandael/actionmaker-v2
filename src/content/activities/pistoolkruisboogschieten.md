@@ -1,22 +1,24 @@
 ---
-title: "Pistoolkruisboogschieten"
-description: "Een unieke combinatie van precisieschieten met pistoolkruisbogen."
-image: "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-1.jpg"
-categories: ["indoor", "outdoor"]
-duration: "2 - 3 uur"
-groupSize: "8 - 30 personen"
-availability: "Het hele jaar door"
+title: 'Pistoolkruisboogschieten'
+description: 'Een unieke combinatie van precisieschieten met pistoolkruisbogen.'
+image: '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-1.jpg'
+categories: ['indoor', 'outdoor']
+duration: '2 - 3 uur'
+groupSize: '8 - 30 personen'
+availability: 'Het hele jaar door'
 features:
-  - "Professionele begeleiding"
-  - "Alle materiaal inbegrepen"
-  - "Verschillende doelwitten"
-  - "Competitie-element mogelijk"
+  - 'Professionele begeleiding'
+  - 'Alle materiaal inbegrepen'
+  - 'Verschillende doelwitten'
+  - 'Competitie-element mogelijk'
 gallery:
-  - "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-2.jpg"
-  - "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-3.jpg"
-  - "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-4.jpg"
-  - "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-5.jpg"
-  - "/src/assets/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-6.jpg"
+  [
+    '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-2.jpg',
+    '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-3.jpg',
+    '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-4.jpg',
+    '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-5.jpg',
+    '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-6.jpg',
+  ]
 ---
 
 Pistoolkruisboogschieten combineert het beste van twee werelden: de precisie van een kruisboog met de handzaamheid van een pistool. Deze unieke activiteit biedt een spannende uitdaging voor iedereen die wil kennismaken met deze bijzondere vorm van schietsport.

@@ -1,24 +1,26 @@
 ---
-title: "Scherminitiatie"
-description: "Leer de basis van het schermen in deze spannende initiatie."
-image: "/src/assets/activities/scherminitiatie/scherminitiatie-1.jpg"
-categories: ["actief", "indoor", "outdoor"]
-duration: "2 - 3 uur"
-groupSize: "8 - 30 personen"
-availability: "Het hele jaar door"
+title: 'Scherminitiatie'
+description: 'Leer de basis van het schermen in deze spannende initiatie.'
+image: '/images/activities/scherminitiatie/scherminitiatie-1.jpg'
+categories: ['actief', 'indoor', 'outdoor']
+duration: '2 - 3 uur'
+groupSize: '8 - 30 personen'
+availability: 'Het hele jaar door'
 features:
-  - "Professionele scherminstructeurs"
-  - "Alle materiaal inbegrepen"
-  - "Veilige en begeleide initiatie"
-  - "Onderlinge wedstrijdjes mogelijk"
+  - 'Professionele scherminstructeurs'
+  - 'Alle materiaal inbegrepen'
+  - 'Veilige en begeleide initiatie'
+  - 'Onderlinge wedstrijdjes mogelijk'
 gallery:
-  - "/src/assets/activities/scherminitiatie/scherminitiatie-2.jpg"
-  - "/src/assets/activities/scherminitiatie/scherminitiatie-3.jpg"
-  - "/src/assets/activities/scherminitiatie/scherminitiatie-4.jpg"
-  - "/src/assets/activities/scherminitiatie/scherminitiatie-5.jpg"
-  - "/src/assets/activities/scherminitiatie/scherminitiatie-6.jpg"
-  - "/src/assets/activities/scherminitiatie/scherminitiatie-7.jpg"
-  - "/src/assets/activities/scherminitiatie/scherminitiatie-8.jpg"
+  [
+    '/images/activities/scherminitiatie/scherminitiatie-2.jpg',
+    '/images/activities/scherminitiatie/scherminitiatie-3.jpg',
+    '/images/activities/scherminitiatie/scherminitiatie-4.jpg',
+    '/images/activities/scherminitiatie/scherminitiatie-5.jpg',
+    '/images/activities/scherminitiatie/scherminitiatie-6.jpg',
+    '/images/activities/scherminitiatie/scherminitiatie-7.jpg',
+    '/images/activities/scherminitiatie/scherminitiatie-8.jpg',
+  ]
 ---
 
 De initiatie schermen is een unieke en spannende activiteit die perfect geschikt is voor teambuilding. Tijdens deze sessie maken deelnemers kennis met de basisbeginselen van het schermen, een sport die niet alleen fysieke behendigheid vereist maar ook strategisch inzicht en snelle besluitvorming.
