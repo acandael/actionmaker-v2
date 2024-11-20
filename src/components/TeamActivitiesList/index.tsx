@@ -42,11 +42,14 @@ export function TeamActivitiesList({
 
   // Handle category selection
   const handleCategorySelect = (categoryId: string | null) => {
+    // Update URL and trigger navigation
+    const url = new URL(window.location.href);
     if (categoryId) {
-      window.location.href = `/teambuildings?category=${categoryId}`;
+      url.searchParams.set('category', categoryId);
     } else {
-      window.location.href = '/teambuildings';
+      url.searchParams.delete('category');
     }
+    window.location.href = url.toString();
   };
 
   const currentCategory = categories.find((c) => c.id === selectedCategory);
@@ -70,6 +73,15 @@ export function TeamActivitiesList({
 
       <div className="mb-16">
         <Separator className="max-w-2xl mx-auto" />
+      </div>
+
+      {/* Added results count message */}
+      <div className="text-center mb-8">
+        <p className="text-muted-foreground">
+          {selectedCategory
+            ? `${filteredActivities.length} activiteit${filteredActivities.length !== 1 ? 'en' : ''} gevonden in ${currentCategory?.title.toLowerCase()}`
+            : `${filteredActivities.length} activiteit${filteredActivities.length !== 1 ? 'en' : ''} beschikbaar`}
+        </p>
       </div>
 
       {filteredActivities.length === 0 ? (
