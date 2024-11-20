@@ -1,23 +1,17 @@
 ---
-title: "Indoor Lasershooting"
-description: "Een spannend lasergame avontuur in een indoor arena."
-image: "/src/assets/activities/indoor-lasershooting/indoorlasershooting-1.jpg"
-categories: ["indoor"]
-duration: "1.5 - 2 uur"
-groupSize: "8 - 40 personen"
-availability: "Het hele jaar door"
-features:
-  - "Professionele uitrusting"
-  - "Verschillende spelmodi"
-  - "Indoor arena"
-  - "Team-based gameplay"
+title: 'Indoor Lasershooting'
+description: 'Tactisch lasergamen'
+image: '/images/activities/indoor-lasershooting/indoor-lasershooting-1.jpg'
 gallery:
-  - "/src/assets/activities/indoor-lasershooting/indoorlasershooting-2.jpg"
-  - "/src/assets/activities/indoor-lasershooting/indoorlasershooting-3.jpg"
-  - "/src/assets/activities/indoor-lasershooting/indoorlasershooting-4.jpg"
-  - "/src/assets/activities/indoor-lasershooting/indoorlasershooting-5.jpg"
-  - "/src/assets/activities/indoor-lasershooting/indoorlasershooting-6.jpg"
-  - "/src/assets/activities/indoor-lasershooting/indoorlasershooting-7.jpg"
+  [
+    '/images/activities/indoor-lasershooting/indoor-lasershooting-1.jpg',
+    '/images/activities/indoor-lasershooting/indoor-lasershooting-2.jpg',
+    '/images/activities/indoor-lasershooting/indoor-lasershooting-3.jpg',
+  ]
+categories: ['indoor']
+duration: '1-2 uur'
+groupSize: '8-30 personen'
+availability: 'Op aanvraag'
 ---
 
 Indoor lasershooting is een spannende teamactiviteit waarbij strategie, communicatie en teamwork centraal staan. In een speciaal ingerichte indoor arena nemen teams het tegen elkaar op in verschillende uitdagende spelmodi.
