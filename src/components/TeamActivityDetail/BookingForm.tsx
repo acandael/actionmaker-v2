@@ -2,13 +2,13 @@ import React, { useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
+import { toast } from 'sonner';
 
 interface BookingFormProps {
   activityTitle: string;
 }
 
 export function BookingForm({ activityTitle }: BookingFormProps) {
-  const [showSuccess, setShowSuccess] = React.useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -32,25 +32,19 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
 
       // Reset form and show success message
       formRef.current?.reset();
-      setShowSuccess(true);
-      // Hide message after 5 seconds
-      setTimeout(() => {
-        setShowSuccess(false);
-      }, 5000);
+      toast('Bedankt voor je boeking!', {
+        description: 'We nemen zo snel mogelijk contact met je op.',
+      });
     } catch (error) {
       console.error('Error:', error);
-      alert('Er is iets misgegaan. Probeer het later opnieuw.');
+      toast('Er is iets misgegaan', {
+        description: 'Probeer het later opnieuw of neem contact met ons op.',
+      });
     }
   };
 
   return (
     <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
-      {showSuccess && (
-        <div className="mb-6 rounded-xl bg-green-50 p-4 text-green-700 border border-green-200">
-          Bedankt voor je boeking! We nemen zo snel mogelijk contact met je op.
-        </div>
-      )}
-
       <form ref={formRef} className="space-y-8" onSubmit={handleSubmit}>
         <input type="hidden" name="activityTitle" value={activityTitle} />
 

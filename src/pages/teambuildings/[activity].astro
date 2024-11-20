@@ -7,6 +7,7 @@ import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2 } from 'lucide-r
 import { BookingForm } from '@/components/TeamActivityDetail/BookingForm';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import { Image } from 'astro:assets';
+import { Toaster } from 'sonner';
 
 // Get the activity ID from the URL
 const { activity: activityId } = Astro.params;
@@ -22,6 +23,7 @@ const { Content } = await activity.render();
 ---
 
 <Layout title={`${activity.data.title} - ActionMaker`}>
+  <Toaster richColors closeButton position="top-right" />
   {/* Hero Section */}
   <section class="relative min-h-[60vh] flex items-center">
     <div class="absolute inset-0 z-0">
