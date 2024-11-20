@@ -1,22 +1,47 @@
-import React, { useRef } from 'react';
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import * as z from 'zod';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
 import { toast } from 'sonner';
+
+// Define the form schema with Zod
+const formSchema = z.object({
+  activityTitle: z.string(),
+  firstName: z.string().min(2, 'Voornaam moet minimaal 2 karakters bevatten'),
+  lastName: z.string().min(2, 'Achternaam moet minimaal 2 karakters bevatten'),
+  email: z.string().email('Ongeldig e-mailadres'),
+  phone: z.string().min(10, 'Ongeldig telefoonnummer'),
+  date: z.string().min(1, 'Datum is verplicht'),
+  groupSize: z.string().min(1, 'Aantal personen is verplicht'),
+  hours: z.string().min(1, 'Aantal uren is verplicht'),
+  budget: z.string().optional(),
+  location: z.string().optional(),
+  message: z.string().optional(),
+});
+
+type FormData = z.infer<typeof formSchema>;
 
 interface BookingFormProps {
   activityTitle: string;
 }
 
 export function BookingForm({ activityTitle }: BookingFormProps) {
-  const formRef = useRef<HTMLFormElement>(null);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      activityTitle,
+    },
+  });
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
-
+  const onSubmit = async (data: FormData) => {
     try {
       const response = await fetch('/api/booking', {
         method: 'POST',
@@ -30,23 +55,24 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
         throw new Error('Er is iets misgegaan');
       }
 
-      // Reset form and show success message
-      formRef.current?.reset();
+      reset();
       toast('Bedankt voor je boeking!', {
         description: 'We nemen zo snel mogelijk contact met je op.',
+        style: { background: 'green', color: 'white' },
       });
     } catch (error) {
       console.error('Error:', error);
       toast('Er is iets misgegaan', {
         description: 'Probeer het later opnieuw of neem contact met ons op.',
+        style: { background: 'red', color: 'white' },
       });
     }
   };
 
   return (
     <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
-      <form ref={formRef} className="space-y-8" onSubmit={handleSubmit}>
-        <input type="hidden" name="activityTitle" value={activityTitle} />
+      <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
+        <input type="hidden" {...register('activityTitle')} />
 
         <div className="space-y-2">
           <h3 className="text-2xl font-semibold">Boek deze activiteit</h3>
@@ -64,13 +90,11 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               Voornaam
             </label>
             <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              required
+              {...register('firstName')}
               className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
               placeholder="John"
             />
+            {errors.firstName && <p className="text-sm text-red-500">{errors.firstName.message}</p>}
           </div>
 
           <div className="space-y-2 group">
@@ -81,13 +105,11 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               Achternaam
             </label>
             <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              required
+              {...register('lastName')}
               className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
               placeholder="Doe"
             />
+            {errors.lastName && <p className="text-sm text-red-500">{errors.lastName.message}</p>}
           </div>
         </div>
 
@@ -99,13 +121,11 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             E-mailadres
           </label>
           <input
-            type="email"
-            id="email"
-            name="email"
-            required
+            {...register('email')}
             className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
             placeholder="john.doe@company.com"
           />
+          {errors.email && <p className="text-sm text-red-500">{errors.email.message}</p>}
         </div>
 
         <div className="space-y-2 group">
@@ -116,13 +136,11 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             Telefoonnummer
           </label>
           <input
-            type="tel"
-            id="phone"
-            name="phone"
-            required
+            {...register('phone')}
             className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
             placeholder="+32 123 45 67 89"
           />
+          {errors.phone && <p className="text-sm text-red-500">{errors.phone.message}</p>}
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6">
@@ -135,11 +153,10 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             </label>
             <input
               type="date"
-              id="date"
-              name="date"
-              required
+              {...register('date')}
               className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
             />
+            {errors.date && <p className="text-sm text-red-500">{errors.date.message}</p>}
           </div>
 
           <div className="space-y-2 group">
@@ -151,13 +168,11 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             </label>
             <input
               type="number"
-              id="groupSize"
-              name="groupSize"
-              min="1"
-              required
+              {...register('groupSize')}
               className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
               placeholder="10"
             />
+            {errors.groupSize && <p className="text-sm text-red-500">{errors.groupSize.message}</p>}
           </div>
         </div>
 
@@ -171,13 +186,11 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             </label>
             <input
               type="number"
-              id="hours"
-              name="hours"
-              min="1"
-              required
+              {...register('hours')}
               className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
               placeholder="2"
             />
+            {errors.hours && <p className="text-sm text-red-500">{errors.hours.message}</p>}
           </div>
 
           <div className="space-y-2 group">
@@ -185,17 +198,15 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               htmlFor="budget"
               className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
             >
-              Budget
+              Budget (optioneel)
             </label>
             <input
               type="number"
-              id="budget"
-              name="budget"
-              min="0"
-              required
+              {...register('budget')}
               className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
               placeholder="1000"
             />
+            {errors.budget && <p className="text-sm text-red-500">{errors.budget.message}</p>}
           </div>
         </div>
 
@@ -204,16 +215,14 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             htmlFor="location"
             className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
           >
-            Locatie
+            Locatie (laat veld blank indien ActionMaker locatie moet voorzien)
           </label>
           <input
-            type="text"
-            id="location"
-            name="location"
-            required
+            {...register('location')}
             className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
             placeholder="Adres of stad"
           />
+          {errors.location && <p className="text-sm text-red-500">{errors.location.message}</p>}
         </div>
 
         <div className="space-y-2 group">
@@ -224,12 +233,12 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             Bericht
           </label>
           <textarea
-            id="message"
-            name="message"
+            {...register('message')}
             rows={4}
             className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300 resize-none"
             placeholder="Vertel ons meer over je wensen..."
           />
+          {errors.message && <p className="text-sm text-red-500">{errors.message.message}</p>}
         </div>
 
         <Button
