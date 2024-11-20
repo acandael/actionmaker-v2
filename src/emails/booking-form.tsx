@@ -17,6 +17,9 @@ interface BookingFormEmailProps {
   phone: string;
   date: string;
   groupSize: number;
+  hours?: number;
+  location?: string;
+  budget?: number;
   message?: string;
   activityTitle: string;
 }
@@ -28,6 +31,9 @@ export const BookingFormEmail = ({
   phone,
   date,
   groupSize,
+  hours,
+  location,
+  budget,
   message,
   activityTitle,
 }: BookingFormEmailProps) => {
@@ -59,6 +65,15 @@ export const BookingFormEmail = ({
             </Text>
             <Text style={text}>
               <strong>Aantal personen:</strong> {groupSize}
+            </Text>
+            <Text style={text}>
+              <strong>Aantal uren:</strong> {hours}
+            </Text>
+            <Text style={text}>
+              <strong>Locatie:</strong> {location}
+            </Text>
+            <Text style={text}>
+              <strong>Budget:</strong> {budget}
             </Text>
           </Section>
 

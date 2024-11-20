@@ -6,7 +6,19 @@ const resend = new Resend(import.meta.env.RESEND_API_KEY);
 export const POST = async ({ request }) => {
   try {
     const body = await request.json();
-    const { firstName, lastName, email, phone, date, groupSize, message, activityTitle } = body;
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      date,
+      groupSize,
+      hours,
+      location,
+      budget,
+      message,
+      activityTitle,
+    } = body;
 
     const data = await resend.emails.send({
       from: 'Anthony Candaele <info@anthonycandaele.com>',
@@ -20,6 +32,9 @@ export const POST = async ({ request }) => {
         phone,
         date,
         groupSize,
+        hours,
+        location,
+        budget,
         message,
         activityTitle,
       }),
