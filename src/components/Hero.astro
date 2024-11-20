@@ -1,20 +1,20 @@
 ---
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 ---
 
 <section class="relative min-h-[90vh] flex items-center justify-center" aria-label="Hero section">
   <!-- Background Image with Preload -->
   <div class="absolute inset-0 z-0">
     <img
-      src="/schermen-1.jpg"
+      src="/hero.jpg"
       alt=""
       role="presentation"
       class="w-full h-full object-cover"
       loading="eager"
       fetchpriority="high"
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/20"></div>
   </div>
 
   <!-- Content -->
@@ -28,20 +28,23 @@ import { ArrowRight } from "lucide-react";
       Versterk je team met een leuke dag zonder zorgen
     </p>
     <a href="/teambuildings">
-    <Button 
-      size="lg"
-      className="bg-red-600 hover:bg-red-700 text-white group px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-      aria-label="Vind je ideale teambuilding"
-      client:load
-    >
-      Vind je ideale teambuilding
-      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-    </Button>
-  </a>
+      <Button
+        size="lg"
+        className="bg-red-600 hover:bg-red-700 text-white group px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+        aria-label="Vind je ideale teambuilding"
+        client:load
+      >
+        Vind je ideale teambuilding
+        <ArrowRight
+          className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"
+          aria-hidden="true"
+        />
+      </Button>
+    </a>
   </div>
 
   <!-- Scroll Indicator -->
-  <div 
+  <div
     class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer"
     id="scroll-indicator"
     role="button"

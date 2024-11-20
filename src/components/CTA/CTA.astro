@@ -1,12 +1,12 @@
 ---
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 
 const stats = [
-  { value: "500+", label: "Tevreden klanten" },
-  { value: "50+", label: "Unieke activiteiten" },
-  { value: "10+", label: "Jaar ervaring" },
-  { value: "98%", label: "Positieve reviews" },
+  { value: '500+', label: 'Tevreden klanten' },
+  { value: '50+', label: 'Unieke activiteiten' },
+  { value: '10+', label: 'Jaar ervaring' },
+  { value: '98%', label: 'Positieve reviews' },
 ];
 ---
 
@@ -14,7 +14,8 @@ const stats = [
   {/* Background Pattern */}
   <div class="absolute inset-0 opacity-40">
     <div class="absolute inset-0 bg-grid-white/10"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent">
+    </div>
   </div>
 
   <div class="relative max-w-7xl mx-auto">
@@ -28,29 +29,32 @@ const stats = [
             <span class="text-red-600">Versterk</span> Je Bedrijf
           </h2>
           <p class="text-xl text-muted-foreground max-w-xl">
-            Ontdek onze unieke teambuilding activiteiten en creëer onvergetelijke ervaringen voor je team.
+            Ontdek onze unieke teambuilding activiteiten en creëer onvergetelijke ervaringen voor je
+            team.
           </p>
         </div>
-        
+
         {/* Stats Grid */}
         <div class="grid grid-cols-2 gap-8">
-          {stats.map(({ value, label }) => (
-            <div class="space-y-2">
-              <div class="text-3xl font-bold text-red-600">{value}</div>
-              <div class="text-muted-foreground">{label}</div>
-            </div>
-          ))}
+          {
+            stats.map(({ value, label }) => (
+              <div class="space-y-2">
+                <div class="text-3xl font-bold text-red-600">{value}</div>
+                <div class="text-muted-foreground">{label}</div>
+              </div>
+            ))
+          }
         </div>
-        
+
         <div class="flex flex-col sm:flex-row gap-4">
-          <Button 
+          <Button
             size="lg"
             class="bg-red-600 hover:bg-red-700 text-white group px-8 py-6 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Plan je teambuilding
             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
           </Button>
-          <Button 
+          <Button
             size="lg"
             variant="outline"
             class="border-2 px-8 py-6 text-lg rounded-xl font-medium hover:bg-muted/50 transition-colors duration-300"
@@ -62,9 +66,11 @@ const stats = [
 
       {/* Right Image */}
       <div class="relative">
-        <div class="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+        <div
+          class="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500"
+        >
           <img
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200"
+            src="/cta.jpg"
             alt="Team collaboration"
             class="absolute inset-0 w-full h-full object-cover"
           />
