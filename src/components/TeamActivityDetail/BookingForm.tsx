@@ -58,13 +58,11 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
       reset();
       toast('Bedankt voor je boeking!', {
         description: 'We nemen zo snel mogelijk contact met je op.',
-        style: { background: 'green', color: 'white' },
       });
     } catch (error) {
       console.error('Error:', error);
       toast('Er is iets misgegaan', {
         description: 'Probeer het later opnieuw of neem contact met ons op.',
-        style: { background: 'red', color: 'white' },
       });
     }
   };
