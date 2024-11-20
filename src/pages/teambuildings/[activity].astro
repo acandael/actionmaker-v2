@@ -4,7 +4,7 @@ import { getCollection, getEntry } from 'astro:content';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2 } from 'lucide-react';
-import BookingForm from '@/components/TeamActivityDetail/BookingForm.astro';
+import { BookingForm } from '@/components/TeamActivityDetail/BookingForm';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import { Image } from 'astro:assets';
 
@@ -67,7 +67,7 @@ const { Content } = await activity.render();
         {/* Booking Form */}
         <div id="booking-form" class="pt-12 border-t">
           <h2 class="text-3xl font-bold mb-8">Vraag offerte aan</h2>
-          <BookingForm activityTitle={activity.data.title} />
+          <BookingForm activityTitle={activity.data.title} client:load />
         </div>
       </div>
 
