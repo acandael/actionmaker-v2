@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 
 interface Props {
   images: string[];
@@ -7,11 +8,13 @@ interface Props {
 
 const { images } = Astro.props;
 
-// Import all images from the activities directory
-const imageImports = import.meta.glob('/src/assets/activities/**/*.{jpeg,jpg,png,gif}', {
-  eager: true,
-  import: 'default',
-});
+// Import all images from the activities directory with proper typing
+const imageImports = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/activities/**/*.{jpeg,jpg,png,gif}',
+  {
+    eager: true,
+  }
+);
 ---
 
 <div class="space-y-4">
@@ -26,7 +29,7 @@ const imageImports = import.meta.glob('/src/assets/activities/**/*.{jpeg,jpg,png
           data-index={index}
         >
           <Image
-            src={imageImports[`/src/assets/activities/${image}`]}
+            src={imageImports[`/src/assets/activities/${image}`].default}
             alt=""
             width={800}
             height={600}
@@ -45,6 +48,7 @@ const imageImports = import.meta.glob('/src/assets/activities/**/*.{jpeg,jpg,png
   class="fixed inset-0 z-50 bg-black/90 opacity-0 pointer-events-none transition-opacity duration-300"
 >
   <div class="relative w-full h-full flex items-center justify-center p-4">
+    {/* Close button */}
     <button
       type="button"
       class="absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
@@ -62,10 +66,46 @@ const imageImports = import.meta.glob('/src/assets/activities/**/*.{jpeg,jpg,png
       </svg>
     </button>
 
+    {/* Previous button */}
+    <button
+      type="button"
+      class="absolute left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors"
+      id="prev-button"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-8 h-8"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+      </svg>
+    </button>
+
+    {/* Next button */}
+    <button
+      type="button"
+      class="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors"
+      id="next-button"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-8 h-8"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+      </svg>
+    </button>
+
     <div class="w-full max-w-6xl">
       <div class="relative aspect-[16/9] rounded-lg overflow-hidden">
         <Image
-          src={imageImports[`/src/assets/activities/${images[0]}`]}
+          src={imageImports[`/src/assets/activities/${images[0]}`].default}
           alt=""
           width={1920}
           height={1080}
@@ -77,58 +117,47 @@ const imageImports = import.meta.glob('/src/assets/activities/**/*.{jpeg,jpg,png
   </div>
 </div>
 
-<script>
-  let currentImageIndex = 0;
-  const galleryTriggers = document.querySelectorAll('[data-gallery-trigger]');
+<script type="module" define:vars={{ images, imageImports }}>
   const galleryItems = document.querySelectorAll('[data-gallery-item]');
-  const modal = document.getElementById('galleryModal');
-  const modalImage = document.getElementById('modalImage') as HTMLImageElement;
-  const closeButton = document.getElementById('closeGallery');
-  const prevButton = document.getElementById('prevImage');
-  const nextButton = document.getElementById('nextImage');
+  const modal = document.getElementById('gallery-modal');
+  const modalImage = document.getElementById('modal-image');
+  if (!(modalImage instanceof HTMLImageElement)) throw new Error('Modal image not found');
+  const closeButton = document.getElementById('close-modal');
+  const prevButton = document.getElementById('prev-button');
+  const nextButton = document.getElementById('next-button');
 
-  function openModal(index: number) {
-    if (!modal || !modalImage) return;
+  let currentIndex = 0;
 
-    currentImageIndex = index;
-    const image = galleryItems[index].querySelector('img');
-    if (image) {
-      modalImage.src = image.src;
-      modal.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-    }
+  function openModal(index) {
+    currentIndex = index;
+    const imagePath = `/src/assets/activities/${images[currentIndex]}`;
+    modalImage.src = imageImports[imagePath].default.src;
+    modal?.classList.remove('opacity-0', 'pointer-events-none');
+    modal?.classList.add('flex');
+    document.body.style.overflow = 'hidden';
   }
 
   function closeModal() {
-    if (!modal) return;
-
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
+    modal?.classList.add('opacity-0', 'pointer-events-none');
+    modal?.classList.remove('flex');
+    document.body.style.overflow = '';
   }
 
   function showPrevImage() {
-    if (!modalImage) return;
-
-    currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
-    const image = galleryItems[currentImageIndex].querySelector('img');
-    if (image) {
-      modalImage.src = image.src;
-    }
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    const imagePath = `/src/assets/activities/${images[currentIndex]}`;
+    modalImage.src = imageImports[imagePath].default.src;
   }
 
   function showNextImage() {
-    if (!modalImage) return;
-
-    currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
-    const image = galleryItems[currentImageIndex].querySelector('img');
-    if (image) {
-      modalImage.src = image.src;
-    }
+    currentIndex = (currentIndex + 1) % images.length;
+    const imagePath = `/src/assets/activities/${images[currentIndex]}`;
+    modalImage.src = imageImports[imagePath].default.src;
   }
 
   // Event Listeners
-  galleryTriggers.forEach((trigger, index) => {
-    trigger.addEventListener('click', () => openModal(index));
+  galleryItems.forEach((item, index) => {
+    item.addEventListener('click', () => openModal(index));
   });
 
   closeButton?.addEventListener('click', closeModal);
@@ -137,26 +166,15 @@ const imageImports = import.meta.glob('/src/assets/activities/**/*.{jpeg,jpg,png
 
   // Keyboard navigation
   document.addEventListener('keydown', (e) => {
-    if (modal?.style.display === 'flex') {
+    if (!modal?.classList.contains('opacity-0')) {
       if (e.key === 'Escape') closeModal();
       if (e.key === 'ArrowLeft') showPrevImage();
       if (e.key === 'ArrowRight') showNextImage();
     }
   });
 
-  // Close modal when clicking outside the image
+  // Close modal when clicking outside
   modal?.addEventListener('click', (e) => {
     if (e.target === modal) closeModal();
-  });
-
-  // Preload images for smoother transitions
-  window.addEventListener('load', () => {
-    galleryItems.forEach((item) => {
-      const img = item.querySelector('img');
-      if (img) {
-        const preloadImage = new Image();
-        preloadImage.src = img.src;
-      }
-    });
   });
 </script>
