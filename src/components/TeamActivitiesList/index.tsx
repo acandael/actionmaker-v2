@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CategoryFilters } from './CategoryFilters';
 import { ActivityGrid } from './ActivityGrid';
 import { Separator } from '@/components/ui/separator';
@@ -35,6 +35,28 @@ export function TeamActivitiesList({
   categories = [],
   selectedCategory = null,
 }: TeamActivitiesListProps) {
+  useEffect(() => {
+    if (selectedCategory) {
+      setTimeout(() => {
+        const section = document.getElementById('activities-section');
+        const isMobile = window.innerWidth < 768;
+        const offset = isMobile ? 120 : 100;
+        if (section) {
+          if (isMobile) {
+            const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+              top: sectionTop - offset,
+              behavior: 'smooth',
+            });
+          } else {
+            section.scrollIntoView({ behavior: 'smooth' });
+            window.scrollBy(0, -offset);
+          }
+        }
+      }, 300);
+    }
+  }, [selectedCategory]);
+
   // Filter activities based on selected category
   const filteredActivities = selectedCategory
     ? initialActivities.filter((activity) => activity.categories.includes(selectedCategory))

@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { TeamActivitiesList } from '@/components/TeamActivitiesList';
+import { useEffect } from 'react';
 
 // Get the category from the URL parameter
 const categoryId = Astro.url.searchParams.get('category');
@@ -41,35 +42,28 @@ const categoriesData = categories.map((cat) => ({
   description: cat.data.description,
   image: cat.data.image,
 }));
+
+// Where you handle category selection (probably in an onClick or similar)
+const handleCategorySelect = (categoryId: string) => {
+  // Your existing category selection logic
+
+  // Add this scroll logic after the category is selected
+  setTimeout(() => {
+    const section = document.getElementById('activities-section');
+    const offset = window.innerWidth < 768 ? 120 : 100;
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      window.scrollBy(0, -offset);
+    }
+  }, 100);
+};
 ---
 
 <Layout title={`${selectedCategory?.data.title || 'Alle'} Teambuilding Activities - ActionMaker`}>
-  <div id="activities-section">
-    <TeamActivitiesList
-      initialActivities={filteredActivities}
-      categories={categoriesData}
-      selectedCategory={categoryId}
-      client:load
-    />
-  </div>
+  <TeamActivitiesList
+    initialActivities={filteredActivities}
+    categories={categoriesData}
+    selectedCategory={categoryId}
+    client:load
+  />
 </Layout>
-
-<script>
-  // Scroll to activities when category is selected
-  if (window.location.search.includes('category=')) {
-    const activitiesSection = document.getElementById('activities-section');
-    if (activitiesSection) {
-      setTimeout(() => {
-        const isMobile = window.innerWidth < 768;
-        const offset = isMobile ? 80 : 100; // Larger offset for mobile
-        const elementPosition = activitiesSection.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth',
-        });
-      }, 100);
-    }
-  }
-</script>
