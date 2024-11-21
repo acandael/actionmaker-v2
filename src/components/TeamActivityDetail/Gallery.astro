@@ -103,13 +103,13 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
     </button>
 
     <div class="w-full max-w-6xl">
-      <div class="relative aspect-[16/9] rounded-lg overflow-hidden">
+      <div class="relative aspect-auto max-h-[90vh] rounded-lg overflow-hidden">
         <Image
           src={imageImports[`/src/assets/activities/${images[0]}`].default}
           alt=""
           width={1920}
           height={1080}
-          class="absolute inset-0 w-full h-full object-contain"
+          class="w-full h-full object-contain"
           id="modal-image"
         />
       </div>
@@ -135,12 +135,14 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
     modal?.classList.remove('opacity-0', 'pointer-events-none');
     modal?.classList.add('flex');
     document.body.style.overflow = 'hidden';
+    addTouchListeners();
   }
 
   function closeModal() {
     modal?.classList.add('opacity-0', 'pointer-events-none');
     modal?.classList.remove('flex');
     document.body.style.overflow = '';
+    removeTouchListeners();
   }
 
   function showPrevImage() {
@@ -153,6 +155,42 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
     currentIndex = (currentIndex + 1) % images.length;
     const imagePath = `/src/assets/activities/${images[currentIndex]}`;
     modalImage.src = imageImports[imagePath].default.src;
+  }
+
+  // Touch handling
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  function handleTouchStart(e) {
+    touchStartX = e.changedTouches[0].screenX;
+  }
+
+  function handleTouchEnd(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }
+
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    const swipeLength = touchEndX - touchStartX;
+
+    if (Math.abs(swipeLength) > swipeThreshold) {
+      if (swipeLength > 0) {
+        showPrevImage();
+      } else {
+        showNextImage();
+      }
+    }
+  }
+
+  function addTouchListeners() {
+    modal?.addEventListener('touchstart', handleTouchStart);
+    modal?.addEventListener('touchend', handleTouchEnd);
+  }
+
+  function removeTouchListeners() {
+    modal?.removeEventListener('touchstart', handleTouchStart);
+    modal?.removeEventListener('touchend', handleTouchEnd);
   }
 
   // Event Listeners
