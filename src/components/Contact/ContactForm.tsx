@@ -14,6 +14,9 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { Textarea } from '@/components/ui/textarea';
 
 const salutations = [
   { value: 'dhr', label: 'Dhr' },
@@ -33,6 +36,7 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 export function ContactForm() {
+  const [isPending, setIsPending] = React.useState(false);
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -46,6 +50,7 @@ export function ContactForm() {
   });
 
   const onSubmit = async (data: FormData) => {
+    setIsPending(true);
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -59,15 +64,22 @@ export function ContactForm() {
         throw new Error('Er is iets misgegaan');
       }
 
-      form.reset();
-      toast.success('Bedankt voor je bericht!', {
-        description: 'We nemen zo snel mogelijk contact met je op.',
+      toast.success('Bericht verzonden!', {
+        description: (
+          <div className="mt-2 text-muted-foreground">
+            <p>Bedankt voor je bericht. We nemen zo snel mogelijk contact met je op.</p>
+          </div>
+        ),
       });
+
+      form.reset();
     } catch (error) {
       console.error('Error:', error);
       toast.error('Er is iets misgegaan', {
         description: 'Probeer het later opnieuw of neem contact met ons op.',
       });
+    } finally {
+      setIsPending(false);
     }
   };
 
@@ -94,29 +106,25 @@ export function ContactForm() {
                   <FormLabel className="text-sm font-medium text-foreground/80">
                     Aanspreking
                   </FormLabel>
-                  <div className="flex flex-wrap gap-6">
-                    {salutations.map((item) => (
-                      <label
-                        key={item.value}
-                        className="relative flex items-center gap-3 group cursor-pointer"
-                      >
-                        <input
-                          type="radio"
-                          {...field}
-                          value={item.value}
-                          className="peer sr-only"
-                        />
-                        <div className="w-5 h-5 border-2 rounded-full border-muted-foreground/30 peer-checked:border-red-500 peer-checked:bg-red-500 transition-all duration-200">
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-2.5 h-2.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform duration-200" />
-                          </div>
+                  <FormControl>
+                    <RadioGroup
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                      className="flex flex-wrap gap-6"
+                    >
+                      {salutations.map((item) => (
+                        <div key={item.value} className="flex items-center space-x-2">
+                          <RadioGroupItem value={item.value} id={item.value} />
+                          <FormLabel
+                            htmlFor={item.value}
+                            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+                          >
+                            {item.label}
+                          </FormLabel>
                         </div>
-                        <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-200">
-                          {item.label}
-                        </span>
-                      </label>
-                    ))}
-                  </div>
+                      ))}
+                    </RadioGroup>
+                  </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
@@ -133,11 +141,7 @@ export function ContactForm() {
                       Voornaam *
                     </FormLabel>
                     <FormControl>
-                      <input
-                        {...field}
-                        className="w-full px-4 py-3 rounded-xl border-2 bg-white/50 focus:bg-white focus:border-red-500 transition-all duration-300"
-                        placeholder="John"
-                      />
+                      <Input {...field} className="bg-white/50 focus:bg-white" placeholder="John" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -153,11 +157,7 @@ export function ContactForm() {
                       Achternaam *
                     </FormLabel>
                     <FormControl>
-                      <input
-                        {...field}
-                        className="w-full px-4 py-3 rounded-xl border-2 bg-white/50 focus:bg-white focus:border-red-500 transition-all duration-300"
-                        placeholder="Doe"
-                      />
+                      <Input {...field} className="bg-white/50 focus:bg-white" placeholder="Doe" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -176,10 +176,11 @@ export function ContactForm() {
                       Email *
                     </FormLabel>
                     <FormControl>
-                      <input
+                      <Input
                         {...field}
-                        className="w-full px-4 py-3 rounded-xl border-2 bg-white/50 focus:bg-white focus:border-red-500 transition-all duration-300"
+                        className="bg-white/50 focus:bg-white"
                         placeholder="john.doe@company.com"
+                        type="email"
                       />
                     </FormControl>
                     <FormMessage />
@@ -196,10 +197,11 @@ export function ContactForm() {
                       Telefoonnummer
                     </FormLabel>
                     <FormControl>
-                      <input
+                      <Input
                         {...field}
-                        className="w-full px-4 py-3 rounded-xl border-2 bg-white/50 focus:bg-white focus:border-red-500 transition-all duration-300"
+                        className="bg-white/50 focus:bg-white"
                         placeholder="+32 123 45 67 89"
+                        type="tel"
                       />
                     </FormControl>
                     <FormMessage />
@@ -218,10 +220,10 @@ export function ContactForm() {
                     Bijkomende Vragen
                   </FormLabel>
                   <FormControl>
-                    <textarea
+                    <Textarea
                       {...field}
                       rows={6}
-                      className="w-full px-4 py-3 rounded-xl border-2 bg-white/50 focus:bg-white focus:border-red-500 transition-all duration-300 resize-none"
+                      className="bg-white/50 focus:bg-white resize-none"
                       placeholder="Vertel ons meer over je vragen..."
                     />
                   </FormControl>
@@ -232,11 +234,18 @@ export function ContactForm() {
 
             <Button
               type="submit"
+              disabled={isPending}
               className="w-full bg-red-600 hover:bg-red-700 text-white group h-auto py-6 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <span className="flex items-center justify-center gap-2">
-                Bericht Versturen
-                <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                {isPending ? (
+                  <>Verzenden...</>
+                ) : (
+                  <>
+                    Bericht Versturen
+                    <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </>
+                )}
               </span>
             </Button>
           </form>
