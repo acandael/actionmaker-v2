@@ -1,0 +1,98 @@
+---
+import { Image } from 'astro:assets';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+import MobileMenu from './MobileMenu.astro';
+
+// Import your logo image
+import logo from '/src/assets/logo.png'; // adjust path to match your logo location
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/teambuildings', label: 'Teambuildings' },
+  { href: '/concepten', label: 'Concepten' },
+  { href: '/over-actionmaker', label: 'Over ActionMaker' },
+  { href: '/contact', label: 'Contact' },
+];
+---
+
+export interface Props {
+  // Add any props if needed
+}
+
+<header
+  class="fixed top-0 left-0 right-0 h-20 bg-black/80 backdrop-blur-lg z-50 border-b border-white/10"
+>
+  <div class="max-w-7xl mx-auto h-full px-4 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2">
+      <Image src={logo} alt="ActionMaker" width={150} height={40} />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8">
+      {
+        links.map(({ href, label }) => (
+          <a
+            href={href}
+            class="relative text-sm font-medium text-white/90 hover:text-white transition-colors group inline-block"
+          >
+            {label}
+            <span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"
+              aria-hidden="true"
+            />
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="flex items-center gap-4">
+      <div class="hidden md:block">
+        <Button asChild>
+          <a href="/contact" class="flex items-center gap-2">
+            Offerte aanvragen
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </Button>
+      </div>
+
+      <button
+        type="button"
+        class="md:hidden p-2 -mr-2 text-white/70 hover:text-white transition-colors"
+        data-mobile-menu-trigger
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<MobileMenu />
+
+<script>
+  const mobileMenuTrigger = document.querySelector('[data-mobile-menu-trigger]');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let isMenuOpen = false;
+
+  mobileMenuTrigger?.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+
+    if (isMenuOpen) {
+      mobileMenu?.classList.remove('translate-x-full');
+      document.body.style.overflow = 'hidden';
+    } else {
+      mobileMenu?.classList.add('translate-x-full');
+      document.body.style.overflow = '';
+    }
+  });
+</script>

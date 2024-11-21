@@ -1,0 +1,55 @@
+---
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/teambuildings', label: 'Teambuildings' },
+  { href: '/concepten', label: 'Concepten' },
+  { href: '/over-actionmaker', label: 'Over ActionMaker' },
+  { href: '/contact', label: 'Contact' },
+];
+---
+
+<div
+  id="mobile-menu"
+  class="fixed inset-0 bg-black/95 backdrop-blur-lg z-40 translate-x-full transition-transform duration-300"
+  aria-hidden="true"
+>
+  <nav class="h-full pt-24 px-6">
+    <ul class="space-y-6">
+      {
+        links.map(({ href, label }) => (
+          <li>
+            <a
+              href={href}
+              class="text-lg font-medium text-white/70 hover:text-white transition-colors"
+            >
+              {label}
+            </a>
+          </li>
+        ))
+      }
+      <li>
+        <a
+          href="/contact"
+          class="inline-flex items-center gap-2 text-lg font-medium text-red-600 hover:text-red-500 transition-colors"
+        >
+          Vind je teambuilding
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="transition-transform group-hover:translate-x-1"
+          >
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
