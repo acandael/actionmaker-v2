@@ -16,11 +16,11 @@ const mappedActivities = activities.map((activity) => ({
   title: activity.data.title || '',
   description: activity.data.description || '',
   image: activity.data.image || '',
-  category: '', // Default empty string if not needed
+  category: '',
   categories: activity.data.categories || [],
   duration: activity.data.duration || '',
   groupSize: activity.data.groupSize || '',
-  price: '', // Add if you have this data
+  price: '',
   availability: activity.data.availability || '',
   features: activity.data.features,
   gallery: activity.data.gallery,
@@ -44,11 +44,32 @@ const categoriesData = categories.map((cat) => ({
 ---
 
 <Layout title={`${selectedCategory?.data.title || 'Alle'} Teambuilding Activities - ActionMaker`}>
-  <TeamActivitiesList
-    initialActivities={filteredActivities}
-    categories={categoriesData}
-    selectedCategory={categoryId}
-    client:load
-  />
+  <div id="activities-section">
+    <TeamActivitiesList
+      initialActivities={filteredActivities}
+      categories={categoriesData}
+      selectedCategory={categoryId}
+      client:load
+    />
+  </div>
 </Layout>
 
+<script>
+  // Scroll to activities when category is selected
+  if (window.location.search.includes('category=')) {
+    const activitiesSection = document.getElementById('activities-section');
+    if (activitiesSection) {
+      setTimeout(() => {
+        const isMobile = window.innerWidth < 768;
+        const offset = isMobile ? 80 : 100; // Larger offset for mobile
+        const elementPosition = activitiesSection.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }, 100);
+    }
+  }
+</script>
