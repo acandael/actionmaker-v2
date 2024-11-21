@@ -8,12 +8,12 @@ features:
   - 'teamspirit'
 gallery:
   [
-    '/images/activities/boogschieten/boogschieten-2.jpg',
-    '/images/activities/boogschieten/boogschieten-3.jpg',
-    '/images/activities/boogschieten/boogschieten-4.jpg',
-    '/images/activities/boogschieten/boogschieten-5.jpg',
-    '/images/activities/boogschieten/boogschieten-6.jpg',
-    '/images/activities/boogschieten/boogschieten-7.jpg',
+    'boogschieten/boogschieten-2.jpg',
+    'boogschieten/boogschieten-3.jpg',
+    'boogschieten/boogschieten-4.jpg',
+    'boogschieten/boogschieten-5.jpg',
+    'boogschieten/boogschieten-6.jpg',
+    'boogschieten/boogschieten-7.jpg',
   ]
 categories: ['outdoor', 'actief']
 duration: '2-3 uur'

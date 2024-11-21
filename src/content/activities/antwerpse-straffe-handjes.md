@@ -8,13 +8,13 @@ features:
   - 'prijzen'
 gallery:
   [
-    '/images/activities/antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg',
-    '/images/activities/antwerpse-straffe-handjes/antwerpse-straffe-handjes-2.jpg',
-    '/images/activities/antwerpse-straffe-handjes/antwerpse-straffe-handjes-3.jpg',
-    '/images/activities/antwerpse-straffe-handjes/antwerpse-straffe-handjes-4.jpg',
-    '/images/activities/antwerpse-straffe-handjes/antwerpse-straffe-handjes-5.jpg',
-    '/images/activities/antwerpse-straffe-handjes/antwerpse-straffe-handjes-6.jpg',
-    '/images/activities/antwerpse-straffe-handjes/antwerpse-straffe-handjes-7.jpg',
+    'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg',
+    'antwerpse-straffe-handjes/antwerpse-straffe-handjes-2.jpg',
+    'antwerpse-straffe-handjes/antwerpse-straffe-handjes-3.jpg',
+    'antwerpse-straffe-handjes/antwerpse-straffe-handjes-4.jpg',
+    'antwerpse-straffe-handjes/antwerpse-straffe-handjes-5.jpg',
+    'antwerpse-straffe-handjes/antwerpse-straffe-handjes-6.jpg',
+    'antwerpse-straffe-handjes/antwerpse-straffe-handjes-7.jpg',
   ]
 categories: ['cultureel']
 duration: '2-3 uur'

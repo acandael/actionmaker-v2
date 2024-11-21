@@ -21,4 +21,9 @@ export default defineConfig({
     prefetchAll: true,
     defaultStrategy: 'viewport',
   },
+  image: {
+    domains: [],
+    remotePatterns: [],
+    dirs: ['src/content/images/activities'],
+  },
 });

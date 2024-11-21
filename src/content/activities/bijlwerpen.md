@@ -8,12 +8,12 @@ features:
   - 'ontspanning'
 gallery:
   [
-    '/images/activities/bijlwerpen/bijlwerpen-2.jpg',
-    '/images/activities/bijlwerpen/bijlwerpen-3.jpg',
-    '/images/activities/bijlwerpen/bijlwerpen-4.jpg',
-    '/images/activities/bijlwerpen/bijlwerpen-5.jpg',
-    '/images/activities/bijlwerpen/bijlwerpen-6.jpg',
-    '/images/activities/bijlwerpen/bijlwerpen-7.jpg',
+    'bijlwerpen/bijlwerpen-2.jpg',
+    'bijlwerpen/bijlwerpen-3.jpg',
+    'bijlwerpen/bijlwerpen-4.jpg',
+    'bijlwerpen/bijlwerpen-5.jpg',
+    'bijlwerpen/bijlwerpen-6.jpg',
+    'bijlwerpen/bijlwerpen-7.jpg',
   ]
 categories: ['outdoor', 'actief']
 duration: '2-3 uur'

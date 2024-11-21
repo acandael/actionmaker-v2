@@ -13,12 +13,12 @@ features:
   - 'Proeverij van verschillende chocolades'
 gallery:
   [
-    '/src/assets/activities/chocoladeworkshop/chocoladeworkshop-2.jpg',
-    '/src/assets/activities/chocoladeworkshop/chocoladeworkshop-3.jpg',
-    '/src/assets/activities/chocoladeworkshop/chocoladeworkshop-4.jpg',
-    '/src/assets/activities/chocoladeworkshop/chocoladeworkshop-5.jpg',
-    '/src/assets/activities/chocoladeworkshop/chocoladeworkshop-6.jpg',
-    '/src/assets/activities/chocoladeworkshop/chocoladeworkshop-7.jpg',
+    'chocoladeworkshop/chocoladeworkshop-2.jpg',
+    'chocoladeworkshop/chocoladeworkshop-3.jpg',
+    'chocoladeworkshop/chocoladeworkshop-4.jpg',
+    'chocoladeworkshop/chocoladeworkshop-5.jpg',
+    'chocoladeworkshop/chocoladeworkshop-6.jpg',
+    'chocoladeworkshop/chocoladeworkshop-7.jpg',
   ]
 ---
 

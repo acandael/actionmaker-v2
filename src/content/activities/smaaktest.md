@@ -13,13 +13,13 @@ features:
   - 'Competitie-element'
 gallery:
   [
-    '/images/activities/smaaktest/smaaktest-1.jpg',
-    '/images/activities/smaaktest/smaaktest-2.jpg',
-    '/images/activities/smaaktest/smaaktest-3.jpg',
-    '/images/activities/smaaktest/smaaktest-4.jpg',
-    '/images/activities/smaaktest/smaaktest-5.jpg',
-    '/images/activities/smaaktest/smaaktest-6.jpg',
-    '/images/activities/smaaktest/smaaktest-7.jpg',
+    'smaaktest/smaaktest-1.jpg',
+    'smaaktest/smaaktest-2.jpg',
+    'smaaktest/smaaktest-3.jpg',
+    'smaaktest/smaaktest-4.jpg',
+    'smaaktest/smaaktest-5.jpg',
+    'smaaktest/smaaktest-6.jpg',
+    'smaaktest/smaaktest-7.jpg',
   ]
 ---
 

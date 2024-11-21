@@ -13,13 +13,13 @@ features:
   - 'Onderlinge wedstrijdjes mogelijk'
 gallery:
   [
-    '/images/activities/scherminitiatie/scherminitiatie-2.jpg',
-    '/images/activities/scherminitiatie/scherminitiatie-3.jpg',
-    '/images/activities/scherminitiatie/scherminitiatie-4.jpg',
-    '/images/activities/scherminitiatie/scherminitiatie-5.jpg',
-    '/images/activities/scherminitiatie/scherminitiatie-6.jpg',
-    '/images/activities/scherminitiatie/scherminitiatie-7.jpg',
-    '/images/activities/scherminitiatie/scherminitiatie-8.jpg',
+    'scherminitiatie/scherminitiatie-2.jpg',
+    'scherminitiatie/scherminitiatie-3.jpg',
+    'scherminitiatie/scherminitiatie-4.jpg',
+    'scherminitiatie/scherminitiatie-5.jpg',
+    'scherminitiatie/scherminitiatie-6.jpg',
+    'scherminitiatie/scherminitiatie-7.jpg',
+    'scherminitiatie/scherminitiatie-8.jpg',
   ]
 ---
 

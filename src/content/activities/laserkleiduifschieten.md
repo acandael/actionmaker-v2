@@ -13,11 +13,11 @@ features:
   - 'Competitie-element mogelijk'
 gallery:
   [
-    '/images/activities/laserkleiduifschieten/laserkleiduifschieten-2.jpg',
-    '/images/activities/laserkleiduifschieten/laserkleiduifschieten-3.jpg',
-    '/images/activities/laserkleiduifschieten/laserkleiduifschieten-4.jpg',
-    '/images/activities/laserkleiduifschieten/laserkleiduifschieten-5.jpg',
-    '/images/activities/laserkleiduifschieten/laserkleiduifschieten-6.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-2.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-3.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-4.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-5.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-6.jpg',
   ]
 ---
 

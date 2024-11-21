@@ -12,13 +12,13 @@ features:
   - 'strategie'
 gallery:
   [
-    '/images/activities/virtual-reality/virtual-reality-1.jpg',
-    '/images/activities/virtual-reality/virtual-reality-2.jpg',
-    '/images/activities/virtual-reality/virtual-reality-3.jpg',
-    '/images/activities/virtual-reality/virtual-reality-4.jpg',
-    '/images/activities/virtual-reality/virtual-reality-5.jpg',
-    '/images/activities/virtual-reality/virtual-reality-6.jpg',
-    '/images/activities/virtual-reality/virtual-reality-7.jpg',
+    'virtual-reality/virtual-reality-1.jpg',
+    'virtual-reality/virtual-reality-2.jpg',
+    'virtual-reality/virtual-reality-3.jpg',
+    'virtual-reality/virtual-reality-4.jpg',
+    'virtual-reality/virtual-reality-5.jpg',
+    'virtual-reality/virtual-reality-6.jpg',
+    'virtual-reality/virtual-reality-7.jpg',
   ]
 ---
 

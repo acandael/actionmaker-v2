@@ -12,12 +12,12 @@ features:
   - 'strategie'
 gallery:
   [
-    '/images/activities/moorddiner/moorddiner-2.jpg',
-    '/images/activities/moorddiner/moorddiner-3.jpg',
-    '/images/activities/moorddiner/moorddiner-4.jpg',
-    '/images/activities/moorddiner/moorddiner-5.jpg',
-    '/images/activities/moorddiner/moorddiner-6.jpg',
-    '/images/activities/moorddiner/moorddiner-7.jpg',
+    'moorddiner/moorddiner-2.jpg',
+    'moorddiner/moorddiner-3.jpg',
+    'moorddiner/moorddiner-4.jpg',
+    'moorddiner/moorddiner-5.jpg',
+    'moorddiner/moorddiner-6.jpg',
+    'moorddiner/moorddiner-7.jpg',
   ]
 ---
 

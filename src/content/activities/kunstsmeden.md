@@ -13,12 +13,12 @@ features:
 
 gallery:
   [
-    '/images/activities/kunstsmeden/kunstsmeden-2.jpg',
-    '/images/activities/kunstsmeden/kunstsmeden-3.jpg',
-    '/images/activities/kunstsmeden/kunstsmeden-4.jpg',
-    '/images/activities/kunstsmeden/kunstsmeden-5.jpg',
-    '/images/activities/kunstsmeden/kunstsmeden-6.jpg',
-    '/images/activities/kunstsmeden/kunstsmeden-7.jpg',
+    'kunstsmeden/kunstsmeden-2.jpg',
+    'kunstsmeden/kunstsmeden-3.jpg',
+    'kunstsmeden/kunstsmeden-4.jpg',
+    'kunstsmeden/kunstsmeden-5.jpg',
+    'kunstsmeden/kunstsmeden-6.jpg',
+    'kunstsmeden/kunstsmeden-7.jpg',
   ]
 ---
 

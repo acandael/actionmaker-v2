@@ -13,12 +13,12 @@ features:
   - 'Competitie-element mogelijk'
 gallery:
   [
-    '/images/activities/pistoolschieten/pistoolschieten-2.jpg',
-    '/images/activities/pistoolschieten/pistoolschieten-3.jpg',
-    '/images/activities/pistoolschieten/pistoolschieten-4.jpg',
-    '/images/activities/pistoolschieten/pistoolschieten-5.jpg',
-    '/images/activities/pistoolschieten/pistoolschieten-6.jpg',
-    '/images/activities/pistoolschieten/pistoolschieten-7.jpg',
+    'pistoolschieten/pistoolschieten-2.jpg',
+    'pistoolschieten/pistoolschieten-3.jpg',
+    'pistoolschieten/pistoolschieten-4.jpg',
+    'pistoolschieten/pistoolschieten-5.jpg',
+    'pistoolschieten/pistoolschieten-6.jpg',
+    'pistoolschieten/pistoolschieten-7.jpg',
   ]
 ---
 

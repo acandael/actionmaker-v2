@@ -13,12 +13,12 @@ features:
   - 'communicatie'
 gallery:
   [
-    '/images/activities/djembe/djembe-2.jpg',
-    '/images/activities/djembe/djembe-3.jpg',
-    '/images/activities/djembe/djembe-4.jpg',
-    '/images/activities/djembe/djembe-5.jpg',
-    '/images/activities/djembe/djembe-6.jpg',
-    '/images/activities/djembe/djembe-7.jpg',
+    'djembe/djembe-2.jpg',
+    'djembe/djembe-3.jpg',
+    'djembe/djembe-4.jpg',
+    'djembe/djembe-5.jpg',
+    'djembe/djembe-6.jpg',
+    'djembe/djembe-7.jpg',
   ]
 ---
 

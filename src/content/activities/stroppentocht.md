@@ -14,12 +14,12 @@ features:
 5. jenevers proeven: dreupelkot
 gallery:
   [
-    '/images/activities/stroppentocht/stroppentocht-2.jpg',
-    '/images/activities/stroppentocht/stroppentocht-3.jpg',
-    '/images/activities/stroppentocht/stroppentocht-4.jpg',
-    '/images/activities/stroppentocht/stroppentocht-5.jpg',
-    '/images/activities/stroppentocht/stroppentocht-6.jpg',
-    '/images/activities/stroppentocht/stroppentocht-7.jpg',
+    'stroppentocht/stroppentocht-2.jpg',
+    'stroppentocht/stroppentocht-3.jpg',
+    'stroppentocht/stroppentocht-4.jpg',
+    'stroppentocht/stroppentocht-5.jpg',
+    'stroppentocht/stroppentocht-6.jpg',
+    'stroppentocht/stroppentocht-7.jpg',
   ]
 ---
 

@@ -13,12 +13,12 @@ features:
   - 'Demonstratie'
 gallery:
   [
-    '/images/activities/schapendrijven/schapendrijven-1.jpg',
-    '/images/activities/schapendrijven/schapendrijven-2.jpg',
-    '/images/activities/schapendrijven/schapendrijven-3.jpg',
-    '/images/activities/schapendrijven/schapendrijven-4.jpg',
-    '/images/activities/schapendrijven/schapendrijven-5.jpg',
-    '/images/activities/schapendrijven/schapendrijven-6.jpg',
+    'schapendrijven/schapendrijven-1.jpg',
+    'schapendrijven/schapendrijven-2.jpg',
+    'schapendrijven/schapendrijven-3.jpg',
+    'schapendrijven/schapendrijven-4.jpg',
+    'schapendrijven/schapendrijven-5.jpg',
+    'schapendrijven/schapendrijven-6.jpg',
   ]
 ---
 

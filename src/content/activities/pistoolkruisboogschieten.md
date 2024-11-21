@@ -13,11 +13,12 @@ features:
   - 'Competitie-element mogelijk'
 gallery:
   [
-    '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-2.jpg',
-    '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-3.jpg',
-    '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-4.jpg',
-    '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-5.jpg',
-    '/images/activities/pistoolkruisboogschieten/pistoolkruisboogschieten-6.jpg',
+    'pistoolkruisboogschieten/pistoolkruisboogschieten-2.jpg',
+    'pistoolkruisboogschieten/pistoolkruisboogschieten-3.jpg',
+    'pistoolkruisboogschieten/pistoolkruisboogschieten-4.jpg',
+    'pistoolkruisboogschieten/pistoolkruisboogschieten-5.jpg',
+    'pistoolkruisboogschieten/pistoolkruisboogschieten-6.jpg',
+    'pistoolkruisboogschieten/pistoolkruisboogschieten-7.jpg',
   ]
 ---
 

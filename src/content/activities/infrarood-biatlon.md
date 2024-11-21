@@ -12,12 +12,12 @@ features:
   - 'coaching'
 gallery:
   [
-    '/images/activities/infrarood-biatlon/infrarood-biatlon-2.jpg',
-    '/images/activities/infrarood-biatlon/infrarood-biatlon-3.jpg',
-    '/images/activities/infrarood-biatlon/infrarood-biatlon-4.jpg',
-    '/images/activities/infrarood-biatlon/infrarood-biatlon-5.jpg',
-    '/images/activities/infrarood-biatlon/infrarood-biatlon-6.jpg',
-    '/images/activities/infrarood-biatlon/infrarood-biatlon-7.jpg',
+    'infrarood-biatlon/infrarood-biatlon-2.jpg',
+    'infrarood-biatlon/infrarood-biatlon-3.jpg',
+    'infrarood-biatlon/infrarood-biatlon-4.jpg',
+    'infrarood-biatlon/infrarood-biatlon-5.jpg',
+    'infrarood-biatlon/infrarood-biatlon-6.jpg',
+    'infrarood-biatlon/infrarood-biatlon-7.jpg',
   ]
 ---
 

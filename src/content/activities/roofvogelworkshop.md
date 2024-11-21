@@ -13,12 +13,12 @@ features:
   - 'Valkeniersknoop'
 gallery:
   [
-    '/images/activities/roofvogelworkshop/roofvogelworkshop-2.jpg',
-    '/images/activities/roofvogelworkshop/roofvogelworkshop-3.jpg',
-    '/images/activities/roofvogelworkshop/roofvogelworkshop-4.jpg',
-    '/images/activities/roofvogelworkshop/roofvogelworkshop-5.jpg',
-    '/images/activities/roofvogelworkshop/roofvogelworkshop-6.jpg',
-    '/images/activities/roofvogelworkshop/roofvogelworkshop-7.jpg',
+    'roofvogelworkshop/roofvogelworkshop-2.jpg',
+    'roofvogelworkshop/roofvogelworkshop-3.jpg',
+    'roofvogelworkshop/roofvogelworkshop-4.jpg',
+    'roofvogelworkshop/roofvogelworkshop-5.jpg',
+    'roofvogelworkshop/roofvogelworkshop-6.jpg',
+    'roofvogelworkshop/roofvogelworkshop-7.jpg',
   ]
 ---
 

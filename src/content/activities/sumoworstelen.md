@@ -13,12 +13,12 @@ features:
   - 'Toernooi-formule mogelijk'
 gallery:
   [
-    '/images/activities/sumoworstelen/sumoworstelen-2.jpg',
-    '/images/activities/sumoworstelen/sumoworstelen-3.jpg',
-    '/images/activities/sumoworstelen/sumoworstelen-4.jpg',
-    '/images/activities/sumoworstelen/sumoworstelen-5.jpg',
-    '/images/activities/sumoworstelen/sumoworstelen-6.jpg',
-    '/images/activities/sumoworstelen/sumoworstelen-7.jpg',
+    'sumoworstelen/sumoworstelen-2.jpg',
+    'sumoworstelen/sumoworstelen-3.jpg',
+    'sumoworstelen/sumoworstelen-4.jpg',
+    'sumoworstelen/sumoworstelen-5.jpg',
+    'sumoworstelen/sumoworstelen-6.jpg',
+    'sumoworstelen/sumoworstelen-7.jpg',
   ]
 ---
 

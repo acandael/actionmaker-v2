@@ -8,12 +8,12 @@ features:
   - 'teamgeest'
 gallery:
   [
-    '/images/activities/brugse-metten-tocht/brugse-metten-tocht-2.jpg',
-    '/images/activities/brugse-metten-tocht/brugse-metten-tocht-3.jpg',
-    '/images/activities/brugse-metten-tocht/brugse-metten-tocht-4.jpg',
-    '/images/activities/brugse-metten-tocht/brugse-metten-tocht-5.jpg',
-    '/images/activities/brugse-metten-tocht/brugse-metten-tocht-6.jpg',
-    '/images/activities/brugse-metten-tocht/brugse-metten-tocht-7.jpg',
+    'brugse-metten-tocht/brugse-metten-tocht-2.jpg',
+    'brugse-metten-tocht/brugse-metten-tocht-3.jpg',
+    'brugse-metten-tocht/brugse-metten-tocht-4.jpg',
+    'brugse-metten-tocht/brugse-metten-tocht-5.jpg',
+    'brugse-metten-tocht/brugse-metten-tocht-6.jpg',
+    'brugse-metten-tocht/brugse-metten-tocht-7.jpg',
   ]
 categories: ['cultureel', 'outdoor']
 duration: '2-3 uur'

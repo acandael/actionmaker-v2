@@ -8,12 +8,12 @@ features:
   - 'ontspanning'
 gallery:
   [
-    '/images/activities/blaaspijpschieten/blaaspijpschieten-2.jpg',
-    '/images/activities/blaaspijpschieten/blaaspijpschieten-3.jpg',
-    '/images/activities/blaaspijpschieten/blaaspijpschieten-4.jpg',
-    '/images/activities/blaaspijpschieten/blaaspijpschieten-5.jpg',
-    '/images/activities/blaaspijpschieten/blaaspijpschieten-6.jpg',
-    '/images/activities/blaaspijpschieten/blaaspijpschieten-7.jpg',
+    'blaaspijpschieten/blaaspijpschieten-2.jpg',
+    'blaaspijpschieten/blaaspijpschieten-3.jpg',
+    'blaaspijpschieten/blaaspijpschieten-4.jpg',
+    'blaaspijpschieten/blaaspijpschieten-5.jpg',
+    'blaaspijpschieten/blaaspijpschieten-6.jpg',
+    'blaaspijpschieten/blaaspijpschieten-7.jpg',
   ]
 categories: ['outdoor', 'actief']
 duration: '2-3 uur'

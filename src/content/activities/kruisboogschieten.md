@@ -13,12 +13,12 @@ features:
   - 'Competitie-element mogelijk'
 gallery:
   [
-    '/images/activities/kruisboogschieten/kruisboogschieten-2.jpg',
-    '/images/activities/kruisboogschieten/kruisboogschieten-3.jpg',
-    '/images/activities/kruisboogschieten/kruisboogschieten-4.jpg',
-    '/images/activities/kruisboogschieten/kruisboogschieten-5.jpg',
-    '/images/activities/kruisboogschieten/kruisboogschieten-6.jpg',
-    '/images/activities/kruisboogschieten/kruisboogschieten-7.jpg',
+    'kruisboogschieten/kruisboogschieten-2.jpg',
+    'kruisboogschieten/kruisboogschieten-3.jpg',
+    'kruisboogschieten/kruisboogschieten-4.jpg',
+    'kruisboogschieten/kruisboogschieten-5.jpg',
+    'kruisboogschieten/kruisboogschieten-6.jpg',
+    'kruisboogschieten/kruisboogschieten-7.jpg',
   ]
 ---
 

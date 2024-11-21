@@ -8,12 +8,12 @@ features:
   - 'teamwork'
 gallery:
   [
-    '/images/activities/indoor-lasershooting/indoorlasershooting-2.jpg',
-    '/images/activities/indoor-lasershooting/indoorlasershooting-3.jpg',
-    '/images/activities/indoor-lasershooting/indoorlasershooting-4.jpg',
-    '/images/activities/indoor-lasershooting/indoorlasershooting-5.jpg',
-    '/images/activities/indoor-lasershooting/indoorlasershooting-6.jpg',
-    '/images/activities/indoor-lasershooting/indoorlasershooting-7.jpg',
+    'indoor-lasershooting/indoorlasershooting-2.jpg',
+    'indoor-lasershooting/indoorlasershooting-3.jpg',
+    'indoor-lasershooting/indoorlasershooting-4.jpg',
+    'indoor-lasershooting/indoorlasershooting-5.jpg',
+    'indoor-lasershooting/indoorlasershooting-6.jpg',
+    'indoor-lasershooting/indoorlasershooting-7.jpg',
   ]
 categories: ['indoor']
 duration: '1-2 uur'

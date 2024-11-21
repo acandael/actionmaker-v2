@@ -8,13 +8,13 @@ features:
   - 'leiderschap'
 gallery:
   [
-    '/images/activities/alpacaworkshop/alpacaworkshop-1.jpg',
-    '/images/activities/alpacaworkshop/alpacaworkshop-2.jpg',
-    '/images/activities/alpacaworkshop/alpacaworkshop-3.jpg',
-    '/images/activities/alpacaworkshop/alpacaworkshop-4.jpg',
-    '/images/activities/alpacaworkshop/alpacaworkshop-5.jpg',
-    '/images/activities/alpacaworkshop/alpacaworkshop-6.jpg',
-    '/images/activities/alpacaworkshop/alpacaworkshop-7.jpg',
+    'alpacaworkshop/alpacaworkshop-1.jpg',
+    'alpacaworkshop/alpacaworkshop-2.jpg',
+    'alpacaworkshop/alpacaworkshop-3.jpg',
+    'alpacaworkshop/alpacaworkshop-4.jpg',
+    'alpacaworkshop/alpacaworkshop-5.jpg',
+    'alpacaworkshop/alpacaworkshop-6.jpg',
+    'alpacaworkshop/alpacaworkshop-7.jpg',
   ]
 categories: ['workshop']
 duration: '2-3 uur'
