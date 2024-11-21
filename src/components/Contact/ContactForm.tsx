@@ -235,7 +235,7 @@ export function ContactForm() {
             <Button
               type="submit"
               disabled={isPending}
-              className="w-full bg-red-600 hover:bg-red-700 text-white group h-auto py-6 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+              className="w-full bg-red-600 hover:bg-red-700 text-white group h-auto py-4 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <span className="flex items-center justify-center gap-2">
                 {isPending ? (

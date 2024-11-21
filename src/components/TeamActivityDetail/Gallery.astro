@@ -1,5 +1,5 @@
 ---
-import { Card } from "@/components/ui/card";
+import { Card } from '@/components/ui/card';
 import { Image } from 'astro:assets';
 
 interface Props {
@@ -15,7 +15,7 @@ const defaultImages = [
   '/images/activities/default/gallery-3.jpg',
   '/images/activities/default/gallery-4.jpg',
   '/images/activities/default/gallery-5.jpg',
-  '/images/activities/default/gallery-6.jpg'
+  '/images/activities/default/gallery-6.jpg',
 ];
 
 // Use provided images or fallback to defaults
@@ -25,85 +25,96 @@ const galleryImages = images.length > 0 ? images.slice(0, 6) : defaultImages;
 <div class="space-y-6">
   <h2 class="text-3xl font-bold">Foto's van de activiteit</h2>
   <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-    {galleryImages.map((image, index) => (
-      <Card 
-        className="group overflow-hidden cursor-pointer"
-        data-gallery-trigger
-      >
-        <div 
-          class="aspect-[4/3] relative"
-          data-gallery-item={index}
-        >
-          {image.startsWith('http') ? (
-            <img
-              src={image}
-              alt=""
-              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              loading="lazy"
-            />
-          ) : (
-            <Image
-              src={image}
-              alt=""
-              width={800}
-              height={600}
-              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              loading="lazy"
-              format="webp"
-            />
-          )}
-          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
-        </div>
-      </Card>
-    ))}
+    {
+      galleryImages.map((image, index) => (
+        <Card className="group overflow-hidden cursor-pointer" data-gallery-trigger>
+          <div class="aspect-[4/3] relative" data-gallery-item={index}>
+            {image.startsWith('http') ? (
+              <img
+                src={image}
+                alt=""
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
+              />
+            ) : (
+              <Image
+                src={image}
+                alt="activity image"
+                width={800}
+                height={600}
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
+                format="webp"
+              />
+            )}
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+          </div>
+        </Card>
+      ))
+    }
   </div>
 </div>
 
 <!-- Lightbox Modal -->
-<div 
+<div
   class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center"
   id="galleryModal"
   role="dialog"
   aria-modal="true"
   aria-label="Image gallery"
 >
-  <button 
+  <button
     class="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
     id="closeGallery"
     aria-label="Close gallery"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-8 w-8"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"
+      ></path>
     </svg>
   </button>
 
-  <button 
+  <button
     class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors z-10"
     id="prevImage"
     aria-label="Previous image"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-8 w-8"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"
+      ></path>
     </svg>
   </button>
 
-  <button 
+  <button
     class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors z-10"
     id="nextImage"
     aria-label="Next image"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-8 w-8"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
     </svg>
   </button>
 
   <div class="relative w-full h-full flex items-center justify-center p-4">
-    <img 
-      src="" 
-      alt="" 
-      class="max-h-[90vh] max-w-[90vw] object-contain"
-      id="modalImage"
-    />
+    <img src="" alt="" class="max-h-[90vh] max-w-[90vw] object-contain" id="modalImage" />
   </div>
 </div>
 
@@ -119,7 +130,7 @@ const galleryImages = images.length > 0 ? images.slice(0, 6) : defaultImages;
 
   function openModal(index: number) {
     if (!modal || !modalImage) return;
-    
+
     currentImageIndex = index;
     const image = galleryItems[index].querySelector('img');
     if (image) {
@@ -131,14 +142,14 @@ const galleryImages = images.length > 0 ? images.slice(0, 6) : defaultImages;
 
   function closeModal() {
     if (!modal) return;
-    
+
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
   }
 
   function showPrevImage() {
     if (!modalImage) return;
-    
+
     currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
     const image = galleryItems[currentImageIndex].querySelector('img');
     if (image) {
@@ -148,7 +159,7 @@ const galleryImages = images.length > 0 ? images.slice(0, 6) : defaultImages;
 
   function showNextImage() {
     if (!modalImage) return;
-    
+
     currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
     const image = galleryItems[currentImageIndex].querySelector('img');
     if (image) {
@@ -181,7 +192,7 @@ const galleryImages = images.length > 0 ? images.slice(0, 6) : defaultImages;
 
   // Preload images for smoother transitions
   window.addEventListener('load', () => {
-    galleryItems.forEach(item => {
+    galleryItems.forEach((item) => {
       const img = item.querySelector('img');
       if (img) {
         const preloadImage = new Image();

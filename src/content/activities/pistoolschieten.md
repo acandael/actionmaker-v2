@@ -18,6 +18,7 @@ gallery:
     '/images/activities/pistoolschieten/pistoolschieten-4.jpg',
     '/images/activities/pistoolschieten/pistoolschieten-5.jpg',
     '/images/activities/pistoolschieten/pistoolschieten-6.jpg',
+    '/images/activities/pistoolschieten/pistoolschieten-7.jpg',
   ]
 ---
 

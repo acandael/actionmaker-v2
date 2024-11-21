@@ -25,9 +25,16 @@ const { Content } = await activity.render();
 <Layout title={`${activity.data.title} - ActionMaker`}>
   <Toaster richColors closeButton position="top-right" />
   {/* Hero Section */}
-  <section class="relative min-h-[60vh] flex items-center -mt-[64px]">
+  <section class="relative min-h-[60vh] flex items-center -mt-20">
     <div class="absolute inset-0 z-0">
-      <img src={activity.data.image} alt={activity.data.title} class="w-full h-full object-cover" />
+      <Image
+        src={activity.data.image}
+        alt={activity.data.title}
+        width={1920}
+        height={1080}
+        class="w-full h-full object-cover"
+        quality="high"
+      />
       <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-transparent">
       </div>
     </div>
@@ -74,7 +81,7 @@ const { Content } = await activity.render();
       </div>
 
       {/* Sidebar */}
-      <div class="lg:col-span-1">
+      <div class="lg:col-span-1 sm:hidden">
         <Card className="p-6 sticky top-24">
           <div class="space-y-6">
             <div class="flex items-center gap-4">
