@@ -69,7 +69,7 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
     {/* Previous button */}
     <button
       type="button"
-      class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors bg-black/30 p-2 rounded-full"
+      class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors bg-black/30 p-2 rounded-full z-[60]"
       id="prev-button"
     >
       <svg
@@ -87,7 +87,7 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
     {/* Next button */}
     <button
       type="button"
-      class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors bg-black/30 p-2 rounded-full"
+      class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors bg-black/30 p-2 rounded-full z-[60]"
       id="next-button"
     >
       <svg
@@ -102,7 +102,7 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
       </svg>
     </button>
 
-    <div class="w-full max-w-6xl">
+    <div class="w-full max-w-6xl z-[55]">
       <div class="relative aspect-auto max-h-[90vh] rounded-lg overflow-hidden">
         <Image
           src={imageImports[`/src/assets/activities/${images[0]}`].default}
