@@ -68,7 +68,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
       if (!response.ok) throw new Error('Er is iets misgegaan');
 
       form.reset();
-      toast('Bedankt voor je boeking!', {
+      toast('Bedankt voor je aanvraag!', {
         description: 'We nemen zo snel mogelijk contact met je op.',
       });
     } catch (error) {
