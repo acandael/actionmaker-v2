@@ -1,11 +1,22 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
+'use client';
+
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
 import { toast } from 'sonner';
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 
 // Define the form schema with Zod
 const formSchema = z.object({
@@ -29,33 +40,34 @@ interface BookingFormProps {
 }
 
 export function BookingForm({ activityTitle }: BookingFormProps) {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm<FormData>({
+  const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       activityTitle,
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      date: '',
+      groupSize: '',
+      hours: '',
+      budget: '',
+      location: '',
+      message: '',
     },
   });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
     try {
       const response = await fetch('/api/booking', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
 
-      if (!response.ok) {
-        throw new Error('Er is iets misgegaan');
-      }
+      if (!response.ok) throw new Error('Er is iets misgegaan');
 
-      reset();
+      form.reset();
       toast('Bedankt voor je boeking!', {
         description: 'We nemen zo snel mogelijk contact met je op.',
       });
@@ -69,193 +81,199 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
 
   return (
     <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
-      <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
-        <input type="hidden" {...register('activityTitle')} />
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <FormField
+            control={form.control}
+            name="activityTitle"
+            render={({ field }) => (
+              <FormItem>
+                <FormControl>
+                  <Input type="hidden" {...field} />
+                </FormControl>
+              </FormItem>
+            )}
+          />
 
-        <div className="space-y-2">
-          <h3 className="text-2xl font-semibold">Boek deze activiteit</h3>
-          <p className="text-muted-foreground">
-            Vul het formulier in en we nemen binnen 24 uur contact met je op.
+          <div className="space-y-2">
+            <h3 className="text-2xl font-semibold">Boek deze activiteit</h3>
+            <p className="text-muted-foreground">
+              Vul het formulier in en we nemen binnen 24 uur contact met je op.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6">
+            <FormField
+              control={form.control}
+              name="firstName"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Voornaam</FormLabel>
+                  <FormControl>
+                    <Input placeholder="John" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="lastName"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Achternaam</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Doe" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6">
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>E-mailadres</FormLabel>
+                  <FormControl>
+                    <Input placeholder="john.doe@company.com" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="phone"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Telefoonnummer</FormLabel>
+                  <FormControl>
+                    <Input placeholder="+32 123 45 67 89" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6">
+            <FormField
+              control={form.control}
+              name="date"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Gewenste datum</FormLabel>
+                  <FormControl>
+                    <Input type="date" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="groupSize"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Aantal personen</FormLabel>
+                  <FormControl>
+                    <Input type="number" placeholder="10" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6">
+            <FormField
+              control={form.control}
+              name="hours"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Aantal uren</FormLabel>
+                  <FormControl>
+                    <Input type="number" placeholder="2" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="budget"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Budget (optioneel)</FormLabel>
+                  <FormControl>
+                    <Input type="number" placeholder="1000" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+
+          <FormField
+            control={form.control}
+            name="location"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>
+                  Locatie (laat veld blank indien ActionMaker locatie moet voorzien)
+                </FormLabel>
+                <FormControl>
+                  <Input placeholder="Adres of stad" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Bericht</FormLabel>
+                <FormControl>
+                  <Textarea
+                    placeholder="Vertel ons meer over je wensen..."
+                    className="resize-none"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <Button
+            type="submit"
+            className="w-full bg-red-600 hover:bg-red-700 text-white group h-auto py-4 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <span className="flex items-center justify-center gap-2">
+              Verstuur aanvraag
+              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </span>
+          </Button>
+
+          <p className="text-sm text-center text-muted-foreground">
+            Door het formulier te versturen ga je akkoord met onze{' '}
+            <a href="#" className="text-red-600 hover:text-red-700 underline">
+              algemene voorwaarden
+            </a>
           </p>
-        </div>
-
-        <div className="grid sm:grid-cols-2 gap-6">
-          <div className="space-y-2 group">
-            <label
-              htmlFor="firstName"
-              className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
-            >
-              Voornaam
-            </label>
-            <input
-              {...register('firstName')}
-              className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
-              placeholder="John"
-            />
-            {errors.firstName && <p className="text-sm text-red-500">{errors.firstName.message}</p>}
-          </div>
-
-          <div className="space-y-2 group">
-            <label
-              htmlFor="lastName"
-              className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
-            >
-              Achternaam
-            </label>
-            <input
-              {...register('lastName')}
-              className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
-              placeholder="Doe"
-            />
-            {errors.lastName && <p className="text-sm text-red-500">{errors.lastName.message}</p>}
-          </div>
-        </div>
-
-        <div className="space-y-2 group">
-          <label
-            htmlFor="email"
-            className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
-          >
-            E-mailadres
-          </label>
-          <input
-            {...register('email')}
-            className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
-            placeholder="john.doe@company.com"
-          />
-          {errors.email && <p className="text-sm text-red-500">{errors.email.message}</p>}
-        </div>
-
-        <div className="space-y-2 group">
-          <label
-            htmlFor="phone"
-            className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
-          >
-            Telefoonnummer
-          </label>
-          <input
-            {...register('phone')}
-            className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
-            placeholder="+32 123 45 67 89"
-          />
-          {errors.phone && <p className="text-sm text-red-500">{errors.phone.message}</p>}
-        </div>
-
-        <div className="grid sm:grid-cols-2 gap-6">
-          <div className="space-y-2 group">
-            <label
-              htmlFor="date"
-              className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
-            >
-              Gewenste datum
-            </label>
-            <input
-              type="date"
-              {...register('date')}
-              className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
-            />
-            {errors.date && <p className="text-sm text-red-500">{errors.date.message}</p>}
-          </div>
-
-          <div className="space-y-2 group">
-            <label
-              htmlFor="groupSize"
-              className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
-            >
-              Aantal personen
-            </label>
-            <input
-              type="number"
-              {...register('groupSize')}
-              className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
-              placeholder="10"
-            />
-            {errors.groupSize && <p className="text-sm text-red-500">{errors.groupSize.message}</p>}
-          </div>
-        </div>
-
-        <div className="grid sm:grid-cols-2 gap-6">
-          <div className="space-y-2 group">
-            <label
-              htmlFor="hours"
-              className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
-            >
-              Aantal uren
-            </label>
-            <input
-              type="number"
-              {...register('hours')}
-              className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
-              placeholder="2"
-            />
-            {errors.hours && <p className="text-sm text-red-500">{errors.hours.message}</p>}
-          </div>
-
-          <div className="space-y-2 group">
-            <label
-              htmlFor="budget"
-              className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
-            >
-              Budget (optioneel)
-            </label>
-            <input
-              type="number"
-              {...register('budget')}
-              className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
-              placeholder="1000"
-            />
-            {errors.budget && <p className="text-sm text-red-500">{errors.budget.message}</p>}
-          </div>
-        </div>
-
-        <div className="space-y-2 group">
-          <label
-            htmlFor="location"
-            className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
-          >
-            Locatie (laat veld blank indien ActionMaker locatie moet voorzien)
-          </label>
-          <input
-            {...register('location')}
-            className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300"
-            placeholder="Adres of stad"
-          />
-          {errors.location && <p className="text-sm text-red-500">{errors.location.message}</p>}
-        </div>
-
-        <div className="space-y-2 group">
-          <label
-            htmlFor="message"
-            className="text-sm font-medium group-focus-within:text-red-600 transition-colors"
-          >
-            Bericht
-          </label>
-          <textarea
-            {...register('message')}
-            rows={4}
-            className="w-full px-4 py-3 rounded-lg border bg-white/50 focus:bg-white focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300 resize-none"
-            placeholder="Vertel ons meer over je wensen..."
-          />
-          {errors.message && <p className="text-sm text-red-500">{errors.message.message}</p>}
-        </div>
-
-        <Button
-          type="submit"
-          className="w-full bg-red-600 hover:bg-red-700 text-white group h-auto py-4 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-        >
-          <span className="flex items-center justify-center gap-2">
-            Verstuur aanvraag
-            <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </span>
-        </Button>
-
-        <p className="text-sm text-center text-muted-foreground">
-          Door het formulier te versturen ga je akkoord met onze{' '}
-          <a href="#" className="text-red-600 hover:text-red-700 underline">
-            algemene voorwaarden
-          </a>
-        </p>
-      </form>
+        </form>
+      </Form>
     </Card>
   );
 }
