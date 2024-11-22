@@ -80,19 +80,33 @@ export interface Props {
 <MobileMenu />
 
 <script>
-  const mobileMenuTrigger = document.querySelector('[data-mobile-menu-trigger]');
-  const mobileMenu = document.getElementById('mobile-menu');
-  let isMenuOpen = false;
+  function initializeMobileMenu() {
+    const mobileMenuTrigger = document.querySelector('[data-mobile-menu-trigger]');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isMenuOpen = false;
 
-  mobileMenuTrigger?.addEventListener('click', () => {
-    isMenuOpen = !isMenuOpen;
-
-    if (isMenuOpen) {
-      mobileMenu?.classList.remove('translate-x-full');
-      document.body.style.overflow = 'hidden';
-    } else {
-      mobileMenu?.classList.add('translate-x-full');
-      document.body.style.overflow = '';
+    // Remove existing event listener if any
+    const newTrigger = mobileMenuTrigger?.cloneNode(true);
+    if (mobileMenuTrigger?.parentNode && newTrigger) {
+      mobileMenuTrigger.parentNode.replaceChild(newTrigger, mobileMenuTrigger);
     }
-  });
+
+    newTrigger?.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+
+      if (isMenuOpen) {
+        mobileMenu?.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+      } else {
+        mobileMenu?.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // Initialize on page load
+  initializeMobileMenu();
+
+  // Re-initialize on view transitions
+  document.addEventListener('astro:page-load', initializeMobileMenu);
 </script>
