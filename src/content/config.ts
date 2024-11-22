@@ -16,7 +16,7 @@ const activities = defineCollection({
 });
 
 const categories = defineCollection({
-  type: 'content',
+  type: 'data',
   schema: z.object({
     title: z.string(),
     description: z.string(),
