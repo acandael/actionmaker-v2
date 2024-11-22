@@ -1,7 +1,7 @@
 ---
 title: 'Antwerpse Straffe Handjes'
 description: 'Antwerpse Straffe Handjes teambuilding'
-image: '/images/activities/antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
+image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 features:
   - 'leuke weetjes'
   - 'gastronomie'

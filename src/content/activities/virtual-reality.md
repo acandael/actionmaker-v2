@@ -1,7 +1,7 @@
 ---
 title: 'Virtual Reality'
 description: 'De persoon die de bril aanheeft ziet de bom, op basis daarvan moet de rest van het team dat de handleiding heeft de bom helpen ontmantelen.'
-image: '/images/activities/virtual-reality/virtual-reality-1.jpg'
+image: 'virtual-reality/virtual-reality-1.jpg'
 categories: ['indoor']
 duration: '+/- 3u.'
 groupSize: 'Maximaal 15 personen'

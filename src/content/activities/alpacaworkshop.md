@@ -1,7 +1,7 @@
 ---
 title: 'Alpaca Workshop'
 description: "Workshop met alpaca's"
-image: '/images/activities/alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'alpacaworkshop/alpacaworkshop-1.jpg'
 features:
   - 'teamgeest'
   - 'communicatie'

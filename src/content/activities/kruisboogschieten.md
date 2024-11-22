@@ -1,7 +1,7 @@
 ---
 title: 'Kruisboogschieten'
 description: 'Een spannende activiteit met historische kruisbogen.'
-image: '/images/activities/kruisboogschieten/kruisboogschieten-1.jpg'
+image: 'kruisboogschieten/kruisboogschieten-1.jpg'
 categories: ['indoor', 'outdoor']
 duration: '2 - 3 uur'
 groupSize: '8 - 30 personen'

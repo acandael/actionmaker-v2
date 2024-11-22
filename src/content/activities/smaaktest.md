@@ -1,7 +1,7 @@
 ---
 title: 'Smaaktest'
 description: 'Kan je vertrouwen op je smaak? Wie maakt er het best gebruik van smaak-, geur-, tastzin. Wie heeft er de meeste kennis van bier, cola, kaas, kruiden, …'
-image: '/images/activities/smaaktest/smaaktest-1.jpg'
+image: 'smaaktest/smaaktest-1.jpg'
 categories: ['indoor', 'culinair']
 duration: 'met quiz +/- 90 min, zonder quiz +/- 60 min'
 groupSize: 'Maximum 20/24 deelnemers (= 4 tafels) per animator'

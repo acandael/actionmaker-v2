@@ -1,7 +1,7 @@
 ---
 title: 'Indoor Lasershooting'
 description: 'Indoor lasershooting is een spannende teamactiviteit waarbij strategie, communicatie en teamwork centraal staan.'
-image: '/images/activities/indoor-lasershooting/indoorlasershooting-1.jpg'
+image: 'indoor-lasershooting/indoorlasershooting-1.jpg'
 features:
   - 'spannende teamactiviteit'
   - 'communicatie'

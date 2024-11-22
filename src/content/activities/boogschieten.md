@@ -1,7 +1,7 @@
 ---
 title: 'Boogschieten'
 description: 'Boogschieten teambuilding'
-image: '/images/activities/boogschieten/boogschieten-1.jpg'
+image: 'boogschieten/boogschieten-1.jpg'
 features:
   - 'ervaren instructeurs'
   - 'basistechnieken boogschieten'

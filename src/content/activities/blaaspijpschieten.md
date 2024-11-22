@@ -1,7 +1,7 @@
 ---
 title: 'Blaaspijpschieten'
 description: 'Blaaspijpschieten teambuilding'
-image: '/images/activities/blaaspijpschieten/blaaspijpschieten-1.jpg'
+image: 'blaaspijpschieten/blaaspijpschieten-1.jpg'
 features:
   - 'competitie'
   - 'sport'

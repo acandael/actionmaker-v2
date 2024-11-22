@@ -9,16 +9,37 @@ import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import { Image } from 'astro:assets';
 
 // Get the activity ID from the URL
-const { activity: activityId } = Astro.params;
+const { activity: activitySlug } = Astro.params;
 
-// Get the activity
-const activity = await getEntry('activities', activityId);
+// Get the activity data
+const activities = await getCollection('activities');
+const activity = activities.find((a) => a.slug === activitySlug);
 
 if (!activity) {
   return Astro.redirect('/404');
 }
 
 const { Content } = await activity.render();
+
+// Import all images from the activities directory
+const imageImports = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/activities/**/*.{jpeg,jpg,png,gif}',
+  {
+    eager: true,
+  }
+);
+
+// Get the hero image with error handling
+const imagePath = `/src/assets/activities/${activity.data.image}`;
+const heroImage = imageImports[imagePath]?.default;
+
+if (!heroImage) {
+  console.error(`Image not found: ${imagePath}`);
+  return Astro.redirect('/404');
+}
+
+// Get the images for the gallery
+const images = activity.data.gallery || [];
 ---
 
 <Layout title={`${activity.data.title} - ActionMaker`}>
@@ -26,7 +47,7 @@ const { Content } = await activity.render();
   <section class="relative min-h-[60vh] flex items-center -mt-20">
     <div class="absolute inset-0 z-0">
       <Image
-        src={activity.data.image}
+        src={heroImage}
         alt={activity.data.title}
         width={1920}
         height={1080}
@@ -69,7 +90,7 @@ const { Content } = await activity.render();
           }
         </div>
 
-        {activity.data.gallery && <Gallery images={activity.data.gallery} />}
+        {activity.data.gallery && <Gallery images={images} imageImports={imageImports} />}
 
         {/* Booking Form */}
         <div id="booking-form" class="pt-12 border-t">

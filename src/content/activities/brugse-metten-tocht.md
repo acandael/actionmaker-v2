@@ -1,7 +1,7 @@
 ---
 title: 'Brugse Metten Tocht'
 description: 'Deze tocht is gemaakt voor de liefhebbers van Brugge. Het is een tocht door de binnenstad van Brugge met opdrachten en activiteiten.'
-image: '/images/activities/brugse-metten-tocht/brugse-metten-tocht-1.jpg'
+image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
 features:
   - 'schiethouding verbeteren'
   - 'competitie'

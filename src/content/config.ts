@@ -1,10 +1,11 @@
 import { defineCollection, z } from 'astro:content';
 
 const activities = defineCollection({
+  type: 'content',
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    image: z.string(),
+    image: z.string().optional(),
     categories: z.array(z.string()),
     duration: z.string(),
     groupSize: z.string(),
