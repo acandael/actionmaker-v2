@@ -25,7 +25,7 @@ const transformedCategories = categories.map((category) => ({
             <ActivityCard
               title={category.title}
               description={category.description}
-              image={`/images/categories/${category.id}.jpg`}
+              image={`${category.id}.jpg`}
             >
               <CategoryIcon category={category.id} slot="icon" />
             </ActivityCard>
