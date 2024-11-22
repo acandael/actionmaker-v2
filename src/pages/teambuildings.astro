@@ -2,10 +2,39 @@
 import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import ActivityGrid from '@/components/TeamActivitiesList/ActivityGrid.astro';
+import CategoryFilters from '@/components/TeamActivitiesList/CategoryFilters.astro';
+import { Separator } from '@/components/ui/separator';
 import type { ImageMetadata } from 'astro';
 
 // Get all activities
 const activities = await getCollection('activities');
+
+// Get the selected category from URL
+const selectedCategory = Astro.url.searchParams.get('category');
+
+// Define categories
+const categories = [
+  {
+    id: 'outdoor',
+    title: 'Outdoor',
+    description: 'Outdoor teambuilding activiteiten',
+  },
+  {
+    id: 'indoor',
+    title: 'Indoor',
+    description: 'Indoor teambuilding activiteiten',
+  },
+  {
+    id: 'actief',
+    title: 'Actief',
+    description: 'Actieve teambuilding activiteiten',
+  },
+  {
+    id: 'creatief',
+    title: 'Creatief',
+    description: 'Creatieve teambuilding activiteiten',
+  },
+];
 
 // Import all images
 const imageImports = import.meta.glob<{ default: ImageMetadata }>(
@@ -15,22 +44,56 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
   }
 );
 
+// Filter activities based on selected category
+const filteredActivities = selectedCategory
+  ? activities.filter((activity) => activity.data.categories.includes(selectedCategory))
+  : activities;
+
 // Format activities for the grid
-const formattedActivities = activities.map((activity) => ({
+const formattedActivities = filteredActivities.map((activity) => ({
   id: activity.id,
   title: activity.data.title,
   description: activity.data.description,
   image: activity.data.image,
   categories: activity.data.categories,
 }));
+
+// Get current category
+const currentCategory = categories.find((c) => c.id === selectedCategory);
 ---
 
 <Layout title="Teambuildings - ActionMaker">
   <section class="max-w-7xl mx-auto px-4 py-24 mt-16">
-    <h1 class="text-4xl md:text-6xl font-bold mb-8">Teambuildings</h1>
-    <p class="text-xl text-muted-foreground max-w-2xl mb-12">
-      Ontdek onze selectie van teambuilding activiteiten
-    </p>
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        {currentCategory ? `${currentCategory.title}` : 'Vind je teambuilding in ons breed gamma'}
+      </h1>
+      {
+        currentCategory && (
+          <p class="text-xl text-muted-foreground">{currentCategory.description}</p>
+        )
+      }
+    </div>
+
+    <CategoryFilters categories={categories} selectedCategory={selectedCategory} />
+
+    <div class="mb-16">
+      <Separator className="max-w-2xl mx-auto" />
+    </div>
+
+    <div class="text-center mb-8">
+      <p class="text-muted-foreground">
+        {
+          selectedCategory
+            ? `${formattedActivities.length} activiteit${
+                formattedActivities.length !== 1 ? 'en' : ''
+              } gevonden in ${currentCategory?.title.toLowerCase()}`
+            : `${formattedActivities.length} activiteit${
+                formattedActivities.length !== 1 ? 'en' : ''
+              } beschikbaar`
+        }
+      </p>
+    </div>
 
     <ActivityGrid activities={formattedActivities} imageImports={imageImports} />
   </section>

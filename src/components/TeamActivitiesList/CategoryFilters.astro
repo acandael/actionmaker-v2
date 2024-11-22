@@ -1,0 +1,44 @@
+---
+interface Category {
+  id: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  categories: Category[];
+  selectedCategory: string | null;
+}
+
+const { categories, selectedCategory } = Astro.props;
+---
+
+<div class="flex flex-wrap justify-center gap-4 mb-16">
+  <a
+    href="/teambuildings"
+    class:list={[
+      'px-4 py-2 rounded-full border transition-colors',
+      !selectedCategory
+        ? 'bg-red-600 text-white border-red-600'
+        : 'border-gray-200 hover:border-red-600 hover:text-red-600',
+    ]}
+  >
+    Alle activiteiten
+  </a>
+  {
+    categories.map((category) => (
+      <a
+        href={`/teambuildings?category=${category.id}`}
+        class:list={[
+          'px-4 py-2 rounded-full border transition-colors',
+          selectedCategory === category.id
+            ? 'bg-red-600 text-white border-red-600'
+            : 'border-gray-200 hover:border-red-600 hover:text-red-600',
+        ]}
+      >
+        {category.title}
+      </a>
+    ))
+  }
+</div>
+
