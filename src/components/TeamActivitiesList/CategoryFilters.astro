@@ -15,7 +15,7 @@ const { categories, selectedCategory } = Astro.props;
 
 <div class="flex flex-wrap justify-center gap-4 mb-16">
   <a
-    href="/teambuildings"
+    href="/teambuildings#activities-section"
     class:list={[
       'px-4 py-2 rounded-full border transition-colors',
       !selectedCategory
@@ -28,7 +28,7 @@ const { categories, selectedCategory } = Astro.props;
   {
     categories.map((category) => (
       <a
-        href={`/teambuildings?category=${category.id}`}
+        href={`/teambuildings?category=${category.id}#activities-section`}
         class:list={[
           'px-4 py-2 rounded-full border transition-colors',
           selectedCategory === category.id
@@ -41,4 +41,3 @@ const { categories, selectedCategory } = Astro.props;
     ))
   }
 </div>
-
