@@ -8,14 +8,17 @@ interface Category {
 interface Props {
   categories: Category[];
   selectedCategory: string | null;
+  fromHomepage?: boolean;
 }
 
-const { categories, selectedCategory } = Astro.props;
+const { categories, selectedCategory, fromHomepage = false } = Astro.props;
+
+const baseUrl = fromHomepage ? '/teambuildings' : '';
 ---
 
 <div class="flex flex-wrap justify-center gap-4 mb-16">
   <a
-    href="/teambuildings#activities-section"
+    href={`${baseUrl}#activities-section`}
     class:list={[
       'px-4 py-2 rounded-full border transition-colors',
       !selectedCategory
@@ -28,7 +31,7 @@ const { categories, selectedCategory } = Astro.props;
   {
     categories.map((category) => (
       <a
-        href={`/teambuildings?category=${category.id}#activities-section`}
+        href={`${baseUrl}?category=${category.id}#activities-section`}
         class:list={[
           'px-4 py-2 rounded-full border transition-colors',
           selectedCategory === category.id

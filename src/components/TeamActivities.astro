@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
-import { ActivityCard } from './TeamActivities/ActivityCard';
-import { SectionTitle } from './TeamActivities/SectionTitle';
-import { CategoryIcon } from './TeamActivities/CategoryIcon';
+import ActivityCard from './TeamActivities/ActivityCard.astro';
+import SectionTitle from './TeamActivities/SectionTitle.astro';
+import CategoryIcon from './TeamActivities/CategoryIcon.astro';
 
 // Get categories from content collection
 const categories = await getCollection('categories');
@@ -21,13 +21,13 @@ const transformedCategories = categories.map((category) => ({
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {
         transformedCategories.map((category) => (
-          <a href={`/teambuildings?category=${category.id}`}>
+          <a href={`/teambuildings?category=${category.id}#activities-section`}>
             <ActivityCard
               title={category.title}
               description={category.description}
               image={`/images/categories/${category.id}.jpg`}
             >
-              <CategoryIcon category={category.id} client:load />
+              <CategoryIcon category={category.id} slot="icon" />
             </ActivityCard>
           </a>
         ))

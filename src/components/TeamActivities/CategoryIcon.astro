@@ -1,0 +1,24 @@
+---
+import { Dumbbell, Tent, Palette, UtensilsCrossed, Building2, GraduationCap } from 'lucide-react';
+
+interface Props {
+  category: string;
+}
+
+const { category } = Astro.props;
+
+const iconMap = {
+  actief: Dumbbell,
+  outdoor: Tent,
+  cultureel: Palette,
+  culinair: UtensilsCrossed,
+  indoor: Building2,
+  workshop: GraduationCap,
+};
+
+const IconComponent = iconMap[category] || Building2;
+---
+
+<div class="mb-6 text-white">
+  <IconComponent className="w-12 h-12" />
+</div>
