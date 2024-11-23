@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import MobileMenu from './MobileMenu.astro';
+import { LanguageSelector } from 'astro-i18next/components';
 
 // Import your logo image
 import logo from '/src/assets/logo.png'; // adjust path to match your logo location
@@ -44,6 +45,11 @@ export interface Props {
         ))
       }
     </nav>
+
+    <LanguageSelector
+      class="mt-2 py-2 px-4 font-semibold bg-transparent hover:bg-gray-50 border-2"
+      showFlag={true}
+    />
 
     <div class="flex items-center gap-4">
       <div class="hidden md:block">

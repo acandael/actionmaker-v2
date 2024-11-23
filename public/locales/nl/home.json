@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "title": "Activiteiten voor team building",
+    "subtitle": "Versterk de relatie tussen je medewerkers met onze unieke team building activiteiten.",
+    "cta": "Vind je teambuilding"
+  },
+  "features": {
+    "title": "Waarom Kiezen Voor ",
+    "flexible": {
+      "title": "Flexibel",
+      "description": "Een onvoorziene wijziging op het laatste moment? Geen probleem, wij zijn flexibel en kunnen jou teambuilding aanpassen aan elke omstandigheid."
+    },
+    "personal": {
+      "title": "Persoonlijk",
+      "description": "In tegenstelling tot andere bedrijven werken wij niet met onderaannemers. Action Maker organiseert al zijn teambuildings zelf."
+    },
+    "experienced": {
+      "title": "Ervaren animatoren",
+      "description": "Al onze animatoren zijn ervaren en experts op het vlak van de activiteiten die ze begeleiden."
+    }
+  }
+}

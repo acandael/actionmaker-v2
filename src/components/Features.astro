@@ -1,69 +1,73 @@
 ---
 import { ArrowUpDown, Users, Trophy } from 'lucide-react';
+import { t, setDefaultNamespace } from 'i18next';
 
 const features = [
   {
     icon: ArrowUpDown,
-    title: "Flexibel",
-    description: "Een onvoorziene wijziging op het laatste moment? Geen probleem, wij zijn flexibel en kunnen jou teambuilding aanpassen aan elke omstandigheid."
+    title: t('features.flexible.title'),
+    description: t('features.flexible.description'),
   },
   {
     icon: Users,
-    title: "Persoonlijk",
-    description: "In tegenstelling tot andere bedrijven werken wij niet met onderaannemers. Action Maker organiseert al zijn teambuildings zelf."
+    title: t('features.personal.title'),
+    description: t('features.personal.description'),
   },
   {
     icon: Trophy,
-    title: "Ervaren animatoren",
-    description: "Al onze animatoren zijn gecertificeerd en experts op het vlak van de activiteiten die ze begeleiden."
-  }
+    title: t('features.experienced.title'),
+    description: t('features.experienced.description'),
+  },
 ];
+setDefaultNamespace('home');
 ---
 
 <section class="relative py-32 px-4 bg-gradient-to-b from-background to-muted/50 overflow-hidden">
   {/* Background Pattern */}
   <div class="absolute inset-0 opacity-40">
     <div class="absolute inset-0 bg-grid-white/10"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent">
+    </div>
   </div>
 
   <div class="relative max-w-7xl mx-auto">
     <div class="text-center mb-20">
       <h2 class="text-4xl font-bold mb-4">
-        Waarom Kiezen Voor <span class="text-red-600">Action Maker</span>
+        {t('features.title')}
+        <span class="text-red-600">Action Maker</span>
       </h2>
       <div class="w-24 h-1 bg-red-600 mx-auto rounded-full"></div>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
-      {features.map((feature, index) => (
-        <div 
-          class="group relative p-8 rounded-2xl bg-white hover:bg-gradient-to-b hover:from-white hover:to-red-50/50 shadow-md hover:shadow-xl transition-all duration-500 ease-out"
-          data-feature
-          data-index={index}
-        >
-          {/* Icon Container */}
-          <div class="relative mb-6 inline-block">
-            <div class="absolute inset-0 bg-red-100 rounded-2xl transform rotate-6 transition-transform duration-300 group-hover:rotate-12"></div>
-            <div class="relative w-16 h-16 rounded-2xl bg-red-500 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110">
-              <feature.icon className="w-8 h-8 text-white" />
+      {
+        features.map((feature, index) => (
+          <div
+            class="group relative p-8 rounded-2xl bg-white hover:bg-gradient-to-b hover:from-white hover:to-red-50/50 shadow-md hover:shadow-xl transition-all duration-500 ease-out"
+            data-feature
+            data-index={index}
+          >
+            {/* Icon Container */}
+            <div class="relative mb-6 inline-block">
+              <div class="absolute inset-0 bg-red-100 rounded-2xl transform rotate-6 transition-transform duration-300 group-hover:rotate-12" />
+              <div class="relative w-16 h-16 rounded-2xl bg-red-500 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110">
+                <feature.icon className="w-8 h-8 text-white" />
+              </div>
             </div>
+
+            {/* Content */}
+            <h3 class="text-xl font-semibold mb-4 group-hover:text-red-600 transition-colors duration-300">
+              {feature.title}
+            </h3>
+            <p class="text-muted-foreground leading-relaxed">{feature.description}</p>
+
+            {/* Decorative Elements */}
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500/0 to-transparent group-hover:via-red-500/40 transition-all duration-700" />
+            <div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-transparent group-hover:border-red-500/20 transition-all duration-500" />
+            <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-transparent group-hover:border-red-500/20 transition-all duration-500" />
           </div>
-
-          {/* Content */}
-          <h3 class="text-xl font-semibold mb-4 group-hover:text-red-600 transition-colors duration-300">
-            {feature.title}
-          </h3>
-          <p class="text-muted-foreground leading-relaxed">
-            {feature.description}
-          </p>
-
-          {/* Decorative Elements */}
-          <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500/0 to-transparent group-hover:via-red-500/40 transition-all duration-700"></div>
-          <div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-transparent group-hover:border-red-500/20 transition-all duration-500"></div>
-          <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-transparent group-hover:border-red-500/20 transition-all duration-500"></div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </section>
@@ -84,26 +88,35 @@ const features = [
     transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  [data-feature][data-index="0"] { transition-delay: 0s; }
-  [data-feature][data-index="1"] { transition-delay: 100ms; }
-  [data-feature][data-index="2"] { transition-delay: 200ms; }
+  [data-feature][data-index='0'] {
+    transition-delay: 0s;
+  }
+  [data-feature][data-index='1'] {
+    transition-delay: 100ms;
+  }
+  [data-feature][data-index='2'] {
+    transition-delay: 200ms;
+  }
 </style>
 
 <script>
   function setupAnimations() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.2,
-      rootMargin: '50px'
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: '50px',
+      }
+    );
 
-    document.querySelectorAll('[data-feature]').forEach(feature => {
+    document.querySelectorAll('[data-feature]').forEach((feature) => {
       observer.observe(feature);
     });
   }
