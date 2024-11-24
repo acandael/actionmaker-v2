@@ -33,8 +33,17 @@ const testimonials = defineCollection({
   }),
 });
 
+const logos = defineCollection({
+  type: 'data',
+  schema: z.object({
+    name: z.string(),
+    image: z.string(),
+  }),
+});
+
 export const collections = {
   activities,
   categories,
   testimonials,
+  logos,
 };

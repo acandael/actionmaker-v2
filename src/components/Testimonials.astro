@@ -1,27 +1,27 @@
 ---
 import TestimonialCard from './Testimonials/TestimonialCard.astro';
 import ClientLogos from './Testimonials/ClientLogos.astro';
-import { clients } from './Testimonials/testimonials-data';
 import { getCollection } from 'astro:content';
 import i18next, { t } from 'i18next';
 
 // Get current locale
 const currentLocale = i18next.language;
-console.log('Current locale:', currentLocale);
 
 let testimonials = [];
+let logos = [];
 
 try {
   // Get testimonials and filter by locale
   const allTestimonials = await getCollection('testimonials');
   testimonials = allTestimonials.filter((testimonial) => {
     const isLocaleMatch = testimonial.id.startsWith(`${currentLocale}/`);
-    console.log(`Checking testimonial ${testimonial.id}:`, { isLocaleMatch, currentLocale });
     return isLocaleMatch;
   });
-  console.log('Filtered testimonials:', testimonials);
+
+  // Get logos
+  logos = await getCollection('logos');
 } catch (error) {
-  console.error('Error fetching testimonials:', error);
+  console.error('Error fetching data:', error);
 }
 ---
 
@@ -47,6 +47,6 @@ try {
       )
     }
 
-    <ClientLogos clients={clients} />
+    <ClientLogos clients={logos} />
   </div>
 </section>

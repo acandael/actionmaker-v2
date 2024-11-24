@@ -1,53 +1,68 @@
 ---
-import { Card } from "@/components/ui/card";
+import { Card } from '@/components/ui/card';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 
-interface Client {
-  name: string;
-  logo: string;
-}
+// Import all logo images
+const imageImports = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/logos/*.{jpeg,jpg,png,gif}',
+  {
+    eager: true,
+  }
+);
 
-interface Props {
-  clients: Client[];
-}
-
-const { clients } = Astro.props;
+// Get logos from collection
+const logos = await getCollection('logos');
 ---
 
 <div class="space-y-16">
   <h3 class="text-center text-xl text-muted-foreground animate-fade-in">
     Vertrouwd door toonaangevende bedrijven
   </h3>
-  
   <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-    {clients.map((client, index) => (
-      <Card 
-        class="group relative h-32 overflow-hidden bg-white hover:bg-muted/50 transition-all duration-500 ease-out"
-        data-client-logo
-        data-index={index}
-      >
-        {/* Hover gradient overlay */}
-        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-          <div class="absolute inset-0 bg-gradient-to-br from-red-500/10 via-red-500/5 to-transparent"></div>
-        </div>
-        
-        {/* Logo container */}
-        <div class="relative h-full px-8 py-6 flex items-center justify-center">
-          <img 
-            src={client.logo} 
-            alt={client.name}
-            class="w-auto h-16 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transform group-hover:scale-110 transition-all duration-500 ease-out"
-            loading="lazy"
-          />
-        </div>
+    {
+      logos.map((logo, index) => {
+        const imagePath = `/src/assets/logos/${logo.data.image}`;
+        const imageData = imageImports[imagePath]?.default;
 
-        {/* Bottom gradient line */}
-        <div class="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-red-500/0 to-transparent group-hover:via-red-500/40 transition-all duration-700 ease-in-out"></div>
+        if (!imageData) {
+          console.error(`Logo image not found: ${imagePath}`);
+          return null;
+        }
 
-        {/* Corner accents */}
-        <div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-transparent group-hover:border-red-500/20 transition-all duration-500 ease-out"></div>
-        <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-transparent group-hover:border-red-500/20 transition-all duration-500 ease-out"></div>
-      </Card>
-    ))}
+        return (
+          <Card
+            class="group relative h-32 overflow-hidden bg-white hover:bg-muted/50 transition-all duration-500 ease-out"
+            data-client-logo
+            data-index={index}
+          >
+            {/* Hover gradient overlay */}
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+              <div class="absolute inset-0 bg-gradient-to-br from-red-500/10 via-red-500/5 to-transparent" />
+            </div>
+
+            {/* Logo container */}
+            <div class="relative h-full px-8 py-6 flex items-center justify-center">
+              <Image
+                src={imageData}
+                alt={logo.data.name}
+                width={120}
+                height={60}
+                class="w-auto h-16 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transform group-hover:scale-110 transition-all duration-500 ease-out"
+              />
+            </div>
+
+            {/* Bottom gradient line */}
+            <div class="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-red-500/0 to-transparent group-hover:via-red-500/40 transition-all duration-700 ease-in-out" />
+
+            {/* Corner accents */}
+            <div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-transparent group-hover:border-red-500/20 transition-all duration-500 ease-out" />
+            <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-transparent group-hover:border-red-500/20 transition-all duration-500 ease-out" />
+          </Card>
+        );
+      })
+    }
   </div>
 </div>
 
@@ -63,42 +78,62 @@ const { clients } = Astro.props;
   }
 
   @keyframes hover-float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
   }
 
   .group {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .group:hover {
     animation: hover-float 2s ease-in-out infinite;
   }
 
   /* Stagger animation delays */
-  [data-client-logo][data-index="0"] { transition-delay: 0ms; }
-  [data-client-logo][data-index="1"] { transition-delay: 100ms; }
-  [data-client-logo][data-index="2"] { transition-delay: 200ms; }
-  [data-client-logo][data-index="3"] { transition-delay: 300ms; }
-  [data-client-logo][data-index="4"] { transition-delay: 400ms; }
-  [data-client-logo][data-index="5"] { transition-delay: 500ms; }
+  [data-client-logo][data-index='0'] {
+    transition-delay: 0ms;
+  }
+  [data-client-logo][data-index='1'] {
+    transition-delay: 100ms;
+  }
+  [data-client-logo][data-index='2'] {
+    transition-delay: 200ms;
+  }
+  [data-client-logo][data-index='3'] {
+    transition-delay: 300ms;
+  }
+  [data-client-logo][data-index='4'] {
+    transition-delay: 400ms;
+  }
+  [data-client-logo][data-index='5'] {
+    transition-delay: 500ms;
+  }
 </style>
 
 <script>
   function setupAnimations() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.2,
-      rootMargin: '50px'
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: '50px',
+      }
+    );
 
-    document.querySelectorAll('[data-client-logo]').forEach(logo => {
+    document.querySelectorAll('[data-client-logo]').forEach((logo) => {
       observer.observe(logo);
     });
   }
