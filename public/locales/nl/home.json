@@ -18,5 +18,12 @@
       "title": "Ervaren animatoren",
       "description": "Al onze animatoren zijn ervaren en experts op het vlak van de activiteiten die ze begeleiden."
     }
+  },
+  "teamActivities": {
+    "title": "Welke Soort Teambuilding Zoek Je?",
+    "subtitle": "Maak Je Keuze"
+  },
+  "testimonials": {
+    "title": "Wat Zeggen Onze Klanten?"
   }
 }

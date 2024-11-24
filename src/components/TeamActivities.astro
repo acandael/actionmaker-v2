@@ -3,20 +3,28 @@ import { getCollection } from 'astro:content';
 import ActivityCard from './TeamActivities/ActivityCard.astro';
 import SectionTitle from './TeamActivities/SectionTitle.astro';
 import CategoryIcon from './TeamActivities/CategoryIcon.astro';
+import { t, setDefaultNamespace } from 'i18next';
+import i18next from 'i18next';
 
-// Get categories from content collection
-const categories = await getCollection('categories');
+// Get current locale
+const currentLocale = i18next.language;
+
+// Get categories from content collection and filter by current locale
+const categories = await getCollection('categories', ({ id }) => {
+  return id.startsWith(currentLocale + '/');
+});
 
 const transformedCategories = categories.map((category) => ({
   id: category.id,
   title: category.data.title,
   description: category.data.description,
 }));
+setDefaultNamespace('home');
 ---
 
 <section class="py-24 px-4 bg-background">
   <div class="max-w-7xl mx-auto">
-    <SectionTitle subtitle="Welke Soort Teambuilding Zoek Je?" title="Maak Je Keuze" />
+    <SectionTitle subtitle={t('teamActivities.subtitle')} title={t('teamActivities.title')} />
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {
@@ -25,9 +33,10 @@ const transformedCategories = categories.map((category) => ({
             <ActivityCard
               title={category.title}
               description={category.description}
-              image={`${category.id}.jpg`}
+              image={`${category.id.split('/').pop()}.jpg`}
+              categoryId={category.id}
             >
-              <CategoryIcon category={category.id} slot="icon" />
+              <CategoryIcon category={category.id.split('/').pop()} slot="icon" />
             </ActivityCard>
           </a>
         ))

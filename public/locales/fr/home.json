@@ -18,5 +18,12 @@
       "title": "Animateurs expérimentés",
       "description": "Tous nos animateurs sont expérimentés et experts dans les activités qu'ils encadrent."
     }
+  },
+  "teamActivities": {
+    "title": "Quel type de teambuilding recherchez-vous ?",
+    "subtitle": "Faites votre choix"
+  },
+  "testimonials": {
+    "title": "Que disent nos clients?"
   }
 }

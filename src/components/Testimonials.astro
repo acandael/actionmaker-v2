@@ -1,27 +1,51 @@
 ---
-import SectionTitle from './TeamActivities/SectionTitle.astro';
 import TestimonialCard from './Testimonials/TestimonialCard.astro';
 import ClientLogos from './Testimonials/ClientLogos.astro';
-import { testimonials, clients } from './Testimonials/testimonials-data';
+import { clients } from './Testimonials/testimonials-data';
+import { getCollection } from 'astro:content';
+import i18next, { t } from 'i18next';
+
+// Get current locale
+const currentLocale = i18next.language;
+console.log('Current locale:', currentLocale);
+
+let testimonials = [];
+
+try {
+  // Get testimonials and filter by locale
+  const allTestimonials = await getCollection('testimonials');
+  testimonials = allTestimonials.filter((testimonial) => {
+    const isLocaleMatch = testimonial.id.startsWith(`${currentLocale}/`);
+    console.log(`Checking testimonial ${testimonial.id}:`, { isLocaleMatch, currentLocale });
+    return isLocaleMatch;
+  });
+  console.log('Filtered testimonials:', testimonials);
+} catch (error) {
+  console.error('Error fetching testimonials:', error);
+}
 ---
 
-<section class="py-24 px-4 bg-background">
+<section class="py-24 px-4 bg-gradient-to-b from-background to-muted/50">
   <div class="max-w-7xl mx-auto">
-    <SectionTitle 
-      subtitle="Wat Zeggen Onze Klanten?"
-      title="Ervaringen"
-    />
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-      {testimonials.map((testimonial) => (
-        <TestimonialCard 
-          name={testimonial.name}
-          role={testimonial.role}
-          content={testimonial.content}
-          image={testimonial.image}
-        />
-      ))}
+    <div class="text-center mb-20">
+      <h2 class="text-4xl font-bold mb-4">{t('testimonials.title')}</h2>
+      <div class="w-24 h-1 bg-red-600 mx-auto rounded-full"></div>
     </div>
+
+    {
+      testimonials && testimonials.length > 0 && (
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-32">
+          {testimonials.map((testimonial) => (
+            <TestimonialCard
+              name={testimonial.data.name}
+              company={testimonial.data.company}
+              text={testimonial.data.text}
+              image={testimonial.data.image}
+            />
+          ))}
+        </div>
+      )
+    }
 
     <ClientLogos clients={clients} />
   </div>

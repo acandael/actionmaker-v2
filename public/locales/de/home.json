@@ -18,5 +18,12 @@
       "title": "Erfolgreiche Animatoren",
       "description": "Alle unsere Animatoren sind erfahren und Experten in den Aktivitäten, die sie begleiten."
     }
+  },
+  "teamActivities": {
+    "title": "Welche Art von Teambuilding suchst du?",
+    "subtitle": "Wählen Sie aus"
+  },
+  "testimonials": {
+    "title": "Was sagen unsere Kunden?"
   }
 }

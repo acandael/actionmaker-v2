@@ -23,7 +23,18 @@ const categories = defineCollection({
   }),
 });
 
+const testimonials = defineCollection({
+  type: 'data',
+  schema: z.object({
+    name: z.string(),
+    company: z.string(),
+    text: z.string(),
+    image: z.string(),
+  }),
+});
+
 export const collections = {
   activities,
   categories,
+  testimonials,
 };
