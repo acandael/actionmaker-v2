@@ -1,36 +1,97 @@
 ---
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { Image } from 'astro:assets';
+import { t, setDefaultNamespace } from 'i18next';
+import { Trans } from 'astro-i18next/components';
+
+// Import your CTA image
+import ctaImage from '../assets/cta.jpg'; // adjust path to match your image location
+
+const stats = [
+  { value: '500+', label: t('cta.klanten') },
+  { value: '50+', label: t('cta.activiteiten') },
+  { value: '10+', label: t('cta.jaar') },
+  { value: '98%', label: t('cta.reviews') },
+];
+setDefaultNamespace('home');
 ---
 
-<section class="relative bg-background py-24 px-4 overflow-hidden">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <!-- Left Content -->
-      <div class="space-y-16">
-        <div class="space-y-4">
-          <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Een Leuke Dag Zonder Zorgen</h2>
-          <h3 class="text-4xl md:text-5xl font-bold tracking-tight">Het Team Versterkt!</h3>
+<section class="relative py-32 px-4 overflow-hidden bg-gradient-to-b from-background to-muted/50">
+  {/* Background Pattern */}
+  <div class="absolute inset-0 opacity-40">
+    <div class="absolute inset-0 bg-grid-white/10"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent">
+    </div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      {/* Left Content */}
+      <div class="space-y-12">
+        <div class="space-y-6">
+          <h2 class="text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight">
+            <Trans i18nKey="cta.versterk">
+              <span class="text-red-600">Versterk</span> Je Team,
+              <br />
+              <span class="text-red-600">Versterk</span> Je Bedrijf
+            </Trans>
+          </h2>
+          <p class="text-xl text-muted-foreground max-w-xl">
+            {t('cta.ontdek')}
+          </p>
         </div>
 
-        <Button
-          size="lg"
-          className="bg-red-600 hover:bg-red-700 text-white group px-8 py-7 text-lg rounded-xl font-semibold"
-          client:load
-        >
-          Vind je ideale teambuilding
-          <ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover:translate-x-1" />
-        </Button>
+        {/* Stats Grid */}
+        <div class="grid grid-cols-2 gap-8">
+          {
+            stats.map(({ value, label }) => (
+              <div class="space-y-2">
+                <div class="text-3xl font-bold text-red-600">{value}</div>
+                <div class="text-muted-foreground">{label}</div>
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button
+            size="lg"
+            className="bg-red-600 hover:bg-red-700 text-white group px-8 py-6 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <a href="/teambuildings" class="flex items-center gap-2">
+              {t('cta.cta')}
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </a>
+          </Button>
+        </div>
       </div>
 
-      <!-- Right Image -->
-      <div class="relative h-[400px] lg:h-[600px]">
-        <img
-          src="/cta.jpg"
-          alt="Team Archery Activity"
-          class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-2xl"
-        />
+      {/* Right Image */}
+      <div class="relative">
+        <div
+          class="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500"
+        >
+          <Image
+            src={ctaImage}
+            alt="Team collaboration"
+            width={800}
+            height={600}
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent"></div>
+        </div>
+
+        {/* Decorative Elements */}
+        <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-red-600/10 rounded-full blur-2xl"></div>
+        <div class="absolute -top-6 -right-6 w-32 h-32 bg-red-600/10 rounded-full blur-2xl"></div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .bg-grid-white\/10 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M1 0h2v2H1V0zm4 0h2v2H5V0zm4 0h2v2H9V0zm4 0h2v2h-2V0zm4 0h2v2h-2V0zm4 0h2v2h-2V0zM1 4h2v2H1V4zm4 0h2v2H5V4zm4 0h2v2H9V4zm4 0h2v2h-2V4zm4 0h2v2h-2V4zm4 0h2v2h-2V4zM1 8h2v2H1V8zm4 0h2v2H5V8zm4 0h2v2H9V8zm4 0h2v2h-2V8zm4 0h2v2h-2V8zm4 0h2v2h-2V8zM1 12h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM1 16h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM1 20h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z'/%3E%3C/svg%3E");
+  }
+</style>

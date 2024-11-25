@@ -28,5 +28,14 @@
   },
   "faq": {
     "title": "Veelgestelde vragen"
+  },
+  "cta": {
+    "versterk": "<span class='text-red-600'>Versterk</span> Je Team, <br /><span class='text-red-600'>Versterk</span> Je Bedrijf",
+    "ontdek": "Ontdek onze unieke teambuilding activiteiten en creëer onvergetelijke ervaringen voor je team.",
+    "cta": "Vind je teambuilding",
+    "klanten": "Tevreden klanten",
+    "activiteiten": "Unieke activiteiten",
+    "jaar": "Jaar ervaring",
+    "reviews": "Positieve reviews"
   }
 }
