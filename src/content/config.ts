@@ -41,9 +41,18 @@ const logos = defineCollection({
   }),
 });
 
+const faqs = defineCollection({
+  type: 'data',
+  schema: z.object({
+    question: z.string(),
+    answer: z.string(),
+  }),
+});
+
 export const collections = {
   activities,
   categories,
   testimonials,
   logos,
+  faqs,
 };

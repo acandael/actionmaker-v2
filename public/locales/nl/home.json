@@ -25,5 +25,8 @@
   },
   "testimonials": {
     "title": "Wat Zeggen Onze Klanten?"
+  },
+  "faq": {
+    "title": "Veelgestelde vragen"
   }
 }

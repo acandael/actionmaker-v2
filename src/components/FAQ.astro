@@ -1,0 +1,15 @@
+---
+import FAQAccordion from '../components/FAQ/FAQAccordion.astro';
+import { t, setDefaultNamespace } from 'i18next';
+setDefaultNamespace('home');
+---
+
+<section class="py-24 px-4 bg-background">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">{t('faq.title')}</h2>
+    </div>
+
+    <FAQAccordion />
+  </div>
+</section>

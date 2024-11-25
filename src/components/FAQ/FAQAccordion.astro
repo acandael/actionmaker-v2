@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import i18next from 'i18next';
+
+// Get current locale
+const currentLocale = i18next.language;
+
+// Get FAQs for current locale
+const faqs = await getCollection('faqs', ({ id }) => {
+  return id.startsWith(`${currentLocale}/`);
+});
+---
+
+<div class="w-full">
+  <div id="faq-root" data-faqs={JSON.stringify(faqs)}>
+    {/* React component will be mounted here */}
+  </div>
+</div>
+
+<script>
+  import { FAQAccordionReact } from './FAQAccordionReact.tsx';
+  import { createRoot } from 'react-dom/client';
+
+  function mountFAQAccordion() {
+    const container = document.getElementById('faq-root');
+    if (!container) return;
+
+    const faqs = JSON.parse(container.dataset.faqs || '[]');
+    const root = createRoot(container);
+    root.render(FAQAccordionReact({ faqs }));
+  }
+
+  // Mount on page load
+  mountFAQAccordion();
+
+  // Re-mount on view transitions
+  document.addEventListener('astro:page-load', mountFAQAccordion);
+</script>
