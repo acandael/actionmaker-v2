@@ -1,25 +1,17 @@
 ---
-title: 'Atelier Djembe'
-description: 'Faire de la musique ensemble en tant qu'équipe crée une expérience unique et génère un sentiment de groupe positif.'
+title: 'Atelier Djembé'
+description: 'Découvrez le rythme africain en équipe'
 image: 'djembe/djembe-1.jpg'
-categories: ['workshop']
-duration: '+/- 3u.'
-groupSize: 'Maximaal 15 personnes'
-availability: 'Toute l'année'
-features:
-  - 'expérience unique'
-  - 'sentiment de groupe positif'
-  - 'communication'
-  - 'dynamique de groupe positive'
-gallery:
-  [
-    'djembe/djembe-2.jpg',
-    'djembe/djembe-3.jpg',
-    'djembe/djembe-4.jpg',
-    'djembe/djembe-5.jpg',
-    'djembe/djembe-6.jpg',
-    'djembe/djembe-7.jpg',
-  ]
+categories: ['indoor', 'workshop', 'cultureel']
+duration: '2-3 heures'
+groupSize: '8-50 personnes'
+availability: 'Sur demande'
+features: ['teamgeest', 'muziek', 'cultuur']
+gallery: ['djembe/djembe-1.jpg', 'djembe/djembe-2.jpg', 'djembe/djembe-3.jpg']
 ---
 
-Ce team building est idéal pour renforcer l'esprit d'équipe. Faire de la musique ensemble en tant qu'équipe crée une expérience unique et génère un sentiment de groupe positif. Il permet aux collègues de s'engager dans un jeu d'ensemble et leur offre une façon différente de communiquer entre eux. La dynamique de groupe en est positivement influencée. Aucune connaissance préalable n'est requise. Cette activité peut être combinée avec, par exemple, de l'écopercussion.
+L'atelier djembé est une expérience musicale unique qui rassemble les participants autour des rythmes africains. Sous la direction d'un percussionniste professionnel, les équipes apprennent les techniques de base du djembé et créent ensemble une performance musicale impressionnante.
+
+L'activité commence par une introduction aux différentes techniques de percussion et à l'histoire du djembé. Les participants apprennent progressivement différents rythmes, en commençant par des motifs simples pour évoluer vers des compositions plus complexes.
+
+Au fil de l'atelier, les équipes travaillent sur leur coordination et leur écoute mutuelle, créant une véritable symphonie collective. Cette activité renforce non seulement l'esprit d'équipe mais permet également de découvrir une nouvelle forme d'expression culturelle.

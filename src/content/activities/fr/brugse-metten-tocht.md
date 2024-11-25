@@ -1,24 +1,18 @@
 ---
-title: 'Randonnée à Brugge'
-description: 'Cette randonnée est conçue pour les amateurs de Bruges. C'est un parcours à travers le centre-ville de Bruges avec des missions et des activités.'
-image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
-features:
-  - 'schiethouding verbeteren'
-  - 'competitie'
-  - 'teamgeest'
-gallery:
-  [
-    'brugse-metten-tocht/brugse-metten-tocht-2.jpg',
-    'brugse-metten-tocht/brugse-metten-tocht-3.jpg',
-    'brugse-metten-tocht/brugse-metten-tocht-4.jpg',
-    'brugse-metten-tocht/brugse-metten-tocht-5.jpg',
-    'brugse-metten-tocht/brugse-metten-tocht-6.jpg',
-    'brugse-metten-tocht/brugse-metten-tocht-7.jpg',
-  ]
-categories: ['culturel', 'outdoor']
+title: 'Brugse Metten Tocht'
+description: 'Une promenade historique à travers Bruges'
+image: 'brugse-metten/brugse-metten-1.jpg'
+categories: ['outdoor', 'cultureel']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'
+features: ['teamgeest', 'cultuur', 'ontspanning']
+gallery:
+  [
+    'brugse-metten/brugse-metten-1.jpg',
+    'brugse-metten/brugse-metten-2.jpg',
+    'brugse-metten/brugse-metten-3.jpg',
+  ]
 ---
 
 L'initiation sera réalisée avec l'arc recurve à deux mains.

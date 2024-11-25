@@ -5,19 +5,18 @@ import ActivityGrid from '@/components/TeamActivitiesList/ActivityGrid.astro';
 import CategoryFilters from '@/components/TeamActivitiesList/CategoryFilters.astro';
 import { Separator } from '@/components/ui/separator';
 import type { ImageMetadata } from 'astro';
-import i18next, { changeLanguage, t, setDefaultNamespace } from 'i18next';
-setDefaultNamespace('teambuildings');
+import i18next, { changeLanguage, t } from 'i18next';
 changeLanguage('fr');
 
 // Get current locale
 const currentLocale = i18next.language;
-console.log('Current locale:', currentLocale);
 
-// Get all activities and categories
-const activities = await getCollection('activities');
+// Get all activities and filter by locale
+const allActivities = await getCollection('activities');
+const activities = allActivities.filter((activity) => activity.id.startsWith(`${currentLocale}/`));
+
+// Get categories and filter by locale
 const allCategories = await getCollection('categories');
-
-// Filter categories by current locale and transform data
 const categories = allCategories
   .filter((category) => category.id.startsWith(`${currentLocale}/`))
   .map((category) => ({
@@ -25,8 +24,6 @@ const categories = allCategories
     title: category.data.title,
     description: category.data.description,
   }));
-
-console.log('Filtered categories:', categories);
 
 // Get the selected category from URL
 const selectedCategory = Astro.url.searchParams.get('category');

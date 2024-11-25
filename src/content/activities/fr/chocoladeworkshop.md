@@ -1,23 +1,17 @@
 ---
 title: 'Atelier Chocolat'
-description: 'Un atelier chocolat sous la direction d'un chocolatier professionnel.'
+description: "Découvrez l'art de la fabrication du chocolat belge"
 image: 'chocoladeworkshop/chocoladeworkshop-1.jpg'
-categories: ['culinaire', 'atelier']
-duration: '2.5 - 3 heures'
-groupSize: '8 - 25 personnes'
-availability: 'Toute l'année'
-features:
-  - 'instructeur expérimenté'
-  - 'création de confiseries'
-  - 'dégustation de chocolats''
+categories: ['indoor', 'workshop', 'culinair']
+duration: '2-3 heures'
+groupSize: '8-50 personnes'
+availability: 'Sur demande'
+features: ['teamgeest', 'creativiteit', 'culinair']
 gallery:
   [
+    'chocoladeworkshop/chocoladeworkshop-1.jpg',
     'chocoladeworkshop/chocoladeworkshop-2.jpg',
     'chocoladeworkshop/chocoladeworkshop-3.jpg',
-    'chocoladeworkshop/chocoladeworkshop-4.jpg',
-    'chocoladeworkshop/chocoladeworkshop-5.jpg',
-    'chocoladeworkshop/chocoladeworkshop-6.jpg',
-    'chocoladeworkshop/chocoladeworkshop-7.jpg',
   ]
 ---
 

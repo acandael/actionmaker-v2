@@ -1,25 +1,18 @@
 ---
-title: 'Test de dégustation'
-description: 'Peux-tu faire confiance à ton goût ? Qui fait le meilleur usage de ton goût, de ton odorat et de ton toucher ? Qui a la plus grande connaissance des bières, des colas, du fromage, des épices, …'
+title: 'Test de Dégustation'
+description: 'Une expérience gustative unique et ludique'
 image: 'smaaktest/smaaktest-1.jpg'
-categories: ['indoor', 'culinair']
-duration: 'avec quiz +/- 90 min, sans quiz +/- 60 min'
-groupSize: 'Maximum 20/24 participants (= 4 tables) par animateur'
-availability: 'Toute l'année'
-features:
-  - 'Tâches interactives'
-  - 'Exploration de la ville'
-  - 'Travail d'équipe'
-  - 'Élément de compétition'
+categories: ['indoor', 'culinair', 'workshop']
+duration: '2-3 heures'
+groupSize: '8-50 personnes'
+availability: 'Sur demande'
+features: ['teamgeest', 'culinair', 'entertainment']
 gallery:
   [
     'smaaktest/smaaktest-1.jpg',
     'smaaktest/smaaktest-2.jpg',
     'smaaktest/smaaktest-3.jpg',
     'smaaktest/smaaktest-4.jpg',
-    'smaaktest/smaaktest-5.jpg',
-    'smaaktest/smaaktest-6.jpg',
-    'smaaktest/smaaktest-7.jpg',
   ]
 ---
 

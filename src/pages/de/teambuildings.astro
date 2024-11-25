@@ -10,13 +10,13 @@ changeLanguage('de');
 
 // Get current locale
 const currentLocale = i18next.language;
-console.log('Current locale:', currentLocale);
 
-// Get all activities and categories
-const activities = await getCollection('activities');
+// Get all activities and filter by locale
+const allActivities = await getCollection('activities');
+const activities = allActivities.filter((activity) => activity.id.startsWith(`${currentLocale}/`));
+
+// Get categories and filter by locale
 const allCategories = await getCollection('categories');
-
-// Filter categories by current locale and transform data
 const categories = allCategories
   .filter((category) => category.id.startsWith(`${currentLocale}/`))
   .map((category) => ({
@@ -24,8 +24,6 @@ const categories = allCategories
     title: category.data.title,
     description: category.data.description,
   }));
-
-console.log('Filtered categories:', categories);
 
 // Get the selected category from URL
 const selectedCategory = Astro.url.searchParams.get('category');
@@ -59,12 +57,12 @@ const currentCategory = categories.find((c) => c.id === selectedCategory);
 <Layout title="Team Building Activities">
   <section class="max-w-7xl mx-auto px-4 py-24 mt-16">
     <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">
-        {currentCategory ? currentCategory.title : t('teambuildings:title')}
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        {currentCategory ? currentCategory.data.title : t('teambuildings:title')}
       </h1>
       {
         currentCategory && (
-          <p class="text-xl text-muted-foreground">{currentCategory.description}</p>
+          <p class="text-xl text-muted-foreground">{currentCategory.data.description}</p>
         )
       }
     </div>
@@ -79,8 +77,8 @@ const currentCategory = categories.find((c) => c.id === selectedCategory);
       <p class="text-muted-foreground">
         {
           selectedCategory
-            ? `${t('teambuildings:activities-found', { count: formattedActivities.length })} ${currentCategory?.title.toLowerCase()}`
-            : `${t('teambuildings:activities-available', { count: formattedActivities.length })}`
+            ? `${formattedActivities.length} ${t('teambuildings:activities-found', { count: formattedActivities.length })} ${currentCategory?.data.title.toLowerCase()}`
+            : `${formattedActivities.length} ${t('teambuildings:activities-available', { count: formattedActivities.length })}`
         }
       </p>
     </div>

@@ -1,15 +1,12 @@
 ---
-title: 'Réalité virtuelle'
-description: 'La personne qui a la lunette voit la bombe, sur la base de quoi le reste de l'équipe doit aider à désamorcer la bombe.'
+title: 'Réalité Virtuelle'
+description: 'Une expérience immersive unique dans le monde virtuel'
 image: 'virtual-reality/virtual-reality-1.jpg'
-categories: ['indoor']
-duration: '+/- 3u.'
-groupSize: 'Maximum 15 personnes'
-availability: 'Toute l'année'
-features:
-  - 'teamwork'
-  - 'Communication'
-  - 'Stratégie'
+categories: ['indoor', 'actief', 'workshop']
+duration: '2-3 heures'
+groupSize: '8-50 personnes'
+availability: 'Sur demande'
+features: ['teamgeest', 'technologie', 'entertainment']
 gallery:
   [
     'virtual-reality/virtual-reality-1.jpg',
@@ -17,8 +14,6 @@ gallery:
     'virtual-reality/virtual-reality-3.jpg',
     'virtual-reality/virtual-reality-4.jpg',
     'virtual-reality/virtual-reality-5.jpg',
-    'virtual-reality/virtual-reality-6.jpg',
-    'virtual-reality/virtual-reality-7.jpg',
   ]
 ---
 

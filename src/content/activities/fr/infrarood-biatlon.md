@@ -3,13 +3,10 @@ title: 'Biathlon infrarouge'
 description: 'Le biathlon infrarouge est une activité de loisir qui combine la précision du tir avec la course à pied.'
 image: 'infrarood-biatlon/infrarood-biatlon-1.jpg'
 categories: ['outdoor', 'indoor']
-duration: '+- 1u30 heures'
-groupSize: 'Max. 25 deelnemers par animateur'
-availability: 'Toute l'année'
-features:
-  - 'relaxation'
-  - 'dynamique de groupe'
-  - 'coaching'
+duration: '1.5 heures'
+groupSize: '25 personnes par animateur'
+availability: "Toute l'année"
+features: ['relaxation', 'dynamique de groupe', 'coaching']
 gallery:
   [
     'infrarood-biatlon/infrarood-biatlon-2.jpg',

@@ -1,24 +1,18 @@
 ---
-title: 'Lutte sumo'
-description: 'Une activité amusante où les participants se battent dans des sacs gonflables.'
+title: 'Lutte Sumo'
+description: 'Une activité amusante et originale qui combine sport et divertissement'
 image: 'sumoworstelen/sumoworstelen-1.jpg'
-categories: ['actief', 'indoor', 'outdoor']
-duration: '1 - 2 uur'
-groupSize: '8 - 30 personnes'
-availability: 'Toute l'année'
-features:
-  - 'Sacs gonflables sumo'
-  - 'Matériaux sécurisés'
-  - 'Supervision professionnelle'
-  - 'Formule de tournoi possible'
+categories: ['indoor', 'actief']
+duration: '2-3 heures'
+groupSize: '8-50 personnes'
+availability: 'Sur demande'
+features: ['teamgeest', 'sport', 'entertainment']
 gallery:
   [
+    'sumoworstelen/sumoworstelen-1.jpg',
     'sumoworstelen/sumoworstelen-2.jpg',
     'sumoworstelen/sumoworstelen-3.jpg',
     'sumoworstelen/sumoworstelen-4.jpg',
-    'sumoworstelen/sumoworstelen-5.jpg',
-    'sumoworstelen/sumoworstelen-6.jpg',
-    'sumoworstelen/sumoworstelen-7.jpg',
   ]
 ---
 

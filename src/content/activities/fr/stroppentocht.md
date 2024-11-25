@@ -1,25 +1,18 @@
 ---
-title: 'Puzzle de la ville'
-description: 'Ce puzzle est conçu pour les amateurs de Gand. Il est une promenade dans la ville de Gand avec des tâches et des activités.'
+title: 'Balade des Stroppendragers'
+description: 'Une promenade historique à travers Gand sur les traces des Stroppendragers'
 image: 'stroppentocht/stroppentocht-1.jpg'
 categories: ['outdoor', 'cultureel']
-duration: '+/- 3u.'
-groupSize: 'Maximum 25 participants par animateur'
-availability: 'Toute l'année'
-features:
-  - 'Chasse aux photos : patershol'
-  - 'Urban golf: vrijdagsmarkt'
-  - 'Repérage de graffitis: werregarenstraat'
-  - 'Quiz en cours de route'
-  - 'Dégustation de genièvre'
+duration: '2-3 heures'
+groupSize: '8-50 personnes'
+availability: 'Sur demande'
+features: ['teamgeest', 'cultuur', 'entertainment']
 gallery:
   [
+    'stroppentocht/stroppentocht-1.jpg',
     'stroppentocht/stroppentocht-2.jpg',
     'stroppentocht/stroppentocht-3.jpg',
     'stroppentocht/stroppentocht-4.jpg',
-    'stroppentocht/stroppentocht-5.jpg',
-    'stroppentocht/stroppentocht-6.jpg',
-    'stroppentocht/stroppentocht-7.jpg',
   ]
 ---
 
