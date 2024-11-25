@@ -5,8 +5,9 @@ import ActivityGrid from '@/components/TeamActivitiesList/ActivityGrid.astro';
 import CategoryFilters from '@/components/TeamActivitiesList/CategoryFilters.astro';
 import { Separator } from '@/components/ui/separator';
 import type { ImageMetadata } from 'astro';
-import i18next, { changeLanguage, t } from 'i18next';
+import i18next, { setDefaultNamespace, changeLanguage, t } from 'i18next';
 changeLanguage('nl');
+setDefaultNamespace('teambuildings');
 
 // Get current locale
 const currentLocale = i18next.language;
