@@ -5,23 +5,28 @@ import ActivityGrid from '@/components/TeamActivitiesList/ActivityGrid.astro';
 import CategoryFilters from '@/components/TeamActivitiesList/CategoryFilters.astro';
 import { Separator } from '@/components/ui/separator';
 import type { ImageMetadata } from 'astro';
-import i18next from 'i18next';
-import { t, setDefaultNamespace } from 'i18next';
-import { changeLanguage } from 'i18next';
-
+import i18next, { changeLanguage, t, setDefaultNamespace } from 'i18next';
 setDefaultNamespace('teambuildings');
-
-changeLanguage('nl');
+changeLanguage('fr');
 
 // Get current locale
 const currentLocale = i18next.language;
+console.log('Current locale:', currentLocale);
 
 // Get all activities and categories
 const activities = await getCollection('activities');
 const allCategories = await getCollection('categories');
 
-// Filter categories by current locale
-const categories = allCategories.filter((category) => category.id.startsWith(`${currentLocale}/`));
+// Filter categories by current locale and transform data
+const categories = allCategories
+  .filter((category) => category.id.startsWith(`${currentLocale}/`))
+  .map((category) => ({
+    id: category.id,
+    title: category.data.title,
+    description: category.data.description,
+  }));
+
+console.log('Filtered categories:', categories);
 
 // Get the selected category from URL
 const selectedCategory = Astro.url.searchParams.get('category');
@@ -52,45 +57,31 @@ const formattedActivities = filteredActivities.map((activity) => ({
 const currentCategory = categories.find((c) => c.id === selectedCategory);
 ---
 
-<Layout title="Teambuildings - ActionMaker">
+<Layout title="Team Building Activities">
   <section class="max-w-7xl mx-auto px-4 py-24 mt-16">
     <div class="text-center mb-16">
       <h1 class="text-4xl md:text-5xl font-bold mb-4">
-        {currentCategory ? currentCategory.data.title : t('title')}
+        {currentCategory ? currentCategory.title : t('teambuildings:title')}
       </h1>
       {
         currentCategory && (
-          <p class="text-xl text-muted-foreground">{currentCategory.data.description}</p>
+          <p class="text-xl text-muted-foreground">{currentCategory.description}</p>
         )
       }
     </div>
 
-    <CategoryFilters
-      categories={categories.map((cat) => ({
-        id: cat.id,
-        title: cat.data.title,
-        description: cat.data.description,
-      }))}
-      selectedCategory={selectedCategory}
-    />
+    <CategoryFilters categories={categories} selectedCategory={selectedCategory} />
 
     <div class="mb-16">
       <Separator className="max-w-2xl mx-auto" />
     </div>
 
-    <div id="activities-section" class="text-center mb-8 scroll-mt-32">
+    <div class="text-center mb-8">
       <p class="text-muted-foreground">
         {
-          selectedCategory ? (
-            <>
-              <strong>{`${formattedActivities.length} activiteit${formattedActivities.length !== 1 ? 'en' : ''}`}</strong>
-              {` gevonden in '${currentCategory?.data.title.toLowerCase()}'`}
-            </>
-          ) : (
-            `${formattedActivities.length} activiteit${
-              formattedActivities.length !== 1 ? 'en' : ''
-            } beschikbaar`
-          )
+          selectedCategory
+            ? `${t('teambuildings:activities-found', { count: formattedActivities.length })} ${currentCategory?.title.toLowerCase()}`
+            : `${t('teambuildings:activities-available', { count: formattedActivities.length })}`
         }
       </p>
     </div>
