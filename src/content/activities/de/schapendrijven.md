@@ -1,16 +1,16 @@
 ---
-title: 'Schapendrijven'
-description: 'Schapendrijven is een leuke activiteit voor groepen die graag willen genieten van de natuur en de schoonheid van de omgeving.'
+title: 'Schafhüten'
+description: 'Schapendrijven ist eine interessante Aktivität für Gruppen, die gerne die Natur und die Schönheit der Umgebung genießen möchten.'
 image: 'schapendrijven/schapendrijven-1.jpg'
 categories: ['outdoor', 'workshop']
 duration: '+/- 3u.'
-groupSize: 'Minimum 8 personen'
-availability: 'Het hele jaar door'
+groupSize: 'Minimum 8 Personen'
+availability: 'Das ganze Jahr über'
 features:
   - 'Basistechnieken schapen drijven'
-  - "Commando's voor honden"
-  - 'Parcours drijven'
-  - 'Demonstratie'
+  - 'Kommandos für Hunde'
+  - 'Parcours durchführen'
+  - 'Demonstration'
 gallery:
   [
     'schapendrijven/schapendrijven-1.jpg',
@@ -22,4 +22,4 @@ gallery:
   ]
 ---
 
-De schaapherder brengt jullie de basistechnieken van het schapen drijven bij en leert hoe de commando’s bij de honden, Border Collies, gebruikt kunnen worden. Na deze uitleg gaan jullie zelf de schapen over een parcours drijven. De workshop kan afgesloten worden met een demonstratie van de schapenherder zelf.
+Der Schäfer bringt Ihnen die Grundtechniken des Schafehütens bei und zeigt, wie die Kommandos für die Hunde, Border Collies, verwendet werden. Nach dieser Einweisung treiben Sie selbst die Schafe über einen Parcours. Der Workshop kann mit einer Demonstration des Schäfers abgeschlossen werden.

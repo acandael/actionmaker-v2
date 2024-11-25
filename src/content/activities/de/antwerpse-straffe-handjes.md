@@ -1,11 +1,11 @@
 ---
 title: 'Antwerpse Straffe Handjes'
-description: 'Antwerpse Straffe Handjes teambuilding'
+description: 'Teambuilding-Aktivität "Straffe Handjes" in Antwerpen'
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 features:
-  - 'leuke weetjes'
-  - 'gastronomie'
-  - 'prijzen'
+  - 'interessante Fakten'
+  - 'Gastronomie'
+  - 'Preise'
 gallery:
   [
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg',
@@ -16,14 +16,14 @@ gallery:
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-6.jpg',
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-7.jpg',
   ]
-categories: ['cultureel']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
-availability: 'Op aanvraag'
+categories: ['kulturell']
+duration: '2-3 Stunden'
+groupSize: '8-50 Personen'
+availability: 'Auf Anfrage'
 ---
 
-"Leuke weetjes over Antwerpen ontdekken en gelijktijdig de teamgeest versterken binnen je team, dan bevelen we de ludieke Straffe Handjes-tocht aan. Een flinke scheut teamactiviteiten, een vleugje zoektocht en een korrel gastronomie, kortom de ideale mix voor een middagje Antwerpen.
+"Entdecken Sie interessante Fakten über Antwerpen und stärken Sie gleichzeitig den Teamgeist in Ihrer Gruppe mit unserer spielerischen 'Straffe Handjes'-Tour. Eine großzügige Portion Teamaktivitäten, eine Prise Schnitzeljagd und ein Hauch Gastronomie - kurz gesagt, die ideale Mischung für einen Nachmittag in Antwerpen.
 
-Onze Antwerpen Kenners gaan op zoek naar de Strafste Handjes onder jullie. Wie kan er goed speuren, is creatief en behendig, maar kan ook goed luisteren en de ludieke quizvragen correct beantwoorden? Basketten in de stad, een tijdslijn opzetten van Antwerpen, highlights ontdekken, chocolade proeven, het is maar een kleine opsomming van alles wat er te gebeuren staat. Het team dat over de meeste vaardigheden beschikt is de winnaar en mag zich tot de ‘strafste handjes’ laten uitroepen. Een KEI-straffe activiteit in Antwerpen centrum! "
+Unsere Antwerpen-Experten suchen nach den geschicktesten 'Händchen' unter Ihnen. Wer kann gut recherchieren, ist kreativ und geschickt, kann aber auch gut zuhören und die spielerischen Quizfragen richtig beantworten? Basketball in der Stadt spielen, eine Zeitleiste von Antwerpen erstellen, Highlights entdecken, Schokolade probieren - das ist nur eine kleine Aufzählung von allem, was Sie erwartet. Das Team mit den meisten Fähigkeiten gewinnt und darf sich 'Straffe Handjes' nennen. Eine SUPER-starke Aktivität im Zentrum von Antwerpen!"
 
-De winnende teamleden vallen in de prijzen.
+Die Gewinner des Teams erhalten Preise.

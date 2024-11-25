@@ -1,16 +1,16 @@
 ---
-title: 'Pistoolschieten'
-description: 'Een spannende schietactiviteit onder professionele begeleiding.'
+title: 'Pistolschießen'
+description: 'Eine spannende Schießaktivität unter professioneller Anleitung.'
 image: 'pistoolschieten/pistoolschieten-1.jpg'
 categories: ['outdoor', 'indoor']
-duration: '2 - 3 uur'
-groupSize: '8 - 30 personen'
-availability: 'Het hele jaar door'
+duration: '2 - 3 Stunden'
+groupSize: '8 - 30 Personen'
+availability: 'Das ganze Jahr über'
 features:
-  - 'Professionele instructeurs'
-  - 'Alle materiaal inbegrepen'
-  - 'Veilige omgeving'
-  - 'Competitie-element mogelijk'
+  - 'Professionelle Anleitung'
+  - 'Alle Materialien inbegriffen'
+  - 'Sichere Umgebung'
+  - 'Wettkampfelement möglich'
 gallery:
   [
     'pistoolschieten/pistoolschieten-2.jpg',
@@ -22,8 +22,8 @@ gallery:
   ]
 ---
 
-Pistoolschieten is een uitdagende activiteit die precisie, concentratie en een vaste hand vereist. Onder begeleiding van ervaren instructeurs leren deelnemers de basistechnieken van het pistoolschieten in een veilige en gecontroleerde omgeving.
+Pistolenschießen ist eine anspruchsvolle Aktivität, die Präzision, Konzentration und eine ruhige Hand erfordert. Unter der Anleitung erfahrener Instruktoren lernen die Teilnehmer die Grundtechniken des Pistolenschießens in einer sicheren und kontrollierten Umgebung.
 
-De sessie begint met een uitgebreide veiligheidsinstructie en uitleg over de techniek. Deelnemers leren over de juiste schiethouding, ademhalingstechniek en trekkercontrole. Na de basistraining volgen verschillende oefeningen waarbij deelnemers hun vaardigheden kunnen verbeteren.
+Die Sitzung beginnt mit einer ausführlichen Einweisung in Sicherheit und Technik. Die Teilnehmer lernen die richtige Schießhaltung, Atemtechnik und Abzugskontrolle. Nach dem Grundlagentraining folgen verschiedene Übungen, bei denen die Teilnehmer ihre Fähigkeiten verbessern können.
 
-De activiteit kan worden afgesloten met een onderlinge competitie, waarbij teams of individuen het tegen elkaar opnemen in verschillende schietdisciplines. Dit zorgt niet alleen voor extra spanning en plezier, maar stimuleert ook het competitie-element binnen de groep.
+Die Aktivität kann mit einem Wettkampf abgeschlossen werden, bei dem Teams oder Einzelpersonen in verschiedenen Schießdisziplinen gegeneinander antreten. Dies sorgt nicht nur für zusätzliche Spannung und Spaß, sondern fördert auch den Wettkampfgeist innerhalb der Gruppe.

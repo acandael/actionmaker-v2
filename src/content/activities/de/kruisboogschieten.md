@@ -1,16 +1,16 @@
 ---
-title: 'Kruisboogschieten'
-description: 'Een spannende activiteit met historische kruisbogen.'
+title: 'Armbrustschießen'
+description: 'Ein spannendes Ereignis mit historischen Kreisbögen.'
 image: 'kruisboogschieten/kruisboogschieten-1.jpg'
 categories: ['indoor', 'outdoor']
-duration: '2 - 3 uur'
-groupSize: '8 - 30 personen'
-availability: 'Het hele jaar door'
+duration: '2 - 3 Stunden'
+groupSize: '8 - 30 Personen'
+availability: 'Das ganze Jahr über'
 features:
-  - 'Professionele begeleiding'
-  - 'Alle materiaal inbegrepen'
-  - 'Verschillende doelwitten'
-  - 'Competitie-element mogelijk'
+  - 'Professionelle Anleitung'
+  - 'Alle Materialien inbegriffen'
+  - 'Verschiedene Zielwitten'
+  - 'Wettkampfelement möglich'
 gallery:
   [
     'kruisboogschieten/kruisboogschieten-2.jpg',
@@ -22,8 +22,8 @@ gallery:
   ]
 ---
 
-Kruisboogschieten is een historische sport die precisie, concentratie en een vaste hand vereist. Onder begeleiding van ervaren instructeurs leren deelnemers de basistechnieken van het kruisboogschieten in een veilige en gecontroleerde omgeving.
+Armbrustschießen ist ein historischer Sport, der Präzision, Konzentration und eine ruhige Hand erfordert. Unter der Anleitung erfahrener Instruktoren lernen die Teilnehmer die Grundtechniken des Armbrustschießens in einer sicheren und kontrollierten Umgebung.
 
-De sessie begint met een uitgebreide instructie over veiligheid en techniek. Deelnemers leren over de geschiedenis van de kruisboog, de juiste schiethouding en het richten op het doel. Na de basistraining volgen verschillende oefeningen waarbij deelnemers hun vaardigheden kunnen verbeteren.
+Die Sitzung beginnt mit einer ausführlichen Einweisung in Sicherheit und Technik. Die Teilnehmer lernen die Geschichte der Armbrust, die richtige Schießhaltung und das Zielen kennen. Nach dem Grundlagentraining folgen verschiedene Übungen, bei denen die Teilnehmer ihre Fähigkeiten verbessern können.
 
-De activiteit kan worden afgesloten met een spannende competitie, waarbij teams of individuen het tegen elkaar opnemen in verschillende uitdagingen. Dit zorgt niet alleen voor extra spanning en plezier, maar stimuleert ook de teamspirit en het competitieve element binnen de groep.
+Die Aktivität kann mit einem spannenden Wettkampf abgeschlossen werden, bei dem Teams oder Einzelpersonen in verschiedenen Herausforderungen gegeneinander antreten. Dies sorgt nicht nur für zusätzliche Spannung und Spaß, sondern fördert auch den Teamgeist und das Wettkampfelement innerhalb der Gruppe.

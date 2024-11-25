@@ -1,11 +1,11 @@
 ---
 title: 'Indoor Lasershooting'
-description: 'Indoor lasershooting is een spannende teamactiviteit waarbij strategie, communicatie en teamwork centraal staan.'
+description: 'Indoor Lasershooting ist eine spannende Teamaktivität, bei der Strategie, Kommunikation und Teamwork im Mittelpunkt stehen.'
 image: 'indoor-lasershooting/indoorlasershooting-1.jpg'
 features:
-  - 'spannende teamactiviteit'
-  - 'communicatie'
-  - 'teamwork'
+  - 'Spannende Teamaktivität'
+  - 'Kommunikation'
+  - 'Teamwork'
 gallery:
   [
     'indoor-lasershooting/indoorlasershooting-2.jpg',
@@ -16,13 +16,13 @@ gallery:
     'indoor-lasershooting/indoorlasershooting-7.jpg',
   ]
 categories: ['indoor']
-duration: '1-2 uur'
-groupSize: '8-30 personen'
-availability: 'Op aanvraag'
+duration: '1-2 Stunden'
+groupSize: '8-30 Personen'
+availability: 'Auf Anfrage'
 ---
 
-Indoor lasershooting is een spannende teamactiviteit waarbij strategie, communicatie en teamwork centraal staan. In een speciaal ingerichte indoor arena nemen teams het tegen elkaar op in verschillende uitdagende spelmodi.
+Indoor Lasershooting ist eine spannende Teamaktivität, bei der Strategie, Kommunikation und Teamwork im Mittelpunkt stehen. In einer speziell eingerichteten Indoor-Arena treten Teams in verschiedenen herausfordernden Spielmodi gegeneinander an.
 
-Deelnemers worden uitgerust met professionele laserguns en sensoren, waarna ze in teams verschillende missies en opdrachten moeten voltooien. De activiteit is volledig veilig en geschikt voor alle leeftijden en conditieniveaus.
+Die Teilnehmer werden mit professionellen Laserpistolen und Sensoren ausgestattet und müssen dann im Team verschiedene Missionen und Aufgaben erfüllen. Die Aktivität ist völlig sicher und für alle Altersgruppen und Fitnesslevel geeignet.
 
-De verschillende spelmodi zorgen voor variatie en spanning, van klassieke team deathmatch tot objectieve-gebaseerde missies. Na elke ronde worden de scores en statistieken besproken, wat zorgt voor een competitief element en de mogelijkheid om tactieken aan te passen.
+Die verschiedenen Spielmodi sorgen für Abwechslung und Spannung, von klassischem Team-Deathmatch bis hin zu objektbasierten Missionen. Nach jeder Runde werden die Punktzahlen und Statistiken besprochen, was für ein Wettkampfelement sorgt und die Möglichkeit bietet, Taktiken anzupassen.

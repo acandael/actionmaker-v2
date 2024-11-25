@@ -1,11 +1,11 @@
 ---
-title: 'Alpaca Workshop'
-description: "Workshop met alpaca's"
+title: 'Alpacaworkshop'
+description: 'Workshop mit Alpaken'
 image: 'alpacaworkshop/alpacaworkshop-1.jpg'
 features:
-  - 'teamgeest'
-  - 'communicatie'
-  - 'leiderschap'
+  - 'teamgeist'
+  - 'Kommunikation'
+  - 'Führung'
 gallery:
   [
     'alpacaworkshop/alpacaworkshop-1.jpg',
@@ -19,10 +19,10 @@ gallery:
 categories: ['workshop']
 duration: '2-3 uur'
 groupSize: '8-50 personen'
-availability: 'Op aanvraag'
+availability: 'Auf Anfrage'
 ---
 
-Dankzij hun unieke karakter zijn alpaca’s enorm geschikt om samen op zoek te gaan naar de verschillende manieren om een situatie binnen een team aan te pakken.
-Je komt door middel van kleine opdrachten meer te weten over vertrouwen, communicatie en leiderschap in je team. Jij geeft aan welk thema binnen je team je wil behandelen; communiceren, samenwerken en conflicten beheren of gewoon enkel fun. Deze fijngevoelige dieren geven directe feedback op de mens en hoe die zich gedraagt. Ze voelen aan of het klopt; je eigenlijke reactie met je daadwerkelijk gevoel.
+Dank ihres einzigartigen Charakters eignen sich Alpakas hervorragend dazu, gemeinsam verschiedene Möglichkeiten zu erkunden, wie man eine Situation im Team angehen kann.
+Durch kleine Aufgaben lernen Sie mehr über Vertrauen, Kommunikation und Führung in Ihrem Team. Sie bestimmen, welches Thema Sie in Ihrem Team behandeln möchten: Kommunikation, Zusammenarbeit und Konfliktmanagement oder einfach nur Spaß. Diese sensiblen Tiere geben direktes Feedback zum Menschen und seinem Verhalten. Sie spüren, ob etwas stimmig ist; Ihre tatsächliche Reaktion mit Ihrem wahren Gefühl.
 
-Blijft je alpaca staan, trekt hij tegen, wil hij niet mee? Allemaal indicaties dat er iets niet klopt in je communicatie met hen. We geven je tips en bespreken hoe je samen met je alpaca verder kan. Dit is geen gewone ‘wandeling’, dit is een effectieve agility oefening met je dier.
+Bleibt Ihr Alpaka stehen, zieht es gegen Sie, will es nicht mitgehen? All das sind Hinweise darauf, dass etwas in Ihrer Kommunikation mit ihnen nicht stimmt. Wir geben Ihnen Tipps und besprechen, wie Sie mit Ihrem Alpaka weitermachen können. Dies ist kein gewöhnlicher 'Spaziergang', dies ist eine effektive Agility-Übung mit Ihrem Tier.

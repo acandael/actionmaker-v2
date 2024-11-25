@@ -1,16 +1,16 @@
 ---
-title: 'Stroppentocht'
-description: 'Deze tocht is gemaakt voor de liefhebbers van Gent. Het is een tocht door de binnenstad van Gent met opdrachten en activiteiten.'
+title: 'Stroppenführung'
+description: 'Diese Tour ist für die Liebhaber von Gent gemacht. Es ist eine Tour durch die Innenstadt von Gent mit Aufgaben und Aktivitäten.'
 image: 'stroppentocht/stroppentocht-1.jpg'
 categories: ['outdoor', 'cultureel']
 duration: '+/- 3u.'
 groupSize: 'Maximum 25 deelnemers per animator'
 availability: 'Het hele jaar door'
 features:
-  - 'fotozoektocht: patershol'
-  - 'urban golf: vrijdagsmarkt'
-  - 'graffiti spotting: werregarenstraat'
-  - 'quiz onderweg'
+  - 'Fotorallye: Patershol'
+  - 'Urban Golf: Vrijdagsmarkt'
+  - 'Graffiti Spotting: Werregarenstraat'
+  - 'Quiz unterwegs'
 5. jenevers proeven: dreupelkot
 gallery:
   [
@@ -23,14 +23,14 @@ gallery:
   ]
 ---
 
-1. Fotozoektocht: teams moeten hun weg vinden door het Patershol en onderweg 10 antwoorden vinden in het straatbeeld op 10 vragen die ze meekrijgen. 10 punten te verdienen.
+1. Fotorallye: Teams müssen ihren Weg durch das Patershol finden und unterwegs 10 Antworten im Straßenbild auf 10 Fragen finden, die sie erhalten. 10 Punkte können verdient werden.
 
-2. Urban Golf: teams slaan 20 keer naar het standbeeld van Artevelde. Per keer dat ze raak slaan verdienen ze een half punt. 10 punten te verdienen
+2. Urban Golf: Teams schlagen 20 Mal auf die Artevelde-Statue. Für jeden Treffer gibt es einen halben Punkt. 10 Punkte können verdient werden.
 
-3. Graffiti Spotting: teams zoeken 5 Gentse en 5 Belgische symbolen die in dit straatje gegraffiteerd zijn. 10 punten te verdienen
+3. Graffiti Spotting: Teams suchen 5 Genter und 5 belgische Symbole, die in dieser Straße als Graffiti zu finden sind. 10 Punkte können verdient werden.
 
-4. Jenevers proeven: Teams moeten 5 smaken proberen herkennen. 5 punten te verdienen
+4. Genever-Verkostung: Teams müssen 5 Geschmacksrichtungen erkennen. 5 Punkte können verdient werden.
 
-5. Quiz: onderweg worden er 5 Gentse quizvragen gesteld. 5 punten te verdienen
+5. Quiz: Unterwegs werden 5 Genter Quiz-Fragen gestellt. 5 Punkte können verdient werden.
 
-In totaal haalt elk team een score op 50 punten. De winnende teamleden vallen in de prijzen.
+Insgesamt kann jedes Team eine Punktzahl von 50 Punkten erreichen. Die Mitglieder des Siegerteams gewinnen Preise.

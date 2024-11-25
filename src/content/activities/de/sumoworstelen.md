@@ -1,16 +1,16 @@
 ---
-title: 'Sumoworstelen'
-description: 'Een hilarische activiteit waarbij deelnemers in opblaasbare sumopakken tegen elkaar strijden.'
+title: 'Sumoringen'
+description: 'Eine hilarische Aktivität, bei der Teilnehmer in aufblasbare Sumopakete gegeneinander antreten.'
 image: 'sumoworstelen/sumoworstelen-1.jpg'
 categories: ['actief', 'indoor', 'outdoor']
 duration: '1 - 2 uur'
-groupSize: '8 - 30 personen'
-availability: 'Het hele jaar door'
+groupSize: '8 - 30 Teilnehmer'
+availability: 'Das ganze Jahr über'
 features:
-  - 'Opblaasbare sumopakken'
-  - 'Veilige matten'
-  - 'Professionele begeleiding'
-  - 'Toernooi-formule mogelijk'
+  - 'Aufblasbare Sumopakete'
+  - 'Sichere Matten'
+  - 'Professionelle Begleitung'
+  - 'Turnier-Formel möglich'
 gallery:
   [
     'sumoworstelen/sumoworstelen-2.jpg',
@@ -22,7 +22,7 @@ gallery:
   ]
 ---
 
-Sumoworstelen is duwen en trekken totdat je tegenstander erbij neervalt. Met 2 of 4 personen betreedt u de mat en start u met de bekende Japanse sumogroet. Op het startsignaal van de spelbegeleider gaat de wedstrijd van start en moeten de deelnemers elkaar van de mat af duwen voor een half punt of omgooien voor een heel punt. Tot slot mag de winnaar van de match een overwinningsjump op de verliezer maken. Iedereen kan meerdere keren deelnemen.
+Sumoringen ist Schieben und Ziehen, bis der Gegner zu Fall kommt. Mit 2 oder 4 Personen betreten Sie die Matte und beginnen mit der bekannten japanischen Sumo-Begrüßung. Auf das Startsignal des Spielleiters beginnt der Wettkampf, und die Teilnehmer müssen sich gegenseitig von der Matte schieben für einen halben Punkt oder zu Fall bringen für einen ganzen Punkt. Zum Schluss darf der Gewinner des Matches einen Siegessprung auf den Verlierer machen. Jeder kann mehrmals teilnehmen.
 
-Nieuwigheid is de sumo tweeling, het is een erg leuke variant op het welbekende sumo worstel spel, maar bij deze vergt het dus goed teamwork met je sumo-partner.
-Een partijtje sumoworstelen vergt veel van de conditie en van de lachspieren van de toeschouwers, dus houdt uw camera klaar!
+Eine Neuheit ist das Sumo-Zwillingskämpfen, eine sehr lustige Variante des bekannten Sumo-Ringkampfs, bei der gute Teamarbeit mit dem Sumo-Partner gefragt ist.
+Eine Runde Sumoringen fordert nicht nur die Kondition der Teilnehmer, sondern auch die Lachmuskeln der Zuschauer - halten Sie also Ihre Kamera bereit!

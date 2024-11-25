@@ -1,16 +1,16 @@
 ---
-title: 'Roofvogelworkshop'
-description: 'Ervaar de emotie om oog in oog te staan met de heersers van het luchtruim.'
+title: 'Greifvogelworkshop'
+description: 'Erleben Sie die Emotion, den Herrschern der Lüfte Auge in Auge gegenüberzustehen.'
 image: 'roofvogelworkshop/roofvogelworkshop-1.jpg'
 categories: ['outdoor', 'workshop']
 duration: '+/- 3u.'
-groupSize: 'Minimum 8 personen'
-availability: 'Het hele jaar door'
+groupSize: 'Minimum 8 Personen'
+availability: 'Das ganze Jahr über'
 features:
-  - 'Demonstratie'
-  - 'Vogelvliegen'
-  - 'Loerdraaien'
-  - 'Valkeniersknoop'
+  - 'Demonstration'
+  - 'Vögel fliegen lassen'
+  - 'Locken der Vögel'
+  - 'Falknerknoten'
 gallery:
   [
     'roofvogelworkshop/roofvogelworkshop-2.jpg',
@@ -22,4 +22,4 @@ gallery:
   ]
 ---
 
-Ervaar de emotie om oog in oog te staan met de heersers van het luchtruim. Na de demonstratie bereiden we je voor om zelf verschillende roofvogels te vliegen en leren we je loerdraaien en de eeuwenoude valkeniersknoop. Om het evenement af te sluiten tonen we je graag onze meest impressionante vogels en trucs.
+Erleben Sie die Emotion, den Herrschern der Lüfte Auge in Auge gegenüberzustehen. Nach der Demonstration bereiten wir Sie darauf vor, selbst verschiedene Greifvögel fliegen zu lassen und bringen Ihnen das Locken und den jahrhundertealten Falknerknoten bei. Zum Abschluss der Veranstaltung zeigen wir Ihnen gerne unsere beeindruckendsten Vögel und Tricks.

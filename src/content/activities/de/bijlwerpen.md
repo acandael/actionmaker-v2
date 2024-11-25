@@ -1,6 +1,6 @@
 ---
 title: 'Bijlwerpen'
-description: 'Bijlwerpen teambuilding'
+description: 'Teambuilding-Aktivität "Bijlwerpen"'
 image: 'bijlwerpen/bijlwerpen-1.jpg'
 features:
   - 'teamgeest'
@@ -16,13 +16,13 @@ gallery:
     'bijlwerpen/bijlwerpen-6.jpg',
   ]
 categories: ['outdoor', 'actief']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
-availability: 'Op aanvraag'
+duration: '2-3 Stunden'
+groupSize: '8-50 Personen'
+availability: 'Auf Anfrage'
 ---
 
-Hoewel het vaak als mannensport wordt gezien, is het ook zeer toegankelijk voor vrouwen .
-Bijlwerpen is verrassend gemakkelijk, de meeste mensen werpen de bijl in het doel in de eerste vijf tot tien worpen, de moeilijkheid schuilt in het constant goed werpen. De sport is meer ontspanning en ritme dan brute kracht.
+Obwohl es oft als Männersport angesehen wird, ist es auch für Frauen sehr zugänglich.
+Axtwerfen ist überraschend einfach, die meisten Menschen treffen das Ziel bereits in den ersten fünf bis zehn Würfen. Die Schwierigkeit liegt darin, konstant gut zu werfen. Der Sport erfordert mehr Entspannung und Rhythmus als rohe Kraft.
 
-U altijd al eens een stoere Zweed willen voelen.
-We sluiten af met een wedstrijd om te zien wij er het meest bijgeleerd heeft.
+Fühlen Sie sich einmal wie ein starker Schwede.
+Wir schließen mit einem Wettkampf ab, um zu sehen, wer am meisten dazugelernt hat.

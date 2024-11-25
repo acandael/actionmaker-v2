@@ -1,11 +1,11 @@
 ---
-title: 'Brugse Metten Tocht'
-description: 'Deze tocht is gemaakt voor de liefhebbers van Brugge. Het is een tocht door de binnenstad van Brugge met opdrachten en activiteiten.'
+title: 'Brügger Metten Tour'
+description: 'Diese Tour ist für die Liebhaber von Brügge gemacht. Es ist eine Tour durch die historische Altstadt von Brügge mit Aufgaben und Aktivitäten.'
 image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
 features:
-  - 'schiethouding verbeteren'
-  - 'competitie'
-  - 'teamgeest'
+  - 'Schießhaltung verbessern'
+  - 'Wettkampf'
+  - 'Teamgeist'
 gallery:
   [
     'brugse-metten-tocht/brugse-metten-tocht-2.jpg',
@@ -15,14 +15,14 @@ gallery:
     'brugse-metten-tocht/brugse-metten-tocht-6.jpg',
     'brugse-metten-tocht/brugse-metten-tocht-7.jpg',
   ]
-categories: ['cultureel', 'outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
-availability: 'Op aanvraag'
+categories: ['kulturell', 'outdoor']
+duration: '2-3 Stunden'
+groupSize: '8-50 Personen'
+availability: 'Auf Anfrage'
 ---
 
-De initiatie zal uitgevoerd worden met de recurve tweehandsboog.
+Die Einführung wird mit dem Recurve-Zweihandbogen durchgeführt.
 
-Eerst schieten de deelnemers een aantal oefenpijlen. De animator probeert de schiethouding van de schutters te verbeteren. Het is zeker niet eenvoudig, maar men kan zich snel verbeteren. Na een aantal pijlen zal blijken dat men zich steeds meer vertrouwd voelt met de houding en het schieten.
+Zunächst schießen die Teilnehmer einige Übungspfeile. Der Animator versucht, die Schießhaltung der Schützen zu verbessern. Es ist sicherlich nicht einfach, aber man kann sich schnell verbessern. Nach einigen Pfeilen wird sich zeigen, dass man sich mit der Haltung und dem Schießen immer vertrauter fühlt.
 
-Nadien volgt een competitie tussen de deelnemers. Er kunnen ook een aantal spelvormen gebruikt worden.
+Anschließend folgt ein Wettkampf zwischen den Teilnehmern. Es können auch verschiedene Spielformen eingesetzt werden.

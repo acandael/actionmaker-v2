@@ -1,17 +1,17 @@
 ---
-title: 'Stadsspel'
-description: 'Een interactieve ontdekkingstocht door de stad'
+title: 'Stadspiel'
+description: 'Eine interaktive Entdeckungstour durch die Stadt'
 image: 'stadsspel/stadsspel-1.jpg'
 categories: ['outdoor', 'cultureel']
 duration: '+- 3 uur'
-groupSize: 'Max. 25 deelnemers per animator'
-availability: 'Het hele jaar door'
+groupSize: 'Max. 25 Teilnehmer pro Animator'
+availability: 'Das ganze Jahr über'
 features:
-  - 'Interactieve opdrachten'
-  - 'Stad verkennen'
+  - 'Interaktive Aufgaben'
+  - 'Stad erkunden'
   - 'Teamwork'
-  - 'Competitie-element'
+  - 'Wettkampfelement'
 gallery: ['stadsspel/stadsspel-2.jpg']
 ---
 
-Mag ik mij even voorstellen, ik ben Texas Jones, de jammer genoeg minder bekende neef van Indiana. Net zoals mijn nonkel heb ik mijn leven gewijd aan het ontdekken van verloren schatten (met net iets minder succes). Na vele jaren zoeken en enige bekendheid in het wereldje, werd ik door de Stichting Keizer Karel aangesproken om een van de verloren schatten van Keizer Karel terug te vinden.
+Lassen Sie mich mich vorstellen, ich bin Texas Jones, der leider weniger bekannte Neffe von Indiana. Wie mein Onkel habe ich mein Leben der Entdeckung verlorener Schätze gewidmet (mit etwas weniger Erfolg). Nach vielen Jahren der Suche und einiger Bekanntheit in der Szene wurde ich von der Kaiser-Karl-Stiftung kontaktiert, um einen der verlorenen Schätze Kaiser Karls wiederzufinden.

@@ -1,11 +1,11 @@
 ---
-title: 'Blaaspijpschieten'
-description: 'Blaaspijpschieten teambuilding'
+title: 'Blasrohrschießen'
+description: 'Teambuilding-Aktivität "Blasrohrschießen"'
 image: 'blaaspijpschieten/blaaspijpschieten-1.jpg'
 features:
-  - 'competitie'
-  - 'sport'
-  - 'ontspanning'
+  - 'Wettkampf'
+  - 'Sport'
+  - 'Entspannung'
 gallery:
   [
     'blaaspijpschieten/blaaspijpschieten-2.jpg',
@@ -16,9 +16,9 @@ gallery:
     'blaaspijpschieten/blaaspijpschieten-7.jpg',
   ]
 categories: ['outdoor', 'actief']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
-availability: 'Op aanvraag'
+duration: '2-3 Stunden'
+groupSize: '8-50 Personen'
+availability: 'Auf Anfrage'
 ---
 
-Blaaspijpschieten is erg populair. Het is een spannende en uitdagende activiteit voor alle leeftijden. Er wordt een korte geschiedenis van het blaaspijpschieten gegeven. Daarna oefenen en competitie met blaaspijpen van 3 verschillende lengtes.
+Blasrohrschießen ist sehr beliebt. Es ist eine spannende und herausfordernde Aktivität für alle Altersgruppen. Es wird eine kurze Geschichte des Blasrohrschießens gegeben. Danach folgen Übungen und ein Wettbewerb mit Blasrohren in 3 verschiedenen Längen.

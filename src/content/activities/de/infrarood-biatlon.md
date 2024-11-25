@@ -1,15 +1,15 @@
 ---
 title: 'Infrarood biatlon'
-description: 'Bij het infrarood biatlonschieten wordt er met omgebouwde biatlongeweren geschoten op een biatlon doel, de sportpistolen worden op een normaal doel gericht'
+description: 'Bei der Infrarot-Biathlon- und Sportpistolenschießen wird mit umgebauten Biatlongewehren geschossen auf ein Biatlonziel, die Sportpistolen werden auf ein normales Ziel gericht'
 image: 'infrarood-biatlon/infrarood-biatlon-1.jpg'
 categories: ['outdoor', 'indoor']
-duration: '+- 1u30 uur'
-groupSize: 'Max. 25 deelnemers per animator'
-availability: 'Het hele jaar door'
+duration: '+- 1u30 Stunden'
+groupSize: 'Max. 25 Teilnehmer pro Animatoren'
+availability: 'Das ganze Jahr über'
 features:
-  - 'ontspanning'
-  - 'groepsdynamiek'
-  - 'coaching'
+  - 'Entspannung'
+  - 'Gruppendynamik'
+  - 'Coaching'
 gallery:
   [
     'infrarood-biatlon/infrarood-biatlon-2.jpg',
@@ -21,6 +21,6 @@ gallery:
   ]
 ---
 
-Aan de hand van de lichten en de console die bij het geweer/pistool hoort weet u waar u getroffen hebt. De console toont uw schietpatroon zodanig dat u dit makkelijk kan aanpassen. Dit is een superleuke ervaring voor zowel volwassenen als kinderen. Het infrarood biatlon- en sportpistool schieten is daarenboven ook nog volledig veilig en milieuvriendelijk en kan zowel binnen als buiten plaatsvinden.
+Anhand der Lichter und der Konsole, die zum Gewehr/zur Pistole gehört, wissen Sie, wo Sie getroffen haben. Die Konsole zeigt Ihr Schussmuster an, sodass Sie es leicht anpassen können. Dies ist eine tolle Erfahrung für Erwachsene und Kinder gleichermaßen. Das Infrarot-Biathlon- und Sportpistolenschießen ist außerdem völlig sicher und umweltfreundlich und kann sowohl drinnen als auch draußen durchgeführt werden.
 
-Deze activiteit is ideaal voor een teambuilding, de ploegleden die niet aan het schieten zijn kunnen hun teamgenoten “coachen” aan de hand van de console. Na het oefenen, gaan we door een competitie op zoek naar de kampioen
+Diese Aktivität ist ideal für Teambuilding, da die Teammitglieder, die gerade nicht schießen, ihre Teamkollegen anhand der Konsole "coachen" können. Nach dem Training suchen wir durch einen Wettkampf nach dem Champion.

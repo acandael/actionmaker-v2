@@ -1,16 +1,15 @@
 ---
-title: 'Kunstsmeden'
-description: 'Het smidsberoep is een zeer oud beroep en heeft in het verleden vele werkstukken voortgebracht.'
+title: 'Kunstschmieden'
+description: 'Das Schmieden ist ein sehr altes Beruf und hat in der Vergangenheit viele Werkstücke hervorgebracht.'
 image: 'kunstsmeden/kunstsmeden-1.jpg'
 categories: ['workshop']
-duration: '+/- 2u.'
-groupSize: 'Maximum 20 deelnemers per sessie'
-availability: 'Het hele jaar door'
+duration: '+/- 2 Stunden'
+groupSize: 'Max. 20 Teilnehmer pro Sitzung'
+availability: 'Das ganze Jahr über'
 features:
-  - 'ervaren smid'
-  - 'een uniek cadeau'
-  - 'veiligheidsbril'
-
+  - 'Erfahrener Schmied'
+  - 'Einzigartiges Geschenk'
+  - 'Sicherheitsbrille'
 gallery:
   [
     'kunstsmeden/kunstsmeden-2.jpg',
@@ -22,9 +21,9 @@ gallery:
   ]
 ---
 
-Tot halverwege de twintigste eeuw had vrijwel iedere plaats zijn eigen smederij. Sindsdien is het beroep veel zeldzamer geworden. Machinaal smeden op industriële schaal wordt nog wel veel toegepast.
+Bis zur Mitte des zwanzigsten Jahrhunderts hatte fast jeder Ort seine eigene Schmiede. Seitdem ist der Beruf viel seltener geworden. Maschinelles Schmieden im industriellen Maßstab wird jedoch noch häufig angewendet.
 
-Van het smeden van ploegen, zwaarden en pantsers tot zilveren en gouden sieraden, het smidsberoep is van cruciaal belang geweest in de wereldgeschiedenis.
-Wil je zelf eens aan de slag met hamer en aanbeeld? Smeed met je collega’s het bedrijfslogo of bedrijfsnaam in een actieve (en warme) teambuilding of maak samen met je vrienden en familie een uniek cadeau voor een verjaardag of een trouw.
+Vom Schmieden von Pflügen, Schwertern und Rüstungen bis hin zu Silber- und Goldschmuck war der Schmiedeberuf von entscheidender Bedeutung in der Weltgeschichte.
+Möchten Sie selbst einmal mit Hammer und Amboss arbeiten? Schmieden Sie mit Ihren Kollegen das Firmenlogo oder den Firmennamen in einem aktiven (und warmen) Teambuilding oder erstellen Sie gemeinsam mit Ihren Freunden und Ihrer Familie ein einzigartiges Geschenk für einen Geburtstag oder eine Hochzeit.
 
-Onder begeleiding van een ervaren smid leer je de kneepjes van het vak waarna je een schort, handschoenen en een veiligheidsbril krijgt zodat je zelf aan de slag kan gaan. En op het einde krijg je natuurlijk je creaties mee naar huis.
+Unter Anleitung eines erfahrenen Schmieds lernen Sie die Feinheiten des Handwerks, bevor Sie eine Schürze, Handschuhe und eine Schutzbrille erhalten, damit Sie selbst loslegen können. Und am Ende nehmen Sie natürlich Ihre Kreationen mit nach Hause.

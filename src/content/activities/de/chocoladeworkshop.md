@@ -1,16 +1,16 @@
 ---
 title: 'Chocoladeworkshop'
-description: 'Een chocoladeworkshop onder leiding van een professionele chocolatier.'
+description: 'Ein Chocoladeworkshop unter Leitung eines professionellen Chocolatiers.'
 image: 'chocoladeworkshop/chocoladeworkshop-1.jpg'
-categories: ['culinair', 'workshop']
-duration: '2.5 - 3 uur'
-groupSize: '8 - 25 personen'
-availability: 'Het hele jaar door'
+categories: ['kulinarisch', 'workshop']
+duration: '2.5 - 3 Stunden'
+groupSize: '8 - 25 Personen'
+availability: 'Das ganze Jahr über'
 features:
-  - 'Professionele chocolatier'
-  - 'Alle ingrediënten inbegrepen'
-  - 'Eigen creaties maken'
-  - 'Proeverij van verschillende chocolades'
+  - 'Professioneller Chocolatier'
+  - 'Alle Zutaten enthalten'
+  - 'Eigene Kreationen erstellen'
+  - 'Verkostung verschiedener Schokoladen'
 gallery:
   [
     'chocoladeworkshop/chocoladeworkshop-2.jpg',
@@ -22,8 +22,8 @@ gallery:
   ]
 ---
 
-De chocoladeworkshop is een heerlijke combinatie van teambuilding en culinair genot. Onder leiding van een professionele chocolatier ontdekken deelnemers de kunst van het chocolade maken en de rijke geschiedenis van deze geliefde lekkernij.
+Der Schokoladenworkshop ist eine köstliche Kombination aus Teambuilding und kulinarischem Genuss. Unter der Leitung eines professionellen Chocolatiers entdecken die Teilnehmer die Kunst der Schokoladenherstellung und die reiche Geschichte dieser beliebten Delikatesse.
 
-De workshop begint met een introductie in de wereld van chocolade, waarbij deelnemers leren over verschillende soorten chocolade, hun oorsprong en eigenschappen. Er volgt een proeverij waarbij verschillende chocoladesoorten worden geproefd en beoordeeld op smaak, textuur en aroma.
+Der Workshop beginnt mit einer Einführung in die Welt der Schokolade, bei der die Teilnehmer verschiedene Schokoladensorten, deren Herkunft und Eigenschaften kennenlernen. Es folgt eine Verkostung, bei der verschiedene Schokoladensorten auf Geschmack, Textur und Aroma geprüft und bewertet werden.
 
-Vervolgens gaan de deelnemers zelf aan de slag met het maken van verschillende chocoladecreaties. Van tempereren tot decoreren, alle aspecten van het chocolatier-vak komen aan bod. Teams werken samen aan hun creaties, wat niet alleen leerzaam is maar ook de creativiteit en samenwerking stimuleert.
+Anschließend beginnen die Teilnehmer selbst mit der Herstellung verschiedener Schokoladenkreationen. Vom Temperieren bis zum Dekorieren werden alle Aspekte des Chocolatier-Handwerks behandelt. Die Teams arbeiten gemeinsam an ihren Kreationen, was nicht nur lehrreich ist, sondern auch Kreativität und Zusammenarbeit fördert.

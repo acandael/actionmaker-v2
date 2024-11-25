@@ -1,16 +1,16 @@
 ---
-title: 'Scherminitiatie'
-description: 'Leer de basis van het schermen in deze spannende initiatie.'
+title: 'Fechteinführung'
+description: 'Leer die Grundlagen des Fechtens in dieser spannenden Einführung.'
 image: 'scherminitiatie/scherminitiatie-1.jpg'
 categories: ['actief', 'indoor', 'outdoor']
 duration: '2 - 3 uur'
-groupSize: '8 - 30 personen'
-availability: 'Het hele jaar door'
+groupSize: '8 - 30 Personen'
+availability: 'Das ganze Jahr über'
 features:
-  - 'Professionele scherminstructeurs'
-  - 'Alle materiaal inbegrepen'
-  - 'Veilige en begeleide initiatie'
-  - 'Onderlinge wedstrijdjes mogelijk'
+  - 'Professionelle Fechtinstruktoren'
+  - 'Alle Materialien inbegriffen'
+  - 'Sichere und begleitete Einführung'
+  - 'Mögliche gegenseitige Wettkämpfe'
 gallery:
   [
     'scherminitiatie/scherminitiatie-2.jpg',
@@ -23,8 +23,8 @@ gallery:
   ]
 ---
 
-De initiatie schermen is een unieke en spannende activiteit die perfect geschikt is voor teambuilding. Tijdens deze sessie maken deelnemers kennis met de basisbeginselen van het schermen, een sport die niet alleen fysieke behendigheid vereist maar ook strategisch inzicht en snelle besluitvorming.
+Die Fechteinführung ist eine einzigartige und spannende Aktivität, die sich perfekt für Teambuilding eignet. Während dieser Session lernen die Teilnehmer die Grundlagen des Fechtens kennen, eine Sportart, die nicht nur körperliche Geschicklichkeit erfordert, sondern auch strategisches Denken und schnelle Entscheidungsfindung.
 
-Onder begeleiding van onze ervaren instructeurs leren deelnemers de fundamentele technieken van het schermen, waaronder de basishouding, voetenwerk en verschillende aanvals- en verdedigingsbewegingen. Veiligheid staat hierbij voorop, en alle deelnemers worden voorzien van professionele beschermingsuitrusting.
+Unter der Anleitung unserer erfahrenen Instruktoren lernen die Teilnehmer die fundamentalen Techniken des Fechtens, einschließlich der Grundhaltung, Fußarbeit und verschiedener Angriffs- und Verteidigungsbewegungen. Die Sicherheit steht dabei an erster Stelle, und alle Teilnehmer werden mit professioneller Schutzausrüstung ausgestattet.
 
-De activiteit wordt afgesloten met een klein toernooi waarbij teams het tegen elkaar opnemen in een sportieve en vriendschappelijke sfeer. Dit zorgt niet alleen voor een spannende finale van de workshop, maar bevordert ook het teamgevoel en de onderlinge band tussen collega's.
+Die Aktivität wird mit einem kleinen Turnier abgeschlossen, bei dem Teams in einer sportlichen und freundschaftlichen Atmosphäre gegeneinander antreten. Dies sorgt nicht nur für ein spannendes Finale des Workshops, sondern fördert auch den Teamgeist und die Bindung zwischen den Kollegen.

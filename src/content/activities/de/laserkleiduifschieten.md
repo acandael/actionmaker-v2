@@ -1,16 +1,16 @@
 ---
-title: 'Laser Kleiduifschieten'
-description: 'Een moderne en milieuvriendelijke variant van kleiduifschieten.'
+title: 'Laser-Tontaubenschießen'
+description: 'Eine moderne und umweltfreundliche Variante des Tontaubenschießens.'
 image: 'laserkleiduifschieten/laserkleiduifschieten-1.jpg'
 categories: ['indoor', 'outdoor']
 duration: '2 - 3 uur'
-groupSize: '8 - 30 personen'
-availability: 'Het hele jaar door'
+groupSize: '8 - 30 Personen'
+availability: 'Das ganze Jahr über'
 features:
-  - 'Professionele begeleiding'
-  - 'Alle materiaal inbegrepen'
-  - 'Milieuvriendelijk'
-  - 'Competitie-element mogelijk'
+  - 'Professionelle Anleitung'
+  - 'Alle Materialien inbegriffen'
+  - 'Umweltfreundlich'
+  - 'Wettkampfelement möglich'
 gallery:
   [
     'laserkleiduifschieten/laserkleiduifschieten-2.jpg',
@@ -21,8 +21,8 @@ gallery:
   ]
 ---
 
-Laserkleischieten biedt een moderne en veilige variant op het traditionele kleischieten. Deze innovatieve activiteit combineert de uitdaging van het schieten met moderne technologie, waardoor het perfect geschikt is voor teambuilding events.
+Laser-Tontaubenschießen bietet eine moderne und sichere Variante des traditionellen Tontaubenschießens. Diese innovative Aktivität kombiniert die Herausforderung des Schießens mit moderner Technologie, wodurch sie perfekt für Teambuilding-Events geeignet ist.
 
-De activiteit gebruikt geavanceerde lasergeweren die reageren op speciale kleiduiven, waardoor een realistische schietervaring wordt gecreëerd zonder gebruik van echte munitie. Dit maakt de activiteit niet alleen veiliger, maar ook geschikter voor verschillende locaties en weersomstandigheden.
+Die Aktivität verwendet fortschrittliche Lasergewehre, die auf spezielle Tontauben reagieren, wodurch ein realistisches Schießerlebnis ohne den Einsatz echter Munition geschaffen wird. Dies macht die Aktivität nicht nur sicherer, sondern auch geeigneter für verschiedene Standorte und Wetterbedingungen.
 
-Deelnemers krijgen eerst een uitgebreide instructie over de techniek en het gebruik van de apparatuur. Daarna volgen verschillende spelvormen waarbij teams het tegen elkaar opnemen in uitdagende competities. De combinatie van techniek, concentratie en teamwork maakt dit tot een unieke en boeiende teambuilding ervaring.
+Die Teilnehmer erhalten zunächst eine ausführliche Einweisung in die Technik und den Umgang mit der Ausrüstung. Danach folgen verschiedene Spielformen, bei denen Teams in herausfordernden Wettkämpfen gegeneinander antreten. Die Kombination aus Technik, Konzentration und Teamwork macht dies zu einer einzigartigen und fesselnden Teambuilding-Erfahrung.

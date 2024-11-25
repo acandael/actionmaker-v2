@@ -1,16 +1,16 @@
 ---
-title: 'Pistoolkruisboogschieten'
-description: 'Een unieke combinatie van precisieschieten met pistoolkruisbogen.'
+title: 'Pistolenarmbrust-Schießen'
+description: 'Eine einzigartige Kombination aus Präzisionsschießen und Pistolenarmbrust.'
 image: 'pistoolkruisboogschieten/pistoolkruisboogschieten-1.jpg'
 categories: ['indoor', 'outdoor']
-duration: '2 - 3 uur'
-groupSize: '8 - 30 personen'
-availability: 'Het hele jaar door'
+duration: '2 - 3 Stunden'
+groupSize: '8 - 30 Personen'
+availability: 'Das ganze Jahr über'
 features:
   - 'Professionele begeleiding'
-  - 'Alle materiaal inbegrepen'
-  - 'Verschillende doelwitten'
-  - 'Competitie-element mogelijk'
+  - 'Alle Materialien inbegriffen'
+  - 'Verschiedene Zielscheiben'
+  - 'Wettkampfelement möglich'
 gallery:
   [
     'pistoolkruisboogschieten/pistoolkruisboogschieten-2.jpg',
@@ -22,8 +22,8 @@ gallery:
   ]
 ---
 
-Pistoolkruisboogschieten combineert het beste van twee werelden: de precisie van een kruisboog met de handzaamheid van een pistool. Deze unieke activiteit biedt een spannende uitdaging voor iedereen die wil kennismaken met deze bijzondere vorm van schietsport.
+Pistolenarmbrust-Schießen kombiniert das Beste aus zwei Welten: die Präzision einer Armbrust mit der Handlichkeit einer Pistole. Diese einzigartige Aktivität bietet eine spannende Herausforderung für jeden, der diese besondere Form des Schießsports kennenlernen möchte.
 
-Onder begeleiding van ervaren instructeurs leren deelnemers de basistechnieken van het pistoolkruisboogschieten. Veiligheid staat hierbij voorop, en alle deelnemers krijgen een uitgebreide instructie over het gebruik van de pistoolkruisboog.
+Unter der Anleitung erfahrener Instruktoren lernen die Teilnehmer die Grundtechniken des Pistolenarmbrust-Schießens. Die Sicherheit steht dabei an erster Stelle, und alle Teilnehmer erhalten eine ausführliche Einweisung in den Umgang mit der Pistolenarmbrust.
 
-Na de basistraining volgen verschillende oefeningen en uitdagingen waarbij deelnemers hun vaardigheden kunnen testen. De activiteit wordt vaak afgesloten met een onderlinge competitie, wat zorgt voor extra spanning en teambuilding.
+Nach dem Grundlagentraining folgen verschiedene Übungen und Herausforderungen, bei denen die Teilnehmer ihre Fähigkeiten testen können. Die Aktivität wird häufig mit einem Wettkampf untereinander abgeschlossen, was für zusätzliche Spannung und Teambuilding sorgt.

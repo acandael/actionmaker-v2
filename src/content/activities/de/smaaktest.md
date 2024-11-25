@@ -1,16 +1,16 @@
 ---
-title: 'Smaaktest'
-description: 'Kan je vertrouwen op je smaak? Wie maakt er het best gebruik van smaak-, geur-, tastzin. Wie heeft er de meeste kennis van bier, cola, kaas, kruiden, …'
+title: 'Geschmackstest'
+description: 'Kannst du auf dein Geschmack vertrauen? Wie macht man das beste von Geschmack, Geruch, Geschmack und Wissen um Bier, Cola, Käse, Gewürze, …'
 image: 'smaaktest/smaaktest-1.jpg'
 categories: ['indoor', 'culinair']
-duration: 'met quiz +/- 90 min, zonder quiz +/- 60 min'
-groupSize: 'Maximum 20/24 deelnemers (= 4 tafels) per animator'
-availability: 'Het hele jaar door'
+duration: 'mit Quiz +/- 90 min, ohne Quiz +/- 60 min'
+groupSize: 'Maximum 20/24 Teilnehmer (= 4 Tafeln) pro Animator'
+availability: 'Das ganze Jahr über'
 features:
-  - 'Interactieve opdrachten'
-  - 'Stad verkennen'
+  - 'Interaktive Aufgaben'
+  - 'Stad erkunden'
   - 'Teamwork'
-  - 'Competitie-element'
+  - 'Wettkampfelement'
 gallery:
   [
     'smaaktest/smaaktest-1.jpg',
@@ -23,11 +23,11 @@ gallery:
   ]
 ---
 
-Weet u welke kruiden u in het eten gebruikt. En kan u deze herkennen zonder etiket?
-Koopt u in de winkel enkel uw kruiden en kaas op naam of kan u deze herkennen zonder etiket?
+Wissen Sie, welche Gewürze Sie in Ihren Speisen verwenden? Und können Sie diese ohne Etikett erkennen?
+Kaufen Sie im Geschäft Ihre Gewürze und Käse nur nach Namen oder können Sie diese auch ohne Etikett erkennen?
 
-Welk bier of cola drinkt u nu juist? Weet u of u een Jupiler of een Maes of een Leffe of een Palm drinkt?
+Welches Bier oder Cola trinken Sie eigentlich? Wissen Sie, ob Sie ein Jupiler, ein Maes, ein Leffe oder ein Palm trinken?
 
-Met de smaaktest gaan wij na in hoeverre u dit alles kan herkennen en hoe sterk uw smaakzintuig is.
+Mit dem Geschmackstest prüfen wir, inwieweit Sie all dies erkennen können und wie ausgeprägt Ihr Geschmackssinn ist.
 
-Dit alles kan in combinatie met een leuke, originele en geanimeerde quiz over smaak, weetjes in verband met eten, ….
+Dies alles kann mit einem unterhaltsamen, originellen und animierten Quiz über Geschmack, Wissenswertes rund ums Essen und vieles mehr kombiniert werden.

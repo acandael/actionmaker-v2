@@ -1,11 +1,11 @@
 ---
-title: 'Boogschieten'
-description: 'Boogschieten teambuilding'
+title: 'Boogschießen'
+description: 'Teambuilding-Aktivität "Boogschießen"'
 image: 'boogschieten/boogschieten-1.jpg'
 features:
-  - 'ervaren instructeurs'
-  - 'basistechnieken boogschieten'
-  - 'teamspirit'
+  - 'Erfaßte Instruktoren'
+  - 'Grundtechniken'
+  - 'Teamgeist'
 gallery:
   [
     'boogschieten/boogschieten-2.jpg',
@@ -16,13 +16,13 @@ gallery:
     'boogschieten/boogschieten-7.jpg',
   ]
 categories: ['outdoor', 'actief']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
-availability: 'Op aanvraag'
+duration: '2-3 Stunden'
+groupSize: '8-50 Personen'
+availability: 'Auf Anfrage'
 ---
 
-Boogschieten is een klassieke sport die concentratie, techniek en precisie vereist. Onder begeleiding van ervaren instructeurs leren deelnemers de basistechnieken van het boogschieten in een veilige en ontspannen omgeving.
+Bogenschießen ist ein klassischer Sport, der Konzentration, Technik und Präzision erfordert. Unter Anleitung erfahrener Instruktoren lernen die Teilnehmer die Grundtechniken des Bogenschießens in einer sicheren und entspannten Umgebung.
 
-De sessie begint met een uitgebreide instructie over veiligheid en techniek. Deelnemers leren over de juiste schiethouding, het spannen van de boog en het richten op het doel. Na de basistraining volgen verschillende oefeningen waarbij deelnemers hun vaardigheden kunnen verbeteren.
+Die Sitzung beginnt mit einer ausführlichen Einweisung in Sicherheit und Technik. Die Teilnehmer lernen die richtige Schießhaltung, das Spannen des Bogens und das Zielen auf die Scheibe. Nach dem Grundlagentraining folgen verschiedene Übungen, bei denen die Teilnehmer ihre Fähigkeiten verbessern können.
 
-De activiteit kan worden afgesloten met een spannende competitie, waarbij teams of individuen het tegen elkaar opnemen in verschillende uitdagingen. Dit zorgt niet alleen voor extra spanning en plezier, maar stimuleert ook de teamspirit en het competitieve element binnen de groep.
+Die Aktivität kann mit einem spannenden Wettkampf abgeschlossen werden, bei dem Teams oder Einzelpersonen in verschiedenen Herausforderungen gegeneinander antreten. Dies sorgt nicht nur für zusätzliche Spannung und Spaß, sondern fördert auch den Teamgeist und das Wettkampfelement innerhalb der Gruppe.
