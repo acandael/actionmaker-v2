@@ -5,8 +5,11 @@ import { Image } from 'astro:assets';
 import { t, setDefaultNamespace } from 'i18next';
 import { Trans } from 'astro-i18next/components';
 
+// Set namespace before using translations
+setDefaultNamespace('home');
+
 // Import your CTA image
-import ctaImage from '../assets/cta.jpg'; // adjust path to match your image location
+import ctaImage from '../assets/cta.jpg';
 
 const stats = [
   { value: '500+', label: t('cta.klanten') },
@@ -14,7 +17,6 @@ const stats = [
   { value: '10+', label: t('cta.jaar') },
   { value: '98%', label: t('cta.reviews') },
 ];
-setDefaultNamespace('home');
 ---
 
 <section class="relative py-32 px-4 overflow-hidden bg-gradient-to-b from-background to-muted/50">

@@ -1,0 +1,19 @@
+{
+  "form-name": "Name",
+  "form-name-placeholder": "Ihr Name",
+  "form-name-error": "Der Name muss mindestens 2 Zeichen enthalten",
+  "form-email": "E-Mail",
+  "form-email-placeholder": "ihre@email.com",
+  "form-email-error": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+  "form-company": "Unternehmen",
+  "form-company-placeholder": "Ihr Unternehmen",
+  "form-company-error": "Der Unternehmensname muss mindestens 2 Zeichen enthalten",
+  "form-phone": "Telefon",
+  "form-phone-placeholder": "Ihre Telefonnummer",
+  "form-phone-error": "Die Telefonnummer muss mindestens 9 Zeichen enthalten",
+  "form-message": "Nachricht",
+  "form-message-placeholder": "Ihre Nachricht",
+  "form-message-error": "Die Nachricht muss mindestens 10 Zeichen enthalten",
+  "form-submit": "Anfrage senden",
+  "booking-default-message": "Ich möchte gerne weitere Informationen zur Aktivität: {{activity}}"
+}
