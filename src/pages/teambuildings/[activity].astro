@@ -1,19 +1,31 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { getCollection, getEntry } from 'astro:content';
-import { Button } from '@/components/ui/button';
+import { getCollection } from 'astro:content';
 import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2 } from 'lucide-react';
-import { BookingForm } from '@/components/TeamActivityDetail/BookingForm';
+import { BookingForm } from './BookingForm.tsx';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import i18next, { t, setDefaultNamespace, changeLanguage } from 'i18next';
+setDefaultNamespace('activity');
+changeLanguage('nl');
 
-// Get the activity ID from the URL
+// Get current locale
+const currentLocale = i18next.language;
+
+// Get the activity slug from the URL
 const { activity: activitySlug } = Astro.params;
 
-// Get the activity data
-const activities = await getCollection('activities');
-const activity = activities.find((a) => a.slug === activitySlug);
+// Get all activities
+const allActivities = await getCollection('activities');
+
+// For Dutch (default locale), look for activities in nl folder
+const activity = allActivities.find((a) => {
+  const fullId = `nl/${activitySlug}.md`;
+  return a.id === fullId;
+});
 
 if (!activity) {
   return Astro.redirect('/404');
@@ -21,7 +33,7 @@ if (!activity) {
 
 const { Content } = await activity.render();
 
-// Import all images from the activities directory
+// Import all images
 const imageImports = import.meta.glob<{ default: ImageMetadata }>(
   '/src/assets/activities/**/*.{jpeg,jpg,png,gif}',
   {
@@ -29,7 +41,7 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
   }
 );
 
-// Get the hero image with error handling
+// Get the hero image
 const imagePath = `/src/assets/activities/${activity.data.image}`;
 const heroImage = imageImports[imagePath]?.default;
 
@@ -76,7 +88,7 @@ const images = activity.data.gallery || [];
           {
             activity.data.features && (
               <div class="mt-8 not-prose">
-                <h3 class="text-xl font-semibold mb-4">Wat kun je verwachten?</h3>
+                <h3 class="text-xl font-semibold mb-4">{t('expectations')}</h3>
                 <ul class="space-y-3">
                   {activity.data.features.map((feature) => (
                     <li class="flex items-center gap-3">
@@ -94,7 +106,7 @@ const images = activity.data.gallery || [];
 
         {/* Booking Form */}
         <div id="booking-form" class="pt-12 border-t">
-          <h2 class="text-3xl font-bold mb-8">Vraag offerte aan</h2>
+          <h2 class="text-3xl font-bold mb-8">{t('booking-title')}</h2>
           <BookingForm activityTitle={activity.data.title} client:load />
         </div>
       </div>
@@ -106,7 +118,7 @@ const images = activity.data.gallery || [];
             <div class="flex items-center gap-4">
               <Users className="h-5 w-5 text-muted-foreground" />
               <div>
-                <p class="text-sm text-muted-foreground">Groepsgrootte</p>
+                <p class="text-sm text-muted-foreground">{t('group-size')}</p>
                 <p class="font-medium">{activity.data.groupSize}</p>
               </div>
             </div>
@@ -114,7 +126,7 @@ const images = activity.data.gallery || [];
             <div class="flex items-center gap-4">
               <Clock className="h-5 w-5 text-muted-foreground" />
               <div>
-                <p class="text-sm text-muted-foreground">Duur</p>
+                <p class="text-sm text-muted-foreground">{t('duration')}</p>
                 <p class="font-medium">{activity.data.duration}</p>
               </div>
             </div>
@@ -122,14 +134,14 @@ const images = activity.data.gallery || [];
             <div class="flex items-center gap-4">
               <Calendar className="h-5 w-5 text-muted-foreground" />
               <div>
-                <p class="text-sm text-muted-foreground">Beschikbaarheid</p>
+                <p class="text-sm text-muted-foreground">{t('availability')}</p>
                 <p class="font-medium">{activity.data.availability}</p>
               </div>
             </div>
 
             <a class="block" href="#booking-form">
               <Button className="w-full bg-red-600 hover:bg-red-700 text-white group">
-                Vraag een offerte
+                {t('request-quote')}
                 <ArrowRight
                   className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
                 />
