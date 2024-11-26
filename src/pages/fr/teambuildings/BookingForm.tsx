@@ -1,13 +1,13 @@
 'use client';
-
+import React from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { Button } from '../../../components/ui/button';
+import { Input } from '../../../components/ui/input';
+import { Textarea } from '../../../components/ui/textarea';
 import { ArrowRight } from 'lucide-react';
-import { Card } from '@/components/ui/card';
+import { Card } from '../../../components/ui/card';
 import { toast } from 'sonner';
 import {
   Form,
@@ -16,7 +16,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
+} from '../../../components/ui/form';
 
 // Define the form schema with Zod
 const formSchema = z.object({

@@ -1,10 +1,11 @@
 'use client';
 
+import React from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Button } from '../../components/ui/button';
+import { Card } from '../../components/ui/card';
 import { ArrowRight } from 'lucide-react';
 import { toast } from 'sonner';
 import {
@@ -14,9 +15,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+} from '../../components/ui/form';
+import { Input } from '../../components/ui/input';
+import { Textarea } from '../../components/ui/textarea';
 
 // Define the form schema with Zod
 const formSchema = z.object({
@@ -68,13 +69,15 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
       if (!response.ok) throw new Error('Er is iets misgegaan');
 
       form.reset();
-      toast('Bedankt voor je aanvraag!', {
-        description: 'We nemen zo snel mogelijk contact met je op.',
+      toast.success('Uw aanvraag is succesvol verzonden. We nemen spoedig contact met u op.', {
+        duration: 5000,
+        position: 'top-center',
       });
     } catch (error) {
       console.error('Error:', error);
-      toast('Er is iets misgegaan', {
-        description: 'Probeer het later opnieuw of neem contact met ons op.',
+      toast.error('Er is iets misgegaan. Probeer het later opnieuw.', {
+        duration: 5000,
+        position: 'top-center',
       });
     }
   };
