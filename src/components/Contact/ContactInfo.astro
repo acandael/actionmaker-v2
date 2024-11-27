@@ -5,6 +5,8 @@ import { Mail, Phone } from 'lucide-react';
 
 // Import your contact image
 import contactImage from '../../assets/over-actionmaker.jpg'; // adjust path to match your image location
+import i18next, { t, setDefaultNamespace } from 'i18next';
+setDefaultNamespace('contact');
 ---
 
 <Card className="p-8">
@@ -21,11 +23,8 @@ import contactImage from '../../assets/over-actionmaker.jpg'; // adjust path to 
     </div>
 
     <div class="space-y-4">
-      <h2 class="text-xl font-semibold">We helpen je graag verder</h2>
-      <p class="text-muted-foreground">
-        Via een persoonlijke en flexibele aanpak bezorgt ActionMaker jou medewerkers een leuke dag
-        zonder zorgen.
-      </p>
+      <h2 class="text-xl font-semibold">{t('title')}</h2>
+      <p class="text-muted-foreground">{t('description')}</p>
     </div>
 
     <div class="space-y-4">
@@ -49,7 +48,7 @@ import contactImage from '../../assets/over-actionmaker.jpg'; // adjust path to 
       href="/over-actionmaker"
       class="inline-block text-red-600 hover:text-red-700 font-medium transition-colors"
     >
-      Lees meer over ActionMaker
+      {t('read-more')}
     </a>
   </div>
 </Card>

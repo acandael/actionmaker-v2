@@ -1,19 +1,21 @@
 ---
 import { Card } from '@/components/ui/card';
 import { ArrowUpDown, Users, Trophy } from 'lucide-react';
+import i18next, { t, setDefaultNamespace } from 'i18next';
+setDefaultNamespace('contact');
 
 const features = [
   {
     icon: ArrowUpDown,
-    title: 'Flexibel',
+    title: t('features.flexible'),
   },
   {
     icon: Users,
-    title: 'Persoonlijk',
+    title: t('features.personal'),
   },
   {
     icon: Trophy,
-    title: 'Ervaren Animatoren',
+    title: t('features.experienced'),
   },
 ];
 ---

@@ -9,6 +9,7 @@ export default {
       teambuildings: 'teambuildings',
       concepten: 'concepts',
       contact: 'contact',
+      kontakt: 'contact',
     },
     de: {
       'over-actionmaker': 'uber-actionmaker',
@@ -16,9 +17,19 @@ export default {
       teambuildings: 'teambuildings',
       concepten: 'konzepte',
       contact: 'kontakt',
+      kontakt: 'kontakt',
     },
   },
-  namespaces: ['translation', 'navbar', 'activity', 'booking', 'teambuildings', 'home', 'about'],
+  namespaces: [
+    'translation',
+    'navbar',
+    'activity',
+    'booking',
+    'teambuildings',
+    'home',
+    'about',
+    'contact',
+  ],
   defaultNamespace: 'home',
   load: ['client', 'server'],
 };
