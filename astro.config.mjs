@@ -16,11 +16,17 @@ export default defineConfig({
           '@react-email/components',
           'react-hook-form',
           '@hookform/resolvers/zod',
+          'lucide-react',
         ],
       },
     },
     ssr: {
-      noExternal: ['@react-email/components', 'react-hook-form', '@hookform/resolvers/zod'],
+      noExternal: [
+        '@react-email/components',
+        'react-hook-form',
+        '@hookform/resolvers/zod',
+        'lucide-react',
+      ],
     },
   },
 });
