@@ -3,5 +3,6 @@
   "activities-found": "{{count}} activiteit gevonden in",
   "activities-found_plural": "{{count}} activiteiten gevonden in",
   "activities-available": "{{count}} activiteit beschikbaar",
-  "activities-available_plural": "{{count}} activiteiten beschikbaar"
+  "activities-available_plural": "{{count}} activiteiten beschikbaar",
+  "all-activities": "Alle activiteiten"
 }

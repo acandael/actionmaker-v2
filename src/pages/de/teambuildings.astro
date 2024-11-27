@@ -5,9 +5,8 @@ import ActivityGrid from '@/components/TeamActivitiesList/ActivityGrid.astro';
 import CategoryFilters from '@/components/TeamActivitiesList/CategoryFilters.astro';
 import { Separator } from '@/components/ui/separator';
 import type { ImageMetadata } from 'astro';
-import i18next, { setDefaultNamespace, changeLanguage, t } from 'i18next';
+import i18next, { changeLanguage, t } from 'i18next';
 changeLanguage('de');
-setDefaultNamespace('teambuildings');
 
 // Get current locale
 const currentLocale = i18next.language;
@@ -28,6 +27,11 @@ const categories = allCategories
 
 // Get the selected category from URL
 const selectedCategory = Astro.url.searchParams.get('category');
+
+// Get current category from original collection to access data
+const currentCategory = selectedCategory
+  ? allCategories.find((c) => c.id === `${currentLocale}/${selectedCategory}`)
+  : null;
 
 // Import all images
 const imageImports = import.meta.glob<{ default: ImageMetadata }>(
@@ -50,20 +54,17 @@ const formattedActivities = filteredActivities.map((activity) => ({
   image: activity.data.image,
   categories: activity.data.categories,
 }));
-
-// Get current category
-const currentCategory = categories.find((c) => c.id === selectedCategory);
 ---
 
 <Layout title="Team Building Activities">
   <section class="max-w-7xl mx-auto px-4 py-24 mt-16">
     <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">
-        {currentCategory ? currentCategory.title : t('title')}
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        {currentCategory ? currentCategory.data.title : t('teambuildings:title')}
       </h1>
       {
         currentCategory && (
-          <p class="text-xl text-muted-foreground">{currentCategory.description}</p>
+          <p class="text-xl text-muted-foreground">{currentCategory.data.description}</p>
         )
       }
     </div>
@@ -78,8 +79,8 @@ const currentCategory = categories.find((c) => c.id === selectedCategory);
       <p class="text-muted-foreground">
         {
           selectedCategory
-            ? `${formattedActivities.length} ${t('teambuildings:activities-found', { count: formattedActivities.length })} ${currentCategory?.data.title.toLowerCase()}`
-            : `${formattedActivities.length} ${t('teambuildings:activities-available', { count: formattedActivities.length })}`
+            ? `${t('teambuildings:activities-found', { count: formattedActivities.length })} ${currentCategory?.data.title.toLowerCase() || ''}`
+            : `${t('teambuildings:activities-available', { count: formattedActivities.length })}`
         }
       </p>
     </div>

@@ -3,5 +3,6 @@
   "activities-found": "{{count}} Aktivität gefunden in",
   "activities-found_plural": "{{count}} Aktivitäten gefunden in",
   "activities-available": "{{count}} Aktivität verfügbar",
-  "activities-available_plural": "{{count}} Aktivitäten verfügbar"
+  "activities-available_plural": "{{count}} Aktivitäten verfügbar",
+  "all-activities": "Alle Aktivitäten"
 }
