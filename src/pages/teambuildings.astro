@@ -79,8 +79,8 @@ const formattedActivities = filteredActivities.map((activity) => ({
       <p class="text-muted-foreground">
         {
           selectedCategory
-            ? `${formattedActivities.length} ${t('teambuildings:activities-found', { count: formattedActivities.length })} ${currentCategory?.data.title.toLowerCase() || ''}`
-            : `${formattedActivities.length} ${t('teambuildings:activities-available', { count: formattedActivities.length })}`
+            ? `${t('teambuildings:activities-found', { count: formattedActivities.length })} ${currentCategory?.data.title.toLowerCase() || ''}`
+            : `${t('teambuildings:activities-available', { count: formattedActivities.length })}`
         }
       </p>
     </div>

@@ -1,8 +1,7 @@
 {
   "title": "Finden Sie Ihr Teambuilding in unserem breiten Angebot",
-  "activities-found": "{{count}} Aktivität gefunden in",
-  "activities-found_plural": "{{count}} Aktivitäten gefunden in",
-  "activities-available": "{{count}} Aktivität verfügbar",
-  "activities-available_plural": "{{count}} Aktivitäten verfügbar",
-  "all-activities": "Alle Aktivitäten"
+  "activities-found_one": "{{count}} Aktivität gefunden in",
+  "activities-found_other": "{{count}} Aktivitäten gefunden in",
+  "activities-available_one": "{{count}} Aktivität verfügbar",
+  "activities-available_other": "{{count}} Aktivitäten verfügbar"
 }
