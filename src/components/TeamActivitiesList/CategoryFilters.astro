@@ -1,4 +1,7 @@
 ---
+import { localizePath } from 'astro-i18next';
+import i18next, { t } from 'i18next';
+
 interface Category {
   id: string;
   title: string;
@@ -12,38 +15,46 @@ interface Props {
 }
 
 const { categories, selectedCategory, fromHomepage = false } = Astro.props;
+const currentLocale = i18next.language;
 
-const baseUrl = fromHomepage ? '/teambuildings' : '/teambuildings';
+// Get clean category ID without locale prefix
+const getCleanCategoryId = (id: string) => {
+  return id.replace(`${currentLocale}/`, '');
+};
+
+// Base URL should always be /teambuildings when not on homepage
+const baseUrl = fromHomepage ? '/teambuildings' : '';
 ---
 
 <div class="flex flex-wrap justify-center gap-4 mb-16">
   <a
-    href={`${baseUrl}#activities-section`}
+    href={localizePath(`/teambuildings`)}
     class:list={[
       'px-4 py-2 rounded-full border transition-colors',
       !selectedCategory
         ? 'bg-red-600 text-white border-red-600'
         : 'border-gray-200 hover:border-red-600 hover:text-red-600',
     ]}
-    data-category="all"
   >
-    Alle activiteiten
+    {t('teambuildings:all-activities')}
   </a>
   {
-    categories.map((category) => (
-      <a
-        href={`${baseUrl}?category=${category.id}#activities-section`}
-        class:list={[
-          'px-4 py-2 rounded-full border transition-colors',
-          selectedCategory === category.id
-            ? 'bg-red-600 text-white border-red-600'
-            : 'border-gray-200 hover:border-red-600 hover:text-red-600',
-        ]}
-        data-category={category.id}
-      >
-        {category.title}
-      </a>
-    ))
+    categories.map((category) => {
+      const cleanId = getCleanCategoryId(category.id);
+      return (
+        <a
+          href={localizePath(`/teambuildings?category=${cleanId}#activities-section`)}
+          class:list={[
+            'px-4 py-2 rounded-full border transition-colors',
+            selectedCategory === cleanId
+              ? 'bg-red-600 text-white border-red-600'
+              : 'border-gray-200 hover:border-red-600 hover:text-red-600',
+          ]}
+        >
+          {category.title}
+        </a>
+      );
+    })
   }
 </div>
 

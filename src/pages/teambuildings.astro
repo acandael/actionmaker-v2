@@ -40,7 +40,9 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
 
 // Filter activities based on selected category
 const filteredActivities = selectedCategory
-  ? activities.filter((activity) => activity.data.categories.includes(selectedCategory))
+  ? activities.filter((activity) => {
+      return activity.data.categories.includes(selectedCategory);
+    })
   : activities;
 
 // Format activities for the grid

@@ -3,40 +3,38 @@ import { getCollection } from 'astro:content';
 import ActivityCard from './TeamActivities/ActivityCard.astro';
 import SectionTitle from './TeamActivities/SectionTitle.astro';
 import CategoryIcon from './TeamActivities/CategoryIcon.astro';
-import { t, setDefaultNamespace } from 'i18next';
 import i18next from 'i18next';
+import { localizePath } from 'astro-i18next';
 
 // Get current locale
 const currentLocale = i18next.language;
 
-// Get categories from content collection and filter by current locale
-const categories = await getCollection('categories', ({ id }) => {
-  return id.startsWith(currentLocale + '/');
-});
-
-const transformedCategories = categories.map((category) => ({
-  id: category.id,
-  title: category.data.title,
-  description: category.data.description,
-}));
-setDefaultNamespace('home');
+// Get categories and filter by locale
+const allCategories = await getCollection('categories');
+const categories = allCategories
+  .filter((category) => category.id.startsWith(`${currentLocale}/`))
+  .map((category) => ({
+    id: category.id.replace(`${currentLocale}/`, ''), // Remove locale prefix
+    title: category.data.title,
+    description: category.data.description,
+  }));
 ---
 
 <section class="py-24 px-4 bg-background">
   <div class="max-w-7xl mx-auto">
-    <SectionTitle subtitle={t('teamActivities.subtitle')} title={t('teamActivities.title')} />
+    <SectionTitle subtitle="Welke Soort Teambuilding Zoek Je?" title="Maak Je Keuze" />
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {
-        transformedCategories.map((category) => (
-          <a href={`/teambuildings?category=${category.id}#activities-section`}>
+        categories.map((category) => (
+          <a href={localizePath(`/teambuildings?category=${category.id}#activities-section`)}>
             <ActivityCard
               title={category.title}
               description={category.description}
-              image={`${category.id.split('/').pop()}.jpg`}
+              image={`/images/categories/${category.id}.jpg`}
               categoryId={category.id}
             >
-              <CategoryIcon category={category.id.split('/').pop()} slot="icon" />
+              <CategoryIcon category={category.id} slot="icon" />
             </ActivityCard>
           </a>
         ))
