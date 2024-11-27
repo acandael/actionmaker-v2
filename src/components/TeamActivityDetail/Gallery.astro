@@ -1,8 +1,6 @@
 ---
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
-import { t, setDefaultNamespace } from 'i18next';
-setDefaultNamespace('activity');
 
 interface Props {
   images: string[];
@@ -13,201 +11,29 @@ const { images, imageImports } = Astro.props;
 ---
 
 <div class="space-y-4">
-  <h2 class="text-3xl font-bold">{t('gallery-title')}</h2>
   <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     {
-      images.map((image, index) => (
-        <button
-          type="button"
-          class="relative aspect-[4/3] rounded-lg overflow-hidden group cursor-zoom-in"
-          data-gallery-item
-          data-index={index}
-        >
-          <Image
-            src={imageImports[`/src/assets/activities/${image}`].default}
-            alt=""
-            width={800}
-            height={600}
-            class="absolute inset-0 w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        </button>
-      ))
+      images.map((imagePath) => {
+        const fullImagePath = `/src/assets/activities/${imagePath}`;
+        const imageData = imageImports[fullImagePath]?.default;
+
+        if (!imageData) {
+          console.error(`Image not found: ${fullImagePath}`);
+          return null;
+        }
+
+        return (
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <Image
+              src={imageData}
+              alt=""
+              width={800}
+              height={600}
+              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+        );
+      })
     }
   </div>
 </div>
-
-{/* Modal */}
-<div
-  id="gallery-modal"
-  class="fixed inset-0 z-50 bg-black/90 opacity-0 pointer-events-none transition-opacity duration-300"
->
-  <div class="relative w-full h-full flex items-center justify-center p-4">
-    {/* Close button */}
-    <button
-      type="button"
-      class="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-[70]"
-      id="close-modal"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-8 h-8"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-      </svg>
-    </button>
-
-    {/* Previous button */}
-    <button
-      type="button"
-      class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors bg-black/50 p-2 rounded-full z-[70]"
-      id="prev-button"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="2.5"
-        stroke="currentColor"
-        class="w-6 h-6 md:w-8 md:h-8"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
-      </svg>
-    </button>
-
-    {/* Next button */}
-    <button
-      type="button"
-      class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors bg-black/50 p-2 rounded-full z-[70]"
-      id="next-button"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="2.5"
-        stroke="currentColor"
-        class="w-6 h-6 md:w-8 md:h-8"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
-      </svg>
-    </button>
-
-    <div class="w-full max-w-6xl z-[60]">
-      <div class="relative aspect-auto max-h-[90vh] rounded-lg overflow-hidden">
-        <Image
-          src={imageImports[`/src/assets/activities/${images[0]}`].default}
-          alt=""
-          width={1920}
-          height={1080}
-          class="w-full h-full object-contain"
-          id="modal-image"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-
-<script type="module" define:vars={{ images, imageImports }}>
-  const galleryItems = document.querySelectorAll('[data-gallery-item]');
-  const modal = document.getElementById('gallery-modal');
-  const modalImage = document.getElementById('modal-image');
-  if (!(modalImage instanceof HTMLImageElement)) throw new Error('Modal image not found');
-  const closeButton = document.getElementById('close-modal');
-  const prevButton = document.getElementById('prev-button');
-  const nextButton = document.getElementById('next-button');
-
-  let currentIndex = 0;
-
-  function openModal(index) {
-    currentIndex = index;
-    const imagePath = `/src/assets/activities/${images[currentIndex]}`;
-    modalImage.src = imageImports[imagePath].default.src;
-    modal?.classList.remove('opacity-0', 'pointer-events-none');
-    modal?.classList.add('flex');
-    document.body.style.overflow = 'hidden';
-    addTouchListeners();
-  }
-
-  function closeModal() {
-    modal?.classList.add('opacity-0', 'pointer-events-none');
-    modal?.classList.remove('flex');
-    document.body.style.overflow = '';
-    removeTouchListeners();
-  }
-
-  function showPrevImage() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    const imagePath = `/src/assets/activities/${images[currentIndex]}`;
-    modalImage.src = imageImports[imagePath].default.src;
-  }
-
-  function showNextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    const imagePath = `/src/assets/activities/${images[currentIndex]}`;
-    modalImage.src = imageImports[imagePath].default.src;
-  }
-
-  // Touch handling
-  let touchStartX = 0;
-  let touchEndX = 0;
-
-  function handleTouchStart(e) {
-    touchStartX = e.changedTouches[0].screenX;
-  }
-
-  function handleTouchEnd(e) {
-    touchEndX = e.changedTouches[0].screenX;
-    handleSwipe();
-  }
-
-  function handleSwipe() {
-    const swipeThreshold = 50;
-    const swipeLength = touchEndX - touchStartX;
-
-    if (Math.abs(swipeLength) > swipeThreshold) {
-      if (swipeLength > 0) {
-        showPrevImage();
-      } else {
-        showNextImage();
-      }
-    }
-  }
-
-  function addTouchListeners() {
-    modal?.addEventListener('touchstart', handleTouchStart);
-    modal?.addEventListener('touchend', handleTouchEnd);
-  }
-
-  function removeTouchListeners() {
-    modal?.removeEventListener('touchstart', handleTouchStart);
-    modal?.removeEventListener('touchend', handleTouchEnd);
-  }
-
-  // Event Listeners
-  galleryItems.forEach((item, index) => {
-    item.addEventListener('click', () => openModal(index));
-  });
-
-  closeButton?.addEventListener('click', closeModal);
-  prevButton?.addEventListener('click', showPrevImage);
-  nextButton?.addEventListener('click', showNextImage);
-
-  // Keyboard navigation
-  document.addEventListener('keydown', (e) => {
-    if (!modal?.classList.contains('opacity-0')) {
-      if (e.key === 'Escape') closeModal();
-      if (e.key === 'ArrowLeft') showPrevImage();
-      if (e.key === 'ArrowRight') showNextImage();
-    }
-  });
-
-  // Close modal when clicking outside
-  modal?.addEventListener('click', (e) => {
-    if (e.target === modal) closeModal();
-  });
-</script>

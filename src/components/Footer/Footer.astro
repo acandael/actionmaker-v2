@@ -3,6 +3,27 @@ import { Separator } from '@/components/ui/separator';
 import { Mail, Phone, Facebook, Instagram } from 'lucide-react';
 import FooterLogo from './FooterLogo.astro';
 import { footerLinks } from './footer-data';
+import { localizePath } from 'astro-i18next';
+import { t } from 'i18next';
+import { getCollection } from 'astro:content';
+import i18next, { setDefaultNamespace } from 'i18next';
+setDefaultNamespace('footer');
+
+// Get current locale
+const currentLocale = i18next.language;
+
+// Get all activities
+const activities = await getCollection('activities');
+
+// Create a map of activity URLs to their titles
+const activityTitles = new Map(
+  activities
+    .filter((activity) => activity.id.startsWith(`${currentLocale}/`))
+    .map((activity) => [
+      activity.id.replace(`${currentLocale}/`, '').replace('.md', ''),
+      activity.data.title,
+    ])
+);
 ---
 
 <footer class="bg-black text-zinc-200">
@@ -57,15 +78,22 @@ import { footerLinks } from './footer-data';
       {
         footerLinks.map((section) => (
           <div>
-            <h3 class="font-semibold mb-4">{section.title}</h3>
+            <h3 class="font-semibold mb-4">{t(`footer:${section.title}`)}</h3>
             <ul class="space-y-3">
-              {section.links.map((link) => (
-                <li>
-                  <a href={link.url} class="text-sm hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
+              {section.links.map((link) => {
+                const activityId = link.url.split('/').pop();
+                const title = activityTitles.get(activityId);
+                return (
+                  <li>
+                    <a
+                      href={localizePath(link.url)}
+                      class="text-sm hover:text-white transition-colors"
+                    >
+                      {title}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ))
@@ -80,9 +108,15 @@ import { footerLinks } from './footer-data';
         Copyright ActionMaker {new Date().getFullYear()}
       </div>
       <div class="flex gap-6 mt-4 md:mt-0">
-        <a href="#" class="hover:text-white transition-colors"> Alle rechten voorbehouden </a>
-        <a href="#" class="hover:text-white transition-colors"> Algemene voorwaarden </a>
-        <a href="#" class="hover:text-white transition-colors"> Disclaimer </a>
+        <a href="#" class="hover:text-white transition-colors">
+          {t('footer:rights-reserved')}
+        </a>
+        <a href="#" class="hover:text-white transition-colors">
+          {t('footer:terms-of-service')}
+        </a>
+        <a href="#" class="hover:text-white transition-colors">
+          {t('footer:disclaimer')}
+        </a>
       </div>
     </div>
   </div>

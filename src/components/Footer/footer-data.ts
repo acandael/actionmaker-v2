@@ -1,41 +1,44 @@
-export const footerLinks = [
+interface FooterLink {
+  id: string;
+  url: string;
+}
+
+interface FooterSection {
+  title: string;
+  links: FooterLink[];
+}
+
+export const footerLinks: FooterSection[] = [
   {
-    title: 'Menu',
+    title: 'indoor',
     links: [
-      { name: 'Home', url: '/' },
-      { name: 'Teambuildings', url: '/teambuildings' },
-      { name: 'Concepten', url: '/concepten' },
-      { name: 'Over ActionMaker', url: '/over-actionmaker' },
-      { name: 'Contact', url: '/contact' },
+      { id: 'indoor-lasershooting', url: '/teambuildings/indoor-lasershooting' },
+      { id: 'pistoolschieten', url: '/teambuildings/pistoolschieten' },
+      { id: 'virtual-reality', url: '/teambuildings/virtual-reality' },
     ],
   },
   {
-    title: 'Teambuildings',
+    title: 'outdoor',
     links: [
-      { name: 'Scherminitiatie', url: '/teambuildings/scherminitiatie' },
-      { name: 'Boogschieten', url: '/teambuildings/boogschieten' },
-      { name: 'Laserkleduifschieten', url: '/teambuildings/laserkleduifschieten' },
-      { name: 'Sumoworstelen', url: '/teambuildings/sumoworstelen' },
-      { name: 'Blaaspijpschieten', url: '/teambuildings/blaaspijpschieten' },
-      { name: 'Pistoolkruisboogschieten', url: '/teambuildings/pistoolkruisboogschieten' },
-      { name: 'Pistoolschieten', url: '/teambuildings/pistoolschieten' },
-      { name: 'Kruisboogschieten', url: '/teambuildings/kruisboogschieten' },
+      { id: 'kruisboogschieten', url: '/teambuildings/kruisboogschieten' },
+      { id: 'laserkleiduifschieten', url: '/teambuildings/laserkleiduifschieten' },
+      { id: 'roofvogelworkshop', url: '/teambuildings/roofvogelworkshop' },
     ],
   },
   {
-    title: 'Teambuildings',
+    title: 'workshops',
     links: [
-      { name: 'Smaaktest', url: '/teambuildings/smaaktest' },
-      { name: 'Biathlonschieten', url: '/teambuildings/biathlonschieten' },
-      { name: 'Bijlwerpen', url: '/teambuildings/bijlwerpen' },
-      { name: 'Kunstsmeden', url: '/teambuildings/kunstsmeden' },
-      { name: 'Djembe', url: '/teambuildings/djembe' },
-      { name: 'Chocoladeworkshop', url: '/teambuildings/chocoladeworkshop' },
-      { name: 'Indoorlasershooting', url: '/teambuildings/indoor-lasershooting' },
+      { id: 'chocoladeworkshop', url: '/teambuildings/chocoladeworkshop' },
+      { id: 'djembe', url: '/teambuildings/djembe' },
+      { id: 'kunstsmeden', url: '/teambuildings/kunstsmeden' },
     ],
   },
   {
-    title: 'Concepten',
-    links: ['Concept 1', 'Concept 2', 'Concept 3', 'Concept 4'],
+    title: 'city-games',
+    links: [
+      { id: 'brugse-metten-tocht', url: '/teambuildings/brugse-metten-tocht' },
+      { id: 'stroppentocht', url: '/teambuildings/stroppentocht' },
+      { id: 'stadsspel', url: '/teambuildings/stadsspel' },
+    ],
   },
 ];

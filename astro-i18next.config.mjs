@@ -29,7 +29,9 @@ export default {
     'home',
     'about',
     'contact',
+    'footer',
   ],
   defaultNamespace: 'home',
   load: ['client', 'server'],
+  resourcesBasePath: 'locales',
 };
