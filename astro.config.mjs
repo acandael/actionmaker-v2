@@ -11,11 +11,16 @@ export default defineConfig({
   vite: {
     build: {
       rollupOptions: {
-        external: ['resend', '@react-email/components', 'react-hook-form'],
+        external: [
+          'resend',
+          '@react-email/components',
+          'react-hook-form',
+          '@hookform/resolvers/zod',
+        ],
       },
     },
     ssr: {
-      noExternal: ['@react-email/components', 'react-hook-form'],
+      noExternal: ['@react-email/components', 'react-hook-form', '@hookform/resolvers/zod'],
     },
   },
 });
