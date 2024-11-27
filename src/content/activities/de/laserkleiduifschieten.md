@@ -18,6 +18,7 @@ gallery:
     'laserkleiduifschieten/laserkleiduifschieten-4.jpg',
     'laserkleiduifschieten/laserkleiduifschieten-5.jpg',
     'laserkleiduifschieten/laserkleiduifschieten-6.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-7.jpg',
   ]
 ---
 

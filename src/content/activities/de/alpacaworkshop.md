@@ -15,9 +15,9 @@ gallery:
     'alpacaworkshop/alpacaworkshop-6.jpg',
     'alpacaworkshop/alpacaworkshop-7.jpg',
   ]
-categories: ['workshop']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+categories: ['workshop', 'outdoor']
+duration: '2-3 Stunden'
+groupSize: '8-50 Personen'
 availability: 'Auf Anfrage'
 ---
 

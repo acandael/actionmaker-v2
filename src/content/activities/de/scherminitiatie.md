@@ -19,7 +19,6 @@ gallery:
     'scherminitiatie/scherminitiatie-5.jpg',
     'scherminitiatie/scherminitiatie-6.jpg',
     'scherminitiatie/scherminitiatie-7.jpg',
-    'scherminitiatie/scherminitiatie-8.jpg',
   ]
 ---
 

@@ -13,7 +13,6 @@ features:
   - 'Demonstration'
 gallery:
   [
-    'schapendrijven/schapendrijven-1.jpg',
     'schapendrijven/schapendrijven-2.jpg',
     'schapendrijven/schapendrijven-3.jpg',
     'schapendrijven/schapendrijven-4.jpg',

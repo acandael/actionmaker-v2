@@ -2,7 +2,7 @@
 title: 'Chocoladeworkshop'
 description: 'Ein Chocoladeworkshop unter Leitung eines professionellen Chocolatiers.'
 image: 'chocoladeworkshop/chocoladeworkshop-1.jpg'
-categories: ['kulinarisch', 'workshop']
+categories: ['culinair', 'workshop']
 duration: '2.5 - 3 Stunden'
 groupSize: '8 - 25 Personen'
 availability: 'Das ganze Jahr über'

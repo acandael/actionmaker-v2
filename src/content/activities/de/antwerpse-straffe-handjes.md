@@ -8,7 +8,6 @@ features:
   - 'Preise'
 gallery:
   [
-    'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg',
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-2.jpg',
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-3.jpg',
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-4.jpg',
@@ -16,7 +15,7 @@ gallery:
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-6.jpg',
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-7.jpg',
   ]
-categories: ['kulturell']
+categories: ['cultureel']
 duration: '2-3 Stunden'
 groupSize: '8-50 Personen'
 availability: 'Auf Anfrage'

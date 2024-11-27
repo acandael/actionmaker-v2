@@ -2,7 +2,7 @@
 title: 'Djembe workshop'
 description: 'Als ein Team Musik machen, erlebt man eine einzigartige Erfahrung und sorgt für ein positives Gruppengefühl.'
 image: 'djembe/djembe-1.jpg'
-categories: ['workshop']
+categories: ['workshop', 'cultureel']
 duration: '+/- 3 Stunden'
 groupSize: 'Maximal 15 Personen'
 availability: 'Das ganze Jahr über'
