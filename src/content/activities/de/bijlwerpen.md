@@ -1,11 +1,11 @@
 ---
-title: 'Bijlwerpen'
-description: 'Teambuilding-Aktivität "Bijlwerpen"'
+title: 'Axtwerfen'
+description: 'Teambuilding-Aktivität "Axtwerfen"'
 image: 'bijlwerpen/bijlwerpen-1.jpg'
 features:
-  - 'teamgeest'
+  - 'teamgeist'
   - 'sport'
-  - 'ontspanning'
+  - 'entspannung'
 gallery:
   [
     'bijlwerpen/bijlwerpen-1.jpg',

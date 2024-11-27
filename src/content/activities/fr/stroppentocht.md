@@ -6,13 +6,15 @@ categories: ['outdoor', 'cultureel']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'
-features: ['teamgeest', 'cultuur', 'entertainment']
+features: ['esprit équipe', 'culture', 'divertissement']
 gallery:
   [
-    'stroppentocht/stroppentocht-1.jpg',
     'stroppentocht/stroppentocht-2.jpg',
     'stroppentocht/stroppentocht-3.jpg',
     'stroppentocht/stroppentocht-4.jpg',
+    'stroppentocht/stroppentocht-5.jpg',
+    'stroppentocht/stroppentocht-6.jpg',
+    'stroppentocht/stroppentocht-7.jpg',
   ]
 ---
 

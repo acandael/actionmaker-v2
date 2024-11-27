@@ -2,17 +2,19 @@
 title: "Tir à l'Arbalète-Pistolet"
 description: "Une expérience unique combinant précision et adresse avec l'arbalète-pistolet"
 image: 'pistoolkruisboogschieten/pistoolkruisboogschieten-1.jpg'
-categories: ['outdoor', 'actief']
+categories: ['outdoor', 'indoor']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'
-features: ['teamgeest', 'sport', 'precisie']
+features: ['esprit équipe', 'sport', 'précision']
 gallery:
   [
-    'pistoolkruisboogschieten/pistoolkruisboogschieten-1.jpg',
     'pistoolkruisboogschieten/pistoolkruisboogschieten-2.jpg',
     'pistoolkruisboogschieten/pistoolkruisboogschieten-3.jpg',
     'pistoolkruisboogschieten/pistoolkruisboogschieten-4.jpg',
+    'pistoolkruisboogschieten/pistoolkruisboogschieten-5.jpg',
+    'pistoolkruisboogschieten/pistoolkruisboogschieten-6.jpg',
+    'pistoolkruisboogschieten/pistoolkruisboogschieten-7.jpg',
   ]
 ---
 

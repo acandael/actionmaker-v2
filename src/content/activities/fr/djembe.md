@@ -6,8 +6,16 @@ categories: ['indoor', 'workshop', 'cultureel']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'
-features: ['teamgeest', 'muziek', 'cultuur']
-gallery: ['djembe/djembe-1.jpg', 'djembe/djembe-2.jpg', 'djembe/djembe-3.jpg']
+features: ['esprit', 'musique', 'culture']
+gallery:
+  [
+    'djembe/djembe-2.jpg',
+    'djembe/djembe-3.jpg',
+    'djembe/djembe-4.jpg',
+    'djembe/djembe-5.jpg',
+    'djembe/djembe-6.jpg',
+    'djembe/djembe-7.jpg',
+  ]
 ---
 
 L'atelier djembé est une expérience musicale unique qui rassemble les participants autour des rythmes africains. Sous la direction d'un percussionniste professionnel, les équipes apprennent les techniques de base du djembé et créent ensemble une performance musicale impressionnante.

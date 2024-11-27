@@ -6,13 +6,15 @@ categories: ['indoor', 'actief']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'
-features: ['teamgeest', 'sport', 'entertainment']
+features: ['esprit équipe', 'sport', 'divertissement']
 gallery:
   [
-    'sumoworstelen/sumoworstelen-1.jpg',
     'sumoworstelen/sumoworstelen-2.jpg',
     'sumoworstelen/sumoworstelen-3.jpg',
     'sumoworstelen/sumoworstelen-4.jpg',
+    'sumoworstelen/sumoworstelen-5.jpg',
+    'sumoworstelen/sumoworstelen-6.jpg',
+    'sumoworstelen/sumoworstelen-7.jpg',
   ]
 ---
 

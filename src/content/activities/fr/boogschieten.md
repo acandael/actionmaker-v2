@@ -3,8 +3,8 @@ title: 'Tir à l’Arc'
 description: 'Tir à l’Arc teambuilding'
 image: 'boogschieten/boogschieten-1.jpg'
 features:
-  - 'ervaren instructeurs'
-  - 'basistechnieken boogschieten'
+  - 'instructeurs expérimentés'
+  - 'techniques de base'
   - 'teamspirit'
 gallery:
   [
@@ -15,7 +15,7 @@ gallery:
     'boogschieten/boogschieten-6.jpg',
     'boogschieten/boogschieten-7.jpg',
   ]
-categories: ['outdoor', 'actif']
+categories: ['outdoor', 'actief']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'

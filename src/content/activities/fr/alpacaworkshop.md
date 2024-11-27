@@ -1,11 +1,8 @@
 ---
-title: 'Atelier avec des alpacas'
+title: 'Atelier Alpaca'
 description: 'Atelier avec des alpacas'
 image: 'alpacaworkshop/alpacaworkshop-1.jpg'
-features:
-  - 'communication'
-  - 'team spirit'
-  - 'leadership'
+features: ['communication', 'esprit équipe', 'stratégie']
 gallery:
   [
     'alpacaworkshop/alpacaworkshop-2.jpg',
@@ -15,7 +12,7 @@ gallery:
     'alpacaworkshop/alpacaworkshop-6.jpg',
     'alpacaworkshop/alpacaworkshop-7.jpg',
   ]
-categories: ['workshop']
+categories: ['workshop', 'outdoor']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'

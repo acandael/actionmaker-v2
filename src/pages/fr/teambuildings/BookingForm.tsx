@@ -96,7 +96,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
           />
 
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold">Réservez cette activité</h3>
+            <h3 className="text-2xl font-semibold">Demandez un devis pour ce team building</h3>
             <p className="text-muted-foreground">
               Remplissez le formulaire et nous vous contacterons dans les 24 heures.
             </p>
@@ -261,7 +261,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             className="w-full bg-red-600 hover:bg-red-700 text-white group h-auto py-4 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <span className="flex items-center justify-center gap-2">
-              Envoyer la demande
+              Demander un devis
               <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </span>
           </Button>

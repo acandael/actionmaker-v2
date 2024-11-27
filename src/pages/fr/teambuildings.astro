@@ -27,6 +27,20 @@ const categories = allCategories
 
 // Get the selected category from URL
 const selectedCategory = Astro.url.searchParams.get('category');
+console.log('Selected category:', selectedCategory);
+
+// Filter activities based on selected category
+const filteredActivities = selectedCategory
+  ? activities.filter((activity) => {
+      console.log(`Activity ${activity.id} categories:`, activity.data.categories);
+      return activity.data.categories.includes(selectedCategory);
+    })
+  : activities;
+
+console.log(
+  'Filtered activities:',
+  filteredActivities.map((a) => a.id)
+);
 
 // Get current category from original collection to access data
 const currentCategory = selectedCategory
@@ -40,11 +54,6 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
     eager: true,
   }
 );
-
-// Filter activities based on selected category
-const filteredActivities = selectedCategory
-  ? activities.filter((activity) => activity.data.categories.includes(selectedCategory))
-  : activities;
 
 // Format activities for the grid
 const formattedActivities = filteredActivities.map((activity) => ({

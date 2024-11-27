@@ -21,7 +21,7 @@ gallery:
   ]
 ---
 
-Laserkleischieten biedt een moderne en veilige variant op het traditionele kleischieten. Deze innovatieve activiteit combineert de uitdaging van het schieten met moderne technologie, waardoor het perfect geschikt is voor teambuilding events.
+Laserkleiduifschieten biedt een moderne en veilige variant op het traditionele kleischieten. Deze innovatieve activiteit combineert de uitdaging van het schieten met moderne technologie, waardoor het perfect geschikt is voor teambuilding events.
 
 De activiteit gebruikt geavanceerde lasergeweren die reageren op speciale kleiduiven, waardoor een realistische schietervaring wordt gecreëerd zonder gebruik van echte munitie. Dit maakt de activiteit niet alleen veiliger, maar ook geschikter voor verschillende locaties en weersomstandigheden.
 

@@ -2,17 +2,19 @@
 title: 'Test de Dégustation'
 description: 'Une expérience gustative unique et ludique'
 image: 'smaaktest/smaaktest-1.jpg'
-categories: ['indoor', 'culinair', 'workshop']
+categories: ['indoor', 'culinair']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'
-features: ['teamgeest', 'culinair', 'entertainment']
+features: ['esprit équipe', 'culinaire', 'divertissement']
 gallery:
   [
-    'smaaktest/smaaktest-1.jpg',
     'smaaktest/smaaktest-2.jpg',
     'smaaktest/smaaktest-3.jpg',
     'smaaktest/smaaktest-4.jpg',
+    'smaaktest/smaaktest-5.jpg',
+    'smaaktest/smaaktest-6.jpg',
+    'smaaktest/smaaktest-7.jpg',
   ]
 ---
 

@@ -6,12 +6,15 @@ categories: ['indoor', 'workshop', 'culinair']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'
-features: ['teamgeest', 'creativiteit', 'culinair']
+features: ['esprit équipe', 'créativité', 'culinaire']
 gallery:
   [
-    'chocoladeworkshop/chocoladeworkshop-1.jpg',
     'chocoladeworkshop/chocoladeworkshop-2.jpg',
     'chocoladeworkshop/chocoladeworkshop-3.jpg',
+    'chocoladeworkshop/chocoladeworkshop-4.jpg',
+    'chocoladeworkshop/chocoladeworkshop-5.jpg',
+    'chocoladeworkshop/chocoladeworkshop-6.jpg',
+    'chocoladeworkshop/chocoladeworkshop-7.jpg',
   ]
 ---
 

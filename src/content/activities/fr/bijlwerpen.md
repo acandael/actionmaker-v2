@@ -8,14 +8,14 @@ features:
   - 'relaxation'
 gallery:
   [
-    'bijlwerpen/bijlwerpen-1.jpg',
     'bijlwerpen/bijlwerpen-2.jpg',
     'bijlwerpen/bijlwerpen-3.jpg',
     'bijlwerpen/bijlwerpen-4.jpg',
     'bijlwerpen/bijlwerpen-5.jpg',
     'bijlwerpen/bijlwerpen-6.jpg',
+    'bijlwerpen/bijlwerpen-7.jpg',
   ]
-categories: ['outdoor', 'actif']
+categories: ['outdoor', 'actief']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'

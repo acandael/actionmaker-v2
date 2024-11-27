@@ -2,18 +2,19 @@
 title: 'Réalité Virtuelle'
 description: 'Une expérience immersive unique dans le monde virtuel'
 image: 'virtual-reality/virtual-reality-1.jpg'
-categories: ['indoor', 'actief', 'workshop']
+categories: ['indoor', 'workshop']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'
-features: ['teamgeest', 'technologie', 'entertainment']
+features: ['esprit équipe', 'technologie', 'divertissement']
 gallery:
   [
-    'virtual-reality/virtual-reality-1.jpg',
     'virtual-reality/virtual-reality-2.jpg',
     'virtual-reality/virtual-reality-3.jpg',
     'virtual-reality/virtual-reality-4.jpg',
     'virtual-reality/virtual-reality-5.jpg',
+    'virtual-reality/virtual-reality-6.jpg',
+    'virtual-reality/virtual-reality-7.jpg',
   ]
 ---
 

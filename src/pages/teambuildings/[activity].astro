@@ -35,11 +35,15 @@ const { Content } = await activity.render();
 
 // Import all images
 const imageImports = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/activities/**/*.{jpeg,jpg,png,gif}',
+  '/src/assets/activities/**/*.{jpeg,jpg,png,gif,webp}',
   {
     eager: true,
   }
 );
+
+// Debug logging
+console.log('Available image paths:', Object.keys(imageImports));
+console.log('Trying to access:', `/src/assets/activities/${activity.data.image}`);
 
 // Get the hero image
 const imagePath = `/src/assets/activities/${activity.data.image}`;

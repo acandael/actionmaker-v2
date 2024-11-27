@@ -2,17 +2,19 @@
 title: "Initiation à l'Escrime"
 description: "Découvrez l'art noble de l'escrime dans un cadre sécurisé"
 image: 'scherminitiatie/scherminitiatie-1.jpg'
-categories: ['indoor', 'actief', 'workshop']
+categories: ['indoor', 'outdoor', 'actief']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'
-features: ['teamgeest', 'sport', 'techniek']
+features: ['esprit équipe', 'sport', 'technique']
 gallery:
   [
-    'scherminitiatie/scherminitiatie-1.jpg',
     'scherminitiatie/scherminitiatie-2.jpg',
     'scherminitiatie/scherminitiatie-3.jpg',
     'scherminitiatie/scherminitiatie-4.jpg',
+    'scherminitiatie/scherminitiatie-5.jpg',
+    'scherminitiatie/scherminitiatie-6.jpg',
+    'scherminitiatie/scherminitiatie-7.jpg',
   ]
 ---
 

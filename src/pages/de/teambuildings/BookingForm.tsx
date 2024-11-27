@@ -97,7 +97,9 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
           />
 
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold">Buchen Sie diese Aktivität</h3>
+            <h3 className="text-2xl font-semibold">
+              Fordern Sie ein Angebot für dieses Teambuilding an
+            </h3>
             <p className="text-muted-foreground">
               Füllen Sie das Formular aus und wir nehmen innerhalb von 24 Stunden Kontakt mit Ihnen
               auf.
@@ -233,7 +235,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
                   Ort (leer das Feld leer, wenn Sie die ActionMaker-Lokation benötigen)
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder="Adres of stad" {...field} />
+                  <Input placeholder="Adresse oder Stadt" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -248,7 +250,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
                 <FormLabel>Nachricht</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Vertel ons meer over je wensen..."
+                    placeholder="Beschreiben Sie Ihre Wünsche..."
                     className="resize-none"
                     {...field}
                   />
