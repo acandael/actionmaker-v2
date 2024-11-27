@@ -1,26 +1,29 @@
 ---
 import { Users, Trophy, Calendar, Star } from 'lucide-react';
+import { setDefaultNamespace, t } from 'i18next';
+
+setDefaultNamespace('about');
 
 const stats = [
   {
     icon: Users,
     value: '500+',
-    label: 'Tevreden klanten',
+    label: t('stats.tevreden'),
   },
   {
     icon: Trophy,
     value: '50+',
-    label: 'Unieke activiteiten',
+    label: t('stats.unieke'),
   },
   {
     icon: Calendar,
     value: '15+',
-    label: 'Jaar ervaring',
+    label: t('stats.jaar'),
   },
   {
     icon: Star,
     value: '98%',
-    label: 'Positieve reviews',
+    label: t('stats.positief'),
   },
 ];
 ---

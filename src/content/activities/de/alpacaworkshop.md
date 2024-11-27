@@ -8,7 +8,6 @@ features:
   - 'Führung'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-1.jpg',
     'alpacaworkshop/alpacaworkshop-2.jpg',
     'alpacaworkshop/alpacaworkshop-3.jpg',
     'alpacaworkshop/alpacaworkshop-4.jpg',

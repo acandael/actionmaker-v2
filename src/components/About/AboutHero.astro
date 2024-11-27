@@ -1,6 +1,9 @@
 ---
 import { Image } from 'astro:assets';
 import contactImage from '../../assets/over-actionmaker.jpg';
+import { Trans } from 'astro-i18next/components';
+import { t, setDefaultNamespace } from 'i18next';
+setDefaultNamespace('about');
 ---
 
 <section class="relative py-24 px-4 bg-background">
@@ -8,22 +11,24 @@ import contactImage from '../../assets/over-actionmaker.jpg';
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       {/* Content */}
       <div class="space-y-8">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">Over ActionMaker</h1>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight">{t('title')}</h1>
         <div class="space-y-6 text-lg text-muted-foreground">
-          <p>
-            Er komt heel wat kijken bij het organiseren van een Teambuilding. Je moet geschikt
-            materiaal vinden, gespecialiseerde animatoren, en wat als je door gewijzigde
-            omstandigheden op het laatste moment een andere activiteit moet vinden?
-          </p>
-          <p>
-            We weten hoe stresserend dit kan zijn. Action Maker heeft immers 15 jaar ervaring met
-            het organiseren van teambuildings voor bedrijven en het versterken van de groepsgeest.
-          </p>
-          <p>
-            Neem daarom vandaag nog contact op met Action Maker, je ontvangt binnen de twee dagen
-            een offerte en wij nemen alle zorgen uit je handen zodat je team een leuke dag heeft
-            zonder zorgen, en versterkt als team uit de ervaring komt.
-          </p>
+          <Trans i18nKey="description" ns="about">
+            <p>
+              Er komt heel wat kijken bij het organiseren van een Teambuilding. Je moet geschikt
+              materiaal vinden, gespecialiseerde animatoren, en wat als je door gewijzigde
+              omstandigheden op het laatste moment een andere activiteit moet vinden?
+            </p>
+            <p>
+              We weten hoe stresserend dit kan zijn. Action Maker heeft immers 15 jaar ervaring met
+              het organiseren van teambuildings voor bedrijven en het versterken van de groepsgeest.
+            </p>
+            <p>
+              Neem daarom vandaag nog contact op met Action Maker, je ontvangt binnen de twee dagen
+              een offerte en wij nemen alle zorgen uit je handen zodat je team een leuke dag heeft
+              zonder zorgen, en versterkt als team uit de ervaring komt.
+            </p>
+          </Trans>
         </div>
       </div>
 
