@@ -8,4 +8,14 @@ export default defineConfig({
   output: 'server',
   adapter: vercel(),
   integrations: [tailwind(), react(), astroI18next()],
+  vite: {
+    build: {
+      rollupOptions: {
+        external: ['resend', '@react-email/components'],
+      },
+    },
+    ssr: {
+      noExternal: ['@react-email/components'],
+    },
+  },
 });
