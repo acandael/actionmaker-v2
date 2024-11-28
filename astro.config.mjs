@@ -6,7 +6,19 @@ import astroI18next from 'astro-i18next';
 
 export default defineConfig({
   output: 'server',
-  adapter: vercel(),
+  adapter: vercel({
+    analytics: true,
+    webAnalytics: {
+      enabled: true,
+    },
+    devImageService: 'sharp',
+    imagesConfig: {
+      sizes: [320, 640, 1280],
+      domains: [],
+      formats: ['image/avif', 'image/webp'],
+      minimumCacheTTL: 60,
+    },
+  }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
     build: {
