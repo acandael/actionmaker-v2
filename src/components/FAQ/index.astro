@@ -1,28 +1,15 @@
-import { t } from 'i18next';
+---
+import FAQAccordion from './FAQAccordion.astro';
+import { t, setDefaultNamespace } from 'i18next';
+setDefaultNamespace('home');
+---
 
-const faqs = [
-  {
-    question: t('faq:question1'),
-    answer: t('faq:answer1')
-  },
-  {
-    question: t('faq:question2'),
-    answer: t('faq:answer2')
-  }
-];
-
-<section class="py-24 px-4 bg-muted/50">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-4xl font-bold text-center mb-16">
-      {t('faq:title')}
-    </h2>
-    <div class="grid gap-8 max-w-3xl mx-auto">
-      {faqs.map((faq) => (
-        <div class="space-y-4">
-          <h3 class="text-xl font-semibold">{faq.question}</h3>
-          <p class="text-muted-foreground">{faq.answer}</p>
-        </div>
-      ))}
+<section className="py-24 px-4 bg-background">
+  <div className="max-w-3xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold mb-4">{t('faq.title')}</h2>
     </div>
+
+    <FAQAccordion />
   </div>
-</section> 
+</section>

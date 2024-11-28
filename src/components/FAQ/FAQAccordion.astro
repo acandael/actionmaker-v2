@@ -11,7 +11,7 @@ const faqs = await getCollection('faqs', ({ id }) => {
 });
 ---
 
-<div class="w-full">
+<div className="w-full">
   <div id="faq-root" data-faqs={JSON.stringify(faqs)}>
     {/* React component will be mounted here */}
   </div>
@@ -24,7 +24,6 @@ const faqs = await getCollection('faqs', ({ id }) => {
   function mountFAQAccordion() {
     const container = document.getElementById('faq-root');
     if (!container) return;
-
     const faqs = JSON.parse(container.dataset.faqs || '[]');
     const root = createRoot(container);
     root.render(FAQAccordionReact({ faqs }));
