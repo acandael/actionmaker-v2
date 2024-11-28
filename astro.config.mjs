@@ -6,23 +6,9 @@ import astroI18next from 'astro-i18next';
 
 export default defineConfig({
   output: 'server',
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
+  adapter: vercel(),
   integrations: [tailwind(), react(), astroI18next()],
-  vite: {
-    resolve: {
-      alias: {
-        '@': '/src',
-      },
-    },
-    optimizeDeps: {
-      include: ['react', 'react-dom'],
-    },
-    build: {
-      sourcemap: true,
-    },
+  prefetch: {
+    prefetchAll: true,
   },
 });
