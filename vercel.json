@@ -1,5 +1,12 @@
 {
   "buildCommand": "astro build",
   "devCommand": "astro dev",
-  "framework": "astro"
+  "framework": "astro",
+  "installCommand": "npm install",
+  "build": {
+    "env": {
+      "VERCEL_FORCE_NO_BUILD_CACHE": "1"
+    }
+  },
+  "cleanUrls": true
 }

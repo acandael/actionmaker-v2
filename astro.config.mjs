@@ -6,7 +6,11 @@ import astroI18next from 'astro-i18next';
 
 export default defineConfig({
   output: 'server',
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
     resolve: {
@@ -14,22 +18,11 @@ export default defineConfig({
         '@': '/src',
       },
     },
-    ssr: {
-      noExternal: [
-        '@react-email/components',
-        'react-hook-form',
-        '@hookform/resolvers/zod',
-        'lucide-react',
-        'sonner',
-        '@radix-ui/*',
-        'cmdk',
-        'vaul',
-        'recharts',
-        'react-day-picker',
-        'input-otp',
-        'react-resizable-panels',
-        'embla-carousel-react',
-      ],
+    optimizeDeps: {
+      include: ['react', 'react-dom'],
+    },
+    build: {
+      sourcemap: true,
     },
   },
 });
