@@ -1,11 +1,5 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "astro",
-  "installCommand": "npm install",
-  "build": {
-    "env": {
-      "VERCEL_FORCE_NO_BUILD_CACHE": "1"
-    }
-  }
+  "buildCommand": "astro build",
+  "devCommand": "astro dev",
+  "framework": "astro"
 }

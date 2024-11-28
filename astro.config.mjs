@@ -9,6 +9,11 @@ export default defineConfig({
   adapter: vercel(),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
+    resolve: {
+      alias: {
+        '@': '/src',
+      },
+    },
     ssr: {
       noExternal: [
         '@react-email/components',
@@ -16,6 +21,14 @@ export default defineConfig({
         '@hookform/resolvers/zod',
         'lucide-react',
         'sonner',
+        '@radix-ui/*',
+        'cmdk',
+        'vaul',
+        'recharts',
+        'react-day-picker',
+        'input-otp',
+        'react-resizable-panels',
+        'embla-carousel-react',
       ],
     },
   },
