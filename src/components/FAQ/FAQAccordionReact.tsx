@@ -1,4 +1,3 @@
-import React from 'react';
 import { PlusCircle } from 'lucide-react';
 import {
   Accordion,
