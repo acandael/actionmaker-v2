@@ -1,5 +1,4 @@
-/** @type {import('astro-i18next').AstroI18nextConfig} */
-export default {
+const config = {
   defaultLocale: 'nl',
   locales: ['nl', 'fr', 'de'],
   routes: {
@@ -34,3 +33,5 @@ export default {
   defaultNamespace: 'home',
   load: ['client', 'server'],
 };
+
+export default config;
