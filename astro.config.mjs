@@ -13,6 +13,9 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     },
+    functionPerRoute: true,
+    maxDuration: 60,
+    runtime: 'nodejs20.x',
   }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
