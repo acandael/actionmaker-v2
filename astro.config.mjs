@@ -7,7 +7,16 @@ import { fileURLToPath } from 'url';
 
 export default defineConfig({
   output: 'server',
-  adapter: vercel(),
+  adapter: vercel({
+    isr: false,
+    edgeMiddleware: false,
+    imageService: true,
+    devImageService: 'sharp',
+    imagesConfig: {
+      sizes: [640, 750, 828, 1080, 1200, 1920],
+      formats: ['image/avif', 'image/webp'],
+    },
+  }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
     resolve: {
