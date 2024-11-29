@@ -16,8 +16,6 @@ export default defineConfig({
       formats: ['image/avif', 'image/webp'],
     },
     nodeVersion: '18.x',
-    edgeMiddleware: false,
-    regions: ['cdg1'],
   }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
