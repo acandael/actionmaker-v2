@@ -8,14 +8,15 @@ import { fileURLToPath } from 'url';
 export default defineConfig({
   output: 'server',
   adapter: vercel({
-    isr: false,
-    edgeMiddleware: false,
+    analytics: true,
     imageService: true,
-    devImageService: 'sharp',
     imagesConfig: {
-      sizes: [640, 750, 828, 1080, 1200, 1920],
+      domains: [],
+      sizes: [320, 640, 1280],
       formats: ['image/avif', 'image/webp'],
     },
+    includeFiles: ['./src/assets/**/*', './src/content/**/*'],
+    excludeFiles: ['**/.DS_Store', '**/.git/**'],
   }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
