@@ -15,8 +15,6 @@ export default defineConfig({
       sizes: [320, 640, 1280],
       formats: ['image/avif', 'image/webp'],
     },
-    includeFiles: ['src/assets/**', 'src/content/**'],
-    excludeFiles: ['.DS_Store', '.git/**'],
   }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
