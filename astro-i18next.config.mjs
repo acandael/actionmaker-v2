@@ -33,5 +33,4 @@ export default {
   ],
   defaultNamespace: 'home',
   load: ['client', 'server'],
-  resourcesBasePath: 'locales',
 };
