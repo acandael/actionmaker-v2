@@ -17,7 +17,6 @@ export default defineConfig({
     maxDuration: 60,
     runtime: 'nodejs20.x',
     includeFiles: ['**/*'],
-    serverlessFunctionRegion: 'cdg1',
   }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
