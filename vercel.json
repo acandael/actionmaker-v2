@@ -8,5 +8,15 @@
       "VERCEL_FORCE_NO_BUILD_CACHE": "1"
     }
   },
-  "cleanUrls": true
+  "functions": {
+    "api/*.ts": {
+      "runtime": "nodejs20.x"
+    },
+    "src/pages/**/*.astro": {
+      "runtime": "nodejs20.x"
+    },
+    "_image.astro": {
+      "runtime": "nodejs20.x"
+    }
+  }
 }
