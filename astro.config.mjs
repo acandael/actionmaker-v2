@@ -16,18 +16,6 @@ export default defineConfig({
       formats: ['image/avif', 'image/webp'],
     },
     nodeVersion: '18.x',
-    functionPerRoute: true,
-    maxDuration: 60,
-    assets: [
-      {
-        source: 'src/locales',
-        destination: 'locales',
-      },
-    ],
-    debug: true,
-    webAnalytics: {
-      enabled: true,
-    },
   }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
