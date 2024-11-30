@@ -2,14 +2,11 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Image } from 'astro:assets';
-import { t, setDefaultNamespace } from 'i18next';
-import { Trans } from 'astro-i18next/components';
-
-// Set namespace before using translations
-setDefaultNamespace('home');
-
-// Import your CTA image
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import ctaImage from '../assets/cta.jpg';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const stats = [
   { value: '500+', label: t('cta.klanten') },
@@ -33,11 +30,9 @@ const stats = [
       <div class="space-y-12">
         <div class="space-y-6">
           <h2 class="text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight">
-            <Trans i18nKey="cta.versterk">
-              <span class="text-red-600">Versterk</span> Je Team,
-              <br />
-              <span class="text-red-600">Versterk</span> Je Bedrijf
-            </Trans>
+            <span class="text-red-600">Versterk</span> Je Team,
+            <br />
+            <span class="text-red-600">Versterk</span> Je Bedrijf
           </h2>
           <p class="text-xl text-muted-foreground max-w-xl">
             {t('cta.ontdek')}

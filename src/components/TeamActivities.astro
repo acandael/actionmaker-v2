@@ -3,18 +3,18 @@ import { getCollection } from 'astro:content';
 import ActivityCard from './TeamActivities/ActivityCard.astro';
 import SectionTitle from './TeamActivities/SectionTitle.astro';
 import CategoryIcon from './TeamActivities/CategoryIcon.astro';
-import i18next from 'i18next';
-import { localizePath } from 'astro-i18next';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
 // Get current locale
-const currentLocale = i18next.language;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 // Get categories and filter by locale
 const allCategories = await getCollection('categories');
 const categories = allCategories
-  .filter((category) => category.id.startsWith(`${currentLocale}/`))
+  .filter((category) => category.id.startsWith(`${lang}/`))
   .map((category) => ({
-    id: category.id.replace(`${currentLocale}/`, ''), // Remove locale prefix
+    id: category.id.replace(`${lang}/`, ''), // Remove locale prefix
     title: category.data.title,
     description: category.data.description,
   }));
@@ -23,11 +23,10 @@ const categories = allCategories
 <section class="py-24 px-4 bg-background">
   <div class="max-w-7xl mx-auto">
     <SectionTitle subtitle="Welke Soort Teambuilding Zoek Je?" title="Maak Je Keuze" />
-
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {
         categories.map((category) => (
-          <a href={localizePath(`/teambuildings?category=${category.id}#activities-section`)}>
+          <a href={`/${lang}/teambuildings?category=${category.id}#activities-section`}>
             <ActivityCard
               title={category.title}
               description={category.description}

@@ -2,13 +2,14 @@
 import { Image } from 'astro:assets';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { localizePath } from 'astro-i18next';
-import { t, setDefaultNamespace } from 'i18next';
-
-setDefaultNamespace('home');
-
-// Import your hero image
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import heroImage from '../assets/hero.jpg';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Create the correct URL based on locale
+const teamBuildingsUrl = lang === 'nl' ? '/teambuildings' : `/${lang}/teambuildings`;
 ---
 
 <section class="relative min-h-screen flex items-center -mt-[64px]">
@@ -25,17 +26,17 @@ import heroImage from '../assets/hero.jpg';
   <div class="relative z-10 max-w-7xl mx-auto px-4 py-24 mt-16">
     <div class="max-w-3xl">
       <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-        {t('home:hero.title')}
+        {t('home.hero.title')}
       </h1>
       <p class="text-xl text-white/90 mb-8">
-        {t('home:hero.subtitle')}
+        {t('home.hero.subtitle')}
       </p>
       <div>
         <Button
           className="bg-red-600 hover:bg-red-700 text-white group h-auto py-4 px-8 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
         >
-          <a href={localizePath('/teambuildings')} class="flex items-center gap-2">
-            {t('home:hero.cta')}
+          <a href={teamBuildingsUrl} class="flex items-center gap-2">
+            {t('home.hero.cta')}
             <ArrowRight
               className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
             />

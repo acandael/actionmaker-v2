@@ -2,19 +2,21 @@
 import TestimonialCard from './Testimonials/TestimonialCard.astro';
 import ClientLogos from './Testimonials/ClientLogos.astro';
 import { getCollection } from 'astro:content';
-import i18next, { t } from 'i18next';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import type { CollectionEntry } from 'astro:content';
 
 // Get current locale
-const currentLocale = i18next.language;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
-let testimonials = [];
-let logos = [];
+let testimonials: CollectionEntry<'testimonials'>[] = [];
+let logos: CollectionEntry<'logos'>[] = [];
 
 try {
   // Get testimonials and filter by locale
   const allTestimonials = await getCollection('testimonials');
   testimonials = allTestimonials.filter((testimonial) => {
-    const isLocaleMatch = testimonial.id.startsWith(`${currentLocale}/`);
+    const isLocaleMatch = testimonial.id.startsWith(`${lang}/`);
     return isLocaleMatch;
   });
 

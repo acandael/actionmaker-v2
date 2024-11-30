@@ -7,8 +7,10 @@ import TeamActivities from '@/components/TeamActivities.astro';
 import Testimonials from '@/components/Testimonials/index.astro';
 import FAQ from '@/components/FAQ.astro';
 import CTA from '@/components/CTA.astro';
-import { changeLanguage } from 'i18next';
-changeLanguage('nl');
+import { getLangFromUrl } from '@/i18n/utils';
+
+// Set default language
+const lang = getLangFromUrl(Astro.url);
 
 export const prerender = false;
 ---

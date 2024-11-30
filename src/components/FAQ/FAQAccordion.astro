@@ -1,17 +1,17 @@
 ---
 import { getCollection } from 'astro:content';
-import i18next from 'i18next';
+import { getLangFromUrl } from '@/i18n/utils';
 
 // Get current locale
-const currentLocale = i18next.language;
+const lang = getLangFromUrl(Astro.url);
 
 // Get FAQs for current locale
 const faqs = await getCollection('faqs', ({ id }) => {
-  return id.startsWith(`${currentLocale}/`);
+  return id.startsWith(`${lang}/`);
 });
 ---
 
-<div className="w-full">
+<div class="w-full">
   <div id="faq-root" data-faqs={JSON.stringify(faqs)}>
     {/* React component will be mounted here */}
   </div>

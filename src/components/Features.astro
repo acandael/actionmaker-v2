@@ -1,6 +1,9 @@
 ---
 import { ArrowUpDown, Users, Trophy } from 'lucide-react';
-import { t, setDefaultNamespace } from 'i18next';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const features = [
   {
@@ -19,7 +22,6 @@ const features = [
     description: t('features.experienced.description'),
   },
 ];
-setDefaultNamespace('home');
 ---
 
 <section class="relative py-32 px-4 bg-gradient-to-b from-background to-muted/50 overflow-hidden">
