@@ -1,25 +1,24 @@
 ---
-import { localizePath } from 'astro-i18next';
-import i18next, { t } from 'i18next';
-
-interface Category {
-  id: string;
-  title: string;
-  description: string;
-}
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
 interface Props {
-  categories: Category[];
+  categories: {
+    id: string;
+    data: {
+      title: string;
+      description: string;
+    };
+  }[];
   selectedCategory: string | null;
   fromHomepage?: boolean;
 }
 
 const { categories, selectedCategory, fromHomepage = false } = Astro.props;
-const currentLocale = i18next.language;
+const lang = getLangFromUrl(Astro.url);
 
 // Get clean category ID without locale prefix
 const getCleanCategoryId = (id: string) => {
-  return id.replace(`${currentLocale}/`, '');
+  return id.replace(`${lang}/`, '');
 };
 
 // Base URL should always be /teambuildings when not on homepage
@@ -28,7 +27,7 @@ const baseUrl = fromHomepage ? '/teambuildings' : '';
 
 <div class="flex flex-wrap justify-center gap-4 mb-16">
   <a
-    href={localizePath(`/teambuildings`)}
+    href={lang === 'nl' ? '/teambuildings' : `/${lang}/teambuildings`}
     class:list={[
       'px-4 py-2 rounded-full border transition-colors',
       !selectedCategory
@@ -36,14 +35,19 @@ const baseUrl = fromHomepage ? '/teambuildings' : '';
         : 'border-gray-200 hover:border-red-600 hover:text-red-600',
     ]}
   >
-    {t('teambuildings:all-activities')}
+    Alle activiteiten
   </a>
   {
     categories.map((category) => {
       const cleanId = getCleanCategoryId(category.id);
+      const categoryUrl =
+        lang === 'nl'
+          ? `/teambuildings?category=${cleanId}#activities-section`
+          : `/${lang}/teambuildings?category=${cleanId}#activities-section`;
+
       return (
         <a
-          href={localizePath(`/teambuildings?category=${cleanId}#activities-section`)}
+          href={categoryUrl}
           class:list={[
             'px-4 py-2 rounded-full border transition-colors',
             selectedCategory === cleanId
@@ -51,7 +55,7 @@ const baseUrl = fromHomepage ? '/teambuildings' : '';
               : 'border-gray-200 hover:border-red-600 hover:text-red-600',
           ]}
         >
-          {category.title}
+          {category.data.title}
         </a>
       );
     })

@@ -1,30 +1,39 @@
 ---
-import { localizePath } from 'astro-i18next';
-import i18next from 'i18next';
-
-interface Category {
-  id: string;
-  title: string;
-  description: string;
-}
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
 interface Props {
-  categories: Category[];
+  categories: {
+    id: string;
+    data: {
+      title: string;
+      description: string;
+    };
+  }[];
   selectedCategory: string | null;
+  fromHomepage?: boolean;
 }
 
-const { categories, selectedCategory } = Astro.props;
-const currentLocale = i18next.language;
+const { categories, selectedCategory, fromHomepage = false } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 
 // Get clean category ID without locale prefix
 const getCleanCategoryId = (id: string) => {
-  return id.replace(`${currentLocale}/`, '');
+  return id.replace(`${lang}/`, '');
+};
+
+// Create URL based on locale and category
+const getCategoryUrl = (categoryId: string | null) => {
+  const baseUrl = '/teambuildings';
+  const queryParam = categoryId ? `?category=${categoryId}#activities-section` : '';
+
+  // Don't include locale prefix for default locale (nl)
+  return lang === 'nl' ? `${baseUrl}${queryParam}` : `/${lang}${baseUrl}${queryParam}`;
 };
 ---
 
-<div class="flex flex-wrap justify-center gap-4 mb-16">
+<div class="flex flex-wrap justify-center gap-4">
   <a
-    href={localizePath('/teambuildings#activities-section')}
+    href={getCategoryUrl(null)}
     class:list={[
       'px-4 py-2 rounded-full border transition-colors',
       !selectedCategory
@@ -37,9 +46,10 @@ const getCleanCategoryId = (id: string) => {
   {
     categories.map((category) => {
       const cleanId = getCleanCategoryId(category.id);
+
       return (
         <a
-          href={localizePath(`/teambuildings?category=${cleanId}#activities-section`)}
+          href={getCategoryUrl(cleanId)}
           class:list={[
             'px-4 py-2 rounded-full border transition-colors',
             selectedCategory === cleanId
@@ -47,7 +57,7 @@ const getCleanCategoryId = (id: string) => {
               : 'border-gray-200 hover:border-red-600 hover:text-red-600',
           ]}
         >
-          {category.title}
+          {category.data.title}
         </a>
       );
     })

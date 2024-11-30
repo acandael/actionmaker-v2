@@ -18,6 +18,15 @@ const categories = allCategories
     title: category.data.title,
     description: category.data.description,
   }));
+
+// Create URL based on locale
+const getCategoryUrl = (categoryId: string) => {
+  const baseUrl = '/teambuildings';
+  const queryParam = `?category=${categoryId}#activities-section`;
+
+  // Don't include locale prefix for default locale (nl)
+  return lang === 'nl' ? `${baseUrl}${queryParam}` : `/${lang}${baseUrl}${queryParam}`;
+};
 ---
 
 <section class="py-24 px-4 bg-background">
@@ -26,7 +35,7 @@ const categories = allCategories
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {
         categories.map((category) => (
-          <a href={`/${lang}/teambuildings?category=${category.id}#activities-section`}>
+          <a href={getCategoryUrl(category.id)}>
             <ActivityCard
               title={category.title}
               description={category.description}

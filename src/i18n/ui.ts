@@ -61,6 +61,13 @@ export const ui = {
     'footer.contact': 'Contacteer ons',
     'footer.address': 'Hundelgemsesteenweg 445 A, 9050 Gentbrugge',
     'footer.rights': 'Alle rechten voorbehouden',
+
+    // Teambuildings
+    'teambuildings.title': 'Vind je teambuilding in ons breed gamma',
+    'teambuildings.activities-found_one': '{{count}} activiteit gevonden in',
+    'teambuildings.activities-found_other': '{{count}} activiteiten gevonden in',
+    'teambuildings.activities-available_one': '{{count}} activiteit beschikbaar',
+    'teambuildings.activities-available_other': '{{count}} activiteiten beschikbaar',
   },
   fr: {
     // Home
@@ -116,6 +123,13 @@ export const ui = {
     'features.experienced.title': 'Animateurs expérimentés',
     'features.experienced.description':
       "Tous nos animateurs sont expérimentés et experts dans les activités qu'ils encadrent.",
+
+    // Teambuildings
+    'teambuildings.title': 'Trouvez votre team building dans notre large gamme',
+    'teambuildings.activities-found_one': '{{count}} activité trouvée dans',
+    'teambuildings.activities-found_other': '{{count}} activités trouvées dans',
+    'teambuildings.activities-available_one': '{{count}} activité disponible',
+    'teambuildings.activities-available_other': '{{count}} activités disponibles',
   },
   de: {
     // Home
@@ -171,5 +185,12 @@ export const ui = {
     'features.experienced.title': 'Erfahrene Animateure',
     'features.experienced.description':
       'Alle unsere Animateure sind erfahren und Experten in den Aktivitäten, die sie betreuen.',
+
+    // Teambuildings
+    'teambuildings.title': 'Finden Sie Ihr Teambuilding in unserem breiten Angebot',
+    'teambuildings.activities-found_one': '{{count}} Aktivität gefunden in',
+    'teambuildings.activities-found_other': '{{count}} Aktivitäten gefunden in',
+    'teambuildings.activities-available_one': '{{count}} Aktivität verfügbar',
+    'teambuildings.activities-available_other': '{{count}} Aktivitäten verfügbar',
   },
 } as const;
