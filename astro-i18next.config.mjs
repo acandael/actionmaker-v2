@@ -14,6 +14,6 @@ export default {
     'teambuildings',
   ],
   defaultNamespace: 'translation',
-  load: ['server'],
+  load: ['server', 'client'],
   resourcesBasePath: 'src/locales',
 };

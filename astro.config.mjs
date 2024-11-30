@@ -16,6 +16,12 @@ export default defineConfig({
       formats: ['image/avif', 'image/webp'],
     },
     nodeVersion: '18.x',
+    assets: [
+      {
+        source: 'src/locales',
+        destination: 'locales',
+      },
+    ],
   }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
