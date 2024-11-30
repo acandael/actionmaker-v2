@@ -24,7 +24,7 @@ export default defineConfig({
         destination: 'locales',
       },
     ],
-    deploymentSuffix: String(Date.now()),
+    debug: true,
   }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
@@ -37,6 +37,9 @@ export default defineConfig({
     },
     ssr: {
       noExternal: ['@astrojs/vercel'],
+    },
+    build: {
+      sourcemap: true,
     },
   },
 });
