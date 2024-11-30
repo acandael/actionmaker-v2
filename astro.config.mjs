@@ -25,6 +25,11 @@ export default defineConfig({
       },
     ],
     debug: true,
+    webAnalytics: {
+      enabled: true,
+    },
+    includeFiles: ['node_modules/crypto/*'],
+    polyfills: true,
   }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
