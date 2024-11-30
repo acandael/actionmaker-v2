@@ -16,11 +16,14 @@ export default defineConfig({
       formats: ['image/avif', 'image/webp'],
     },
     nodeVersion: '18.x',
-    includeFiles: [
-      'public/locales/**/*.json', // Include translation files for server processing
+    functionPerRoute: true,
+    maxDuration: 60,
+    assets: [
+      {
+        source: 'src/locales',
+        destination: 'locales',
+      },
     ],
-    functionPerRoute: true, // Create a separate function for each route
-    maxDuration: 60, // Maximum execution time in seconds
   }),
   integrations: [tailwind(), react(), astroI18next()],
   vite: {
