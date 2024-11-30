@@ -32,6 +32,6 @@ const config = {
   ],
   defaultNamespace: 'home',
   load: ['client', 'server'],
+  resourcesBasePath: 'src/locales',
 };
-
 export default config;
