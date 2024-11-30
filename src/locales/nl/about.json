@@ -1,0 +1,39 @@
+{
+  "title": "Over ActionMaker",
+  "description": "<p>Er komt heel wat kijken bij het organiseren van een Teambuilding. Je moet geschikt materiaal vinden, gespecialiseerde animatoren, en wat als je door gewijzigde omstandigheden op het laatste moment een andere activiteit moet vinden?</p><p>We weten hoe stresserend dit kan zijn. Action Maker heeft immers 15 jaar ervaring met het organiseren van teambuildings voor bedrijven en het versterken van de groepsgeest.</p><p>Neem daarom vandaag nog contact op met Action Maker, je ontvangt binnen de twee dagen een offerte en wij nemen alle zorgen uit je handen zodat je team een leuke dag heeft zonder zorgen, en versterkt als team uit de ervaring komt.</p>",
+  "stats": {
+    "tevreden": "Tevreden klanten",
+    "unieke": "Unieke activiteiten",
+    "jaar": "Jaar ervaring",
+    "positief": "Positieve reviews"
+  },
+  "values": {
+    "passie": {
+      "title": "Passie voor teambuilding",
+      "description": "We zijn gepassioneerd over het creëren van betekenisvolle teambuildingservaringen die teams echt versterken."
+    },
+    "kwaliteit": {
+      "title": "Kwaliteit gegarandeerd",
+      "description": "Al onze activiteiten worden geleid door gecertificeerde professionals met jarenlange ervaring."
+    },
+    "persoonlijk": {
+      "title": "Persoonlijke aanpak",
+      "description": "We luisteren naar uw wensen en stellen een programma samen dat perfect aansluit bij uw team."
+    },
+    "resultaat": {
+      "title": "Resultaatgericht",
+      "description": "Onze activiteiten zijn ontworpen om concrete resultaten te behalen in teambuilding en groepsdynamiek."
+    }
+  },
+  "founder": {
+    "title": "Oprichter",
+    "subtitle": "CEO, ex-Belgisch kampioen sabelschermen",
+    "description": "<p>Mijn vader had zijn eigen evenementenbureau. Na mijn opleiding als topsportschermer begon ik met het organiseren van scherminitiaties.</p><p>Het frustreerde mij dat veel teambuilding bedrijven te weinig naar de klant luisterden en steeds dezelfde activiteiten organiseerden, vaak op amateuristische wijze.</p><p>Daarom begon ik 15 jaar geleden met het uitbouwen van een breed gamma aan unieke activiteiten. Hierbij stond persoonlijk contact met de klant voorop.</p><p>Het is mijn overtuiging dat bedrijven een leuke dag moeten hebben zonder zorgen, zodat hun werknemers als een versterkt team uit de ervaring komen.</p>"
+  },
+  "cta": {
+    "title": "Klaar om je team te versterken?",
+    "description": "Neem vandaag nog contact op met Action Maker. Binnen twee werkdagen ontvang je een offerte op maat voor jouw team.",
+    "cta": "Bekijk activiteiten",
+    "call": "Of bel ons direct op"
+  }
+}

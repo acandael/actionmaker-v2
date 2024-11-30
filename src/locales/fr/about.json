@@ -1,0 +1,39 @@
+{
+  "title": "À propos d'ActionMaker",
+  "description": "<p>L'organisation d'un Team Building implique de nombreux aspects. Vous devez trouver le matériel approprié, des animateurs spécialisés, et que faire si vous devez changer d'activité à la dernière minute en raison de circonstances modifiées ?</p><p>Nous savons à quel point cela peut être stressant. Action Maker possède en effet 15 ans d'expérience dans l'organisation de team buildings pour les entreprises et le renforcement de l'esprit d'équipe.</p><p>Contactez donc Action Maker dès aujourd'hui, vous recevrez un devis sous deux jours et nous nous occupons de tout pour que votre équipe passe une excellente journée sans soucis et sorte renforcée de cette expérience.</p>",
+  "stats": {
+    "tevreden": "Clients satisfaits",
+    "unieke": "Activités uniques",
+    "jaar": "Années d'expérience",
+    "positief": "Avis positifs"
+  },
+  "values": {
+    "passie": {
+      "title": "Passion pour le teambuilding",
+      "description": "Nous sommes passionnés par la création de teambuildings qui renforcent vraiment les équipes."
+    },
+    "kwaliteit": {
+      "title": "Qualité garantie",
+      "description": "Toutes nos activités sont conduites par des professionnels certifiés avec des années d'expérience."
+    },
+    "persoonlijk": {
+      "title": "Approche personnalisée",
+      "description": "Nous écoutons vos besoins et nous créons un programme qui correspond parfaitement à votre équipe."
+    },
+    "resultaat": {
+      "title": "Résultat orienté",
+      "description": "Nos activités sont conçues pour atteindre des résultats concrets en teambuilding et en dynamique de groupe."
+    }
+  },
+  "founder": {
+    "title": "Fondateur",
+    "subtitle": "CEO, ex-champion belge du sabre",
+    "description": "<p>Mon père avait son propre bureau d'événements. Après avoir été formé comme un sportif de haut niveau, j'ai commencé à organiser des initiatives de tir.</p><p>Cela me dérange que beaucoup d'entreprises de teambuilding ne prennent pas assez en compte les besoins des clients et organisent toujours les mêmes activités, souvent de manière amateur.</p><p>C'est pourquoi, il y a 15 ans, j'ai commencé à construire un programme diversifié d'activités uniques. Le contact personnel avec le client était alors au premier plan.</p><p>C'est ma conviction que les entreprises devraient avoir une excellente journée sans soucis, de manière à ce que leurs employés sortent renforcés de cette expérience.</p>"
+  },
+  "cta": {
+    "title": "Prêt à renforcer votre équipe ?",
+    "description": "Contactez Action Maker dès aujourd'hui. Vous recevrez un devis sur mesure pour votre équipe dans les deux jours.",
+    "cta": "Voir les activités",
+    "call": "Ou contactez-nous directement au "
+  }
+}

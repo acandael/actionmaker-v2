@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "Activités de teambuilding pour les entreprises",
+    "subtitle": "Renforcez la relation entre vos employés avec nos activités de teambuilding uniques.",
+    "cta": "Trouvez votre teambuilding"
+  },
+  "features": {
+    "title": "Pourquoi choisir ",
+    "flexible": {
+      "title": "Flexible",
+      "description": "Une modification imprévue à la dernière minute ? Pas de problème, nous sommes flexibles et pouvons adapter votre teambuilding à toute situation."
+    },
+    "personal": {
+      "title": "Personnalisé",
+      "description": "En opposition à d'autres entreprises, nous ne travaillons pas avec des sous-traitants. Action Maker organise toutes ses teambuildings lui-même."
+    },
+    "experienced": {
+      "title": "Animateurs expérimentés",
+      "description": "Tous nos animateurs sont expérimentés et experts dans les activités qu'ils encadrent."
+    }
+  },
+  "teamActivities": {
+    "title": "Quel type de teambuilding recherchez-vous ?",
+    "subtitle": "Faites votre choix"
+  },
+  "testimonials": {
+    "title": "Que disent nos clients?",
+    "logos-title": "Fiables par des entreprises de premier plan"
+  },
+  "faq": {
+    "title": "Questions fréquemment posées"
+  },
+  "cta": {
+    "versterk": "Renforcez votre équipe aujourd'hui",
+    "ontdek": "Découvrez nos activités de teambuilding uniques et créez des expériences inoubliables pour votre équipe.",
+    "cta": "Trouvez votre teambuilding",
+    "klanten": "Clients satisfaits",
+    "activiteiten": "Activités uniques",
+    "jaar": "Années d'expérience",
+    "reviews": "Avis positifs"
+  }
+}
