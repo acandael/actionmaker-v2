@@ -3,6 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 import vercel from '@astrojs/vercel/serverless';
 import astroI18next from 'astro-i18next';
+import { fileURLToPath } from 'url';
 
 export default defineConfig({
   output: 'server',
@@ -15,6 +16,20 @@ export default defineConfig({
       formats: ['image/avif', 'image/webp'],
     },
     nodeVersion: '18.x',
+    includeFiles: [
+      'public/locales/**/*.json', // Include translation files for server processing
+    ],
+    functionPerRoute: true, // Create a separate function for each route
+    maxDuration: 60, // Maximum execution time in seconds
   }),
   integrations: [tailwind(), react(), astroI18next()],
+  vite: {
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
+        '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
+        '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
+      },
+    },
+  },
 });
