@@ -259,6 +259,14 @@ export const ui = {
     'contact.features.flexible': 'Flexible et adaptable',
     'contact.features.personal': 'Approche personnalisée',
     'contact.features.experienced': 'Animateurs expérimentés',
+
+    // Activity page translations
+    expectations: 'À quoi vous attendre',
+    'booking-title': 'Réserver cette activité',
+    'group-size': 'Taille du groupe',
+    duration: 'Durée',
+    availability: 'Disponibilité',
+    'request-quote': 'Demander un devis',
   },
   de: {
     // Home
