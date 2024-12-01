@@ -1,15 +1,17 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { getCollection, getEntry } from 'astro:content';
-import { Button } from '@/components/ui/button';
+import { getCollection } from 'astro:content';
 import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2 } from 'lucide-react';
-import { BookingForm } from './BookingForm.tsx';
+import { BookingForm } from './BookingForm';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import { Image } from 'astro:assets';
-import i18next, { t, setDefaultNamespace, changeLanguage } from 'i18next';
-setDefaultNamespace('activity');
-changeLanguage('de');
+import type { ImageMetadata } from 'astro';
+import { ui } from '@/i18n/ui';
+
+const lang = 'de';
+const t = (key: keyof typeof ui.de) => ui[lang][key];
 
 // Get the activity slug from the URL
 const { activity: activitySlug } = Astro.params;
@@ -31,7 +33,7 @@ const { Content } = await activity.render();
 
 // Import all images
 const imageImports = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/activities/**/*.{jpeg,jpg,png,gif}',
+  '/src/assets/activities/**/*.{jpeg,jpg,png,gif,webp}',
   {
     eager: true,
   }

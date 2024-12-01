@@ -393,5 +393,13 @@ export const ui = {
     'contact.features.flexible': 'Flexibel und anpassbar',
     'contact.features.personal': 'Persönlicher Ansatz',
     'contact.features.experienced': 'Erfahrene Animateure',
+
+    // Activity page translations
+    expectations: 'Was Sie erwartet',
+    'booking-title': 'Diese Aktivität buchen',
+    'group-size': 'Gruppengröße',
+    duration: 'Dauer',
+    availability: 'Verfügbarkeit',
+    'request-quote': 'Angebot anfordern',
   },
 } as const;
