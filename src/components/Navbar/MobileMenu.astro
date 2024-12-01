@@ -5,6 +5,10 @@ import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const getLocalizedPath = (path: string) => {
+  return lang === 'nl' ? path : `/${lang}${path}`;
+};
 ---
 
 <div class="flex lg:hidden">
@@ -17,7 +21,7 @@ const t = useTranslations(lang);
 <div class="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm hidden" data-mobile-menu-overlay>
   <div class="fixed inset-x-4 top-8 z-50 rounded-lg bg-background p-6 shadow-lg">
     <div class="flex items-center justify-between">
-      <a href="/" class="block">
+      <a href={getLocalizedPath('/')} class="block">
         <span class="sr-only">ActionMaker</span>
       </a>
       <Button variant="ghost" size="icon" data-mobile-menu-close>
@@ -27,27 +31,27 @@ const t = useTranslations(lang);
     <nav class="mt-6">
       <ul class="space-y-4">
         <li>
-          <a href={lang === 'nl' ? '/' : `/${lang}`} class="block text-lg">
+          <a href={getLocalizedPath('/')} class="block text-lg">
             {t('nav.home')}
           </a>
         </li>
         <li>
-          <a href={`/${lang}/teambuildings`} class="block text-lg">
+          <a href={getLocalizedPath('/teambuildings')} class="block text-lg">
             {t('nav.teambuildings')}
           </a>
         </li>
         <li>
-          <a href={`/${lang}/concepts`} class="block text-lg">
-            {t('nav.concepts')}
+          <a href={getLocalizedPath('/concepten')} class="block text-lg">
+            {t('nav.concepten')}
           </a>
         </li>
         <li>
-          <a href={`/${lang}/about`} class="block text-lg">
+          <a href={getLocalizedPath('/over-actionmaker')} class="block text-lg">
             {t('nav.about')}
           </a>
         </li>
         <li>
-          <a href={`/${lang}/contact`} class="block text-lg">
+          <a href={getLocalizedPath('/contact')} class="block text-lg">
             {t('nav.contact')}
           </a>
         </li>

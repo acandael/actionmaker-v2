@@ -12,12 +12,16 @@ const t = useTranslations(lang);
 
 type LanguageKey = keyof typeof languages;
 
+const getLocalizedPath = (path: string) => {
+  return lang === 'nl' ? path : `/${lang}${path}`;
+};
+
 const links = [
-  { href: '/', label: t('nav.home') },
-  { href: '/teambuildings', label: t('nav.teambuildings') },
-  { href: '/concepten', label: t('nav.concepten') },
-  { href: '/over-actionmaker', label: t('nav.about') },
-  { href: '/contact', label: t('nav.contact') },
+  { href: getLocalizedPath('/'), label: t('nav.home') },
+  { href: getLocalizedPath('/teambuildings'), label: t('nav.teambuildings') },
+  { href: getLocalizedPath('/concepten'), label: t('nav.concepten') },
+  { href: getLocalizedPath('/over-actionmaker'), label: t('nav.about') },
+  { href: getLocalizedPath('/contact'), label: t('nav.contact') },
 ];
 ---
 
@@ -25,7 +29,7 @@ const links = [
   class="fixed top-0 left-0 right-0 h-20 bg-black backdrop-blur-lg z-50 border-b overflow-hidden border-white/10"
 >
   <div class="max-w-7xl mx-auto h-full px-4 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-2">
+    <a href={getLocalizedPath('/')} class="flex items-center gap-2">
       <Image src={logo} alt="ActionMaker" width={150} height={84} />
     </a>
 
@@ -66,7 +70,7 @@ const links = [
 
       <div class="hidden md:block">
         <Button asChild className="bg-red-600 hover:bg-red-700 text-white">
-          <a href="/contact" class="flex items-center gap-2">
+          <a href={getLocalizedPath('/contact')} class="flex items-center gap-2">
             {t('nav.contact')}
             <ArrowRight className="w-4 h-4" />
           </a>
