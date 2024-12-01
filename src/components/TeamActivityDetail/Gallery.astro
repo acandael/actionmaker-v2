@@ -1,19 +1,20 @@
 ---
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
-import i18next, { t, setDefaultNamespace } from 'i18next';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
-setDefaultNamespace('activity');
 interface Props {
   images: string[];
   imageImports: Record<string, { default: ImageMetadata }>;
 }
 
 const { images, imageImports } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="space-y-4">
-  <h2 class="text-3xl font-bold">{t('gallery-title')}</h2>
+  <h2 class="text-3xl font-bold">{t('activity.gallery-title')}</h2>
   <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     {
       images.map((image, index) => {

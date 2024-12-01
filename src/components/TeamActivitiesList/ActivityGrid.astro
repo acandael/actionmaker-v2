@@ -23,7 +23,8 @@ const lang = getLangFromUrl(Astro.url);
 // Create URL based on locale
 const getActivityUrl = (id: string) => {
   const baseUrl = '/teambuildings';
-  return lang === 'nl' ? `${baseUrl}/${id}` : `/${lang}${baseUrl}/${id}`;
+  const cleanId = id.replace(/^(nl|fr|de)\//, '').replace(/\.md$/, '');
+  return lang === 'nl' ? `${baseUrl}/${cleanId}` : `/${lang}${baseUrl}/${cleanId}`;
 };
 ---
 
