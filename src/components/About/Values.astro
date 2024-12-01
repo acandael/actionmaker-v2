@@ -1,28 +1,30 @@
 ---
 import { Heart, Shield, Users, Target } from 'lucide-react';
-import { setDefaultNamespace, t } from 'i18next';
-setDefaultNamespace('about');
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const values = [
   {
     icon: Heart,
-    title: t('values.passie.title'),
-    description: t('values.passie.description'),
+    title: t('about.values.passie.title'),
+    description: t('about.values.passie.description'),
   },
   {
     icon: Shield,
-    title: t('values.kwaliteit.title'),
-    description: t('values.kwaliteit.description'),
+    title: t('about.values.kwaliteit.title'),
+    description: t('about.values.kwaliteit.description'),
   },
   {
     icon: Users,
-    title: t('values.persoonlijk.title'),
-    description: t('values.persoonlijk.description'),
+    title: t('about.values.persoonlijk.title'),
+    description: t('about.values.persoonlijk.description'),
   },
   {
     icon: Target,
-    title: t('values.resultaat.title'),
-    description: t('values.resultaat.description'),
+    title: t('about.values.resultaat.title'),
+    description: t('about.values.resultaat.description'),
   },
 ];
 ---
@@ -30,9 +32,9 @@ const values = [
 <section class="py-24 px-4 bg-background">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-20">
-      <h2 class="text-4xl font-bold mb-4">Onze Waarden</h2>
+      <h2 class="text-4xl font-bold mb-4">{t('about.values.title')}</h2>
       <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-        Bij ActionMaker streven we naar excellentie in alles wat we doen
+        {t('about.values.subtitle')}
       </p>
     </div>
 

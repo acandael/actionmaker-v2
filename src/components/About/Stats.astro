@@ -1,29 +1,30 @@
 ---
 import { Users, Trophy, Calendar, Star } from 'lucide-react';
-import { setDefaultNamespace, t } from 'i18next';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
-setDefaultNamespace('about');
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const stats = [
   {
     icon: Users,
     value: '500+',
-    label: t('stats.tevreden'),
+    label: t('about.stats.tevreden'),
   },
   {
     icon: Trophy,
     value: '50+',
-    label: t('stats.unieke'),
+    label: t('about.stats.unieke'),
   },
   {
     icon: Calendar,
     value: '15+',
-    label: t('stats.jaar'),
+    label: t('about.stats.jaar'),
   },
   {
     icon: Star,
     value: '98%',
-    label: t('stats.positief'),
+    label: t('about.stats.positief'),
   },
 ];
 ---

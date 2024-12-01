@@ -1,7 +1,10 @@
 ---
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { t } from 'i18next';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class="relative py-32 px-4 overflow-hidden bg-gradient-to-b from-background to-muted/50">
@@ -14,10 +17,10 @@ import { t } from 'i18next';
 
   <div class="relative max-w-3xl mx-auto text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-6">
-      {t('about:cta.title')}
+      {t('about.cta.title')}
     </h2>
     <p class="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-      {t('about:cta.description')}
+      {t('about.cta.description')}
     </p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -25,7 +28,7 @@ import { t } from 'i18next';
         size="lg"
         className="bg-red-600 hover:bg-red-700 text-white group px-8 py-6 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
       >
-        {t('about:cta.cta')}
+        {t('about.cta.cta')}
         <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
       </Button>
     </div>
@@ -33,7 +36,7 @@ import { t } from 'i18next';
     {/* Contact Info */}
     <div class="mt-12 text-muted-foreground">
       <p class="text-sm">
-        {t('about:cta.call')}{' '}
+        {t('about.cta.call')}{' '}
         <a href="tel:+32485462505" class="text-red-600 hover:text-red-700 transition-colors">
           0485 46 25 05
         </a>

@@ -1,9 +1,10 @@
 ---
 import { Image } from 'astro:assets';
 import contactImage from '../../assets/over-actionmaker.jpg';
-import { Trans } from 'astro-i18next/components';
-import { t, setDefaultNamespace } from 'i18next';
-setDefaultNamespace('about');
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class="relative py-24 px-4 bg-background">
@@ -11,24 +12,11 @@ setDefaultNamespace('about');
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       {/* Content */}
       <div class="space-y-8">
-        <h1 class="text-4xl md:text-5xl font-bold tracking-tight">{t('title')}</h1>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight">{t('about.title')}</h1>
         <div class="space-y-6 text-lg text-muted-foreground">
-          <Trans i18nKey="description" ns="about">
-            <p>
-              Er komt heel wat kijken bij het organiseren van een Teambuilding. Je moet geschikt
-              materiaal vinden, gespecialiseerde animatoren, en wat als je door gewijzigde
-              omstandigheden op het laatste moment een andere activiteit moet vinden?
-            </p>
-            <p>
-              We weten hoe stresserend dit kan zijn. Action Maker heeft immers 15 jaar ervaring met
-              het organiseren van teambuildings voor bedrijven en het versterken van de groepsgeest.
-            </p>
-            <p>
-              Neem daarom vandaag nog contact op met Action Maker, je ontvangt binnen de twee dagen
-              een offerte en wij nemen alle zorgen uit je handen zodat je team een leuke dag heeft
-              zonder zorgen, en versterkt als team uit de ervaring komt.
-            </p>
-          </Trans>
+          <p>{t('about.description.p1')}</p>
+          <p>{t('about.description.p2')}</p>
+          <p>{t('about.description.p3')}</p>
         </div>
       </div>
 
@@ -37,7 +25,7 @@ setDefaultNamespace('about');
         <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
           <Image
             src={contactImage}
-            alt="Team building activity"
+            alt={t('about.image.alt')}
             width={534}
             height={400}
             class="w-full h-full object-cover"
