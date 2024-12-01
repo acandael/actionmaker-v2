@@ -1,21 +1,23 @@
 ---
 import { Card } from '@/components/ui/card';
 import { ArrowUpDown, Users, Trophy } from 'lucide-react';
-import i18next, { t, setDefaultNamespace } from 'i18next';
-setDefaultNamespace('contact');
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const features = [
   {
     icon: ArrowUpDown,
-    title: t('features.flexible'),
+    title: t('contact.features.flexible'),
   },
   {
     icon: Users,
-    title: t('features.personal'),
+    title: t('contact.features.personal'),
   },
   {
     icon: Trophy,
-    title: t('features.experienced'),
+    title: t('contact.features.experienced'),
   },
 ];
 ---

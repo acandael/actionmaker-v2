@@ -120,6 +120,18 @@ export const ui = {
       'Neem vandaag nog contact op met Action Maker en ontdek hoe wij jouw team kunnen versterken met onze unieke teambuilding activiteiten.',
     'about.cta.cta': 'Contacteer ons',
     'about.cta.call': 'Of bel ons direct op',
+
+    // Contact Info
+    'contact.title': 'Neem contact met ons op',
+    'contact.description':
+      'Wij helpen je graag bij het organiseren van je teambuilding. Neem vandaag nog contact met ons op.',
+    'contact.read-more': 'Lees meer over ons',
+    'contact.image.alt': 'Team building activiteit',
+
+    // Contact Features
+    'contact.features.flexible': 'Flexibel en aanpasbaar',
+    'contact.features.personal': 'Persoonlijke aanpak',
+    'contact.features.experienced': 'Ervaren animatoren',
   },
   fr: {
     // Home
@@ -235,6 +247,18 @@ export const ui = {
       "Contactez Action Maker dès aujourd'hui et découvrez comment nous pouvons renforcer votre équipe avec nos activités uniques de team building.",
     'about.cta.cta': 'Contactez-nous',
     'about.cta.call': 'Ou appelez-nous directement au',
+
+    // Contact Info
+    'contact.title': 'Contactez-nous',
+    'contact.description':
+      "Nous vous aidons volontiers à organiser votre team building. Contactez-nous dès aujourd'hui.",
+    'contact.read-more': 'En savoir plus sur nous',
+    'contact.image.alt': 'Activité de team building',
+
+    // Contact Features
+    'contact.features.flexible': 'Flexible et adaptable',
+    'contact.features.personal': 'Approche personnalisée',
+    'contact.features.experienced': 'Animateurs expérimentés',
   },
   de: {
     // Home
@@ -349,5 +373,17 @@ export const ui = {
       'Kontaktieren Sie Action Maker noch heute und erfahren Sie, wie wir Ihr Team mit unseren einzigartigen Teambuilding-Aktivitäten stärken können.',
     'about.cta.cta': 'Kontaktieren Sie uns',
     'about.cta.call': 'Oder rufen Sie uns direkt an unter',
+
+    // Contact Info
+    'contact.title': 'Kontaktieren Sie uns',
+    'contact.description':
+      'Wir helfen Ihnen gerne bei der Organisation Ihres Teambuildings. Kontaktieren Sie uns noch heute.',
+    'contact.read-more': 'Mehr über uns',
+    'contact.image.alt': 'Teambuilding-Aktivität',
+
+    // Contact Features
+    'contact.features.flexible': 'Flexibel und anpassbar',
+    'contact.features.personal': 'Persönlicher Ansatz',
+    'contact.features.experienced': 'Erfahrene Animateure',
   },
 } as const;
