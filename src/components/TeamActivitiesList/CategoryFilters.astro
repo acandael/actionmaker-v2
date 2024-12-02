@@ -15,6 +15,7 @@ interface Props {
 
 const { categories, selectedCategory, fromHomepage = false } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 // Get clean category ID without locale prefix
 const getCleanCategoryId = (id: string) => {
@@ -35,7 +36,7 @@ const baseUrl = fromHomepage ? '/teambuildings' : '';
         : 'border-gray-200 hover:border-red-600 hover:text-red-600',
     ]}
   >
-    Alle activiteiten
+    {t('teambuildings.all-activities')}
   </a>
   {
     categories.map((category) => {

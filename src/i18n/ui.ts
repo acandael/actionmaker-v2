@@ -73,6 +73,7 @@ export const ui = {
     'teambuildings.activities-found_other': '{{count}} activiteiten gevonden in',
     'teambuildings.activities-available_one': '{{count}} activiteit beschikbaar',
     'teambuildings.activities-available_other': '{{count}} activiteiten beschikbaar',
+    'teambuildings.all-activities': 'Alle activiteiten',
 
     // About
     'about.title': 'Over Action Maker',
@@ -216,6 +217,7 @@ export const ui = {
     'teambuildings.activities-found_other': '{{count}} activités trouvées dans',
     'teambuildings.activities-available_one': '{{count}} activité disponible',
     'teambuildings.activities-available_other': '{{count}} activités disponibles',
+    'teambuildings.all-activities': 'Toutes les activités',
 
     // About
     'about.title': "À propos d'Action Maker",
@@ -360,6 +362,7 @@ export const ui = {
     'teambuildings.activities-found_other': '{{count}} Aktivitäten gefunden in',
     'teambuildings.activities-available_one': '{{count}} Aktivität verfügbar',
     'teambuildings.activities-available_other': '{{count}} Aktivitäten verfügbar',
+    'teambuildings.all-activities': 'Alle Aktivitäten',
 
     // About
     'about.title': 'Über Action Maker',
