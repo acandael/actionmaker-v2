@@ -28,8 +28,10 @@ const t = useTranslations(lang);
         size="lg"
         className="bg-red-600 hover:bg-red-700 text-white group px-8 py-6 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
       >
-        {t('about.cta.cta')}
-        <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+        <a href={lang === 'nl' ? '/contact' : `/${lang}/contact`} class="flex items-center">
+          {t('about.cta.cta')}
+          <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+        </a>
       </Button>
     </div>
 
