@@ -48,6 +48,11 @@ export const ui = {
       'Ontdek onze unieke teambuilding activiteiten en creëer onvergetelijke ervaringen voor je team.',
     'cta.cta': 'Vind je teambuilding',
 
+    // CTA Section
+    'cta.heading.line1': 'Je Team,',
+    'cta.heading.line2': 'Je Bedrijf',
+    'cta.heading.highlight': 'Versterk',
+
     // Testimonials
     'testimonials.logos-title': 'Zij vertrouwen op ActionMaker',
     'testimonials.title': 'Wat onze klanten zeggen',
@@ -173,6 +178,11 @@ export const ui = {
     'cta.ontdek':
       'Découvrez nos activités uniques de team building et créez des expériences inoubliables pour votre équipe.',
     'cta.cta': 'Trouvez votre team building',
+
+    // CTA Section
+    'cta.heading.line1': 'Votre Équipe,',
+    'cta.heading.line2': 'Votre Entreprise',
+    'cta.heading.highlight': 'Renforcez',
 
     // Testimonials
     'testimonials.logos-title': 'Zij vertrouwen op ActionMaker',
@@ -312,6 +322,11 @@ export const ui = {
     'cta.ontdek':
       'Entdecken Sie unsere einzigartigen Teambuilding-Aktivitäten und schaffen Sie unvergessliche Erlebnisse für Ihr Team.',
     'cta.cta': 'Finden Sie Ihr Teambuilding',
+
+    // CTA Section
+    'cta.heading.line1': 'Sie Ihr Team,',
+    'cta.heading.line2': 'Sie Ihr Unternehmen',
+    'cta.heading.highlight': 'Stärken',
 
     // Testimonials
     'testimonials.logos-title': 'Zij vertrouwen op ActionMaker',

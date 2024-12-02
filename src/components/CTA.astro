@@ -30,9 +30,11 @@ const stats = [
       <div class="space-y-12">
         <div class="space-y-6">
           <h2 class="text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight">
-            <span class="text-red-600">Versterk</span> Je Team,
+            <span class="text-red-600">{t('cta.heading.highlight')}</span>
+            {t('cta.heading.line1')}
             <br />
-            <span class="text-red-600">Versterk</span> Je Bedrijf
+            <span class="text-red-600">{t('cta.heading.highlight')}</span>
+            {t('cta.heading.line2')}
           </h2>
           <p class="text-xl text-muted-foreground max-w-xl">
             {t('cta.ontdek')}
@@ -56,7 +58,7 @@ const stats = [
             size="lg"
             className="bg-red-600 hover:bg-red-700 text-white group px-8 py-6 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            <a href="/teambuildings" class="flex items-center gap-2">
+            <a href={`/${lang}/teambuildings`} class="flex items-center gap-2">
               {t('cta.cta')}
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
