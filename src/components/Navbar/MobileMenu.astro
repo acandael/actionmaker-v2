@@ -1,7 +1,6 @@
 ---
-import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import LanguageSelector from '../LanguageSelector.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -9,53 +8,65 @@ const t = useTranslations(lang);
 const getLocalizedPath = (path: string) => {
   return lang === 'nl' ? path : `/${lang}${path}`;
 };
+
+const links = [
+  { href: getLocalizedPath('/'), label: t('nav.home') },
+  { href: getLocalizedPath('/teambuildings'), label: t('nav.teambuildings') },
+  { href: getLocalizedPath('/concepten'), label: t('nav.concepten') },
+  { href: getLocalizedPath('/over-actionmaker'), label: t('nav.about') },
+  { href: getLocalizedPath('/contact'), label: t('nav.contact') },
+];
 ---
 
-<div class="flex lg:hidden">
-  <Button variant="ghost" size="icon" data-mobile-menu-trigger>
-    <Menu className="h-6 w-6" />
-    <span class="sr-only">{t('nav.menu')}</span>
-  </Button>
+<div
+  class="fixed inset-y-0 right-0 w-full max-w-sm bg-black border-l border-white/10 translate-x-full transition-transform duration-300 ease-in-out z-50"
+  data-mobile-menu
+>
+  <div class="h-20 flex items-center justify-end px-4">
+    <button
+      type="button"
+      class="p-2 -mr-2 text-white/70 hover:text-white transition-colors"
+      data-mobile-menu-trigger
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="px-4 space-y-4">
+    {
+      links.map(({ href, label }) => (
+        <a href={href} class="block text-lg text-white/90 hover:text-white transition-colors">
+          {label}
+        </a>
+      ))
+    }
+    <div class="pt-4">
+      <LanguageSelector />
+    </div>
+  </nav>
 </div>
 
-<div class="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm hidden" data-mobile-menu-overlay>
-  <div class="fixed inset-x-4 top-8 z-50 rounded-lg bg-background p-6 shadow-lg">
-    <div class="flex items-center justify-between">
-      <a href={getLocalizedPath('/')} class="block">
-        <span class="sr-only">ActionMaker</span>
-      </a>
-      <Button variant="ghost" size="icon" data-mobile-menu-close>
-        <span class="sr-only">{t('nav.close')}</span>
-      </Button>
-    </div>
-    <nav class="mt-6">
-      <ul class="space-y-4">
-        <li>
-          <a href={getLocalizedPath('/')} class="block text-lg">
-            {t('nav.home')}
-          </a>
-        </li>
-        <li>
-          <a href={getLocalizedPath('/teambuildings')} class="block text-lg">
-            {t('nav.teambuildings')}
-          </a>
-        </li>
-        <li>
-          <a href={getLocalizedPath('/concepten')} class="block text-lg">
-            {t('nav.concepten')}
-          </a>
-        </li>
-        <li>
-          <a href={getLocalizedPath('/over-actionmaker')} class="block text-lg">
-            {t('nav.about')}
-          </a>
-        </li>
-        <li>
-          <a href={getLocalizedPath('/contact')} class="block text-lg">
-            {t('nav.contact')}
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
+<script>
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
+  const mobileMenuTriggers = document.querySelectorAll('[data-mobile-menu-trigger]');
+
+  let isOpen = false;
+
+  function toggleMenu() {
+    isOpen = !isOpen;
+    mobileMenu?.classList.toggle('translate-x-full', !isOpen);
+  }
+
+  mobileMenuTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', toggleMenu);
+  });
+</script>

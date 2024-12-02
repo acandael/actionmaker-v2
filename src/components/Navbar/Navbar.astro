@@ -92,24 +92,5 @@ const links = [
 <MobileMenu />
 
 <script>
-  // Mobile menu toggle
-  const toggleButton = document.querySelector('[data-toggle-menu]');
-  const mobileMenu = document.querySelector('[data-mobile-menu]');
-  const menuIcon = toggleButton?.querySelector('.lucide-menu');
-  const closeIcon = toggleButton?.querySelector('.lucide-x');
-
-  let isOpen = false;
-
-  toggleButton?.addEventListener('click', () => {
-    isOpen = !isOpen;
-
-    // Toggle icons
-    menuIcon?.classList.toggle('hidden');
-    closeIcon?.classList.toggle('hidden');
-
-    // Toggle menu height
-    if (mobileMenu) {
-      mobileMenu.style.height = isOpen ? `${mobileMenu.scrollHeight}px` : '0';
-    }
-  });
+  // Mobile menu toggle is now handled in MobileMenu.astro
 </script>
