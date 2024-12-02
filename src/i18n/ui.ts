@@ -9,8 +9,8 @@ export const defaultLang = 'nl';
 export const ui = {
   nl: {
     // Home
-    'home.hero.title': 'Versterk Je Team, Versterk Je Bedrijf',
-    'home.hero.subtitle': 'Ontdek hoe wij uw team kunnen versterken',
+    'home.hero.title': 'Een breed gamma van unieke teambuildings',
+    'home.hero.subtitle': 'Versterk je team met een leuke dag zonder zorgen',
     'home.hero.cta': 'Bekijk onze activiteiten',
 
     // Navigation
@@ -153,8 +153,8 @@ export const ui = {
   },
   fr: {
     // Home
-    'home.hero.title': 'Renforcez Votre Équipe, Renforcez Votre Entreprise',
-    'home.hero.subtitle': 'Découvrez comment nous pouvons renforcer votre équipe',
+    'home.hero.title': "Une large gamme d'activités de team building uniques",
+    'home.hero.subtitle': 'Renforcez votre équipe avec une journée agréable sans soucis',
     'home.hero.cta': 'Découvrez nos activités',
 
     // Navigation
@@ -186,8 +186,8 @@ export const ui = {
     'cta.heading.highlight': 'Renforcez',
 
     // Testimonials
-    'testimonials.logos-title': 'Zij vertrouwen op ActionMaker',
-    'testimonials.title': 'Wat onze klanten zeggen',
+    'testimonials.logos-title': 'Ils font confiance à ActionMaker',
+    'testimonials.title': 'Ce que disent nos clients',
 
     // FAQ
     'faq.title': 'Questions fréquentes',
@@ -298,8 +298,8 @@ export const ui = {
   },
   de: {
     // Home
-    'home.hero.title': 'Stärken Sie Ihr Team, Stärken Sie Ihr Unternehmen',
-    'home.hero.subtitle': 'Entdecken Sie, wie wir Ihr Team stärken können',
+    'home.hero.title': 'Eine breite Palette einzigartiger Teambuilding-Aktivitäten',
+    'home.hero.subtitle': 'Stärken Sie Ihr Team mit einem sorgenfreien Tag',
     'home.hero.cta': 'Entdecken Sie unsere Aktivitäten',
 
     // Navigation
