@@ -1,13 +1,11 @@
 ---
-interface Props {
-  title: string;
-  subtitle: string;
-}
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
-const { title, subtitle } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="text-center mb-16">
-  <p class="text-lg text-muted-foreground mb-2">{subtitle}</p>
-  <h2 class="text-4xl font-bold">{title}</h2>
+  <p class="text-lg text-muted-foreground mb-2">{t('teamActivities.subtitle')}</p>
+  <h2 class="text-4xl font-bold">{t('teamActivities.title')}</h2>
 </div>

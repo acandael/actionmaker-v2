@@ -49,15 +49,17 @@ const filteredActivities = selectedCategory
   : activities;
 
 // Format activities for the grid with proper data structure
-const formattedActivities = filteredActivities.map((activity) => ({
-  id: activity.id.replace(`${lang}/`, ''),
-  data: {
-    title: activity.data.title,
-    description: activity.data.description,
-    image: activity.data.image,
-    categories: activity.data.categories,
-  },
-}));
+const formattedActivities = filteredActivities
+  .filter((activity) => activity.data.image)
+  .map((activity) => ({
+    id: activity.id.replace(`${lang}/`, ''),
+    data: {
+      title: activity.data.title,
+      description: activity.data.description,
+      image: activity.data.image!,
+      categories: activity.data.categories,
+    },
+  }));
 
 // Format the count message
 const getCountMessage = (count: number, isFiltered: boolean) => {
@@ -65,7 +67,7 @@ const getCountMessage = (count: number, isFiltered: boolean) => {
     ? `teambuildings.activities-found_${count === 1 ? 'one' : 'other'}`
     : `teambuildings.activities-available_${count === 1 ? 'one' : 'other'}`;
 
-  const message = t(key).replace('{{count}}', count.toString());
+  const message = t(key as any).replace('{{count}}', count.toString());
 
   return isFiltered ? `${message} ${currentCategory?.data.title.toLowerCase() || ''}` : message;
 };

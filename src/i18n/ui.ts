@@ -132,6 +132,18 @@ export const ui = {
     'contact.features.flexible': 'Flexibel en aanpasbaar',
     'contact.features.personal': 'Persoonlijke aanpak',
     'contact.features.experienced': 'Ervaren animatoren',
+
+    // Activity page translations
+    expectations: 'Wat kun je verwachten',
+    'booking-title': 'Deze activiteit boeken',
+    'group-size': 'Groepsgrootte',
+    duration: 'Duur',
+    availability: 'Beschikbaarheid',
+    'request-quote': 'Offerte aanvragen',
+
+    // Team Activities
+    'teamActivities.title': 'Welke Soort Teambuilding Zoek Je?',
+    'teamActivities.subtitle': 'Maak Je Keuze',
   },
   fr: {
     // Home
@@ -267,6 +279,10 @@ export const ui = {
     duration: 'Durée',
     availability: 'Disponibilité',
     'request-quote': 'Demander un devis',
+
+    // Team Activities
+    'teamActivities.title': 'Quel type de teambuilding recherchez-vous ?',
+    'teamActivities.subtitle': 'Faites votre choix',
   },
   de: {
     // Home
@@ -299,7 +315,7 @@ export const ui = {
 
     // Testimonials
     'testimonials.logos-title': 'Zij vertrouwen op ActionMaker',
-    'testimonials.title': 'Wat onze klanten zeggen',
+    'testimonials.title': 'Wat unsere Kunden sagen',
 
     // FAQ
     'faq.title': 'Häufig gestellte Fragen',
@@ -401,5 +417,9 @@ export const ui = {
     duration: 'Dauer',
     availability: 'Verfügbarkeit',
     'request-quote': 'Angebot anfordern',
+
+    // Team Activities
+    'teamActivities.title': 'Welche Art von Teambuilding suchen Sie?',
+    'teamActivities.subtitle': 'Treffen Sie Ihre Wahl',
   },
 } as const;
