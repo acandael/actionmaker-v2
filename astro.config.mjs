@@ -4,6 +4,7 @@ import react from '@astrojs/react';
 import vercel from '@astrojs/vercel/serverless';
 import { fileURLToPath } from 'url';
 
+// https://astro.build/config
 export default defineConfig({
   output: 'server',
   adapter: vercel({
@@ -11,7 +12,7 @@ export default defineConfig({
     imagesConfig: {
       domains: [],
       sizes: [320, 640, 1280],
-      formats: ['image/avif', 'webp'],
+      formats: ['image/avif', 'image/webp'],
     },
     nodeVersion: '18.x',
   }),
