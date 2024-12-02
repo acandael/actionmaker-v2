@@ -21,5 +21,10 @@ export function getRouteFromUrl(url: URL): string {
 // Get URL for a different locale
 export function getLocalizedURL(url: URL, locale: keyof typeof ui) {
   const route = getRouteFromUrl(url);
-  return locale === defaultLang ? `/${route}` : `/${locale}/${route}`;
+  const currentPath = url.pathname;
+
+  // If we're on a default language (nl) page, we need to get the route differently
+  const currentRoute = currentPath === '/' ? '' : currentPath.replace(/^\/[a-z]{2}\/|^\//, '');
+
+  return locale === defaultLang ? `/${currentRoute}` : `/${locale}/${currentRoute}`;
 }

@@ -6,6 +6,7 @@ import MobileMenu from './MobileMenu.astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import { languages } from '@/i18n/ui';
 import logo from '@/assets/logo.png';
+import LanguageSelector from '../LanguageSelector.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -52,20 +53,8 @@ const links = [
 
     <div class="flex items-center gap-4">
       {/* Language Selector */}
-      <div class="hidden md:flex gap-2">
-        {
-          Object.entries(languages).map(([code, label]) => (
-            <a
-              href={`/${code === 'nl' ? '' : code}`}
-              class:list={[
-                'px-2 py-1 rounded-md transition-colors text-white/90 hover:text-white',
-                code === lang ? 'bg-red-600 text-white' : 'hover:bg-white/10',
-              ]}
-            >
-              {label}
-            </a>
-          ))
-        }
+      <div class="hidden md:block">
+        <LanguageSelector />
       </div>
 
       <div class="hidden md:block">
@@ -103,5 +92,24 @@ const links = [
 <MobileMenu />
 
 <script>
-  // ... rest of the script remains the same
+  // Mobile menu toggle
+  const toggleButton = document.querySelector('[data-toggle-menu]');
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
+  const menuIcon = toggleButton?.querySelector('.lucide-menu');
+  const closeIcon = toggleButton?.querySelector('.lucide-x');
+
+  let isOpen = false;
+
+  toggleButton?.addEventListener('click', () => {
+    isOpen = !isOpen;
+
+    // Toggle icons
+    menuIcon?.classList.toggle('hidden');
+    closeIcon?.classList.toggle('hidden');
+
+    // Toggle menu height
+    if (mobileMenu) {
+      mobileMenu.style.height = isOpen ? `${mobileMenu.scrollHeight}px` : '0';
+    }
+  });
 </script>
