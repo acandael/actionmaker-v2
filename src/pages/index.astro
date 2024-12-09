@@ -15,7 +15,11 @@ const lang = getLangFromUrl(Astro.url);
 export const prerender = false;
 ---
 
-<Layout title="Team Building Activities" isHomePage={true}>
+<Layout
+  title="Teambuilding Activiteiten | ActionMaker"
+  isHomePage={true}
+  description="Ontdek onze unieke teambuilding activiteiten en creëer onvergetelijke ervaringen voor je team."
+>
   <Hero />
   <Features />
   <TeamActivities />

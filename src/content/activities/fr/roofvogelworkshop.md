@@ -1,6 +1,6 @@
 ---
 title: 'Atelier Rapaces'
-description: 'Une expérience unique avec des oiseaux de proie'
+description: "Vivez l'émotion de vous retrouver face à face avec les maîtres des airs."
 image: 'roofvogelworkshop/roofvogelworkshop-1.jpg'
 categories: ['outdoor', 'workshop']
 duration: '2-3 heures'

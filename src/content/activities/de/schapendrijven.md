@@ -1,6 +1,6 @@
 ---
 title: 'Schafhüten'
-description: 'Schapendrijven ist eine interessante Aktivität für Gruppen, die gerne die Natur und die Schönheit der Umgebung genießen möchten.'
+description: 'Schafhüten ist eine interessante Aktivität für Gruppen, die gerne die Natur und die Schönheit der Umgebung genießen möchten.'
 image: 'schapendrijven/schapendrijven-1.jpg'
 categories: ['outdoor', 'workshop']
 duration: '+/- 3u.'

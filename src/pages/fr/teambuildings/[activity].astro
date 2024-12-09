@@ -52,7 +52,7 @@ if (!heroImage) {
 const images = activity.data.gallery || [];
 ---
 
-<Layout title={`${activity.data.title} - ActionMaker`}>
+<Layout title={`${activity.data.title} - ActionMaker`} description={activity.data.description}>
   {/* Hero Section */}
   <section class="relative min-h-[60vh] flex items-center -mt-20">
     <div class="absolute inset-0 z-0">

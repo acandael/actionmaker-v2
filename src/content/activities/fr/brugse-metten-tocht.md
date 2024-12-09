@@ -1,6 +1,6 @@
 ---
 title: 'Balade des Matines de Bruges'
-description: 'Une promenade historique à travers Bruges'
+description: "Cette balade est conçue pour les amateurs de Bruges. C'est une promenade à travers le centre-ville de Bruges avec des missions et des activités."
 image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
 categories: ['outdoor', 'cultureel']
 duration: '2-3 heures'

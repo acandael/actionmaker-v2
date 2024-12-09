@@ -1,6 +1,6 @@
 ---
 title: 'Alpacaworkshop'
-description: 'Workshop mit Alpaken'
+description: 'Diese fühlenden Tiere geben direkte Rückmeldung auf den Menschen und wie er sich verhält'
 image: 'alpacaworkshop/alpacaworkshop-1.jpg'
 features:
   - 'teamgeist'

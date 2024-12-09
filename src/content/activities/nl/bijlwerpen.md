@@ -1,6 +1,6 @@
 ---
 title: 'Bijlwerpen'
-description: 'Bijlwerpen teambuilding'
+description: 'Bijlwerpen is verrassend gemakkelijk, de meeste mensen werpen de bijl in het doel in de eerste vijf tot tien worpen'
 image: 'bijlwerpen/bijlwerpen-1.jpg'
 features:
   - 'teamgeest'

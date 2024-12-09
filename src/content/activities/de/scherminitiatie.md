@@ -1,6 +1,6 @@
 ---
 title: 'Fechteinführung'
-description: 'Leer die Grundlagen des Fechtens in dieser spannenden Einführung.'
+description: 'Unter der Anleitung unserer erfahrenen Instruktoren lernen die Teilnehmer die grundlegenden Techniken des Fechtens'
 image: 'scherminitiatie/scherminitiatie-1.jpg'
 categories: ['actief', 'indoor', 'outdoor']
 duration: '2 - 3 uur'

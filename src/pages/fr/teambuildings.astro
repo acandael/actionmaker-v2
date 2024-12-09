@@ -6,7 +6,6 @@ import CategoryFilters from '@/components/TeamActivitiesList/CategoryFilters.ast
 import { Separator } from '@/components/ui/separator';
 import type { ImageMetadata } from 'astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
-import ui from '@/ui';
 
 // Get current locale
 const lang = getLangFromUrl(Astro.url);
@@ -66,13 +65,16 @@ const getCountMessage = (count: number, isFiltered: boolean) => {
     ? `teambuildings.activities-found_${count === 1 ? 'one' : 'other'}`
     : `teambuildings.activities-available_${count === 1 ? 'one' : 'other'}`;
 
-  const message = t(key as keyof typeof ui.fr).replace('{{count}}', count.toString());
+  const message = t(key as any).replace('{{count}}', count.toString());
 
   return isFiltered ? `${message} ${currentCategory?.data.title.toLowerCase() || ''}` : message;
 };
 ---
 
-<Layout title="Team Building Activities">
+<Layout
+  title="Activités de Team Building | ActionMaker"
+  description="Découvrez nos activités de team building uniques et créez des expériences inoubliables pour votre équipe."
+>
   <section class="max-w-7xl mx-auto px-4 py-24 mt-16">
     <div class="text-center mb-16">
       <h1 class="text-4xl md:text-6xl font-bold mb-4">

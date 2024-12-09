@@ -1,6 +1,6 @@
 ---
 title: 'Infrarood biatlon'
-description: 'Bij het infrarood biatlonschieten wordt er met omgebouwde biatlongeweren geschoten op een biatlon doel, de sportpistolen worden op een normaal doel gericht'
+description: 'Bij het infrarood biatlonschieten wordt er met omgebouwde biatlongeweren geschoten op een biatlon doel'
 image: 'infrarood-biatlon/infrarood-biatlon-1.jpg'
 categories: ['outdoor', 'indoor']
 duration: '+- 1u30 uur'

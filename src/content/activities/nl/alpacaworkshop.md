@@ -1,6 +1,6 @@
 ---
 title: 'Alpaca Workshop'
-description: "Workshop met alpaca's"
+description: 'Deze fijngevoelige dieren geven directe feedback op de mens en hoe die zich gedraagt'
 image: 'alpacaworkshop/alpacaworkshop-1.jpg'
 features:
   - 'teamgeest'

@@ -1,6 +1,6 @@
 ---
 title: 'Conduite de Moutons'
-description: "Une expérience unique de travail d'équipe avec des chiens de berger"
+description: "La conduite de moutons est une activité agréable pour les groupes qui souhaitent profiter de la nature et de la beauté de l'environnement."
 image: 'schapendrijven/schapendrijven-1.jpg'
 categories: ['outdoor', 'workshop']
 duration: '2-3 heures'

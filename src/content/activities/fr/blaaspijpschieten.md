@@ -1,6 +1,6 @@
 ---
 title: 'Chasse au Sarbacane'
-description: 'Chasse au Sarbacane teambuilding'
+description: "La chasse au sarbacane est très populaire. C'est une activité passionnante et stimulante pour tous les âges."
 image: 'blaaspijpschieten/blaaspijpschieten-1.jpg'
 features:
   - 'esprit d’équipe'

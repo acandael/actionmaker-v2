@@ -1,6 +1,6 @@
 ---
 title: 'Blasrohrschießen'
-description: 'Teambuilding-Aktivität "Blasrohrschießen"'
+description: 'Blasrohrschießen ist sehr beliebt. Es ist eine spannende und herausfordernde Aktivität für alle Altersgruppen.'
 image: 'blaaspijpschieten/blaaspijpschieten-1.jpg'
 features:
   - 'Wettkampf'

@@ -1,6 +1,6 @@
 ---
 title: 'Biathlon infrarouge'
-description: 'Le biathlon infrarouge est une activité de loisir qui combine la précision du tir avec la course à pied.'
+description: 'Le biathlon infrarouge se pratique avec des carabines de biathlon modifiées pour tirer sur une cible de biathlon'
 image: 'infrarood-biatlon/infrarood-biatlon-1.jpg'
 categories: ['outdoor', 'indoor']
 duration: '1.5 heures'

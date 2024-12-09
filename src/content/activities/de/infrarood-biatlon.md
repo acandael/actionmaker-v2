@@ -1,6 +1,6 @@
 ---
 title: 'Infrarood biatlon'
-description: 'Bei der Infrarot-Biathlon- und Sportpistolenschießen wird mit umgebauten Biatlongewehren geschossen auf ein Biatlonziel, die Sportpistolen werden auf ein normales Ziel gericht'
+description: 'Beim Infrarot-Biathlon wird mit umgebauten Biathlongewehren auf eine Biathlon-Zielscheibe geschossen'
 image: 'infrarood-biatlon/infrarood-biatlon-1.jpg'
 categories: ['outdoor', 'indoor']
 duration: '+- 1u30 Stunden'

@@ -1,6 +1,6 @@
 ---
 title: 'Axtwerfen'
-description: 'Teambuilding-Aktivität "Axtwerfen"'
+description: 'Axtwerfen ist überraschend einfach, die meisten Menschen treffen das Ziel bereits in den ersten fünf bis zehn Würfen'
 image: 'bijlwerpen/bijlwerpen-1.jpg'
 features:
   - 'teamgeist'

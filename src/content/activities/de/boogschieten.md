@@ -1,6 +1,6 @@
 ---
 title: 'Boogschießen'
-description: 'Teambuilding-Aktivität "Boogschießen"'
+description: 'Bogenschießen ist ein klassischer Sport, der Konzentration, Technik und Präzision erfordert.'
 image: 'boogschieten/boogschieten-1.jpg'
 features:
   - 'Erfaßte Instruktoren'

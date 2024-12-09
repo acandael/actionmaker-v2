@@ -1,6 +1,6 @@
 ---
 title: 'Scherminitiatie'
-description: 'Leer de basis van het schermen in deze spannende initiatie.'
+description: 'Onder begeleiding van onze ervaren instructeurs leren deelnemers de fundamentele technieken van het schermen'
 image: 'scherminitiatie/scherminitiatie-1.jpg'
 categories: ['actief', 'indoor', 'outdoor']
 duration: '2 - 3 uur'

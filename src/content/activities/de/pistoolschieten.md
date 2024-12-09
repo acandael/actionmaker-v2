@@ -1,6 +1,6 @@
 ---
 title: 'Pistolschießen'
-description: 'Eine spannende Schießaktivität unter professioneller Anleitung.'
+description: 'Pistolenschießen ist eine anspruchsvolle Aktivität, die Präzision, Konzentration und eine ruhige Hand erfordert'
 image: 'pistoolschieten/pistoolschieten-1.jpg'
 categories: ['outdoor', 'indoor']
 duration: '2 - 3 Stunden'

@@ -1,6 +1,6 @@
 ---
 title: 'Atelier Alpaca'
-description: 'Atelier avec des alpacas'
+description: 'Ces animaux sensibles donnent une rétroaction directe sur l’homme et comment il se comporte'
 image: 'alpacaworkshop/alpacaworkshop-1.jpg'
 features: ['communication', 'esprit équipe', 'stratégie']
 gallery:

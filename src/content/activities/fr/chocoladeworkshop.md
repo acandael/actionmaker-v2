@@ -1,6 +1,6 @@
 ---
 title: 'Atelier Chocolat'
-description: "Découvrez l'art de la fabrication du chocolat belge"
+description: 'Un atelier chocolat dirigé par un chocolatier professionnel.'
 image: 'chocoladeworkshop/chocoladeworkshop-1.jpg'
 categories: ['indoor', 'workshop', 'culinair']
 duration: '2-3 heures'

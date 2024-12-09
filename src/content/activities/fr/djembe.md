@@ -1,6 +1,6 @@
 ---
 title: 'Atelier Djembé'
-description: 'Découvrez le rythme africain en équipe'
+description: 'Faire de la musique en équipe crée une expérience unique et génère un sentiment de groupe positif.'
 image: 'djembe/djembe-1.jpg'
 categories: ['indoor', 'workshop', 'cultureel']
 duration: '2-3 heures'

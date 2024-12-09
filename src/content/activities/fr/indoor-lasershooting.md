@@ -1,6 +1,6 @@
 ---
 title: 'Indoor Lasershooting'
-description: 'Une expérience de tir laser palpitante en intérieur'
+description: "Le lasershooting en intérieur est une activité d'équipe passionnante centrée sur la stratégie, la communication et l'esprit d'équipe."
 image: 'indoor-lasershooting/indoorlasershooting-1.jpg'
 categories: ['indoor', 'actief']
 duration: '2-3 heures'

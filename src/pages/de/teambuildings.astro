@@ -64,16 +64,19 @@ const getCountMessage = (count: number, isFiltered: boolean) => {
     ? `teambuildings.activities-found_${count === 1 ? 'one' : 'other'}`
     : `teambuildings.activities-available_${count === 1 ? 'one' : 'other'}`;
 
-  const message = t(key).replace('{{count}}', count.toString());
+  const message = t(key as any).replace('{{count}}', count.toString());
 
   return isFiltered ? `${message} ${currentCategory?.data.title.toLowerCase() || ''}` : message;
 };
 ---
 
-<Layout title="Team Building Aktivitäten">
+<Layout
+  title="Team Building Aktivitäten | ActionMaker"
+  description="Entdecken Sie unsere einzigartigen Team-Building-Aktivitäten und erstellen Sie unerwartete Erlebnisse für Ihr Team."
+>
   <section class="max-w-7xl mx-auto px-4 py-24 mt-16">
     <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
         {currentCategory ? currentCategory.data.title : t('teambuildings.title')}
       </h1>
       {

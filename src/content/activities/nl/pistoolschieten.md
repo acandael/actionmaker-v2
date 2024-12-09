@@ -1,6 +1,6 @@
 ---
 title: 'Pistoolschieten'
-description: 'Een spannende schietactiviteit onder professionele begeleiding.'
+description: 'Pistoolschieten is een uitdagende activiteit die precisie, concentratie en een vaste hand vereist'
 image: 'pistoolschieten/pistoolschieten-1.jpg'
 categories: ['outdoor', 'indoor']
 duration: '2 - 3 uur'

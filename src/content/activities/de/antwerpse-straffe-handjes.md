@@ -1,6 +1,6 @@
 ---
 title: 'Antwerpse Straffe Handjes'
-description: 'Teambuilding-Aktivität "Straffe Handjes" in Antwerpen'
+description: 'Interessante Fakten über Antwerpen entdecken und gleichzeitig den Teamgeist stärken'
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 features:
   - 'interessante Fakten'

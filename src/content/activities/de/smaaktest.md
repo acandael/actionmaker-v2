@@ -1,6 +1,6 @@
 ---
 title: 'Geschmackstest'
-description: 'Kannst du auf dein Geschmack vertrauen? Wie macht man das beste von Geschmack, Geruch, Geschmack und Wissen um Bier, Cola, Käse, Gewürze, …'
+description: 'Können Sie Ihrem Geschmackssinn vertrauen? Wer macht den besten Gebrauch von Geschmacks-, Geruchs- und Tastsinn?'
 image: 'smaaktest/smaaktest-1.jpg'
 categories: ['indoor', 'culinair']
 duration: 'mit Quiz +/- 90 min, ohne Quiz +/- 60 min'

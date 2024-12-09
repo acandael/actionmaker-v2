@@ -1,6 +1,6 @@
 ---
 title: 'Lutte Sumo'
-description: 'Une activité amusante et originale qui combine sport et divertissement'
+description: "Une activité hilarante où les participants s'affrontent dans des costumes de sumo gonflables."
 image: 'sumoworstelen/sumoworstelen-1.jpg'
 categories: ['indoor', 'actief']
 duration: '2-3 heures'

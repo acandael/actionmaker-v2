@@ -1,6 +1,6 @@
 ---
 title: 'Blaaspijpschieten'
-description: 'Blaaspijpschieten teambuilding'
+description: 'Blaaspijpschieten is erg populair. Het is een spannende en uitdagende activiteit voor alle leeftijden.'
 image: 'blaaspijpschieten/blaaspijpschieten-1.jpg'
 features:
   - 'competitie'

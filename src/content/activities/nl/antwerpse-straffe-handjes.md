@@ -1,6 +1,6 @@
 ---
 title: 'Antwerpse Straffe Handjes'
-description: 'Antwerpse Straffe Handjes teambuilding'
+description: 'Leuke weetjes over Antwerpen ontdekken en gelijktijdig de teamgeest versterken binnen je team'
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 features:
   - 'leuke weetjes'

@@ -1,6 +1,6 @@
 ---
 title: 'Boogschieten'
-description: 'Boogschieten teambuilding'
+description: 'Boogschieten is een klassieke sport die concentratie, techniek en precisie vereist'
 image: 'boogschieten/boogschieten-1.jpg'
 features:
   - 'ervaren instructeurs'

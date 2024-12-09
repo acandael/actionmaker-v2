@@ -1,6 +1,6 @@
 ---
 title: 'Balade des Stroppendragers'
-description: 'Une promenade historique à travers Gand sur les traces des Stroppendragers'
+description: "Cette balade est conçue pour les amateurs de Gand. Il s'agit d'un parcours à travers le centre-ville de Gand avec des missions et des activités."
 image: 'stroppentocht/stroppentocht-1.jpg'
 categories: ['outdoor', 'cultureel']
 duration: '2-3 heures'
