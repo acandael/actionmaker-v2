@@ -1,3 +1,5 @@
+import { useTranslations } from '@/i18n/utils';
+
 interface FooterLink {
   id: string;
   url: string;
@@ -10,7 +12,7 @@ interface FooterSection {
 
 export const footerLinks: FooterSection[] = [
   {
-    title: 'Indoor activiteiten',
+    title: 'footer.sections.indoor',
     links: [
       { id: 'indoor-lasershooting', url: '/teambuildings/indoor-lasershooting' },
       { id: 'pistoolschieten', url: '/teambuildings/pistoolschieten' },
@@ -20,7 +22,7 @@ export const footerLinks: FooterSection[] = [
     ],
   },
   {
-    title: 'Outdoor activiteiten',
+    title: 'footer.sections.outdoor',
     links: [
       { id: 'kruisboogschieten', url: '/teambuildings/kruisboogschieten' },
       { id: 'laserkleiduifschieten', url: '/teambuildings/laserkleiduifschieten' },
@@ -31,7 +33,7 @@ export const footerLinks: FooterSection[] = [
     ],
   },
   {
-    title: 'Workshops',
+    title: 'footer.sections.workshops',
     links: [
       { id: 'chocoladeworkshop', url: '/teambuildings/chocoladeworkshop' },
       { id: 'djembe', url: '/teambuildings/djembe' },
@@ -41,7 +43,7 @@ export const footerLinks: FooterSection[] = [
     ],
   },
   {
-    title: 'City Games',
+    title: 'footer.sections.citygames',
     links: [
       { id: 'brugse-metten-tocht', url: '/teambuildings/brugse-metten-tocht' },
       { id: 'stroppentocht', url: '/teambuildings/stroppentocht' },

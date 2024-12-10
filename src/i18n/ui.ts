@@ -67,6 +67,12 @@ export const ui = {
     'footer.address': 'Hundelgemsesteenweg 445 A, 9050 Gentbrugge',
     'footer.rights': 'Alle rechten voorbehouden',
 
+    // Footer Section Titles
+    'footer.sections.indoor': 'Indoor activiteiten',
+    'footer.sections.outdoor': 'Outdoor activiteiten',
+    'footer.sections.workshops': 'Workshops',
+    'footer.sections.citygames': 'City Games',
+
     // Teambuildings
     'teambuildings.title': 'Vind je teambuilding in ons breed gamma',
     'teambuildings.activities-found_one': '{{count}} activiteit gevonden in',
@@ -198,6 +204,12 @@ export const ui = {
     'footer.contact': 'Contactez-nous',
     'footer.address': 'Hundelgemsesteenweg 445 A, 9050 Gentbrugge',
     'footer.rights': 'Tous droits réservés',
+
+    // Footer Section Titles
+    'footer.sections.indoor': "Activités d'intérieur",
+    'footer.sections.outdoor': "Activités d'extérieur",
+    'footer.sections.workshops': 'Ateliers',
+    'footer.sections.citygames': 'Jeux de ville',
 
     // Features
     'features.title': 'Pourquoi Choisir',
@@ -343,6 +355,12 @@ export const ui = {
     'footer.contact': 'Kontaktieren Sie uns',
     'footer.address': 'Hundelgemsesteenweg 445 A, 9050 Gentbrugge',
     'footer.rights': 'Alle Rechte vorbehalten',
+
+    // Footer Section Titles
+    'footer.sections.indoor': 'Indoor-Aktivitäten',
+    'footer.sections.outdoor': 'Outdoor-Aktivitäten',
+    'footer.sections.workshops': 'Workshops',
+    'footer.sections.citygames': 'Stadtspiele',
 
     // Features
     'features.title': 'Warum Action Maker Wählen',

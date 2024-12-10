@@ -75,14 +75,17 @@ const activityTitles = new Map(
       {
         footerLinks.map((section) => (
           <div>
-            <h3 class="font-semibold mb-4">{section.title}</h3>
+            <h3 class="font-semibold mb-4">{t(section.title)}</h3>
             <ul class="space-y-3">
               {section.links.map((link) => {
                 const activityId = link.url.split('/').pop() || '';
                 const title = activityTitles.get(activityId);
                 return (
                   <li>
-                    <a href={link.url} class="text-sm hover:text-white transition-colors">
+                    <a
+                      href={`/${lang}${link.url}`}
+                      class="text-sm hover:text-white transition-colors"
+                    >
                       {title}
                     </a>
                   </li>
