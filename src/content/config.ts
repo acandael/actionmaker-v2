@@ -20,6 +20,7 @@ const categories = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    image: z.string(),
   }),
 });
 
