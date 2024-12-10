@@ -56,17 +56,33 @@ const links = [
 </div>
 
 <script>
-  const mobileMenu = document.querySelector('[data-mobile-menu]');
-  const mobileMenuTriggers = document.querySelectorAll('[data-mobile-menu-trigger]');
+  function setupMobileMenu() {
+    const mobileMenu = document.querySelector('[data-mobile-menu]');
+    const mobileMenuTriggers = document.querySelectorAll('[data-mobile-menu-trigger]');
+    let isOpen = false;
 
-  let isOpen = false;
+    function toggleMenu() {
+      isOpen = !isOpen;
+      mobileMenu?.classList.toggle('translate-x-full', !isOpen);
+    }
 
-  function toggleMenu() {
-    isOpen = !isOpen;
-    mobileMenu?.classList.toggle('translate-x-full', !isOpen);
+    // Close menu when clicking a link
+    const menuLinks = mobileMenu?.querySelectorAll('a');
+    menuLinks?.forEach((link) => {
+      link.addEventListener('click', () => {
+        isOpen = false;
+        mobileMenu?.classList.add('translate-x-full');
+      });
+    });
+
+    mobileMenuTriggers.forEach((trigger) => {
+      trigger.addEventListener('click', toggleMenu);
+    });
   }
 
-  mobileMenuTriggers.forEach((trigger) => {
-    trigger.addEventListener('click', toggleMenu);
-  });
+  // Initialize on page load
+  setupMobileMenu();
+
+  // Re-initialize after view transitions
+  document.addEventListener('astro:page-load', setupMobileMenu);
 </script>
