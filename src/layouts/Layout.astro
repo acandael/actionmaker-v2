@@ -26,13 +26,16 @@ const lang = getLangFromUrl(Astro.url);
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={Astro.url.href.replace(`/${lang}/`, '/')} />
+
+    <!-- Open Graph / Facebook   -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/logo.png" />
+    <meta property="og:image" property="og:image:secure_url" content="/logo.png" />
     <meta property="og:image:alt" content={description} />
     <meta property="og:url" content={Astro.url.href} />
 
+    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:image" content="/logo.png" />
     <meta property="twitter:image:alt" content={description} />
