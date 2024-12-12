@@ -61,13 +61,13 @@ export function ContactForm() {
       });
 
       if (!response.ok) {
-        throw new Error('Er is iets misgegaan');
+        throw new Error('Une erreur est survenue');
       }
 
-      toast.success('Bericht verzonden!', {
+      toast.success('Merci pour votre message!', {
         description: (
           <div className="mt-2 text-muted-foreground">
-            <p>Merci pour votre message. Nous vous répondrons aussi vite que possible.</p>
+            <p>Nous avons bien reçu votre demande et nous vous contacterons dans les 24 heures.</p>
           </div>
         ),
       });

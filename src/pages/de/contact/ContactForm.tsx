@@ -64,10 +64,13 @@ export function ContactForm() {
         throw new Error('Etwas ist schief gelaufen');
       }
 
-      toast.success('Bericht verzonden!', {
+      toast.success('Vielen Dank für Ihre Nachricht!', {
         description: (
           <div className="mt-2 text-muted-foreground">
-            <p>Danke für Ihre Nachricht. Wir werden Sie so schnell wie möglich kontaktieren.</p>
+            <p>
+              Wir haben Ihre Anfrage erhalten und werden uns innerhalb von 24 Stunden bei Ihnen
+              melden.
+            </p>
           </div>
         ),
       });

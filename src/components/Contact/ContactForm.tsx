@@ -52,8 +52,6 @@ export function ContactForm() {
   const onSubmit = async (data: FormData) => {
     setIsPending(true);
     try {
-      console.log('Submitting form data:', data);
-
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
