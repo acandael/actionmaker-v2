@@ -14,6 +14,11 @@ const stats = [
   { value: '10+', label: t('cta.jaar') },
   { value: '98%', label: t('cta.reviews') },
 ];
+
+// Create URL based on locale
+const getLocalizedPath = (path: string) => {
+  return lang === 'nl' ? path : `/${lang}${path}`;
+};
 ---
 
 <section class="relative py-32 px-4 overflow-hidden bg-gradient-to-b from-background to-muted/50">
@@ -58,7 +63,7 @@ const stats = [
             size="lg"
             className="bg-red-600 hover:bg-red-700 text-white group px-8 py-6 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            <a href={`/${lang}/teambuildings`} class="flex items-center gap-2">
+            <a href={getLocalizedPath('/teambuildings')} class="flex items-center gap-2">
               {t('cta.cta')}
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
