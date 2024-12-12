@@ -4,6 +4,8 @@ import react from '@astrojs/react';
 import vercel from '@astrojs/vercel/serverless';
 import { fileURLToPath } from 'url';
 
+import robots from 'astro-robots';
+
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
@@ -23,7 +25,7 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
-  integrations: [tailwind(), react()],
+  integrations: [tailwind(), react(), robots()],
   prefetch: false,
   vite: {
     resolve: {
