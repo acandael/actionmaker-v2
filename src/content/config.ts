@@ -50,10 +50,19 @@ const faqs = defineCollection({
   }),
 });
 
+const images = defineCollection({
+  type: 'data',
+  schema: z.object({
+    src: z.string(),
+    alt: z.string().optional(),
+  }),
+});
+
 export const collections = {
   activities,
   categories,
   testimonials,
   logos,
   faqs,
+  images,
 };

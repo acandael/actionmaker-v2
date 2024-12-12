@@ -52,6 +52,8 @@ export function ContactForm() {
   const onSubmit = async (data: FormData) => {
     setIsPending(true);
     try {
+      console.log('Submitting form data:', data);
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -60,23 +62,28 @@ export function ContactForm() {
         body: JSON.stringify(data),
       });
 
+      const responseData = await response.json();
+      console.log('API Response:', responseData);
+
       if (!response.ok) {
-        throw new Error('Er is iets misgegaan');
+        throw new Error(responseData.error || 'Er is iets misgegaan');
       }
 
-      toast.success('Bericht verzonden!', {
+      toast.success('Bedankt voor je bericht!', {
         description: (
           <div className="mt-2 text-muted-foreground">
-            <p>Bedankt voor je bericht. We nemen zo snel mogelijk contact met je op.</p>
+            <p>We hebben je aanvraag goed ontvangen en nemen binnen 24 uur contact met je op.</p>
           </div>
         ),
+        duration: 5000,
       });
 
       form.reset();
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Form submission error:', error);
       toast.error('Er is iets misgegaan', {
         description: 'Probeer het later opnieuw of neem contact met ons op.',
+        duration: 5000,
       });
     } finally {
       setIsPending(false);
