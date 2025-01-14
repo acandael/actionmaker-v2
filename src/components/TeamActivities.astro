@@ -9,6 +9,13 @@ import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
+// Category mapping for English to Dutch
+const categoryMapping: Record<string, string> = {
+  active: 'actief',
+  culinary: 'culinair',
+  cultural: 'cultureel',
+};
+
 // Get categories and filter by locale
 const allCategories = await getCollection('categories');
 const categories = allCategories
@@ -22,7 +29,9 @@ const categories = allCategories
 // Create URL based on locale
 const getCategoryUrl = (categoryId: string) => {
   const baseUrl = '/teambuildings';
-  const queryParam = `?category=${categoryId}#activities-section`;
+  // Map English category IDs to Dutch ones for the query parameter
+  const mappedCategoryId = lang === 'en' ? categoryMapping[categoryId] || categoryId : categoryId;
+  const queryParam = `?category=${mappedCategoryId}#activities-section`;
 
   // Don't include locale prefix for default locale (nl)
   return lang === 'nl' ? `${baseUrl}${queryParam}` : `/${lang}${baseUrl}${queryParam}`;

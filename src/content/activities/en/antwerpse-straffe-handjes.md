@@ -15,7 +15,7 @@ gallery:
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-6.jpg',
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-7.jpg',
   ]
-categories: ['cultural']
+categories: ['cultureel']
 duration: '2-3 hours'
 groupSize: '8-50 people'
 availability: 'On request'

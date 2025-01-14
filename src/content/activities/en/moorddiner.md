@@ -2,7 +2,7 @@
 title: 'Murder Dinner'
 description: 'The murder dinner is a nerve-wracking murder game where you must uncover the identity of a ruthless killer.'
 image: 'moorddiner/moorddiner-1.jpg'
-categories: ['cultural']
+categories: ['cultureel']
 duration: '+/- 3h'
 groupSize: 'Max. 15 people'
 availability: 'All year round'

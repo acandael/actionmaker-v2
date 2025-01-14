@@ -2,7 +2,7 @@
 title: 'Stroppers Tour'
 description: 'This tour is made for lovers of Ghent. It is a tour through the city center of Ghent with tasks and activities.'
 image: 'stroppentocht/stroppentocht-1.jpg'
-categories: ['outdoor', 'cultural']
+categories: ['outdoor', 'cultureel']
 duration: '+/- 3h'
 groupSize: 'Maximum 25 participants per animator'
 availability: 'All year round'

@@ -10,6 +10,13 @@ import { ui } from '@/i18n/ui';
 const lang = 'en';
 const t = (key: keyof typeof ui.nl) => ui[lang][key];
 
+// Category mapping for English
+const categoryMapping: Record<string, string> = {
+  active: 'actief',
+  culinary: 'culinair',
+  cultural: 'cultureel',
+};
+
 // Get all activities and filter by locale
 const allActivities = await getCollection('activities');
 const activities = allActivities.filter((activity: CollectionEntry<'activities'>) =>
@@ -18,22 +25,32 @@ const activities = allActivities.filter((activity: CollectionEntry<'activities'>
 
 // Get categories and filter by locale
 const allCategories = await getCollection('categories');
+
 const categories = allCategories
   .filter((category: CollectionEntry<'categories'>) => category.id.startsWith(`${lang}/`))
-  .map((category: CollectionEntry<'categories'>) => ({
-    id: category.id.replace(`${lang}/`, ''),
-    data: {
-      title: category.data.title,
-      description: category.data.description,
-    },
-  }));
+  .map((category: CollectionEntry<'categories'>) => {
+    const rawId = category.id.replace(`${lang}/`, '');
+    return {
+      id: categoryMapping[rawId] || rawId,
+      data: {
+        title: category.data.title,
+        description: category.data.description,
+      },
+    };
+  });
 
 // Get the selected category from URL
 const selectedCategory = Astro.url.searchParams.get('category');
 
 // Get current category from original collection to access data
 const currentCategory = selectedCategory
-  ? allCategories.find((c: CollectionEntry<'categories'>) => c.id === `${lang}/${selectedCategory}`)
+  ? allCategories.find((c: CollectionEntry<'categories'>) => {
+      // Find the English category ID for the Dutch category name
+      const englishId =
+        Object.entries(categoryMapping).find(([_, dutchId]) => dutchId === selectedCategory)?.[0] ||
+        selectedCategory;
+      return c.id === `${lang}/${englishId}`;
+    })
   : null;
 
 // Import all images

@@ -1,16 +1,15 @@
 ---
 title: 'Sumo Wrestling'
-description: 'A hilarious activity where participants compete against each other in inflatable sumo suits.'
+description: 'Experience the ancient Japanese sport in a fun and safe way!'
 image: 'sumoworstelen/sumoworstelen-1.jpg'
-categories: ['active', 'indoor', 'outdoor']
-duration: '1 - 2 hours'
-groupSize: '8 - 30 participants'
-availability: 'All year round'
+categories: ['actief', 'indoor', 'outdoor']
+duration: '2-3 hours'
+groupSize: '8-50 people'
+availability: 'On request'
 features:
-  - 'Inflatable sumo suits'
-  - 'Safe mats'
-  - 'Professional guidance'
-  - 'Tournament formula possible'
+  - 'Safe and fun'
+  - 'Team building'
+  - 'Competitive'
 gallery:
   [
     'sumoworstelen/sumoworstelen-2.jpg',

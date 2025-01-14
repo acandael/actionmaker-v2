@@ -15,7 +15,7 @@ gallery:
     'bijlwerpen/bijlwerpen-5.jpg',
     'bijlwerpen/bijlwerpen-6.jpg',
   ]
-categories: ['outdoor', 'active']
+categories: ['outdoor', 'actief']
 duration: '2-3 hours'
 groupSize: '8-50 people'
 availability: 'On request'

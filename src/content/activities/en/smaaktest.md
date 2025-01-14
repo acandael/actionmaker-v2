@@ -2,7 +2,7 @@
 title: 'Taste Test'
 description: 'Can you trust your taste buds? Who makes the best use of taste, smell, and touch?'
 image: 'smaaktest/smaaktest-1.jpg'
-categories: ['indoor', 'culinary']
+categories: ['indoor', 'culinair']
 duration: 'with quiz +/- 90 min, without quiz +/- 60 min'
 groupSize: 'Maximum 20/24 participants (= 4 tables) per animator'
 availability: 'All year round'

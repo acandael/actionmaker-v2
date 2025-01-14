@@ -17,11 +17,6 @@ const { categories, selectedCategory, fromHomepage = false } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-// Get clean category ID without locale prefix
-const getCleanCategoryId = (id: string) => {
-  return id.replace(`${lang}/`, '');
-};
-
 // Base URL should always be /teambuildings when not on homepage
 const baseUrl = fromHomepage ? '/teambuildings' : '';
 ---
@@ -40,18 +35,17 @@ const baseUrl = fromHomepage ? '/teambuildings' : '';
   </a>
   {
     categories.map((category) => {
-      const cleanId = getCleanCategoryId(category.id);
       const categoryUrl =
         lang === 'nl'
-          ? `/teambuildings?category=${cleanId}#activities-section`
-          : `/${lang}/teambuildings?category=${cleanId}#activities-section`;
+          ? `/teambuildings?category=${category.id}#activities-section`
+          : `/${lang}/teambuildings?category=${category.id}#activities-section`;
 
       return (
         <a
           href={categoryUrl}
           class:list={[
             'px-4 py-2 rounded-full border transition-colors',
-            selectedCategory === cleanId
+            selectedCategory === category.id
               ? 'bg-red-600 text-white border-red-600'
               : 'border-gray-200 hover:border-red-600 hover:text-red-600',
           ]}

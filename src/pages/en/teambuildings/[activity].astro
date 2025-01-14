@@ -21,9 +21,9 @@ const { activity: activitySlug } = Astro.params;
 // Get all activities
 const allActivities = await getCollection('activities');
 
-// For Dutch (default locale), look for activities in nl folder
+// Find the activity in the current locale
 const activity = allActivities.find((a: CollectionEntry<'activities'>) => {
-  const fullId = `nl/${activitySlug}.md`;
+  const fullId = `${lang}/${activitySlug}.md`;
   return a.id === fullId;
 });
 

@@ -2,7 +2,7 @@
 title: 'Fencing Initiation'
 description: 'Under the guidance of our experienced instructors, participants learn the basic techniques of fencing'
 image: 'scherminitiatie/scherminitiatie-1.jpg'
-categories: ['active', 'indoor', 'outdoor']
+categories: ['actief', 'indoor', 'outdoor']
 duration: '2 - 3 hours'
 groupSize: '8 - 30 people'
 availability: 'All year round'

@@ -12,6 +12,13 @@ interface Props {
 
 const { title, description, image, categoryId } = Astro.props;
 
+// Category mapping for image lookup
+const categoryMapping: Record<string, string> = {
+  active: 'actief',
+  culinary: 'culinair',
+  cultural: 'cultureel',
+};
+
 // Import all images - Updated path to match actual location
 const imageImports = import.meta.glob<{ default: ImageMetadata }>(
   '/src/assets/categories/*.{jpeg,jpg,png,gif}',
@@ -22,7 +29,9 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
 
 // Remove language prefix from category ID for image lookup
 const baseImageName = categoryId.split('/').pop() || categoryId;
-const imagePath = `/src/assets/categories/${baseImageName}.jpg`;
+// Use mapped category ID for image lookup
+const mappedImageName = categoryMapping[baseImageName] || baseImageName;
+const imagePath = `/src/assets/categories/${mappedImageName}.jpg`;
 
 if (!imageImports[imagePath]) {
   console.error(`Image not found: ${imagePath}`);

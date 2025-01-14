@@ -2,7 +2,7 @@
 title: 'City Game'
 description: 'An interactive discovery tour through the city'
 image: 'stadsspel/stadsspel-1.jpg'
-categories: ['outdoor', 'cultural']
+categories: ['outdoor', 'cultureel']
 duration: '+- 3 hours'
 groupSize: 'Max. 25 participants per animator'
 availability: 'All year round'

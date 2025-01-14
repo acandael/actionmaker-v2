@@ -22,13 +22,13 @@ import { Textarea } from '../../../components/ui/textarea';
 // Define the form schema with Zod
 const formSchema = z.object({
   activityTitle: z.string(),
-  firstName: z.string().min(2, 'Vorname muss mindestens 2 Zeichen enthalten'),
-  lastName: z.string().min(2, 'Nachname muss mindestens 2 Zeichen enthalten'),
-  email: z.string().email('Ungültige E-Mail-Adresse'),
-  phone: z.string().min(10, 'Ungültige Telefonnummer'),
-  date: z.string().min(1, 'Datum ist erforderlich'),
-  groupSize: z.string().min(1, 'Anzahl der Personen ist erforderlich'),
-  hours: z.string().min(1, 'Anzahl der Stunden ist erforderlich'),
+  firstName: z.string().min(2, 'First name must contain at least 2 characters'),
+  lastName: z.string().min(2, 'Last name must contain at least 2 characters'),
+  email: z.string().email('Invalid email address'),
+  phone: z.string().min(10, 'Invalid phone number'),
+  date: z.string().min(1, 'Date is required'),
+  groupSize: z.string().min(1, 'Number of participants is required'),
+  hours: z.string().min(1, 'Number of hours is required'),
   budget: z.string().optional(),
   location: z.string().optional(),
   message: z.string().optional(),
@@ -66,16 +66,16 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
         body: JSON.stringify(data),
       });
 
-      if (!response.ok) throw new Error('Etwas ist schief gelaufen');
+      if (!response.ok) throw new Error('Something went wrong');
 
       form.reset();
-      toast('Danke für Ihre Anfrage!', {
-        description: 'Wir werden Sie so schnell wie möglich kontaktieren.',
+      toast('Thank you for your request!', {
+        description: 'We will contact you as soon as possible.',
       });
     } catch (error) {
       console.error('Error:', error);
-      toast('Etwas ist schief gelaufen', {
-        description: 'Versuchen Sie es später erneut oder wenden Sie sich an uns.',
+      toast('Something went wrong', {
+        description: 'Please try again later or contact us directly.',
       });
     }
   };
@@ -98,11 +98,10 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
 
           <div className="space-y-2">
             <h3 className="text-2xl font-semibold">
-              Fordern Sie ein Angebot für dieses Teambuilding an
+              Request a quote for this team building activity
             </h3>
             <p className="text-muted-foreground">
-              Füllen Sie das Formular aus und wir nehmen innerhalb von 24 Stunden Kontakt mit Ihnen
-              auf.
+              Fill out the form and we will contact you within 24 hours.
             </p>
           </div>
 
@@ -112,7 +111,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               name="firstName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Vorname</FormLabel>
+                  <FormLabel>First Name</FormLabel>
                   <FormControl>
                     <Input placeholder="John" {...field} />
                   </FormControl>
@@ -126,7 +125,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               name="lastName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Nachname</FormLabel>
+                  <FormLabel>Last Name</FormLabel>
                   <FormControl>
                     <Input placeholder="Doe" {...field} />
                   </FormControl>
@@ -142,7 +141,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>E-Mail-Adresse</FormLabel>
+                  <FormLabel>Email Address</FormLabel>
                   <FormControl>
                     <Input placeholder="john.doe@company.com" {...field} />
                   </FormControl>
@@ -156,7 +155,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               name="phone"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Telefonnummer</FormLabel>
+                  <FormLabel>Phone Number</FormLabel>
                   <FormControl>
                     <Input placeholder="+32 123 45 67 89" {...field} />
                   </FormControl>
@@ -172,7 +171,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               name="date"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Gewünschte Datum</FormLabel>
+                  <FormLabel>Preferred Date</FormLabel>
                   <FormControl>
                     <Input type="date" {...field} />
                   </FormControl>
@@ -186,7 +185,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               name="groupSize"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Anzahl der Personen</FormLabel>
+                  <FormLabel>Number of Participants</FormLabel>
                   <FormControl>
                     <Input type="number" placeholder="10" {...field} />
                   </FormControl>
@@ -202,7 +201,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               name="hours"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Anzahl der Stunden</FormLabel>
+                  <FormLabel>Number of Hours</FormLabel>
                   <FormControl>
                     <Input type="number" placeholder="2" {...field} />
                   </FormControl>
@@ -231,11 +230,9 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             name="location"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>
-                  Ort (leer das Feld leer, wenn Sie die ActionMaker-Lokation benötigen)
-                </FormLabel>
+                <FormLabel>Location (leave empty if you need the ActionMaker location)</FormLabel>
                 <FormControl>
-                  <Input placeholder="Adresse oder Stadt" {...field} />
+                  <Input placeholder="Address or City" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -247,11 +244,10 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Nachricht</FormLabel>
+                <FormLabel>Message</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Beschreiben Sie Ihre Wünsche..."
-                    className="resize-none"
+                    placeholder="Any additional information or special requests"
                     {...field}
                   />
                 </FormControl>
@@ -260,22 +256,9 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             )}
           />
 
-          <Button
-            type="submit"
-            className="w-full bg-red-600 hover:bg-red-700 text-white group h-auto py-4 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            <span className="flex items-center justify-center gap-2">
-              Anfrage senden
-              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </span>
+          <Button type="submit" className="w-full">
+            Submit Request <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-
-          <p className="text-sm text-center text-muted-foreground">
-            Wenn Sie das Formular senden, stimmen Sie unseren{' '}
-            <a href="#" className="text-red-600 hover:text-red-700 underline">
-              allgemeinen Bedingungen
-            </a>
-          </p>
         </form>
       </Form>
     </Card>
