@@ -1,0 +1,107 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import ActivityGrid from '@/components/TeamActivitiesList/ActivityGrid.astro';
+import CategoryFilters from '@/components/TeamActivitiesList/CategoryFilters.astro';
+import { Separator } from '@/components/ui/separator';
+import type { ImageMetadata } from 'astro';
+import { ui } from '@/i18n/ui';
+
+const lang = 'en';
+const t = (key: keyof typeof ui.nl) => ui[lang][key];
+
+// Get all activities and filter by locale
+const allActivities = await getCollection('activities');
+const activities = allActivities.filter((activity: CollectionEntry<'activities'>) =>
+  activity.id.startsWith(`${lang}/`)
+);
+
+// Get categories and filter by locale
+const allCategories = await getCollection('categories');
+const categories = allCategories
+  .filter((category: CollectionEntry<'categories'>) => category.id.startsWith(`${lang}/`))
+  .map((category: CollectionEntry<'categories'>) => ({
+    id: category.id.replace(`${lang}/`, ''),
+    data: {
+      title: category.data.title,
+      description: category.data.description,
+    },
+  }));
+
+// Get the selected category from URL
+const selectedCategory = Astro.url.searchParams.get('category');
+
+// Get current category from original collection to access data
+const currentCategory = selectedCategory
+  ? allCategories.find((c: CollectionEntry<'categories'>) => c.id === `${lang}/${selectedCategory}`)
+  : null;
+
+// Import all images
+const imageImports = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/activities/**/*.{jpeg,jpg,png,gif}',
+  {
+    eager: true,
+  }
+);
+
+// Filter activities based on selected category
+const filteredActivities = selectedCategory
+  ? activities.filter((activity: CollectionEntry<'activities'>) =>
+      activity.data.categories.includes(selectedCategory)
+    )
+  : activities;
+
+// Format activities for the grid with proper data structure
+const formattedActivities = filteredActivities.map((activity: CollectionEntry<'activities'>) => ({
+  id: activity.id.replace(`${lang}/`, ''),
+  data: {
+    title: activity.data.title,
+    description: activity.data.description,
+    image: activity.data.image,
+    categories: activity.data.categories,
+  },
+}));
+
+// Format the count message
+const getCountMessage = (count: number, isFiltered: boolean) => {
+  const key = isFiltered
+    ? `teambuildings.activities-found_${count === 1 ? 'one' : 'other'}`
+    : `teambuildings.activities-available_${count === 1 ? 'one' : 'other'}`;
+
+  const message = t(key as any).replace('{{count}}', count.toString());
+
+  return isFiltered ? `${message} ${currentCategory?.data.title.toLowerCase() || ''}` : message;
+};
+---
+
+<Layout
+  title="Team Building Activities | ActionMaker"
+  description="Discover our unique team building activities and create unexpected experiences for your team."
+>
+  <section class="max-w-7xl mx-auto px-4 py-24 mt-16">
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        {currentCategory ? currentCategory.data.title : t('teambuildings.title')}
+      </h1>
+      {
+        currentCategory && (
+          <p class="text-xl text-muted-foreground">{currentCategory.data.description}</p>
+        )
+      }
+    </div>
+
+    <CategoryFilters categories={categories} selectedCategory={selectedCategory} />
+
+    <div class="mb-16">
+      <Separator className="max-w-2xl mx-auto" />
+    </div>
+
+    <div class="text-center mb-8">
+      <p class="text-muted-foreground">
+        {getCountMessage(formattedActivities.length, !!selectedCategory)}
+      </p>
+    </div>
+
+    <ActivityGrid activities={formattedActivities} imageImports={imageImports} />
+  </section>
+</Layout>

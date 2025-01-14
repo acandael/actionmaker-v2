@@ -1,7 +1,7 @@
 export const languages = {
   nl: 'Nederlands',
   fr: 'Français',
-  de: 'Deutsch',
+  en: 'English',
 };
 
 export const defaultLang = 'nl';
@@ -308,154 +308,153 @@ export const ui = {
     'teamActivities.title': 'Quel type de teambuilding recherchez-vous ?',
     'teamActivities.subtitle': 'Faites votre choix',
   },
-  de: {
+  en: {
     // Home
-    'home.hero.title': 'Eine breite Palette einzigartiger Teambuilding-Aktivitäten',
-    'home.hero.subtitle': 'Stärken Sie Ihr Team mit einem sorgenfreien Tag',
-    'home.hero.cta': 'Entdecken Sie unsere Aktivitäten',
+    'home.hero.title': 'A wide range of unique team building activities',
+    'home.hero.subtitle': 'Strengthen your team with a worry-free day',
+    'home.hero.cta': 'Discover our activities',
 
     // Navigation
-    'nav.home': 'Startseite',
-    'nav.teambuildings': 'Teambuilding',
-    'nav.concepts': 'Konzepte',
-    'nav.concepten': 'Konzepte',
-    'nav.about': 'Über uns',
-    'nav.contact': 'Kontakt',
-    'nav.menu': 'Menü',
-    'nav.close': 'Menü schließen',
+    'nav.home': 'Home',
+    'nav.teambuildings': 'Team Building',
+    'nav.concepts': 'Concepts',
+    'nav.concepten': 'Concepts',
+    'nav.about': 'About Us',
+    'nav.contact': 'Contact',
+    'nav.menu': 'Menu',
+    'nav.close': 'Close Menu',
 
     // CTA
-    'cta.versterk': 'Stärken Sie Ihr Team noch heute',
+    'cta.versterk': 'Strengthen your team today',
     'cta.description':
-      'Entdecken Sie unsere einzigartigen Teambuilding-Aktivitäten und schaffen Sie unvergessliche Erlebnisse für Ihr Team.',
-    'cta.button': 'Finden Sie Ihr Teambuilding',
-    'cta.klanten': 'Zufriedene Kunden',
-    'cta.activiteiten': 'Einzigartige Aktivitäten',
-    'cta.jaar': 'Jahre Erfahrung',
-    'cta.reviews': 'Positive Bewertungen',
+      'Discover our unique team building activities and create unforgettable experiences for your team.',
+    'cta.button': 'Find your team building',
+    'cta.klanten': 'Satisfied Customers',
+    'cta.activiteiten': 'Unique Activities',
+    'cta.jaar': 'Years Experience',
+    'cta.reviews': 'Positive Reviews',
     'cta.ontdek':
-      'Entdecken Sie unsere einzigartigen Teambuilding-Aktivitäten und schaffen Sie unvergessliche Erlebnisse für Ihr Team.',
-    'cta.cta': 'Finden Sie Ihr Teambuilding',
+      'Discover our unique team building activities and create unforgettable experiences for your team.',
+    'cta.cta': 'Find your team building',
 
     // CTA Section
-    'cta.heading.line1': 'Sie Ihr Team,',
-    'cta.heading.line2': 'Sie Ihr Unternehmen',
-    'cta.heading.highlight': 'Stärken',
+    'cta.heading.line1': 'your team,',
+    'cta.heading.line2': 'your company',
+    'cta.heading.highlight': 'Strengthen',
 
     // Testimonials
-    'testimonials.logos-title': 'Zij vertrouwen op ActionMaker',
-    'testimonials.title': 'Wat unsere Kunden sagen',
+    'testimonials.logos-title': 'They trust ActionMaker',
+    'testimonials.title': 'What our customers say',
 
     // FAQ
-    'faq.title': 'Häufig gestellte Fragen',
-    'faq.question1': 'Wie funktioniert der Buchungsprozess?',
-    'faq.answer1': 'Der Buchungsprozess ist einfach...',
+    'faq.title': 'Frequently Asked Questions',
+    'faq.question1': 'How does the booking process work?',
+    'faq.answer1': 'The booking process is simple...',
 
     // Footer
-    'footer.contact': 'Kontaktieren Sie uns',
+    'footer.contact': 'Contact us',
     'footer.address': 'Hundelgemsesteenweg 445 A, 9050 Gentbrugge',
-    'footer.rights': 'Alle Rechte vorbehalten',
+    'footer.rights': 'All rights reserved',
 
     // Footer Section Titles
-    'footer.sections.indoor': 'Indoor-Aktivitäten',
-    'footer.sections.outdoor': 'Outdoor-Aktivitäten',
+    'footer.sections.indoor': 'Indoor Activities',
+    'footer.sections.outdoor': 'Outdoor Activities',
     'footer.sections.workshops': 'Workshops',
-    'footer.sections.citygames': 'Stadtspiele',
+    'footer.sections.citygames': 'City Games',
 
     // Features
-    'features.title': 'Warum Action Maker Wählen',
-    'features.flexible.title': 'Flexibel',
+    'features.title': 'Why Choose Action Maker',
+    'features.flexible.title': 'Flexible',
     'features.flexible.description':
-      'Eine unvorhergesehene Änderung in letzter Minute? Kein Problem, wir sind flexibel und können Ihr Teambuilding an alle Umstände anpassen.',
-    'features.personal.title': 'Persönlich',
+      'An unexpected last-minute change? No problem, we are flexible and can adapt your team building to any circumstances.',
+    'features.personal.title': 'Personal',
     'features.personal.description':
-      'Im Gegensatz zu anderen Unternehmen arbeiten wir nicht mit Subunternehmern. Action Maker organisiert alle Teambuildings selbst.',
-    'features.experienced.title': 'Erfahrene Animateure',
+      'Unlike other companies, we do not work with subcontractors. Action Maker organizes all team buildings ourselves.',
+    'features.experienced.title': 'Experienced Animators',
     'features.experienced.description':
-      'Alle unsere Animateure sind erfahren und Experten in den Aktivitäten, die sie betreuen.',
+      'All our animators are experienced and experts in the activities they supervise.',
 
     // Teambuildings
-    'teambuildings.title': 'Finden Sie Ihr Teambuilding in unserem breiten Angebot',
-    'teambuildings.activities-found_one': '{{count}} Aktivität gefunden in',
-    'teambuildings.activities-found_other': '{{count}} Aktivitäten gefunden in',
-    'teambuildings.activities-available_one': '{{count}} Aktivität verfügbar',
-    'teambuildings.activities-available_other': '{{count}} Aktivitäten verfügbar',
-    'teambuildings.all-activities': 'Alle Aktivitäten',
+    'teambuildings.title': 'Find your team building in our wide range of offerings',
+    'teambuildings.activities-found_one': '{{count}} activity found in',
+    'teambuildings.activities-found_other': '{{count}} activities found in',
+    'teambuildings.activities-available_one': '{{count}} activity available',
+    'teambuildings.activities-available_other': '{{count}} activities available',
+    'teambuildings.all-activities': 'All Activities',
 
     // About
-    'about.title': 'Über Action Maker',
+    'about.title': 'About Action Maker',
     'about.description.p1':
-      'Die Organisation eines Teambuildings erfordert viel Vorbereitung. Sie müssen geeignetes Material finden, spezialisierte Animateure, und was ist, wenn Sie aufgrund geänderter Umstände in letzter Minute eine andere Aktivität finden müssen?',
+      'Organizing a team building requires a lot of preparation. You need to find suitable equipment, specialized animators, and what if you need to find a different activity at the last minute due to changed circumstances?',
     'about.description.p2':
-      'Wir wissen, wie stressig das sein kann. Action Maker hat 15 Jahre Erfahrung in der Organisation von Teambuildings für Unternehmen und der Stärkung des Teamgeists.',
+      'We know how stressful that can be. Action Maker has 15 years of experience in organizing team buildings for companies and strengthening team spirit.',
     'about.description.p3':
-      'Kontaktieren Sie daher noch heute Action Maker, Sie erhalten innerhalb von zwei Tagen ein Angebot und wir nehmen Ihnen alle Sorgen ab, damit Ihr Team einen schönen Tag ohne Sorgen hat und gestärkt aus der Erfahrung hervorgeht.',
-    'about.image.alt': 'Teambuilding-Aktivität',
+      'Therefore, contact Action Maker today, you will receive an offer within two days and we will take away all your worries so your team can have a beautiful day without concerns and emerge strengthened from the experience.',
+    'about.image.alt': 'Team building activity',
 
     // Founder
-    'about.founder.title': 'Gründer',
-    'about.founder.subtitle': 'Gründer & Geschäftsführer',
+    'about.founder.title': 'Founder',
+    'about.founder.subtitle': 'Founder & CEO',
     'about.founder.description.p1':
-      'Mein Vater hatte seine eigene Eventagentur. Nach meiner Ausbildung als Leistungsfechter begann ich mit der Organisation von Fechteinführungen.',
+      'My father had his own event agency. After my training as a competitive fencer, I started organizing fencing introductions.',
     'about.founder.description.p2':
-      'Es frustrierte mich, dass viele Teambuilding-Unternehmen zu wenig auf ihre Kunden hörten und immer die gleichen Aktivitäten organisierten, oft auf amateurhafte Weise.',
+      'It frustrated me that many team building companies listened too little to their customers and always organized the same activities, often in an amateurish way.',
     'about.founder.description.p3':
-      'Deshalb begann ich vor 15 Jahren damit, eine breite Palette einzigartiger Aktivitäten zu entwickeln. Der persönliche Kontakt zum Kunden stand dabei im Vordergrund.',
+      "That's why I started developing a wide range of unique activities 15 years ago. Personal contact with the customer was paramount.",
     'about.founder.description.p4':
-      'Ich bin überzeugt, dass Unternehmen einen schönen Tag ohne Sorgen haben müssen, damit ihre Mitarbeiter als gestärktes Team aus der Erfahrung hervorgehen.',
+      'I am convinced that companies need to have a beautiful day without worries so their employees emerge as a strengthened team from the experience.',
     'about.founder.image.alt': 'Frederiek Troubleyn',
 
     // About Stats
-    'about.stats.tevreden': 'Zufriedene Kunden',
-    'about.stats.unieke': 'Einzigartige Aktivitäten',
-    'about.stats.jaar': 'Jahre Erfahrung',
-    'about.stats.positief': 'Positive Bewertungen',
+    'about.stats.tevreden': 'Satisfied Customers',
+    'about.stats.unieke': 'Unique Activities',
+    'about.stats.jaar': 'Years Experience',
+    'about.stats.positief': 'Positive Reviews',
 
     // About Values
-    'about.values.title': 'Unsere Werte',
-    'about.values.subtitle': 'Bei ActionMaker streben wir in allem, was wir tun, nach Exzellenz',
-    'about.values.passie.title': 'Leidenschaft',
+    'about.values.title': 'Our Values',
+    'about.values.subtitle': 'At ActionMaker, we strive for excellence in everything we do',
+    'about.values.passie.title': 'Passion',
     'about.values.passie.description':
-      'Wir sind leidenschaftlich beim Teambuilding und das merkt man an allem, was wir tun',
-    'about.values.kwaliteit.title': 'Qualität',
+      'We are passionate about team building and it shows in everything we do',
+    'about.values.kwaliteit.title': 'Quality',
     'about.values.kwaliteit.description':
-      'Wir streben nach höchster Qualität bei Material und Betreuung',
-    'about.values.persoonlijk.title': 'Persönlich',
+      'We strive for the highest quality in equipment and supervision',
+    'about.values.persoonlijk.title': 'Personal',
     'about.values.persoonlijk.description':
-      'Persönlicher Kontakt und maßgeschneiderte Lösungen stehen bei uns im Mittelpunkt',
-    'about.values.resultaat.title': 'Ergebnis',
-    'about.values.resultaat.description':
-      'Wir konzentrieren uns auf die Stärkung von Teams und messbare Ergebnisse',
+      'Personal contact and customized solutions are central to our approach',
+    'about.values.resultaat.title': 'Results',
+    'about.values.resultaat.description': 'We focus on strengthening teams and measurable results',
 
     // About CTA
-    'about.cta.title': 'Bereit, Ihr Team zu stärken?',
+    'about.cta.title': 'Ready to strengthen your team?',
     'about.cta.description':
-      'Kontaktieren Sie Action Maker noch heute und erfahren Sie, wie wir Ihr Team mit unseren einzigartigen Teambuilding-Aktivitäten stärken können.',
-    'about.cta.cta': 'Kontaktieren Sie uns',
-    'about.cta.call': 'Oder rufen Sie uns direkt an unter',
+      'Contact Action Maker today and discover how we can strengthen your team with our unique team building activities.',
+    'about.cta.cta': 'Contact us',
+    'about.cta.call': 'Or call us directly at',
 
     // Contact Info
-    'contact.title': 'Kontaktieren Sie uns',
+    'contact.title': 'Contact Us',
     'contact.description':
-      'Wir helfen Ihnen gerne bei der Organisation Ihres Teambuildings. Kontaktieren Sie uns noch heute.',
-    'contact.read-more': 'Mehr über uns',
-    'contact.image.alt': 'Teambuilding-Aktivität',
+      'We are happy to help you organize your team building. Contact us today.',
+    'contact.read-more': 'Learn more about us',
+    'contact.image.alt': 'Team building activity',
 
     // Contact Features
-    'contact.features.flexible': 'Flexibel und anpassbar',
-    'contact.features.personal': 'Persönlicher Ansatz',
-    'contact.features.experienced': 'Erfahrene Animateure',
+    'contact.features.flexible': 'Flexible and adaptable',
+    'contact.features.personal': 'Personal approach',
+    'contact.features.experienced': 'Experienced animators',
 
     // Activity page translations
-    expectations: 'Was Sie erwartet',
-    'booking-title': 'Diese Aktivität buchen',
-    'group-size': 'Gruppengröße',
-    duration: 'Dauer',
-    availability: 'Verfügbarkeit',
-    'request-quote': 'Angebot anfordern',
+    expectations: 'What to expect',
+    'booking-title': 'Book this activity',
+    'group-size': 'Group size',
+    duration: 'Duration',
+    availability: 'Availability',
+    'request-quote': 'Request quote',
 
     // Team Activities
-    'teamActivities.title': 'Welche Art von Teambuilding suchen Sie?',
-    'teamActivities.subtitle': 'Treffen Sie Ihre Wahl',
+    'teamActivities.title': 'What type of team building are you looking for?',
+    'teamActivities.subtitle': 'Make your choice',
   },
 } as const;

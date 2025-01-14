@@ -1,0 +1,39 @@
+{
+  "title": "About ActionMaker",
+  "description": "<p>Organizing a team building event involves many aspects. You need to find suitable equipment, specialized animators, and what if you need to find a different activity at the last minute due to changed circumstances?</p><p>We know how stressful that can be. Action Maker has 15 years of experience in organizing team building events for companies and strengthening team spirit.</p><p>Contact Action Maker today, you'll receive a quote within two days, and we'll take care of everything so your team can have a worry-free day and emerge strengthened from this experience.</p>",
+  "stats": {
+    "tevreden": "Satisfied Customers",
+    "unieke": "Unique Activities",
+    "jaar": "Years Experience",
+    "positief": "Positive Reviews"
+  },
+  "values": {
+    "passie": {
+      "title": "Passion for Team Building",
+      "description": "We are passionate about creating team building experiences that truly strengthen teams."
+    },
+    "kwaliteit": {
+      "title": "Guaranteed Quality",
+      "description": "All our activities are led by certified experts with years of experience."
+    },
+    "persoonlijk": {
+      "title": "Personal Approach",
+      "description": "We listen to your needs and create a program that perfectly fits your team."
+    },
+    "resultaat": {
+      "title": "Results-Oriented",
+      "description": "Our activities are designed to achieve concrete results in team building and group dynamics."
+    }
+  },
+  "founder": {
+    "title": "Founder",
+    "subtitle": "CEO, Former Belgian Saber Champion",
+    "description": "<p>My father had his own event agency. After my training as a top sports shooter, I started organizing shooting initiatives.</p><p>It frustrates me that many team building companies listen too little to customer needs and always organize the same activities, often in an amateurish way.</p><p>That's why I started building an extensive program of unique activities 15 years ago. Personal contact with the customer was paramount.</p><p>It is my conviction that companies should have a pleasant day without worries, so their employees emerge as a strengthened team from the experience.</p>"
+  },
+  "cta": {
+    "title": "Ready to Strengthen Your Team?",
+    "description": "Contact Action Maker today. You'll receive a quote tailored to your team within two days.",
+    "cta": "View Activities",
+    "call": "Or call us directly at "
+  }
+}

@@ -3,23 +3,21 @@ export default {
   routes: {
     fr: {
       'over-actionmaker': 'a-propos-actionmaker',
-      'uber-actionmaker': 'a-propos-actionmaker',
+      'about-actionmaker': 'about-actionmaker',
       teambuildings: 'teambuildings',
       concepten: 'concepts',
       contact: 'contact',
-      kontakt: 'contact',
     },
-    de: {
-      'over-actionmaker': 'uber-actionmaker',
-      'a-propos-actionmaker': 'uber-actionmaker',
+    en: {
+      'over-actionmaker': 'about-actionmaker',
+      'a-propos-actionmaker': 'about-actionmaker',
       teambuildings: 'teambuildings',
-      concepten: 'konzepte',
-      contact: 'kontakt',
-      kontakt: 'kontakt',
+      concepten: 'concepts',
+      contact: 'contact',
     },
   },
   defaultLocale: 'nl',
-  locales: ['nl', 'fr', 'de'],
+  locales: ['nl', 'fr', 'en'],
   namespaces: [
     'translation',
     'navbar',

@@ -20,7 +20,7 @@ export default defineConfig({
   }),
   i18n: {
     defaultLocale: 'nl',
-    locales: ['nl', 'fr', 'de'],
+    locales: ['nl', 'fr', 'en'],
     routing: {
       prefixDefaultLocale: false,
     },
@@ -30,7 +30,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
+        '@': '/src',
         '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
         '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
       },
