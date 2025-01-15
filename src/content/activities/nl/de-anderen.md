@@ -1,19 +1,19 @@
 ---
 title: 'De Anderen'
 description: 'Dit programma is eveneens geïnspireerd op een populair tv-concept, namelijk "De Verraders".'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'de-anderen/de-anderen-1.jpg'
 features:
   - 'Tactiek'
   - 'Strategie'
   - 'Overtuigingskracht'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'de-anderen/de-anderen-2.jpg',
+    'de-anderen/de-anderen-3.jpg',
+    'de-anderen/de-anderen-4.jpg',
+    'de-anderen/de-anderen-5.jpg',
+    'de-anderen/de-anderen-6.jpg',
+    'de-anderen/de-anderen-7.jpg',
   ]
 categories: ['indoor', 'outdoor']
 duration: '2-3 uur'

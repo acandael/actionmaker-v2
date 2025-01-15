@@ -1,21 +1,21 @@
 ---
 title: 'Fort Boyard'
 description: 'The Fort Boyard program is particularly well-known among French speakers'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'fort-boyard/fort-boyard-1.jpg'
 features:
   - 'Different chambers'
   - 'Castles and other locations'
   - 'Time-bound trials'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'fort-boyard/fort-boyard-2.jpg',
+    'fort-boyard/fort-boyard-3.jpg',
+    'fort-boyard/fort-boyard-4.jpg',
+    'fort-boyard/fort-boyard-5.jpg',
+    'fort-boyard/fort-boyard-6.jpg',
+    'fort-boyard/fort-boyard-7.jpg',
   ]
-categories: ['indoor']
+categories: ['outdoor']
 duration: '2-3 hours'
 groupSize: '8-50 people'
 availability: 'On request'

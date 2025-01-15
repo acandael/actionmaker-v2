@@ -1,7 +1,7 @@
 ---
 title: 'Les Highland Games'
 description: 'Une combinaison authentique de défis traditionnels imprégnés de caractère écossais.'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'highland-games/highland-games-1.jpg'
 features:
   - 'Défis variés'
   - 'Lancer de tronc'
@@ -9,12 +9,12 @@ features:
   - 'Lancer de fer à cheval...'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'highland-games/highland-games-2.jpg',
+    'highland-games/highland-games-3.jpg',
+    'highland-games/highland-games-4.jpg',
+    'highland-games/highland-games-5.jpg',
+    'highland-games/highland-games-6.jpg',
+    'highland-games/highland-games-7.jpg',
   ]
 categories: ['outdoor']
 duration: '2-3 heures'

@@ -1,19 +1,19 @@
 ---
 title: 'The Funny Olympic Games'
 description: "Cette activité incarne l'idée de 'mens sana in corpore sano' - un esprit sain dans un corps sain."
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'funny-games/funny-games-1.jpg'
 features:
   - 'Course de relais'
   - 'Lutte sumo'
   - 'Tir à la corde'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'funny-games/funny-games-2.jpg',
+    'funny-games/funny-games-3.jpg',
+    'funny-games/funny-games-4.jpg',
+    'funny-games/funny-games-5.jpg',
+    'funny-games/funny-games-6.jpg',
+    'funny-games/funny-games-7.jpg',
   ]
 categories: ['outdoor']
 duration: '2-3 heures'

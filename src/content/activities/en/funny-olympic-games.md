@@ -1,19 +1,19 @@
 ---
 title: 'The Funny Olympic Games'
 description: 'This activity embodies the idea of "mens sana in corpore sano" - a healthy mind in a healthy body.'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'funny-games/funny-games-1.jpg'
 features:
   - 'Relay race'
   - 'Sumo wrestling'
   - 'Tug of war'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'funny-games/funny-games-2.jpg',
+    'funny-games/funny-games-3.jpg',
+    'funny-games/funny-games-4.jpg',
+    'funny-games/funny-games-5.jpg',
+    'funny-games/funny-games-6.jpg',
+    'funny-games/funny-games-7.jpg',
   ]
 categories: ['outdoor']
 duration: '2-3 hours'

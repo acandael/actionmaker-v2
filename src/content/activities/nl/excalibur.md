@@ -1,19 +1,19 @@
 ---
 title: 'Excalibur'
 description: 'Deze activiteit legt de volledige nadruk op samenwerking'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'excalibur/excalibur-1.jpg'
 features:
   - 'Avontuur'
   - 'Teambuilding'
   - 'Competitie'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'excalibur/excalibur-2.jpg',
+    'excalibur/excalibur-3.jpg',
+    'excalibur/excalibur-4.jpg',
+    'excalibur/excalibur-5.jpg',
+    'excalibur/excalibur-6.jpg',
+    'excalibur/excalibur-7.jpg',
   ]
 categories: ['outdoor']
 duration: '2-3 uur'

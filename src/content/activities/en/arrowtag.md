@@ -1,19 +1,19 @@
 ---
 title: 'Arrow Tag'
 description: 'Experience the Thrill of the Hunger Games!'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'arrow-tag/arrow-tag-1.jpg'
 features:
   - 'Active and safe'
   - 'Teamwork and fun'
   - 'Adventurous'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'arrow-tag/arrow-tag-2.jpg',
+    'arrow-tag/arrow-tag-3.jpg',
+    'arrow-tag/arrow-tag-4.jpg',
+    'arrow-tag/arrow-tag-5.jpg',
+    'arrow-tag/arrow-tag-6.jpg',
+    'arrow-tag/arrow-tag-7.jpg',
   ]
 categories: ['actief', 'outdoor']
 duration: '2-3 hours'

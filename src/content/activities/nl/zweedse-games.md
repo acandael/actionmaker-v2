@@ -1,7 +1,7 @@
 ---
 title: 'De Zweedse Games'
 description: 'Een verrassende variant op de Highland Games, maar dan met een Zweedse twist.'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'zweedse-games/zweedse-games-1.jpg'
 features:
   - 'Biatlonschieten'
   - 'Kubb spelen'
@@ -9,12 +9,12 @@ features:
   - 'IKEA puzzels'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'zweedse-games/zweedse-games-2.jpg',
+    'zweedse-games/zweedse-games-3.jpg',
+    'zweedse-games/zweedse-games-4.jpg',
+    'zweedse-games/zweedse-games-5.jpg',
+    'zweedse-games/zweedse-games-6.jpg',
+    'zweedse-games/zweedse-games-7.jpg',
   ]
 categories: ['outdoor']
 duration: '2-3 uur'

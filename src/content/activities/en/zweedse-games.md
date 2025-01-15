@@ -1,7 +1,7 @@
 ---
 title: 'The Swedish Games'
 description: 'A surprising variant of the Highland Games, but with a Swedish twist.'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'zweedse-games/zweedse-games-1.jpg'
 features:
   - 'Biathlon shooting'
   - 'Kubb playing'
@@ -9,12 +9,12 @@ features:
   - 'IKEA puzzles'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'zweedse-games/zweedse-games-2.jpg',
+    'zweedse-games/zweedse-games-3.jpg',
+    'zweedse-games/zweedse-games-4.jpg',
+    'zweedse-games/zweedse-games-5.jpg',
+    'zweedse-games/zweedse-games-6.jpg',
+    'zweedse-games/zweedse-games-7.jpg',
   ]
 categories: ['outdoor']
 duration: '2-3 hours'
