@@ -1,7 +1,7 @@
 ---
 title: 'Chain Reaction'
 description: 'Gezamenlijk gaan we aan de slag om een indrukwekkende Goldberg machine te creëren'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'chain-reaction/chain-reaction-1.jpg'
 features:
   - 'Knikkerbanen'
   - 'Dominosteentjes'
@@ -9,14 +9,14 @@ features:
   - 'Elektrische apparaten'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'chain-reaction/chain-reaction-2.jpg',
+    'chain-reaction/chain-reaction-3.jpg',
+    'chain-reaction/chain-reaction-4.jpg',
+    'chain-reaction/chain-reaction-5.jpg',
+    'chain-reaction/chain-reaction-6.jpg',
+    'chain-reaction/chain-reaction-7.jpg',
   ]
-categories: ['indoor']
+categories: ['indoor', 'outdoor']
 duration: '2-3 uur'
 groupSize: '8-50 personen'
 availability: 'Op aanvraag'
