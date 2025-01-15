@@ -2,6 +2,7 @@
 title: 'Drone Flying'
 description: 'Learn, Experience, and Discover!'
 image: 'dronevliegen/dronevliegen-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/d1ad05d2-54ab-4b52-8e64-2943ff452f8b'
 features:
   - 'Learn the basics'
   - 'Practice'

@@ -146,12 +146,14 @@ export const ui = {
     'contact.features.experienced': 'Ervaren animatoren',
 
     // Activity page translations
-    expectations: 'Wat kun je verwachten',
-    'booking-title': 'Deze activiteit boeken',
-    'group-size': 'Groepsgrootte',
-    duration: 'Duur',
-    availability: 'Beschikbaarheid',
-    'request-quote': 'Offerte aanvragen',
+    'activity.features-title': 'Wat kun je verwachten',
+    'activity.group-size': 'Groepsgrootte',
+    'activity.duration': 'Duur',
+    'activity.availability': 'Beschikbaarheid',
+    'activity.request-quote': 'Offerte aanvragen',
+    'activity.booking-title': 'Deze activiteit boeken',
+    'activity.gallery-title': 'Galerij',
+    'activity.video-title': 'Video',
 
     // Team Activities
     'teamActivities.title': 'Welke Soort Teambuilding Zoek Je?',
@@ -297,12 +299,14 @@ export const ui = {
     'contact.features.experienced': 'Animateurs expérimentés',
 
     // Activity page translations
-    expectations: 'À quoi vous attendre',
-    'booking-title': 'Réserver cette activité',
-    'group-size': 'Taille du groupe',
-    duration: 'Durée',
-    availability: 'Disponibilité',
-    'request-quote': 'Demander un devis',
+    'activity.features-title': 'Ce que vous pouvez attendre',
+    'activity.group-size': 'Taille du groupe',
+    'activity.duration': 'Durée',
+    'activity.availability': 'Disponibilité',
+    'activity.request-quote': 'Demander un devis',
+    'activity.booking-title': 'Réserver cette activité',
+    'activity.gallery-title': 'Galerie',
+    'activity.video-title': 'Vidéo',
 
     // Team Activities
     'teamActivities.title': 'Quel type de teambuilding recherchez-vous ?',
@@ -446,12 +450,14 @@ export const ui = {
     'contact.features.experienced': 'Experienced animators',
 
     // Activity page translations
-    expectations: 'What to expect',
-    'booking-title': 'Book this activity',
-    'group-size': 'Group size',
-    duration: 'Duration',
-    availability: 'Availability',
-    'request-quote': 'Request quote',
+    'activity.features-title': 'What You Can Expect',
+    'activity.group-size': 'Group Size',
+    'activity.duration': 'Duration',
+    'activity.availability': 'Availability',
+    'activity.request-quote': 'Request Quote',
+    'activity.booking-title': 'Book this Activity',
+    'activity.gallery-title': 'Gallery',
+    'activity.video-title': 'Video',
 
     // Team Activities
     'teamActivities.title': 'What type of team building are you looking for?',

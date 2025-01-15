@@ -2,6 +2,7 @@
 title: 'Laser Kleiduifschieten'
 description: 'Een moderne en milieuvriendelijke variant van kleiduifschieten.'
 image: 'laserkleiduifschieten/laserkleiduifschieten-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/81facce2-d34f-48ce-8c9a-2faf8bcd9abc'
 categories: ['indoor', 'outdoor']
 duration: '2 - 3 uur'
 groupSize: '8 - 30 personen'

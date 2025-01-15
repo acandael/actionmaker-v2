@@ -12,6 +12,7 @@ const activities = defineCollection({
     availability: z.string(),
     features: z.array(z.string()),
     gallery: z.array(z.string()),
+    'video-url': z.string().optional(),
   }),
 });
 

@@ -2,6 +2,7 @@
 title: 'De Mollenjacht'
 description: 'Deze teambuilding is gebaseerd op het populaire tv-programma De Mol'
 image: 'mollenjacht/mollenjacht-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/8dc2dcbb-444a-4319-9000-c73a56434cf9'
 features:
   - 'De Mollenloop'
   - 'Time Quiz'
