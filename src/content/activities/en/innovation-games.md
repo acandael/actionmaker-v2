@@ -1,7 +1,7 @@
 ---
 title: 'Innovation Games'
 description: 'Take on challenging activities and discover the power of innovation in team building'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'innovation-games/innovation-games-1.jpg'
 features:
   - 'Lightsaber fencing'
   - 'Drone flying'
@@ -10,12 +10,12 @@ features:
   - 'GelBlaster'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'innovation-games/innovation-games-2.jpg',
+    'innovation-games/innovation-games-3.jpg',
+    'innovation-games/innovation-games-4.jpg',
+    'innovation-games/innovation-games-5.jpg',
+    'innovation-games/innovation-games-6.jpg',
+    'innovation-games/innovation-games-7.jpg',
   ]
 categories: ['outdoor']
 duration: '2-3 hours'
