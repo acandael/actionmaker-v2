@@ -256,8 +256,14 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             )}
           />
 
-          <Button type="submit" className="w-full">
-            Submit Request <ArrowRight className="ml-2 h-4 w-4" />
+          <Button
+            type="submit"
+            className="w-full bg-red-600 hover:bg-red-700 text-white group h-auto py-4 text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <span className="flex items-center justify-center gap-2">
+              Submit Request
+              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </span>
           </Button>
         </form>
       </Form>
