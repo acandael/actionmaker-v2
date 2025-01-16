@@ -2,6 +2,7 @@
 title: 'Chain Reaction'
 description: 'Gezamenlijk gaan we aan de slag om een indrukwekkende Goldberg machine te creëren'
 image: 'chain-reaction/chain-reaction-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/6542f522-7cc1-455f-acdf-7485124603ee'
 features:
   - 'Knikkerbanen'
   - 'Dominosteentjes'

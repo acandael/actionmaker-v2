@@ -2,6 +2,7 @@
 title: 'Chain Reaction'
 description: 'Together we will work to create an impressive Goldberg machine'
 image: 'chain-reaction/chain-reaction-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/6542f522-7cc1-455f-acdf-7485124603ee'
 features:
   - 'Marble runs'
   - 'Domino tiles'
