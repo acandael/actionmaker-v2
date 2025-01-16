@@ -83,6 +83,22 @@ const images = activity.data.gallery || [];
       <div class="lg:col-span-2">
         <div class="prose prose-lg max-w-none mb-12">
           <Content />
+
+          {
+            activity.data.features && (
+              <div class="mt-8 not-prose">
+                <h3 class="text-xl font-semibold mb-4">{t('activity.features-title')}</h3>
+                <ul class="space-y-3">
+                  {activity.data.features.map((feature) => (
+                    <li class="flex items-center gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          }
         </div>
 
         {

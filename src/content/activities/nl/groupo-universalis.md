@@ -1,19 +1,19 @@
 ---
 title: 'Groupo Universalis'
 description: 'Geïnspireerd door het tv-programma Homo Universalis'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'groupo-universalis/groupo-universalis-1.jpg'
 features:
   - 'Uitdagende puzzels'
   - 'Spannende teamuitdagingen'
   - 'Creativiteit en innovatie'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'groupo-universalis/groupo-universalis-2.jpg',
+    'groupo-universalis/groupo-universalis-3.jpg',
+    'groupo-universalis/groupo-universalis-4.jpg',
+    'groupo-universalis/groupo-universalis-5.jpg',
+    'groupo-universalis/groupo-universalis-6.jpg',
+    'groupo-universalis/groupo-universalis-7.jpg',
   ]
 categories: ['indoor']
 duration: '2-3 uur'
