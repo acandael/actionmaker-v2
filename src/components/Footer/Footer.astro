@@ -1,25 +1,23 @@
 ---
-import { Separator } from '@/components/ui/separator';
-import { Mail, Phone, Facebook, Instagram } from 'lucide-react';
-import FooterLogo from './FooterLogo.astro';
-import { footerLinks } from './footer-data';
+import { Phone, Mail, Facebook, Instagram } from 'lucide-react';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import { footerLinks } from './footer-data';
 import { getCollection } from 'astro:content';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-// Get all activities
-const activities = await getCollection('activities');
+// Get all activities to map their titles
+const activities = await getCollection('activities', ({ id }) => {
+  return id.startsWith(`${lang}/`);
+});
 
-// Create a map of activity URLs to their titles
+// Create a map of activity IDs to their titles
 const activityTitles = new Map(
-  activities
-    .filter((activity) => activity.id.startsWith(`${lang}/`))
-    .map((activity) => [
-      activity.id.replace(`${lang}/`, '').replace('.md', ''),
-      activity.data.title,
-    ])
+  activities.map((activity) => [
+    activity.id.split('/').pop()?.replace('.md', ''),
+    activity.data.title,
+  ])
 );
 ---
 
@@ -28,7 +26,7 @@ const activityTitles = new Map(
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
       {/* Company Info */}
       <div class="lg:col-span-1">
-        <FooterLogo />
+        <h3 class="font-semibold mb-4">ActionMaker</h3>
         <div class="mt-6 space-y-2">
           <p class="text-sm">Action Maker BVBA</p>
           <p class="text-sm">Hundelgemsesteenweg 445 A</p>
@@ -37,11 +35,11 @@ const activityTitles = new Map(
         </div>
         <div class="mt-6 space-y-3">
           <a
-            href="tel:048546250"
+            href="tel:+32476960657"
             class="flex items-center text-sm hover:text-white transition-colors"
           >
             <Phone className="h-4 w-4 mr-2" />
-            0485 46 25 05
+            +32 476 96 06 57
           </a>
           <a
             href="mailto:info@actionmaker.be"
@@ -95,17 +93,26 @@ const activityTitles = new Map(
       }
     </div>
 
-    <Separator className="my-8 bg-zinc-800" />
-
     {/* Bottom Bar */}
-    <div class="flex flex-col md:flex-row md:items-center justify-between text-sm text-zinc-400">
-      <div>
-        Copyright ActionMaker {new Date().getFullYear()}
-      </div>
-      <div class="flex gap-6 mt-4 md:mt-0">
-        <a href="#" class="hover:text-white transition-colors">
-          {t('footer.rights')}
-        </a>
+    <div class="mt-12 pt-8 border-t border-zinc-800">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <p class="text-sm text-zinc-400">
+          &copy; {new Date().getFullYear()} ActionMaker. {t('footer.rights-reserved')}
+        </p>
+        <div class="flex space-x-6">
+          <a
+            href={lang === 'nl' ? '/terms-of-service' : `/${lang}/terms-of-service`}
+            class="text-sm text-zinc-400 hover:text-white transition-colors"
+          >
+            {t('footer.terms-of-service')}
+          </a>
+          <a
+            href={lang === 'nl' ? '/disclaimer' : `/${lang}/disclaimer`}
+            class="text-sm text-zinc-400 hover:text-white transition-colors"
+          >
+            {t('footer.disclaimer')}
+          </a>
+        </div>
       </div>
     </div>
   </div>

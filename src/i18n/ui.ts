@@ -156,8 +156,13 @@ export const ui = {
     'activity.video-title': 'Video',
 
     // Team Activities
-    'teamActivities.title': 'Welke Soort Teambuilding Zoek Je?',
-    'teamActivities.subtitle': 'Maak Je Keuze',
+    'teamActivities.title': 'Welk type teambuilding zoek je?',
+    'teamActivities.subtitle': 'Maak je keuze',
+
+    // Footer translations
+    'footer.rights-reserved': 'Alle rechten voorbehouden',
+    'footer.terms-of-service': 'Algemene Voorwaarden',
+    'footer.disclaimer': 'Disclaimer',
   },
   fr: {
     // Home
@@ -309,8 +314,13 @@ export const ui = {
     'activity.video-title': 'Vidéo',
 
     // Team Activities
-    'teamActivities.title': 'Quel type de teambuilding recherchez-vous ?',
+    'teamActivities.title': 'Quel type de team building recherchez-vous ?',
     'teamActivities.subtitle': 'Faites votre choix',
+
+    // Footer translations
+    'footer.rights-reserved': 'Tous droits réservés',
+    'footer.terms-of-service': 'Conditions Générales',
+    'footer.disclaimer': 'Avertissement',
   },
   en: {
     // Home
@@ -462,5 +472,12 @@ export const ui = {
     // Team Activities
     'teamActivities.title': 'What type of team building are you looking for?',
     'teamActivities.subtitle': 'Make your choice',
+
+    // Footer translations
+    'footer.rights-reserved': 'All rights reserved',
+    'footer.terms-of-service': 'Terms of Service',
+    'footer.disclaimer': 'Disclaimer',
   },
 } as const;
+
+export type UI = typeof ui.en;
