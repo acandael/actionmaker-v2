@@ -2,7 +2,7 @@
 title: 'Chain Reaction'
 description: 'Ensemble, nous allons créer une impressionnante machine de Goldberg'
 image: 'chain-reaction/chain-reaction-1.jpg'
-video-url: 'https://iframe.mediadelivery.net/embed/369439/6542f522-7cc1-455f-acdf-7485124603ee'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/fe1caff2-9b94-450f-839b-22ab3de3ae95'
 features:
   - 'Circuits de billes'
   - 'Dominos'
