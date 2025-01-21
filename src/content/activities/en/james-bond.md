@@ -1,19 +1,19 @@
 ---
 title: 'James Bond'
 description: "We're looking for the ultimate team of colleagues to take on the role of the world's most famous spy."
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'james-bond/james-bond-1.jpg'
 features:
   - 'Fencing'
   - 'Morse code'
   - 'Shooting...'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'james-bond/james-bond-2.jpg',
+    'james-bond/james-bond-3.jpg',
+    'james-bond/james-bond-4.jpg',
+    'james-bond/james-bond-5.jpg',
+    'james-bond/james-bond-6.jpg',
+    'james-bond/james-bond-7.jpg',
   ]
 categories: ['indoor']
 duration: '2-3 hours'

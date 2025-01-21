@@ -1,7 +1,7 @@
 ---
 title: 'Football Mania'
 description: 'Experience the European Championship football in a completely new way with our specially developed activity'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'voetbalmanie/voetbalmanie-1.jpg'
 features:
   [
     'Football bowling',
@@ -13,14 +13,14 @@ features:
   ]
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'voetbalmanie/voetbalmanie-2.jpg',
+    'voetbalmanie/voetbalmanie-3.jpg',
+    'voetbalmanie/voetbalmanie-4.jpg',
+    'voetbalmanie/voetbalmanie-5.jpg',
+    'voetbalmanie/voetbalmanie-6.jpg',
+    'voetbalmanie/voetbalmanie-7.jpg',
   ]
-categories: ['indoor']
+categories: ['indoor', 'outdoor']
 duration: '2-3 hours'
 groupSize: '8-50 people'
 availability: 'On request'

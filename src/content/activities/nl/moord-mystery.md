@@ -1,21 +1,21 @@
 ---
 title: 'Moord Mystery'
 description: 'Beleef een onvergetelijke teambuilding met een spannend murder-mystery in Cluedo-stijl!'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'moord-mystery/moord-mystery-1.jpg'
 features:
   - 'Communicatiespel'
   - 'Schietvaardigheid'
   - 'Croquet in Cluedo-stijl'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'moord-mystery/moord-mystery-2.jpg',
+    'moord-mystery/moord-mystery-3.jpg',
+    'moord-mystery/moord-mystery-4.jpg',
+    'moord-mystery/moord-mystery-5.jpg',
+    'moord-mystery/moord-mystery-6.jpg',
+    'moord-mystery/moord-mystery-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['indoor']
 duration: '2-3 uur'
 groupSize: '8-50 personen'
 availability: 'Op aanvraag'

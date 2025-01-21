@@ -1,21 +1,21 @@
 ---
 title: 'Murder Mystery'
 description: 'Experience an unforgettable team building with an exciting murder mystery in Cluedo style!'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'moord-mystery/moord-mystery-1.jpg'
 features:
   - 'Communication game'
   - 'Shooting skills'
   - 'Cluedo-style croquet'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'moord-mystery/moord-mystery-2.jpg',
+    'moord-mystery/moord-mystery-3.jpg',
+    'moord-mystery/moord-mystery-4.jpg',
+    'moord-mystery/moord-mystery-5.jpg',
+    'moord-mystery/moord-mystery-6.jpg',
+    'moord-mystery/moord-mystery-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['indoor']
 duration: '2-3 hours'
 groupSize: '8-50 people'
 availability: 'On request'

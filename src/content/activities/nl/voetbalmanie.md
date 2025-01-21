@@ -1,7 +1,7 @@
 ---
 title: 'Voetbalmanie'
 description: 'Beleef het EK voetbal op een geheel nieuwe manier met onze speciaal ontwikkelde activiteit'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'voetbalmanie/voetbalmanie-1.jpg'
 features:
   - 'Voetbalbowling'
   - 'Precisieschieten'
@@ -11,14 +11,14 @@ features:
   - 'Het geheim van de monnik'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'voetbalmanie/voetbalmanie-2.jpg',
+    'voetbalmanie/voetbalmanie-3.jpg',
+    'voetbalmanie/voetbalmanie-4.jpg',
+    'voetbalmanie/voetbalmanie-5.jpg',
+    'voetbalmanie/voetbalmanie-6.jpg',
+    'voetbalmanie/voetbalmanie-7.jpg',
   ]
-categories: ['indoor']
+categories: ['indoor', 'outdoor']
 duration: '2-3 uur'
 groupSize: '8-50 personen'
 availability: 'Op aanvraag'
