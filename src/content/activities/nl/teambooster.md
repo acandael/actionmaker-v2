@@ -1,21 +1,19 @@
 ---
 title: 'TeamBooster'
 description: 'Waar activiteiten zijn ontworpen om het team te stimuleren en waar samenwerking de sleutel is tot succes.'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'teambooster/teambooster-1.jpg'
 features:
   - 'Communicatie'
   - 'Creativiteit'
   - 'Coaching'
 gallery:
-  [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
-  ]
-categories: ['indoor', 'outdoor']
+  - 'teambooster/teambooster-2.jpg'
+  - 'teambooster/teambooster-3.jpg'
+  - 'teambooster/teambooster-4.jpg'
+  - 'teambooster/teambooster-5.jpg'
+  - 'teambooster/teambooster-6.jpg'
+  - 'teambooster/teambooster-7.jpg'
+categories: ['outdoor']
 duration: '2-3 uur'
 groupSize: '8-50 personen'
 availability: 'Op aanvraag'

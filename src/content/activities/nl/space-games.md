@@ -1,20 +1,17 @@
 ---
 title: 'De Space Games'
 description: 'Waar de toekomst centraal staat en de ruimte jullie speelterrein is.'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'space-games/space-games-1.jpg'
 features:
   - 'Laserschermen'
   - 'Ruimteschip herstellen'
   - 'Ruimtecommunicatie'
 gallery:
-  [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
-  ]
+  - 'space-games/space-games-2.jpg'
+  - 'space-games/space-games-3.jpg'
+  - 'space-games/space-games-4.jpg'
+  - 'space-games/space-games-5.jpg'
+  - 'space-games/space-games-6.jpg'
 categories: ['indoor']
 duration: '2-3 uur'
 groupSize: '8-50 personen'

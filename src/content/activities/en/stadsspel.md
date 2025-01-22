@@ -1,5 +1,5 @@
 ---
-title: 'City Game'
+title: 'Ghent City Game'
 description: 'An interactive discovery tour through the city'
 image: 'stadsspel/stadsspel-1.jpg'
 categories: ['outdoor', 'cultureel']

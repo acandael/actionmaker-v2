@@ -1,5 +1,5 @@
 ---
-title: 'Stadsspel'
+title: 'Gents Stadsspel'
 description: 'Een interactieve ontdekkingstocht door de stad'
 image: 'stadsspel/stadsspel-1.jpg'
 categories: ['outdoor', 'cultureel']
