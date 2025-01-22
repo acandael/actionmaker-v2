@@ -1,7 +1,7 @@
 ---
 title: 'Middeleeuwse Dag'
 description: 'Duik in de betoverende sferen van de middeleeuwen met deze meeslepende teambuilding'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'middeleeuwse-dag/middeleeuwse-dag-1.jpg'
 features:
   - 'Kruisboogschieten'
   - 'Bijlwerpen'
@@ -11,12 +11,12 @@ features:
   - 'Het geheim van de monnik'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'middeleeuwse-dag/middeleeuwse-dag-2.jpg',
+    'middeleeuwse-dag/middeleeuwse-dag-3.jpg',
+    'middeleeuwse-dag/middeleeuwse-dag-4.jpg',
+    'middeleeuwse-dag/middeleeuwse-dag-5.jpg',
+    'middeleeuwse-dag/middeleeuwse-dag-6.jpg',
+    'middeleeuwse-dag/middeleeuwse-dag-7.jpg',
   ]
 categories: ['outdoor']
 duration: '2-3 uur'

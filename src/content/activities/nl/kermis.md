@@ -1,7 +1,7 @@
 ---
 title: 'De Kermis'
 description: 'Laat je zorgen achterwege en geniet van een dag vol lachende gezichten en speelse momenten.'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'kermis/kermis-1.jpg'
 features:
   - 'Eendjeskraam'
   - 'Krijtjes schieten'
@@ -9,12 +9,12 @@ features:
   - 'Kop van jut'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'kermis/kermis-2.jpg',
+    'kermis/kermis-3.jpg',
+    'kermis/kermis-4.jpg',
+    'kermis/kermis-5.jpg',
+    'kermis/kermis-6.jpg',
+    'kermis/kermis-7.jpg',
   ]
 categories: ['outdoor']
 duration: '2-3 uur'
