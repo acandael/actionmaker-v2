@@ -2,7 +2,7 @@
 title: 'Tir aux Pigeons Laser'
 description: "Une version moderne et écologique du tir aux pigeons d'argile"
 image: 'laserkleiduifschieten/laserkleiduifschieten-1.jpg'
-video-url: 'https://iframe.mediadelivery.net/embed/369439/81facce2-d34f-48ce-8c9a-2faf8bcd9abc'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/2f13904d-494d-4441-a9e4-471d1eeb3557'
 categories: ['outdoor', 'indoor']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'

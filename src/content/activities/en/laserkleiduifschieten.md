@@ -2,7 +2,7 @@
 title: 'Laser Clay Pigeon Shooting'
 description: 'A modern and environmentally friendly variant of clay pigeon shooting.'
 image: 'laserkleiduifschieten/laserkleiduifschieten-1.jpg'
-video-url: 'https://iframe.mediadelivery.net/embed/369439/81facce2-d34f-48ce-8c9a-2faf8bcd9abc'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/2f13904d-494d-4441-a9e4-471d1eeb3557'
 categories: ['indoor', 'outdoor']
 duration: '2 - 3 hours'
 groupSize: '8 - 30 people'
