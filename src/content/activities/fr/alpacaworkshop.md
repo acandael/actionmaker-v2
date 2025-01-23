@@ -14,7 +14,7 @@ gallery:
   ]
 categories: ['workshop', 'outdoor']
 duration: '2-3 heures'
-groupSize: '8-50 personnes'
+groupSize: '1-15 personnes'
 availability: 'Sur demande'
 ---
 

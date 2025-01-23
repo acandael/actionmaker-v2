@@ -1,23 +1,24 @@
 ---
-title: 'Valise Bombe/Escape Room Mobile'
+title: 'Escape Room Mobile'
 description: 'Nuclear Box & Magic Bomb'
-image: 'bomkoffer/bomkoffer-1.jpg'
+image: 'mobiele-escape-room/mobiele-escape-room-1.jpg'
 features:
   - 'Mobile'
+  - 'Mallette explosive'
   - "Esprit d'équipe"
   - 'Polyvalent et amusant'
 gallery:
   [
-    'bomkoffer/bomkoffer-2.jpg',
-    'bomkoffer/bomkoffer-3.jpg',
-    'bomkoffer/bomkoffer-4.jpg',
-    'bomkoffer/bomkoffer-5.jpg',
-    'bomkoffer/bomkoffer-6.jpg',
-    'bomkoffer/bomkoffer-7.jpg',
+    'mobiele-escape-room/mobiele-escape-room-2.jpg',
+    'mobiele-escape-room/mobiele-escape-room-3.jpg',
+    'mobiele-escape-room/mobiele-escape-room-4.jpg',
+    'mobiele-escape-room/mobiele-escape-room-5.jpg',
+    'mobiele-escape-room/mobiele-escape-room-6.jpg',
+    'mobiele-escape-room/mobiele-escape-room-7.jpg',
   ]
 categories: ['outdoor', 'indoor']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '30 minutes - 2 heures'
+groupSize: '2 - 250 personnes'
 availability: 'Sur demande'
 ---
 

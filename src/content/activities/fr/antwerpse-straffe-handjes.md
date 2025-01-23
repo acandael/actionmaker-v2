@@ -4,7 +4,7 @@ description: 'Découvrez des anecdotes amusantes sur Anvers tout en renforçant 
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 features:
   - 'anecdotes amusantes'
-  - 'gastronomie'
+  - 'activités amusantes'
   - 'prix'
 gallery:
   [
@@ -17,7 +17,7 @@ gallery:
   ]
 categories: ['cultureel', 'outdoor']
 duration: '2-3 heures'
-groupSize: '8-50 personnes'
+groupSize: '2-100 personnes'
 availability: 'Sur demande'
 ---
 

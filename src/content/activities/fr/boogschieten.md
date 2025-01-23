@@ -16,8 +16,8 @@ gallery:
     'boogschieten/boogschieten-7.jpg',
   ]
 categories: ['outdoor', 'actief']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '30 minutes - 2 heures'
+groupSize: '4 - 200 personnes'
 availability: 'Sur demande'
 ---
 

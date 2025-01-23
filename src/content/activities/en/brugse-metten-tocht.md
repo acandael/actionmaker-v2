@@ -1,11 +1,14 @@
 ---
-title: 'Bruges Metten Tour'
-description: 'This tour is made for lovers of Bruges. It is a tour through the historic old town of Bruges with tasks and activities.'
+title: 'Bruges Matins Tour'
+description: 'Brugse Metten City Game: Discover Bruges with Fun and Competition!'
 image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
 features:
-  - 'Improve shooting stance'
-  - 'Competition'
-  - 'Team spirit'
+  - 'Photo Hunt: Explore the Streets'
+  - 'Urban Golf at the Old Saint John Site'
+  - 'Recognize Bruges Symbols in the Belfry'
+  - 'Gin Tasting at the Congress Building'
+  - 'Quiz Along the Way'
+  - 'Optional: Bruges Expressions'
 gallery:
   [
     'brugse-metten-tocht/brugse-metten-tocht-2.jpg',
@@ -16,13 +19,9 @@ gallery:
     'brugse-metten-tocht/brugse-metten-tocht-7.jpg',
   ]
 categories: ['cultureel', 'outdoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
+duration: '2 -3 hours'
+groupSize: '2 - 200 persons'
 availability: 'On request'
 ---
 
-The introduction is conducted with the recurve two-handed bow.
-
-First, participants shoot some practice arrows. The animator tries to improve the shooters' stance. It's certainly not easy, but one can improve quickly. After a few arrows, it will become apparent that you feel more and more familiar with the stance and shooting.
-
-This is followed by a competition between the participants. Various game formats can also be used.
+Experience a unique day in Bruges with the Brugse Metten City Game! This interactive game takes you through the most beautiful parts of the city while participating in fun and challenging activities. Perfect for groups who want to discover Bruges in a playful way.

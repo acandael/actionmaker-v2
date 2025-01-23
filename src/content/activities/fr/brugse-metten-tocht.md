@@ -1,12 +1,14 @@
 ---
-title: 'Balade des Matines de Bruges'
-description: "Cette balade est conçue pour les amateurs de Bruges. C'est une promenade à travers le centre-ville de Bruges avec des missions et des activités."
+title: 'Parcours des Matines de Bruges'
+description: 'Jeu urbain Brugse Metten : Découvrez Bruges avec plaisir et compétition !'
 image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
-categories: ['outdoor', 'cultureel']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
-availability: 'Sur demande'
-features: ['teamgeest', 'cultuur', 'ontspanning']
+features:
+  - 'Chasse aux photos : Explorez les rues'
+  - "Golf urbain sur le site de l'Ancien Saint-Jean"
+  - 'Reconnaître les symboles brugeois au Beffroi'
+  - 'Dégustation de genièvre au Palais des Congrès'
+  - 'Quiz en cours de route'
+  - 'En option : Expressions brugeoises'
 gallery:
   [
     'brugse-metten-tocht/brugse-metten-tocht-2.jpg',
@@ -16,10 +18,10 @@ gallery:
     'brugse-metten-tocht/brugse-metten-tocht-6.jpg',
     'brugse-metten-tocht/brugse-metten-tocht-7.jpg',
   ]
+categories: ['cultureel', 'outdoor']
+duration: '2 - 3 heures'
+groupSize: '2 - 200 personnes'
+availability: 'Sur demande'
 ---
 
-L'initiation sera réalisée avec l'arc recurve à deux mains.
-
-Les participants commencent par tirer quelques flèches d'entraînement. L'animateur essaie d'améliorer la position de tir des archers. Ce n'est certainement pas facile, mais on peut s'améliorer rapidement. Après quelques flèches, il apparaîtra que l'on se sent de plus en plus à l'aise avec la position et le tir.
-
-Ensuite, une compétition entre les participants est organisée. Différentes formes de jeux peuvent également être utilisées.
+Vivez une journée unique à Bruges avec le jeu urbain Brugse Metten ! Ce jeu interactif vous emmène à travers les plus beaux quartiers de la ville tout en participant à des activités amusantes et stimulantes. Idéal pour les groupes qui souhaitent découvrir Bruges de manière ludique.

@@ -17,7 +17,7 @@ gallery:
   ]
 categories: ['workshop']
 duration: '2-3 uur'
-groupSize: '8-50 personen'
+groupSize: '1-15 personen'
 availability: 'Op aanvraag'
 ---
 

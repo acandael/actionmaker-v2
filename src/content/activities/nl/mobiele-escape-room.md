@@ -1,24 +1,25 @@
 ---
-title: 'Bomkoffer'
+title: 'Mobiele Escape Room'
 description: 'Beleef een unieke en spannende escape room ervaring met onze mobiele escape room koffers!'
-image: 'bomkoffer/bomkoffer-1.jpg'
+image: 'mobiele-escape-room/mobiele-escape-room-1.jpg'
 features:
   - 'escape room'
+  - 'bomkoffer'
   - 'veelzijdige uitdagingen'
   - 'actie en spanning'
   - 'werken onder tijdsdruk'
 gallery:
   [
-    'bomkoffer/bomkoffer-2.jpg',
-    'bomkoffer/bomkoffer-3.jpg',
-    'bomkoffer/bomkoffer-4.jpg',
-    'bomkoffer/bomkoffer-5.jpg',
-    'bomkoffer/bomkoffer-6.jpg',
-    'bomkoffer/bomkoffer-7.jpg',
+    'mobiele-escape-room/mobiele-escape-room-2.jpg',
+    'mobiele-escape-room/mobiele-escape-room-3.jpg',
+    'mobiele-escape-room/mobiele-escape-room-4.jpg',
+    'mobiele-escape-room/mobiele-escape-room-5.jpg',
+    'mobiele-escape-room/mobiele-escape-room-6.jpg',
+    'mobiele-escape-room/mobiele-escape-room-7.jpg',
   ]
 categories: ['indoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '30 minuten - 2 uur'
+groupSize: '2 - 250 personen'
 availability: 'Op aanvraag'
 ---
 

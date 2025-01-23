@@ -16,8 +16,8 @@ gallery:
     'arrow-tag/arrow-tag-7.jpg',
   ]
 categories: ['actief', 'outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '30 minuten - 2 uur'
+groupSize: '4-100 people'
 availability: 'Op aanvraag'
 ---
 

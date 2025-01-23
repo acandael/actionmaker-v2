@@ -4,7 +4,7 @@ description: 'Leuke weetjes over Antwerpen ontdekken en gelijktijdig de teamgees
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 features:
   - 'leuke weetjes'
-  - 'gastronomie'
+  - 'grappige activiteiten'
   - 'prijzen'
 gallery:
   [
@@ -18,7 +18,7 @@ gallery:
   ]
 categories: ['cultureel']
 duration: '2-3 uur'
-groupSize: '8-50 personen'
+groupSize: '2-100 personen'
 availability: 'Op aanvraag'
 ---
 

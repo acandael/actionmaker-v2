@@ -4,7 +4,7 @@ description: 'Discover interesting facts about Antwerp while strengthening team 
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 features:
   - 'interesting facts'
-  - 'gastronomy'
+  - 'fun activities'
   - 'prizes'
 gallery:
   [
@@ -17,7 +17,7 @@ gallery:
   ]
 categories: ['cultureel']
 duration: '2-3 hours'
-groupSize: '8-50 people'
+groupSize: '2-100 people'
 availability: 'On request'
 ---
 
