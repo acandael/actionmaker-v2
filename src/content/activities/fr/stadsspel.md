@@ -1,5 +1,5 @@
 ---
-title: 'Jeu de Ville'
+title: 'Jeu de Ville à Gand'
 description: "Une aventure interactive à travers la ville combinant exploration et défis d'équipe"
 image: 'stadsspel/stadsspel-1.jpg'
 categories: ['outdoor', 'cultureel']

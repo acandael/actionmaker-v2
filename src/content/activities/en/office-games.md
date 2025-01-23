@@ -1,7 +1,7 @@
 ---
 title: 'The Office Games'
 description: 'Together we will work to create an impressive Goldberg machine'
-image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+image: 'office-games/office-games-1.jpg'
 features:
   - 'Physical strength'
   - 'Communication skills'
@@ -10,14 +10,12 @@ features:
   - 'Challenging activities'
 gallery:
   [
-    'alpacaworkshop/alpacaworkshop-2.jpg',
-    'alpacaworkshop/alpacaworkshop-3.jpg',
-    'alpacaworkshop/alpacaworkshop-4.jpg',
-    'alpacaworkshop/alpacaworkshop-5.jpg',
-    'alpacaworkshop/alpacaworkshop-6.jpg',
-    'alpacaworkshop/alpacaworkshop-7.jpg',
+    'office-games/office-games-1.jpg',
+    'office-games/office-games-2.jpg',
+    'office-games/office-games-3.jpg',
+    'office-games/office-games-4.jpg',
   ]
-categories: ['indoor', 'outdoor']
+categories: ['indoor']
 duration: '2-3 hours'
 groupSize: '8-50 people'
 availability: 'On request'
