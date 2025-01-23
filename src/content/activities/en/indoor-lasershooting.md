@@ -1,11 +1,11 @@
 ---
-title: 'Indoor Laser Shooting'
-description: 'Indoor laser shooting is an exciting team activity that focuses on strategy, communication, and teamwork.'
+title: 'Indoor Laser Clay Pigeon Shooting'
+description: 'Exciting, Safe and Environmentally Friendly!'
 image: 'indoor-lasershooting/indoorlasershooting-1.jpg'
 features:
-  - 'Exciting team activity'
-  - 'Communication'
-  - 'Teamwork'
+  - 'exciting team activity'
+  - 'communication'
+  - 'teamwork'
 gallery:
   [
     'indoor-lasershooting/indoorlasershooting-2.jpg',
@@ -16,13 +16,21 @@ gallery:
     'indoor-lasershooting/indoorlasershooting-7.jpg',
   ]
 categories: ['indoor']
-duration: '1-2 hours'
+duration: '30 minutes - 2 hours'
 groupSize: '8-30 people'
 availability: 'On request'
 ---
 
-Indoor laser shooting is an exciting team activity that focuses on strategy, communication, and teamwork. In a specially designed indoor arena, teams compete against each other in various challenging game modes.
+Would you like to show off your shooting skills in a spectacular but completely safe setting? Indoor laser clay pigeon shooting offers excitement and fun for everyone, even those who are less adventurous. Perfect for indoor use or when the distance is too short for regular laser clay pigeon shooting.
 
-Participants are equipped with professional laser pistols and sensors and must then complete various missions and tasks as a team. The activity is completely safe and suitable for all age groups and fitness levels.
+## How does it work?
 
-The various game modes provide variety and excitement, from classic team deathmatch to objective-based missions. After each round, scores and statistics are discussed, which adds a competitive element and provides the opportunity to adjust tactics.
+Shoot at 5 set-up targets with original Winchester rifles.
+Up to five participants shoot simultaneously. The challenge? Who will hit the target first?
+All this happens with a special infrared system, making it completely safe with no damage to the location.
+
+## What makes it so fun
+
+Completely safe: Since shooting is done with infrared, there is no danger. Plus, the rifles have no recoil.
+Environmentally friendly: No waste from broken clay pigeons or lead pollution.
+Suitable for everyone: Even if you've never shot before, this is a great activity for young and old alike.

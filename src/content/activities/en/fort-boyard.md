@@ -3,9 +3,9 @@ title: 'Fort Boyard'
 description: 'The Fort Boyard program is particularly well-known among French speakers'
 image: 'fort-boyard/fort-boyard-1.jpg'
 features:
-  - 'Different chambers'
-  - 'Castles and other locations'
-  - 'Time-bound trials'
+  - 'teambuilding'
+  - 'activities accessible to everyone'
+  - 'surprising challenges'
 gallery:
   [
     'fort-boyard/fort-boyard-2.jpg',
@@ -16,8 +16,8 @@ gallery:
     'fort-boyard/fort-boyard-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
+duration: '2 - 5 hours'
+groupSize: '8 - 1000 people'
 availability: 'On request'
 ---
 

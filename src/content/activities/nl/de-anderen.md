@@ -16,8 +16,8 @@ gallery:
     'de-anderen/de-anderen-7.jpg',
   ]
 categories: ['indoor', 'outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2 - 3 uur'
+groupSize: '8 - 100 personen'
 availability: 'Op aanvraag'
 ---
 

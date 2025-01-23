@@ -4,10 +4,10 @@ description: 'Together we will work to create an impressive Goldberg machine'
 image: 'chain-reaction/chain-reaction-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/fe1caff2-9b94-450f-839b-22ab3de3ae95'
 features:
-  - 'Marble runs'
-  - 'Domino tiles'
-  - 'LEGO blocks'
-  - 'Electric devices'
+  - 'challenge and creativity'
+  - 'abundance of materials and possibilities'
+  - 'teamwork'
+  - 'spectacular finish'
 gallery:
   [
     'chain-reaction/chain-reaction-2.jpg',
@@ -18,8 +18,8 @@ gallery:
     'chain-reaction/chain-reaction-7.jpg',
   ]
 categories: ['indoor', 'outdoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
+duration: '2 - 5 hours'
+groupSize: '6 - 800 people'
 availability: 'On request'
 ---
 

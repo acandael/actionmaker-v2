@@ -17,8 +17,8 @@ gallery:
     'gelblaster/gelblaster-7.jpg',
   ]
 categories: ['outdoor', 'indoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '45 minuten - 2 uur'
+groupSize: '8 - 200 personen'
 availability: 'Op aanvraag'
 ---
 

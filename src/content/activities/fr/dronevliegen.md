@@ -17,11 +17,13 @@ gallery:
     'dronevliegen/dronevliegen-7.jpg',
   ]
 categories: ['outdoor', 'indoor']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '1 - 2.5 heures'
+groupSize: '8 - 250 personnes'
 availability: 'Sur demande'
 ---
 
 Les drones deviennent de plus en plus importants dans notre monde moderne. Ils sont utilisés pour diverses applications, comme l'arpentage des terrains, l'inspection des panneaux solaires, le contrôle des foules et même des tentatives de livraison de colis. Mais avez-vous déjà voulu piloter un drone vous-même ?
 
-Avec cette activité, découvrez le monde passionnant des drones, guidé par un pilote de drone certifié !
+Nous travaillons avec des drones professionnels qui sont également utilisés dans diverses applications professionnelles.
+
+Avec cette activité, découvrez le monde passionnant des drones, guidé par un pilote de drone certifié!

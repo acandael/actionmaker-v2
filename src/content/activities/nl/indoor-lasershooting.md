@@ -1,6 +1,6 @@
 ---
-title: 'Indoor Lasershooting'
-description: 'Indoor lasershooting is een spannende teamactiviteit waarbij strategie, communicatie en teamwork centraal staan.'
+title: 'Indoor Laser Kleiduifschieten'
+description: 'Spannend, Veilig en Milieuvriendelijk!'
 image: 'indoor-lasershooting/indoorlasershooting-1.jpg'
 features:
   - 'spannende teamactiviteit'
@@ -16,13 +16,21 @@ gallery:
     'indoor-lasershooting/indoorlasershooting-7.jpg',
   ]
 categories: ['indoor']
-duration: '1-2 uur'
+duration: '30 minuten - 2 uur'
 groupSize: '8-30 personen'
 availability: 'Op aanvraag'
 ---
 
-Indoor lasershooting is een spannende teamactiviteit waarbij strategie, communicatie en teamwork centraal staan. In een speciaal ingerichte indoor arena nemen teams het tegen elkaar op in verschillende uitdagende spelmodi.
+Wil jij je schietkunsten laten zien in een spectaculaire, maar volledig veilige setting? Indoor laser kleiduifschieten biedt spanning en plezier voor iedereen, zelfs voor de minder grote durfallen. Ideaal voor binnen of als de afstand te klein is voor het gewone laserkleiduifschieten.
 
-Deelnemers worden uitgerust met professionele laserguns en sensoren, waarna ze in teams verschillende missies en opdrachten moeten voltooien. De activiteit is volledig veilig en geschikt voor alle leeftijden en conditieniveaus.
+## Hoe werkt het?
 
-De verschillende spelmodi zorgen voor variatie en spanning, van klassieke team deathmatch tot objectieve-gebaseerde missies. Na elke ronde worden de scores en statistieken besproken, wat zorgt voor een competitief element en de mogelijkheid om tactieken aan te passen.
+Schiet met originele Winchester geweren op 5 targets die opgesteld
+Tot vijf deelnemers schieten tegelijkertijd. De uitdaging? Wie het target als eerste?
+Dit alles gebeurt met een speciaal infraroodsysteem, waardoor het volledig veilig is en er schade aan de locatie wordt toegebracht.
+
+## Wat maakt het zo leuk
+
+Volstrekt veilig: Omdat er met infrarood wordt geschoten, is er geen gevaar. Bovendien hebben de geweren geen terugslag.
+Milieuvriendelijk: Geen afval van kapotte kleiduiven of loodvervuiling.
+Geschikt voor iedereen: Zelfs als je nog nooit hebt geschoten, is dit een geweldige activiteit voor jong en oud.

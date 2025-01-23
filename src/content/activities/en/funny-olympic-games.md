@@ -3,9 +3,9 @@ title: 'The Funny Olympic Games'
 description: 'This activity embodies the idea of "mens sana in corpore sano" - a healthy mind in a healthy body.'
 image: 'funny-games/funny-games-1.jpg'
 features:
-  - 'Relay race'
-  - 'Sumo wrestling'
-  - 'Tug of war'
+  - 'sporting challenges'
+  - 'olympic spirit'
+  - 'lots of laughter'
 gallery:
   [
     'funny-games/funny-games-2.jpg',
@@ -16,8 +16,8 @@ gallery:
     'funny-games/funny-games-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
+duration: '2 - 5 hours'
+groupSize: '8 - 1000 people'
 availability: 'On request'
 ---
 

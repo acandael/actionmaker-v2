@@ -17,8 +17,8 @@ gallery:
     'gelblaster/gelblaster-7.jpg',
   ]
 categories: ['outdoor', 'indoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
+duration: '45 minutes - 2 hours'
+groupSize: '8 - 200 people'
 availability: 'On request'
 ---
 

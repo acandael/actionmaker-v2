@@ -17,11 +17,13 @@ gallery:
     'dronevliegen/dronevliegen-7.jpg',
   ]
 categories: ['outdoor', 'indoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
+duration: '1 - 2.5 hours'
+groupSize: '8 - 250 people'
 availability: 'On request'
 ---
 
 Drones are becoming increasingly important in our modern world. They are used for various applications, such as surveying terrain, inspecting solar panels, crowd control, and even attempts at package delivery. But have you ever wanted to fly a drone yourself?
+
+We work with professional drones that are also used in various professional applications.
 
 With this activity, you'll get acquainted with the exciting world of drones, guided by a certified drone pilot!

@@ -3,9 +3,9 @@ title: 'Fort Boyard'
 description: 'Het programma Fort Boyard geniet vooral bekendheid onder Franstaligen'
 image: 'fort-boyard/fort-boyard-1.jpg'
 features:
-  - 'Verschillende zalen'
-  - 'Vastelen en andere locaties'
-  - 'Tijdgebonden proeven'
+  - 'teambuilding'
+  - 'activiteiten toegankelijk voor iedereen'
+  - 'verrassende opdrachten'
 gallery:
   [
     'fort-boyard/fort-boyard-2.jpg',
@@ -16,8 +16,8 @@ gallery:
     'fort-boyard/fort-boyard-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2 - 5 uur'
+groupSize: '8 - 100 personen'
 availability: 'Op aanvraag'
 ---
 

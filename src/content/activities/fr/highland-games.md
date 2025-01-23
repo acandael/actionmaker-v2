@@ -3,10 +3,9 @@ title: 'Les Highland Games'
 description: 'Une combinaison authentique de défis traditionnels imprégnés de caractère écossais.'
 image: 'highland-games/highland-games-1.jpg'
 features:
-  - 'Défis variés'
-  - 'Lancer de tronc'
-  - 'Tir à la corde'
-  - 'Lancer de fer à cheval...'
+  - 'Ambiance écossaise'
+  - 'activités sportives et stimulantes'
+  - "travail d'équipe"
 gallery:
   [
     'highland-games/highland-games-2.jpg',
@@ -17,8 +16,8 @@ gallery:
     'highland-games/highland-games-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '2 - 5 heures'
+groupSize: '8 - 1000 personnes'
 availability: 'Sur demande'
 ---
 

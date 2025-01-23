@@ -4,10 +4,10 @@ description: 'Gezamenlijk gaan we aan de slag om een indrukwekkende Goldberg mac
 image: 'chain-reaction/chain-reaction-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/fe1caff2-9b94-450f-839b-22ab3de3ae95'
 features:
-  - 'Knikkerbanen'
-  - 'Dominosteentjes'
-  - 'LEGO blokken'
-  - 'Elektrische apparaten'
+  - 'uitdaging en creativiteit'
+  - 'overvloed aan materiaal en mogelijkheden'
+  - 'teamwork'
+  - 'spectaculaire finish'
 gallery:
   [
     'chain-reaction/chain-reaction-2.jpg',
@@ -18,8 +18,8 @@ gallery:
     'chain-reaction/chain-reaction-7.jpg',
   ]
 categories: ['indoor', 'outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2 - 5 uur'
+groupSize: '6 - 800 personen'
 availability: 'Op aanvraag'
 ---
 

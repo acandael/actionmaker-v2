@@ -3,8 +3,8 @@ title: 'Chocolate Workshop'
 description: 'A chocolate workshop led by a professional chocolatier.'
 image: 'chocoladeworkshop/chocoladeworkshop-1.jpg'
 categories: ['culinair', 'workshop']
-duration: '2.5 - 3 hours'
-groupSize: '8 - 25 people'
+duration: '45 minutes - 2.5 hours'
+groupSize: '8 - 100 people'
 availability: 'All year round'
 features:
   - 'Professional chocolatier'
@@ -27,3 +27,5 @@ The chocolate workshop is a delicious combination of team building and culinary 
 The workshop begins with an introduction to the world of chocolate, where participants learn about different types of chocolate, their origins, and characteristics. This is followed by a tasting session where various chocolates are examined and evaluated for taste, texture, and aroma.
 
 Participants then begin making their own chocolate creations. From tempering to decorating, all aspects of the chocolatier's craft are covered. Teams work together on their creations, which is not only educational but also promotes creativity and collaboration.
+
+Both in our chocolate workshop or possible on location (if the location is suitable).

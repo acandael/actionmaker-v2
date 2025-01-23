@@ -3,9 +3,9 @@ title: 'Groupo Universalis'
 description: "Inspiré de l'émission de télévision Homo Universalis"
 image: 'groupo-universalis/groupo-universalis-1.jpg'
 features:
-  - 'Énigmes stimulantes'
-  - "Défis d'équipe passionnants"
-  - 'Créativité et innovation'
+  - 'Activités pour tous les talents'
+  - "Travail d'équipe et créativité"
+  - 'Des jeux courts et puissants'
 gallery:
   [
     'groupo-universalis/groupo-universalis-2.jpg',
@@ -16,8 +16,8 @@ gallery:
     'groupo-universalis/groupo-universalis-7.jpg',
   ]
 categories: ['indoor']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '2 - 3 heures'
+groupSize: '8 - 1000 personnes'
 availability: 'Sur demande'
 ---
 

@@ -3,9 +3,9 @@ title: 'The Funny Olympic Games'
 description: 'Deze activiteit belichaamt het idee van "mens sana in corpore sano" een gezonde geest in een gezond lichaam.'
 image: 'funny-games/funny-games-1.jpg'
 features:
-  - 'estafette'
-  - 'sumoworstelen'
-  - 'touwtrekken'
+  - 'sportieve uitdagingen'
+  - 'olympische gedachte'
+  - 'veel lachen'
 gallery:
   [
     'funny-games/funny-games-2.jpg',
@@ -16,8 +16,8 @@ gallery:
     'funny-games/funny-games-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2 - 5 uur'
+groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 

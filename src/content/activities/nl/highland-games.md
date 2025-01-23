@@ -3,10 +3,9 @@ title: 'De Highland Games'
 description: 'Een authentieke combinatie van traditionele uitdagingen doordrenkt met een Schots karakter.'
 image: 'highland-games/highland-games-1.jpg'
 features:
-  - 'Diverse uitdagingen'
-  - 'Paalwerpen'
-  - 'Touwtrekken'
-  - 'Hoefijzerwerpen...'
+  - 'Schotse sfeer'
+  - 'uitdagende en sportieve activiteiten'
+  - 'teamwork'
 gallery:
   [
     'highland-games/highland-games-2.jpg',
@@ -17,8 +16,8 @@ gallery:
     'highland-games/highland-games-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2 - 5 uur'
+groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 

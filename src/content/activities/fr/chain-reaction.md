@@ -4,10 +4,10 @@ description: 'Ensemble, nous allons créer une impressionnante machine de Goldbe
 image: 'chain-reaction/chain-reaction-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/fe1caff2-9b94-450f-839b-22ab3de3ae95'
 features:
-  - 'Circuits de billes'
-  - 'Dominos'
-  - 'Blocs LEGO'
-  - 'Appareils électriques'
+  - 'défi et créativité'
+  - 'abondance de matériel et de possibilités'
+  - "travail d'équipe"
+  - 'fin spectaculaire'
 gallery:
   [
     'chain-reaction/chain-reaction-2.jpg',
@@ -18,8 +18,8 @@ gallery:
     'chain-reaction/chain-reaction-7.jpg',
   ]
 categories: ['indoor', 'outdoor']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '2 - 5 heures'
+groupSize: '6 - 800 personnes'
 availability: 'Sur demande'
 ---
 

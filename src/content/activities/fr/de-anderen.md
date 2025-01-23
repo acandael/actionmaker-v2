@@ -16,8 +16,8 @@ gallery:
     'de-anderen/de-anderen-7.jpg',
   ]
 categories: ['indoor', 'outdoor']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '2 - 3 heures'
+groupSize: '8 - 100 personnes'
 availability: 'Sur demande'
 ---
 

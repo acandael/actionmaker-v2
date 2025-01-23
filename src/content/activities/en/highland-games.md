@@ -3,10 +3,9 @@ title: 'The Highland Games'
 description: 'An authentic combination of traditional challenges infused with Scottish character.'
 image: 'highland-games/highland-games-1.jpg'
 features:
-  - 'Various challenges'
-  - 'Caber tossing'
-  - 'Tug of war'
-  - 'Horseshoe throwing...'
+  - 'Scottish atmosphere'
+  - 'challenging and sporting activities'
+  - 'teamwork'
 gallery:
   [
     'highland-games/highland-games-2.jpg',
@@ -17,8 +16,8 @@ gallery:
     'highland-games/highland-games-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
+duration: '2 - 5 hours'
+groupSize: '8 - 1000 people'
 availability: 'On request'
 ---
 

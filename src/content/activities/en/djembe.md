@@ -3,8 +3,8 @@ title: 'Djembe Workshop'
 description: 'Making music as a team creates a unique experience and provides a positive group feeling.'
 image: 'djembe/djembe-1.jpg'
 categories: ['workshop', 'cultureel']
-duration: '+/- 3 hours'
-groupSize: 'Maximum 15 people'
+duration: '30 minutes - 2 hours'
+groupSize: 'Maximum 250 people'
 availability: 'All year round'
 features:
   - 'Unique experience'

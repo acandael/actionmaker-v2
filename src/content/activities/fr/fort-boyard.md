@@ -3,9 +3,9 @@ title: 'Fort Boyard'
 description: 'Le programme Fort Boyard est particulièrement connu auprès des francophones'
 image: 'fort-boyard/fort-boyard-1.jpg'
 features:
-  - 'Différentes salles'
-  - 'Châteaux et autres lieux'
-  - 'Épreuves chronométrées'
+  - "esprit d'équipe"
+  - 'activités accessibles à tous'
+  - 'épreuves surprenantes'
 gallery:
   [
     'fort-boyard/fort-boyard-2.jpg',
@@ -16,8 +16,8 @@ gallery:
     'fort-boyard/fort-boyard-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '2 - 5 heures'
+groupSize: '8 - 100 personnes'
 availability: 'Sur demande'
 ---
 
