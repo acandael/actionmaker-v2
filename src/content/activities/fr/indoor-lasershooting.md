@@ -27,7 +27,7 @@ Voulez-vous montrer vos talents de tireur dans un cadre spectaculaire mais total
 
 Tirez avec des fusils Winchester d'origine sur 5 cibles installées.
 Jusqu'à cinq participants tirent simultanément. Le défi ? Qui touchera la cible en premier ?
-Tout cela se fait avec un système infrarouge spécial, ce qui le rend totalement sûr et sans dommage pour le lieu.
+Tout cela se fait avec un système infrarouge spécial, ce qui le rend totalement sûr et n'endommage pas le lieu.
 
 ## Ce qui le rend si amusant
 

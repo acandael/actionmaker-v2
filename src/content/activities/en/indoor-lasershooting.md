@@ -25,9 +25,9 @@ Would you like to show off your shooting skills in a spectacular but completely 
 
 ## How does it work?
 
-Shoot at 5 set-up targets with original Winchester rifles.
-Up to five participants shoot simultaneously. The challenge? Who will hit the target first?
-All this happens with a special infrared system, making it completely safe with no damage to the location.
+Shoot with original Winchester rifles at 5 set up targets.
+Up to five participants shoot simultaneously. The challenge? Who hits the target first?
+All of this happens with a special infrared system, making it completely safe and causing no damage to the location.
 
 ## What makes it so fun
 

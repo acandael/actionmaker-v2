@@ -27,7 +27,7 @@ Wil jij je schietkunsten laten zien in een spectaculaire, maar volledig veilige 
 
 Schiet met originele Winchester geweren op 5 targets die opgesteld
 Tot vijf deelnemers schieten tegelijkertijd. De uitdaging? Wie het target als eerste?
-Dit alles gebeurt met een speciaal infraroodsysteem, waardoor het volledig veilig is en er schade aan de locatie wordt toegebracht.
+Dit alles gebeurt met een speciaal infraroodsysteem, waardoor het volledig veilig is en er geen schade aan de locatie wordt toegebracht.
 
 ## Wat maakt het zo leuk
 
