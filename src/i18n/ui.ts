@@ -146,7 +146,7 @@ export const ui = {
     'contact.features.experienced': 'Ervaren animatoren',
 
     // Activity page translations
-    'activity.features-title': 'Wat kun je verwachten',
+    'activity.features-title': 'Wat kun je bijvoorbeeld verwachten',
     'activity.group-size': 'Groepsgrootte',
     'activity.duration': 'Duur',
     'activity.availability': 'Beschikbaarheid',

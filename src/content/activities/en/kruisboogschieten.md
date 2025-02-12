@@ -3,8 +3,8 @@ title: 'Crossbow Shooting'
 description: 'An exciting event with historical crossbows.'
 image: 'kruisboogschieten/kruisboogschieten-1.jpg'
 categories: ['indoor', 'outdoor']
-duration: '2 - 3 hours'
-groupSize: '8 - 30 people'
+duration: '30 minutes - 2 hours'
+groupSize: '2 - 300 people'
 availability: 'All year round'
 features:
   - 'Professional guidance'
