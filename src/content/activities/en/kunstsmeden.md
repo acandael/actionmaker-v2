@@ -3,12 +3,12 @@ title: 'Artistic Blacksmithing'
 description: 'Blacksmithing is a very old profession and has produced many masterpieces throughout history.'
 image: 'kunstsmeden/kunstsmeden-1.jpg'
 categories: ['workshop']
-duration: '+/- 2 hours'
+duration: '2 - 3 hours'
 groupSize: 'Max. 20 participants per session'
 availability: 'All year round'
 features:
   - 'Experienced blacksmith'
-  - 'Unique gift'
+  - 'A unique creation to take home'
   - 'Safety goggles'
 gallery:
   [
