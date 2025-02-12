@@ -17,9 +17,9 @@ gallery:
     'innovation-games/innovation-games-6.jpg',
     'innovation-games/innovation-games-7.jpg',
   ]
-categories: ['outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+categories: ['indoor', 'outdoor']
+duration: '2 - 5 uur'
+groupSize: '4 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 

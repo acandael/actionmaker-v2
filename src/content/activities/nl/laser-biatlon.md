@@ -1,10 +1,10 @@
 ---
-title: 'Infrarood biatlon'
+title: 'Laser Biatlon'
 description: 'Bij het infrarood biatlonschieten wordt er met omgebouwde biatlongeweren geschoten op een biatlon doel'
-image: 'infrarood-biatlon/infrarood-biatlon-1.jpg'
+image: 'laser-biatlon/laser-biatlon-1.jpg'
 categories: ['outdoor', 'indoor']
-duration: '+- 1u30 uur'
-groupSize: 'Max. 25 deelnemers per animator'
+duration: '30 minuten - 2 uur'
+groupSize: '2 - 200'
 availability: 'Het hele jaar door'
 features:
   - 'ontspanning'
@@ -12,12 +12,12 @@ features:
   - 'coaching'
 gallery:
   [
-    'infrarood-biatlon/infrarood-biatlon-2.jpg',
-    'infrarood-biatlon/infrarood-biatlon-3.jpg',
-    'infrarood-biatlon/infrarood-biatlon-4.jpg',
-    'infrarood-biatlon/infrarood-biatlon-5.jpg',
-    'infrarood-biatlon/infrarood-biatlon-6.jpg',
-    'infrarood-biatlon/infrarood-biatlon-7.jpg',
+    'laser-biatlon/laser-biatlon-2.jpg',
+    'laser-biatlon/laser-biatlon-3.jpg',
+    'laser-biatlon/laser-biatlon-4.jpg',
+    'laser-biatlon/laser-biatlon-5.jpg',
+    'laser-biatlon/laser-biatlon-6.jpg',
+    'laser-biatlon/laser-biatlon-7.jpg',
   ]
 ---
 

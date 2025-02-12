@@ -1,5 +1,5 @@
 ---
-title: 'James Bond'
+title: 'Spy-academy/James Bond'
 description: "Nous recherchons l'équipe ultime de collègues pour incarner l'espion le plus célèbre au monde."
 image: 'james-bond/james-bond-1.jpg'
 features:
@@ -16,8 +16,8 @@ gallery:
     'james-bond/james-bond-7.jpg',
   ]
 categories: ['indoor']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '2 - 5 heures'
+groupSize: '8 - 1000 personnes'
 availability: 'Sur demande'
 ---
 

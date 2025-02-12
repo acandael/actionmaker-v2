@@ -1,10 +1,10 @@
 ---
-title: 'Infrared Biathlon'
+title: 'Laser Biatlon'
 description: 'In the infrared biathlon, participants shoot at a biathlon target using converted biathlon rifles'
-image: 'infrarood-biatlon/infrarood-biatlon-1.jpg'
+image: 'laser-biatlon/laser-biatlon-1.jpg'
 categories: ['outdoor', 'indoor']
-duration: '+- 1h30 hours'
-groupSize: 'Max. 25 participants per animator'
+duration: '30 minutes - 2 hours'
+groupSize: '2 - 200'
 availability: 'All year round'
 features:
   - 'Relaxation'
@@ -12,12 +12,12 @@ features:
   - 'Coaching'
 gallery:
   [
-    'infrarood-biatlon/infrarood-biatlon-2.jpg',
-    'infrarood-biatlon/infrarood-biatlon-3.jpg',
-    'infrarood-biatlon/infrarood-biatlon-4.jpg',
-    'infrarood-biatlon/infrarood-biatlon-5.jpg',
-    'infrarood-biatlon/infrarood-biatlon-6.jpg',
-    'infrarood-biatlon/infrarood-biatlon-7.jpg',
+    'laser-biatlon/laser-biatlon-2.jpg',
+    'laser-biatlon/laser-biatlon-3.jpg',
+    'laser-biatlon/laser-biatlon-4.jpg',
+    'laser-biatlon/laser-biatlon-5.jpg',
+    'laser-biatlon/laser-biatlon-6.jpg',
+    'laser-biatlon/laser-biatlon-7.jpg',
   ]
 ---
 

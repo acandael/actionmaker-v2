@@ -1,5 +1,5 @@
 ---
-title: 'James Bond'
+title: 'Spy-academy/James Bond'
 description: "We gaan op zoek naar het ultieme team van collega's om de rol van 's werelds meest bekende spion op zich te nemen."
 image: 'james-bond/james-bond-1.jpg'
 features:
@@ -16,8 +16,8 @@ gallery:
     'james-bond/james-bond-7.jpg',
   ]
 categories: ['indoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2 - 5 uur'
+groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 
