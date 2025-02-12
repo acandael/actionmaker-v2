@@ -1,6 +1,8 @@
 ---
 import { Card } from '@/components/ui/card';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import { Image } from 'astro:assets';
+import founderImage from '../../assets/founder.jpg';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -14,9 +16,11 @@ const t = useTranslations(lang);
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         {/* Image */}
         <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
-          <img
-            src="/src/assets/founder.jpg"
-            alt={t('about.founder.image.alt')}
+          <Image
+            src={founderImage}
+            alt={t('about.founder.title')}
+            width={567}
+            height={425}
             class="w-full h-full object-cover"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
