@@ -2,6 +2,7 @@
 title: 'Sumo Wrestling'
 description: 'Experience the ancient Japanese sport in a fun and safe way!'
 image: 'sumoworstelen/sumoworstelen-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/3c3bd7aa-e0f1-4bbf-a9b9-992b8b2afc01'
 categories: ['actief', 'indoor', 'outdoor']
 duration: '2-3 hours'
 groupSize: '8-50 people'

@@ -2,6 +2,7 @@
 title: 'Axe Throwing'
 description: 'Axe throwing is surprisingly easy, most people hit the target within their first five to ten throws'
 image: 'bijlwerpen/bijlwerpen-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/e79edaba-57fe-41d7-960f-d939c3353d80'
 features:
   - 'team spirit'
   - 'sport'
