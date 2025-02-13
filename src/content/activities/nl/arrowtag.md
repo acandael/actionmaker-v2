@@ -1,6 +1,6 @@
 ---
 title: 'Arrow Tag'
-description: 'Beleef de Spanning van de Hunger Games!'
+description: 'Beleef de spanning van de Hunger Games!'
 image: 'arrow-tag/arrow-tag-1.jpg'
 features:
   - 'Actief en veilig'

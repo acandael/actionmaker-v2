@@ -91,7 +91,7 @@ export function ContactForm() {
   return (
     <div className="space-y-12">
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold tracking-tight">Heb Je Nog Vragen?</h1>
+        <h1 className="text-4xl font-bold tracking-tight">Heb je nog vragen?</h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
           Heb je nog vragen of heb je een idee voor een activiteit?
           <br />
@@ -222,7 +222,7 @@ export function ContactForm() {
               render={({ field }) => (
                 <FormItem className="space-y-3 group">
                   <FormLabel className="text-sm font-medium text-foreground/80 group-focus-within:text-red-600">
-                    Bijkomende Vragen
+                    Bijkomende vragen
                   </FormLabel>
                   <FormControl>
                     <Textarea
@@ -247,7 +247,7 @@ export function ContactForm() {
                   <>Verzenden...</>
                 ) : (
                   <>
-                    Bericht Versturen
+                    Bericht versturen
                     <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </>
                 )}

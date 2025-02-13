@@ -24,16 +24,16 @@ export const ui = {
     'nav.close': 'Menu sluiten',
 
     // Features
-    'features.title': 'Waarom Kiezen Voor',
+    'features.title': 'Waarom kiezen voor',
     'features.flexible.title': 'Flexibel',
     'features.flexible.description':
-      'Een onvoorziene wijziging op het laatste moment? Geen probleem, wij zijn flexibel en kunnen jou teambuilding aanpassen aan elke omstandigheid.',
+      'Een onvoorziene wijziging op het laatste moment? Geen probleem, wij zijn flexibel en kunnen jouw teambuilding aanpassen aan elke omstandigheid.',
     'features.personal.title': 'Persoonlijk',
     'features.personal.description':
-      'In tegenstelling tot andere bedrijven werken wij niet met onderaannemers. Action Maker organiseert al zijn teambuildings zelf.',
+      'Action Maker staat garant voor een persoonlijke aanpak en organiseert de verschillende teambuildings zelf. Er komen dus geen onderaannemers aan te pas.',
     'features.experienced.title': 'Ervaren animatoren',
     'features.experienced.description':
-      'Al onze animatoren zijn ervaren en experts op het vlak van de activiteiten die ze begeleiden.',
+      'Al onze animatoren zijn heel ervaren en gedreven. Als ware experts begeleiden ze verschillende activiteiten.',
 
     // CTA
     'cta.versterk': 'Versterk je team vandaag nog',
@@ -84,7 +84,7 @@ export const ui = {
     // About
     'about.title': 'Over Action Maker',
     'about.description.p1':
-      'Er komt heel wat kijken bij het organiseren van een Teambuilding. Je moet geschikt materiaal vinden, gespecialiseerde animatoren, en wat als je door gewijzigde omstandigheden op het laatste moment een andere activiteit moet vinden?',
+      'Er komt heel wat kijken bij het organiseren van een teambuilding. Je moet geschikt materiaal vinden, gespecialiseerde animatoren, en wat als je door gewijzigde omstandigheden op het laatste moment een andere activiteit moet vinden?',
     'about.description.p2':
       'We weten hoe stresserend dit kan zijn. Action Maker heeft immers 15 jaar ervaring met het organiseren van teambuildings voor bedrijven en het versterken van de groepsgeest.',
     'about.description.p3':
@@ -95,7 +95,7 @@ export const ui = {
     'about.founder.title': 'Oprichter',
     'about.founder.subtitle': 'Oprichter & Zaakvoerder',
     'about.founder.description.p1':
-      'Mijn vader had zijn eigen evenementenbureau. Na mijn opleiding als topsportschermer begon ik met het organiseren van scherminitiaties.',
+      'Geïnspireerd door mijn vader en zijn eigen evenementenbureau en na mijn opleiding als topschermer, begon ik met het organiseren van scherminititaties.',
     'about.founder.description.p2':
       'Het frustreerde mij dat veel teambuilding bedrijven te weinig naar de klant luisterden en steeds dezelfde activiteiten organiseerden, vaak op amateuristische wijze.',
     'about.founder.description.p3':
@@ -112,7 +112,7 @@ export const ui = {
 
     // About Values
     'about.values.title': 'Onze Waarden',
-    'about.values.subtitle': 'Bij ActionMaker streven we naar excellentie in alles wat we doen',
+    'about.values.subtitle': 'Bij Action Maker streven we naar excellentie in alles wat we doen',
     'about.values.passie.title': 'Passie',
     'about.values.passie.description':
       'Wij zijn gepassioneerd door teambuilding en dat merk je aan alles wat we doen',
@@ -134,14 +134,14 @@ export const ui = {
     'about.cta.call': 'Of bel ons direct op',
 
     // Contact Info
-    'contact.title': 'Neem contact met ons op',
+    'contact.title': 'Neem vandaag nog contact met ons op',
     'contact.description':
       'Wij helpen je graag bij het organiseren van je teambuilding. Neem vandaag nog contact met ons op.',
     'contact.read-more': 'Lees meer over ons',
     'contact.image.alt': 'Team building activiteit',
 
     // Contact Features
-    'contact.features.flexible': 'Flexibel en aanpasbaar',
+    'contact.features.flexible': 'Flexibel',
     'contact.features.personal': 'Persoonlijke aanpak',
     'contact.features.experienced': 'Ervaren animatoren',
 
