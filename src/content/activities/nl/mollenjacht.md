@@ -19,8 +19,8 @@ gallery:
     'mollenjacht/mollenjacht-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2 - 5 uur'
+groupSize: '6 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 
@@ -29,3 +29,6 @@ Verschillende teams strijden tegen elkaar om de overwinning binnen te halen.
 Maar wees gewaarschuwd, want in ieder team zit er een saboteur verscholen. Een aantal mensen spelen dubbelspel: ze proberen ongemerkt de opdrachten te saboteren.
 
 Probeer de mol steeds een stapje voor te zijn door sluwe samenwerkingsverbanden te smeden en uiteindelijk te ontmaskeren.
+Kortom, laat je meesleuren in een schitterend spel waar vertrouwen en verraad nooit zo dicht bij elkaar hebben gelegen, want je weet nooit wie je voor 100% kunt vertrouwen.
+
+De teams worden samengesteld op basis van een vooraf door jullie ingevulde online vragenlijst die een week op voorhand opgestuurd wordt. De avond voor de teambuilding krijgt de mol een sms met instructies.

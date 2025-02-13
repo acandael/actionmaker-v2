@@ -19,13 +19,16 @@ gallery:
     'mollenjacht/mollenjacht-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
+duration: '2 - 5 hours'
+groupSize: '6 - 1000 people'
 availability: 'On request'
 ---
 
 Different teams compete against each other to achieve victory.
 
-But be warned, because there's a saboteur hidden in each team. Some people are playing a double game: they try to sabotage the assignments without being noticed.
+But be warned, because in each team there is a hidden saboteur. Some people are playing a double game: they try to sabotage the missions unnoticed.
 
 Try to stay one step ahead of the mole by forging clever alliances and ultimately unmasking them.
+In short, let yourself be swept away in a brilliant game where trust and betrayal have never been so close together, because you never know who you can trust 100%.
+
+The teams are formed based on an online questionnaire that you fill out in advance, which is sent one week beforehand. The evening before the team building, the mole receives instructions via SMS.

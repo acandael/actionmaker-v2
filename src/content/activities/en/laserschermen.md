@@ -16,9 +16,9 @@ gallery:
     'laserschermen/laserschermen-7.jpg',
   ]
 categories: ['actief', 'indoor', 'outdoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
-availability: 'On request'
+duration: '30 minutes - 2 hours'
+groupSize: '4 - 150 people'
+availability: 'All year round'
 ---
 
 Do you dream of becoming a Jedi or Sith, like in the legendary Star Wars films? With lightsaber fencing, you step into the world of the Force and learn to fight with a lightsaber! This recognized fourth fencing discipline is guided by one of the first certified instructors from Flanders.

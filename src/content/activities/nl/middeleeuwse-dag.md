@@ -19,8 +19,8 @@ gallery:
     'middeleeuwse-dag/middeleeuwse-dag-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2.5 -5 uur'
+groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 

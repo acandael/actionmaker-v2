@@ -16,9 +16,9 @@ gallery:
     'moord-mystery/moord-mystery-7.jpg',
   ]
 categories: ['indoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
-availability: 'On request'
+duration: '2 - 5 hours'
+groupSize: '6 - 1000 people'
+availability: 'All year round'
 ---
 
 During this interactive game, you become detectives in a mystery full of intrigue, suspects, and hidden clues. With fun challenges that perfectly fit the Cluedo period, you'll be challenged to make connections between a weapon, location, or suspect.

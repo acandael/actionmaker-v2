@@ -4,7 +4,7 @@ description: "Le dîner mystère est un jeu de meurtre palpitant où vous devez 
 image: 'moorddiner/moorddiner-1.jpg'
 categories: ['indoor', 'cultureel', 'workshop']
 duration: '3-4 heures'
-groupSize: '20-60 personnes'
+groupSize: '6 - 500 personnes'
 availability: 'Sur demande'
 features: ['esprit', 'communiquer', 'stratégie']
 gallery:

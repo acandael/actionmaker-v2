@@ -3,8 +3,8 @@ title: 'Conduite de Moutons'
 description: "La conduite de moutons est une activité agréable pour les groupes qui souhaitent profiter de la nature et de la beauté de l'environnement."
 image: 'schapendrijven/schapendrijven-1.jpg'
 categories: ['outdoor', 'workshop']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '30 minutes - 2 hours'
+groupSize: 'Maximum 200 personnes'
 availability: 'Sur demande'
 features: ['esprit équipe', 'nature', 'animaux']
 gallery:

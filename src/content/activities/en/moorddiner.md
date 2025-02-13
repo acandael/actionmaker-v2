@@ -4,7 +4,7 @@ description: 'The murder dinner is a nerve-wracking murder game where you must u
 image: 'moorddiner/moorddiner-1.jpg'
 categories: ['cultureel']
 duration: '+/- 3h'
-groupSize: 'Max. 15 people'
+groupSize: '6 - 500 people'
 availability: 'All year round'
 features:
   - 'teamwork'

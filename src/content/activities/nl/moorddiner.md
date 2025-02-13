@@ -4,7 +4,7 @@ description: 'Het moorddiner is een zenuwslopend moordspel waarbij je de identit
 image: 'moorddiner/moorddiner-1.jpg'
 categories: ['cultureel']
 duration: '+/- 3u.'
-groupSize: 'Maximaal 15 personen'
+groupSize: '6 - 500 personen'
 availability: 'Het hele jaar door'
 features:
   - 'teamwork'

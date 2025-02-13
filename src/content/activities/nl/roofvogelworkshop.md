@@ -3,8 +3,8 @@ title: 'Roofvogelworkshop'
 description: 'Ervaar de emotie om oog in oog te staan met de heersers van het luchtruim.'
 image: 'roofvogelworkshop/roofvogelworkshop-1.jpg'
 categories: ['outdoor', 'workshop']
-duration: '+/- 3u.'
-groupSize: 'Minimum 8 personen'
+duration: '45 minuten - 3 uur'
+groupSize: 'Maximum 200 personen'
 availability: 'Het hele jaar door'
 features:
   - 'Demonstratie'

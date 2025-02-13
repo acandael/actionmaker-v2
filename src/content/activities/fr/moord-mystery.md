@@ -16,9 +16,9 @@ gallery:
     'moord-mystery/moord-mystery-7.jpg',
   ]
 categories: ['indoor']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
-availability: 'Sur demande'
+duration: '2 - 5 heures'
+groupSize: '6 - 1000 personnes'
+availability: "Toute l'année"
 ---
 
 Plongez dans une expérience de team building passionnante où le mystère et l'intrigue se mêlent à des défis stimulants. Dans ce jeu inspiré de Cluedo, les participants doivent résoudre un meurtre mystérieux en utilisant leurs compétences de déduction, de communication et de tir.

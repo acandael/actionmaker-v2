@@ -3,8 +3,8 @@ title: 'Sheep Herding'
 description: 'Sheep herding is an interesting activity for groups who want to enjoy nature and the beauty of the surroundings.'
 image: 'schapendrijven/schapendrijven-1.jpg'
 categories: ['outdoor', 'workshop']
-duration: '+/- 3h'
-groupSize: 'Minimum 8 people'
+duration: '30 minutes - 2 hours'
+groupSize: 'Maximum 200 people'
 availability: 'All year round'
 features:
   - 'Basic sheep herding techniques'

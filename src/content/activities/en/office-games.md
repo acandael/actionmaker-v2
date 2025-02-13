@@ -14,10 +14,12 @@ gallery:
     'office-games/office-games-2.jpg',
     'office-games/office-games-3.jpg',
     'office-games/office-games-4.jpg',
+    'office-games/office-games-5.jpg',
+    'office-games/office-games-6.jpg',
   ]
 categories: ['indoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
+duration: '2 - 5 hours'
+groupSize: '8 - 1000 people'
 availability: 'On request'
 ---
 

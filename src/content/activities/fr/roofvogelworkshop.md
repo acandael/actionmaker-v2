@@ -3,9 +3,9 @@ title: 'Atelier Rapaces'
 description: "Vivez l'émotion de vous retrouver face à face avec les maîtres des airs."
 image: 'roofvogelworkshop/roofvogelworkshop-1.jpg'
 categories: ['outdoor', 'workshop']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
-availability: 'Sur demande'
+duration: '45 minutes - 3 hours'
+groupSize: 'Maximum 200 personnes'
+availability: "Tout l'année"
 features: ['esprit équipe', 'nature', 'éducatif']
 gallery:
   [

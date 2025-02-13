@@ -3,8 +3,8 @@ title: 'Schapendrijven'
 description: 'Schapendrijven is een leuke activiteit voor groepen die graag willen genieten van de natuur en de schoonheid van de omgeving.'
 image: 'schapendrijven/schapendrijven-1.jpg'
 categories: ['outdoor', 'workshop']
-duration: '+/- 3u.'
-groupSize: 'Minimum 8 personen'
+duration: '30 minuten - 2 uur'
+groupSize: 'Maximum 200 personen'
 availability: 'Het hele jaar door'
 features:
   - 'Basistechnieken schapen drijven'

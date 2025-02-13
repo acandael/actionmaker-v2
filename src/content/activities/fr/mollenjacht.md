@@ -19,8 +19,8 @@ gallery:
     'mollenjacht/mollenjacht-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
+duration: '2 - 5 heures'
+groupSize: '6 - 1000 personnes'
 availability: 'Sur demande'
 ---
 
@@ -28,4 +28,7 @@ Différentes équipes s'affrontent pour remporter la victoire.
 
 Mais attention, car dans chaque équipe se cache un saboteur. Certaines personnes jouent un double jeu : elles tentent de saboter discrètement les missions.
 
-Essayez d'avoir toujours un coup d'avance sur la taupe en forgeant des alliances astucieuses et en la démasquant finalement.
+Essayez d'avoir toujours une longueur d'avance sur la taupe en forgeant des alliances astucieuses et en finissant par la démasquer.
+Bref, laissez-vous emporter dans un jeu fascinant où la confiance et la trahison n'ont jamais été aussi proches, car vous ne savez jamais à qui vous pouvez faire entièrement confiance.
+
+Les équipes sont constituées sur la base d'un questionnaire en ligne que vous aurez rempli une semaine à l'avance. La veille du team building, la taupe reçoit un SMS avec ses instructions.

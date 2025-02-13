@@ -16,8 +16,8 @@ gallery:
     'moord-mystery/moord-mystery-7.jpg',
   ]
 categories: ['indoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2 - 5 uur'
+groupSize: '6 -1000 personen'
 availability: 'Op aanvraag'
 ---
 

@@ -4,8 +4,8 @@ description: 'A modern and environmentally friendly variant of clay pigeon shoot
 image: 'laserkleiduifschieten/laserkleiduifschieten-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/2f13904d-494d-4441-a9e4-471d1eeb3557'
 categories: ['indoor', 'outdoor']
-duration: '2 - 3 hours'
-groupSize: '8 - 30 people'
+duration: '30 minutes - 2 hours'
+groupSize: '2 - 150 people'
 availability: 'All year round'
 features:
   - 'Professional guidance'
