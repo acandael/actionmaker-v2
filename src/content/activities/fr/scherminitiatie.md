@@ -2,6 +2,7 @@
 title: "Initiation à l'Escrime"
 description: "Sous la direction de nos instructeurs expérimentés, les participants apprennent les techniques fondamentales de l'escrime"
 image: 'scherminitiatie/scherminitiatie-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/bec895e0-71a8-46ba-b83a-4ebbbbfe4518'
 categories: ['indoor', 'outdoor', 'actief']
 duration: '30 minutes - 2.5 heures'
 groupSize: '4 - 350 personnes'

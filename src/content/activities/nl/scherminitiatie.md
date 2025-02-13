@@ -2,6 +2,7 @@
 title: 'Scherminitiatie'
 description: 'Onder begeleiding van onze ervaren instructeurs leren deelnemers de fundamentele technieken van het schermen'
 image: 'scherminitiatie/scherminitiatie-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/bec895e0-71a8-46ba-b83a-4ebbbbfe4518'
 categories: ['actief', 'indoor', 'outdoor']
 duration: '30 minuten - 2.5 uur'
 groupSize: '4 - 350 personen'

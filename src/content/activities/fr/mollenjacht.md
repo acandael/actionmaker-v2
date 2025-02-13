@@ -2,7 +2,7 @@
 title: 'La Chasse à la Taupe'
 description: 'Ce team building est basé sur la célèbre émission de télévision La Taupe'
 image: 'mollenjacht/mollenjacht-1.jpg'
-video-url: 'https://iframe.mediadelivery.net/embed/369439/8dc2dcbb-444a-4319-9000-c73a56434cf9'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/94de6955-8473-4cc6-9dd7-90bc509b858a'
 features:
   - 'La Course à la Taupe'
   - 'Quiz Chronométré'
