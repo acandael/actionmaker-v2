@@ -21,9 +21,9 @@ export const POST = async ({ request }) => {
     } = body;
 
     const data = await resend.emails.send({
-      from: 'Anthony Candaele <info@anthonycandaele.com>',
-      to: ['info@anthonycandaele.com'],
-      reply_to: email,
+      from: 'Action Maker <info@actionmaker.be>',
+      to: ['info@actionmaker.be'],
+      replyTo: email,
       subject: `Nieuwe boeking voor ${activityTitle} van ${firstName} ${lastName}`,
       react: BookingFormEmail({
         firstName,
