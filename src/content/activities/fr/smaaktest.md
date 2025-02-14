@@ -3,10 +3,14 @@ title: 'Test de Dégustation'
 description: "Pouvez-vous faire confiance à votre goût ? Qui fait le meilleur usage des sens du goût, de l'odorat et du toucher?"
 image: 'smaaktest/smaaktest-1.jpg'
 categories: ['indoor', 'culinair']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
-availability: 'Sur demande'
-features: ['esprit équipe', 'culinaire', 'divertissement']
+duration: '2 - 5 heures'
+groupSize: '8 - 1000 personnes'
+availability: "Tout l'année"
+features:
+  - "Savez-vous quelles épices vous utilisez dans vos plats ? Pouvez-vous les reconnaître sans l'étiquette ?"
+  - "Essayez d'identifier votre fromage ou vos épices préférés, uniquement au goût."
+  - 'Reconnaissez-vous votre bière ou soda préféré ? Pouvez-vous faire la différence entre Jupiler, Maes, Leffe ou Palm ? Ou entre Coca-Cola et Pepsi ?'
+  - 'Découvrez la puissance de vos sens en essayant de reconnaître différentes saveurs et odeurs.'
 gallery:
   [
     'smaaktest/smaaktest-2.jpg',
@@ -18,11 +22,8 @@ gallery:
   ]
 ---
 
-Savez-vous quelles épices vous utilisez dans vos plats ? Et pouvez-vous les reconnaître sans étiquette ?
-Achetez-vous vos épices et fromages uniquement par leur nom ou pouvez-vous les reconnaître sans étiquette ?
+Découvrez à quel point votre goût, votre odorat et votre toucher fonctionnent bien lors de ce test de dégustation amusant et stimulant ! Testez vos connaissances en matière de bière, de cola, de fromage, d'épices et plus encore. Avez-vous un sens du goût aiguisé ou préférez-vous vous fier à l'étiquette ?
 
-Quelle bière ou quel cola buvez-vous exactement ? Savez-vous si vous buvez une Jupiler, une Maes, une Leffe ou une Palm ?
+## Rendez-le encore plus amusant avec un Quiz !
 
-Avec le test de dégustation, nous vérifions dans quelle mesure vous pouvez reconnaître tout cela et à quel point votre sens du goût est développé.
-
-Tout cela peut être combiné avec un quiz amusant, original et animé sur le goût et des anecdotes sur la nourriture...
+Combinez le test de dégustation avec un quiz original et animé rempli d'anecdotes intéressantes sur la nourriture, les saveurs et les boissons. Qui en sait le plus sur l'alimentation et qui se laissera surprendre?

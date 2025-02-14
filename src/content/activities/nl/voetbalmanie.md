@@ -4,11 +4,10 @@ description: 'Beleef het EK voetbal op een geheel nieuwe manier met onze speciaa
 image: 'voetbalmanie/voetbalmanie-1.jpg'
 features:
   - 'Voetbalbowling'
-  - 'Precisieschieten'
   - 'Voetbaldarts'
   - 'Voetbalquiz'
-  - 'Mini Kicker'
-  - 'Het geheim van de monnik'
+  - 'Voetbalsnooker'
+  - 'Mini Kicker
 gallery:
   [
     'voetbalmanie/voetbalmanie-2.jpg',
@@ -19,8 +18,8 @@ gallery:
     'voetbalmanie/voetbalmanie-7.jpg',
   ]
 categories: ['indoor', 'outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2 - 5 uur'
+groupSize: '8 - 350 personen'
 availability: 'Op aanvraag'
 ---
 

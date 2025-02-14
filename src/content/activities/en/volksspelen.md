@@ -18,8 +18,8 @@ gallery:
     'volksspelen/volksspelen-7.jpg',
   ]
 categories: ['outdoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
+duration: '30 minutes - 3 hours'
+groupSize: '8 - 500 people'
 availability: 'On request'
 ---
 

@@ -5,7 +5,8 @@ image: 'teambooster/teambooster-1.jpg'
 features:
   - 'Communicatie'
   - 'Creativiteit'
-  - 'Coaching'
+  - 'Coaching in optie'
+  - 'Samenwerking'
 gallery:
   - 'teambooster/teambooster-2.jpg'
   - 'teambooster/teambooster-3.jpg'
@@ -14,8 +15,8 @@ gallery:
   - 'teambooster/teambooster-6.jpg'
   - 'teambooster/teambooster-7.jpg'
 categories: ['outdoor']
-duration: '2-3 uur'
-groupSize: '8-50 personen'
+duration: '2 - 5 uur'
+groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 

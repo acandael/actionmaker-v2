@@ -3,9 +3,9 @@ title: 'Réalité Virtuelle'
 description: "La personne qui porte le casque voit la bombe, et sur cette base, le reste de l'équipe qui a le manuel doit aider à désamorcer la bombe."
 image: 'virtual-reality/virtual-reality-1.jpg'
 categories: ['indoor', 'workshop']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
-availability: 'Sur demande'
+duration: '30 - 120 minutes'
+groupSize: '6 - 100 personnes'
+availability: "Tout l'année"
 features: ['esprit équipe', 'technologie', 'divertissement']
 gallery:
   [

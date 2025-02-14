@@ -4,8 +4,8 @@ description: 'Een hilarische activiteit waarbij deelnemers in opblaasbare sumopa
 image: 'sumoworstelen/sumoworstelen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/3c3bd7aa-e0f1-4bbf-a9b9-992b8b2afc01'
 categories: ['actief', 'indoor', 'outdoor']
-duration: '1 - 2 uur'
-groupSize: '8 - 30 personen'
+duration: '30 minuten - 90 minuten afhankelijk van fysieke conditie'
+groupSize: '8 - 50 personen'
 availability: 'Het hele jaar door'
 features:
   - 'Opblaasbare sumopakken'

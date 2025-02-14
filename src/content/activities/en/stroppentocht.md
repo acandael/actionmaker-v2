@@ -3,15 +3,18 @@ title: 'Stroppers Tour'
 description: 'This tour is made for lovers of Ghent. It is a tour through the city center of Ghent with tasks and activities.'
 image: 'stroppentocht/stroppentocht-1.jpg'
 categories: ['outdoor', 'cultureel']
-duration: '+/- 3h'
-groupSize: 'Maximum 25 participants per animator'
+duration: '2 - 5 hours'
+groupSize: '6 - 150 people'
 availability: 'All year round'
 features:
-  - 'Photo rally: Patershol'
+  - 'Photo hunt: Patershol'
   - 'Urban Golf: Vrijdagsmarkt'
+  - 'Learn Ghent expressions with semaphore alphabet'
   - 'Graffiti Spotting: Werregarenstraat'
   - 'Quiz along the way'
-  - 'Jenever tasting: Dreupelkot'
+  - 'Gin and/or fruit juice tasting'
+  - 'Optional: Extra challenges'
+  - 'Prizes for the winners!'
 gallery:
   [
     'stroppentocht/stroppentocht-2.jpg',
@@ -23,14 +26,7 @@ gallery:
   ]
 ---
 
-1. Photo Rally: Teams must find their way through the Patershol and find 10 answers in the streetscape to 10 questions they receive along the way. 10 points can be earned.
+Experience a unique and interactive team building in the heart of Ghent! In small teams, explore the city in an adventure where collaboration, speed and attention to detail will be rewarded.
 
-2. Urban Golf: Teams hit 20 times at the Artevelde statue. For each hit, half a point is earned. 10 points can be earned.
-
-3. Graffiti Spotting: Teams search for 5 Ghent and 5 Belgian symbols that can be found as graffiti in this street. 10 points can be earned.
-
-4. Jenever Tasting: Teams must recognize 5 flavors. 5 points can be earned.
-
-5. Quiz: Along the way, 5 Ghent quiz questions are asked. 5 points can be earned.
-
-In total, each team can achieve a score of 50 points. The members of the winning team win prizes.
+The team that accumulates the most points will go home with a nice reward.
+Ready to discover Ghent in a playful way? Let the battle begin!

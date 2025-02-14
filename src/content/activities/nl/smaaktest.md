@@ -1,16 +1,16 @@
 ---
 title: 'Smaaktest'
-description: 'Kan je vertrouwen op je smaak? Wie maakt er het best gebruik van smaak-, geur-, tastzin.'
+description: 'Vertrouw Jij op Je Zintuigen?'
 image: 'smaaktest/smaaktest-1.jpg'
 categories: ['indoor', 'culinair']
-duration: 'met quiz +/- 90 min, zonder quiz +/- 60 min'
-groupSize: 'Maximum 20/24 deelnemers (= 4 tafels) per animator'
-availability: 'Het hele jaar door'
+duration: '2 - 5 uur'
+groupSize: '8 - 1000 personen'
+availability: 'het hele jaar door'
 features:
-  - 'Interactieve opdrachten'
-  - 'Stad verkennen'
-  - 'Teamwork'
-  - 'Competitie-element'
+  - 'Weet je welke kruiden je gebruikt in je eten? Kun je ze herkennen zonder het etiket?'
+  - 'Probeer jouw favoriete kaas of kruiden te identificeren, puur op smaak.'
+  - 'Herken je jouw favoriete bier of frisdrank? Kun je het verschil proeven tussen Jupiler, Maes, Leffe of Palm? Of tussen Coca-Cola en Pepsi?'
+  - 'Ontdek hoe sterk jouw zintuigen zijn terwijl je verschillende smaken en geuren probeert te herkennen.'
 gallery:
   [
     'smaaktest/smaaktest-1.jpg',
@@ -23,11 +23,8 @@ gallery:
   ]
 ---
 
-Weet u welke kruiden u in het eten gebruikt. En kan u deze herkennen zonder etiket?
-Koopt u in de winkel enkel uw kruiden en kaas op naam of kan u deze herkennen zonder etiket?
+Ontdek hoe goed jouw smaak, geur en tastzin werken tijdens deze leuke en uitdagende smaaktest! Test je kennis van bier, cola, kaas, kruiden en meer. Heb jij een scherp smaakzintuig, of vertrouw je toch liever op het etiket?
 
-Welk bier of cola drinkt u nu juist? Weet u of u een Jupiler of een Maes of een Leffe of een Palm drinkt?
+## Maak het nog leuker met een Quiz!
 
-Met de smaaktest gaan wij na in hoeverre u dit alles kan herkennen en hoe sterk uw smaakzintuig is.
-
-Dit alles kan in combinatie met een leuke, originele en geanimeerde quiz over smaak, weetjes in verband met eten, ….
+Combineer de smaaktest met een originele en geanimeerde quiz boordevol leuke weetjes over eten, smaken en dranken. Wie weet het meeste over voeding en wie laat zich verrassen?

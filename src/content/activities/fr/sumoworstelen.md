@@ -4,9 +4,9 @@ description: "Une activité hilarante où les participants s'affrontent dans des
 image: 'sumoworstelen/sumoworstelen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/3c3bd7aa-e0f1-4bbf-a9b9-992b8b2afc01'
 categories: ['indoor', 'actief']
-duration: '2-3 heures'
-groupSize: '8-50 personnes'
-availability: 'Sur demande'
+duration: '30 minutes - 90 minutes selon la condition physique'
+groupSize: '8 - 50 personnes'
+availability: "Tout l'année"
 features: ['esprit équipe', 'sport', 'divertissement']
 gallery:
   [

@@ -30,7 +30,7 @@ export const ui = {
       'Een onvoorziene wijziging op het laatste moment? Geen probleem, wij zijn flexibel en kunnen jouw teambuilding aanpassen aan elke omstandigheid.',
     'features.personal.title': 'Persoonlijk',
     'features.personal.description':
-      'Action Maker staat garant voor een persoonlijke aanpak en organiseert de verschillende teambuildings zelf. Er komen dus geen onderaannemers aan te pas.',
+      'Action Maker organiseert praktisch alle activiteiten zelf en indien niet werken we met betrouwbare onderaannemers',
     'features.experienced.title': 'Ervaren animatoren',
     'features.experienced.description':
       'Al onze animatoren zijn heel ervaren en gedreven. Als ware experts begeleiden ze verschillende activiteiten.',
@@ -225,7 +225,7 @@ export const ui = {
       'Un changement imprévu à la dernière minute ? Pas de problème, nous sommes flexibles et pouvons adapter votre team building à toutes les circonstances.',
     'features.personal.title': 'Personnel',
     'features.personal.description':
-      "Contrairement à d'autres entreprises, nous ne travaillons pas avec des sous-traitants. Action Maker organise lui-même tous ses team buildings.",
+      'Action Maker organise pratiquement toutes les activités lui-même et sinon nous travaillons avec des sous-traitants fiables',
     'features.experienced.title': 'Animateurs expérimentés',
     'features.experienced.description':
       "Tous nos animateurs sont expérimentés et experts dans les activités qu'ils encadrent.",
@@ -383,7 +383,7 @@ export const ui = {
       'An unexpected last-minute change? No problem, we are flexible and can adapt your team building to any circumstances.',
     'features.personal.title': 'Personal',
     'features.personal.description':
-      'Unlike other companies, we do not work with subcontractors. Action Maker organizes all team buildings ourselves.',
+      'Action Maker organizes practically all activities in-house and when not, we work with reliable subcontractors',
     'features.experienced.title': 'Experienced Animators',
     'features.experienced.description':
       'All our animators are experienced and experts in the activities they supervise.',

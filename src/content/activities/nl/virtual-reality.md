@@ -3,8 +3,8 @@ title: 'Virtual Reality'
 description: 'De persoon die de bril aanheeft ziet de bom, op basis daarvan moet de rest van het team dat de handleiding heeft de bom helpen ontmantelen.'
 image: 'virtual-reality/virtual-reality-1.jpg'
 categories: ['indoor']
-duration: '+/- 3u.'
-groupSize: 'Maximaal 15 personen'
+duration: '30 - 120 minuten'
+groupSize: '6 - 100 personen'
 availability: 'Het hele jaar door'
 features:
   - 'teamwork'
@@ -12,7 +12,6 @@ features:
   - 'strategie'
 gallery:
   [
-    'virtual-reality/virtual-reality-1.jpg',
     'virtual-reality/virtual-reality-2.jpg',
     'virtual-reality/virtual-reality-3.jpg',
     'virtual-reality/virtual-reality-4.jpg',

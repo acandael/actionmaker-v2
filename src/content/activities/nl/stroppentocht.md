@@ -1,17 +1,20 @@
 ---
 title: 'Stroppentocht'
-description: 'Deze tocht is gemaakt voor de liefhebbers van Gent. Het is een tocht door de binnenstad van Gent met opdrachten en activiteiten.'
+description: 'Teambuilding in Gent: Ontdek, Speel & Win!'
 image: 'stroppentocht/stroppentocht-1.jpg'
 categories: ['outdoor', 'cultureel']
-duration: '+/- 3u.'
-groupSize: 'Maximum 25 deelnemers per animator'
+duration: '2 - 3 uur'
+groupSize: '6 - 150 personen'
 availability: 'Het hele jaar door'
 features:
-  - 'fotozoektocht: patershol'
-  - 'urban golf: vrijdagsmarkt'
-  - 'graffiti spotting: werregarenstraat'
-  - 'quiz onderweg'
-5. jenevers proeven: dreupelkot
+  - 'Fotozoektocht: Patershol'
+  - 'Urban Golf: Vrijdagsmarkt'
+  - 'Leer Gentse uitdrukkingen met het semafooralfabet'
+  - 'Graffiti Spotting: Werregarenstraat'
+  - 'Quiz onderweg'
+  - 'Jenevers &/of Fruitsappen proeven'
+  - 'Optioneel: Extra uitdagingen'
+  - 'Winnaars in de prijzen!'
 gallery:
   [
     'stroppentocht/stroppentocht-2.jpg',
@@ -23,14 +26,7 @@ gallery:
   ]
 ---
 
-1. Fotozoektocht: teams moeten hun weg vinden door het Patershol en onderweg 10 antwoorden vinden in het straatbeeld op 10 vragen die ze meekrijgen. 10 punten te verdienen.
+Beleef een unieke en interactieve teambuilding in het hart van Gent! In kleine teams gaan jullie op ontdekkingstocht door de stad, waarbij samenwerking, snelheid en een goed oog voor detail worden beloond.
 
-2. Urban Golf: teams slaan 20 keer naar het standbeeld van Artevelde. Per keer dat ze raak slaan verdienen ze een half punt. 10 punten te verdienen
-
-3. Graffiti Spotting: teams zoeken 5 Gentse en 5 Belgische symbolen die in dit straatje gegraffiteerd zijn. 10 punten te verdienen
-
-4. Jenevers proeven: Teams moeten 5 smaken proberen herkennen. 5 punten te verdienen
-
-5. Quiz: onderweg worden er 5 Gentse quizvragen gesteld. 5 punten te verdienen
-
-In totaal haalt elk team een score op 50 punten. De winnende teamleden vallen in de prijzen.
+Het team dat de meeste punten verzamelt, gaat naar huis met een leuke beloning.
+Klaar om Gent op een speelse manier te ontdekken? Laat de strijd beginnen!

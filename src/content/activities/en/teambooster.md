@@ -5,7 +5,8 @@ image: 'teambooster/teambooster-1.jpg'
 features:
   - 'Communication'
   - 'Creativity'
-  - 'Coaching'
+  - 'Coaching in option'
+  - 'Collaboration'
 gallery:
   - 'teambooster/teambooster-2.jpg'
   - 'teambooster/teambooster-3.jpg'
@@ -14,9 +15,9 @@ gallery:
   - 'teambooster/teambooster-6.jpg'
   - 'teambooster/teambooster-7.jpg'
 categories: ['outdoor']
-duration: '2-3 hours'
-groupSize: '8-50 people'
-availability: 'On request'
+duration: '2 - 5 hours'
+groupSize: '8 - 1000 people'
+availability: 'All year round'
 ---
 
 From challenges where communication is the only path to victory, to trials where absolute collaboration is crucial, and from tasks where good listening is essential to assignments where team members must coach each other.

@@ -3,14 +3,14 @@ title: 'Taste Test'
 description: 'Can you trust your taste buds? Who makes the best use of taste, smell, and touch?'
 image: 'smaaktest/smaaktest-1.jpg'
 categories: ['indoor', 'culinair']
-duration: 'with quiz +/- 90 min, without quiz +/- 60 min'
-groupSize: 'Maximum 20/24 participants (= 4 tables) per animator'
+duration: '2 - 5 hours'
+groupSize: '8 - 1000 participants'
 availability: 'All year round'
 features:
-  - 'Interactive tasks'
-  - 'City exploration'
-  - 'Teamwork'
-  - 'Competitive element'
+  - 'Do you know which spices you use in your dishes? Can you recognize them without the label?'
+  - 'Try to identify your favorite cheese or spices by taste alone.'
+  - 'Can you recognize your favorite beer or soda? Can you tell the difference between Jupiler, Maes, Leffe or Palm? Or between Coca-Cola and Pepsi?'
+  - 'Discover the power of your senses by trying to recognize different flavors and aromas.'
 gallery:
   [
     'smaaktest/smaaktest-1.jpg',
@@ -23,11 +23,8 @@ gallery:
   ]
 ---
 
-Do you know which spices you use in your food? And can you recognize them without a label?
-Do you buy your spices and cheese in the store just by name, or can you recognize them without a label?
+Discover how well your taste, smell and touch senses work during this fun and challenging taste test! Test your knowledge of beer, cola, cheese, spices and more. Do you have a sharp sense of taste, or do you prefer to rely on the label?
 
-Which beer or cola do you actually drink? Do you know if you're drinking a Jupiler, a Maes, a Leffe, or a Palm?
+## Make it Even More Fun with a Quiz!
 
-With the taste test, we'll check how well you can recognize all of this and how developed your sense of taste is.
-
-All of this can be combined with an entertaining, original, and animated quiz about taste, food facts, and much more.
+Combine the taste test with an original and animated quiz full of fun facts about food, flavors and drinks. Who knows the most about food and who will be surprised?
