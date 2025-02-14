@@ -59,25 +59,20 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
   });
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    try {
-      const response = await fetch('/api/booking', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
+    const promise = fetch('/api/booking', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
 
-      if (!response.ok) throw new Error('Something went wrong');
-
-      form.reset();
-      toast('Thank you for your request!', {
-        description: 'We will contact you as soon as possible.',
-      });
-    } catch (error) {
-      console.error('Error:', error);
-      toast('Something went wrong', {
-        description: 'Please try again later or contact us directly.',
-      });
-    }
+    toast.promise(promise, {
+      loading: 'Sending request...',
+      success: () => {
+        form.reset();
+        return 'Thank you for your request! We will contact you within 24 hours.';
+      },
+      error: 'Something went wrong. Please try again later or contact us directly.',
+    });
   };
 
   return (

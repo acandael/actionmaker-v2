@@ -51,6 +51,10 @@ export function ContactForm() {
 
   const onSubmit = async (data: FormData) => {
     setIsPending(true);
+
+    // Show immediate toast for better UX
+    const toastId = toast.loading('Bericht verzenden...');
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -61,25 +65,26 @@ export function ContactForm() {
       });
 
       const responseData = await response.json();
-      console.log('API Response:', responseData);
 
       if (!response.ok) {
         throw new Error(responseData.error || 'Er is iets misgegaan');
       }
 
+      // Update the loading toast with success message
       toast.success('Bedankt voor je bericht!', {
-        description: (
-          <div className="mt-2 text-muted-foreground">
-            <p>We hebben je aanvraag goed ontvangen en nemen binnen 24 uur contact met je op.</p>
-          </div>
-        ),
+        id: toastId,
+        description:
+          'We hebben je aanvraag goed ontvangen en nemen binnen 24 uur contact met je op.',
         duration: 5000,
       });
 
       form.reset();
     } catch (error) {
       console.error('Form submission error:', error);
+
+      // Update the loading toast with error message
       toast.error('Er is iets misgegaan', {
+        id: toastId,
         description: 'Probeer het later opnieuw of neem contact met ons op.',
         duration: 5000,
       });

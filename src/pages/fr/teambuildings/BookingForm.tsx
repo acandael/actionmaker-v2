@@ -58,25 +58,20 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
   });
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    try {
-      const response = await fetch('/api/booking', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
+    const promise = fetch('/api/booking', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
 
-      if (!response.ok) throw new Error('Une erreur est survenue');
-
-      form.reset();
-      toast('Merci pour votre demande!', {
-        description: 'Nous vous contacterons dans les 24 heures.',
-      });
-    } catch (error) {
-      console.error('Error:', error);
-      toast('Une erreur est survenue', {
-        description: 'Veuillez réessayer plus tard ou contactez-nous.',
-      });
-    }
+    toast.promise(promise, {
+      loading: 'Envoi de la demande...',
+      success: () => {
+        form.reset();
+        return 'Merci pour votre demande! Nous vous contacterons dans les 24 heures.';
+      },
+      error: 'Une erreur est survenue. Veuillez réessayer plus tard ou nous contacter directement.',
+    });
   };
 
   return (
