@@ -7,7 +7,7 @@ features:
   - 'Voetbaldarts'
   - 'Voetbalquiz'
   - 'Voetbalsnooker'
-  - 'Mini Kicker
+  - 'Mini Kicker'
 gallery:
   [
     'voetbalmanie/voetbalmanie-2.jpg',
