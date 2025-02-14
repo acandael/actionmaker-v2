@@ -13,7 +13,6 @@ features:
   - 'Ontdek hoe sterk jouw zintuigen zijn terwijl je verschillende smaken en geuren probeert te herkennen.'
 gallery:
   [
-    'smaaktest/smaaktest-1.jpg',
     'smaaktest/smaaktest-2.jpg',
     'smaaktest/smaaktest-3.jpg',
     'smaaktest/smaaktest-4.jpg',
