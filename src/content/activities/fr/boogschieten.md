@@ -2,6 +2,7 @@
 title: "Tir à l'Arc"
 description: "Le tir à l'arc est un sport classique qui nécessite concentration, technique et précision."
 image: 'boogschieten/boogschieten-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/d6b4ee1e-ce6c-4497-b7ed-dbabbcd10e10'
 features:
   - 'instructeurs expérimentés'
   - 'techniques de base'

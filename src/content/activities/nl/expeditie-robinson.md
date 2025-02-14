@@ -2,6 +2,7 @@
 title: 'Expeditie Robinson'
 description: 'Het Expeditie Robinson-spel, geïnspireerd op het gelijknamige televisieprogramma'
 image: 'expeditie-robinson/expeditie-robinson-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/6b95fb48-c267-4bdf-8039-d0a69d6e926d'
 features:
   - 'teambuilding'
   - 'survival skills'
