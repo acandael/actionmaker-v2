@@ -17,9 +17,9 @@ gallery:
     'voetbalmanie/voetbalmanie-6.jpg',
     'voetbalmanie/voetbalmanie-7.jpg',
   ]
-categories: ['indoor', 'outdoor']
-duration: '2 - 5 uur'
-groupSize: '8 - 350 personen'
+categories: ['actief', 'outdoor']
+duration: '30 minuten - 2 uur'
+groupSize: '8 - 200 personen'
 availability: 'Op aanvraag'
 ---
 
