@@ -27,16 +27,18 @@ export function FAQAccordionReact({ faqs }: Props) {
           value={`item-${index}`}
           className="border-none rounded-xl bg-white shadow-md hover:shadow-xl data-[state=open]:bg-red-50/50 transition-all duration-300"
         >
-          <AccordionTrigger className="px-6 py-4 rounded-xl text-left hover:no-underline data-[state=open]:rounded-b-none group transition-all duration-300">
-            <div className="flex items-center gap-4">
+          <AccordionTrigger className="flex flex-row items-start gap-4 px-6 py-4 rounded-xl text-left hover:no-underline data-[state=open]:rounded-b-none group transition-all duration-300">
+            <div className="flex items-center gap-4 flex-1">
               <PlusCircle className="h-5 w-5 text-red-500 shrink-0 transition-transform duration-300 group-data-[state=open]:rotate-45" />
               <span className="text-lg font-medium group-hover:text-red-600 transition-colors duration-300">
                 {item.data.question}
               </span>
             </div>
           </AccordionTrigger>
-          <AccordionContent className="px-6 text-muted-foreground">
-            <div className="pl-9 py-4">{item.data.answer}</div>
+          <AccordionContent className="overflow-hidden">
+            <div className="px-6 pb-4 pt-2">
+              <div className="pl-9 text-muted-foreground">{item.data.answer}</div>
+            </div>
           </AccordionContent>
         </AccordionItem>
       ))}
