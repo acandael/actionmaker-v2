@@ -9,7 +9,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const stats = [
-  { value: '1000+', label: t('cta.klanten') },
+  { value: '10000+', label: t('cta.klanten') },
   { value: '50+', label: t('cta.activiteiten') },
   { value: '10+', label: t('cta.jaar') },
   { value: '98%', label: t('cta.reviews') },
@@ -21,12 +21,11 @@ const getLocalizedPath = (path: string) => {
 };
 ---
 
-<section class="relative py-32 px-4 overflow-hidden bg-linear-to-b from-background to-muted/50">
+<section class="relative py-32 px-4 overflow-hidden bg-zinc-50">
   {/* Background Pattern */}
-  <div class="absolute inset-0 opacity-40">
-    <div class="absolute inset-0 bg-grid-white/10"></div>
-    <div class="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent">
-    </div>
+  <div class="absolute inset-0">
+    <div class="absolute inset-0 bg-grid-pattern mix-blend-multiply opacity-[0.15]"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-zinc-50 via-zinc-50/80 to-zinc-50"></div>
   </div>
 
   <div class="relative max-w-7xl mx-auto">
@@ -51,7 +50,7 @@ const getLocalizedPath = (path: string) => {
           {
             stats.map(({ value, label }) => (
               <div class="space-y-2">
-                <div class="text-3xl font-bold text-red-600">{value}</div>
+                <div class="text-3xl font-bold text-green-600">{value}</div>
                 <div class="text-muted-foreground">{label}</div>
               </div>
             ))
@@ -83,7 +82,7 @@ const getLocalizedPath = (path: string) => {
             height={600}
             class="absolute inset-0 w-full h-full object-cover"
           />
-          <div class="absolute inset-0 bg-linear-to-tr from-black/40 to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent"></div>
         </div>
 
         {/* Decorative Elements */}
@@ -95,7 +94,8 @@ const getLocalizedPath = (path: string) => {
 </section>
 
 <style>
-  .bg-grid-white\/10 {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M1 0h2v2H1V0zm4 0h2v2H5V0zm4 0h2v2H9V0zm4 0h2v2h-2V0zm4 0h2v2h-2V0zm4 0h2v2h-2V0zM1 4h2v2H1V4zm4 0h2v2H5V4zm4 0h2v2H9V4zm4 0h2v2h-2V4zm4 0h2v2h-2V4zm4 0h2v2h-2V4zM1 8h2v2H1V8zm4 0h2v2H5V8zm4 0h2v2H9V8zm4 0h2v2h-2V8zm4 0h2v2h-2V8zm4 0h2v2h-2V8zM1 12h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM1 16h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM1 20h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z'/%3E%3C/svg%3E");
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath stroke='%23000000' stroke-opacity='0.1' stroke-width='1' d='M0 0h40M0 40h40M0 0v40M40 0v40'/%3E%3C/g%3E%3C/svg%3E");
   }
 </style>
