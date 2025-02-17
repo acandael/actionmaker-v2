@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 import vercel from '@astrojs/vercel/serverless';
 import { fileURLToPath } from 'url';
+import tailwindcss from '@tailwindcss/vite';
 
 import robots from 'astro-robots';
 
@@ -25,7 +25,7 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
-  integrations: [tailwind(), react(), robots()],
+  integrations: [react(), robots()],
   prefetch: false,
   vite: {
     resolve: {
@@ -35,5 +35,6 @@ export default defineConfig({
         '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
       },
     },
+    plugins: [tailwindcss()],
   },
 });
