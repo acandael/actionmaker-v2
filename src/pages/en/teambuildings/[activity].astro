@@ -65,7 +65,7 @@ const images = activity.data.gallery || [];
         class="w-full h-full object-cover"
         quality="high"
       />
-      <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-transparent">
+      <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/60 to-transparent">
       </div>
     </div>
 
@@ -91,7 +91,7 @@ const images = activity.data.gallery || [];
                 <ul class="space-y-3">
                   {activity.data.features.map((feature) => (
                     <li class="flex items-center gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" />
                       <span>{feature}</span>
                     </li>
                   ))}

@@ -15,7 +15,7 @@ const t = useTranslations(lang);
     <Card className="p-8 md:p-12">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         {/* Image */}
-        <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+        <div class="relative aspect-4/3 rounded-xl overflow-hidden">
           <Image
             src={founderImage}
             alt={t('about.founder.title')}
@@ -23,7 +23,7 @@ const t = useTranslations(lang);
             height={425}
             class="w-full h-full object-cover"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          <div class="absolute inset-0 bg-linear-to-t from-black/30 to-transparent"></div>
         </div>
 
         {/* Content */}

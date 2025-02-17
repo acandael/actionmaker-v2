@@ -24,11 +24,11 @@ const features = [
 ];
 ---
 
-<section class="relative py-32 px-4 bg-gradient-to-b from-background to-muted/50 overflow-hidden">
+<section class="relative py-32 px-4 bg-linear-to-b from-background to-muted/50 overflow-hidden">
   {/* Background Pattern */}
   <div class="absolute inset-0 opacity-40">
     <div class="absolute inset-0 bg-grid-white/10"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent">
+    <div class="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent">
     </div>
   </div>
 
@@ -45,7 +45,7 @@ const features = [
       {
         features.map((feature, index) => (
           <div
-            class="group relative p-8 rounded-2xl bg-white hover:bg-gradient-to-b hover:from-white hover:to-red-50/50 shadow-md hover:shadow-xl transition-all duration-500 ease-out"
+            class="group relative p-8 rounded-2xl bg-white hover:bg-linear-to-b hover:from-white hover:to-red-50/50 shadow-md hover:shadow-xl transition-all duration-500 ease-out"
             data-feature
             data-index={index}
           >
@@ -64,7 +64,7 @@ const features = [
             <p class="text-muted-foreground leading-relaxed">{feature.description}</p>
 
             {/* Decorative Elements */}
-            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500/0 to-transparent group-hover:via-red-500/40 transition-all duration-700" />
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-red-500/0 to-transparent group-hover:via-red-500/40 transition-all duration-700" />
             <div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-transparent group-hover:border-red-500/20 transition-all duration-500" />
             <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-transparent group-hover:border-red-500/20 transition-all duration-500" />
           </div>

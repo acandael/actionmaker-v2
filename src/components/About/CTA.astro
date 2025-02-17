@@ -7,11 +7,11 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<section class="relative py-32 px-4 overflow-hidden bg-gradient-to-b from-background to-muted/50">
+<section class="relative py-32 px-4 overflow-hidden bg-linear-to-b from-background to-muted/50">
   {/* Background Pattern */}
   <div class="absolute inset-0 opacity-40">
     <div class="absolute inset-0 bg-grid-white/10"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent">
+    <div class="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent">
     </div>
   </div>
 

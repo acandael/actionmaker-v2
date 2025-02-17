@@ -29,7 +29,7 @@ const t = useTranslations(lang);
         return (
           <button
             type="button"
-            class="relative aspect-[4/3] rounded-lg overflow-hidden group cursor-zoom-in"
+            class="relative aspect-4/3 rounded-lg overflow-hidden group cursor-zoom-in"
             data-gallery-item
             data-index={index}
           >
@@ -57,7 +57,7 @@ const t = useTranslations(lang);
     {/* Close button */}
     <button
       type="button"
-      class="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-[70]"
+      class="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-70"
       id="close-modal"
     >
       <svg
@@ -75,7 +75,7 @@ const t = useTranslations(lang);
     {/* Previous button */}
     <button
       type="button"
-      class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors bg-black/50 p-2 rounded-full z-[70]"
+      class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors bg-black/50 p-2 rounded-full z-70"
       id="prev-button"
     >
       <svg
@@ -93,7 +93,7 @@ const t = useTranslations(lang);
     {/* Next button */}
     <button
       type="button"
-      class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors bg-black/50 p-2 rounded-full z-[70]"
+      class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors bg-black/50 p-2 rounded-full z-70"
       id="next-button"
     >
       <svg
@@ -108,7 +108,7 @@ const t = useTranslations(lang);
       </svg>
     </button>
 
-    <div class="w-full max-w-6xl z-[60]">
+    <div class="w-full max-w-6xl z-60">
       <div class="relative aspect-auto max-h-[90vh] rounded-lg overflow-hidden">
         <Image
           src={imageImports[`/src/assets/activities/${images[0]}`].default}

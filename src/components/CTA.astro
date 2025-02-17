@@ -21,11 +21,11 @@ const getLocalizedPath = (path: string) => {
 };
 ---
 
-<section class="relative py-32 px-4 overflow-hidden bg-gradient-to-b from-background to-muted/50">
+<section class="relative py-32 px-4 overflow-hidden bg-linear-to-b from-background to-muted/50">
   {/* Background Pattern */}
   <div class="absolute inset-0 opacity-40">
     <div class="absolute inset-0 bg-grid-white/10"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent">
+    <div class="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent">
     </div>
   </div>
 
@@ -74,7 +74,7 @@ const getLocalizedPath = (path: string) => {
       {/* Right Image */}
       <div class="relative">
         <div
-          class="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500"
+          class="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500"
         >
           <Image
             src={ctaImage}
@@ -83,7 +83,7 @@ const getLocalizedPath = (path: string) => {
             height={600}
             class="absolute inset-0 w-full h-full object-cover"
           />
-          <div class="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent"></div>
+          <div class="absolute inset-0 bg-linear-to-tr from-black/40 to-transparent"></div>
         </div>
 
         {/* Decorative Elements */}
