@@ -59,27 +59,20 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
   });
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    try {
-      const response = await fetch('/api/booking', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
+    const promise = fetch('/api/booking', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
 
-      if (!response.ok) throw new Error('Er is iets misgegaan');
-
-      form.reset();
-      toast.success('Uw aanvraag is succesvol verzonden. We nemen spoedig contact met u op.', {
-        duration: 5000,
-        position: 'top-center',
-      });
-    } catch (error) {
-      console.error('Error:', error);
-      toast.error('Er is iets misgegaan. Probeer het later opnieuw.', {
-        duration: 5000,
-        position: 'top-center',
-      });
-    }
+    toast.promise(promise, {
+      loading: 'Aanvraag verzenden...',
+      success: () => {
+        form.reset();
+        return 'Bedankt voor je aanvraag! We nemen binnen 24 uur contact met je op.';
+      },
+      error: 'Er is iets misgegaan. Probeer het later opnieuw of neem contact met ons op.',
+    });
   };
 
   return (
