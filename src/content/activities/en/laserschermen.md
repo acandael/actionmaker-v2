@@ -2,6 +2,7 @@
 title: 'Lightsaber Fencing'
 description: 'Become a True Padawan!'
 image: 'laserschermen/laserschermen-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/102cb4a2-6345-40dd-a2e1-37ed57c43929'
 features:
   - 'For Star Wars fans and adventurers'
   - 'Active and fun'

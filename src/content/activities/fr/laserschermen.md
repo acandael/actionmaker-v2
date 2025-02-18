@@ -2,6 +2,7 @@
 title: 'Escrime au Sabre Laser'
 description: 'Devenez un Véritable Padawan !'
 image: 'laserschermen/laserschermen-1.jpg'
+video-url: 'https://iframe.mediadelivery.net/embed/369439/102cb4a2-6345-40dd-a2e1-37ed57c43929'
 features:
   - 'Pour les fans de Star Wars et les aventuriers'
   - 'Actif et amusant'
