@@ -156,7 +156,7 @@ export const ui = {
     'activity.video-title': 'Video',
 
     // Team Activities
-    'teamActivities.title': 'Welk type teambuilding zoek je?',
+    'teamActivities.title': 'Welk type activiteit zoek je?',
     'teamActivities.subtitle': 'Maak je keuze',
 
     // Footer translations
@@ -314,7 +314,7 @@ export const ui = {
     'activity.video-title': 'Vidéo',
 
     // Team Activities
-    'teamActivities.title': 'Quel type de team building recherchez-vous ?',
+    'teamActivities.title': "Quel type d'activité recherchez-vous ?",
     'teamActivities.subtitle': 'Faites votre choix',
 
     // Footer translations
@@ -470,7 +470,7 @@ export const ui = {
     'activity.video-title': 'Video',
 
     // Team Activities
-    'teamActivities.title': 'What type of team building are you looking for?',
+    'teamActivities.title': 'What type of activity are you looking for?',
     'teamActivities.subtitle': 'Make your choice',
 
     // Footer translations
