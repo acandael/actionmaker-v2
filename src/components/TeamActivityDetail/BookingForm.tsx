@@ -263,7 +263,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
 
           <p className="text-sm text-center text-muted-foreground">
             Door het formulier te versturen ga je akkoord met onze{' '}
-            <a href="#" className="text-red-600 hover:text-red-700 underline">
+            <a href="/terms-of-service" className="text-red-600 hover:text-red-700 underline">
               algemene voorwaarden
             </a>
           </p>

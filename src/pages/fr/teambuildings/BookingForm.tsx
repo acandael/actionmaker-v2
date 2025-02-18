@@ -263,7 +263,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
 
           <p className="text-sm text-center text-muted-foreground">
             En envoyant le formulaire, vous acceptez nos{' '}
-            <a href="#" className="text-red-600 hover:text-red-700 underline">
+            <a href="/fr/terms-of-service" className="text-red-600 hover:text-red-700 underline">
               conditions générales
             </a>
           </p>

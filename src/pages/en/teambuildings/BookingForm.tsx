@@ -260,6 +260,12 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </span>
           </Button>
+          <p className="text-sm text-center text-muted-foreground">
+            By submitting this form, you agree to our{' '}
+            <a href="/en/terms-of-service" className="text-red-600 hover:text-red-700 underline">
+              terms of service
+            </a>
+          </p>
         </form>
       </Form>
     </Card>
