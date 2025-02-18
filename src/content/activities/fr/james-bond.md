@@ -15,7 +15,7 @@ gallery:
     'james-bond/james-bond-6.jpg',
     'james-bond/james-bond-7.jpg',
   ]
-categories: ['indoor']
+categories: ['indoor', 'outdoor', 'innovaction']
 duration: '2 - 5 heures'
 groupSize: '8 - 1000 personnes'
 availability: 'Sur demande'

@@ -16,7 +16,7 @@ gallery:
     'boogschieten/boogschieten-6.jpg',
     'boogschieten/boogschieten-7.jpg',
   ]
-categories: ['outdoor', 'actief']
+categories: ['outdoor']
 duration: '30 minutes - 2 hours'
 groupSize: '4 - 200 people'
 availability: 'On request'

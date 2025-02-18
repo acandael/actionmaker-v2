@@ -15,7 +15,7 @@ gallery:
     'fort-boyard/fort-boyard-6.jpg',
     'fort-boyard/fort-boyard-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['outdoor', 'actief']
 duration: '2 - 5 heures'
 groupSize: '8 - 100 personnes'
 availability: 'Sur demande'

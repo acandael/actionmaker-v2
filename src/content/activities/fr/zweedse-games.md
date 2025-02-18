@@ -16,7 +16,7 @@ gallery:
     'zweedse-games/zweedse-games-6.jpg',
     'zweedse-games/zweedse-games-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['outdoor', 'actief']
 duration: '2.5 - 5 heures'
 groupSize: '8 - 500 personnes'
 availability: 'Sur demande'

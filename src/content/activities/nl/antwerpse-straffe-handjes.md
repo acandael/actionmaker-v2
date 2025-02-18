@@ -16,7 +16,7 @@ gallery:
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-6.jpg',
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-7.jpg',
   ]
-categories: ['cultureel']
+categories: ['city-games']
 duration: '2-3 uur'
 groupSize: '2-100 personen'
 availability: 'Op aanvraag'

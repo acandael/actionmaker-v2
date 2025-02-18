@@ -14,6 +14,7 @@ const categoryMapping: Record<string, string> = {
   active: 'actief',
   culinary: 'culinair',
   cultural: 'cultureel',
+  innovaction: 'innovaction',
 };
 
 // Get categories and filter by locale
@@ -29,8 +30,8 @@ const categories = allCategories
 // Create URL based on locale
 const getCategoryUrl = (categoryId: string) => {
   const baseUrl = '/teambuildings';
-  // Map English category IDs to Dutch ones for the query parameter
-  const mappedCategoryId = lang === 'en' ? categoryMapping[categoryId] || categoryId : categoryId;
+  // Map category IDs consistently regardless of language
+  const mappedCategoryId = categoryMapping[categoryId] || categoryId;
   const queryParam = `?category=${mappedCategoryId}#activities-section`;
 
   // Don't include locale prefix for default locale (nl)

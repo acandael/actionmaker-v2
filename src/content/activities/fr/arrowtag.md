@@ -12,7 +12,7 @@ gallery:
     'arrow-tag/arrow-tag-5.jpg',
     'arrow-tag/arrow-tag-6.jpg',
   ]
-categories: ['actief', 'outdoor']
+categories: ['actief', 'indoor', 'outdoor']
 duration: '30 minutes - 2 heures'
 groupSize: '4-100 people'
 availability: 'Sur demande'

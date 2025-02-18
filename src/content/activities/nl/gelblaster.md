@@ -16,7 +16,7 @@ gallery:
     'gelblaster/gelblaster-6.jpg',
     'gelblaster/gelblaster-7.jpg',
   ]
-categories: ['outdoor', 'indoor']
+categories: ['outdoor', 'actief']
 duration: '45 minuten - 2 uur'
 groupSize: '8 - 200 personen'
 availability: 'Op aanvraag'

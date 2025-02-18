@@ -15,7 +15,7 @@ gallery:
     'blaaspijpschieten/blaaspijpschieten-6.jpg',
     'blaaspijpschieten/blaaspijpschieten-7.jpg',
   ]
-categories: ['outdoor', 'actief']
+categories: ['outdoor', 'indoor']
 duration: '30 minutes - 2 hours'
 groupSize: '4 - 200 people'
 availability: 'On request'

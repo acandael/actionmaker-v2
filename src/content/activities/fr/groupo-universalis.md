@@ -15,7 +15,7 @@ gallery:
     'groupo-universalis/groupo-universalis-6.jpg',
     'groupo-universalis/groupo-universalis-7.jpg',
   ]
-categories: ['indoor']
+categories: ['indoor', 'outdoor']
 duration: '2 - 3 heures'
 groupSize: '8 - 1000 personnes'
 availability: 'Sur demande'

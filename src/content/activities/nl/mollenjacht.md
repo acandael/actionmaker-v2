@@ -18,7 +18,7 @@ gallery:
     'mollenjacht/mollenjacht-6.jpg',
     'mollenjacht/mollenjacht-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['outdoor', 'indoor']
 duration: '2 - 5 uur'
 groupSize: '6 - 1000 personen'
 availability: 'Op aanvraag'

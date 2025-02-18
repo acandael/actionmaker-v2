@@ -16,7 +16,7 @@ gallery:
     'expeditie-robinson/expeditie-robinson-6.jpg',
     'expeditie-robinson/expeditie-robinson-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['outdoor', 'actief']
 duration: '2 - 5 hours'
 groupSize: '8 - 1000 people'
 availability: 'On request'

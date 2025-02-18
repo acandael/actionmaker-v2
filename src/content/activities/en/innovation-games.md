@@ -18,7 +18,7 @@ gallery:
     'innovation-games/innovation-games-6.jpg',
     'innovation-games/innovation-games-7.jpg',
   ]
-categories: ['indoor', 'outdoor']
+categories: ['indoor', 'innovaction']
 duration: '2 - 5 hours'
 groupSize: '4 - 1000 people'
 availability: 'On request'

@@ -15,7 +15,7 @@ gallery:
     'indoor-lasershooting/indoorlasershooting-6.jpg',
     'indoor-lasershooting/indoorlasershooting-7.jpg',
   ]
-categories: ['indoor']
+categories: ['indoor', 'innovaction']
 duration: '30 minuten - 2 uur'
 groupSize: '8-30 personen'
 availability: 'Op aanvraag'

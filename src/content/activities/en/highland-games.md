@@ -15,7 +15,7 @@ gallery:
     'highland-games/highland-games-6.jpg',
     'highland-games/highland-games-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['outdoor', 'actief']
 duration: '2 - 5 hours'
 groupSize: '8 - 1000 people'
 availability: 'On request'

@@ -15,7 +15,7 @@ gallery:
     'funny-games/funny-games-6.jpg',
     'funny-games/funny-games-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['outdoor', 'actief']
 duration: '2 - 5 uur'
 groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'

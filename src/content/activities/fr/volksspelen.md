@@ -17,7 +17,7 @@ gallery:
     'volksspelen/volksspelen-6.jpg',
     'volksspelen/volksspelen-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['outdoor', 'indoor']
 duration: '30 minutes - 3 heures'
 groupSize: '8 - 500 personnes'
 availability: 'Sur demande'

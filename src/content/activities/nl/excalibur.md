@@ -15,7 +15,7 @@ gallery:
     'excalibur/excalibur-6.jpg',
     'excalibur/excalibur-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['outdoor', 'actief']
 duration: '2 - 5 uur'
 groupSize: '8 - 500 personen'
 availability: 'Op aanvraag'

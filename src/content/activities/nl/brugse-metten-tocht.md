@@ -18,7 +18,7 @@ gallery:
     'brugse-metten-tocht/brugse-metten-tocht-6.jpg',
     'brugse-metten-tocht/brugse-metten-tocht-7.jpg',
   ]
-categories: ['cultureel', 'outdoor']
+categories: ['city-games']
 duration: '2-3 uur'
 groupSize: '2 - 200 personen'
 availability: 'Op aanvraag'

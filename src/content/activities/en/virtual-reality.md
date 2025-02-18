@@ -2,7 +2,7 @@
 title: 'Virtual Reality'
 description: 'The person wearing the headset sees the bomb, based on which the rest of the team has the instructions to defuse the bomb.'
 image: 'virtual-reality/virtual-reality-1.jpg'
-categories: ['indoor']
+categories: ['indoor', 'innovaction']
 duration: '30 - 120 minutes'
 groupSize: '6 - 100 people'
 availability: 'All year round'

@@ -15,7 +15,7 @@ gallery:
     'laserschermen/laserschermen-6.jpg',
     'laserschermen/laserschermen-7.jpg',
   ]
-categories: ['actief', 'indoor', 'outdoor']
+categories: ['actief', 'indoor', 'outdoor', 'innovaction']
 duration: '30 minutes - 2 heurs'
 groupSize: '4 - 150 personnes'
 availability: "Toute l'année"

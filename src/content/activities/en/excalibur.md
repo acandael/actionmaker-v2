@@ -15,7 +15,7 @@ gallery:
     'excalibur/excalibur-6.jpg',
     'excalibur/excalibur-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['outdoor', 'actief']
 duration: '2 - 5 hours'
 groupSize: '8 - 500 people'
 availability: 'On request'

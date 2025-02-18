@@ -16,7 +16,7 @@ gallery:
     'mobiele-escape-room/mobiele-escape-room-6.jpg',
     'mobiele-escape-room/mobiele-escape-room-7.jpg',
   ]
-categories: ['outdoor', 'indoor']
+categories: ['innovaction']
 duration: '30 minutes - 2 heures'
 groupSize: '2 - 250 personnes'
 availability: 'Sur demande'

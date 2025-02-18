@@ -12,7 +12,7 @@ gallery:
   - 'space-games/space-games-4.jpg'
   - 'space-games/space-games-5.jpg'
   - 'space-games/space-games-6.jpg'
-categories: ['indoor']
+categories: ['indoor', 'innovaction']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'

@@ -16,7 +16,7 @@ gallery:
     'dronevliegen/dronevliegen-6.jpg',
     'dronevliegen/dronevliegen-7.jpg',
   ]
-categories: ['outdoor', 'indoor']
+categories: ['outdoor', 'indoor', 'innovaction']
 duration: '1 - 2.5 hours'
 groupSize: '8 - 250 people'
 availability: 'On request'

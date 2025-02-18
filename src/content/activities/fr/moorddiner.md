@@ -2,7 +2,7 @@
 title: 'Dîner Mystère'
 description: "Le dîner mystère est un jeu de meurtre palpitant où vous devez découvrir l'identité d'un meurtrier impitoyable."
 image: 'moorddiner/moorddiner-1.jpg'
-categories: ['indoor', 'cultureel', 'workshop']
+categories: ['indoor']
 duration: '3-4 heures'
 groupSize: '6 - 500 personnes'
 availability: 'Sur demande'

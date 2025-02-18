@@ -3,7 +3,7 @@ title: 'Lutte Sumo'
 description: "Une activité hilarante où les participants s'affrontent dans des costumes de sumo gonflables."
 image: 'sumoworstelen/sumoworstelen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/3c3bd7aa-e0f1-4bbf-a9b9-992b8b2afc01'
-categories: ['indoor', 'actief']
+categories: ['indoor', 'outdoor', 'actief']
 duration: '30 minutes - 90 minutes selon la condition physique'
 groupSize: '8 - 50 personnes'
 availability: "Tout l'année"

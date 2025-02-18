@@ -17,7 +17,7 @@ gallery:
     'chain-reaction/chain-reaction-6.jpg',
     'chain-reaction/chain-reaction-7.jpg',
   ]
-categories: ['indoor', 'outdoor']
+categories: ['indoor']
 duration: '2 - 5 uur'
 groupSize: '6 - 800 personen'
 availability: 'Op aanvraag'

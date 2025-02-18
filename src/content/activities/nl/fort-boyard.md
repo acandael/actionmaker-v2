@@ -15,7 +15,7 @@ gallery:
     'fort-boyard/fort-boyard-6.jpg',
     'fort-boyard/fort-boyard-7.jpg',
   ]
-categories: ['outdoor']
+categories: ['actief']
 duration: '2 - 5 uur'
 groupSize: '8 - 100 personen'
 availability: 'Op aanvraag'

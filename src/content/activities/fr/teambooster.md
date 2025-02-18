@@ -14,7 +14,7 @@ gallery:
   - 'teambooster/teambooster-5.jpg'
   - 'teambooster/teambooster-6.jpg'
   - 'teambooster/teambooster-7.jpg'
-categories: ['outdoor']
+categories: ['outdoor', 'indoor']
 duration: '2 - 5 heures'
 groupSize: '8 - 1000 personnes'
 availability: "Tout l'année"
