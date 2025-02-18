@@ -23,9 +23,9 @@ const activityTitles = new Map(
 
 <footer class="bg-black text-zinc-200">
   <div class="max-w-7xl mx-auto px-4 py-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
       {/* Company Info */}
-      <div class="lg:col-span-1">
+      <div class="lg:col-span-2">
         <h3 class="font-semibold mb-4">ActionMaker</h3>
         <div class="mt-6 space-y-2">
           <p class="text-sm">Action Maker BVBA</p>
@@ -71,27 +71,121 @@ const activityTitles = new Map(
       </div>
 
       {/* Navigation Links */}
-      {
-        footerLinks.map((section) => (
-          <div>
-            <h3 class="font-semibold mb-4">{t(section.title)}</h3>
-            <ul class="space-y-3">
-              {section.links.map((link) => {
-                const activityId = link.url.split('/').pop() || '';
-                const title = activityTitles.get(activityId);
-                const localizedUrl = lang === 'nl' ? link.url : `/${lang}${link.url}`;
-                return (
-                  <li>
-                    <a href={localizedUrl} class="text-sm hover:text-white transition-colors">
-                      {title}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        ))
-      }
+      <div class="lg:col-span-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {
+          footerLinks.slice(0, 2).map((section) => (
+            <div>
+              <h3 class="font-semibold mb-4">{t(section.title as keyof typeof ui.nl)}</h3>
+              <ul class="space-y-2 text-sm">
+                {section.links.map((link) => {
+                  const activityId = link.url.split('/').pop() || '';
+                  const title = activityTitles.get(activityId);
+                  const localizedUrl = lang === 'nl' ? link.url : `/${lang}${link.url}`;
+                  return (
+                    <li>
+                      <a href={localizedUrl} class="hover:text-white transition-colors">
+                        {title}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))
+        }
+
+        {/* Actief + City Games */}
+        <div class="space-y-12">
+          {
+            footerLinks.slice(2, 3).map((section) => (
+              <div>
+                <h3 class="font-semibold mb-4">{t(section.title as keyof typeof ui.nl)}</h3>
+                <ul class="space-y-2 text-sm">
+                  {section.links.map((link) => {
+                    const activityId = link.url.split('/').pop() || '';
+                    const title = activityTitles.get(activityId);
+                    const localizedUrl = lang === 'nl' ? link.url : `/${lang}${link.url}`;
+                    return (
+                      <li>
+                        <a href={localizedUrl} class="hover:text-white transition-colors">
+                          {title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))
+          }
+          {
+            footerLinks.slice(4, 5).map((section) => (
+              <div>
+                <h3 class="font-semibold mb-4">{t(section.title as keyof typeof ui.nl)}</h3>
+                <ul class="space-y-2 text-sm">
+                  {section.links.map((link) => {
+                    const activityId = link.url.split('/').pop() || '';
+                    const title = activityTitles.get(activityId);
+                    const localizedUrl = lang === 'nl' ? link.url : `/${lang}${link.url}`;
+                    return (
+                      <li>
+                        <a href={localizedUrl} class="hover:text-white transition-colors">
+                          {title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))
+          }
+        </div>
+
+        {/* InnovAction + Workshops */}
+        <div class="space-y-12">
+          {
+            footerLinks.slice(3, 4).map((section) => (
+              <div>
+                <h3 class="font-semibold mb-4">{t(section.title as keyof typeof ui.nl)}</h3>
+                <ul class="space-y-2 text-sm">
+                  {section.links.map((link) => {
+                    const activityId = link.url.split('/').pop() || '';
+                    const title = activityTitles.get(activityId);
+                    const localizedUrl = lang === 'nl' ? link.url : `/${lang}${link.url}`;
+                    return (
+                      <li>
+                        <a href={localizedUrl} class="hover:text-white transition-colors">
+                          {title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))
+          }
+          {
+            footerLinks.slice(5).map((section) => (
+              <div>
+                <h3 class="font-semibold mb-4">{t(section.title as keyof typeof ui.nl)}</h3>
+                <ul class="space-y-2 text-sm">
+                  {section.links.map((link) => {
+                    const activityId = link.url.split('/').pop() || '';
+                    const title = activityTitles.get(activityId);
+                    const localizedUrl = lang === 'nl' ? link.url : `/${lang}${link.url}`;
+                    return (
+                      <li>
+                        <a href={localizedUrl} class="hover:text-white transition-colors">
+                          {title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))
+          }
+        </div>
+      </div>
     </div>
 
     {/* Bottom Bar */}

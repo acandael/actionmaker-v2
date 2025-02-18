@@ -70,8 +70,10 @@ export const ui = {
     // Footer Section Titles
     'footer.sections.indoor': 'Indoor activiteiten',
     'footer.sections.outdoor': 'Outdoor activiteiten',
+    'footer.sections.city-games': 'City Games',
+    'footer.sections.actief': 'Actief',
+    'footer.sections.innovaction': 'InnovAction',
     'footer.sections.workshops': 'Workshops',
-    'footer.sections.citygames': 'City Games',
 
     // Teambuildings
     'teambuildings.title': 'Vind je teambuilding in ons breed gamma',
