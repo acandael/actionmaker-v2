@@ -1,21 +1,22 @@
 ---
-title: "Initiation à l'Escrime"
+title: "Initiation à l'Escrime en Intérieur"
 description: "Sous la direction de nos instructeurs expérimentés, les participants apprennent les techniques fondamentales de l'escrime"
-image: 'scherminitiatie/scherminitiatie-1.jpg'
+image: 'indoor-scherminitiatie/indoor-scherminitiatie-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/bec895e0-71a8-46ba-b83a-4ebbbbfe4518'
-categories: ['indoor', 'outdoor', 'actief']
+categories: ['indoor', 'actief']
 duration: '30 minutes - 2.5 heures'
 groupSize: '4 - 350 personnes'
 availability: 'Sur demande'
+priority: 1
 features: ['esprit équipe', 'sport', 'technique']
 gallery:
   [
-    'scherminitiatie/scherminitiatie-2.jpg',
-    'scherminitiatie/scherminitiatie-3.jpg',
-    'scherminitiatie/scherminitiatie-4.jpg',
-    'scherminitiatie/scherminitiatie-5.jpg',
-    'scherminitiatie/scherminitiatie-6.jpg',
-    'scherminitiatie/scherminitiatie-7.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-2.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-3.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-4.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-5.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-6.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-7.jpg',
   ]
 ---
 

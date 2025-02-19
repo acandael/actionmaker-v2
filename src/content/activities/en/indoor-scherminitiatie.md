@@ -1,12 +1,13 @@
 ---
-title: 'Fencing Initiation'
+title: 'Indoor Fencing Initiation'
 description: 'Under the guidance of our experienced instructors, participants learn the basic techniques of fencing'
-image: 'scherminitiatie/scherminitiatie-1.jpg'
+image: 'indoor-scherminitiatie/indoor-scherminitiatie-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/bec895e0-71a8-46ba-b83a-4ebbbbfe4518'
-categories: ['actief', 'indoor', 'outdoor']
+categories: ['indoor', 'actief']
 duration: '30 minutes - 2.5 hours'
 groupSize: '4 - 350 people'
 availability: 'All year round'
+priority: 1
 features:
   - 'Professional fencing instructors'
   - 'All materials included'
@@ -14,16 +15,16 @@ features:
   - 'Possible mutual competitions'
 gallery:
   [
-    'scherminitiatie/scherminitiatie-2.jpg',
-    'scherminitiatie/scherminitiatie-3.jpg',
-    'scherminitiatie/scherminitiatie-4.jpg',
-    'scherminitiatie/scherminitiatie-5.jpg',
-    'scherminitiatie/scherminitiatie-6.jpg',
-    'scherminitiatie/scherminitiatie-7.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-2.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-3.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-4.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-5.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-6.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-7.jpg',
   ]
 ---
 
-Fencing initiation is a unique and exciting activity that's perfect for team building. During this session, participants learn the basics of fencing, a sport that requires not only physical skill but also strategic thinking and quick decision-making.
+Indoor Fencing initiation is a unique and exciting activity that's perfect for team building. During this session, participants learn the basics of fencing, a sport that requires not only physical skill but also strategic thinking and quick decision-making.
 
 Under the guidance of our experienced instructors, participants learn the fundamental techniques of fencing, including basic stance, footwork, and various attack and defense movements. Safety is the top priority, and all participants are equipped with professional protective gear.
 

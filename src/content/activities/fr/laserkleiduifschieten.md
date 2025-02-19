@@ -7,6 +7,7 @@ categories: ['outdoor', 'innovaction']
 duration: '30 minutes - 2 heures'
 groupSize: '2 - 150 personnes'
 availability: "Toute l'année"
+priority: 3
 features:
   - 'esprit équipe'
   - 'sport'

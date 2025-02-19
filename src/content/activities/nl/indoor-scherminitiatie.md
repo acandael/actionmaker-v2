@@ -1,12 +1,13 @@
 ---
-title: 'Scherminitiatie'
+title: 'Indoor Scherminitiatie'
 description: 'Onder begeleiding van onze ervaren instructeurs leren deelnemers de fundamentele technieken van het schermen'
-image: 'scherminitiatie/scherminitiatie-1.jpg'
+image: 'indoor-scherminitiatie/indoor-scherminitiatie-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/bec895e0-71a8-46ba-b83a-4ebbbbfe4518'
-categories: ['actief', 'indoor', 'outdoor']
+categories: ['indoor', 'actief']
 duration: '30 minuten - 2.5 uur'
 groupSize: '4 - 350 personen'
 availability: 'Het hele jaar door'
+priority: 1
 features:
   - 'Professionele scherminstructeurs'
   - 'Alle materiaal inbegrepen'
@@ -14,16 +15,16 @@ features:
   - 'Onderlinge wedstrijdjes mogelijk'
 gallery:
   [
-    'scherminitiatie/scherminitiatie-2.jpg',
-    'scherminitiatie/scherminitiatie-3.jpg',
-    'scherminitiatie/scherminitiatie-4.jpg',
-    'scherminitiatie/scherminitiatie-5.jpg',
-    'scherminitiatie/scherminitiatie-6.jpg',
-    'scherminitiatie/scherminitiatie-7.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-2.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-3.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-4.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-5.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-6.jpg',
+    'indoor-scherminitiatie/indoor-scherminitiatie-7.jpg',
   ]
 ---
 
-De initiatie schermen is een unieke en spannende activiteit die perfect geschikt is voor teambuilding. Tijdens deze sessie maken deelnemers kennis met de basisbeginselen van het schermen, een sport die niet alleen fysieke behendigheid vereist maar ook strategisch inzicht en snelle besluitvorming.
+De indoor initiatie schermen is een unieke en spannende activiteit die perfect geschikt is voor teambuilding. Tijdens deze sessie maken deelnemers kennis met de basisbeginselen van het schermen, een sport die niet alleen fysieke behendigheid vereist maar ook strategisch inzicht en snelle besluitvorming.
 
 Onder begeleiding van onze ervaren instructeurs leren deelnemers de fundamentele technieken van het schermen, waaronder de basishouding, voetenwerk en verschillende aanvals- en verdedigingsbewegingen. Veiligheid staat hierbij voorop, en alle deelnemers worden voorzien van professionele beschermingsuitrusting.
 

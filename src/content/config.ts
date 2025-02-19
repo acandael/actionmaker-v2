@@ -10,6 +10,14 @@ const activities = defineCollection({
     duration: z.string(),
     groupSize: z.string(),
     availability: z.string(),
+    priority: z.coerce
+      .number()
+      .int()
+      .default(999)
+      .transform((val) => {
+        console.log('Processing priority in schema:', { value: val, type: typeof val });
+        return val;
+      }),
     features: z.array(z.string()),
     gallery: z.array(z.string()),
     'video-url': z.string().optional(),

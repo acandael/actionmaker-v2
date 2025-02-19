@@ -7,6 +7,7 @@ categories: ['outdoor', 'innovaction']
 duration: '30 minutes - 2 hours'
 groupSize: '2 - 150 people'
 availability: 'All year round'
+priority: 3
 features:
   - 'Professional guidance'
   - 'All materials included'

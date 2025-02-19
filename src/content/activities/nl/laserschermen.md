@@ -18,7 +18,7 @@ gallery:
   ]
 categories: ['actief', 'indoor', 'outdoor', 'innovaction']
 duration: '30 minuten - 2 uur'
-groupSize: '4 - 150 personen'
+groupSize: '4 - 50 personen'
 availability: 'Het hele jaar door'
 ---
 

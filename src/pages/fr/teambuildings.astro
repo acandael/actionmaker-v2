@@ -11,8 +11,10 @@ import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-// Get all activities and filter by locale
+// Get all activities
 const allActivities = await getCollection('activities');
+
+// Filter activities by language
 const activities = allActivities.filter((activity) => activity.id.startsWith(`${lang}/`));
 
 // Get categories and filter by locale
@@ -44,20 +46,47 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
 );
 
 // Filter activities based on selected category
-const filteredActivities = selectedCategory
-  ? activities.filter((activity) => activity.data.categories.includes(selectedCategory))
+let filteredActivities = selectedCategory
+  ? activities.filter((activity) => {
+      const isInCategory = activity.data.categories.includes(selectedCategory);
+      console.log(`Filtering ${activity.data.title}:`, {
+        categories: activity.data.categories,
+        selectedCategory,
+        priority: activity.data.priority,
+        type: typeof activity.data.priority,
+        isInCategory,
+      });
+      return isInCategory;
+    })
   : activities;
 
-// Format activities for the grid with proper data structure
-const formattedActivities = filteredActivities.map((activity) => ({
-  id: activity.id.replace(`${lang}/`, ''),
-  data: {
-    title: activity.data.title,
-    description: activity.data.description,
-    image: activity.data.image,
-    categories: activity.data.categories,
-  },
-}));
+// Sort by priority
+filteredActivities.sort((a, b) => {
+  // Ensure we're working with numbers and preserve priority 1
+  const priorityA = typeof a.data.priority === 'number' ? a.data.priority : 999;
+  const priorityB = typeof b.data.priority === 'number' ? b.data.priority : 999;
+
+  console.log(`Sorting comparison:`, {
+    titleA: a.data.title,
+    priorityA,
+    titleB: b.data.title,
+    priorityB,
+  });
+
+  return priorityA - priorityB;
+});
+
+// Format activities for the grid
+const formattedActivities = filteredActivities
+  .filter((activity) => Boolean(activity.data.image))
+  .map((activity) => ({
+    id: activity.id.replace(`${lang}/`, ''),
+    data: {
+      ...activity.data,
+      // Preserve the original priority value
+      priority: activity.data.priority,
+    },
+  }));
 
 // Format the count message
 const getCountMessage = (count: number, isFiltered: boolean) => {
@@ -78,13 +107,11 @@ const getCountMessage = (count: number, isFiltered: boolean) => {
   <section class="max-w-7xl mx-auto px-4 py-24 mt-16">
     <div class="text-center mb-16">
       <h1 class="text-balance text-4xl md:text-6xl font-bold mb-4">
-        {currentCategory ? currentCategory.data.title : t('teamActivities.title')}
+        {currentCategory ? currentCategory.data.title : t('teambuildings.title')}
       </h1>
       {
-        currentCategory ? (
+        currentCategory && (
           <p class="text-xl text-muted-foreground">{currentCategory.data.description}</p>
-        ) : (
-          <p class="text-xl text-muted-foreground">{t('teamActivities.subtitle')}</p>
         )
       }
     </div>
