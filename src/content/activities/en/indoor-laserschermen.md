@@ -1,7 +1,7 @@
 ---
-title: 'Lightsaber Fencing'
+title: 'Indoor Lightsaber Fencing'
 description: 'Become a True Padawan!'
-image: 'laserschermen/laserschermen-1.jpg'
+image: 'indoor-laserschermen/indoor-laserschermen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/102cb4a2-6345-40dd-a2e1-37ed57c43929'
 features:
   - 'For Star Wars fans and adventurers'
@@ -9,14 +9,14 @@ features:
   - 'For young and old'
 gallery:
   [
-    'laserschermen/laserschermen-2.jpg',
-    'laserschermen/laserschermen-3.jpg',
-    'laserschermen/laserschermen-4.jpg',
-    'laserschermen/laserschermen-5.jpg',
-    'laserschermen/laserschermen-6.jpg',
-    'laserschermen/laserschermen-7.jpg',
+    'indoor-laserschermen/indoor-laserschermen-2.jpg',
+    'indoor-laserschermen/indoor-laserschermen-3.jpg',
+    'indoor-laserschermen/indoor-laserschermen-4.jpg',
+    'indoor-laserschermen/indoor-laserschermen-5.jpg',
+    'indoor-laserschermen/indoor-laserschermen-6.jpg',
+    'indoor-laserschermen/indoor-laserschermen-7.jpg',
   ]
-categories: ['actief', 'indoor', 'outdoor', 'innovaction']
+categories: ['actief', 'indoor', 'innovaction']
 duration: '30 minutes - 2 hours'
 groupSize: '4 - 50 people'
 availability: 'All year round'

@@ -1,7 +1,7 @@
 ---
-title: 'Escrime au Sabre Laser'
+title: 'Escrime au Sabre Laser (Outdoor)'
 description: 'Devenez un Véritable Padawan !'
-image: 'laserschermen/laserschermen-1.jpg'
+image: 'outdoor-laserschermen/outdoor-laserschermen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/102cb4a2-6345-40dd-a2e1-37ed57c43929'
 features:
   - 'Pour les fans de Star Wars et les aventuriers'
@@ -9,14 +9,14 @@ features:
   - 'Pour tous les âges'
 gallery:
   [
-    'laserschermen/laserschermen-2.jpg',
-    'laserschermen/laserschermen-3.jpg',
-    'laserschermen/laserschermen-4.jpg',
-    'laserschermen/laserschermen-5.jpg',
-    'laserschermen/laserschermen-6.jpg',
-    'laserschermen/laserschermen-7.jpg',
+    'outdoor-laserschermen/outdoor-laserschermen-2.jpg',
+    'outdoor-laserschermen/outdoor-laserschermen-3.jpg',
+    'outdoor-laserschermen/outdoor-laserschermen-4.jpg',
+    'outdoor-laserschermen/outdoor-laserschermen-5.jpg',
+    'outdoor-laserschermen/outdoor-laserschermen-6.jpg',
+    'outdoor-laserschermen/outdoor-laserschermen-7.jpg',
   ]
-categories: ['actief', 'indoor', 'outdoor', 'innovaction']
+categories: ['actif', 'outdoor', 'innovaction']
 duration: '30 minutes - 2 heurs'
 groupSize: '4 - 50 personnes'
 availability: "Toute l'année"
