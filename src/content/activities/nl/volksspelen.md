@@ -1,7 +1,7 @@
 ---
 title: 'Volksspelen'
 description: 'Nostalgie en Plezier voor Iedereen!'
-image: 'volksspelen/volksspelen-1.jpg'
+image: 'volksspelen/indoor-volksspelen-1.jpg'
 features:
   - 'Hoefijzerwerpen'
   - 'Sjoelbak'
@@ -10,14 +10,14 @@ features:
   - 'Sidderspiraal'
 gallery:
   [
-    'volksspelen/volksspelen-2.jpg',
-    'volksspelen/volksspelen-3.jpg',
-    'volksspelen/volksspelen-4.jpg',
-    'volksspelen/volksspelen-5.jpg',
-    'volksspelen/volksspelen-6.jpg',
-    'volksspelen/volksspelen-7.jpg',
+    'volksspelen/indoor-volksspelen-2.jpg',
+    'volksspelen/indoor-volksspelen-3.jpg',
+    'volksspelen/indoor-volksspelen-4.jpg',
+    'volksspelen/indoor-volksspelen-5.jpg',
+    'volksspelen/indoor-volksspelen-6.jpg',
+    'volksspelen/indoor-volksspelen-7.jpg',
   ]
-categories: ['outdoor', 'indoor']
+categories: ['outdoor']
 duration: '30 minuten-3 uur'
 groupSize: '8 - 500 personen'
 availability: 'Op aanvraag'

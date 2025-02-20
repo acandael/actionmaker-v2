@@ -1,7 +1,7 @@
 ---
-title: 'Folie du Football'
+title: 'Folie du Football En Intérieur'
 description: "Vivez le Championnat d'Europe de football d'une manière totalement nouvelle avec notre activité spécialement développée"
-image: 'voetbalmanie/voetbalmanie-1.jpg'
+image: 'indoor-voetbalmanie/indoor-voetbalmanie-1.jpg'
 features:
   [
     'Bowling football',
@@ -13,14 +13,11 @@ features:
   ]
 gallery:
   [
-    'voetbalmanie/voetbalmanie-2.jpg',
-    'voetbalmanie/voetbalmanie-3.jpg',
-    'voetbalmanie/voetbalmanie-4.jpg',
-    'voetbalmanie/voetbalmanie-5.jpg',
-    'voetbalmanie/voetbalmanie-6.jpg',
-    'voetbalmanie/voetbalmanie-7.jpg',
+    'indoor-voetbalmanie/indoor-voetbalmanie-2.jpg',
+    'indoor-voetbalmanie/indoor-voetbalmanie-3.jpg',
+    'indoor-voetbalmanie/indoor-voetbalmanie-4.jpg',
   ]
-categories: ['indoor', 'outdoor']
+categories: ['indoor']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'

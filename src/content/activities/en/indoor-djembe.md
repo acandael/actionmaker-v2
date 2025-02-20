@@ -1,8 +1,8 @@
 ---
-title: 'Djembe Workshop'
+title: 'Indoor Djembe Workshop'
 description: 'Making music as a team creates a unique experience and provides a positive group feeling.'
-image: 'djembe/djembe-1.jpg'
-categories: ['workshop', 'indoor', 'outdoor']
+image: 'indoor-djembe/indoor-djembe-1.jpg'
+categories: ['workshop', 'indoor']
 duration: '30 minutes - 2 hours'
 groupSize: 'Maximum 250 people'
 availability: 'All year round'
@@ -13,12 +13,12 @@ features:
   - 'Communication'
 gallery:
   [
-    'djembe/djembe-2.jpg',
-    'djembe/djembe-3.jpg',
-    'djembe/djembe-4.jpg',
-    'djembe/djembe-5.jpg',
-    'djembe/djembe-6.jpg',
-    'djembe/djembe-7.jpg',
+    'indoor-djembe/indoor-djembe-2.jpg',
+    'indoor-djembe/indoor-djembe-3.jpg',
+    'indoor-djembe/indoor-djembe-4.jpg',
+    'indoor-djembe/indoor-djembe-5.jpg',
+    'indoor-djembe/indoor-djembe-6.jpg',
+    'indoor-djembe/indoor-djembe-7.jpg',
   ]
 ---
 

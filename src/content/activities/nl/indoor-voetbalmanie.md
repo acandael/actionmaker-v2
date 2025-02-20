@@ -1,7 +1,7 @@
 ---
-title: 'Voetbalmanie'
+title: 'Indoor Voetbalmanie'
 description: 'Beleef het EK voetbal op een geheel nieuwe manier met onze speciaal ontwikkelde activiteit'
-image: 'voetbalmanie/voetbalmanie-1.jpg'
+image: 'indoor-voetbalmanie/indoor-voetbalmanie-1.jpg'
 features:
   - 'Voetbalbowling'
   - 'Voetbaldarts'
@@ -10,14 +10,11 @@ features:
   - 'Mini Kicker'
 gallery:
   [
-    'voetbalmanie/voetbalmanie-2.jpg',
-    'voetbalmanie/voetbalmanie-3.jpg',
-    'voetbalmanie/voetbalmanie-4.jpg',
-    'voetbalmanie/voetbalmanie-5.jpg',
-    'voetbalmanie/voetbalmanie-6.jpg',
-    'voetbalmanie/voetbalmanie-7.jpg',
+    'indoor-voetbalmanie/indoor-voetbalmanie-2.jpg',
+    'indoor-voetbalmanie/indoor-voetbalmanie-3.jpg',
+    'indoor-voetbalmanie/indoor-voetbalmanie-4.jpg',
   ]
-categories: ['outdoor', 'indoor']
+categories: ['indoor']
 duration: '30 minuten - 2 uur'
 groupSize: '8 - 200 personen'
 availability: 'Op aanvraag'

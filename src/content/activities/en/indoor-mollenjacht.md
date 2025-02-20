@@ -1,7 +1,7 @@
 ---
-title: 'The Mole Hunt'
+title: 'The Mole Hunt (Indoor)'
 description: 'This team building is based on the popular TV show The Mole'
-image: 'mollenjacht/mollenjacht-1.jpg'
+image: 'indoor-mollenjacht/indoor-mollenjacht-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/94de6955-8473-4cc6-9dd7-90bc509b858a'
 features:
   - 'The Mole Run'
@@ -11,14 +11,14 @@ features:
   - 'Milk cans/towers'
 gallery:
   [
-    'mollenjacht/mollenjacht-2.jpg',
-    'mollenjacht/mollenjacht-3.jpg',
-    'mollenjacht/mollenjacht-4.jpg',
-    'mollenjacht/mollenjacht-5.jpg',
-    'mollenjacht/mollenjacht-6.jpg',
-    'mollenjacht/mollenjacht-7.jpg',
+    'indoor-mollenjacht/indoor-mollenjacht-2.jpg',
+    'indoor-mollenjacht/indoor-mollenjacht-3.jpg',
+    'indoor-mollenjacht/indoor-mollenjacht-4.jpg',
+    'indoor-mollenjacht/indoor-mollenjacht-5.jpg',
+    'indoor-mollenjacht/indoor-mollenjacht-6.jpg',
+    'indoor-mollenjacht/indoor-mollenjacht-7.jpg',
   ]
-categories: ['outdoor', 'indoor']
+categories: ['indoor']
 duration: '2 - 5 hours'
 groupSize: '6 - 1000 people'
 availability: 'On request'

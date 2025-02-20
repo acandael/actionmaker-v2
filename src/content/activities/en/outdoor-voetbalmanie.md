@@ -1,7 +1,7 @@
 ---
-title: 'Football Mania'
+title: 'Outdoor Football Mania'
 description: 'Experience the European Championship football in a completely new way with our specially developed activity'
-image: 'voetbalmanie/voetbalmanie-1.jpg'
+image: 'outdoor-voetbalmanie/outdoor-voetbalmanie-1.jpg'
 features:
   [
     'Football bowling',
@@ -13,14 +13,12 @@ features:
   ]
 gallery:
   [
-    'voetbalmanie/voetbalmanie-2.jpg',
-    'voetbalmanie/voetbalmanie-3.jpg',
-    'voetbalmanie/voetbalmanie-4.jpg',
-    'voetbalmanie/voetbalmanie-5.jpg',
-    'voetbalmanie/voetbalmanie-6.jpg',
-    'voetbalmanie/voetbalmanie-7.jpg',
+    'outdoor-voetbalmanie/outdoor-voetbalmanie-2.jpg',
+    'outdoor-voetbalmanie/outdoor-voetbalmanie-3.jpg',
+    'outdoor-voetbalmanie/outdoor-voetbalmanie-4.jpg',
+    'outdoor-voetbalmanie/outdoor-voetbalmanie-5.jpg',
   ]
-categories: ['indoor', 'outdoor']
+categories: ['outdoor']
 duration: '2-3 hours'
 groupSize: '8-50 people'
 availability: 'On request'
