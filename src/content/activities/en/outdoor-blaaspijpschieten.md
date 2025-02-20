@@ -1,7 +1,7 @@
 ---
 title: 'Outdoor Blowgun Shooting'
 description: 'Outdoor blowgun shooting is very popular. An exciting and challenging activity for all age groups.'
-image: 'indoor-blaaspijpschieten/indoor-blaaspijpschieten-1.jpg'
+image: 'outdoor-blaaspijpschieten/outdoor-blaaspijpschieten-1.jpg'
 features:
   - 'Competition'
   - 'Sport'
