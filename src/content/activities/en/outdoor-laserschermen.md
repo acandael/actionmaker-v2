@@ -1,5 +1,5 @@
 ---
-title: 'Outdoor Lightsaber Fencing'
+title: 'Lightsaber Fencing (Outdoor)'
 description: 'Become a True Padawan!'
 image: 'outdoor-laserschermen/outdoor-laserschermen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/102cb4a2-6345-40dd-a2e1-37ed57c43929'

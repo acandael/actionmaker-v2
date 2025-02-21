@@ -1,5 +1,5 @@
 ---
-title: 'Folie du Football En Extérieur'
+title: 'Folie du Football (Outdoor)'
 description: "Vivez le Championnat d'Europe de football d'une manière totalement nouvelle avec notre activité spécialement développée"
 image: 'outdoor-voetbalmanie/outdoor-voetbalmanie-1.jpg'
 features:

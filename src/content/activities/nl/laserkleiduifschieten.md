@@ -1,5 +1,5 @@
 ---
-title: 'Laser Kleiduifschieten'
+title: 'Laser Kleiduifschieten (Outdoor)'
 description: 'Een moderne en milieuvriendelijke variant van kleiduifschieten.'
 image: 'laserkleiduifschieten/laserkleiduifschieten-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/2f13904d-494d-4441-a9e4-471d1eeb3557'

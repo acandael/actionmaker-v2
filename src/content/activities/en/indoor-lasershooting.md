@@ -1,5 +1,5 @@
 ---
-title: 'Indoor Laser Clay Pigeon Shooting'
+title: 'Laser Clay Pigeon Shooting (Indoor)'
 description: 'Exciting, Safe and Environmentally Friendly!'
 image: 'indoor-lasershooting/indoorlasershooting-1.jpg'
 features:

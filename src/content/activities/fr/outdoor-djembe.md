@@ -1,5 +1,5 @@
 ---
-title: 'Atelier de Djembé en Extérieur'
+title: 'Atelier de Djembé (Outdoor)'
 description: 'Faire de la musique en équipe crée une expérience unique et génère un sentiment de groupe positif.'
 image: 'outdoor-djembe/outdoor-djembe-1.jpg'
 categories: ['outdoor', 'workshop']

@@ -1,5 +1,5 @@
 ---
-title: 'Indoor djembe workshop'
+title: 'Djembe Workshop (Indoor)'
 description: 'Als één team muziek maken creëert een unieke ervaring en zorgt voor een positief groepsgevoel.'
 image: 'indoor-djembe/indoor-djembe-1.jpg'
 categories: ['workshop', 'indoor']

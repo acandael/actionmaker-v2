@@ -1,5 +1,5 @@
 ---
-title: 'Outdoor Sumo Wrestling'
+title: 'Sumo Wrestling (Outdoor)'
 description: 'Experience the ancient Japanese sport in a fun and safe way!'
 image: 'outdoor-sumoworstelen/outdoor-sumoworstelen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/3c3bd7aa-e0f1-4bbf-a9b9-992b8b2afc01'

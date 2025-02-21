@@ -1,5 +1,5 @@
 ---
-title: 'Lutte Sumo Indoor'
+title: 'Lutte Sumo (Indoor)'
 description: "Une activité hilarante où les participants s'affrontent dans des costumes de sumo gonflables."
 image: 'indoor-sumoworstelen/indoor-sumoworstelen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/3c3bd7aa-e0f1-4bbf-a9b9-992b8b2afc01'

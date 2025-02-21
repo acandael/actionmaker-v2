@@ -1,5 +1,5 @@
 ---
-title: 'Indoor Laser Kleiduifschieten'
+title: 'Laser Kleiduifschieten (Indoor)'
 description: 'Spannend, Veilig en Milieuvriendelijk!'
 image: 'indoor-lasershooting/indoorlasershooting-1.jpg'
 features:

@@ -1,5 +1,5 @@
 ---
-title: 'Outdoor Lightsaber Schermen'
+title: 'Lightsaber Schermen (Outdoor)'
 description: 'Word een Ware Padawan!'
 image: 'outdoor-laserschermen/outdoor-laserschermen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/102cb4a2-6345-40dd-a2e1-37ed57c43929'

@@ -1,5 +1,5 @@
 ---
-title: "Initiation à l'Escrime en Intérieur"
+title: "Initiation à l'Escrime (Indoor)"
 description: "Sous la direction de nos instructeurs expérimentés, les participants apprennent les techniques fondamentales de l'escrime"
 image: 'indoor-scherminitiatie/indoor-scherminitiatie-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/bec895e0-71a8-46ba-b83a-4ebbbbfe4518'

@@ -1,5 +1,5 @@
 ---
-title: 'Outdoor djembe workshop'
+title: 'Djembe Workshop (Outdoor)'
 description: 'Als één team muziek maken creëert een unieke ervaring en zorgt voor een positief groepsgevoel.'
 image: 'outdoor-djembe/outdoor-djembe-1.jpg'
 categories: ['workshop', 'outdoor']

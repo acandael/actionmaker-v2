@@ -1,5 +1,5 @@
 ---
-title: 'Outdoor Football Mania'
+title: 'Football Mania (Outdoor)'
 description: 'Experience the European Championship football in a completely new way with our specially developed activity'
 image: 'outdoor-voetbalmanie/outdoor-voetbalmanie-1.jpg'
 features:

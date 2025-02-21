@@ -1,5 +1,5 @@
 ---
-title: "Tir au Pigeon d'Argile Laser en Intérieur"
+title: "Tir au Pigeon d'Argile Laser (Indoor)"
 description: 'Passionnant, sûr et écologique !'
 image: 'indoor-lasershooting/indoorlasershooting-1.jpg'
 features:

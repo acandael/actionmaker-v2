@@ -1,5 +1,5 @@
 ---
-title: 'Atelier de Djembé en Intérieur'
+title: 'Atelier de Djembé (Indoor)'
 description: 'Faire de la musique en équipe crée une expérience unique et génère un sentiment de groupe positif.'
 image: 'indoor-djembe/indoor-djembe-1.jpg'
 categories: ['indoor', 'workshop']

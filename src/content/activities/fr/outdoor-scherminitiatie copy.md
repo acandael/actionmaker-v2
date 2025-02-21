@@ -1,5 +1,5 @@
 ---
-title: "Initiation à l'Escrime en Extérieur"
+title: "Initiation à l'Escrime (Outdoor)"
 description: "Sous la direction de nos instructeurs expérimentés, les participants apprennent les techniques fondamentales de l'escrime"
 image: 'outdoor-scherminitiatie/outdoor-scherminitiatie-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/bec895e0-71a8-46ba-b83a-4ebbbbfe4518'

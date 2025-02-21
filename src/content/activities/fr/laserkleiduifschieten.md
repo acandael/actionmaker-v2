@@ -1,5 +1,5 @@
 ---
-title: 'Tir aux Pigeons Laser'
+title: 'Tir aux Pigeons Laser (Outdoor)'
 description: "Une version moderne et écologique du tir aux pigeons d'argile"
 image: 'laserkleiduifschieten/laserkleiduifschieten-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/2f13904d-494d-4441-a9e4-471d1eeb3557'
