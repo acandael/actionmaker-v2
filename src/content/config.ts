@@ -15,7 +15,6 @@ const activities = defineCollection({
       .int()
       .default(999)
       .transform((val) => {
-        console.log('Processing priority in schema:', { value: val, type: typeof val });
         return val;
       }),
     features: z.array(z.string()),

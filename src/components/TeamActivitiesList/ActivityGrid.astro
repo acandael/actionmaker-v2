@@ -32,15 +32,6 @@ const getActivityUrl = (id: string) => {
 const sortedActivities = [...activities].sort((a, b) => {
   return (a.data.priority ?? 999) - (b.data.priority ?? 999);
 });
-
-// Debug received activities with detailed type information
-console.log('\nActivities in grid component after sorting:');
-sortedActivities.forEach((a) => {
-  console.log(`${a.data.title}:`, {
-    priority: a.data.priority,
-    type: typeof a.data.priority,
-  });
-});
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -60,8 +51,6 @@ sortedActivities.forEach((a) => {
         priority: activity.data.priority,
         categories: activity.data.categories,
       };
-
-      console.log(`Activity in grid: ${activity.data.title} (Priority: ${activity.data.priority})`);
 
       return (
         <a
@@ -126,24 +115,11 @@ sortedActivities.forEach((a) => {
     });
   }
 
-  // Log activity info with explicit priority values
-  document.querySelectorAll('[data-activity-info]').forEach((el) => {
-    const info = JSON.parse(el.getAttribute('data-activity-info') || '{}');
-    const priority = Number(info.priority) || 999;
-    console.log(`Activity in grid: ${info.title} (Priority: ${priority})`);
-  });
-
   // Initialize on page load
   setupAnimations();
 
   // Handle view transitions
   document.addEventListener('astro:page-load', () => {
     setupAnimations();
-    // Re-run logging after page transitions
-    document.querySelectorAll('[data-activity-info]').forEach((el) => {
-      const info = JSON.parse(el.getAttribute('data-activity-info') || '{}');
-      const priority = Number(info.priority) || 999;
-      console.log(`Activity in grid: ${info.title} (Priority: ${priority})`);
-    });
   });
 </script>

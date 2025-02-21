@@ -49,13 +49,6 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
 let filteredActivities = selectedCategory
   ? activities.filter((activity) => {
       const isInCategory = activity.data.categories.includes(selectedCategory);
-      console.log(`Filtering ${activity.data.title}:`, {
-        categories: activity.data.categories,
-        selectedCategory,
-        priority: activity.data.priority,
-        type: typeof activity.data.priority,
-        isInCategory,
-      });
       return isInCategory;
     })
   : activities;
@@ -65,13 +58,6 @@ filteredActivities.sort((a, b) => {
   // Ensure we're working with numbers and preserve priority 1
   const priorityA = typeof a.data.priority === 'number' ? a.data.priority : 999;
   const priorityB = typeof b.data.priority === 'number' ? b.data.priority : 999;
-
-  console.log(`Sorting comparison:`, {
-    titleA: a.data.title,
-    priorityA,
-    titleB: b.data.title,
-    priorityB,
-  });
 
   return priorityA - priorityB;
 });
