@@ -66,6 +66,7 @@ export const ui = {
     'footer.contact': 'Contacteer ons',
     'footer.address': 'Hundelgemsesteenweg 445 A, 9050 Gentbrugge',
     'footer.rights': 'Alle rechten voorbehouden',
+    'footer.development': 'Webontwikkeling door',
 
     // Footer Section Titles
     'footer.sections.indoor': 'Indoor activiteiten',
@@ -213,7 +214,7 @@ export const ui = {
     'footer.contact': 'Contactez-nous',
     'footer.address': 'Hundelgemsesteenweg 445 A, 9050 Gentbrugge',
     'footer.rights': 'Tous droits réservés',
-
+    'footer.development': 'Développement web par',
     // Footer Section Titles
     'footer.sections.indoor': "Activités d'intérieur",
     'footer.sections.outdoor': "Activités d'extérieur",
@@ -371,7 +372,7 @@ export const ui = {
     'footer.contact': 'Contact us',
     'footer.address': 'Hundelgemsesteenweg 445 A, 9050 Gentbrugge',
     'footer.rights': 'All rights reserved',
-
+    'footer.development': 'Web development by',
     // Footer Section Titles
     'footer.sections.indoor': 'Indoor Activities',
     'footer.sections.outdoor': 'Outdoor Activities',
