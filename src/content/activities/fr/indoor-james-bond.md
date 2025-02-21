@@ -1,7 +1,7 @@
 ---
-title: 'Spy-academy/James Bond'
+title: 'Spy-academy/James Bond (Indoor)'
 description: "Nous recherchons l'équipe ultime de collègues pour incarner l'espion le plus célèbre au monde."
-image: 'james-bond/james-bond-1.jpg'
+image: 'indoor-james-bond/indoor-james-bond-1.jpg'
 isGame: true
 features:
   - 'Escrime'
@@ -9,14 +9,14 @@ features:
   - 'Tir...'
 gallery:
   [
-    'james-bond/james-bond-2.jpg',
-    'james-bond/james-bond-3.jpg',
-    'james-bond/james-bond-4.jpg',
-    'james-bond/james-bond-5.jpg',
-    'james-bond/james-bond-6.jpg',
-    'james-bond/james-bond-7.jpg',
+    'indoor-james-bond/indoor-james-bond-2.jpg',
+    'indoor-james-bond/indoor-james-bond-3.jpg',
+    'indoor-james-bond/indoor-james-bond-4.jpg',
+    'indoor-james-bond/indoor-james-bond-5.jpg',
+    'indoor-james-bond/indoor-james-bond-6.jpg',
+    'indoor-james-bond/indoor-james-bond-7.jpg',
   ]
-categories: ['indoor', 'outdoor', 'innovaction']
+categories: ['indoor', 'innovaction']
 duration: '2 - 5 heures'
 groupSize: '8 - 1000 personnes'
 availability: 'Sur demande'

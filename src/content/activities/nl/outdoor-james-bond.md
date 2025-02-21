@@ -1,22 +1,14 @@
 ---
-title: 'Spy-academy/James Bond'
+title: 'Spy-academy/James Bond (Outdoor)'
 description: "We gaan op zoek naar het ultieme team van collega's om de rol van 's werelds meest bekende spion op zich te nemen."
-image: 'james-bond/james-bond-1.jpg'
+image: 'outdoor-james-bond/outdoor-james-bond-1.jpg'
 isGame: true
 features:
   - 'Schermen'
   - 'Morse code'
   - 'Schieten...'
-gallery:
-  [
-    'james-bond/james-bond-2.jpg',
-    'james-bond/james-bond-3.jpg',
-    'james-bond/james-bond-4.jpg',
-    'james-bond/james-bond-5.jpg',
-    'james-bond/james-bond-6.jpg',
-    'james-bond/james-bond-7.jpg',
-  ]
-categories: ['indoor', 'outdoor', 'innovaction']
+gallery: ['outdoor-james-bond/outdoor-james-bond-2.jpg']
+categories: ['outdoor', 'innovaction']
 duration: '2 - 5 uur'
 groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'

@@ -1,22 +1,14 @@
 ---
-title: 'Moord Mystery'
+title: 'Moord Mystery (Outdoor)'
 description: 'Beleef een onvergetelijke teambuilding met een spannend murder-mystery in Cluedo-stijl!'
-image: 'moord-mystery/moord-mystery-1.jpg'
+image: 'outdoor-moord-mystery/outdoor-moord-mystery-1.jpg'
 isGame: true
 features:
   - 'Communicatiespel'
   - 'Schietvaardigheid'
   - 'Croquet in Cluedo-stijl'
-gallery:
-  [
-    'moord-mystery/moord-mystery-2.jpg',
-    'moord-mystery/moord-mystery-3.jpg',
-    'moord-mystery/moord-mystery-4.jpg',
-    'moord-mystery/moord-mystery-5.jpg',
-    'moord-mystery/moord-mystery-6.jpg',
-    'moord-mystery/moord-mystery-7.jpg',
-  ]
-categories: ['indoor']
+gallery: ['outdoor-moord-mystery/outdoor-moord-mystery-2.jpg']
+categories: ['outdoor']
 duration: '2 - 5 uur'
 groupSize: '6 -1000 personen'
 availability: 'Op aanvraag'

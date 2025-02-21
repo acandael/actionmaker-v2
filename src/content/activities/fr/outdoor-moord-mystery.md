@@ -1,22 +1,14 @@
 ---
-title: 'Murder Mystery'
+title: 'Mystère du Meurtre (Outdoor)'
 description: 'Vivez un team building inoubliable avec un mystérieux meurtre dans le style Cluedo!'
-image: 'moord-mystery/moord-mystery-1.jpg'
+image: 'outdoor-moord-mystery/outdoor-moord-mystery-1.jpg'
 isGame: true
 features:
   - 'Jeu de communication'
   - 'Compétences de tir'
   - 'Croquet style Cluedo'
-gallery:
-  [
-    'moord-mystery/moord-mystery-2.jpg',
-    'moord-mystery/moord-mystery-3.jpg',
-    'moord-mystery/moord-mystery-4.jpg',
-    'moord-mystery/moord-mystery-5.jpg',
-    'moord-mystery/moord-mystery-6.jpg',
-    'moord-mystery/moord-mystery-7.jpg',
-  ]
-categories: ['indoor']
+gallery: ['outdoor-moord-mystery/outdoor-moord-mystery-2.jpg']
+categories: ['outdoor']
 duration: '2 - 5 heures'
 groupSize: '6 - 1000 personnes'
 availability: "Toute l'année"
