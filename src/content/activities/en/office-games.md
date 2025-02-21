@@ -2,6 +2,7 @@
 title: 'The Office Games'
 description: 'Together we will work to create an impressive Goldberg machine'
 image: 'office-games/office-games-1.jpg'
+isGame: true
 features:
   - 'Physical strength'
   - 'Communication skills'

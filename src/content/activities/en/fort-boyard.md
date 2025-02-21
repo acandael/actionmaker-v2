@@ -2,6 +2,7 @@
 title: 'Fort Boyard'
 description: 'The Fort Boyard program is particularly well-known among French speakers'
 image: 'fort-boyard/fort-boyard-1.jpg'
+isGame: true
 features:
   - 'teambuilding'
   - 'activities accessible to everyone'

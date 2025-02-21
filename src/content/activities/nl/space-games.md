@@ -2,6 +2,7 @@
 title: 'De Space Games'
 description: 'Waar de toekomst centraal staat en de ruimte jullie speelterrein is.'
 image: 'space-games/space-games-1.jpg'
+isGame: true
 features:
   - 'Laserschermen'
   - 'Ruimteschip herstellen'

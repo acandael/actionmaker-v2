@@ -2,6 +2,7 @@
 title: 'Folie du Football (Indoor)'
 description: "Vivez le Championnat d'Europe de football d'une manière totalement nouvelle avec notre activité spécialement développée"
 image: 'indoor-voetbalmanie/indoor-voetbalmanie-1.jpg'
+isGame: true
 features:
   [
     'Bowling football',

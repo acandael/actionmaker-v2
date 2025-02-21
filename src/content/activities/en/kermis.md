@@ -2,6 +2,7 @@
 title: 'The Fair'
 description: 'Leave your worries behind and enjoy a day filled with smiling faces and playful moments.'
 image: 'kermis/kermis-1.jpg'
+isGame: true
 features:
   - 'Duck pond game'
   - 'Chalk shooting'

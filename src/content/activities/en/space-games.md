@@ -2,6 +2,7 @@
 title: 'The Space Games'
 description: 'Where the future takes center stage and space is your playground.'
 image: 'space-games/space-games-1.jpg'
+isGame: true
 features:
   - 'Laser fencing'
   - 'Spaceship repair'

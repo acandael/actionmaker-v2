@@ -2,6 +2,7 @@
 title: 'Fort Boyard'
 description: 'Het programma Fort Boyard geniet vooral bekendheid onder Franstaligen'
 image: 'fort-boyard/fort-boyard-1.jpg'
+isGame: true
 features:
   - 'teambuilding'
   - 'activiteiten toegankelijk voor iedereen'

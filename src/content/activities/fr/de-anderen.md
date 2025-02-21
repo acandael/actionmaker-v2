@@ -2,6 +2,7 @@
 title: 'Les Autres'
 description: "Ce programme est également inspiré d'un concept télévisé populaire, à savoir 'Les Traîtres'."
 image: 'de-anderen/de-anderen-1.jpg'
+isGame: true
 features:
   - 'Tactique'
   - 'Stratégie'

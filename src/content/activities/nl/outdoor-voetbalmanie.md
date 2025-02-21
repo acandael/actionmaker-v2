@@ -2,6 +2,7 @@
 title: 'Voetbalmanie (Outdoor)'
 description: 'Beleef het EK voetbal op een geheel nieuwe manier met onze speciaal ontwikkelde activiteit'
 image: 'outdoor-voetbalmanie/outdoor-voetbalmanie-1.jpg'
+isGame: true
 features:
   - 'Voetbalbowling'
   - 'Voetbaldarts'

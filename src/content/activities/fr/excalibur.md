@@ -2,6 +2,7 @@
 title: 'Excalibur'
 description: "Cette activité met l'accent sur la collaboration totale"
 image: 'excalibur/excalibur-1.jpg'
+isGame: true
 features:
   - 'Aventure'
   - 'Team building'

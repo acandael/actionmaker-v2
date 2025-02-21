@@ -1,8 +1,9 @@
 ---
 title: 'La Chasse à la Taupe (Outdoor)'
-description: 'Ce team building est basé sur la célèbre émission de télévision La Taupe'
+description: 'Ce team building est basé sur la populaire émission de télévision La Taupe'
 image: 'outdoor-mollenjacht/outdoor-mollenjacht-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/94de6955-8473-4cc6-9dd7-90bc509b858a'
+isGame: true
 features:
   - 'La Course à la Taupe'
   - 'Quiz Chronométré'

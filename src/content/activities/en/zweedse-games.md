@@ -2,6 +2,7 @@
 title: 'The Swedish Games'
 description: 'A surprising variant of the Highland Games, but with a Swedish twist.'
 image: 'zweedse-games/zweedse-games-1.jpg'
+isGame: true
 features:
   - 'Biathlon shooting'
   - 'Kubb playing'

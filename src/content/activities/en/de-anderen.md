@@ -2,6 +2,7 @@
 title: 'The Others'
 description: 'This program is also inspired by a popular TV concept, namely "The Traitors."'
 image: 'de-anderen/de-anderen-1.jpg'
+isGame: true
 features:
   - 'Tactics'
   - 'Strategy'

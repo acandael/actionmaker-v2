@@ -2,6 +2,7 @@
 title: 'Voetbalmanie (Indoor)'
 description: 'Beleef het EK voetbal op een geheel nieuwe manier met onze speciaal ontwikkelde activiteit'
 image: 'indoor-voetbalmanie/indoor-voetbalmanie-1.jpg'
+isGame: true
 features:
   - 'Voetbalbowling'
   - 'Voetbaldarts'

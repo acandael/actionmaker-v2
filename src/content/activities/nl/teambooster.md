@@ -2,6 +2,7 @@
 title: 'TeamBooster'
 description: 'Waar activiteiten zijn ontworpen om het team te stimuleren en waar samenwerking de sleutel is tot succes.'
 image: 'teambooster/teambooster-1.jpg'
+isGame: true
 features:
   - 'Communicatie'
   - 'Creativiteit'

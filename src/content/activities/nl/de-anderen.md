@@ -2,6 +2,7 @@
 title: 'De Anderen'
 description: 'Dit programma is eveneens geïnspireerd op een populair tv-concept, namelijk "De Verraders".'
 image: 'de-anderen/de-anderen-1.jpg'
+isGame: true
 features:
   - 'Tactiek'
   - 'Strategie'

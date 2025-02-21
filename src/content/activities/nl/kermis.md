@@ -2,6 +2,7 @@
 title: 'De Kermis'
 description: 'Laat je zorgen achterwege en geniet van een dag vol lachende gezichten en speelse momenten.'
 image: 'kermis/kermis-1.jpg'
+isGame: true
 features:
   - 'Eendjeskraam'
   - 'Krijtjes schieten'

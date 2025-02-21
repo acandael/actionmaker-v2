@@ -2,6 +2,7 @@
 title: 'Groupo Universalis'
 description: "Inspiré de l'émission de télévision Homo Universalis"
 image: 'groupo-universalis/groupo-universalis-1.jpg'
+isGame: true
 features:
   - 'Activités pour tous les talents'
   - "Travail d'équipe et créativité"

@@ -2,6 +2,7 @@
 title: 'Spy-academy/James Bond'
 description: "We're looking for the ultimate team of colleagues to take on the role of the world's most famous spy."
 image: 'james-bond/james-bond-1.jpg'
+isGame: true
 features:
   - 'Fencing'
   - 'Morse code'

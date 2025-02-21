@@ -2,6 +2,7 @@
 title: 'La Fête Foraine'
 description: "Laissez vos soucis derrière vous et profitez d'une journée remplie de sourires et de moments ludiques."
 image: 'kermis/kermis-1.jpg'
+isGame: true
 features:
   - 'Stand de pêche aux canards'
   - 'Tir à la craie'

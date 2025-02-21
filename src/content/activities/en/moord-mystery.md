@@ -2,6 +2,7 @@
 title: 'Murder Mystery'
 description: 'Experience an unforgettable team building with an exciting murder mystery in Cluedo style!'
 image: 'moord-mystery/moord-mystery-1.jpg'
+isGame: true
 features:
   - 'Communication game'
   - 'Shooting skills'

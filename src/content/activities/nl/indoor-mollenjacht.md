@@ -3,6 +3,7 @@ title: 'De Mollenjacht (Indoor)'
 description: 'Deze teambuilding is gebaseerd op het populaire tv-programma De Mol'
 image: 'indoor-mollenjacht/indoor-mollenjacht-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/94de6955-8473-4cc6-9dd7-90bc509b858a'
+isGame: true
 features:
   - 'De Mollenloop'
   - 'Time Quiz'

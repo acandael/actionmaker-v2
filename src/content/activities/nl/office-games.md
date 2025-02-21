@@ -2,6 +2,7 @@
 title: 'The Office Games'
 description: 'Gezamenlijk gaan we aan de slag om een indrukwekkende Goldberg machine te creëren'
 image: 'office-games/office-games-1.jpg'
+isGame: true
 features:
   - 'Fysieke kracht'
   - 'Communicatieve vaardigheden'

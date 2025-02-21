@@ -2,6 +2,7 @@
 title: 'Medieval Day'
 description: 'Dive into the enchanting atmosphere of the Middle Ages with this immersive team building'
 image: 'middeleeuwse-dag/middeleeuwse-dag-1.jpg'
+isGame: true
 features:
   - 'Crossbow shooting'
   - 'Axe throwing'

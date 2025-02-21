@@ -2,6 +2,7 @@
 title: 'Football Mania (Indoor)'
 description: 'Experience the European Championship football in a completely new way with our specially developed activity'
 image: 'indoor-voetbalmanie/indoor-voetbalmanie-1.jpg'
+isGame: true
 features:
   [
     'Football bowling',

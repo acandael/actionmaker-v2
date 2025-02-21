@@ -2,6 +2,7 @@
 title: 'Moord Mystery'
 description: 'Beleef een onvergetelijke teambuilding met een spannend murder-mystery in Cluedo-stijl!'
 image: 'moord-mystery/moord-mystery-1.jpg'
+isGame: true
 features:
   - 'Communicatiespel'
   - 'Schietvaardigheid'

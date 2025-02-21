@@ -83,6 +83,8 @@ export const ui = {
     'teambuildings.activities-available_one': '{{count}} activiteit beschikbaar',
     'teambuildings.activities-available_other': '{{count}} activiteiten beschikbaar',
     'teambuildings.all-activities': 'Alle activiteiten',
+    'teambuildings.regular-title': 'Activiteiten',
+    'teambuildings.games-title': 'Games',
 
     // About
     'about.title': 'Over Action Maker',
@@ -240,6 +242,8 @@ export const ui = {
     'teambuildings.activities-available_one': '{{count}} activité disponible',
     'teambuildings.activities-available_other': '{{count}} activités disponibles',
     'teambuildings.all-activities': 'Toutes les activités',
+    'teambuildings.regular-title': 'Activités',
+    'teambuildings.games-title': 'Jeux',
 
     // About
     'about.title': "À propos d'Action Maker",
@@ -328,18 +332,18 @@ export const ui = {
   en: {
     // Home
     'home.hero.title': 'A wide range of unique team building activities',
-    'home.hero.subtitle': 'Strengthen your team with a worry-free day',
-    'home.hero.cta': 'Discover our activities',
+    'home.hero.subtitle': 'Strengthen your team with a fun day without worries',
+    'home.hero.cta': 'View our activities',
 
     // Navigation
     'nav.home': 'Home',
     'nav.teambuildings': 'Team Building',
     'nav.concepts': 'Concepts',
     'nav.concepten': 'Concepts',
-    'nav.about': 'About Us',
+    'nav.about': 'About',
     'nav.contact': 'Contact',
     'nav.menu': 'Menu',
-    'nav.close': 'Close Menu',
+    'nav.close': 'Close menu',
 
     // CTA
     'cta.versterk': 'Strengthen your team today',
@@ -392,12 +396,14 @@ export const ui = {
       'All our animators are experienced and experts in the activities they supervise.',
 
     // Teambuildings
-    'teambuildings.title': 'Find your team building in our wide range of offerings',
+    'teambuildings.title': 'Find your team building in our wide range',
     'teambuildings.activities-found_one': '{{count}} activity found in',
     'teambuildings.activities-found_other': '{{count}} activities found in',
     'teambuildings.activities-available_one': '{{count}} activity available',
     'teambuildings.activities-available_other': '{{count}} activities available',
-    'teambuildings.all-activities': 'All Activities',
+    'teambuildings.all-activities': 'All activities',
+    'teambuildings.regular-title': 'Activities',
+    'teambuildings.games-title': 'Games',
 
     // About
     'about.title': 'About Action Maker',

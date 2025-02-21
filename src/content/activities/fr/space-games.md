@@ -2,6 +2,7 @@
 title: 'Space Games'
 description: "Où le futur est au centre et l'espace est votre terrain de jeu."
 image: 'space-games/space-games-1.jpg'
+isGame: true
 features:
   - 'Escrime laser'
   - 'Réparation de vaisseau spatial'

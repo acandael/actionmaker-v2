@@ -2,6 +2,7 @@
 title: 'Middeleeuwse Dag'
 description: 'Duik in de betoverende sferen van de middeleeuwen met deze meeslepende teambuilding'
 image: 'middeleeuwse-dag/middeleeuwse-dag-1.jpg'
+isGame: true
 features:
   - 'Kruisboogschieten'
   - 'Bijlwerpen'

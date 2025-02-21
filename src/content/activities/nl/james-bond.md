@@ -2,6 +2,7 @@
 title: 'Spy-academy/James Bond'
 description: "We gaan op zoek naar het ultieme team van collega's om de rol van 's werelds meest bekende spion op zich te nemen."
 image: 'james-bond/james-bond-1.jpg'
+isGame: true
 features:
   - 'Schermen'
   - 'Morse code'

@@ -2,6 +2,7 @@
 title: 'Innovation Games'
 description: "Relevez des défis passionnants et découvrez la puissance de l'innovation dans le team building"
 image: 'innovation-games/innovation-games-1.jpg'
+isGame: true
 features:
   - 'Escrime au sabre laser'
   - 'Pilotage de drones'

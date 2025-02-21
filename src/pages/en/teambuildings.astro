@@ -49,7 +49,6 @@ const imageImports = import.meta.glob<{ default: ImageMetadata }>(
 let filteredActivities = selectedCategory
   ? activities.filter((activity) => {
       const isInCategory = activity.data.categories.includes(selectedCategory);
-
       return isInCategory;
     })
   : activities;
@@ -63,17 +62,24 @@ filteredActivities.sort((a, b) => {
   return priorityA - priorityB;
 });
 
+// Separate games and regular teambuildings
+const games = filteredActivities.filter((activity) => activity.data.isGame);
+const regularTeambuildings = filteredActivities.filter((activity) => !activity.data.isGame);
+
 // Format activities for the grid
-const formattedActivities = filteredActivities
-  .filter((activity) => Boolean(activity.data.image))
-  .map((activity) => ({
-    id: activity.id.replace(`${lang}/`, ''),
-    data: {
-      ...activity.data,
-      // Preserve the original priority value
-      priority: activity.data.priority,
-    },
-  }));
+const formatActivities = (activities: typeof filteredActivities) =>
+  activities
+    .filter((activity) => Boolean(activity.data.image))
+    .map((activity) => ({
+      id: activity.id.replace(`${lang}/`, ''),
+      data: {
+        ...activity.data,
+        priority: activity.data.priority,
+      },
+    }));
+
+const formattedGames = formatActivities(games);
+const formattedTeambuildings = formatActivities(regularTeambuildings);
 
 // Format the count message
 const getCountMessage = (count: number, isFiltered: boolean) => {
@@ -109,12 +115,34 @@ const getCountMessage = (count: number, isFiltered: boolean) => {
       <Separator className="max-w-2xl mx-auto" />
     </div>
 
-    <div class="text-center mb-8">
-      <p class="text-muted-foreground">
-        {getCountMessage(formattedActivities.length, !!selectedCategory)}
-      </p>
-    </div>
+    {/* Regular Teambuildings Section */}
+    {
+      formattedTeambuildings.length > 0 && (
+        <div class="mb-24">
+          <h2 class="text-3xl font-bold text-center mb-12">{t('teambuildings.regular-title')}</h2>
+          <div class="text-center mb-8">
+            <p class="text-muted-foreground">
+              {getCountMessage(formattedTeambuildings.length, !!selectedCategory)}
+            </p>
+          </div>
+          <ActivityGrid activities={formattedTeambuildings} imageImports={imageImports} />
+        </div>
+      )
+    }
 
-    <ActivityGrid activities={formattedActivities} imageImports={imageImports} />
+    {/* Games Section */}
+    {
+      formattedGames.length > 0 && (
+        <div>
+          <h2 class="text-3xl font-bold text-center mb-12">{t('teambuildings.games-title')}</h2>
+          <div class="text-center mb-8">
+            <p class="text-muted-foreground">
+              {getCountMessage(formattedGames.length, !!selectedCategory)}
+            </p>
+          </div>
+          <ActivityGrid activities={formattedGames} imageImports={imageImports} />
+        </div>
+      )
+    }
   </section>
 </Layout>

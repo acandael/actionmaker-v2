@@ -2,6 +2,7 @@
 title: 'The Office Games'
 description: 'Ensemble, nous allons créer une impressionnante machine de Goldberg'
 image: 'office-games/office-games-1.jpg'
+isGame: true
 features:
   [
     'Force physique',

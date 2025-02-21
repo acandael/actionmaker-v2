@@ -20,6 +20,7 @@ const activities = defineCollection({
     features: z.array(z.string()),
     gallery: z.array(z.string()),
     'video-url': z.string().optional(),
+    isGame: z.boolean().optional().default(false),
   }),
 });
 
