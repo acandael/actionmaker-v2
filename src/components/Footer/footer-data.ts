@@ -14,7 +14,7 @@ export const footerLinks: FooterSection[] = [
   {
     title: 'footer.sections.indoor',
     links: [
-      { id: 'scherminitiatie', url: '/teambuildings/scherminitiatie' },
+      { id: 'indoor-scherminitiatie', url: '/teambuildings/indoor-scherminitiatie' },
       { id: 'mobiele-escape-room', url: '/teambuildings/mobiele-escape-room' },
       { id: 'dronevliegen', url: '/teambuildings/dronevliegen' },
       { id: 'virtual-reality', url: '/teambuildings/virtual-reality' },
@@ -45,7 +45,7 @@ export const footerLinks: FooterSection[] = [
   {
     title: 'footer.sections.outdoor',
     links: [
-      { id: 'scherminitiatie', url: '/teambuildings/scherminitiatie' },
+      { id: 'outdoor-scherminitiatie', url: '/teambuildings/outdoor-scherminitiatie' },
       { id: 'mobiele-escape-room', url: '/teambuildings/mobiele-escape-room' },
       { id: 'laser-kleiduifschieten', url: '/teambuildings/laser-kleiduifschieten' },
       { id: 'dronevliegen', url: '/teambuildings/dronevliegen' },
