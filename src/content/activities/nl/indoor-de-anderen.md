@@ -1,7 +1,7 @@
 ---
-title: 'De Anderen'
+title: 'De Anderen (Indoor)'
 description: 'Dit programma is eveneens geïnspireerd op een populair tv-concept, namelijk "De Verraders".'
-image: 'de-anderen/de-anderen-1.jpg'
+image: 'indoor-de-anderen/indoor-de-anderen-1.jpg'
 isGame: true
 features:
   - 'Tactiek'
@@ -9,14 +9,13 @@ features:
   - 'Overtuigingskracht'
 gallery:
   [
-    'de-anderen/de-anderen-2.jpg',
-    'de-anderen/de-anderen-3.jpg',
-    'de-anderen/de-anderen-4.jpg',
-    'de-anderen/de-anderen-5.jpg',
-    'de-anderen/de-anderen-6.jpg',
-    'de-anderen/de-anderen-7.jpg',
+    'indoor-de-anderen/indoor-de-anderen-2.jpg',
+    'indoor-de-anderen/indoor-de-anderen-3.jpg',
+    'indoor-de-anderen/indoor-de-anderen-4.jpg',
+    'indoor-de-anderen/indoor-de-anderen-5.jpg',
+    'indoor-de-anderen/indoor-de-anderen-6.jpg',
   ]
-categories: ['indoor', 'outdoor']
+categories: ['indoor']
 duration: '2 - 3 uur'
 groupSize: '8 - 100 personen'
 availability: 'Op aanvraag'

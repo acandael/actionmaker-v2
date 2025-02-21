@@ -1,22 +1,15 @@
 ---
-title: 'Les Autres'
+title: 'Les Autres (Outdoor)'
 description: "Ce programme est également inspiré d'un concept télévisé populaire, à savoir 'Les Traîtres'."
-image: 'de-anderen/de-anderen-1.jpg'
+image: 'outdoor-de-anderen/outdoor-de-anderen-1.jpg'
 isGame: true
 features:
   - 'Tactique'
   - 'Stratégie'
   - 'Persuasion'
 gallery:
-  [
-    'de-anderen/de-anderen-2.jpg',
-    'de-anderen/de-anderen-3.jpg',
-    'de-anderen/de-anderen-4.jpg',
-    'de-anderen/de-anderen-5.jpg',
-    'de-anderen/de-anderen-6.jpg',
-    'de-anderen/de-anderen-7.jpg',
-  ]
-categories: ['indoor', 'outdoor']
+  ['outdoor-de-anderen/outdoor-de-anderen-2.jpg', 'outdoor-de-anderen/outdoor-de-anderen-3.jpg']
+categories: ['outdoor']
 duration: '2 - 3 heures'
 groupSize: '8 - 100 personnes'
 availability: 'Sur demande'

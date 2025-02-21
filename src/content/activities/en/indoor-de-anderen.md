@@ -1,7 +1,7 @@
 ---
-title: 'The Others'
+title: 'The Others (Indoor)'
 description: 'This program is also inspired by a popular TV concept, namely "The Traitors."'
-image: 'de-anderen/de-anderen-1.jpg'
+image: 'indoor-de-anderen/indoor-de-anderen-1.jpg'
 isGame: true
 features:
   - 'Tactics'
@@ -9,14 +9,13 @@ features:
   - 'Persuasion'
 gallery:
   [
-    'de-anderen/de-anderen-2.jpg',
-    'de-anderen/de-anderen-3.jpg',
-    'de-anderen/de-anderen-4.jpg',
-    'de-anderen/de-anderen-5.jpg',
-    'de-anderen/de-anderen-6.jpg',
-    'de-anderen/de-anderen-7.jpg',
+    'indoor-de-anderen/indoor-de-anderen-2.jpg',
+    'indoor-de-anderen/indoor-de-anderen-3.jpg',
+    'indoor-de-anderen/indoor-de-anderen-4.jpg',
+    'indoor-de-anderen/indoor-de-anderen-5.jpg',
+    'indoor-de-anderen/indoor-de-anderen-6.jpg',
   ]
-categories: ['indoor', 'outdoor']
+categories: ['indoor']
 duration: '2 - 3 hours'
 groupSize: '8 - 100 people'
 availability: 'On request'
