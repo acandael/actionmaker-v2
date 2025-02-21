@@ -15,7 +15,7 @@ gallery:
   - 'teambooster/teambooster-5.jpg'
   - 'teambooster/teambooster-6.jpg'
   - 'teambooster/teambooster-7.jpg'
-categories: ['outdoor', 'indoor']
+categories: ['outdoor']
 duration: '2 - 5 uur'
 groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
