@@ -1,8 +1,8 @@
 ---
-title: 'Laser Biatlon'
-description: 'In the infrared biathlon, participants shoot at a biathlon target using converted biathlon rifles'
-image: 'laser-biatlon/laser-biatlon-1.jpg'
-categories: ['outdoor', 'indoor']
+title: 'Laser Rifle and Sport Pistol (Outdoor)'
+description: 'In the laser rifle and sport pistol, participants shoot at a biathlon target using converted biathlon rifles'
+image: 'outdoor-laser-karabijn/outdoor-laser-karabijn-1.jpg'
+categories: ['outdoor']
 duration: '30 minutes - 2 hours'
 groupSize: '2 - 200'
 availability: 'All year round'
@@ -12,12 +12,12 @@ features:
   - 'Coaching'
 gallery:
   [
-    'laser-biatlon/laser-biatlon-2.jpg',
-    'laser-biatlon/laser-biatlon-3.jpg',
-    'laser-biatlon/laser-biatlon-4.jpg',
-    'laser-biatlon/laser-biatlon-5.jpg',
-    'laser-biatlon/laser-biatlon-6.jpg',
-    'laser-biatlon/laser-biatlon-7.jpg',
+    'outdoor-laser-karabijn/outdoor-laser-karabijn-2.jpg',
+    'outdoor-laser-karabijn/outdoor-laser-karabijn-3.jpg',
+    'outdoor-laser-karabijn/outdoor-laser-karabijn-4.jpg',
+    'outdoor-laser-karabijn/outdoor-laser-karabijn-5.jpg',
+    'outdoor-laser-karabijn/outdoor-laser-karabijn-6.jpg',
+    'outdoor-laser-karabijn/outdoor-laser-karabijn-7.jpg',
   ]
 ---
 

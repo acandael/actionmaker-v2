@@ -1,20 +1,20 @@
 ---
-title: 'Biathlon infrarouge'
-description: 'Le biathlon infrarouge se pratique avec des carabines de biathlon modifiées pour tirer sur une cible de biathlon'
-image: 'laser-biatlon/laser-biatlon-1.jpg'
-categories: ['outdoor', 'indoor']
+title: 'Carabine laser et pistolet de sport (Indoor)'
+description: 'Le carabine laser et pistolet de sport se pratique avec des carabines de biathlon modifiées pour tirer sur une cible de biathlon'
+image: 'indoor-laser-karabijn/indoor-laser-karabijn-1.jpg'
+categories: ['indoor']
 duration: '30 minutes - 2 heures'
 groupSize: '2 - 200'
 availability: "Toute l'année"
 features: ['relaxation', 'dynamique de groupe', 'coaching']
 gallery:
   [
-    'laser-biatlon/laser-biatlon-2.jpg',
-    'laser-biatlon/laser-biatlon-3.jpg',
-    'laser-biatlon/laser-biatlon-4.jpg',
-    'laser-biatlon/laser-biatlon-5.jpg',
-    'laser-biatlon/laser-biatlon-6.jpg',
-    'laser-biatlon/laser-biatlon-7.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-2.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-3.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-4.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-5.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-6.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-7.jpg',
   ]
 ---
 

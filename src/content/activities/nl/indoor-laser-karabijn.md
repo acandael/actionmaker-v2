@@ -1,8 +1,8 @@
 ---
-title: 'Laser Biatlon'
+title: 'Laser karabijn- en sportpistool (Indoor)'
 description: 'Bij het infrarood biatlonschieten wordt er met omgebouwde biatlongeweren geschoten op een biatlon doel'
-image: 'laser-biatlon/laser-biatlon-1.jpg'
-categories: ['outdoor', 'indoor']
+image: 'indoor-laser-karabijn/indoor-laser-karabijn-1.jpg'
+categories: ['indoor']
 duration: '30 minuten - 2 uur'
 groupSize: '2 - 200'
 availability: 'Het hele jaar door'
@@ -12,12 +12,12 @@ features:
   - 'coaching'
 gallery:
   [
-    'laser-biatlon/laser-biatlon-2.jpg',
-    'laser-biatlon/laser-biatlon-3.jpg',
-    'laser-biatlon/laser-biatlon-4.jpg',
-    'laser-biatlon/laser-biatlon-5.jpg',
-    'laser-biatlon/laser-biatlon-6.jpg',
-    'laser-biatlon/laser-biatlon-7.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-2.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-3.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-4.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-5.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-6.jpg',
+    'indoor-laser-karabijn/indoor-laser-karabijn-7.jpg',
   ]
 ---
 
