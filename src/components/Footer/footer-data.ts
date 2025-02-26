@@ -62,7 +62,7 @@ export const footerLinks: FooterSection[] = [
       { id: 'outdoor-blaaspijpschieten', url: '/teambuildings/outdoor-blaaspijpschieten' },
       { id: 'volksspelen', url: '/teambuildings/volksspelen' },
       { id: 'outdoor-djembe', url: '/teambuildings/outdoor-djembe' },
-      { id: 'pistoolschieten', url: '/teambuildings/pistoolschieten' },
+      { id: 'luchtdruk-pistoolschieten', url: '/teambuildings/luchtdruk-pistoolschieten' },
       { id: 'vuurlopen', url: '/teambuildings/vuurlopen' },
       { id: 'alpacaworkshop', url: '/teambuildings/alpacaworkshop' },
       { id: 'outdoor-mollenjacht', url: '/teambuildings/outdoor-mollenjacht' },
