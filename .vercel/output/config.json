@@ -1,0 +1,128 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"src": "^/_server-islands/([^/]+?)/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/_image/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/api/booking/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/api/contact/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/contact/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/disclaimer/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/en/contact/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/en/disclaimer/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/en/over-actionmaker/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/en/teambuildings/([^/]+?)/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/en/teambuildings/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/en/terms-of-service/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/en/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/fr/contact/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/fr/disclaimer/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/fr/over-actionmaker/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/fr/teambuildings/([^/]+?)/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/fr/teambuildings/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/fr/terms-of-service/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/fr/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/over-actionmaker/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/teambuildings/([^/]+?)/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/teambuildings/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/terms-of-service/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/$",
+			"dest": "_render"
+		}
+	],
+	"images": {
+		"domains": [],
+		"sizes": [
+			320,
+			640,
+			1280
+		],
+		"formats": [
+			"image/avif",
+			"image/webp"
+		],
+		"remotePatterns": []
+	}
+}

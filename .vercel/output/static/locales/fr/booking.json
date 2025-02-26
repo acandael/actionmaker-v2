@@ -1,0 +1,19 @@
+{
+  "form-name": "Nom",
+  "form-name-placeholder": "Votre nom",
+  "form-name-error": "Le nom doit contenir au moins 2 caractères",
+  "form-email": "Email",
+  "form-email-placeholder": "votre@email.com",
+  "form-email-error": "Veuillez entrer une adresse email valide",
+  "form-company": "Entreprise",
+  "form-company-placeholder": "Votre entreprise",
+  "form-company-error": "Le nom de l'entreprise doit contenir au moins 2 caractères",
+  "form-phone": "Téléphone",
+  "form-phone-placeholder": "Votre numéro de téléphone",
+  "form-phone-error": "Le numéro de téléphone doit contenir au moins 9 caractères",
+  "form-message": "Message",
+  "form-message-placeholder": "Votre message",
+  "form-message-error": "Le message doit contenir au moins 10 caractères",
+  "form-submit": "Envoyer la demande",
+  "booking-default-message": "Je souhaite recevoir plus d'informations sur l'activité: {{activity}}"
+}

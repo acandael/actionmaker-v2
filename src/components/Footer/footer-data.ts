@@ -22,6 +22,7 @@ export const footerLinks: FooterSection[] = [
       { id: 'indoor-laserschermen', url: '/teambuildings/indoor-laserschermen' },
       { id: 'indoor-arrow-tag', url: '/teambuildings/indoor-arrow-tag' },
       { id: 'smaaktest', url: '/teambuildings/smaaktest' },
+      { id: 'biertasting', url: '/teambuildings/biertasting' },
       { id: 'chocoladeworkshop', url: '/teambuildings/chocoladeworkshop' },
       { id: 'indoor-sumoworstelen', url: '/teambuildings/indoor-sumoworstelen' },
       { id: 'indoor-blaaspijpschieten', url: '/teambuildings/indoor-blaaspijpschieten' },
@@ -128,6 +129,7 @@ export const footerLinks: FooterSection[] = [
     title: 'footer.sections.workshops',
     links: [
       { id: 'smaaktest', url: '/teambuildings/smaaktest' },
+      { id: 'biertasting', url: '/teambuildings/biertasting' },
       { id: 'chocoladeworkshop', url: '/teambuildings/chocoladeworkshop' },
       { id: 'kunstsmeden', url: '/teambuildings/kunstsmeden' },
       { id: 'vuurlopen', url: '/teambuildings/vuurlopen' },
