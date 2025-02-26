@@ -121,6 +121,7 @@ export const footerLinks: FooterSection[] = [
       { id: 'brugse-metten-tocht', url: '/teambuildings/brugse-metten-tocht' },
       { id: 'antwerpse-straffe-handjes', url: '/teambuildings/antwerpse-straffe-handjes' },
       { id: 'gentse-stroppentocht', url: '/teambuildings/gentse-stroppentocht' },
+      { id: 'gents-stadsspel', url: '/teambuildings/gents-stadsspel' },
     ],
   },
   {
