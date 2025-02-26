@@ -58,12 +58,6 @@ for (const [id, category] of categoriesArray) {
 
 // Sort by our manual order
 orderedCategories.sort((a, b) => a.order - b.order);
-
-// Debug: Log the final order
-console.log('Final category order:');
-orderedCategories.forEach(({ id, order }) => {
-  console.log(`${id}: order=${order}`);
-});
 ---
 
 <section class="py-16 px-4">

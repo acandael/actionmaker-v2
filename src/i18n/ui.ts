@@ -54,7 +54,7 @@ export const ui = {
     'cta.heading.highlight': 'Versterk',
 
     // Testimonials
-    'testimonials.logos-title': 'Zij vertrouwen op ActionMaker',
+    'testimonials.logos-title': 'Zij vertrouwen op Action Maker',
     'testimonials.title': 'Wat onze klanten zeggen',
 
     // FAQ
@@ -84,7 +84,7 @@ export const ui = {
     'teambuildings.activities-available_other': '{{count}} activiteiten beschikbaar',
     'teambuildings.all-activities': 'Alle activiteiten',
     'teambuildings.regular-title': 'Activiteiten',
-    'teambuildings.games-title': 'Games',
+    'teambuildings.games-title': 'Teambuildinggames',
 
     // About
     'about.title': 'Over Action Maker',
@@ -204,7 +204,7 @@ export const ui = {
     'cta.heading.highlight': 'Renforcez',
 
     // Testimonials
-    'testimonials.logos-title': 'Ils font confiance à ActionMaker',
+    'testimonials.logos-title': 'Ils font confiance à Action Maker',
     'testimonials.title': 'Ce que disent nos clients',
 
     // FAQ
@@ -243,7 +243,7 @@ export const ui = {
     'teambuildings.activities-available_other': '{{count}} activités disponibles',
     'teambuildings.all-activities': 'Toutes les activités',
     'teambuildings.regular-title': 'Activités',
-    'teambuildings.games-title': 'Jeux',
+    'teambuildings.games-title': 'Jeux de team building',
 
     // About
     'about.title': "À propos d'Action Maker",
@@ -277,7 +277,7 @@ export const ui = {
     // About Values
     'about.values.title': 'Nos Valeurs',
     'about.values.subtitle':
-      "Chez ActionMaker, nous visons l'excellence dans tout ce que nous faisons",
+      "Chez Action Maker, nous visons l'excellence dans tout ce que nous faisons",
     'about.values.passie.title': 'Passion',
     'about.values.passie.description':
       'Nous sommes passionnés par le team building et cela se reflète dans tout ce que nous faisons',
@@ -364,7 +364,7 @@ export const ui = {
     'cta.heading.highlight': 'Strengthen',
 
     // Testimonials
-    'testimonials.logos-title': 'They trust ActionMaker',
+    'testimonials.logos-title': 'They trust Action Maker',
     'testimonials.title': 'What our customers say',
 
     // FAQ
@@ -403,7 +403,7 @@ export const ui = {
     'teambuildings.activities-available_other': '{{count}} activities available',
     'teambuildings.all-activities': 'All activities',
     'teambuildings.regular-title': 'Activities',
-    'teambuildings.games-title': 'Games',
+    'teambuildings.games-title': 'Teambuildinggames',
 
     // About
     'about.title': 'About Action Maker',
@@ -436,7 +436,7 @@ export const ui = {
 
     // About Values
     'about.values.title': 'Our Values',
-    'about.values.subtitle': 'At ActionMaker, we strive for excellence in everything we do',
+    'about.values.subtitle': 'At Action Maker, we strive for excellence in everything we do',
     'about.values.passie.title': 'Passion',
     'about.values.passie.description':
       'We are passionate about team building and it shows in everything we do',

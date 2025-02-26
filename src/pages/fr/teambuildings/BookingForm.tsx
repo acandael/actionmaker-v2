@@ -91,7 +91,9 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
           />
 
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold">Demandez un devis pour ce team building</h3>
+            <h3 className="text-2xl font-semibold">
+              Demandez un devis pour cette activité/teambuilding
+            </h3>
             <p className="text-muted-foreground">
               Remplissez le formulaire et nous vous contacterons dans les 24 heures.
             </p>

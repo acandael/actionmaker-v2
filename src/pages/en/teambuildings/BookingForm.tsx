@@ -93,7 +93,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
 
           <div className="space-y-2">
             <h3 className="text-2xl font-semibold">
-              Request a quote for this team building activity
+              Request a quote for this activity/teambuilding
             </h3>
             <p className="text-muted-foreground">
               Fill out the form and we will contact you within 24 hours.
@@ -225,7 +225,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             name="location"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Location (leave empty if you need the ActionMaker location)</FormLabel>
+                <FormLabel>Location (leave empty if you need the Action Maker location)</FormLabel>
                 <FormControl>
                   <Input placeholder="Address or City" {...field} />
                 </FormControl>

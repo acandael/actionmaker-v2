@@ -91,7 +91,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
           />
 
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold">Boek deze activiteit</h3>
+            <h3 className="text-2xl font-semibold">Boek deze teambuilding/activiteit</h3>
             <p className="text-muted-foreground">
               Vul het formulier in en we nemen binnen 24 uur contact met je op.
             </p>
@@ -223,7 +223,7 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>
-                  Locatie (laat veld blank indien ActionMaker locatie moet voorzien)
+                  Locatie (laat veld blank indien Action Maker locatie moet voorzien)
                 </FormLabel>
                 <FormControl>
                   <Input placeholder="Adres of stad" {...field} />

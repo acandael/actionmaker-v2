@@ -1,5 +1,5 @@
 ---
-title: 'Innovation Games'
+title: 'Innovation Games (Indoor)'
 description: 'Waag je aan uitdagende activiteiten en ontdek de kracht van innovatie in teambuilding'
 image: 'innovation-games/innovation-games-1.jpg'
 isGame: true

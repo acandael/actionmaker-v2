@@ -52,12 +52,6 @@ const getCategoryUrl = (categoryId: string) => {
   // Don't include locale prefix for default locale (nl)
   return lang === 'nl' ? `${baseUrl}${queryParam}` : `/${lang}${baseUrl}${queryParam}`;
 };
-
-// Debug: Log the final order
-console.log('Final category order:');
-categories.forEach(({ id, order }) => {
-  console.log(`${id}: order=${order}`);
-});
 ---
 
 <section class="py-24 px-4 bg-background">
