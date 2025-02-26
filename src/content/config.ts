@@ -30,6 +30,7 @@ const categories = defineCollection({
     title: z.string(),
     description: z.string(),
     image: z.string(),
+    order: z.number().int().optional().default(999),
   }),
 });
 

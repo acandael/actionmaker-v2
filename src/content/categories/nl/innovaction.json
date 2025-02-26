@@ -1,5 +1,6 @@
 {
   "title": "InnovAction",
   "description": "Innovatieve teambuilding activiteiten",
-  "image": "/src/assets/categories/innovaction.jpg"
+  "image": "/src/assets/categories/innovaction.jpg",
+  "order": 4
 }

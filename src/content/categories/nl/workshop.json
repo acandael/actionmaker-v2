@@ -1,5 +1,6 @@
 {
   "title": "Workshop",
-  "description": "Interactive workshops for team development",
-  "image": "/src/assets/categories/workshop.jpg"
+  "description": "Creatieve workshops voor teams",
+  "image": "/src/assets/categories/workshop.jpg",
+  "order": 6
 }

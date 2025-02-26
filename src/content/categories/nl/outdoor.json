@@ -1,5 +1,6 @@
 {
   "title": "Outdoor",
   "description": "Teambuilding activiteiten in de buitenlucht",
-  "image": "/src/assets/categories/outdoor.jpg"
+  "image": "/src/assets/categories/outdoor.jpg",
+  "order": 2
 }

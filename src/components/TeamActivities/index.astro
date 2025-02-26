@@ -2,20 +2,81 @@
 import CategoryCard from './CategoryCard.astro';
 import { getCollection } from 'astro:content';
 
-const categories = await getCollection('categories');
+// Get all categories
+const allCategories = await getCollection('categories');
+
+// Define the desired order
+const desiredOrder: Record<string, number> = {
+  indoor: 1,
+  outdoor: 2,
+  actief: 3,
+  innovaction: 4,
+  'city-games': 5,
+  workshop: 6,
+};
+
+// Create a map of categories by their base ID
+const categoryMap = new Map();
+allCategories.forEach((category) => {
+  const parts = category.id.split('/');
+  const baseId = parts[parts.length - 1].replace('.json', '');
+
+  // Prefer Dutch categories
+  if (!categoryMap.has(baseId) || category.id.startsWith('nl/')) {
+    categoryMap.set(baseId, category);
+  }
+});
+
+// Convert map to array
+const categoriesArray = Array.from(categoryMap.entries());
+
+// Create an array with the exact order we want
+const orderedCategories = [];
+
+// First, add categories in the exact order we want
+for (const [id, order] of Object.entries(desiredOrder)) {
+  const category = categoryMap.get(id);
+  if (category) {
+    orderedCategories.push({
+      id,
+      category,
+      order,
+    });
+  }
+}
+
+// Then add any remaining categories
+for (const [id, category] of categoriesArray) {
+  if (!desiredOrder[id]) {
+    orderedCategories.push({
+      id,
+      category,
+      order: 999,
+    });
+  }
+}
+
+// Sort by our manual order
+orderedCategories.sort((a, b) => a.order - b.order);
+
+// Debug: Log the final order
+console.log('Final category order:');
+orderedCategories.forEach(({ id, order }) => {
+  console.log(`${id}: order=${order}`);
+});
 ---
 
 <section class="py-16 px-4">
   <div class="container mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {
-        categories.map((category, index) => (
+        orderedCategories.map(({ id, category, order }) => (
           <CategoryCard
-            id={category.id}
+            id={id}
             title={category.data.title}
             description={category.data.description}
             image={category.data.image}
-            index={index}
+            index={order}
           />
         ))
       }

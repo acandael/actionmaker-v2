@@ -1,5 +1,6 @@
 {
   "title": "Actief",
-  "description": "Energieke teambuilding activiteiten",
-  "image": "/src/assets/categories/actief.jpg"
+  "description": "Actieve teambuilding activiteiten",
+  "image": "/src/assets/categories/actief.jpg",
+  "order": 3
 }

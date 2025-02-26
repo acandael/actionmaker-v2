@@ -17,15 +17,30 @@ const categoryMapping: Record<string, string> = {
   innovaction: 'innovaction',
 };
 
+// Define the desired order
+const desiredOrder: Record<string, number> = {
+  indoor: 1,
+  outdoor: 2,
+  actief: 3,
+  innovaction: 4,
+  'city-games': 5,
+  workshop: 6,
+};
+
 // Get categories and filter by locale
 const allCategories = await getCollection('categories');
 const categories = allCategories
   .filter((category) => category.id.startsWith(`${lang}/`))
-  .map((category) => ({
-    id: category.id.replace(`${lang}/`, ''), // Remove locale prefix
-    title: category.data.title,
-    description: category.data.description,
-  }));
+  .map((category) => {
+    const id = category.id.replace(`${lang}/`, ''); // Remove locale prefix
+    return {
+      id,
+      title: category.data.title,
+      description: category.data.description,
+      order: desiredOrder[id] || 999, // Use the desired order or default to 999
+    };
+  })
+  .sort((a, b) => a.order - b.order); // Sort by the order
 
 // Create URL based on locale
 const getCategoryUrl = (categoryId: string) => {
@@ -37,6 +52,12 @@ const getCategoryUrl = (categoryId: string) => {
   // Don't include locale prefix for default locale (nl)
   return lang === 'nl' ? `${baseUrl}${queryParam}` : `/${lang}${baseUrl}${queryParam}`;
 };
+
+// Debug: Log the final order
+console.log('Final category order:');
+categories.forEach(({ id, order }) => {
+  console.log(`${id}: order=${order}`);
+});
 ---
 
 <section class="py-24 px-4 bg-background">
@@ -51,6 +72,7 @@ const getCategoryUrl = (categoryId: string) => {
               description={category.description}
               image={`/images/categories/${category.id}.jpg`}
               categoryId={category.id}
+              index={category.order}
             >
               <CategoryIcon category={category.id} slot="icon" />
             </ActivityCard>
@@ -60,3 +82,50 @@ const getCategoryUrl = (categoryId: string) => {
     </div>
   </div>
 </section>
+
+<script>
+  function setupCategoryCardAnimations() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Get all category cards
+            const cards = document.querySelectorAll('[data-category-card]');
+
+            // Animate cards in order based on their data-index attribute
+            const sortedCards = Array.from(cards).sort((a, b) => {
+              const aIndex = a.getAttribute('data-index') || '999';
+              const bIndex = b.getAttribute('data-index') || '999';
+              return parseInt(aIndex) - parseInt(bIndex);
+            });
+
+            // Animate each card with a delay based on its order
+            sortedCards.forEach((card, index) => {
+              setTimeout(() => {
+                card.classList.remove('translate-y-8', 'opacity-0');
+                card.classList.add('translate-y-0', 'opacity-100');
+              }, index * 100);
+            });
+
+            observer.disconnect();
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    // Observe the section containing the cards
+    const section = document.querySelector('.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3.gap-8');
+    if (section) {
+      observer.observe(section);
+    }
+  }
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', setupCategoryCardAnimations);
+
+  // Run on view transitions
+  document.addEventListener('astro:page-load', setupCategoryCardAnimations);
+</script>

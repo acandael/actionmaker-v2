@@ -1,5 +1,6 @@
 {
   "title": "Indoor",
   "description": "Teambuilding activiteiten voor binnen",
-  "image": "/src/assets/categories/indoor.jpg"
+  "image": "/src/assets/categories/indoor.jpg",
+  "order": 1
 }
