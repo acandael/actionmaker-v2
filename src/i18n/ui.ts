@@ -11,7 +11,7 @@ export const ui = {
     // Home
     'home.hero.title': 'Een breed gamma van unieke teambuildings',
     'home.hero.subtitle': 'Versterk je team met een leuke dag zonder zorgen',
-    'home.hero.cta': 'Bekijk onze activiteiten',
+    'home.hero.cta': 'Bekijk onze activiteiten/teambuildings',
 
     // Navigation
     'nav.home': 'Home',
