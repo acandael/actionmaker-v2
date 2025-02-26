@@ -3,9 +3,15 @@ title: 'Mains Fortes d’Anvers'
 description: 'Découvrez des anecdotes amusantes sur Anvers tout en renforçant esprit équipe au sein de votre groupe'
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 features:
-  - 'anecdotes amusantes'
-  - 'activités amusantes'
-  - 'prix'
+  - 'Chasse aux photos : Explorez les rues'
+  - 'Shoot-outs sur un terrain de basket emblématique'
+  - 'Reconnaître les symboles anversois au Steen'
+  - "Speed dating avec le plus ancien escalator en bois d'Europe"
+  - 'Anvers chronologique en route'
+  - 'En option : Dégustation de bières anversoises'
+  - 'Anecdotes intéressantes'
+  - 'Activités amusantes'
+  - 'Prix'
 gallery:
   [
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-2.jpg',

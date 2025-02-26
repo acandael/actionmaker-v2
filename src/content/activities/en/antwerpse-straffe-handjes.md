@@ -3,9 +3,15 @@ title: 'Antwerp Strong Hands'
 description: 'Discover interesting facts about Antwerp while strengthening team spirit'
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 features:
-  - 'interesting facts'
-  - 'fun activities'
-  - 'prizes'
+  - 'Photo Hunt: Explore the Streets'
+  - 'Shoot-outs at an Iconic Basketball Location'
+  - 'Recognizing Antwerp Symbols at the Steen'
+  - 'Speed Dating with the Oldest Wooden Escalator in Europe'
+  - 'Antwerp Chronological Journey'
+  - 'Optional: Antwerp Beer Tasting'
+  - 'Fun Facts'
+  - 'Fun Activities'
+  - 'Prizes'
 gallery:
   [
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-2.jpg',

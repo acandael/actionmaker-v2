@@ -3,9 +3,15 @@ title: 'Antwerpse Straffe Handjes'
 description: 'Leuke weetjes over Antwerpen ontdekken en gelijktijdig de teamgeest versterken binnen je team'
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 features:
-  - 'leuke weetjes'
-  - 'grappige activiteiten'
-  - 'prijzen'
+  - 'Fotozoektocht: Verken het Straatbeeld'
+  - 'Shoot-outs op een iconische basketbal-locatie'
+  - 'Antwerpse Symbolen Herkennen in het Steen'
+  - 'Speeddate met de oudste houten roltrap van Europa'
+  - 'Antwerpen Chronologisch Onderweg'
+  - 'In Optie: Antwerpse Biertasting'
+  - 'Leuke weetjes'
+  - 'Grappige activiteiten'
+  - 'Prijzen'
 gallery:
   [
     'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg',
