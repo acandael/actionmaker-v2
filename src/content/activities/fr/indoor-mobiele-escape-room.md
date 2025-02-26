@@ -1,7 +1,7 @@
 ---
-title: 'Escape Room Mobile'
+title: 'Escape Room Mobile (Indoor)'
 description: 'Nuclear Box & Magic Bomb'
-image: 'mobiele-escape-room/mobiele-escape-room-1.jpg'
+image: 'indoor-mobiele-escape-room/indoor-mobiele-escape-room-1.jpg'
 features:
   - 'Mobile'
   - 'Mallette explosive'
@@ -9,14 +9,14 @@ features:
   - 'Polyvalent et amusant'
 gallery:
   [
-    'mobiele-escape-room/mobiele-escape-room-2.jpg',
-    'mobiele-escape-room/mobiele-escape-room-3.jpg',
-    'mobiele-escape-room/mobiele-escape-room-4.jpg',
-    'mobiele-escape-room/mobiele-escape-room-5.jpg',
-    'mobiele-escape-room/mobiele-escape-room-6.jpg',
-    'mobiele-escape-room/mobiele-escape-room-7.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-2.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-3.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-4.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-5.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-6.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-7.jpg',
   ]
-categories: ['innovaction']
+categories: ['indoor', 'innovaction']
 duration: '30 minutes - 2 heures'
 groupSize: '2 - 250 personnes'
 availability: 'Sur demande'

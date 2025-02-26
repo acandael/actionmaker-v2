@@ -1,7 +1,7 @@
 ---
-title: 'Mobile Escape Room'
+title: 'Mobile Escape Room (Indoor)'
 description: 'Experience a unique and exciting escape room adventure with our mobile escape room cases!'
-image: 'mobiele-escape-room/mobiele-escape-room-1.jpg'
+image: 'indoor-mobiele-escape-room/indoor-mobiele-escape-room-1.jpg'
 features:
   - 'escape room'
   - 'bomb case'
@@ -10,14 +10,14 @@ features:
   - 'working under time pressure'
 gallery:
   [
-    'mobiele-escape-room/mobiele-escape-room-2.jpg',
-    'mobiele-escape-room/mobiele-escape-room-3.jpg',
-    'mobiele-escape-room/mobiele-escape-room-4.jpg',
-    'mobiele-escape-room/mobiele-escape-room-5.jpg',
-    'mobiele-escape-room/mobiele-escape-room-6.jpg',
-    'mobiele-escape-room/mobiele-escape-room-7.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-2.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-3.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-4.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-5.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-6.jpg',
+    'indoor-mobiele-escape-room/indoor-mobiele-escape-room-7.jpg',
   ]
-categories: ['indoor', 'outdoor', 'innovaction']
+categories: ['indoor', 'innovaction']
 duration: '30 minutes - 2 hours'
 groupSize: '2 - 250 people'
 availability: 'On request'
