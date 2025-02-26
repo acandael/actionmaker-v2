@@ -27,7 +27,7 @@ export const ui = {
     'features.title': 'Waarom kiezen voor',
     'features.flexible.title': 'Flexibel',
     'features.flexible.description':
-      'Een onvoorziene wijziging op het laatste moment? Geen probleem, wij zijn flexibel en kunnen jouw teambuilding aanpassen aan elke omstandigheid.',
+      'Een onvoorziene wijziging op het laatste moment? Geen probleem, wij zijn flexibel en kunnen jouw activiteit/teambuilding aanpassen aan elke omstandigheid.',
     'features.personal.title': 'Persoonlijk',
     'features.personal.description':
       'Action Maker organiseert praktisch alle activiteiten zelf en indien niet werken we met betrouwbare onderaannemers',
@@ -227,7 +227,7 @@ export const ui = {
     'features.title': 'Pourquoi Choisir',
     'features.flexible.title': 'Flexible',
     'features.flexible.description':
-      'Un changement imprévu à la dernière minute ? Pas de problème, nous sommes flexibles et pouvons adapter votre team building à toutes les circonstances.',
+      'Un changement imprévu à la dernière minute ? Pas de problème, nous sommes flexibles et pouvons adapter votre activité/team building à toutes les circonstances.',
     'features.personal.title': 'Personnel',
     'features.personal.description':
       'Action Maker organise pratiquement toutes les activités lui-même et sinon nous travaillons avec des sous-traitants fiables',
@@ -387,7 +387,7 @@ export const ui = {
     'features.title': 'Why Choose Action Maker',
     'features.flexible.title': 'Flexible',
     'features.flexible.description':
-      'An unexpected last-minute change? No problem, we are flexible and can adapt your team building to any circumstances.',
+      'An unforeseen change at the last moment? No problem, we are flexible and can adapt your activity/team building to any circumstance.',
     'features.personal.title': 'Personal',
     'features.personal.description':
       'Action Maker organizes practically all activities in-house and when not, we work with reliable subcontractors',
