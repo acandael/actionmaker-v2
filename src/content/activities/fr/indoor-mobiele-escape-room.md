@@ -18,7 +18,7 @@ gallery:
   ]
 categories: ['indoor', 'innovaction']
 duration: '30 minutes - 2 heures'
-groupSize: '2 - 250 personnes'
+groupSize: '6 - 250 personnes'
 availability: 'Sur demande'
 ---
 

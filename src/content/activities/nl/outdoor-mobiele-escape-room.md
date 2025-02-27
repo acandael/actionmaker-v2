@@ -15,7 +15,7 @@ gallery:
   ]
 categories: ['outdoor', 'innovaction']
 duration: '30 minuten - 2 uur'
-groupSize: '2 - 250 personen'
+groupSize: '6 - 250 personen'
 availability: 'Op aanvraag'
 ---
 
