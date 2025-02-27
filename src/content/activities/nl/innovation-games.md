@@ -32,7 +32,7 @@ Beleef het schermen met een lasersabel, geïnspireerd op Star Wars, de nieuwste 
 
 Leer vliegen met drones: wij voorzien zeer gebruiksvriendelijke drones, terwijl het team snel een parcours aflegt en foto’s maakt of vlieg mee met de drone via een fpv bril .op het einde volgt een vertrouwenstest.
 
-Test je schietvaardigheden met infrarood biatlonkarabijnen en sportpistolen uit Finland. Gecoacht door teamleden aan de hand van een console, ontdek wie het best schiet.
+Test je schietvaardigheden met laser biatlonkarabijnen en sportpistolen uit Finland. Gecoacht door teamleden aan de hand van een console, ontdek wie het best schiet.
 
 Ontmantel een fysieke bom of red een nucleaire centrale met onze innovatieve escape boxen.
-Schiet met de nieuwste en milieuvriendelijke vorm van paintball: gellblaster
+Schiet met de nieuwste en milieuvriendelijke vorm van paintball: gelblaster

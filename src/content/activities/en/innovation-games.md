@@ -33,7 +33,7 @@ Experience lightsaber fencing, inspired by Star Wars, the latest sensation in of
 
 Learn to fly drones: we provide very user-friendly drones, while the team quickly completes a course and takes photos or fly along with the drone via FPV goggles. A trust test follows at the end.
 
-Test your shooting skills with infrared biathlon rifles and sports pistols from Finland. Coached by team members using a console, discover who shoots best.
+Test your shooting skills with laser biathlon rifles and Finnish sport pistols. Coached by team members using a console, discover who shoots best.
 
 Defuse a physical bomb or save a nuclear power plant with our innovative escape boxes.
 Shoot with the newest and most environmentally friendly form of paintball: GelBlaster

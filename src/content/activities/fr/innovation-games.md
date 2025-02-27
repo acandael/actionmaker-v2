@@ -32,7 +32,7 @@ Vivez l'expérience de l'escrime au sabre laser, inspirée de Star Wars, la dern
 
 Apprenez à piloter des drones : nous fournissons des drones très conviviaux, pendant que l'équipe parcourt rapidement un circuit et prend des photos, ou volez avec le drone via des lunettes FPV. Un test de confiance conclut l'activité.
 
-Testez vos compétences de tir avec des carabines de biathlon infrarouge et des pistolets de sport finlandais. Coachés par les membres de l'équipe à l'aide d'une console, découvrez qui est le meilleur tireur.
+Testez vos compétences de tir avec des carabines de biathlon laser et des pistolets de sport finlandais. Coachés par les membres de l'équipe à l'aide d'une console, découvrez qui est le meilleur tireur.
 
 Désamorcez une bombe physique ou sauvez une centrale nucléaire avec nos boîtes d'évasion innovantes.
 Tirez avec la forme la plus récente et écologique de paintball : le gellblaster
