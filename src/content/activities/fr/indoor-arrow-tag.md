@@ -7,7 +7,7 @@ features: ['Actif et sécurisé', "Travail d'équipe et plaisir", 'Aventureux']
 gallery: ['indoor-arrow-tag/indoor-arrow-tag-1.jpg']
 categories: ['actief', 'indoor']
 duration: '30 minutes - 2 heures'
-groupSize: '4-100 people'
+groupSize: '10-100 people'
 availability: 'Sur demande'
 ---
 

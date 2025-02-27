@@ -10,7 +10,7 @@ features:
 gallery: ['indoor-arrow-tag/indoor-arrow-tag-1.jpg']
 categories: ['indoor', 'actief']
 duration: '30 minuten - 2 uur'
-groupSize: '4-100 people'
+groupSize: '10-100 people'
 availability: 'Op aanvraag'
 ---
 

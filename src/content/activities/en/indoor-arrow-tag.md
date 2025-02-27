@@ -10,7 +10,7 @@ features:
 gallery: ['indoor-arrow-tag/indoor-arrow-tag-1.jpg']
 categories: ['actief', 'indoor']
 duration: '30 minutes - 2 hours'
-groupSize: '4-100 people'
+groupSize: '10-100 people'
 availability: 'On request'
 ---
 
