@@ -1,6 +1,6 @@
 ---
 title: 'The Funny Olympic Games'
-description: 'Deze activiteit belichaamt het idee van "mens sana in corpore sano" een gezonde geest in een gezond lichaam.'
+description: 'Deze activiteit belichaamt het idee van "mens sana in corpore sano", een gezonde geest in een gezond lichaam.'
 image: 'funny-games/funny-games-1.jpg'
 isGame: true
 features:

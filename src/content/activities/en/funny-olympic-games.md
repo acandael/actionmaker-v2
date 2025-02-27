@@ -1,6 +1,6 @@
 ---
 title: 'The Funny Olympic Games'
-description: 'This activity embodies the idea of "mens sana in corpore sano" - a healthy mind in a healthy body.'
+description: 'This activity embodies the idea of "mens sana in corpore sano", - a healthy mind in a healthy body.'
 image: 'funny-games/funny-games-1.jpg'
 isGame: true
 features:
