@@ -22,6 +22,6 @@ groupSize: '8 - 500 personen'
 availability: 'Op aanvraag'
 ---
 
-Het gelukszwaard voor jullie hele team zit stevig vast met sloten en kettingen. Om de benodigde cijfercodes te onthullen, moeten jullie met succes verschillende uitdagingen aangaan, zoals de sleutelzaal, de slotgracht, de zaal der duels, het mijnenveld, en meer. Hier krijgt ieders unieke talent de kans om te schitteren.
+Het gelukszwaard voor jullie hele team zit stevig vast met sloten en kettingen. Om de benodigde cijfercodes te onthullen, moeten jullie met succes verschillende uitdagingen aangaan, zoals de sleutelzaal, de slotgracht, de zaal der duels, het mijnenveld en meer. Hier krijgt ieders unieke talent de kans om te schitteren.
 
-Het winnende team verdient telkens één cijfer van de code door succesvol de proeven te doorstaan. Na het afronden van alle uitdagingen worden alle deelnemers naar de ridderzaal gebracht. Hier stappen de zegevierende teams naar voren om hun deel van de cijfers in te voeren en zo het zwaard te bevrijden.
+Door succesvol de proeven te doorstaan verdient het winnende team telkens 1 cijfer van de code. Na het afronden van alle uitdagingen worden alle deelnemers naar de ridderzaal gebracht. Hier stappen de zegevierende teams naar voren om hun deel van de cijfers in te voeren en zo het zwaard te bevrijden.

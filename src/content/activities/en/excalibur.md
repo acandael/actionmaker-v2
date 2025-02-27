@@ -22,6 +22,6 @@ groupSize: '8 - 500 people'
 availability: 'On request'
 ---
 
-The sword of fortune for your entire team is firmly secured with locks and chains. To reveal the required number codes, you must successfully take on various challenges, such as the key chamber, the moat, the hall of duels, the minefield, and more. Here, everyone's unique talent gets the chance to shine.
+The sword of fortune for your entire team is firmly secured with locks and chains. To reveal the required number codes, you must successfully take on various challenges, such as the key chamber, the moat, the hall of duels, the minefield and more. Here, everyone's unique talent gets the chance to shine.
 
-The winning team earns one digit of the code each time by successfully completing the trials. After completing all challenges, all participants are brought to the knights' hall. Here, the victorious teams step forward to enter their portion of the numbers and thus free the sword.
+By successfully completing the trials, the winning team earns 1 digit of the code each time. After completing all challenges, all participants are brought to the knights' hall. Here, the victorious teams step forward to enter their portion of the numbers and thus free the sword.
