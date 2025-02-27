@@ -18,7 +18,7 @@ gallery:
   - 'middeleeuwse-dag/middeleeuwse-dag-6.jpg'
   - 'middeleeuwse-dag/middeleeuwse-dag-7.jpg'
 categories: ['outdoor', 'actief']
-duration: '2.5 - 5 heures'
+duration: '2.5 heures'
 groupSize: '8 - 1000 personnes'
 availability: "Toute l'année"
 ---
