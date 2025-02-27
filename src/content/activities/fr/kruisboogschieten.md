@@ -1,6 +1,6 @@
 ---
 title: "Tir à l'Arbalète"
-description: "Une expérience unique de tir à l'arbalète traditionnelle"
+description: 'Une activité passionnante avec des arbalètes modernes'
 image: 'kruisboogschieten/kruisboogschieten-1.jpg'
 categories: ['outdoor', 'actief']
 duration: '30 minutes - 2 heures'

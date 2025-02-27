@@ -1,6 +1,6 @@
 ---
 title: 'Crossbow Shooting'
-description: 'An exciting event with historical crossbows.'
+description: 'An exciting activity with modern crossbows.'
 image: 'kruisboogschieten/kruisboogschieten-1.jpg'
 categories: ['outdoor']
 duration: '30 minutes - 2 hours'
