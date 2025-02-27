@@ -2,7 +2,7 @@
 title: 'Birds of Prey Workshop'
 description: 'Experience the emotion of standing eye to eye with the rulers of the skies.'
 image: 'roofvogelworkshop/roofvogelworkshop-1.jpg'
-categories: ['outdoor', 'workshop']
+categories: ['workshop']
 duration: '45 minutes - 3 hours'
 groupSize: 'Maximum 200 people'
 availability: 'All year round'

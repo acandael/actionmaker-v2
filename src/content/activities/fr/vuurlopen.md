@@ -16,7 +16,7 @@ gallery:
     'vuurlopen/vuurlopen-6.jpg',
     'vuurlopen/vuurlopen-7.jpg',
   ]
-categories: ['outdoor', 'workshop']
+categories: ['workshop']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'
 availability: 'Sur demande'

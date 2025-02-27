@@ -2,7 +2,7 @@
 title: 'Taste Test'
 description: 'Can you trust your taste buds? Who makes the best use of taste, smell, and touch?'
 image: 'smaaktest/smaaktest-1.jpg'
-categories: ['indoor', 'workshop']
+categories: ['workshop']
 duration: '2 - 5 hours'
 groupSize: '8 - 1000 participants'
 availability: 'All year round'

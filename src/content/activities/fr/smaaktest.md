@@ -2,7 +2,7 @@
 title: 'Test de Dégustation'
 description: "Pouvez-vous faire confiance à votre goût ? Qui fait le meilleur usage des sens du goût, de l'odorat et du toucher?"
 image: 'smaaktest/smaaktest-1.jpg'
-categories: ['indoor', 'workshop']
+categories: ['workshop']
 duration: '2 - 5 heures'
 groupSize: '8 - 1000 personnes'
 availability: "Tout l'année"
