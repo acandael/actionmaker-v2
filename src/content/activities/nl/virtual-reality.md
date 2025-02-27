@@ -1,6 +1,6 @@
 ---
 title: 'Virtual Reality'
-description: 'De persoon die de bril aanheeft ziet de bom, op basis daarvan moet de rest van het team dat de handleiding heeft de bom helpen ontmantelen.'
+description: 'Stap in een wereld vol spanning en avontuur met onze unieke VR-ervaringen'
 image: 'virtual-reality/virtual-reality-1.jpg'
 categories: ['indoor', 'innovaction']
 duration: '30 - 120 minuten'
@@ -21,9 +21,24 @@ gallery:
   ]
 ---
 
-“Welkom in de gevaarlijke en uitdagende wereld van het ontmantelen van bommen.
+VR-Challenges: Samenwerken, Ontdekken en Overwinnen!
 
-Bestudeer deze handleiding goed; jij bent de expert. Op deze pagina’s vind je alles wat je nodig hebt om zelfs de listigste bommen te ontmantelen.
+Stap in een wereld vol spanning en avontuur met onze unieke VR-ervaringen. Samenwerken, vertrouwen en precisie zijn de sleutel tot succes. Met verschillende uitdagende opdrachten en leuke spellen is er voor ieder wat wils!
+Bomontmanteling: Werk Samen en Ontmantel de Bom
 
-En onthoud – Eén kleine vergissing en alles kan voorbij zijn!”
-Hiernaast spelen wij ook Beat saber, en laten we de mensen vertrouwen tonen in the plank experience en ze rondzweven in en buiten het ISS.
+In deze zenuwslopende opdracht draait alles om teamwork:
+Werk samen onder tijdsdruk en ontmantel zelfs de listigste bommen. Eén verkeerde stap, en alles is verloren. Kunnen jullie het hoofd koel houden en als team slagen?
+
+### Extra VR-Avonturen
+
+Naast bomontmanteling bieden we nog meer spannende VR-uitdagingen zoals:
+
+Beat Saber: Toon je ritmegevoel en raak de beats terwijl je obstakels ontwijkt in dit muzikale spel.
+
+The Plank Experience: Durf jij het aan? Stap op de plank op duizelingwekkende hoogtes en bewijs je moed. Een perfecte oefening in vertrouwen!
+
+ISS Explorer: Zweef in en buiten het Internationaal Ruimtestation en ontdek de pracht van de ruimte. Een unieke ervaring zonder zwaartekracht.
+
+### Waarom deze activiteit?
+
+Deze VR-ervaring is perfect voor teambuilding,of een spannende activiteit met vrienden. Samenwerken, , vertrouwen en plezier staan centraal terwijl je onvergetelijke avonturen beleeft.

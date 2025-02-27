@@ -1,6 +1,6 @@
 ---
 title: 'Réalité Virtuelle'
-description: "La personne qui porte le casque voit la bombe, et sur cette base, le reste de l'équipe qui a le manuel doit aider à désamorcer la bombe."
+description: "Plongez dans un monde rempli de suspense et d'aventure avec nos expériences VR uniques"
 image: 'virtual-reality/virtual-reality-1.jpg'
 categories: ['indoor', 'innovaction']
 duration: '30 - 120 minutes'
@@ -18,9 +18,25 @@ gallery:
   ]
 ---
 
-"Bienvenue dans le monde dangereux et stimulant du déminage.
+Défis VR : Collaborer, Découvrir et Triompher!
 
-Étudiez attentivement ce manuel ; vous êtes l'expert. Sur ces pages, vous trouverez tout ce dont vous avez besoin pour désamorcer même les bombes les plus sournoises.
+Plongez dans un monde rempli de suspense et d'aventure avec nos expériences VR uniques. La collaboration, la confiance et la précision sont les clés du succès. Avec différentes missions stimulantes et des jeux amusants, il y en a pour tous les goûts !
 
-Et rappelez-vous - Une petite erreur et tout peut être fini !"
-En plus de cela, nous jouons aussi à Beat Saber, nous faisons confiance aux gens dans l'expérience de la planche et nous les faisons flotter à l'intérieur et à l'extérieur de l'ISS.
+Désamorçage de Bombe : Travaillez en Équipe et Désamorcez la Bombe
+
+Dans cette mission palpitante, tout tourne autour du travail d'équipe :
+Collaborez sous pression et désamorcez même les bombes les plus sournoises. Un faux pas, et tout est perdu. Pourrez-vous garder votre sang-froid et réussir en équipe ?
+
+### Autres Aventures VR
+
+En plus du désamorçage de bombe, nous proposons d'autres défis VR passionnants comme :
+
+Beat Saber : Montrez votre sens du rythme et frappez les beats tout en évitant les obstacles dans ce jeu musical.
+
+The Plank Experience : Oserez-vous ? Marchez sur la planche à des hauteurs vertigineuses et prouvez votre courage. Un exercice parfait de confiance !
+
+ISS Explorer : Flottez à l'intérieur et à l'extérieur de la Station Spatiale Internationale et découvrez la beauté de l'espace. Une expérience unique en apesanteur.
+
+### Pourquoi cette activité ?
+
+Cette expérience VR est parfaite pour le team building ou une activité excitante entre amis. La collaboration, la confiance et le plaisir sont au cœur de ces aventures inoubliables.

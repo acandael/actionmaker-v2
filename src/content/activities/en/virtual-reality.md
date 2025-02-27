@@ -1,6 +1,6 @@
 ---
 title: 'Virtual Reality'
-description: 'The person wearing the headset sees the bomb, based on which the rest of the team has the instructions to defuse the bomb.'
+description: 'Step into a world full of suspense and adventure with our unique VR experiences'
 image: 'virtual-reality/virtual-reality-1.jpg'
 categories: ['indoor', 'innovaction']
 duration: '30 - 120 minutes'
@@ -21,9 +21,24 @@ gallery:
   ]
 ---
 
-"Welcome to the dangerous and challenging world of bomb defusal.
+VR-Challenges: Collaborate, Discover and Triumph!
 
-Study this manual carefully; you are the expert. Within these pages, you'll find everything you need to defuse even the most devious bombs.
+Step into a world full of suspense and adventure with our unique VR experiences. Collaboration, trust and precision are the keys to success. With various challenging missions and fun games, there's something for everyone!
+Bomb Defusal: Work Together and Defuse the Bomb
 
-And remember – One small mistake and it could all be over!"
-Additionally, we also play Beat Saber and let people show trust in the Plank Experience and float inside and outside the ISS.
+In this nerve-wracking mission, it's all about teamwork:
+Work together under time pressure and defuse even the trickiest bombs. One wrong move, and all is lost. Can you keep your cool and succeed as a team?
+
+### Additional VR Adventures
+
+Besides bomb defusal, we offer more exciting VR challenges like:
+
+Beat Saber: Show your sense of rhythm and hit the beats while dodging obstacles in this musical game.
+
+The Plank Experience: Do you dare? Walk the plank at dizzying heights and prove your courage. A perfect exercise in trust!
+
+ISS Explorer: Float inside and outside the International Space Station and discover the beauty of space. A unique zero-gravity experience.
+
+### Why this activity?
+
+This VR experience is perfect for team building or an exciting activity with friends. Collaboration, trust and fun are central while you experience unforgettable adventures.
