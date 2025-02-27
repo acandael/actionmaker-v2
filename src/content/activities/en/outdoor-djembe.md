@@ -2,7 +2,7 @@
 title: 'Outdoor Djembe Workshop'
 description: 'Making music as a team creates a unique experience and provides a positive group feeling.'
 image: 'outdoor-djembe/outdoor-djembe-1.jpg'
-categories: ['workshop', 'outdoor']
+categories: ['workshop']
 duration: '30 minutes - 2 hours'
 groupSize: 'Maximum 250 people'
 availability: 'All year round'

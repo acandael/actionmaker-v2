@@ -2,7 +2,7 @@
 title: 'Chocoladeworkshop'
 description: 'Een chocoladeworkshop onder leiding van een professionele chocolatier.'
 image: 'chocoladeworkshop/chocoladeworkshop-1.jpg'
-categories: ['workshop', 'indoor']
+categories: ['workshop']
 duration: '45 minuten - 2.5 uur'
 groupSize: '8 - 100 personen'
 availability: 'Het hele jaar door'

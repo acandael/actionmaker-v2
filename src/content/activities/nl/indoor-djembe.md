@@ -2,7 +2,7 @@
 title: 'Djembe Workshop (Indoor)'
 description: 'Als één team muziek maken creëert een unieke ervaring en zorgt voor een positief groepsgevoel.'
 image: 'indoor-djembe/indoor-djembe-1.jpg'
-categories: ['workshop', 'indoor']
+categories: ['workshop']
 duration: '30 minuten - 2 uur'
 groupSize: 'Maximaal 250 personen'
 availability: 'Het hele jaar door'

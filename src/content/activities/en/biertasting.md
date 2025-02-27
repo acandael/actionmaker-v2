@@ -13,7 +13,7 @@ gallery:
   - 'biertasting/biertasting-5.jpg'
   - 'biertasting/biertasting-6.jpg'
   - 'biertasting/biertasting-7.jpg'
-categories: ['workshop', 'indoor']
+categories: ['workshop']
 duration: '2-3 uur'
 groupSize: '1-15 personen'
 availability: 'Op aanvraag'
