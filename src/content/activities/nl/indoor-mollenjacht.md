@@ -27,7 +27,7 @@ availability: 'Op aanvraag'
 
 Verschillende teams strijden tegen elkaar om de overwinning binnen te halen.
 
-Maar wees gewaarschuwd, want in ieder team zit er een saboteur verscholen. Een aantal mensen spelen dubbelspel: ze proberen ongemerkt de opdrachten te saboteren.
+Maar wees gewaarschuwd, want in ieder team zit er een saboteur verscholen. Een aantal mensen spelen dubbelspel: ze proberen ongemerkt de opdrachten (vb. mollenloop, time quiz, gatenkaas, ...) te saboteren.
 
 Probeer de mol steeds een stapje voor te zijn door sluwe samenwerkingsverbanden te smeden en uiteindelijk te ontmaskeren.
 Kortom, laat je meesleuren in een schitterend spel waar vertrouwen en verraad nooit zo dicht bij elkaar hebben gelegen, want je weet nooit wie je voor 100% kunt vertrouwen.

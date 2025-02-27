@@ -25,11 +25,11 @@ groupSize: '6 - 1000 people'
 availability: 'On request'
 ---
 
-Different teams compete against each other to achieve victory.
+Different teams compete against each other to claim victory.
 
-But be warned, because in each team there is a hidden saboteur. Some people are playing a double game: they try to sabotage the missions unnoticed.
+But be warned, because in each team there is a hidden saboteur. Some people are playing a double game: they try to discreetly sabotage the challenges (for example, the mole run, the timed quiz, the Swiss cheese, ...).
 
-Try to stay one step ahead of the mole by forging clever alliances and ultimately unmasking them.
-In short, let yourself be swept away in a brilliant game where trust and betrayal have never been so close together, because you never know who you can trust 100%.
+Try to always stay one step ahead of the mole by forging clever alliances and ultimately unmasking them.
+In short, let yourself be drawn into a brilliant game where trust and betrayal have never been so close, because you never know who you can trust 100%.
 
-The teams are formed based on an online questionnaire that you fill out in advance, which is sent one week beforehand. The evening before the team building, the mole receives instructions via SMS.
+The teams are formed based on an online questionnaire that you will have filled out a week in advance. The evening before the team building, the mole receives an SMS with instructions.

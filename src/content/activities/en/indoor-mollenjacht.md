@@ -25,11 +25,11 @@ groupSize: '6 - 1000 people'
 availability: 'On request'
 ---
 
-Different teams compete against each other to achieve victory.
+Différentes équipes s'affrontent pour remporter la victoire.
 
-But be warned, because in each team there is a hidden saboteur. Some people are playing a double game: they try to sabotage the missions unnoticed.
+Mais soyez avertis, car dans chaque équipe se cache un saboteur. Certaines personnes jouent un double jeu : elles tentent de saboter discrètement les épreuves (par exemple, la course à la taupe, le quiz chronométré, le fromage troué, ...).
 
-Try to stay one step ahead of the mole by forging clever alliances and ultimately unmasking them.
-In short, let yourself be swept away in a brilliant game where trust and betrayal have never been so close together, because you never know who you can trust 100%.
+Essayez d'avoir toujours un coup d'avance sur la taupe en forgeant des alliances astucieuses et finalement en la démasquant.
+Bref, laissez-vous entraîner dans un jeu brillant où la confiance et la trahison n'ont jamais été aussi proches, car vous ne savez jamais à qui vous pouvez faire confiance à 100%.
 
-The teams are formed based on an online questionnaire that you fill out in advance, which is sent one week beforehand. The evening before the team building, the mole receives instructions via SMS.
+Les équipes sont constituées sur base d'un questionnaire en ligne que vous aurez rempli une semaine à l'avance. La veille du team building, la taupe reçoit un SMS avec ses instructions.
