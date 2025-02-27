@@ -24,7 +24,7 @@ gallery:
   ]
 categories: ['city-games']
 duration: '2-3 uur'
-groupSize: '2-100 personen'
+groupSize: '6-100 personen'
 availability: 'Op aanvraag'
 ---
 

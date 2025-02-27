@@ -23,7 +23,7 @@ gallery:
   ]
 categories: ['city-games']
 duration: '2-3 hours'
-groupSize: '2-100 people'
+groupSize: '6-100 people'
 availability: 'On request'
 ---
 
