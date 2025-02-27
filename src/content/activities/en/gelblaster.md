@@ -18,7 +18,7 @@ gallery:
   ]
 categories: ['outdoor', 'actief']
 duration: '45 minutes - 2 hours'
-groupSize: '8 - 200 people'
+groupSize: '10 - 200 people'
 availability: 'On request'
 ---
 

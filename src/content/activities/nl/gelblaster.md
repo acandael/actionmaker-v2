@@ -18,7 +18,7 @@ gallery:
   ]
 categories: ['outdoor', 'actief']
 duration: '45 minuten - 2 uur'
-groupSize: '8 - 200 personen'
+groupSize: '10 - 200 personen'
 availability: 'Op aanvraag'
 ---
 
