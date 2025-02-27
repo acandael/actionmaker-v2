@@ -18,7 +18,7 @@ gallery:
   ]
 categories: ['actief']
 duration: '2 - 5 uur'
-groupSize: '8 - 100 personen'
+groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 
