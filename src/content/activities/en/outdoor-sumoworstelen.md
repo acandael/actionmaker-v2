@@ -1,6 +1,6 @@
 ---
 title: 'Sumo Wrestling (Outdoor)'
-description: 'Experience the ancient Japanese sport in a fun and safe way!'
+description: 'A hilarious activity where participants battle each other in single and double inflatable sumo suits.'
 image: 'outdoor-sumoworstelen/outdoor-sumoworstelen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/3c3bd7aa-e0f1-4bbf-a9b9-992b8b2afc01'
 categories: ['actief', 'outdoor']
