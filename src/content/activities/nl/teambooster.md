@@ -21,8 +21,9 @@ groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 
-Van uitdagingen waarbij communicatie de enige weg naar overwinning is, tot proeven waar absolute samenwerking cruciaal is, en van opdrachten waarbij goed luisteren essentieel is tot taken waarbij teamleden elkaar moeten coachen.
+Van opdrachten waarbij goed luisteren essentieel is tot taken waarbij teamleden elkaar moeten coachen.
 
-Deze activiteit kan op maat worden samengesteld, rekening houdend met het beschikbare budget en de locatie.
+Deze teambuilding kan op maat worden samengesteld, rekening houdend met het beschikbare budget en de locatie.
+Indien gewenst kunnen we coaching-sessies aanbieden.
 
 Als extra toevoeging bieden we inzichtelijke evaluaties aan, waarbij uitleg wordt gegeven over wat wel of niet goed ging tijdens de opdrachten. Indien gewenst kunnen we zelfs coaching sessies aanbieden, waarin dieper wordt ingegaan op de teamdynamiek en hoe deze verder kan worden verbeterd.

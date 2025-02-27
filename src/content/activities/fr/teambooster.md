@@ -21,8 +21,9 @@ groupSize: '8 - 1000 personnes'
 availability: "Tout l'année"
 ---
 
-Des défis où la communication est la seule voie vers la victoire, des épreuves où la collaboration absolue est cruciale, des missions où l'écoute attentive est essentielle et des tâches où les membres de l'équipe doivent se coacher mutuellement.
+Des missions où l'écoute attentive est essentielle aux tâches où les membres de l'équipe doivent se coacher mutuellement.
 
-Cette activité peut être personnalisée en fonction du budget disponible et du lieu.
+Ce team building peut être personnalisé en tenant compte du budget disponible et du lieu.
+Si vous le souhaitez, nous pouvons proposer des séances de coaching.
 
-En complément, nous proposons des évaluations perspicaces, expliquant ce qui a bien ou moins bien fonctionné pendant les exercices. Si souhaité, nous pouvons même offrir des sessions de coaching, approfondissant la dynamique d'équipe et comment l'améliorer davantage.
+En complément, nous proposons des évaluations perspicaces, avec des explications sur ce qui a bien ou mal fonctionné pendant les exercices. Si désiré, nous pouvons même offrir des séances de coaching approfondies, explorant davantage la dynamique d'équipe et comment l'améliorer.
