@@ -19,7 +19,7 @@ groupSize: '8-50 personnes'
 availability: 'Sur demande'
 ---
 
-Tout le monde réalise que la prochaine frontière est l'espace - d'abord la Lune, puis Mars, et qui sait ce qui suivra. Nous préparons votre équipe à cet avenir extraordinaire.
+Tout le monde réalise que la prochaine frontière est l'espace - d'abord la Lune, puis mars, et qui sait ce qui suivra. Nous préparons votre équipe à cet avenir extraordinaire.
 
 À travers diverses activités comme l'escrime laser, la réparation d'un vaisseau spatial et la communication dans l'espace, nous nous assurons que votre équipe puisse survivre dans cet environnement stimulant.
 

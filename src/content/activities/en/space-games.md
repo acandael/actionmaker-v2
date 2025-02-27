@@ -19,7 +19,7 @@ groupSize: '8-50 people'
 availability: 'On request'
 ---
 
-Everyone realizes that the next frontier is space - first the moon, then Mars, and who knows what follows. We prepare your team for this extraordinary future.
+Everyone realizes that the next frontier is space - first the moon, then mars, and who knows what follows. We prepare your team for this extraordinary future.
 
 Through various activities such as laser fencing, repairing a spaceship, and communicating in space, we ensure that your team can survive in this challenging environment.
 

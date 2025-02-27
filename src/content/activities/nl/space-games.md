@@ -19,7 +19,7 @@ groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 
-Iedereen beseft dat de volgende horizon de ruimte is - eerst de maan, daarna Mars, en wie weet wat daarna volgt. Wij bereiden jullie team voor op deze buitengewone toekomst.
+Iedereen beseft dat de volgende horizon de ruimte is - eerst de maan, daarna mars, en wie weet wat daarna volgt. Wij bereiden jullie team voor op deze buitengewone toekomst.
 
 Via diverse activiteiten zoals laserschermen, het herstellen van een ruimteschip, en communiceren in de ruimte, zorgen wij ervoor dat jullie team kan overleven in deze uitdagende omgeving.
 
