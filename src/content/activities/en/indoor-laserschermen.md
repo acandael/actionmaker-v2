@@ -1,6 +1,6 @@
 ---
-title: 'Lightsaber Fencing (Indoor)'
-description: 'Become a True Padawan!'
+title: 'Lightsaber fencing (Indoor)'
+description: 'Become a true Padawan!'
 image: 'indoor-laserschermen/indoor-laserschermen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/102cb4a2-6345-40dd-a2e1-37ed57c43929'
 features:
