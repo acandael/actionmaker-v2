@@ -1,14 +1,13 @@
 ---
 title: 'The Office Games'
-description: 'Gezamenlijk gaan we aan de slag om een indrukwekkende Goldberg machine te creëren'
+description: 'Ontdek de verborgen talenten binnen jouw kantoor'
 image: 'office-games/office-games-1.jpg'
 isGame: true
 features:
-  - 'Fysieke kracht'
-  - 'Communicatieve vaardigheden'
-  - 'Creativiteit'
-  - 'Teamwork'
-  - 'Uitdagende activiteiten'
+  - 'Creatieve uitdagingen'
+  - 'Fysieke en communicatieve skills'
+  - 'Test jullie snelheid en samenwerking tijdens de bureaustoelenrace'
+  - 'Stressmanagement'
 gallery:
   - 'office-games/office-games-1.jpg'
   - 'office-games/office-games-2.jpg'
@@ -22,6 +21,7 @@ groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 
-Deze teambuilding werpt een licht op de diverse talenten binnen uw kantoor. Welk team construeert het beste vliegtuigje, wie slaagt er het beste in om samen zoveel mogelijk herkenbare woorden te schrijven ( 1 potlood 10 draden om het te bedienen), en wie bewijst zich als de snelste in de bureaustoelenrace?
+Deze teambuildingactiviteit zet de diversiteit van de vaardigheden van jouw team in de
+schijnwerpers en zorgt voor een gezonde dosis competitie en plezier op de werkvloer.. Welk team construeert het beste vliegtuigje, wie slaagt er het beste in om samen zoveel mogelijk herkenbare woorden te schrijven ( 1 potlood 10 draden om het te bedienen), en wie bewijst zich als de snelste in de bureaustoelenrace?
 
 Zowel fysieke kracht, communicatieve vaardigheden, creativiteit als teamwork komen aan bod. We hebben een gevarieerd programma samengesteld met uitdagende activiteiten die een beroep doen op verschillende aspecten van jullie talenten.
