@@ -1,6 +1,6 @@
 ---
 title: 'The Others (Outdoor)'
-description: 'This program is also inspired by a popular TV concept, namely "The Traitors."'
+description: 'This program is inspired by a popular TV concept, namely "The Traitors."'
 image: 'outdoor-de-anderen/outdoor-de-anderen-1.jpg'
 isGame: true
 features:

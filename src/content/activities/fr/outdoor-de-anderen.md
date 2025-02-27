@@ -1,6 +1,6 @@
 ---
 title: 'Les Autres (Outdoor)'
-description: "Ce programme est également inspiré d'un concept télévisé populaire, à savoir 'Les Traîtres'."
+description: "Ce programme est inspiré d'un concept télévisé populaire, à savoir 'Les Traîtres'."
 image: 'outdoor-de-anderen/outdoor-de-anderen-1.jpg'
 isGame: true
 features:
