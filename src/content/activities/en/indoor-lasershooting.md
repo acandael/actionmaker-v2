@@ -31,6 +31,9 @@ All of this happens with a special infrared system, making it completely safe an
 
 ## What makes it so fun
 
-Completely safe: Since shooting is done with infrared, there is no danger. Plus, the rifles have no recoil.
-Environmentally friendly: No waste from broken clay pigeons or lead pollution.
-Suitable for everyone: Even if you've never shot before, this is a great activity for young and old alike.
+Completely safe: Because infrared is used for shooting, there is no danger. Moreover, the rifles have no recoil.
+
+Environmentally friendly: No waste and no damage
+
+Suitable for everyone: Even if you've never shot before, this is a great activity
+for young and old.

@@ -31,6 +31,8 @@ Tout cela se fait avec un système infrarouge spécial, ce qui le rend totalemen
 
 ## Ce qui le rend si amusant
 
-Totalement sécurisé : Comme le tir se fait par infrarouge, il n'y a aucun danger. De plus, les fusils n'ont pas de recul.
-Écologique : Pas de déchets de pigeons d'argile cassés ni de pollution au plomb.
-Adapté à tous : Même si vous n'avez jamais tiré, c'est une activité formidable pour petits et grands.
+Totalement sûr : Grâce à l'utilisation de l'infrarouge, il n'y a aucun danger. De plus, les fusils n'ont pas de recul.
+
+Écologique : Pas de déchets et pas de dégâts
+
+Accessible à tous : Même si vous n'avez jamais tiré, c'est une activité formidable pour petits et grands.

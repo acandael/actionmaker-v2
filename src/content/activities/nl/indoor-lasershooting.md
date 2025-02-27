@@ -32,5 +32,8 @@ Dit alles gebeurt met een speciaal infraroodsysteem, waardoor het volledig veili
 ## Wat maakt het zo leuk
 
 Volstrekt veilig: Omdat er met infrarood wordt geschoten, is er geen gevaar. Bovendien hebben de geweren geen terugslag.
-Milieuvriendelijk: Geen afval van kapotte kleiduiven of loodvervuiling.
-Geschikt voor iedereen: Zelfs als je nog nooit hebt geschoten, is dit een geweldige activiteit voor jong en oud.
+
+Milieuvriendelijk: Geen afval en geen schade
+
+Geschikt voor iedereen: Zelf als je nog nooit hebt geschoten, is dit een geweldige activiteit
+voor jong en oud.
