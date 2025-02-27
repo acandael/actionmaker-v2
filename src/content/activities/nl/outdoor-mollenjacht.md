@@ -21,7 +21,7 @@ gallery:
   ]
 categories: ['outdoor']
 duration: '2 - 5 uur'
-groupSize: '6 - 1000 personen'
+groupSize: '8 - 1000 personen'
 availability: 'Op aanvraag'
 ---
 

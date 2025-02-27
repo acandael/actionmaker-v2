@@ -21,15 +21,15 @@ gallery:
   ]
 categories: ['indoor']
 duration: '2 - 5 hours'
-groupSize: '6 - 1000 people'
+groupSize: '8 - 1000 people'
 availability: 'On request'
 ---
 
-Différentes équipes s'affrontent pour remporter la victoire.
+Different teams compete against each other to claim victory.
 
-Mais soyez avertis, car dans chaque équipe se cache un saboteur. Certaines personnes jouent un double jeu : elles tentent de saboter discrètement les épreuves (par exemple, la course à la taupe, le quiz chronométré, le fromage troué, ...).
+But be warned, because in each team there is a hidden saboteur. Some people are playing a double game: they try to discreetly sabotage the challenges (for example, the mole run, the timed quiz, the Swiss cheese, ...).
 
-Essayez d'avoir toujours un coup d'avance sur la taupe en forgeant des alliances astucieuses et finalement en la démasquant.
-Bref, laissez-vous entraîner dans un jeu brillant où la confiance et la trahison n'ont jamais été aussi proches, car vous ne savez jamais à qui vous pouvez faire confiance à 100%.
+Try to always stay one step ahead of the mole by forging clever alliances and ultimately unmasking them.
+In short, let yourself be drawn into a brilliant game where trust and betrayal have never been so close, because you never know who you can trust 100%.
 
-Les équipes sont constituées sur base d'un questionnaire en ligne que vous aurez rempli une semaine à l'avance. La veille du team building, la taupe reçoit un SMS avec ses instructions.
+The teams are formed based on an online questionnaire that you will have filled out a week in advance. The evening before the team building, the mole receives an SMS with instructions.

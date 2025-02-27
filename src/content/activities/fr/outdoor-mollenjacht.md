@@ -21,7 +21,7 @@ gallery:
   ]
 categories: ['outdoor']
 duration: '2 - 5 heures'
-groupSize: '6 - 1000 personnes'
+groupSize: '8 - 1000 personnes'
 availability: 'Sur demande'
 ---
 
