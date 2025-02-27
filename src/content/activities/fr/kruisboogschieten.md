@@ -4,7 +4,7 @@ description: 'Une activité passionnante avec des arbalètes modernes'
 image: 'kruisboogschieten/kruisboogschieten-1.jpg'
 categories: ['outdoor', 'actief']
 duration: '30 minutes - 2 heures'
-groupSize: '2 - 300 personnes'
+groupSize: '5 - 300 personnes'
 availability: 'Sur demande'
 features: ['esprit équipe', 'sport', 'précision']
 gallery:

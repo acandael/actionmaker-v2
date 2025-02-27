@@ -4,7 +4,7 @@ description: 'An exciting activity with modern crossbows.'
 image: 'kruisboogschieten/kruisboogschieten-1.jpg'
 categories: ['outdoor']
 duration: '30 minutes - 2 hours'
-groupSize: '2 - 300 people'
+groupSize: '5 - 300 people'
 availability: 'All year round'
 features:
   - 'Professional guidance'
