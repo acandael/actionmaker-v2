@@ -23,4 +23,4 @@ availability: 'On request'
 
 Blowgun shooting (Outdoor) is very popular. It is an exciting and challenging activity for all age groups. A brief history of blowgun shooting will be given. This is followed by exercises and a competition with blowguns in 3 different lengths.
 
-Take up the challenge and discover who has the sharpest breath and the best aim. An activity full of excitement, challenges and above all lots of fun!
+Take up the challenge and discover who has the most powerful breath and the best shot. An activity full of suspense, challenges and above all lots of fun!

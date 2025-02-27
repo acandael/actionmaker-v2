@@ -23,4 +23,4 @@ availability: 'Sur demande'
 
 La sarbacane (Indoor) est très populaire. C'est une activité passionnante et stimulante pour tous les âges. Une brève histoire de la sarbacane est présentée. Ensuite, nous passons à la pratique et à la compétition avec des sarbacanes de 3 longueurs différentes.
 
-Relevez le défi et découvrez qui a le souffle le plus précis et la meilleure visée. Une activité pleine de suspense, de défis et surtout beaucoup de plaisir!
+Relevez le défi et découvrez qui a le souffle le plus puissant et le meilleur tir. Une activité pleine de suspense, de défis et surtout beaucoup de plaisir!

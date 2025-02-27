@@ -23,4 +23,4 @@ availability: 'Op aanvraag'
 
 Blaaspijpschieten is erg populair. Het is een spannende en uitdagende activiteit voor alle leeftijden. Er wordt een korte geschiedenis van het blaaspijpschieten gegeven. Daarna oefenen en competitie met blaaspijpen van 3 verschillende lengtes.
 
-Ga de strijd aan en ontdek wie de scherpste adem en het beste doel heeft. Een activiteit vol spanning, uitdaging en vooral veel plezier!
+Ga de strijd aan en ontdek wie de krachtigste adem en het beste schot heeft. Een activiteit vol spanning, uitdaging en vooral veel plezier!
