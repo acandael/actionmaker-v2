@@ -1,6 +1,6 @@
 ---
 title: 'The Others (Indoor)'
-description: 'This program is also inspired by a popular TV concept, namely "The Traitors."'
+description: 'This program is inspired by a popular TV concept, namely "The Traitors."'
 image: 'indoor-de-anderen/indoor-de-anderen-1.jpg'
 isGame: true
 features:
