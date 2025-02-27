@@ -24,4 +24,4 @@ availability: 'On request'
 
 As a participant, you'll be immediately immersed in the Scottish Highlands through themed clothing and appropriate music!
 
-During your own Highland Games, everything revolves around effective collaboration. You'll face various challenges and trials, for which you'll always receive the necessary explanation and thinking time. The trials bring you completely into the Scottish atmosphere, with caber tossing, tug of war, and horseshoe throwing being just a few examples of the unique tests of strength and skill.
+During your own Highland Games, everything revolves around effective collaboration. You'll face various challenges and trials, for which you'll always receive the necessary explanation and thinking time. The trials bring you completely into the Scottish atmosphere, with hay bale tossing, axe throwing, tug of war, and horseshoe throwing being just a few examples of the unique tests of strength and skill.
