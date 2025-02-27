@@ -3,7 +3,7 @@ title: 'Moorddiner'
 description: 'Het moorddiner is een zenuwslopend moordspel waarbij je de identiteit van een meedogenloze moordenaar moet achterhalen.'
 image: 'moorddiner/moorddiner-1.jpg'
 isGame: true
-categories: ['cultureel']
+categories: ['indoor']
 duration: '+/- 3u.'
 groupSize: '6 - 500 personen'
 availability: 'Het hele jaar door'
