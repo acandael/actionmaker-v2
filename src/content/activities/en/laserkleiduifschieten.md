@@ -26,6 +26,6 @@ gallery:
 
 Laser clay pigeon shooting offers a modern and safe variant of traditional clay pigeon shooting. This innovative activity combines the challenge of shooting with modern technology, making it perfect for team building events.
 
-The activity uses advanced laser rifles that react to special clay pigeons, creating a realistic shooting experience without the use of real ammunition. This makes the activity not only safer but also more suitable for various locations and weather conditions.
+The activity uses advanced laser guns that react to special clay pigeons, creating a realistic shooting experience without using real ammunition. This makes the activity not only safer, but also more suitable for different locations and weather conditions.
 
-Participants first receive comprehensive instruction in technique and equipment handling. This is followed by various game formats where teams compete against each other in challenging competitions. The combination of technique, concentration, and teamwork makes this a unique and engaging team building experience.
+Participants first receive detailed instruction on the technique and use of the guns. Then, different game formats follow where teams compete against each other in stimulating competitions. The combination of technique, concentration and teamwork makes this a unique and exciting team building experience.

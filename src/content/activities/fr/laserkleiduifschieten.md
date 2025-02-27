@@ -23,8 +23,8 @@ gallery:
   ]
 ---
 
-Le tir aux pigeons laser offre une variante moderne et sûre du tir aux pigeons d'argile traditionnel. Cette activité innovante combine le défi du tir avec la technologie moderne, ce qui la rend parfaitement adaptée aux événements de team building.
+Le tir aux pigeons laser offre une variante moderne et sûre du tir aux pigeons d'argile traditionnel. Cette activité innovante combine le défi du tir avec la technologie moderne, ce qui en fait une activité parfaite pour les événements de team building.
 
-L'activité utilise des fusils laser avancés qui réagissent à des pigeons d'argile spéciaux, créant ainsi une expérience de tir réaliste sans utilisation de vraies munitions. Cela rend l'activité non seulement plus sûre, mais aussi plus adaptée à différents lieux et conditions météorologiques.
+L'activité utilise des fusils laser avancés qui réagissent à des pigeons d'argile spéciaux, créant ainsi une expérience de tir réaliste sans utiliser de vraies munitions. Cela rend l'activité non seulement plus sûre, mais aussi plus adaptée à différents lieux et conditions météorologiques.
 
-Les participants reçoivent d'abord une instruction approfondie sur la technique et l'utilisation de l'équipement. Ensuite, différentes formes de jeu suivent où les équipes s'affrontent dans des compétitions stimulantes. La combinaison de technique, de concentration et de travail d'équipe en fait une expérience de team building unique et passionnante.
+Les participants reçoivent d'abord une instruction détaillée sur la technique et l'utilisation des fusils. Ensuite, différents formats de jeu suivent où les équipes s'affrontent dans des compétitions stimulantes. La combinaison de technique, de concentration et de travail d'équipe en fait une expérience de team building unique et passionnante.
