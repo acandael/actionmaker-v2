@@ -1,6 +1,6 @@
 ---
 title: 'Brugse Metten Tocht'
-description: 'Brugse Metten Stadsspel: Ontdek Brugge met Plezier en Competitie!'
+description: 'Brugse Metten Stadsspel: Ontdek Brugge met plezier en competitie!'
 image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
 features:
   - 'Fotozoektocht: Verken het Straatbeeld'
@@ -20,7 +20,7 @@ gallery:
   ]
 categories: ['city-games']
 duration: '2-3 uur'
-groupSize: '2 - 200 personen'
+groupSize: '6 - 200 personen'
 availability: 'Op aanvraag'
 ---
 

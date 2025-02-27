@@ -20,7 +20,7 @@ gallery:
   ]
 categories: ['city-games']
 duration: '2 - 3 heures'
-groupSize: '2 - 200 personnes'
+groupSize: '6 - 200 personnes'
 availability: 'Sur demande'
 ---
 

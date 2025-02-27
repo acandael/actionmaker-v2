@@ -1,6 +1,6 @@
 ---
 title: 'Bruges Matins Tour'
-description: 'Brugse Metten City Game: Discover Bruges with Fun and Competition!'
+description: 'Brugse Metten City Game: Discover Bruges with fun and competition!'
 image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
 features:
   - 'Photo Hunt: Explore the Streets'
@@ -20,7 +20,7 @@ gallery:
   ]
 categories: ['city-games']
 duration: '2 -3 hours'
-groupSize: '2 - 200 persons'
+groupSize: '6 - 200 persons'
 availability: 'On request'
 ---
 
