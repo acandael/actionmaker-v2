@@ -2,6 +2,7 @@
 title: 'Virtual Reality'
 description: 'Stap in een wereld vol spanning en avontuur met onze unieke VR-ervaringen'
 image: 'virtual-reality/virtual-reality-1.jpg'
+priority: 4
 categories: ['indoor', 'innovaction']
 duration: '30 - 120 minuten'
 groupSize: '6 - 100 personen'

@@ -2,6 +2,7 @@
 title: 'Blaaspijpschieten (Indoor)'
 description: 'Blaaspijpschietenis erg populair. Het is een spannende en uitdagende activiteit voor alle leeftijden.'
 image: 'indoor-blaaspijpschieten/indoor-blaaspijpschieten-1.jpg'
+priority: 9
 features:
   - 'competitie'
   - 'sport'

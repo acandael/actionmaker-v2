@@ -3,6 +3,7 @@ title: 'Pilotage de Drone'
 description: 'Apprenez, Expérimentez et Découvrez !'
 image: 'dronevliegen/dronevliegen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/d1ad05d2-54ab-4b52-8e64-2943ff452f8b'
+priority: 3
 features:
   - 'Apprenez les bases'
   - 'Entraînez-vous'

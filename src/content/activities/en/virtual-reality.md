@@ -2,6 +2,7 @@
 title: 'Virtual Reality'
 description: 'Step into a world full of suspense and adventure with our unique VR experiences'
 image: 'virtual-reality/virtual-reality-1.jpg'
+priority: 4
 categories: ['indoor', 'innovaction']
 duration: '30 - 120 minutes'
 groupSize: '6 - 100 people'

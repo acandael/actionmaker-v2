@@ -2,6 +2,7 @@
 title: 'Carabine laser et pistolet de sport (Indoor)'
 description: 'Le carabine laser et pistolet de sport se pratique avec des carabines de biathlon modifiées pour tirer sur une cible de biathlon'
 image: 'indoor-laser-karabijn/indoor-laser-karabijn-1.jpg'
+priority: 5
 categories: ['indoor']
 duration: '30 minutes - 2 heures'
 groupSize: '2 - 200'

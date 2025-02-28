@@ -2,6 +2,7 @@
 title: 'Mobile Escape Room (Indoor)'
 description: 'Experience a unique and exciting escape room adventure with our mobile escape room cases!'
 image: 'indoor-mobiele-escape-room/indoor-mobiele-escape-room-1.jpg'
+priority: 2
 features:
   - 'escape room'
   - 'bomb case'

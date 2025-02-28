@@ -2,6 +2,7 @@
 title: 'Réalité Virtuelle'
 description: "Plongez dans un monde rempli de suspense et d'aventure avec nos expériences VR uniques"
 image: 'virtual-reality/virtual-reality-1.jpg'
+priority: 4
 categories: ['indoor', 'innovaction']
 duration: '30 - 120 minutes'
 groupSize: '6 - 100 personnes'

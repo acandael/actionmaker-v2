@@ -3,6 +3,7 @@ title: 'Arrow Tag (Indoor)'
 description: 'Beleef de spanning van de Hunger Games!'
 image: 'indoor-arrow-tag/indoor-arrow-tag-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/10a28ab1-6d11-4018-96a5-287dc7650b16'
+priority: 7
 features:
   - 'Actief en veilig'
   - 'Teamwork en plezier'

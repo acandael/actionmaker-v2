@@ -2,6 +2,7 @@
 title: 'Mobiele Escape Room (Indoor)'
 description: 'Beleef een unieke en spannende escape room ervaring met onze mobiele escape room koffers!'
 image: 'indoor-mobiele-escape-room/indoor-mobiele-escape-room-1.jpg'
+priority: 2
 features:
   - 'escape room'
   - 'bomkoffer'

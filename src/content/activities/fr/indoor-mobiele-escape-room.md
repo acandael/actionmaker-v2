@@ -2,6 +2,7 @@
 title: 'Escape Room Mobile (Indoor)'
 description: 'Nuclear Box & Magic Bomb'
 image: 'indoor-mobiele-escape-room/indoor-mobiele-escape-room-1.jpg'
+priority: 2
 features:
   - 'Mobile'
   - 'Mallette explosive'

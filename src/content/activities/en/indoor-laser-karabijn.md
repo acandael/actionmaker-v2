@@ -2,6 +2,7 @@
 title: 'Laser Rifle and Sport Pistol (Indoor)'
 description: 'In the infrared biathlon, participants shoot at a biathlon target using converted biathlon rifles'
 image: 'indoor-laser-karabijn/indoor-laser-karabijn-1.jpg'
+priority: 5
 categories: ['indoor']
 duration: '30 minutes - 2 hours'
 groupSize: '2 - 200'
