@@ -89,9 +89,9 @@ export const ui = {
     // About
     'about.title': 'Over Action Maker',
     'about.description.p1':
-      'Er komt heel wat kijken bij het organiseren van een teambuilding. Je moet geschikt materiaal vinden, gespecialiseerde animatoren, en wat als je door gewijzigde omstandigheden op het laatste moment een andere activiteit moet vinden?',
+      'Er komt heel wat kijken bij het organiseren van een teambuilding, activiteit, workshop of citygame. Je moet geschikt materiaal vinden, gespecialiseerde animatoren, en wat als je door gewijzigde omstandigheden op het laatste moment een andere activiteit moet vinden?',
     'about.description.p2':
-      'We weten hoe stresserend dit kan zijn. Action Maker heeft immers 15 jaar ervaring met het organiseren van teambuildings voor bedrijven en het versterken van de groepsgeest.',
+      'We weten hoe stresserend dit kan zijn. Action Maker heeft immers 15 jaar ervaring met het organiseren van teambuildings voor bedrijven en andere groepen en het versterken van de groepsgeest.',
     'about.description.p3':
       'Neem daarom vandaag nog contact op met Action Maker, je ontvangt binnen de twee dagen een offerte en wij nemen alle zorgen uit je handen zodat je team een leuke dag heeft zonder zorgen, en versterkt als team uit de ervaring komt.',
     'about.image.alt': 'Team building activiteit',
@@ -248,9 +248,9 @@ export const ui = {
     // About
     'about.title': "À propos d'Action Maker",
     'about.description.p1':
-      "L'organisation d'un Team Building demande beaucoup de préparation. Vous devez trouver le matériel approprié, des animateurs spécialisés, et que faire si vous devez trouver une autre activité à la dernière minute en raison de circonstances modifiées ?",
+      "L'organisation d'un team building, d'une activité, d'un atelier ou d'un jeu de ville demande beaucoup de préparation. Il faut trouver le matériel adapté, des animateurs spécialisés, et que faire si des circonstances imprévues vous obligent à changer d'activité à la dernière minute ?",
     'about.description.p2':
-      "Nous savons à quel point cela peut être stressant. Action Maker a 15 ans d'expérience dans l'organisation de team buildings pour les entreprises et le renforcement de l'esprit d'équipe.",
+      "Nous savons à quel point cela peut être stressant. Action Maker a en effet 15 ans d'expérience dans l'organisation de team buildings pour les entreprises et autres groupes, et dans le renforcement de l'esprit d'équipe.",
     'about.description.p3':
       "Contactez donc Action Maker dès aujourd'hui, vous recevrez un devis dans les deux jours et nous nous occuperons de tout pour que votre équipe passe une belle journée sans soucis et sorte renforcée de l'expérience.",
     'about.image.alt': 'Activité de team building',
@@ -408,9 +408,9 @@ export const ui = {
     // About
     'about.title': 'About Action Maker',
     'about.description.p1':
-      'Organizing a team building requires a lot of preparation. You need to find suitable equipment, specialized animators, and what if you need to find a different activity at the last minute due to changed circumstances?',
+      'Organizing a team building, activity, workshop or city game involves a lot of work. You need to find suitable equipment, specialized animators, and what if changed circumstances force you to find another activity at the last moment?',
     'about.description.p2':
-      'We know how stressful that can be. Action Maker has 15 years of experience in organizing team buildings for companies and strengthening team spirit.',
+      'We know how stressful this can be. After all, Action Maker has 15 years of experience organizing team buildings for companies and other groups and strengthening team spirit.',
     'about.description.p3':
       'Therefore, contact Action Maker today, you will receive an offer within two days and we will take away all your worries so your team can have a beautiful day without concerns and emerge strengthened from the experience.',
     'about.image.alt': 'Team building activity',
