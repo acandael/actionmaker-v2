@@ -141,7 +141,7 @@ export const ui = {
     // Contact Info
     'contact.title': 'Neem vandaag nog contact met ons op',
     'contact.description':
-      'Wij helpen je graag bij het organiseren van je teambuilding. Neem vandaag nog contact met ons op.',
+      'Wij helpen je graag bij het organiseren van je activiteit, teambuilding, workshop en citygame. Neem vandaag nog contact met ons op.',
     'contact.read-more': 'Lees meer over ons',
     'contact.image.alt': 'Team building activiteit',
 
@@ -301,7 +301,7 @@ export const ui = {
     // Contact Info
     'contact.title': 'Contactez-nous',
     'contact.description':
-      "Nous vous aidons volontiers à organiser votre team building. Contactez-nous dès aujourd'hui.",
+      "Nous vous aidons volontiers à organiser votre activité, team building, atelier et city game. Contactez-nous dès aujourd'hui.",
     'contact.read-more': 'En savoir plus sur nous',
     'contact.image.alt': 'Activité de team building',
 
@@ -459,7 +459,7 @@ export const ui = {
     // Contact Info
     'contact.title': 'Contact Us',
     'contact.description':
-      'We are happy to help you organize your team building. Contact us today.',
+      'We are happy to help you organize your activity, team building, workshop and city game. Contact us today.',
     'contact.read-more': 'Learn more about us',
     'contact.image.alt': 'Team building activity',
 
