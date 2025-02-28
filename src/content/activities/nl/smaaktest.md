@@ -1,10 +1,10 @@
 ---
 title: 'Smaaktest'
-description: 'Vertrouw Jij op Je Zintuigen?'
+description: 'Vertrouw jij op je zintuigen?'
 image: 'smaaktest/smaaktest-1.jpg'
 categories: ['workshop']
 duration: '2 - 5 uur'
-groupSize: '8 - 1000 personen'
+groupSize: '8 - 250 personen'
 availability: 'het hele jaar door'
 features:
   - 'Weet je welke kruiden je gebruikt in je eten? Kun je ze herkennen zonder het etiket?'
@@ -22,7 +22,7 @@ gallery:
   ]
 ---
 
-Ontdek hoe goed jouw smaak, geur en tastzin werken tijdens deze leuke en uitdagende smaaktest! Test je kennis van bier, cola, kaas, kruiden en meer. Heb jij een scherp smaakzintuig, of vertrouw je toch liever op het etiket?
+Ontdek hoe goed jouw smaak, geur en tastzin werken tijdens deze leuke en uitdagende smaaktest! Test je kennis van bier, cola, kaas, kruiden en meer. Heb jij een scherp smaakzintuig of vertrouw je toch liever op het etiket?
 
 ## Maak het nog leuker met een Quiz!
 

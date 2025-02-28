@@ -4,7 +4,7 @@ description: 'Can you trust your taste buds? Who makes the best use of taste, sm
 image: 'smaaktest/smaaktest-1.jpg'
 categories: ['workshop']
 duration: '2 - 5 hours'
-groupSize: '8 - 1000 participants'
+groupSize: '8 - 250 participants'
 availability: 'All year round'
 features:
   - 'Do you know which spices you use in your dishes? Can you recognize them without the label?'

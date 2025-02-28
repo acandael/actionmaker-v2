@@ -20,4 +20,4 @@ gallery:
   ]
 ---
 
-Le berger vous apprendra les techniques de base de la conduite de moutons et vous enseignera comment utiliser les commandes avec les chiens, des Border Collies. Après cette explication, vous conduirez vous-même les moutons sur un parcours. L'atelier peut se terminer par une démonstration du berger lui-même.
+Le berger vous enseignera les techniques de base de la conduite des moutons et vous montrera comment utiliser les commandes avec les chiens, des Border Collies. Après cette explication, vous conduirez vous-même les moutons à travers un parcours. L'atelier peut se terminer par une démonstration du berger.

@@ -4,7 +4,7 @@ description: "Pouvez-vous faire confiance à votre goût ? Qui fait le meilleur 
 image: 'smaaktest/smaaktest-1.jpg'
 categories: ['workshop']
 duration: '2 - 5 heures'
-groupSize: '8 - 1000 personnes'
+groupSize: '8 - 250 personnes'
 availability: "Tout l'année"
 features:
   - "Savez-vous quelles épices vous utilisez dans vos plats ? Pouvez-vous les reconnaître sans l'étiquette ?"
