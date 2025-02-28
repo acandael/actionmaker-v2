@@ -22,6 +22,6 @@ groupSize: '8-50 people'
 availability: 'On request'
 ---
 
-Do you have the courage to literally walk on glowing hot coals? Then this team building activity is perfect for you!
+Do you have the courage to literally walk on glowing hot coals? Then this workshop is THE activity for you!
 
 Fire walking is an ancient tradition that requires not only courage but also trust in yourself and others. A unique experience that strengthens the bonds within your team and creates unforgettable memories.

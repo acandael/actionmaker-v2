@@ -22,6 +22,6 @@ groupSize: '8-50 personnes'
 availability: 'Sur demande'
 ---
 
-Avez-vous le courage de marcher littéralement sur des charbons ardents ? Alors cette activité de team building est faite pour vous !
+Avez-vous le courage de marcher littéralement sur des charbons ardents ? Alors cet atelier est l'activité qu'il vous faut !
 
 La marche sur le feu est une tradition ancestrale qui demande non seulement du courage, mais aussi de la confiance en soi et en les autres. Une expérience unique qui renforce les liens au sein de votre équipe et crée des souvenirs inoubliables.

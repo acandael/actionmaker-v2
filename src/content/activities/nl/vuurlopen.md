@@ -1,6 +1,6 @@
 ---
 title: 'Vuurlopen'
-description: 'Gaan Jullie Door het Vuur voor Elkaar?'
+description: 'Gaan jullie door het vuur voor elkaar?'
 image: 'vuurlopen/vuurlopen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/9f864b33-8c45-4392-8e07-a720e8b500ee'
 features:
@@ -22,6 +22,6 @@ groupSize: '8-50 personen'
 availability: 'Op aanvraag'
 ---
 
-Hebben jullie het lef om letterlijk over gloeiend hete kolen te lopen? Dan is deze teambuilding dé activiteit voor jullie!
+Hebben jullie het lef om letterlijk over gloeiend hete kolen te lopen? Dan is deze workshop dé activiteit voor jullie!
 
 Vuurlopen is een eeuwenoude traditie die niet alleen moed, maar ook vertrouwen in jezelf en elkaar vraagt. Een unieke ervaring die de banden binnen jullie team versterkt en onvergetelijke herinneringen creëert.
