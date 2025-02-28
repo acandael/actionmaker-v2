@@ -2,6 +2,7 @@
 title: 'Escape Room Mobile (Outdoor)'
 description: 'Nuclear Box & Magic Bomb'
 image: 'outdoor-mobiele-escape-room/outdoor-mobiele-escape-room-1.jpg'
+priority: 2
 features:
   - 'Mobile'
   - 'Mallette explosive'

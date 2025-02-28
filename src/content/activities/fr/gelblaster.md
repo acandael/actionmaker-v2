@@ -2,6 +2,7 @@
 title: 'GelBlaster'
 description: 'Adrénaline et Action sans désordre !'
 image: 'gelblaster/gelblaster-1.jpg'
+priority: 8
 features:
   - 'Sans désordre'
   - 'Écologique'

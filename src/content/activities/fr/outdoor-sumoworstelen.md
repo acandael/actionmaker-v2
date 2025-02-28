@@ -3,6 +3,7 @@ title: 'Lutte Sumo (Outdoor)'
 description: "Une activité hilarante où les participants s'affrontent dans des costumes de sumo gonflables simples et doubles."
 image: 'outdoor-sumoworstelen/outdoor-sumoworstelen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/3c3bd7aa-e0f1-4bbf-a9b9-992b8b2afc01'
+priority: 9
 categories: ['outdoor', 'actief']
 duration: '30 minutes - 90 minutes selon la condition physique'
 groupSize: '8 - 50 personnes'

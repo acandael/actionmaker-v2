@@ -2,6 +2,7 @@
 title: 'Tir au pistolet et à la carabine à air comprimé'
 description: 'Le tir au pistolet et à la carabine à air comprimé est une activité stimulante qui nécessite précision, concentration et main stable'
 image: 'luchtdruk-pistool/luchtdruk-pistoolschieten-1.jpg'
+priority: 13
 categories: ['outdoor']
 duration: '2-3 heures'
 groupSize: '8-50 personnes'

@@ -3,6 +3,7 @@ title: 'Sumo Wrestling (Outdoor)'
 description: 'A hilarious activity where participants battle each other in single and double inflatable sumo suits.'
 image: 'outdoor-sumoworstelen/outdoor-sumoworstelen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/3c3bd7aa-e0f1-4bbf-a9b9-992b8b2afc01'
+priority: 9
 categories: ['actief', 'outdoor']
 duration: '30 minutes - 90 minutes depending on physical condition'
 groupSize: '8 - 50 people'

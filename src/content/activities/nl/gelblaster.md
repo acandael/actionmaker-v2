@@ -2,6 +2,7 @@
 title: 'GelBlaster'
 description: 'Adrenaline en Actie zonder Rommel!'
 image: 'gelblaster/gelblaster-1.jpg'
+priority: 8
 features:
   - 'Geen Rommel'
   - 'Milieuvriendelijk'

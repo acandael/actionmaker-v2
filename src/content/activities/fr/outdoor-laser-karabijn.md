@@ -2,6 +2,7 @@
 title: 'Carabine laser et pistolet de sport (Outdoor)'
 description: 'Le carabine laser et pistolet de sport se pratique avec des carabines de biathlon modifiées pour tirer sur une cible de biathlon'
 image: 'outdoor-laser-karabijn/outdoor-laser-karabijn-1.jpg'
+priority: 5
 categories: ['outdoor']
 duration: '30 minutes - 2 heures'
 groupSize: '2 - 200'

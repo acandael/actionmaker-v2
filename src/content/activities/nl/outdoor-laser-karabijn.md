@@ -2,6 +2,7 @@
 title: 'Laser karabijn- en sportpistool (Outdoor)'
 description: 'Bij het infrarood biatlonschieten wordt er met omgebouwde biatlongeweren geschoten op een biatlon doel'
 image: 'outdoor-laser-karabijn/outdoor-laser-karabijn-1.jpg'
+priority: 5
 categories: ['outdoor']
 duration: '30 minuten - 2 uur'
 groupSize: '2 - 200'

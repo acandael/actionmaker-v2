@@ -2,6 +2,7 @@
 title: 'Air Pistol and Rifle Shooting'
 description: 'Air pistol and rifle shooting shooting is a challenging activity that requires precision, concentration, and a steady hand'
 image: 'luchtdruk-pistool/luchtdruk-pistoolschieten-1.jpg'
+priority: 13
 categories: ['outdoor']
 duration: '2 - 3 hours'
 groupSize: '8 - 30 people'

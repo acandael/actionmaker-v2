@@ -2,6 +2,7 @@
 title: 'Laser Rifle and Sport Pistol (Outdoor)'
 description: 'In the laser rifle and sport pistol, participants shoot at a biathlon target using converted biathlon rifles'
 image: 'outdoor-laser-karabijn/outdoor-laser-karabijn-1.jpg'
+priority: 5
 categories: ['outdoor']
 duration: '30 minutes - 2 hours'
 groupSize: '2 - 200'

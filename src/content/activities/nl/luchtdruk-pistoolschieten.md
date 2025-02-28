@@ -2,6 +2,7 @@
 title: 'Luchtdruk pistool- en karabijnschieten'
 description: 'Luchtdruk pistool- en karabijnschieten is een uitdagende activiteit die precisie, concentratie en een vaste hand vereist'
 image: 'luchtdruk-pistool/luchtdruk-pistoolschieten-1.jpg'
+priority: 13
 categories: ['outdoor']
 duration: '2 - 3 uur'
 groupSize: '8 - 30 personen'

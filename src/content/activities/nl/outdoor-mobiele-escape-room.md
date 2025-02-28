@@ -2,6 +2,7 @@
 title: 'Mobiele Escape Room (Outdoor)'
 description: 'Beleef een unieke en spannende escape room ervaring met onze mobiele escape room koffers!'
 image: 'outdoor-mobiele-escape-room/outdoor-mobiele-escape-room-1.jpg'
+priority: 2
 features:
   - 'escape room'
   - 'bomkoffer'

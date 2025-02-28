@@ -3,6 +3,7 @@ title: 'Bijlwerpen'
 description: 'Bijlwerpen is verrassend gemakkelijk, de meeste mensen werpen de bijl in het doel in de eerste vijf tot tien worpen'
 image: 'bijlwerpen/bijlwerpen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/e79edaba-57fe-41d7-960f-d939c3353d80'
+priority: 4
 features:
   - 'teamgeest'
   - 'sport'

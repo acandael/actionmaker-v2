@@ -3,6 +3,7 @@ title: 'Archery'
 description: 'Archery is a classic sport that requires concentration, technique, and precision.'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/d6b4ee1e-ce6c-4497-b7ed-dbabbcd10e10'
 image: 'boogschieten/boogschieten-1.jpg'
+priority: 10
 features:
   - 'Experienced instructors'
   - 'Basic techniques'

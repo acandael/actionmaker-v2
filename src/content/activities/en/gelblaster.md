@@ -2,6 +2,7 @@
 title: 'GelBlaster'
 description: 'Adrenaline and Action without the Mess!'
 image: 'gelblaster/gelblaster-1.jpg'
+priority: 8
 features:
   - 'No Mess'
   - 'Eco-friendly'

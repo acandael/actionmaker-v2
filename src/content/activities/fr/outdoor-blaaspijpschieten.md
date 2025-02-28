@@ -2,6 +2,7 @@
 title: 'Tir à la Sarbacane (Outdoor)'
 description: 'La chasse au sarbacane en extérieur est très populaire. Une activité passionnante et stimulante pour tous les âges.'
 image: 'outdoor-blaaspijpschieten/outdoor-blaaspijpschieten-1.jpg'
+priority: 11
 features:
   - "esprit d'équipe"
   - 'sport'

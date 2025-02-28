@@ -2,6 +2,7 @@
 title: 'Mobile Escape Room (Outdoor)'
 description: 'Experience a unique and exciting escape room adventure with our mobile escape room cases!'
 image: 'outdoor-mobiele-escape-room/outdoor-mobiele-escape-room-1.jpg'
+priority: 2
 features:
   - 'escape room'
   - 'bomb case'
