@@ -2,6 +2,7 @@
 title: 'De Anderen (Indoor)'
 description: 'Dit programma is geïnspireerd op een populair tv-concept, namelijk "De Verraders".'
 image: 'indoor-de-anderen/indoor-de-anderen-1.jpg'
+priority: 17
 isGame: true
 features:
   - 'Tactiek'

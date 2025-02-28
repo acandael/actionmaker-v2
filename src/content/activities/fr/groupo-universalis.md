@@ -2,6 +2,7 @@
 title: 'Groupo Universalis'
 description: "Inspiré de l'émission de télévision Homo Universalis"
 image: 'groupo-universalis/groupo-universalis-1.jpg'
+priority: 14
 isGame: true
 features:
   - 'Activités pour tous les talents'
@@ -16,7 +17,7 @@ gallery:
     'groupo-universalis/groupo-universalis-6.jpg',
     'groupo-universalis/groupo-universalis-7.jpg',
   ]
-categories: ['indoor', 'outdoor']
+categories: ['indoor']
 duration: '2 - 3 heures'
 groupSize: '8 - 1000 personnes'
 availability: 'Sur demande'

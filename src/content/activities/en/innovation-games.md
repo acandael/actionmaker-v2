@@ -3,6 +3,7 @@ title: 'Innovation Games (Indoor)'
 description: 'Take on challenging activities and discover the power of innovation in team building'
 image: 'innovation-games/innovation-games-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369390/f61177ac-ff87-4c59-9e12-2bfbbfc578e6'
+priority: 16
 isGame: true
 features:
   - 'Lightsaber fencing'

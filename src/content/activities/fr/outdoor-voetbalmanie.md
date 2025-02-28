@@ -2,6 +2,7 @@
 title: 'Folie du Football (Outdoor)'
 description: "Vivez le football d'une manière totalement nouvelle avec notre activité spécialement développée"
 image: 'outdoor-voetbalmanie/outdoor-voetbalmanie-1.jpg'
+priority: 25
 isGame: true
 features:
   [

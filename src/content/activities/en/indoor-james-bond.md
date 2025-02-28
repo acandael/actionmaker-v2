@@ -2,6 +2,7 @@
 title: 'Spy Academy/James Bond (Indoor)'
 description: "We're looking for the ultimate team of colleagues to take on the role of the world's most famous spy."
 image: 'indoor-james-bond/indoor-james-bond-1.jpg'
+priority: 20
 isGame: true
 features:
   - 'Fencing'

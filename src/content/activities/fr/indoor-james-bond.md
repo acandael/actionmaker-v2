@@ -2,6 +2,7 @@
 title: 'Spy-academy/James Bond (Indoor)'
 description: "Nous recherchons l'équipe ultime de collègues pour incarner l'espion le plus célèbre au monde."
 image: 'indoor-james-bond/indoor-james-bond-1.jpg'
+priority: 20
 isGame: true
 features:
   - 'Escrime'

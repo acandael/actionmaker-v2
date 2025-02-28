@@ -2,6 +2,7 @@
 title: 'Excalibur'
 description: 'Deze activiteit legt de volledige nadruk op samenwerking'
 image: 'excalibur/excalibur-1.jpg'
+priority: 19
 isGame: true
 features:
   - 'Avontuur'

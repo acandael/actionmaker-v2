@@ -2,6 +2,7 @@
 title: 'Journée Médiévale'
 description: "Plongez dans l'atmosphère envoûtante du Moyen Âge avec ce team building immersif"
 image: 'middeleeuwse-dag/middeleeuwse-dag-1.jpg'
+priority: 22
 isGame: true
 features:
   - "Tir à l'arbalète"

@@ -2,6 +2,7 @@
 title: 'De Highland Games'
 description: 'Een authentieke combinatie van traditionele uitdagingen doordrenkt met een Schots karakter.'
 image: 'highland-games/highland-games-1.jpg'
+priority: 15
 isGame: true
 features:
   - 'Schotse sfeer'

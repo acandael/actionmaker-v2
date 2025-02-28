@@ -3,6 +3,7 @@ title: 'Expédition Robinson'
 description: "Le jeu Expédition Robinson, inspiré de l'émission de télévision du même nom"
 image: 'expeditie-robinson/expeditie-robinson-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/6b95fb48-c267-4bdf-8039-d0a69d6e926d'
+priority: 16
 isGame: true
 features:
   - "esprit d'équipe"

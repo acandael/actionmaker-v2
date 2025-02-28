@@ -2,6 +2,7 @@
 title: 'Les Autres (Indoor)'
 description: "Ce programme est inspiré d'un concept télévisé populaire, à savoir 'Les Traîtres'."
 image: 'indoor-de-anderen/indoor-de-anderen-1.jpg'
+priority: 17
 isGame: true
 features:
   - 'Tactique'

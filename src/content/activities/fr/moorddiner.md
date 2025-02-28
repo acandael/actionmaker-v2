@@ -2,6 +2,7 @@
 title: 'Dîner Mystère'
 description: "Le dîner mystère est un jeu de meurtre palpitant où vous devez découvrir l'identité d'un meurtrier impitoyable."
 image: 'moorddiner/moorddiner-1.jpg'
+priority: 12
 isGame: true
 categories: ['indoor']
 duration: '3-4 heures'

@@ -2,6 +2,7 @@
 title: 'Excalibur'
 description: 'This activity places complete emphasis on collaboration'
 image: 'excalibur/excalibur-1.jpg'
+priority: 19
 isGame: true
 features:
   - 'Adventure'

@@ -2,6 +2,7 @@
 title: 'Spy-academy/James Bond (Outdoor)'
 description: "We gaan op zoek naar het ultieme team van collega's om de rol van 's werelds meest bekende spion op zich te nemen."
 image: 'outdoor-james-bond/outdoor-james-bond-1.jpg'
+priority: 23
 isGame: true
 features:
   - 'Schermen'

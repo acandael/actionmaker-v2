@@ -2,6 +2,7 @@
 title: 'Spy-academy/James Bond (Indoor)'
 description: "We gaan op zoek naar het ultieme team van collega's om de rol van 's werelds meest bekende spion op zich te nemen."
 image: 'indoor-james-bond/indoor-james-bond-1.jpg'
+priority: 20
 isGame: true
 features:
   - 'Schermen'

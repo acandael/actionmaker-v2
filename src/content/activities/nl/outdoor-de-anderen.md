@@ -2,6 +2,7 @@
 title: 'De Anderen (Outdoor)'
 description: 'Dit programma is geïnspireerd op een populair tv-concept, namelijk "De Verraders".'
 image: 'outdoor-de-anderen/outdoor-de-anderen-1.jpg'
+priority: 21
 isGame: true
 features:
   - 'Tactiek'

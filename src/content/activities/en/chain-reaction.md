@@ -3,6 +3,7 @@ title: 'Chain Reaction'
 description: 'Together we will work to create an impressive Goldberg machine'
 image: 'chain-reaction/chain-reaction-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/e893044e-8fc5-4c2e-bfc5-79d2976065f1'
+priority: 13
 isGame: true
 features:
   - 'challenge and creativity'

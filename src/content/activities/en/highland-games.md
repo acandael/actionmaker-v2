@@ -2,6 +2,7 @@
 title: 'The Highland Games'
 description: 'An authentic combination of traditional challenges infused with Scottish character.'
 image: 'highland-games/highland-games-1.jpg'
+priority: 15
 isGame: true
 features:
   - 'Scottish atmosphere'

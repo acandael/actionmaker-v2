@@ -2,6 +2,7 @@
 title: 'Football Mania (Outdoor)'
 description: 'Experience football in a completely new way with our specially developed activity'
 image: 'outdoor-voetbalmanie/outdoor-voetbalmanie-1.jpg'
+priority: 25
 isGame: true
 features:
   [

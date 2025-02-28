@@ -2,6 +2,7 @@
 title: 'Murder Dinner'
 description: 'The murder dinner is a nerve-wracking murder game where you must uncover the identity of a ruthless killer.'
 image: 'moorddiner/moorddiner-1.jpg'
+priority: 12
 isGame: true
 categories: ['indoor']
 duration: '+/- 3h'

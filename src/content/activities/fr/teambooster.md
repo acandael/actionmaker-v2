@@ -2,6 +2,7 @@
 title: 'TeamBooster'
 description: "Des activités conçues pour stimuler l'équipe où la collaboration est la clé du succès."
 image: 'teambooster/teambooster-1.jpg'
+priority: 18
 isGame: true
 features:
   - 'Communication'

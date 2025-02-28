@@ -2,6 +2,7 @@
 title: 'De Zweedse Games'
 description: 'Een verrassende variant op de Highland Games, maar dan met een Zweedse twist.'
 image: 'zweedse-games/zweedse-games-1.jpg'
+priority: 24
 isGame: true
 features:
   - 'Biatlonschieten'

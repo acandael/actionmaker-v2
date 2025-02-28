@@ -2,6 +2,7 @@
 title: 'Les Autres (Outdoor)'
 description: "Ce programme est inspiré d'un concept télévisé populaire, à savoir 'Les Traîtres'."
 image: 'outdoor-de-anderen/outdoor-de-anderen-1.jpg'
+priority: 21
 isGame: true
 features:
   - 'Tactique'

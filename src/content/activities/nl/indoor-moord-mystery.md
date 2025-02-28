@@ -2,6 +2,7 @@
 title: 'Moord Mystery (Indoor)'
 description: 'Beleef een onvergetelijke teambuilding met een spannend murder-mystery in Cluedo-stijl!'
 image: 'indoor-moord-mystery/indoor-moord-mystery-1.jpg'
+priority: 15
 isGame: true
 features:
   - 'Communicatiespel'

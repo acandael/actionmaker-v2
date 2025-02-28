@@ -3,6 +3,7 @@ title: 'The Mole Hunt (Outdoor)'
 description: 'This team building is based on the popular TV show The Mole'
 image: 'outdoor-mollenjacht/outdoor-mollenjacht-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/94de6955-8473-4cc6-9dd7-90bc509b858a'
+priority: 14
 isGame: true
 features:
   - 'The Mole Run'

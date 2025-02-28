@@ -2,6 +2,7 @@
 title: 'Spy Academy/James Bond (Outdoor)'
 description: "We're looking for the ultimate team of colleagues to take on the role of the world's most famous spy."
 image: 'outdoor-james-bond/outdoor-james-bond-1.jpg'
+priority: 23
 isGame: true
 features:
   - 'Fencing'

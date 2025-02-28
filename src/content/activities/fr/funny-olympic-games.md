@@ -2,6 +2,7 @@
 title: 'The Funny Olympic Games'
 description: "Cette activité incarne l'idée de 'mens sana in corpore sano', - un esprit sain dans un corps sain."
 image: 'funny-games/funny-games-1.jpg'
+priority: 20
 isGame: true
 features:
   - 'défis sportifs'

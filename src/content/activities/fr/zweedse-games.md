@@ -2,6 +2,7 @@
 title: 'Les Jeux Suédois'
 description: 'Une variante surprenante des Highland Games, mais avec une touche suédoise.'
 image: 'zweedse-games/zweedse-games-1.jpg'
+priority: 24
 isGame: true
 features:
   - 'Tir de biathlon'

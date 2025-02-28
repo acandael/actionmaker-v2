@@ -2,6 +2,7 @@
 title: 'The Office Games'
 description: 'Ontdek de verborgen talenten binnen jouw kantoor'
 image: 'office-games/office-games-1.jpg'
+priority: 18
 isGame: true
 features:
   - 'Creatieve uitdagingen'

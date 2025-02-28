@@ -2,6 +2,7 @@
 title: 'Football Mania (Indoor)'
 description: 'Experience football in a completely new way with our specially developed activity'
 image: 'indoor-voetbalmanie/indoor-voetbalmanie-1.jpg'
+priority: 21
 isGame: true
 features:
   [

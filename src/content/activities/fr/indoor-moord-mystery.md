@@ -2,6 +2,7 @@
 title: 'Mystère du Meurtre (Indoor)'
 description: 'Vivez un team building inoubliable avec un mystérieux meurtre dans le style Cluedo!'
 image: 'indoor-moord-mystery/indoor-moord-mystery-1.jpg'
+priority: 15
 isGame: true
 features:
   - 'Jeu de communication'

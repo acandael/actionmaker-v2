@@ -2,6 +2,7 @@
 title: 'Spy-academy/James Bond (Outdoor)'
 description: "Nous recherchons l'équipe ultime de collègues pour incarner l'espion le plus célèbre au monde."
 image: 'outdoor-james-bond/outdoor-james-bond-1.jpg'
+priority: 23
 isGame: true
 features:
   - 'Escrime'
