@@ -4,7 +4,7 @@ description: 'Teambuilding in Gent: Ontdek, Speel & Win!'
 image: 'gentse-stroppentocht/gentse-stroppentocht-1.jpg'
 categories: ['city-games']
 duration: '+- 3 uur'
-groupSize: 'Max. 25 deelnemers per animator'
+groupSize: '6 - 150 personen'
 availability: 'Het hele jaar door'
 features:
   - 'Fotozoektocht: Patershol'

@@ -4,7 +4,7 @@ description: 'Team building à Gand : Découvrez, Jouez & Gagnez !'
 image: 'gentse-stroppentocht/gentse-stroppentocht-1.jpg'
 categories: ['city-games']
 duration: '2-3 heures'
-groupSize: '8-50 personnes'
+groupSize: '6 - 150 personnes'
 availability: 'Sur demande'
 features:
   - 'Chasse aux photos: Patershol'

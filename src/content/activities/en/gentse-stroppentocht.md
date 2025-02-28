@@ -4,7 +4,7 @@ description: 'Team Building in Ghent: Discover, Play & Win!'
 image: 'gentse-stroppentocht/gentse-stroppentocht-1.jpg'
 categories: ['city-games']
 duration: '+- 3 hours'
-groupSize: 'Max. 25 participants per animator'
+groupSize: '6 - 150 persons'
 availability: 'All year round'
 features:
   - 'Photo hunt: Patershol'
