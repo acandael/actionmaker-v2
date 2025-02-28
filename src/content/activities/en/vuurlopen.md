@@ -3,6 +3,7 @@ title: 'Fire Walking'
 description: 'Would You Walk Through Fire for Each Other?'
 image: 'vuurlopen/vuurlopen-1.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/9f864b33-8c45-4392-8e07-a720e8b500ee'
+priority: 5
 features:
   - 'Building trust'
   - 'Personal growth'

@@ -2,6 +2,7 @@
 title: 'Beer Tasting'
 description: 'Taste, Discover and Enjoy!'
 image: 'biertasting/biertasting-1.jpg'
+priority: 9
 features:
   - 'Versatile: Suitable for beer lovers and beginners alike.'
   - "Non-alcoholic options available: Also for those who don't drink alcohol."

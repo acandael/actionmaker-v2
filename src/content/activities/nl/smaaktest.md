@@ -2,6 +2,7 @@
 title: 'Smaaktest'
 description: 'Vertrouw jij op je zintuigen?'
 image: 'smaaktest/smaaktest-1.jpg'
+priority: 3
 categories: ['workshop']
 duration: '2 - 5 uur'
 groupSize: '8 - 250 personen'

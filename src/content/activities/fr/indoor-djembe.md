@@ -2,6 +2,7 @@
 title: 'Atelier de Djembé (Indoor)'
 description: 'Faire de la musique en équipe crée une expérience unique et génère un sentiment de groupe positif.'
 image: 'indoor-djembe/indoor-djembe-1.jpg'
+priority: 7
 categories: ['workshop']
 duration: '30 minutes - 2 heures'
 groupSize: 'Maximum 250 personnes'

@@ -2,6 +2,7 @@
 title: 'Atelier de Forge'
 description: 'La forge est un métier très ancien qui a produit de nombreux objets dans le passé'
 image: 'kunstsmeden/kunstsmeden-1.jpg'
+priority: 2
 categories: ['workshop', 'actief']
 duration: '2 - 3 heures'
 groupSize: '20 personnes maximum'

@@ -2,6 +2,7 @@
 title: 'Alpaca Workshop'
 description: 'These sensitive animals give direct feedback to people and how they behave'
 image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+priority: 10
 features:
   - 'team spirit'
   - 'communication'

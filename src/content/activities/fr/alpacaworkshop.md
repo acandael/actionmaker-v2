@@ -2,6 +2,7 @@
 title: 'Atelier Alpaca'
 description: 'Ces animaux sensibles donnent une rétroaction directe sur l’homme et comment il se comporte'
 image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+priority: 10
 features: ['communication', 'esprit équipe', 'stratégie']
 gallery:
   [

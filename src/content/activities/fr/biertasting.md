@@ -2,6 +2,7 @@
 title: 'Dégustation de Bières'
 description: 'Goûtez, Découvrez et Savourez!'
 image: 'biertasting/biertasting-1.jpg'
+priority: 9
 features:
   - 'Polyvalent : Convient aux amateurs de bière et aux débutants.'
   - "Sans alcool possible : Également pour ceux qui ne boivent pas d'alcool."

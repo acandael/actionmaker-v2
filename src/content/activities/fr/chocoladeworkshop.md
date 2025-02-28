@@ -2,6 +2,7 @@
 title: 'Atelier Chocolat'
 description: 'Un atelier chocolat dirigé par un chocolatier professionnel.'
 image: 'chocoladeworkshop/chocoladeworkshop-1.jpg'
+priority: 4
 categories: ['workshop']
 duration: '45 minutes - 2.5 heures'
 groupSize: '8 - 100 personnes'

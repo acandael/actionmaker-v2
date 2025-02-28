@@ -2,6 +2,7 @@
 title: 'Chocolate Workshop'
 description: 'A chocolate workshop led by a professional chocolatier.'
 image: 'chocoladeworkshop/chocoladeworkshop-1.jpg'
+priority: 4
 categories: ['workshop']
 duration: '45 minutes - 2.5 hours'
 groupSize: '8 - 100 people'

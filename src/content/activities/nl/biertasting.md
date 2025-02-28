@@ -2,6 +2,7 @@
 title: 'Biertasting'
 description: 'Proef, Ontdek en Geniet!'
 image: 'biertasting/biertasting-1.jpg'
+priority: 9
 features:
   - 'Veelzijdig: Geschikt voor bierliefhebbers én beginners.'
   - 'Alcoholvrij mogelijk: Ook voor wie geen alcohol drinkt.'

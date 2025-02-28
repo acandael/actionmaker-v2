@@ -2,6 +2,7 @@
 title: 'Alpaca Workshop'
 description: 'Deze fijngevoelige dieren geven directe feedback op de mens en hoe die zich gedraagt'
 image: 'alpacaworkshop/alpacaworkshop-1.jpg'
+priority: 10
 features:
   - 'teamgeest'
   - 'communicatie'
