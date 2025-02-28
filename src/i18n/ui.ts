@@ -120,7 +120,7 @@ export const ui = {
     'about.values.subtitle': 'Bij Action Maker streven we naar excellentie in alles wat we doen',
     'about.values.passie.title': 'Passie',
     'about.values.passie.description':
-      'Wij zijn gepassioneerd door teambuilding en dat merk je aan alles wat we doen',
+      'Wij zijn gepassioneerd door activiteiten en teambuildings en dat merk je aan alles wat we doen',
     'about.values.kwaliteit.title': 'Kwaliteit',
     'about.values.kwaliteit.description':
       'We streven naar de hoogste kwaliteit in materiaal en begeleiding',
@@ -280,7 +280,7 @@ export const ui = {
       "Chez Action Maker, nous visons l'excellence dans tout ce que nous faisons",
     'about.values.passie.title': 'Passion',
     'about.values.passie.description':
-      'Nous sommes passionnés par le team building et cela se reflète dans tout ce que nous faisons',
+      'Nous sommes passionnés par les activités et le team building et cela se ressent dans tout ce que nous faisons',
     'about.values.kwaliteit.title': 'Qualité',
     'about.values.kwaliteit.description':
       'Nous visons la plus haute qualité en matériel et en encadrement',
@@ -439,7 +439,7 @@ export const ui = {
     'about.values.subtitle': 'At Action Maker, we strive for excellence in everything we do',
     'about.values.passie.title': 'Passion',
     'about.values.passie.description':
-      'We are passionate about team building and it shows in everything we do',
+      'We are passionate about activities and team building and you can see that in everything we do',
     'about.values.kwaliteit.title': 'Quality',
     'about.values.kwaliteit.description':
       'We strive for the highest quality in equipment and supervision',
