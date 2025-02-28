@@ -2,6 +2,7 @@
 title: 'Mains Fortes d’Anvers'
 description: 'Découvrez des anecdotes amusantes sur Anvers tout en renforçant esprit équipe au sein de votre groupe'
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
+priority: 3
 features:
   - 'Chasse aux photos : Explorez les rues'
   - 'Shoot-outs sur un terrain de basket emblématique'

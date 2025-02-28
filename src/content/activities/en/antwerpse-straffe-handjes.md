@@ -2,6 +2,7 @@
 title: 'Antwerp Strong Hands'
 description: 'Discover interesting facts about Antwerp while strengthening team spirit'
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
+priority: 3
 features:
   - 'Photo Hunt: Explore the Streets'
   - 'Shoot-outs at an Iconic Basketball Location'

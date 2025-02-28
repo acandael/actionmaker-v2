@@ -2,6 +2,7 @@
 title: 'Ghent City Game'
 description: 'This unique city game takes you through the magnificent city of Ghent, filled with history, mystery and challenges.'
 image: 'gents-stadsspel/gents-stadsspel-1.jpg'
+priority: 4
 features:
   - 'Teams: You will be divided into teams to search for the cups together.'
   - 'Hints and Riddles: Use Texas Jones clues to discover which three of the ten monuments hide the cups.'

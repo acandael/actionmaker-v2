@@ -2,6 +2,7 @@
 title: 'Gents Stadsspel'
 description: 'Dit unieke stadsspel neemt je mee door de prachtige stad Gent, vol geschiedenis, mysterie en uitdaging.'
 image: 'gents-stadsspel/gents-stadsspel-1.jpg'
+priority: 4
 features:
   - 'Teams: Jullie worden verdeeld in teams om samen op zoek te gaan naar de bekers.'
   - 'Hints en Puzzels: Gebruik de aanwijzingen van Texas Jones om uit te zoeken welke drie van de tien monumenten de bekers verbergen.'

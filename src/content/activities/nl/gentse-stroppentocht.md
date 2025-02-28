@@ -2,6 +2,7 @@
 title: 'Gentse Stroppentocht'
 description: 'Teambuilding in Gent: Ontdek, Speel & Win!'
 image: 'gentse-stroppentocht/gentse-stroppentocht-1.jpg'
+priority: 1
 categories: ['city-games']
 duration: '+- 3 uur'
 groupSize: '6 - 150 personen'

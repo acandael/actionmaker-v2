@@ -2,6 +2,7 @@
 title: 'Parcours des Matines de Bruges'
 description: 'Jeu urbain Brugse Metten : Découvrez Bruges avec plaisir et compétition !'
 image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
+priority: 2
 features:
   - 'Chasse aux photos : Explorez les rues'
   - "Golf urbain sur le site de l'Ancien Saint-Jean"

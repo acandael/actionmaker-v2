@@ -2,6 +2,7 @@
 title: 'Brugse Metten Tocht'
 description: 'Brugse Metten Stadsspel: Ontdek Brugge met plezier en competitie!'
 image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
+priority: 2
 features:
   - 'Fotozoektocht: Verken het Straatbeeld'
   - 'Urban Golf op de Site Oud Sint-Ja'
