@@ -3,6 +3,7 @@ title: 'Bruges Matins Tour'
 description: 'Brugse Metten City Game: Discover Bruges with fun and competition!'
 image: 'brugse-metten-tocht/brugse-metten-tocht-1.jpg'
 priority: 2
+isCityGame: true
 features:
   - 'Photo Hunt: Explore the Streets'
   - 'Urban Golf at the Old Saint John Site'

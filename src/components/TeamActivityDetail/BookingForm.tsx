@@ -37,6 +37,7 @@ type FormData = z.infer<typeof formSchema>;
 
 interface BookingFormProps {
   activityTitle: string;
+  isGame: boolean;
 }
 
 export function BookingForm({ activityTitle }: BookingFormProps) {

@@ -3,6 +3,7 @@ title: 'Jeu de Ville à Gand'
 description: 'Team building à Gand : Découvrez, Jouez & Gagnez !'
 image: 'gentse-stroppentocht/gentse-stroppentocht-1.jpg'
 priority: 1
+isCityGame: true
 categories: ['city-games']
 duration: '2-3 heures'
 groupSize: '6 - 150 personnes'

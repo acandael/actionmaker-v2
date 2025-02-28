@@ -3,6 +3,7 @@ title: 'Ghent City Game'
 description: 'Team Building in Ghent: Discover, Play & Win!'
 image: 'gentse-stroppentocht/gentse-stroppentocht-1.jpg'
 priority: 1
+isCityGame: true
 categories: ['city-games']
 duration: '+- 3 hours'
 groupSize: '6 - 150 persons'

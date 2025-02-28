@@ -38,9 +38,11 @@ type FormData = z.infer<typeof formSchema>;
 
 interface BookingFormProps {
   activityTitle: string;
+  isGame: boolean;
+  isCityGame: boolean;
 }
 
-export function BookingForm({ activityTitle }: BookingFormProps) {
+export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -93,7 +95,9 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
 
           <div className="space-y-2">
             <h3 className="text-2xl font-semibold">
-              Request a quote for this activity/teambuilding
+              {isGame && 'Request a quote for this activity/game'}
+              {isCityGame && 'Request a quote for this city game'}
+              {!isGame && !isCityGame && 'Request a quote for this activity/teambuilding'}
             </h3>
             <p className="text-muted-foreground">
               Fill out the form and we will contact you within 24 hours.
@@ -220,19 +224,23 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             />
           </div>
 
-          <FormField
-            control={form.control}
-            name="location"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Location (leave empty if you need the Action Maker location)</FormLabel>
-                <FormControl>
-                  <Input placeholder="Address or City" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+          {!isCityGame && (
+            <FormField
+              control={form.control}
+              name="location"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    Location (leave empty if you need the Action Maker location)
+                  </FormLabel>
+                  <FormControl>
+                    <Input placeholder="Address or City" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          )}
 
           <FormField
             control={form.control}

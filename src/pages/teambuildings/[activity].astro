@@ -115,7 +115,12 @@ const images = activity.data.gallery || [];
         {/* Booking Form */}
         <div id="booking-form" class="pt-12 border-t">
           <h2 class="text-3xl font-bold mb-8">{t('activity.booking-title')}</h2>
-          <BookingForm activityTitle={activity.data.title} client:load />
+          <BookingForm
+            activityTitle={activity.data.title}
+            isGame={activity.data.isGame}
+            isCityGame={activity.data.isCityGame}
+            client:load
+          />
         </div>
       </div>
 

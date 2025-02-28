@@ -37,9 +37,11 @@ type FormData = z.infer<typeof formSchema>;
 
 interface BookingFormProps {
   activityTitle: string;
+  isGame: boolean;
+  isCityGame: boolean;
 }
 
-export function BookingForm({ activityTitle }: BookingFormProps) {
+export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -92,7 +94,9 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
 
           <div className="space-y-2">
             <h3 className="text-2xl font-semibold">
-              Demandez un devis pour cette activité/teambuilding
+              {isGame && 'Demandez un devis pour cette activité/jeux'}
+              {isCityGame && 'Demandez un devis pour cette jeux de ville'}
+              {!isGame && !isCityGame && 'Demandez un devis pour cette activité/teambuilding'}
             </h3>
             <p className="text-muted-foreground">
               Remplissez le formulaire et nous vous contacterons dans les 24 heures.
@@ -219,21 +223,23 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
             />
           </div>
 
-          <FormField
-            control={form.control}
-            name="location"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>
-                  Lieu (laissez vide si vous souhaitez que nous organisons l'événement chez vous)
-                </FormLabel>
-                <FormControl>
-                  <Input placeholder="Adres of stad" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+          {!isCityGame && (
+            <FormField
+              control={form.control}
+              name="location"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    Lieu (laissez vide si vous souhaitez que nous organisons l'événement chez vous)
+                  </FormLabel>
+                  <FormControl>
+                    <Input placeholder="Adres of stad" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          )}
 
           <FormField
             control={form.control}

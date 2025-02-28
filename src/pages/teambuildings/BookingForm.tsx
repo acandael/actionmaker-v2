@@ -38,9 +38,11 @@ type FormData = z.infer<typeof formSchema>;
 
 interface BookingFormProps {
   activityTitle: string;
+  isGame: boolean;
+  isCityGame: boolean;
 }
 
-export function BookingForm({ activityTitle }: BookingFormProps) {
+export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -93,7 +95,9 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
 
           <div className="space-y-2">
             <h3 className="text-2xl font-semibold">
-              Vraag een offerte aan voor deze teambuilding/activiteit
+              {isGame && 'Vraag een offerte aan voor deze teambuilding/game'}
+              {isCityGame && 'Vraag een offerte aan voor deze city game'}
+              {!isGame && !isCityGame && 'Vraag een offerte aan voor deze teambuilding/activiteit'}
             </h3>
             <p className="text-muted-foreground">
               Vul het formulier in en we nemen binnen 24 uur contact met je op.
@@ -219,22 +223,23 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
               )}
             />
           </div>
-
-          <FormField
-            control={form.control}
-            name="location"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>
-                  Locatie (laat veld blank indien Action Maker locatie moet voorzien)
-                </FormLabel>
-                <FormControl>
-                  <Input placeholder="Adres of stad" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+          {!isCityGame && (
+            <FormField
+              control={form.control}
+              name="location"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    Locatie (laat veld blank indien Action Maker locatie moet voorzien)
+                  </FormLabel>
+                  <FormControl>
+                    <Input placeholder="Adres of stad" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          )}
 
           <FormField
             control={form.control}

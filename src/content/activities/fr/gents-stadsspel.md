@@ -3,6 +3,7 @@ title: 'Jeu de Ville à Gand'
 description: "Ce jeu de ville unique vous emmène à travers la magnifique ville de Gand, remplie d'histoire, de mystère et de défis."
 image: 'gents-stadsspel/gents-stadsspel-1.jpg'
 priority: 4
+isCityGame: true
 features:
   - 'Équipes: Vous serez divisés en équipes pour partir ensemble à la recherche des coupes.'
   - 'Indices et Énigmes: Utilisez les indices de Texas Jones pour découvrir lesquels des dix monuments cachent les trois coupes.'

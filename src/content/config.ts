@@ -21,6 +21,7 @@ const activities = defineCollection({
     gallery: z.array(z.string()),
     'video-url': z.string().optional(),
     isGame: z.boolean().optional().default(false),
+    isCityGame: z.boolean().optional().default(false),
   }),
 });
 

@@ -3,6 +3,7 @@ title: 'Antwerpse Straffe Handjes'
 description: 'Leuke weetjes over Antwerpen ontdekken en gelijktijdig de teamgeest versterken binnen je team'
 image: 'antwerpse-straffe-handjes/antwerpse-straffe-handjes-1.jpg'
 priority: 3
+isCityGame: true
 features:
   - 'Fotozoektocht: Verken het Straatbeeld'
   - 'Shoot-outs op een iconische basketbal-locatie'
