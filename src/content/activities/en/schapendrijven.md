@@ -22,4 +22,4 @@ gallery:
   ]
 ---
 
-The shepherd will teach you the basic techniques of sheep herding and show how to use commands for the dogs, Border Collies. After this instruction, you'll herd the sheep yourself through a course. The workshop can be concluded with a demonstration by the shepherd.
+The shepherd will teach you the basic techniques of sheep herding and show you how to use commands with the dogs, Border Collies. After this explanation, you will drive the sheep through a course yourself. The workshop can be concluded with a demonstration by the shepherd.

@@ -1,6 +1,6 @@
 ---
 title: 'Kunstsmeden'
-description: 'Het smidsberoep is een zeer oud beroep en heeft in het verleden vele werkstukken voortgebracht.'
+description: 'Het smidseberoep is een zeer oud beroep en heeft in het verleden vele werkstukken voortgebracht.'
 image: 'kunstsmeden/kunstsmeden-1.jpg'
 categories: ['workshop', 'actief']
 duration: '2 - 3 uur'

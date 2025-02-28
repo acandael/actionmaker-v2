@@ -23,4 +23,4 @@ gallery:
   ]
 ---
 
-De schaapherder brengt jullie de basistechnieken van het schapen drijven bij en leert hoe de commando’s bij de honden, Border Collies, gebruikt kunnen worden. Na deze uitleg gaan jullie zelf de schapen over een parcours drijven. De workshop kan afgesloten worden met een demonstratie van de schapenherder zelf.
+De schaapsherder brengt jullie de basistechnieken van het schapendrijven bij en leert hoe de commando's bij de honden, Border Collies, gebruikt kunnen worden. Na deze uitleg gaan jullie zelf de schapen over een parcours drijven. De workshop kan afgesloten worden met een demonstratie van de schapenherder zelf.
