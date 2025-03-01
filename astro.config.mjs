@@ -3,11 +3,11 @@ import react from '@astrojs/react';
 import vercel from '@astrojs/vercel/serverless';
 import { fileURLToPath } from 'url';
 import tailwindcss from '@tailwindcss/vite';
-
-import robots from 'astro-robots';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://actionmaker.be',
   output: 'server',
   adapter: vercel({
     imageService: true,
@@ -25,7 +25,20 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
-  integrations: [react(), robots()],
+  integrations: [
+    react(),
+    sitemap({
+      i18n: {
+        defaultLocale: 'nl',
+        locales: {
+          nl: 'nl',
+          en: 'en',
+          fr: 'fr',
+        },
+      },
+      filter: (page) => !page.includes('/api/') && !page.includes('/admin/'),
+    }),
+  ],
   prefetch: false,
   vite: {
     resolve: {
