@@ -55,6 +55,66 @@ export async function GET() {
     });
   }
 
+  // Get activities from content collections
+  try {
+    const nlActivities = await getCollection('activities', ({ id }) => id.startsWith('nl/'));
+    const enActivities = await getCollection('activities', ({ id }) => id.startsWith('en/'));
+    const frActivities = await getCollection('activities', ({ id }) => id.startsWith('fr/'));
+
+    // Process Dutch activities
+    for (const activity of nlActivities) {
+      const slug = activity.id.replace('nl/', '').replace(/\.md$/, '');
+      const nlUrl = `${baseUrls.nl}/teambuildings/${slug}`;
+      const enUrl = `${baseUrls.en}/teambuildings/${slug}`;
+      const frUrl = `${baseUrls.fr}/teambuildings/${slug}`;
+
+      urls.push({
+        url: nlUrl,
+        links: [
+          { lang: 'nl', url: nlUrl },
+          { lang: 'en', url: enUrl },
+          { lang: 'fr', url: frUrl },
+        ],
+      });
+    }
+
+    // Process English activities
+    for (const activity of enActivities) {
+      const slug = activity.id.replace('en/', '').replace(/\.md$/, '');
+      const nlUrl = `${baseUrls.nl}/teambuildings/${slug}`;
+      const enUrl = `${baseUrls.en}/teambuildings/${slug}`;
+      const frUrl = `${baseUrls.fr}/teambuildings/${slug}`;
+
+      urls.push({
+        url: enUrl,
+        links: [
+          { lang: 'nl', url: nlUrl },
+          { lang: 'en', url: enUrl },
+          { lang: 'fr', url: frUrl },
+        ],
+      });
+    }
+
+    // Process French activities
+    for (const activity of frActivities) {
+      const slug = activity.id.replace('fr/', '').replace(/\.md$/, '');
+      const nlUrl = `${baseUrls.nl}/teambuildings/${slug}`;
+      const enUrl = `${baseUrls.en}/teambuildings/${slug}`;
+      const frUrl = `${baseUrls.fr}/teambuildings/${slug}`;
+
+      urls.push({
+        url: frUrl,
+        links: [
+          { lang: 'nl', url: nlUrl },
+          { lang: 'en', url: enUrl },
+          { lang: 'fr', url: frUrl },
+        ],
+      });
+    }
+  } catch (error) {
+    console.error('Error fetching activities:', error);
+  }
+
   // Generate sitemap XML
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
