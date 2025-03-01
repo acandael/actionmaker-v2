@@ -1,3 +1,0 @@
-# Disallow crawling of the entire site until official launch
-User-agent: *
-Disallow: / 

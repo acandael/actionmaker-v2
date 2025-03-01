@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://actionmaker.be',
+  site: 'https://www.actionmaker.be',
   output: 'server',
   adapter: vercel({
     imageService: true,
@@ -37,6 +37,10 @@ export default defineConfig({
         },
       },
       filter: (page) => !page.includes('/api/') && !page.includes('/admin/'),
+      customPages: [
+        'https://www.actionmaker.be/sitemap-index.xml',
+        'https://www.actionmaker.be/sitemap-0.xml',
+      ],
     }),
   ],
   prefetch: false,
