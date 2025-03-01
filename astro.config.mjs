@@ -3,7 +3,6 @@ import react from '@astrojs/react';
 import vercel from '@astrojs/vercel/serverless';
 import { fileURLToPath } from 'url';
 import tailwindcss from '@tailwindcss/vite';
-import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
@@ -25,24 +24,7 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
-  integrations: [
-    react(),
-    sitemap({
-      i18n: {
-        defaultLocale: 'nl',
-        locales: {
-          nl: 'nl',
-          en: 'en',
-          fr: 'fr',
-        },
-      },
-      filter: (page) => !page.includes('/api/') && !page.includes('/admin/'),
-      customPages: [
-        'https://www.actionmaker.be/sitemap-index.xml',
-        'https://www.actionmaker.be/sitemap-0.xml',
-      ],
-    }),
-  ],
+  integrations: [react()],
   prefetch: false,
   vite: {
     resolve: {
