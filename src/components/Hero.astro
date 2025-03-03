@@ -12,39 +12,46 @@ const t = useTranslations(lang);
 const teamBuildingsUrl = lang === 'nl' ? '/teambuildings' : `/${lang}/teambuildings`;
 ---
 
-<section class="relative min-h-[90vh] md:min-h-screen flex items-center -mt-[64px]">
-  <div class="absolute inset-0 z-0 overflow-hidden">
-    <Image
-      src={heroImage}
-      alt="Team building activities"
-      class="w-full h-full object-cover object-center md:object-[center_30%]"
-      quality="high"
-    />
-    <div
-      class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/30 md:to-transparent"
-    >
+<section
+  class="relative flex items-center justify-center w-screen overflow-x-hidden h-[calc(100vh-64px)] mt-[64px]"
+>
+  {/* Set a fixed height container for the background */}
+  <div class="absolute inset-0 w-screen h-full">
+    <div class="relative w-full h-full">
+      <div class="absolute inset-0 overflow-hidden">
+        <Image
+          src={heroImage}
+          alt="Team building activities"
+          class="w-full h-full object-cover object-center md:object-[center_30%] scale-[1.02]"
+          quality="max"
+          loading="eager"
+        />
+      </div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30 md:to-transparent backdrop-blur-[2px]"
+      >
+      </div>
     </div>
   </div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-4 py-16 md:py-24 mt-16">
-    <div class="max-w-3xl">
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 py-16 md:py-24">
+    <div class="max-w-3xl mx-auto md:mx-0 text-center md:text-left">
       <h1 class="text-balance text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6">
         {t('home.hero.title')}
       </h1>
       <p class="text-lg md:text-xl text-white/90 mb-6 md:mb-8">
         {t('home.hero.subtitle')}
       </p>
-      <div>
-        <Button
-          className="bg-red-600 hover:bg-red-700 text-white group h-auto py-3 px-6 md:py-4 md:px-8 text-base md:text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+      <div class="flex justify-center md:justify-start">
+        <a
+          href={teamBuildingsUrl}
+          class="inline-flex items-center gap-1.5 bg-red-600 hover:bg-red-700 text-white py-2 px-4 sm:py-2.5 sm:px-5 md:py-4 md:px-8 text-xs sm:text-sm md:text-lg rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
         >
-          <a href={teamBuildingsUrl} class="flex items-center gap-2">
-            {t('home.hero.cta')}
-            <ArrowRight
-              className="w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-1"
-            />
-          </a>
-        </Button>
+          <span class="whitespace-nowrap">{t('home.hero.cta')}</span>
+          <ArrowRight
+            className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-5 md:h-5 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1"
+          />
+        </a>
       </div>
     </div>
   </div>
