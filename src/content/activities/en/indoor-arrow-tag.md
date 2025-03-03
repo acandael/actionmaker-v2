@@ -8,7 +8,14 @@ features:
   - 'Active and safe'
   - 'Teamwork and fun'
   - 'Adventurous'
-gallery: ['indoor-arrow-tag/indoor-arrow-tag-1.jpg']
+gallery:
+  [
+    'indoor-arrow-tag/indoor-arrow-tag-2.jpg',
+    'indoor-arrow-tag/indoor-arrow-tag-3.jpg',
+    'indoor-arrow-tag/indoor-arrow-tag-4.jpg',
+    'indoor-arrow-tag/indoor-arrow-tag-5.jpg',
+    'indoor-arrow-tag/indoor-arrow-tag-6.jpg',
+  ]
 categories: ['actief', 'indoor']
 duration: '30 minutes - 2 hours'
 groupSize: '10-100 people'

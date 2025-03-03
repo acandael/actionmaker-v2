@@ -8,7 +8,14 @@ features:
   - 'Actief en veilig'
   - 'Teamwork en plezier'
   - 'Avontuurlijk'
-gallery: ['indoor-arrow-tag/indoor-arrow-tag-1.jpg']
+gallery:
+  [
+    'indoor-arrow-tag/indoor-arrow-tag-2.jpg',
+    'indoor-arrow-tag/indoor-arrow-tag-3.jpg',
+    'indoor-arrow-tag/indoor-arrow-tag-4.jpg',
+    'indoor-arrow-tag/indoor-arrow-tag-5.jpg',
+    'indoor-arrow-tag/indoor-arrow-tag-6.jpg',
+  ]
 categories: ['indoor', 'actief']
 duration: '30 minuten - 2 uur'
 groupSize: '10-100 people'
