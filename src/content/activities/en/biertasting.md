@@ -15,9 +15,9 @@ gallery:
   - 'biertasting/biertasting-6.jpg'
   - 'biertasting/biertasting-7.jpg'
 categories: ['workshop']
-duration: '2-3 uur'
-groupSize: '1-15 personen'
-availability: 'Op aanvraag'
+duration: '1,5 - 2 uur'
+groupSize: '6 - 40 persons'
+availability: 'On request'
 ---
 
 Experience a unique journey through the world of beer during our beer tasting. Enjoy diverse beer styles, learn surprising facts, and have a fun and educational experience. Perfect for both enthusiasts and curious newcomers!

@@ -17,8 +17,8 @@ gallery:
     'biertasting/biertasting-7.jpg',
   ]
 categories: ['workshop']
-duration: '2-3 uur'
-groupSize: '1-15 personen'
+duration: '1,5 - 2 uur'
+groupSize: '6 - 40 personen'
 availability: 'Op aanvraag'
 ---
 
