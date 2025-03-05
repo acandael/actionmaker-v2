@@ -15,6 +15,9 @@ export default defineConfig({
       sizes: [320, 640, 1280],
       formats: ['image/avif', 'image/webp'],
     },
+    webAnalytics: {
+      enabled: true,
+    },
     nodeVersion: '18.x',
   }),
   i18n: {
