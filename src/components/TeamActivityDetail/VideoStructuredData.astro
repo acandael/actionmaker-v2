@@ -5,9 +5,10 @@ export interface Props {
   description: string;
   thumbnailUrl?: string;
   uploadDate: string; // ISO 8601 date format
+  duration?: string; // ISO 8601 duration format (e.g., "PT1H2M10S")
 }
 
-const { videoUrl, title, description, thumbnailUrl, uploadDate } = Astro.props;
+const { videoUrl, title, description, thumbnailUrl, uploadDate, duration } = Astro.props;
 
 // Create the structured data object
 const structuredData = {
@@ -19,7 +20,7 @@ const structuredData = {
   embedUrl: videoUrl,
   contentUrl: videoUrl.replace('/embed/', '/'), // Direct URL to the video
   thumbnailUrl: thumbnailUrl || '',
-  duration: 'PT0M', // This should be dynamically set if duration is available
+  ...(duration && { duration }), // Only include duration if provided
   potentialAction: {
     '@type': 'SeekToAction',
     target: `${videoUrl}?t={seek_to_second_number}`,
