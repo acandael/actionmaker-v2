@@ -65,17 +65,15 @@ type Activity = CollectionEntry<'activities'>;
 
 <Layout title={`${activity.data.title} - Action Maker`} description={activity.data.description}>
   {/* Add VideoStructuredData if video exists */}
-  {
-    activity.data['video-url'] && (
-      <VideoStructuredData
-        videoUrl={activity.data['video-url']}
-        title={activity.data.title}
-        description={activity.data.description}
-        uploadDate={today}
-        thumbnailUrl={thumbnailUrl}
-      />
-    )
-  }
+  {activity.data['video-url'] && (
+    <VideoStructuredData
+      videoUrl={activity.data['video-url']}
+      title={activity.data.title}
+      description={activity.data.description}
+      uploadDate={today}
+      thumbnailUrl={thumbnailUrl}
+    />
+  )}
 
   {/* Hero Section */}
   <section class="relative min-h-[60vh] flex items-center -mt-20">
@@ -88,8 +86,7 @@ type Activity = CollectionEntry<'activities'>;
         class="w-full h-full object-cover"
         quality="high"
       />
-      <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-transparent">
-      </div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-transparent" />
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 py-24 mt-16">
@@ -107,39 +104,33 @@ type Activity = CollectionEntry<'activities'>;
         <div class="prose prose-lg max-w-none mb-12">
           <Content />
 
-          {
-            activity.data.features && (
-              <div class="mt-8 not-prose">
-                <h3 class="text-xl font-semibold mb-4">{t('activity.features-title')}</h3>
-                <ul class="space-y-3">
-                  {activity.data.features.map((feature) => (
-                    <li class="flex items-center gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )
-          }
+          {activity.data.features && (
+            <div class="mt-8 not-prose">
+              <h3 class="text-xl font-semibold mb-4">{t('activity.features-title')}</h3>
+              <ul class="space-y-3">
+                {activity.data.features.map((feature) => (
+                  <li class="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
-        {
-          activity.data['video-url'] && (
-            <div class="mb-12">
-              <h2 class="text-3xl font-bold mb-8">{t('activity.video-title')}</h2>
-              <VideoPlayer videoUrl={activity.data['video-url']} />
-            </div>
-          )
-        }
+        {activity.data['video-url'] && (
+          <div class="mb-12">
+            <h2 class="text-3xl font-bold mb-8">{t('activity.video-title')}</h2>
+            <VideoPlayer videoUrl={activity.data['video-url']} />
+          </div>
+        )}
 
-        {
-          images.length > 0 && (
-            <div class="mb-12">
-              <Gallery images={images} imageImports={imageImports} />
-            </div>
-          )
-        }
+        {images.length > 0 && (
+          <div class="mb-12">
+            <Gallery images={images} imageImports={imageImports} />
+          </div>
+        )}
 
         {/* Booking Form */}
         <div id="booking-form" class="pt-12 border-t">
@@ -184,9 +175,7 @@ type Activity = CollectionEntry<'activities'>;
             <a class="block" href="#booking-form">
               <Button className="w-full bg-red-600 hover:bg-red-700 text-white group">
                 {t('activity.request-quote')}
-                <ArrowRight
-                  className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
-                />
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </a>
           </div>
