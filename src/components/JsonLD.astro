@@ -1,0 +1,25 @@
+---
+// Simple component for JSON-LD
+interface Props {
+  data: Record<string, any>;
+}
+
+const { data } = Astro.props;
+const jsonString = JSON.stringify(data);
+
+// Also try to store in locals as a backup
+if (Astro.locals) {
+  // @ts-ignore
+  Astro.locals.jsonld = jsonString;
+  console.log('📝 JSON-LD COMPONENT STORED IN LOCALS:', {
+    length: jsonString.length,
+    url: Astro.url.pathname,
+  });
+}
+---
+
+<!-- Use set:html which is guaranteed to be unescaped -->
+<script type="application/ld+json" set:html={jsonString} />
+
+<!-- Fallback with Fragment approach for safety -->
+<Fragment set:html={`<script type="application/ld+json">${jsonString}</script>`} />

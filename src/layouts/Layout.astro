@@ -3,18 +3,42 @@ interface Props {
   title: string;
   isHomePage?: boolean;
   description?: string;
+  jsonld?: string;
 }
 
 import '@/styles/globals.css';
-import { ViewTransitions } from 'astro:transitions';
 import { Toaster } from '@/components/ui/sonner';
 import Navbar from '@/components/Navbar/Navbar.astro';
-
 import Footer from '@/components/Footer/Footer.astro';
 import { getLangFromUrl } from '@/i18n/utils';
 
-const { title, isHomePage = false, description } = Astro.props;
+const { title, isHomePage = false, description, jsonld } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
+
+// Check for JSON-LD data from middleware
+// @ts-ignore - Astro.locals may have layoutData from middleware
+const middlewareJsonLd = Astro.locals?.layoutData?.jsonld;
+const finalJsonLd = middlewareJsonLd || jsonld;
+
+// Only show debug panel when ?debug=true is in the URL
+const showDebugPanel = Astro.url.searchParams.has('debug');
+
+console.log('🧩 LAYOUT RECEIVED PROPS:', {
+  title,
+  descriptionLength: description ? description.length : 0,
+  jsonldType: typeof jsonld,
+  jsonldValue: jsonld,
+  jsonldStringified: JSON.stringify(jsonld),
+  hasJsonLD: !!jsonld,
+  jsonldLength: jsonld ? jsonld.length : 0,
+  hasMiddlewareJsonLd: !!middlewareJsonLd,
+  middlewareJsonLdLength: middlewareJsonLd ? middlewareJsonLd.length : 0,
+  finalJsonLdType: typeof finalJsonLd,
+  finalJsonLdLength: finalJsonLd ? finalJsonLd.length : 0,
+  isEmptyString: jsonld === '',
+  isNull: jsonld === null,
+  isUndefined: jsonld === undefined
+});
 ---
 
 <!doctype html>
@@ -27,7 +51,7 @@ const lang = getLangFromUrl(Astro.url);
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <link rel="canonical" href={Astro.url.href.replace(`/${lang}/`, '/')} />
 
-    <!-- Open Graph / Facebook   -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -43,9 +67,50 @@ const lang = getLangFromUrl(Astro.url);
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <title>{title}</title>
-    <ViewTransitions />
+
+    <!-- JSON-LD directly in head (no slot needed) -->
+    {
+      finalJsonLd && (
+        <>
+          <!-- Debug meta tags to check values -->
+          <meta name="jsonld-debug-length" content={finalJsonLd.length.toString()} />
+          <meta name="jsonld-debug-type" content={typeof finalJsonLd} />
+          <meta name="jsonld-debug-has" content={!!finalJsonLd ? "true" : "false"} />
+          <script type="application/ld+json" set:html={finalJsonLd} />
+        </>
+      )
+    }
+
+    <!-- Head slot for other content -->
+    <slot name="head" />
   </head>
   <body>
+    {showDebugPanel && (
+      <div
+        id="layout-debug"
+        style="background: #f0f0f0; padding: 20px; margin: 20px; border-radius: 8px; position: fixed; top: 80px; left: 20px; z-index: 9999; max-width: 500px; max-height: 80vh; overflow: auto; border: 2px solid blue;"
+      >
+        <h2 style="color: blue;">Layout Debug Data:</h2>
+        <pre
+          style="white-space: pre-wrap;">
+          {JSON.stringify({
+            props: {
+              title,
+              description,
+              isHomePage,
+              hasJsonLD: !!jsonld,
+              jsonldLength: jsonld ? jsonld.length : 0,
+              hasMiddlewareJsonLd: !!middlewareJsonLd,
+              middlewareJsonLdLength: middlewareJsonLd ? middlewareJsonLd.length : 0,
+              hasFinalJsonLd: !!finalJsonLd,
+              finalJsonLdLength: finalJsonLd ? finalJsonLd.length : 0
+            },
+            url: Astro.url.pathname
+          }, null, 2)}
+        </pre>
+      </div>
+    )}
+
     <Navbar />
     <main class:list={['min-h-screen pb-32', { 'pt-20': !isHomePage }]}>
       <slot />

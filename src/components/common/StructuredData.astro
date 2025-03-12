@@ -1,0 +1,12 @@
+/**
+ * A component for adding structured data to pages
+ */
+interface Props {
+  jsonld: string;
+}
+
+// Get JSON string from props
+const { jsonld } = Astro.props;
+
+{jsonld && <script type="application/ld+json" set:html={jsonld} />}
+

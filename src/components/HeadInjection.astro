@@ -1,0 +1,9 @@
+---
+/**
+ * A component that injects content directly into the head
+ */
+const { content } = Astro.props;
+---
+
+<Fragment set:html={content} />
+

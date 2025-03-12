@@ -1,0 +1,18 @@
+/**
+ * A dedicated component for structured data that can be used in the head
+ */
+interface Props {
+  data: Record<string, any>;
+}
+
+const { data } = Astro.props;
+const json = JSON.stringify(data, null, 2);
+
+// Log what this component receives
+console.log('💡 STRUCTURED DATA COMPONENT RECEIVED:', {
+  hasData: !!data,
+  dataType: typeof data,
+  jsonLength: json.length,
+});
+
+<script type="application/ld+json" set:html={json} /> 

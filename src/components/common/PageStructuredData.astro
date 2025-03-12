@@ -1,0 +1,19 @@
+/**
+ * A component for adding structured data to pages.
+ * This component should be included in the base layout to ensure
+ * structured data works consistently across the site.
+ */
+
+interface Props {
+  data: Record<string, any>;
+}
+
+// Get data from props
+const { data } = Astro.props;
+
+// Convert the data object to a JSON string
+const jsonString = JSON.stringify(data);
+
+{jsonString && 
+  <script type="application/ld+json" set:html={jsonString} />
+} 

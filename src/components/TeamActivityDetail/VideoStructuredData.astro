@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  videoUrl: string;
+  videoUrl: string | undefined;
   title: string;
   description: string;
   thumbnailUrl?: string;
@@ -9,6 +9,11 @@ export interface Props {
 }
 
 const { videoUrl, title, description, thumbnailUrl, uploadDate, duration } = Astro.props;
+
+// Only render if videoUrl is provided
+if (!videoUrl) {
+  return null;
+}
 
 // Create the structured data object
 const structuredData = {
@@ -31,6 +36,8 @@ const structuredData = {
   // Add required encoding information
   encodingFormat: 'video/mp4',
 };
----
 
-<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+// Stringify with proper formatting
+const jsonString = JSON.stringify(structuredData, null, 2);
+---
+<script is:inline type="application/ld+json">{jsonString}</script>

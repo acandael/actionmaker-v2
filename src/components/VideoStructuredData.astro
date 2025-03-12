@@ -1,0 +1,31 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  videoUrl: string;
+  thumbnailUrl?: string;
+  uploadDate: string;
+}
+
+const { title, description, videoUrl, thumbnailUrl, uploadDate } = Astro.props;
+
+// Simplify the structured data
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: title,
+  description: description,
+  uploadDate: uploadDate,
+  embedUrl: videoUrl,
+  thumbnailUrl: thumbnailUrl || '',
+};
+
+// Log in a clear format
+console.log('📊 STRUCTURED DATA COMPONENT:', {
+  hasVideoUrl: !!videoUrl,
+  dataGenerated: !!structuredData,
+});
+---
+
+<!-- Only the structured data script, nothing else -->
+<script type="application/ld+json" set:html={JSON.stringify(structuredData, null, 2)} />
