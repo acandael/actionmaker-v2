@@ -37,7 +37,7 @@ export function FAQAccordionReact({ faqs }: Props) {
               </div>
             </AccordionTrigger>
           </div>
-          <AccordionContent>
+          <AccordionContent className="overflow-hidden transition-all duration-300">
             <div className="px-6 pb-4">
               <p className="pl-9 text-muted-foreground">{item.data.answer}</p>
             </div>
