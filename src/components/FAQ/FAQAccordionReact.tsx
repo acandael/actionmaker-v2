@@ -37,9 +37,11 @@ export function FAQAccordionReact({ faqs }: Props) {
               </div>
             </AccordionTrigger>
           </div>
-          <AccordionContent className="overflow-hidden transition-all duration-300 px-6">
-            <p className="pl-9 text-muted-foreground">{item.data.answer}</p>
-          </AccordionContent>
+          <div className="answer-container" style={{ padding: '0 1.5rem 1rem 2.5rem' }}>
+            <AccordionContent className="!p-0">
+              <p className="text-muted-foreground">{item.data.answer}</p>
+            </AccordionContent>
+          </div>
         </AccordionItem>
       ))}
     </Accordion>
