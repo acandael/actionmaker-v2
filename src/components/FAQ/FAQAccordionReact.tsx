@@ -28,7 +28,7 @@ export function FAQAccordionReact({ faqs }: Props) {
           className="border-none rounded-xl bg-white shadow-md hover:shadow-xl data-[state=open]:bg-red-50/50 transition-all duration-300"
         >
           <div className="px-6 py-4">
-            <AccordionTrigger className="w-full flex justify-start items-start gap-4 hover:no-underline group transition-all duration-300">
+            <AccordionTrigger className="w-full flex justify-start items-start gap-4 hover:no-underline group transition-all duration-300 pl-2">
               <PlusCircle className="h-5 w-5 mt-0.5 text-red-500 shrink-0 transition-transform duration-300 group-data-[state=open]:rotate-45" />
               <div className="flex-1 text-left">
                 <span className="text-lg font-medium group-hover:text-red-600 transition-colors duration-300">
