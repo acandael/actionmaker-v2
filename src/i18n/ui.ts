@@ -9,7 +9,7 @@ export const defaultLang = 'nl';
 export const ui = {
   nl: {
     // Home
-    'home.hero.title': 'Een breed gamma van unieke teambuildings',
+    'home.hero.title': 'Een breed gamma van unieketeambuilding activiteiten',
     'home.hero.subtitle': 'Versterk je team met een leuke dag zonder zorgen',
     'home.hero.cta': 'Bekijk onze activiteiten/teambuildings',
 
@@ -331,7 +331,7 @@ export const ui = {
   },
   en: {
     // Home
-    'home.hero.title': 'A wide range of unique team building activities',
+    'home.hero.title': 'A wide range of unique teambuilding activities',
     'home.hero.subtitle': 'Strengthen your team with a fun day without worries',
     'home.hero.cta': 'View our activities',
 
