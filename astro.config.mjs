@@ -27,6 +27,28 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
+  redirects: {
+    '/scherminitiatie': {
+      status: 302,
+      destination: '/teambuildings/indoor-scherminitiatie',
+    },
+    '/roofvogelworkshop': {
+      status: 302,
+      destination: '/teambuildings/roofvogelworkshop',
+    },
+    '/djembe': {
+      status: 302,
+      destination: '/teambuildings/djembe',
+    },
+    '/sumoworstelen': {
+      status: 302,
+      destination: '/teambuildings/indoor-sumoworstelen',
+    },
+    '/laserkleiduifschieten': {
+      status: 302,
+      destination: '/teambuildings/laserkleiduifschieten',
+    },
+  },
   integrations: [react()],
   prefetch: false,
   vite: {
