@@ -241,7 +241,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
           {
             images.length > 0 && (
               <div class="mb-12">
-                <h2 class="text-3xl font-bold mb-8">Gallery</h2>
+                {/* <h2 class="text-3xl font-bold mb-8">Gallery</h2> */}
                 <Gallery images={images} imageImports={imageImports} />
               </div>
             )
@@ -249,7 +249,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
 
           {/* Booking Form */}
           <div id="booking-form" class="pt-12 border-t">
-            <h2 class="text-3xl font-bold mb-8">Book This Activity</h2>
+            <!-- <h2 class="text-3xl font-bold mb-8">Boek deze activiteit</h2> -->
             <BookingForm
               client:load
               activityTitle={activity.data.title}
