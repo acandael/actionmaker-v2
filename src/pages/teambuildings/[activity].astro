@@ -215,7 +215,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
             {
               activity.data.features && (
                 <div class="mt-8 not-prose">
-                  <h3 class="text-xl font-semibold mb-4">Features</h3>
+                  <h3 class="text-xl font-semibold mb-4">Wat kun je verwachten?</h3>
                   <ul class="space-y-3">
                     {activity.data.features.map((feature: string) => (
                       <li class="flex items-center gap-3">
@@ -232,7 +232,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
           {
             activity.data['video-url'] && (
               <div class="mb-12">
-                <h2 class="text-3xl font-bold mb-8">Activity Video</h2>
+                <h2 class="text-3xl font-bold mb-8">Video</h2>
                 <VideoPlayer videoUrl={activity.data['video-url']} />
               </div>
             )
