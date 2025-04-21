@@ -251,7 +251,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
           <div id="booking-form" class="pt-12 border-t">
             <!-- <h2 class="text-3xl font-bold mb-8">Boek deze activiteit</h2> -->
             <BookingForm
-              client:load
+              client:visible
               activityTitle={activity.data.title}
               isGame={activity.data.isGame || false}
               isCityGame={activity.data.isCityGame || false}
@@ -266,7 +266,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
               <div class="flex items-center gap-4">
                 <Users className="h-5 w-5 text-muted-foreground" />
                 <div>
-                  <p class="text-sm text-muted-foreground">Group Size</p>
+                  <p class="text-sm text-muted-foreground">Groepsgrootte</p>
                   <p class="font-medium">{activity.data.groupSize}</p>
                 </div>
               </div>
@@ -274,7 +274,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
               <div class="flex items-center gap-4">
                 <Clock className="h-5 w-5 text-muted-foreground" />
                 <div>
-                  <p class="text-sm text-muted-foreground">Duration</p>
+                  <p class="text-sm text-muted-foreground">Duur</p>
                   <p class="font-medium">{activity.data.duration}</p>
                 </div>
               </div>
@@ -282,14 +282,14 @@ const fullTitle = `${activity.data.title} - Action Maker`;
               <div class="flex items-center gap-4">
                 <Calendar className="h-5 w-5 text-muted-foreground" />
                 <div>
-                  <p class="text-sm text-muted-foreground">Availability</p>
+                  <p class="text-sm text-muted-foreground">Beschikbaarheid</p>
                   <p class="font-medium">{activity.data.availability || 'All year round'}</p>
                 </div>
               </div>
 
               <a class="block" href="#booking-form">
                 <Button className="w-full bg-red-600 hover:bg-red-700 text-white group">
-                  Request Quote
+                  Vraag een offerte aan
                   <ArrowRight
                     className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
                   />
