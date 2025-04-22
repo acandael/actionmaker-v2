@@ -48,6 +48,30 @@ export default defineConfig({
       status: 302,
       destination: '/teambuildings/laserkleiduifschieten',
     },
+    '/bijlwerpen': {
+      status: 302,
+      destination: '/teambuildings/bijlwerpen',
+    },
+    '/biathlonschieten': {
+      status: 302,
+      destination: '/teambuildings/indoor-laser-karabijn',
+    },
+    '/boogschieten': {
+      status: 302,
+      destination: '/teambuildings/boogschieten',
+    },
+    '/smaaktest': {
+      status: 302,
+      destination: '/teambuildings/smaaktest',
+    },
+    '/kunstsmeden': {
+      status: 302,
+      destination: '/teambuildings/kunstsmeden',
+    },
+    '/pistoolschieten': {
+      status: 302,
+      destination: '/teambuildings/luchtdruk-pistoolschieten',
+    },
   },
   integrations: [react()],
   prefetch: false,
