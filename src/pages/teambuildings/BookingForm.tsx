@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
+import { useForm, type Resolver } from 'react-hook-form';
 import * as z from 'zod';
 import { Button } from '../../components/ui/button';
 import { Card } from '../../components/ui/card';
@@ -34,6 +33,46 @@ const formSchema = z.object({
   message: z.string().optional(),
 });
 
+// Custom resolver for Zod v4 compatibility with React Hook Form
+const customZodResolver: Resolver<z.infer<typeof formSchema>> = async (values) => {
+  try {
+    const validatedData = formSchema.parse(values);
+    return {
+      values: validatedData,
+      errors: {},
+    };
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      const fieldErrors: Record<string, { type: string; message: string }> = {};
+      
+      // In Zod v4, we need to use the issues property
+      const zodError = error as z.ZodError;
+      zodError.issues.forEach((issue) => {
+        const fieldName = issue.path.join('.');
+        fieldErrors[fieldName] = {
+          type: issue.code,
+          message: issue.message,
+        };
+      });
+      
+      return {
+        values: {},
+        errors: fieldErrors,
+      };
+    }
+    
+    return {
+      values: {},
+      errors: {
+        root: {
+          type: 'unknown',
+          message: 'Validation failed',
+        },
+      },
+    };
+  }
+};
+
 type FormData = z.infer<typeof formSchema>;
 
 interface BookingFormProps {
@@ -44,7 +83,7 @@ interface BookingFormProps {
 
 export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+    resolver: customZodResolver,
     mode: 'onChange',
     reValidateMode: 'onChange',
     defaultValues: {

@@ -1,6 +1,5 @@
 import { jsx, jsxs } from 'react/jsx-runtime';
 import { useEffect } from 'react';
-import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { B as Button } from './Footer_C9MNa2Zg.mjs';
@@ -26,9 +25,43 @@ const formSchema = z.object({
   location: z.string().optional(),
   message: z.string().optional()
 });
+const customZodResolver = async (values) => {
+  try {
+    const validatedData = formSchema.parse(values);
+    return {
+      values: validatedData,
+      errors: {}
+    };
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      const fieldErrors = {};
+      const zodError = error;
+      zodError.issues.forEach((issue) => {
+        const fieldName = issue.path.join(".");
+        fieldErrors[fieldName] = {
+          type: issue.code,
+          message: issue.message
+        };
+      });
+      return {
+        values: {},
+        errors: fieldErrors
+      };
+    }
+    return {
+      values: {},
+      errors: {
+        root: {
+          type: "unknown",
+          message: "Validation failed"
+        }
+      }
+    };
+  }
+};
 function BookingForm({ activityTitle, isGame, isCityGame }) {
   const form = useForm({
-    resolver: zodResolver(formSchema),
+    resolver: customZodResolver,
     mode: "onChange",
     reValidateMode: "onChange",
     defaultValues: {
