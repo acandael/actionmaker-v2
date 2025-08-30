@@ -18,7 +18,6 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     },
-    nodeVersion: '20.x',
   }),
   i18n: {
     defaultLocale: 'nl',
