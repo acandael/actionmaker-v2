@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { useForm, type Resolver } from 'react-hook-form';
+import { useForm, type Resolver, type FieldError, type FieldErrors, type FieldValues } from 'react-hook-form';
 import * as z from 'zod';
 import { Button } from '../../../components/ui/button';
 import { Card } from '../../../components/ui/card';
@@ -33,40 +33,48 @@ const formSchema = z.object({
   message: z.string().optional(),
 });
 
+// Helper function to convert Zod errors to React Hook Form format
+const zodToHookFormErrors = (zodError: z.ZodError): FieldErrors => {
+  const errors: FieldErrors = {};
+
+  for (const issue of zodError.issues) {
+    const path = issue.path.join(".") || "root";
+    errors[path] = {
+      type: issue.code,
+      message: issue.message,
+    } as FieldError;
+  }
+
+  return errors;
+};
+
 // Custom resolver for Zod v4 compatibility with React Hook Form
-const customZodResolver: Resolver<z.infer<typeof formSchema>> = async (values) => {
+const customZodResolver: Resolver<z.infer<typeof formSchema>> = async (
+  values: FieldValues
+): Promise<{ values: FieldValues; errors: FieldErrors }> => {
   try {
     const result = await formSchema.safeParseAsync(values);
-    
+
     if (result.success) {
       return {
-        values: result.data,
+        values: result.data as FieldValues,
         errors: {},
       };
     } else {
-      const fieldErrors: Record<string, { type: string; message: string }> = {};
-      
-      result.error.issues.forEach((issue) => {
-        const fieldName = issue.path.join('.');
-        fieldErrors[fieldName] = {
-          type: issue.code,
-          message: issue.message,
-        };
-      });
-      
       return {
         values: {},
-        errors: fieldErrors,
+        errors: zodToHookFormErrors(result.error),
       };
     }
   } catch (error) {
+    console.error("Resolver error: ", error);
     return {
       values: {},
       errors: {
         root: {
-          type: 'unknown',
-          message: 'An unknown error occurred during validation',
-        },
+          type: "unknown",
+          message: "An unknown error occurred during validation",
+        } as FieldError,
       },
     };
   }
