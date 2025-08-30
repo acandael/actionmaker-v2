@@ -8,11 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://www.actionmaker.be',
   output: 'server',
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
+  adapter: vercel(),
   i18n: {
     defaultLocale: 'nl',
     locales: ['nl', 'fr', 'en'],
