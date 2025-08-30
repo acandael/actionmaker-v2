@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useEffect } from 'react';
-import { useForm, type Resolver, type FieldError, type FieldErrors, type FieldValues } from 'react-hook-form';
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Button } from '../../../components/ui/button';
 import { Card } from '../../../components/ui/card';
@@ -18,67 +19,19 @@ import {
 import { Input } from '../../../components/ui/input';
 import { Textarea } from '../../../components/ui/textarea';
 
-// Define the form schema with Zod v4
 const formSchema = z.object({
   activityTitle: z.string(),
-  firstName: z.string({ error: 'First name is required' }).min(2, { error: 'First name must contain at least 2 characters' }),
-  lastName: z.string({ error: 'Last name is required' }).min(2, { error: 'Last name must contain at least 2 characters' }),
-  email: z.string({ error: 'Email address is required' }).email({ error: 'Invalid email address' }),
-  phone: z.string({ error: 'Phone number is required' }).min(10, { error: 'Invalid phone number' }),
-  date: z.string({ error: 'Date is required' }).min(1, { error: 'Date is required' }),
-  groupSize: z.string({ error: 'Number of participants is required' }).min(1, { error: 'Number of participants is required' }),
-  hours: z.string({ error: 'Number of hours is required' }).min(1, { error: 'Number of hours is required' }),
+  firstName: z.string().min(2, { message: 'First name must contain at least 2 characters' }),
+  lastName: z.string().min(2, { message: 'Last name must contain at least 2 characters' }),
+  email: z.string().email({ message: 'Invalid email address' }),
+  phone: z.string().min(10, { message: 'Invalid phone number' }),
+  date: z.string().min(1, { message: 'Date is required' }),
+  groupSize: z.string().min(1, { message: 'Number of participants is required' }),
+  hours: z.string().min(1, { message: 'Number of hours is required' }),
   budget: z.string().optional(),
   location: z.string().optional(),
   message: z.string().optional(),
 });
-
-// Helper function to convert Zod errors to React Hook Form format
-const zodToHookFormErrors = (zodError: z.ZodError): FieldErrors => {
-  const errors: FieldErrors = {};
-
-  for (const issue of zodError.issues) {
-    const path = issue.path.join(".") || "root";
-    errors[path] = {
-      type: issue.code,
-      message: issue.message,
-    } as FieldError;
-  }
-
-  return errors;
-};
-
-// Custom resolver for Zod v4 compatibility with React Hook Form
-const customZodResolver: Resolver<z.infer<typeof formSchema>> = async (
-  values: FieldValues
-): Promise<{ values: FieldValues; errors: FieldErrors }> => {
-  try {
-    const result = await formSchema.safeParseAsync(values);
-
-    if (result.success) {
-      return {
-        values: result.data as FieldValues,
-        errors: {},
-      };
-    } else {
-      return {
-        values: {},
-        errors: zodToHookFormErrors(result.error),
-      };
-    }
-  } catch (error) {
-    console.error("Resolver error: ", error);
-    return {
-      values: {},
-      errors: {
-        root: {
-          type: "unknown",
-          message: "An unknown error occurred during validation",
-        } as FieldError,
-      },
-    };
-  }
-};
 
 type FormData = z.infer<typeof formSchema>;
 
@@ -90,7 +43,7 @@ interface BookingFormProps {
 
 export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
-    resolver: customZodResolver,
+    resolver: zodResolver(formSchema),
     mode: 'onChange',
     reValidateMode: 'onChange',
     defaultValues: {
@@ -108,31 +61,12 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
     },
   });
 
-  // Debug form state changes in production
-  useEffect(() => {
-    if (import.meta.env.PROD) {
-      console.log('Form state changed:', form.formState);
-      console.log('Form errors:', form.formState.errors);
-    }
-  }, [form.formState, form.formState.errors]);
-
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     try {
       // Trigger validation manually to ensure errors are shown
       const isValid = await form.trigger();
       
       if (!isValid) {
-        console.log('Form validation errors:', form.formState.errors);
-        console.log('Form state:', form.formState);
-        
-        // Force a re-render to show validation errors
-        await form.trigger();
-        
-        // Add a small delay to ensure state updates
-        setTimeout(() => {
-          console.log('After delay - Form errors:', form.formState.errors);
-        }, 100);
-        
         toast.error('Please fill in all required fields.');
         return;
       }
@@ -161,17 +95,6 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
     <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-          {/* Debug section for production */}
-          {import.meta.env.PROD && (
-            <div className="p-4 bg-gray-100 rounded-lg text-xs">
-              <p><strong>Form State Debug:</strong></p>
-              <p>Is Valid: {form.formState.isValid ? 'Yes' : 'No'}</p>
-              <p>Is Dirty: {form.formState.isDirty ? 'Yes' : 'No'}</p>
-              <p>Errors: {Object.keys(form.formState.errors).length}</p>
-              <p>Error Keys: {Object.keys(form.formState.errors).join(', ')}</p>
-            </div>
-          )}
-          
           <FormField
             control={form.control}
             name="activityTitle"

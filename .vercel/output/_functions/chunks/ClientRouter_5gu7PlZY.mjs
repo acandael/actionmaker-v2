@@ -1,6 +1,7 @@
 import { jsx, jsxs } from 'react/jsx-runtime';
-import { useEffect } from 'react';
+import 'react';
 import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { B as Button } from './Footer_C9MNa2Zg.mjs';
 import { C as Card } from './card_D4hY-7K7.mjs';
@@ -14,54 +15,20 @@ import 'clsx';
 
 const formSchema = z.object({
   activityTitle: z.string(),
-  firstName: z.string().min(2, { error: "Voornaam moet minimaal 2 karakters bevatten" }),
-  lastName: z.string().min(2, { error: "Achternaam moet minimaal 2 karakters bevatten" }),
-  email: z.string().email({ error: "Ongeldig e-mailadres" }),
-  phone: z.string().min(10, { error: "Ongeldig telefoonnummer" }),
-  date: z.string().min(1, { error: "Datum is verplicht" }),
-  groupSize: z.string().min(1, { error: "Aantal personen is verplicht" }),
-  hours: z.string().min(1, { error: "Aantal uren is verplicht" }),
+  firstName: z.string().min(2, { message: "Voornaam moet minimaal 2 karakters bevatten" }),
+  lastName: z.string().min(2, { message: "Achternaam moet minimaal 2 karakters bevatten" }),
+  email: z.string().email({ message: "Ongeldig e-mailadres" }),
+  phone: z.string().min(10, { message: "Ongeldig telefoonnummer" }),
+  date: z.string().min(1, { message: "Datum is verplicht" }),
+  groupSize: z.string().min(1, { message: "Aantal personen is verplicht" }),
+  hours: z.string().min(1, { message: "Aantal uren is verplicht" }),
   budget: z.string().optional(),
   location: z.string().optional(),
   message: z.string().optional()
 });
-const customZodResolver = async (values) => {
-  try {
-    const result = await formSchema.safeParseAsync(values);
-    if (result.success) {
-      return {
-        values: result.data,
-        errors: {}
-      };
-    } else {
-      const fieldErrors = {};
-      result.error.issues.forEach((issue) => {
-        const fieldName = issue.path.join(".");
-        fieldErrors[fieldName] = {
-          type: issue.code,
-          message: issue.message
-        };
-      });
-      return {
-        values: {},
-        errors: fieldErrors
-      };
-    }
-  } catch (error) {
-    return {
-      values: {},
-      errors: {
-        root: {
-          type: "unknown",
-          message: "An unknown error occurred during validation"
-        }
-      }
-    };
-  }
-};
 function BookingForm({ activityTitle, isGame, isCityGame }) {
   const form = useForm({
-    resolver: customZodResolver,
+    resolver: zodResolver(formSchema),
     mode: "onChange",
     reValidateMode: "onChange",
     defaultValues: {
@@ -78,22 +45,10 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
       message: ""
     }
   });
-  useEffect(() => {
-    {
-      console.log("Form state changed:", form.formState);
-      console.log("Form errors:", form.formState.errors);
-    }
-  }, [form.formState, form.formState.errors]);
   const onSubmit = async (data) => {
     try {
       const isValid = await form.trigger();
       if (!isValid) {
-        console.log("Form validation errors:", form.formState.errors);
-        console.log("Form state:", form.formState);
-        await form.trigger();
-        setTimeout(() => {
-          console.log("After delay - Form errors:", form.formState.errors);
-        }, 100);
         toast.error("Vul alle verplichte velden in.");
         return;
       }
@@ -116,25 +71,6 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
     }
   };
   return /* @__PURE__ */ jsx(Card, { className: "p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300", children: /* @__PURE__ */ jsx(Form, { ...form, children: /* @__PURE__ */ jsxs("form", { onSubmit: form.handleSubmit(onSubmit), className: "space-y-8", children: [
-    /* @__PURE__ */ jsxs("div", { className: "p-4 bg-gray-100 rounded-lg text-xs", children: [
-      /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("strong", { children: "Form State Debug:" }) }),
-      /* @__PURE__ */ jsxs("p", { children: [
-        "Is Valid: ",
-        form.formState.isValid ? "Yes" : "No"
-      ] }),
-      /* @__PURE__ */ jsxs("p", { children: [
-        "Is Dirty: ",
-        form.formState.isDirty ? "Yes" : "No"
-      ] }),
-      /* @__PURE__ */ jsxs("p", { children: [
-        "Errors: ",
-        Object.keys(form.formState.errors).length
-      ] }),
-      /* @__PURE__ */ jsxs("p", { children: [
-        "Error Keys: ",
-        Object.keys(form.formState.errors).join(", ")
-      ] })
-    ] }),
     /* @__PURE__ */ jsx(
       FormField,
       {

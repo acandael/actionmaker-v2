@@ -7,8 +7,9 @@ import { C as Card } from '../../../chunks/card_D4hY-7K7.mjs';
 import { B as Button, a as ui } from '../../../chunks/Footer_C9MNa2Zg.mjs';
 import { ArrowRight, CheckCircle2, Users, Clock, Calendar } from 'lucide-react';
 import { jsx, jsxs } from 'react/jsx-runtime';
-import { useEffect } from 'react';
+import 'react';
 import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { F as Form, a as FormField, b as FormItem, d as FormControl, I as Input, c as FormLabel, e as FormMessage, T as Textarea } from '../../../chunks/textarea_i64113Bh.mjs';
 import { toast } from 'sonner';
@@ -19,54 +20,20 @@ export { renderers } from '../../../renderers.mjs';
 
 const formSchema = z.object({
   activityTitle: z.string(),
-  firstName: z.string().min(2, { error: "Le prénom doit contenir au moins 2 caractères" }),
-  lastName: z.string().min(2, { error: "Le nom de famille doit contenir au moins 2 caractères" }),
-  email: z.string().email({ error: "Adresse e-mail invalide" }),
-  phone: z.string().min(10, { error: "Numéro de téléphone invalide" }),
-  date: z.string().min(1, { error: "La date est obligatoire" }),
-  groupSize: z.string().min(1, { error: "Le nombre de personnes est obligatoire" }),
-  hours: z.string().min(1, { error: "Le nombre d'heures est obligatoire" }),
+  firstName: z.string().min(2, { message: "Le prénom doit contenir au moins 2 caractères" }),
+  lastName: z.string().min(2, { message: "Le nom de famille doit contenir au moins 2 caractères" }),
+  email: z.string().email({ message: "Adresse e-mail invalide" }),
+  phone: z.string().min(10, { message: "Numéro de téléphone invalide" }),
+  date: z.string().min(1, { message: "La date est obligatoire" }),
+  groupSize: z.string().min(1, { message: "Le nombre de personnes est obligatoire" }),
+  hours: z.string().min(1, { message: "Le nombre d'heures est obligatoire" }),
   budget: z.string().optional(),
   location: z.string().optional(),
   message: z.string().optional()
 });
-const customZodResolver = async (values) => {
-  try {
-    const result = await formSchema.safeParseAsync(values);
-    if (result.success) {
-      return {
-        values: result.data,
-        errors: {}
-      };
-    } else {
-      const fieldErrors = {};
-      result.error.issues.forEach((issue) => {
-        const fieldName = issue.path.join(".");
-        fieldErrors[fieldName] = {
-          type: issue.code,
-          message: issue.message
-        };
-      });
-      return {
-        values: {},
-        errors: fieldErrors
-      };
-    }
-  } catch (error) {
-    return {
-      values: {},
-      errors: {
-        root: {
-          type: "unknown",
-          message: "An unknown error occurred during validation"
-        }
-      }
-    };
-  }
-};
 function BookingForm({ activityTitle, isGame, isCityGame }) {
   const form = useForm({
-    resolver: customZodResolver,
+    resolver: zodResolver(formSchema),
     mode: "onChange",
     reValidateMode: "onChange",
     defaultValues: {
@@ -83,22 +50,10 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
       message: ""
     }
   });
-  useEffect(() => {
-    {
-      console.log("Form state changed:", form.formState);
-      console.log("Form errors:", form.formState.errors);
-    }
-  }, [form.formState, form.formState.errors]);
   const onSubmit = async (data) => {
     try {
       const isValid = await form.trigger();
       if (!isValid) {
-        console.log("Form validation errors:", form.formState.errors);
-        console.log("Form state:", form.formState);
-        await form.trigger();
-        setTimeout(() => {
-          console.log("After delay - Form errors:", form.formState.errors);
-        }, 100);
         toast.error("Veuillez remplir tous les champs obligatoires.");
         return;
       }
@@ -121,25 +76,6 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
     }
   };
   return /* @__PURE__ */ jsx(Card, { className: "p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300", children: /* @__PURE__ */ jsx(Form, { ...form, children: /* @__PURE__ */ jsxs("form", { onSubmit: form.handleSubmit(onSubmit), className: "space-y-8", children: [
-    /* @__PURE__ */ jsxs("div", { className: "p-4 bg-gray-100 rounded-lg text-xs", children: [
-      /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("strong", { children: "Form State Debug:" }) }),
-      /* @__PURE__ */ jsxs("p", { children: [
-        "Is Valid: ",
-        form.formState.isValid ? "Yes" : "No"
-      ] }),
-      /* @__PURE__ */ jsxs("p", { children: [
-        "Is Dirty: ",
-        form.formState.isDirty ? "Yes" : "No"
-      ] }),
-      /* @__PURE__ */ jsxs("p", { children: [
-        "Errors: ",
-        Object.keys(form.formState.errors).length
-      ] }),
-      /* @__PURE__ */ jsxs("p", { children: [
-        "Error Keys: ",
-        Object.keys(form.formState.errors).join(", ")
-      ] })
-    ] }),
     /* @__PURE__ */ jsx(
       FormField,
       {
