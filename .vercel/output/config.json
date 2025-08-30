@@ -98,175 +98,175 @@
 		},
 		{
 			"src": "^/api/booking/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/api/contact/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/biathlonschieten/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/bijlwerpen/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/boogschieten/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/contact/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/disclaimer/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/djembe/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/en/contact/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/en/disclaimer/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/en/over-actionmaker/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/en/teambuildings/([^/]+?)/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/en/teambuildings/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/en/terms-of-service/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/en/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/extreme-test/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/fr/contact/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/fr/disclaimer/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/fr/over-actionmaker/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/fr/teambuildings/([^/]+?)/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/fr/teambuildings/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/fr/terms-of-service/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/fr/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/jsonld-direct-test/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/jsonld-test/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/kunstsmeden/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/laserkleiduifschieten/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/over-actionmaker/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/pistoolschieten/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/redirect-test/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/roofvogelworkshop/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/scherminitiatie/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/simple-test/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/sitemap-0\\.xml/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/sitemap-index\\.xml/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/smaaktest/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/sumoworstelen/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/teambuildings/([^/]+?)/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/teambuildings/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/terms-of-service/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/test-jsonld/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/([^/]+?)/teambuildings/([^/]+?)/?$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		},
 		{
 			"src": "^/$",
-			"dest": "/_isr?x_astro_path=$0"
+			"dest": "_render"
 		}
 	]
 }
