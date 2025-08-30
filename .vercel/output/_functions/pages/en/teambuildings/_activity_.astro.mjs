@@ -32,16 +32,15 @@ const formSchema = z.object({
 });
 const customZodResolver = async (values) => {
   try {
-    const validatedData = formSchema.parse(values);
-    return {
-      values: validatedData,
-      errors: {}
-    };
-  } catch (error) {
-    if (error instanceof z.ZodError) {
+    const result = await formSchema.safeParseAsync(values);
+    if (result.success) {
+      return {
+        values: result.data,
+        errors: {}
+      };
+    } else {
       const fieldErrors = {};
-      const zodError = error;
-      zodError.issues.forEach((issue) => {
+      result.error.issues.forEach((issue) => {
         const fieldName = issue.path.join(".");
         fieldErrors[fieldName] = {
           type: issue.code,
@@ -53,12 +52,13 @@ const customZodResolver = async (values) => {
         errors: fieldErrors
       };
     }
+  } catch (error) {
     return {
       values: {},
       errors: {
         root: {
           type: "unknown",
-          message: "Validation failed"
+          message: "An unknown error occurred during validation"
         }
       }
     };
@@ -165,7 +165,6 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
           render: ({ field }) => /* @__PURE__ */ jsxs(FormItem, { children: [
             /* @__PURE__ */ jsx(FormLabel, { children: "First Name" }),
             /* @__PURE__ */ jsx(FormControl, { children: /* @__PURE__ */ jsx(Input, { placeholder: "John", ...field }) }),
-            form.formState.errors.firstName && /* @__PURE__ */ jsx("p", { className: "text-sm font-medium text-destructive", children: form.formState.errors.firstName.message }),
             /* @__PURE__ */ jsx(FormMessage, {})
           ] })
         }
@@ -284,6 +283,7 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
             Textarea,
             {
               placeholder: "Any additional information or special requests",
+              className: "resize-none",
               ...field
             }
           ) }),

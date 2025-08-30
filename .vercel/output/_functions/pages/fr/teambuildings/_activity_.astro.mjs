@@ -7,8 +7,7 @@ import { C as Card } from '../../../chunks/card_D4hY-7K7.mjs';
 import { B as Button, a as ui } from '../../../chunks/Footer_C9MNa2Zg.mjs';
 import { ArrowRight, CheckCircle2, Users, Clock, Calendar } from 'lucide-react';
 import { jsx, jsxs } from 'react/jsx-runtime';
-import 'react';
-import { zodResolver } from '@hookform/resolvers/zod';
+import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { F as Form, a as FormField, b as FormItem, d as FormControl, I as Input, c as FormLabel, e as FormMessage, T as Textarea } from '../../../chunks/textarea_i64113Bh.mjs';
@@ -31,10 +30,44 @@ const formSchema = z.object({
   location: z.string().optional(),
   message: z.string().optional()
 });
+const customZodResolver = async (values) => {
+  try {
+    const result = await formSchema.safeParseAsync(values);
+    if (result.success) {
+      return {
+        values: result.data,
+        errors: {}
+      };
+    } else {
+      const fieldErrors = {};
+      result.error.issues.forEach((issue) => {
+        const fieldName = issue.path.join(".");
+        fieldErrors[fieldName] = {
+          type: issue.code,
+          message: issue.message
+        };
+      });
+      return {
+        values: {},
+        errors: fieldErrors
+      };
+    }
+  } catch (error) {
+    return {
+      values: {},
+      errors: {
+        root: {
+          type: "unknown",
+          message: "An unknown error occurred during validation"
+        }
+      }
+    };
+  }
+};
 function BookingForm({ activityTitle, isGame, isCityGame }) {
   const form = useForm({
-    resolver: zodResolver(formSchema),
-    mode: "onBlur",
+    resolver: customZodResolver,
+    mode: "onChange",
     reValidateMode: "onChange",
     defaultValues: {
       activityTitle,
@@ -50,11 +83,22 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
       message: ""
     }
   });
+  useEffect(() => {
+    {
+      console.log("Form state changed:", form.formState);
+      console.log("Form errors:", form.formState.errors);
+    }
+  }, [form.formState, form.formState.errors]);
   const onSubmit = async (data) => {
     try {
       const isValid = await form.trigger();
       if (!isValid) {
         console.log("Form validation errors:", form.formState.errors);
+        console.log("Form state:", form.formState);
+        await form.trigger();
+        setTimeout(() => {
+          console.log("After delay - Form errors:", form.formState.errors);
+        }, 100);
         toast.error("Veuillez remplir tous les champs obligatoires.");
         return;
       }
@@ -77,6 +121,25 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
     }
   };
   return /* @__PURE__ */ jsx(Card, { className: "p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300", children: /* @__PURE__ */ jsx(Form, { ...form, children: /* @__PURE__ */ jsxs("form", { onSubmit: form.handleSubmit(onSubmit), className: "space-y-8", children: [
+    /* @__PURE__ */ jsxs("div", { className: "p-4 bg-gray-100 rounded-lg text-xs", children: [
+      /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("strong", { children: "Form State Debug:" }) }),
+      /* @__PURE__ */ jsxs("p", { children: [
+        "Is Valid: ",
+        form.formState.isValid ? "Yes" : "No"
+      ] }),
+      /* @__PURE__ */ jsxs("p", { children: [
+        "Is Dirty: ",
+        form.formState.isDirty ? "Yes" : "No"
+      ] }),
+      /* @__PURE__ */ jsxs("p", { children: [
+        "Errors: ",
+        Object.keys(form.formState.errors).length
+      ] }),
+      /* @__PURE__ */ jsxs("p", { children: [
+        "Error Keys: ",
+        Object.keys(form.formState.errors).join(", ")
+      ] })
+    ] }),
     /* @__PURE__ */ jsx(
       FormField,
       {
