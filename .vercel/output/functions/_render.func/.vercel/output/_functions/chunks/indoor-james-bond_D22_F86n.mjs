@@ -1,0 +1,12 @@
+const id = "en/indoor-james-bond.md";
+						const collection = "activities";
+						const slug = "en/indoor-james-bond";
+						const body = "\nWelcome to our team building experience, where we're searching for the ultimate team of colleagues to take on the role of the world's most famous spy. Who will emerge as the best secret agent, who has the sharpest shooting eye, who possesses the best insight and deciphers Morse code like an expert? And of course, who's the best at fencing, just like in \"Die Another Day\" (without Madonna as a coach, of course). All these skills lead us to creating the ultimate spy team.\n\nAs optional additions, we can also organize a cocktail workshop (think of the classic \"martini shaken, not stirred\"), an exciting death ride, a drone workshop, and a casino activity to complete the spy atmosphere. This team building experience not only promises excitement and fun but also the discovery and utilization of unique talents within the team, essential for a successful mission.\n";
+						const data = {title:"Spy Academy/James Bond (Indoor)",description:"We're looking for the ultimate team of colleagues to take on the role of the world's most famous spy.",image:"indoor-james-bond/indoor-james-bond-1.jpg",categories:["indoor","innovaction"],duration:"2 - 5 hours",groupSize:"8 - 1000 people",availability:"On request",priority:20,features:["Fencing","Morse code","Shooting..."],gallery:["indoor-james-bond/indoor-james-bond-2.jpg","indoor-james-bond/indoor-james-bond-3.jpg","indoor-james-bond/indoor-james-bond-4.jpg","indoor-james-bond/indoor-james-bond-5.jpg","indoor-james-bond/indoor-james-bond-6.jpg","indoor-james-bond/indoor-james-bond-7.jpg"],isGame:true,isCityGame:false};
+						const _internal = {
+							type: 'content',
+							filePath: "/Users/anthonycandaele/Projects/ActionMaker/website/src/content/activities/en/indoor-james-bond.md",
+							rawData: undefined,
+						};
+
+export { _internal, body, collection, data, id, slug };

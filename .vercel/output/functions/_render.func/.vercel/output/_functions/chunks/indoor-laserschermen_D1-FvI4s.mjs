@@ -1,0 +1,28 @@
+import { a as createComponent, m as maybeRenderHead, u as unescapeHTML, f as renderTemplate } from './astro/server_D1OCFpJj.mjs';
+import 'kleur/colors';
+import 'clsx';
+
+const html = "<p>Do you dream of becoming a Jedi or Sith, like in the legendary Star Wars films? With lightsaber fencing, you step into the world of the Force and learn to fight with a lightsaber! This recognized fourth fencing discipline is guided by one of the first certified instructors from Flanders.</p>";
+
+				const frontmatter = {"title":"Lightsaber fencing (Indoor)","description":"Become a true Padawan!","image":"indoor-laserschermen/indoor-laserschermen-1.jpg","video-url":"https://iframe.mediadelivery.net/embed/369439/102cb4a2-6345-40dd-a2e1-37ed57c43929","priority":6,"features":["For Star Wars fans and adventurers","Active and fun","For young and old"],"gallery":["indoor-laserschermen/indoor-laserschermen-2.jpg","indoor-laserschermen/indoor-laserschermen-3.jpg","indoor-laserschermen/indoor-laserschermen-4.jpg","indoor-laserschermen/indoor-laserschermen-5.jpg","indoor-laserschermen/indoor-laserschermen-6.jpg","indoor-laserschermen/indoor-laserschermen-7.jpg"],"categories":["actief","indoor","innovaction"],"duration":"30 minutes - 2 hours","groupSize":"4 - 50 people","availability":"All year round"};
+				const file = "/Users/anthonycandaele/Projects/ActionMaker/website/src/content/activities/en/indoor-laserschermen.md";
+				const url = undefined;
+				function rawContent() {
+					return "\nDo you dream of becoming a Jedi or Sith, like in the legendary Star Wars films? With lightsaber fencing, you step into the world of the Force and learn to fight with a lightsaber! This recognized fourth fencing discipline is guided by one of the first certified instructors from Flanders.\n";
+				}
+				function compiledContent() {
+					return html;
+				}
+				function getHeadings() {
+					return [];
+				}
+
+				const Content = createComponent((result, _props, slots) => {
+					const { layout, ...content } = frontmatter;
+					content.file = file;
+					content.url = url;
+
+					return renderTemplate`${maybeRenderHead()}${unescapeHTML(html)}`;
+				});
+
+export { Content, compiledContent, Content as default, file, frontmatter, getHeadings, rawContent, url };

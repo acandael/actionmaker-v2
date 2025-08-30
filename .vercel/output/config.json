@@ -1,0 +1,268 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/biathlonschieten",
+			"headers": {
+				"Location": "/teambuildings/indoor-laser-karabijn"
+			},
+			"status": 302
+		},
+		{
+			"src": "/bijlwerpen",
+			"headers": {
+				"Location": "/teambuildings/bijlwerpen"
+			},
+			"status": 302
+		},
+		{
+			"src": "/boogschieten",
+			"headers": {
+				"Location": "/teambuildings/boogschieten"
+			},
+			"status": 302
+		},
+		{
+			"src": "/djembe",
+			"headers": {
+				"Location": "/teambuildings/djembe"
+			},
+			"status": 302
+		},
+		{
+			"src": "/kunstsmeden",
+			"headers": {
+				"Location": "/teambuildings/kunstsmeden"
+			},
+			"status": 302
+		},
+		{
+			"src": "/laserkleiduifschieten",
+			"headers": {
+				"Location": "/teambuildings/laserkleiduifschieten"
+			},
+			"status": 302
+		},
+		{
+			"src": "/pistoolschieten",
+			"headers": {
+				"Location": "/teambuildings/luchtdruk-pistoolschieten"
+			},
+			"status": 302
+		},
+		{
+			"src": "/roofvogelworkshop",
+			"headers": {
+				"Location": "/teambuildings/roofvogelworkshop"
+			},
+			"status": 302
+		},
+		{
+			"src": "/scherminitiatie",
+			"headers": {
+				"Location": "/teambuildings/indoor-scherminitiatie"
+			},
+			"status": 302
+		},
+		{
+			"src": "/smaaktest",
+			"headers": {
+				"Location": "/teambuildings/smaaktest"
+			},
+			"status": 302
+		},
+		{
+			"src": "/sumoworstelen",
+			"headers": {
+				"Location": "/teambuildings/indoor-sumoworstelen"
+			},
+			"status": 302
+		},
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^\\/_image$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/api\\/booking\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/api\\/contact\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/contact\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/disclaimer\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/en\\/contact\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/en\\/disclaimer\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/en\\/over-actionmaker\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/en\\/teambuildings\\/([^/]+?)\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/en\\/teambuildings\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/en\\/terms-of-service\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/en\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/extreme-test\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/fr\\/contact\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/fr\\/disclaimer\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/fr\\/over-actionmaker\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/fr\\/teambuildings\\/([^/]+?)\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/fr\\/teambuildings\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/fr\\/terms-of-service\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/fr\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/jsonld-direct-test\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/jsonld-test\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/over-actionmaker\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/redirect-test\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/simple-test\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/sitemap-0\\.xml\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/sitemap-index\\.xml\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/teambuildings\\/([^/]+?)\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/teambuildings\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/terms-of-service\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/test-jsonld\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/([^/]+?)\\/teambuildings\\/([^/]+?)\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/biathlonschieten\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/bijlwerpen\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/boogschieten\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/djembe\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/kunstsmeden\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/laserkleiduifschieten\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/pistoolschieten\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/roofvogelworkshop\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/scherminitiatie\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/smaaktest\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/sumoworstelen\\/?$",
+			"dest": "_render"
+		}
+	]
+}

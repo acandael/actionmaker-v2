@@ -1,0 +1,10 @@
+{
+  "languageSelector": {
+    "label": "Choisir une langue",
+    "languages": {
+      "nl": "Néerlandais",
+      "fr": "Français",
+      "en": "Anglais"
+    }
+  }
+}
