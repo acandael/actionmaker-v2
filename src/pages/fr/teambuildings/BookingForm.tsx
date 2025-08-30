@@ -36,18 +36,17 @@ const formSchema = z.object({
 // Custom resolver for Zod v4 compatibility with React Hook Form
 const customZodResolver: Resolver<z.infer<typeof formSchema>> = async (values) => {
   try {
-    const validatedData = formSchema.parse(values);
-    return {
-      values: validatedData,
-      errors: {},
-    };
-  } catch (error) {
-    if (error instanceof z.ZodError) {
+    const result = await formSchema.safeParseAsync(values);
+    
+    if (result.success) {
+      return {
+        values: result.data,
+        errors: {},
+      };
+    } else {
       const fieldErrors: Record<string, { type: string; message: string }> = {};
       
-      // In Zod v4, we need to use the issues property
-      const zodError = error as z.ZodError;
-      zodError.issues.forEach((issue) => {
+      result.error.issues.forEach((issue) => {
         const fieldName = issue.path.join('.');
         fieldErrors[fieldName] = {
           type: issue.code,
@@ -60,13 +59,13 @@ const customZodResolver: Resolver<z.infer<typeof formSchema>> = async (values) =
         errors: fieldErrors,
       };
     }
-    
+  } catch (error) {
     return {
       values: {},
       errors: {
         root: {
           type: 'unknown',
-          message: 'Validation failed',
+          message: 'An unknown error occurred during validation',
         },
       },
     };
