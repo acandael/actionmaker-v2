@@ -5,7 +5,7 @@ import { g as getCollection } from '../../chunks/_astro_content_C7xrrZ7z.mjs';
 import { C as Card } from '../../chunks/card_B7aX22OC.mjs';
 import { g as getLangFromUrl, $ as $$Navbar, b as $$Footer, B as Button } from '../../chunks/Footer_B4cXj0JU.mjs';
 import { CheckCircle2, Users, Clock, Calendar, ArrowRight } from 'lucide-react';
-import { $ as $$ClientRouter, B as BookingForm } from '../../chunks/ClientRouter_COnu1OTM.mjs';
+import { $ as $$ClientRouter, B as BookingForm } from '../../chunks/ClientRouter_Bb8X08VZ.mjs';
 import { $ as $$VideoPlayer, a as $$Gallery } from '../../chunks/VideoPlayer_CemviSvy.mjs';
 import '../../chunks/index_MaT6fT73.mjs';
 import { $ as $$Image } from '../../chunks/_astro_assets_B1VbBFKz.mjs';
