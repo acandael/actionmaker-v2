@@ -19,16 +19,16 @@ import {
 import { Input } from '../../components/ui/input';
 import { Textarea } from '../../components/ui/textarea';
 
-// Define the form schema with Zod
+// Define the form schema with Zod v4
 const formSchema = z.object({
   activityTitle: z.string(),
-  firstName: z.string().min(2, 'Voornaam moet minimaal 2 karakters bevatten'),
-  lastName: z.string().min(2, 'Achternaam moet minimaal 2 karakters bevatten'),
-  email: z.string().email('Ongeldig e-mailadres'),
-  phone: z.string().min(10, 'Ongeldig telefoonnummer'),
-  date: z.string().min(1, 'Datum is verplicht'),
-  groupSize: z.string().min(1, 'Aantal personen is verplicht'),
-  hours: z.string().min(1, 'Aantal uren is verplicht'),
+  firstName: z.string().min(2, { error: 'Voornaam moet minimaal 2 karakters bevatten' }),
+  lastName: z.string().min(2, { error: 'Achternaam moet minimaal 2 karakters bevatten' }),
+  email: z.string().email({ error: 'Ongeldig e-mailadres' }),
+  phone: z.string().min(10, { error: 'Ongeldig telefoonnummer' }),
+  date: z.string().min(1, { error: 'Datum is verplicht' }),
+  groupSize: z.string().min(1, { error: 'Aantal personen is verplicht' }),
+  hours: z.string().min(1, { error: 'Aantal uren is verplicht' }),
   budget: z.string().optional(),
   location: z.string().optional(),
   message: z.string().optional(),

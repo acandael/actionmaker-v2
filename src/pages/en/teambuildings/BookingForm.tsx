@@ -19,16 +19,16 @@ import {
 import { Input } from '../../../components/ui/input';
 import { Textarea } from '../../../components/ui/textarea';
 
-// Define the form schema with Zod
+// Define the form schema with Zod v4
 const formSchema = z.object({
   activityTitle: z.string(),
-  firstName: z.string().min(2, 'First name must contain at least 2 characters'),
-  lastName: z.string().min(2, 'Last name must contain at least 2 characters'),
-  email: z.string().email('Invalid email address'),
-  phone: z.string().min(10, 'Invalid phone number'),
-  date: z.string().min(1, 'Date is required'),
-  groupSize: z.string().min(1, 'Number of participants is required'),
-  hours: z.string().min(1, 'Number of hours is required'),
+  firstName: z.string().min(2, { error: 'First name must contain at least 2 characters' }),
+  lastName: z.string().min(2, { error: 'Last name must contain at least 2 characters' }),
+  email: z.string().email({ error: 'Invalid email address' }),
+  phone: z.string().min(10, { error: 'Invalid phone number' }),
+  date: z.string().min(1, { error: 'Date is required' }),
+  groupSize: z.string().min(1, { error: 'Number of participants is required' }),
+  hours: z.string().min(1, { error: 'Number of hours is required' }),
   budget: z.string().optional(),
   location: z.string().optional(),
   message: z.string().optional(),

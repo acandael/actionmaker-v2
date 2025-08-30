@@ -1,0 +1,148 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import ActivityGrid from '@/components/TeamActivitiesList/ActivityGrid.astro';
+import CategoryFilters from '@/components/TeamActivitiesList/CategoryFilters.astro';
+import { Separator } from '@/components/ui/separator';
+import type { ImageMetadata } from 'astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+// Get current locale
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Get all activities
+const allActivities = await getCollection('activities');
+
+// Filter activities by language
+const activities = allActivities.filter((activity) => activity.id.startsWith(`${lang}/`));
+
+// Get categories and filter by locale
+const allCategories = await getCollection('categories');
+const categories = allCategories
+  .filter((category) => category.id.startsWith(`${lang}/`))
+  .map((category) => ({
+    id: category.id.replace(`${lang}/`, ''),
+    data: {
+      title: category.data.title,
+      description: category.data.description,
+    },
+  }));
+
+// Get the selected category from URL
+const selectedCategory = Astro.url.searchParams.get('category');
+
+// Get current category from original collection to access data
+const currentCategory = selectedCategory
+  ? allCategories.find((c) => c.id === `${lang}/${selectedCategory}`)
+  : null;
+
+// Import all images
+const imageImports = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/activities/**/*.{jpeg,jpg,png,gif}',
+  {
+    eager: true,
+  }
+);
+
+// Filter activities based on selected category
+let filteredActivities = selectedCategory
+  ? activities.filter((activity) => {
+      const isInCategory = activity.data.categories.includes(selectedCategory);
+      return isInCategory;
+    })
+  : activities;
+
+// Sort by priority
+filteredActivities.sort((a, b) => {
+  // Ensure we're working with numbers and preserve priority 1
+  const priorityA = typeof a.data.priority === 'number' ? a.data.priority : 999;
+  const priorityB = typeof b.data.priority === 'number' ? b.data.priority : 999;
+
+  return priorityA - priorityB;
+});
+
+// Separate games and regular teambuildings
+const games = filteredActivities.filter((activity) => activity.data.isGame);
+const regularTeambuildings = filteredActivities.filter((activity) => !activity.data.isGame);
+
+// Format activities for the grid
+const formatActivities = (activities: typeof filteredActivities) =>
+  activities
+    .filter((activity) => Boolean(activity.data.image))
+    .map((activity) => ({
+      id: activity.id.replace(`${lang}/`, ''),
+      data: {
+        ...activity.data,
+        priority: activity.data.priority,
+      },
+    }));
+
+const formattedGames = formatActivities(games);
+const formattedTeambuildings = formatActivities(regularTeambuildings);
+
+// Format the count message
+const getCountMessage = (count: number, isFiltered: boolean) => {
+  const key = isFiltered
+    ? `teambuildings.activities-found_${count === 1 ? 'one' : 'other'}`
+    : `teambuildings.activities-available_${count === 1 ? 'one' : 'other'}`;
+
+  const message = t(key as any).replace('{{count}}', count.toString());
+
+  return isFiltered ? `${message} ${currentCategory?.data.title.toLowerCase() || ''}` : message;
+};
+---
+
+<Layout
+  title="Team Building Activities | Action Maker"
+  description="Discover our unique team building activities and create unforgettable experiences for your team."
+>
+  <section class="max-w-7xl mx-auto px-4 py-24 mt-16">
+    <div class="text-center mb-16">
+      <h1 class="text-balance text-4xl md:text-6xl font-bold mb-4">
+        {currentCategory ? currentCategory.data.title : t('teambuildings.title')}
+      </h1>
+      {
+        currentCategory && (
+          <p class="text-xl text-muted-foreground">{currentCategory.data.description}</p>
+        )
+      }
+    </div>
+
+    <CategoryFilters categories={categories} selectedCategory={selectedCategory} />
+
+    <div class="mb-16">
+      <Separator className="max-w-2xl mx-auto" />
+    </div>
+
+    {/* Regular Teambuildings Section */}
+    {
+      formattedTeambuildings.length > 0 && (
+        <div class="mb-24">
+          <h2 class="text-3xl font-bold text-center mb-12">{t('teambuildings.regular-title')}</h2>
+          <div class="text-center mb-8">
+            <p class="text-muted-foreground">
+              {getCountMessage(formattedTeambuildings.length, !!selectedCategory)}
+            </p>
+          </div>
+          <ActivityGrid activities={formattedTeambuildings} imageImports={imageImports} />
+        </div>
+      )
+    }
+
+    {/* Games Section */}
+    {
+      formattedGames.length > 0 && (
+        <div>
+          <h2 class="text-3xl font-bold text-center mb-12">{t('teambuildings.games-title')}</h2>
+          <div class="text-center mb-8">
+            <p class="text-muted-foreground">
+              {getCountMessage(formattedGames.length, !!selectedCategory)}
+            </p>
+          </div>
+          <ActivityGrid activities={formattedGames} imageImports={imageImports} />
+        </div>
+      )
+    }
+  </section>
+</Layout>

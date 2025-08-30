@@ -25,10 +25,10 @@ const salutations = [
 ];
 
 const formSchema = z.object({
-  salutation: z.string().min(1, 'Salutation is required'),
-  firstName: z.string().min(2, 'First name must be at least 2 characters'),
-  lastName: z.string().min(2, 'Last name must be at least 2 characters'),
-  email: z.string().email('Invalid email address'),
+  salutation: z.string().min(1, { error: 'Salutation is required' }),
+  firstName: z.string().min(2, { error: 'First name must be at least 2 characters' }),
+  lastName: z.string().min(2, { error: 'Last name must be at least 2 characters' }),
+  email: z.string().email({ error: 'Invalid email address' }),
   phone: z.string().optional(),
   message: z.string().optional(),
 });

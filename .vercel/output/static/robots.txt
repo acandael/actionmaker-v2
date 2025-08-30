@@ -1,0 +1,18 @@
+# Allow all web crawlers to access all content
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json
+Disallow: /*.js
+Disallow: /*.css
+Crawl-delay: 10
+
+# Special rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://www.actionmaker.be/sitemap-index.xml 

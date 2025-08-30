@@ -1,0 +1,29 @@
+---
+import '@/styles/globals.css';
+import Layout from '../layouts/Layout.astro';
+import Hero from '@/components/Hero.astro';
+import Features from '@/components/Features.astro';
+import TeamActivities from '@/components/TeamActivities.astro';
+import Testimonials from '@/components/Testimonials/index.astro';
+import FAQ from '@/components/FAQ.astro';
+import CTA from '@/components/CTA.astro';
+import { getLangFromUrl } from '@/i18n/utils';
+
+// Set default language
+const lang = getLangFromUrl(Astro.url);
+
+export const prerender = false;
+---
+
+<Layout
+  title="Teambuilding Activiteiten | Action Maker"
+  isHomePage={true}
+  description="Ontdek onze unieke teambuilding activiteiten en creëer onvergetelijke ervaringen voor je team."
+>
+  <Hero />
+  <TeamActivities />
+  <Features />
+  <Testimonials />
+  <FAQ />
+  <CTA />
+</Layout>

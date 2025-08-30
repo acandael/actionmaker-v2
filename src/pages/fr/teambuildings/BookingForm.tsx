@@ -18,16 +18,16 @@ import {
   FormMessage,
 } from '../../../components/ui/form';
 
-// Define the form schema with Zod
+// Define the form schema with Zod v4
 const formSchema = z.object({
   activityTitle: z.string(),
-  firstName: z.string().min(2, 'Le prénom doit contenir au moins 2 caractères'),
-  lastName: z.string().min(2, 'Le nom de famille doit contenir au moins 2 caractères'),
-  email: z.string().email('Adresse e-mail invalide'),
-  phone: z.string().min(10, 'Numéro de téléphone invalide'),
-  date: z.string().min(1, 'La date est obligatoire'),
-  groupSize: z.string().min(1, 'Le nombre de personnes est obligatoire'),
-  hours: z.string().min(1, "Le nombre d'heures est obligatoire"),
+  firstName: z.string().min(2, { error: 'Le prénom doit contenir au moins 2 caractères' }),
+  lastName: z.string().min(2, { error: 'Le nom de famille doit contenir au moins 2 caractères' }),
+  email: z.string().email({ error: 'Adresse e-mail invalide' }),
+  phone: z.string().min(10, { error: 'Numéro de téléphone invalide' }),
+  date: z.string().min(1, { error: 'La date est obligatoire' }),
+  groupSize: z.string().min(1, { error: 'Le nombre de personnes est obligatoire' }),
+  hours: z.string().min(1, { error: "Le nombre d'heures est obligatoire" }),
   budget: z.string().optional(),
   location: z.string().optional(),
   message: z.string().optional(),

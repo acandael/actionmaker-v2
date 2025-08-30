@@ -25,10 +25,10 @@ const salutations = [
 ];
 
 const formSchema = z.object({
-  salutation: z.string().min(1, 'Aanspreking is verplicht'),
-  firstName: z.string().min(2, 'Voornaam moet minimaal 2 karakters bevatten'),
-  lastName: z.string().min(2, 'Achternaam moet minimaal 2 karakters bevatten'),
-  email: z.string().email('Ongeldig e-mailadres'),
+  salutation: z.string().min(1, { error: 'Aanspreking is verplicht' }),
+  firstName: z.string().min(2, { error: 'Voornaam moet minimaal 2 karakters bevatten' }),
+  lastName: z.string().min(2, { error: 'Achternaam moet minimaal 2 karakters bevatten' }),
+  email: z.string().email({ error: 'Ongeldig e-mailadres' }),
   phone: z.string().optional(),
   message: z.string().optional(),
 });
