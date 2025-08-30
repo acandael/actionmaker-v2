@@ -1,12 +1,11 @@
-import { b as createAstro, c as createComponent, m as maybeRenderHead, r as renderComponent, e as addAttribute, aj as renderScript, a as renderTemplate, ai as renderSlot } from './astro/server_Q0G1hIgh.mjs';
+import { c as createAstro, a as createComponent, m as maybeRenderHead, e as renderComponent, b as addAttribute, h as renderScript, f as renderTemplate, r as renderSlot } from './astro/server_BeOFNrkS.mjs';
 import 'kleur/colors';
-import './index_MaT6fT73.mjs';
-import { $ as $$Image } from './_astro_assets_B1VbBFKz.mjs';
+import { $ as $$Image } from './_astro_assets_BqFTDrm1.mjs';
 import { ArrowRight, ArrowUpDown, Users, Trophy, GraduationCap, Building2, UtensilsCrossed, Palette, Tent, Dumbbell } from 'lucide-react';
-import { g as getLangFromUrl, u as useTranslations, B as Button } from './Footer_D0QNC7dQ.mjs';
+import { g as getLangFromUrl, u as useTranslations, B as Button } from './Footer_BVbvPl8Q.mjs';
 /* empty css                         */
-import { g as getCollection } from './_astro_content_BaIAVU4A.mjs';
-import { C as Card, a as CardContent } from './card_QPsbPOGj.mjs';
+import { g as getCollection } from './_astro_content_D6QDArfG.mjs';
+import { C as Card, a as CardContent } from './card_B71Rrw_r.mjs';
 import 'clsx';
 
 const ctaImage = new Proxy({"src":"/_astro/hero.BmSAP9KA.jpg","width":4032,"height":3024,"format":"jpg"}, {

@@ -1,18 +1,17 @@
-import { E as ROUTE_TYPE_HEADER, j as REROUTE_DIRECTIVE_HEADER, D as DEFAULT_404_COMPONENT, A as AstroError, aq as ActionNotFoundError, T as clientAddressSymbol, ar as LocalsNotAnObject, as as REROUTABLE_STATUS_CODES, X as responseSentSymbol } from './astro/server_Q0G1hIgh.mjs';
+import { n as ROUTE_TYPE_HEADER, o as REROUTE_DIRECTIVE_HEADER, D as DEFAULT_404_COMPONENT, p as clientAddressSymbol, A as AstroError, L as LocalsNotAnObject, q as REROUTABLE_STATUS_CODES, s as responseSentSymbol } from './astro/server_BeOFNrkS.mjs';
 import { bold, red, yellow, dim, blue } from 'kleur/colors';
 import 'clsx';
 import 'cookie';
-import { D as DEFAULT_404_ROUTE, c as default404Instance, e as ensure404Route } from './astro-designed-error-pages_pNgtiGau.mjs';
+import { D as DEFAULT_404_ROUTE, d as default404Instance, e as ensure404Route } from './astro-designed-error-pages_DJnOsSSm.mjs';
 import 'es-module-lexer';
 import buffer from 'node:buffer';
 import crypto$1 from 'node:crypto';
 import { Http2ServerResponse } from 'node:http2';
-import { f as fileExtension, j as joinPaths, s as slash, p as prependForwardSlash, r as removeTrailingForwardSlash, a as appendForwardSlash, c as isInternalPath, d as collapseDuplicateTrailingSlashes, h as hasFileExtension } from './path_BE3d7IIh.mjs';
-import { r as requestIs404Or500, i as isRequestServerIsland, n as notFound, a as redirectToFallback, b as redirectToDefaultLocale, c as requestHasLocale, e as normalizeTheLocale, d as defineMiddleware, S as SERVER_ISLAND_COMPONENT, f as SERVER_ISLAND_ROUTE, g as createEndpoint, R as RouteCache, s as sequence, h as findRouteToRewrite, m as matchRoute, j as RenderContext, P as PERSIST_SYMBOL, k as getSetCookiesFromResponse } from './index_BHwgmBd7.mjs';
-import { N as NOOP_MIDDLEWARE_FN } from './noop-middleware_B6ZKowEI.mjs';
+import { f as fileExtension, j as joinPaths, s as slash, p as prependForwardSlash, a as removeTrailingForwardSlash, b as appendForwardSlash, c as collapseDuplicateTrailingSlashes, h as hasFileExtension } from './path_bxFO2Kst.mjs';
+import { r as requestIs404Or500, i as isRequestServerIsland, n as notFound, a as redirectToFallback, b as redirectToDefaultLocale, c as requestHasLocale, e as normalizeTheLocale, d as defineMiddleware, S as SERVER_ISLAND_COMPONENT, f as SERVER_ISLAND_ROUTE, g as createEndpoint, R as RouteCache, s as sequence, h as findRouteToRewrite, m as matchRoute, j as RenderContext, P as PERSIST_SYMBOL, k as getSetCookiesFromResponse } from './index_BfJ9d5Gr.mjs';
+import { N as NOOP_MIDDLEWARE_FN } from './noop-middleware_CaKTgA7o.mjs';
 import '@vercel/routing-utils';
-import './index_MaT6fT73.mjs';
-import 'deterministic-object-hash';
+import 'fast-glob';
 import nodePath from 'node:path';
 
 function createI18nMiddleware(i18n, base, trailingSlash, format) {
@@ -134,10 +133,6 @@ function localeHasntDomain(i18n, currentLocale) {
   return true;
 }
 
-const NOOP_ACTIONS_MOD = {
-  server: {}
-};
-
 const FORM_CONTENT_TYPES = [
   "application/x-www-form-urlencoded",
   "multipart/form-data",
@@ -202,7 +197,7 @@ function createDefaultRoutes(manifest) {
 }
 
 class Pipeline {
-  constructor(logger, manifest, runtimeMode, renderers, resolve, serverLike, streaming, adapterName = manifest.adapterName, clientDirectives = manifest.clientDirectives, inlinedScripts = manifest.inlinedScripts, compressHTML = manifest.compressHTML, i18n = manifest.i18n, middleware = manifest.middleware, routeCache = new RouteCache(logger, runtimeMode), site = manifest.site ? new URL(manifest.site) : void 0, defaultRoutes = createDefaultRoutes(manifest), actions = manifest.actions) {
+  constructor(logger, manifest, runtimeMode, renderers, resolve, serverLike, streaming, adapterName = manifest.adapterName, clientDirectives = manifest.clientDirectives, inlinedScripts = manifest.inlinedScripts, compressHTML = manifest.compressHTML, i18n = manifest.i18n, middleware = manifest.middleware, routeCache = new RouteCache(logger, runtimeMode), site = manifest.site ? new URL(manifest.site) : void 0, defaultRoutes = createDefaultRoutes(manifest)) {
     this.logger = logger;
     this.manifest = manifest;
     this.runtimeMode = runtimeMode;
@@ -219,7 +214,6 @@ class Pipeline {
     this.routeCache = routeCache;
     this.site = site;
     this.defaultRoutes = defaultRoutes;
-    this.actions = actions;
     this.internalMiddleware = [];
     if (i18n?.strategy !== "manual") {
       this.internalMiddleware.push(
@@ -229,7 +223,6 @@ class Pipeline {
   }
   internalMiddleware;
   resolvedMiddleware = void 0;
-  resolvedActions = void 0;
   /**
    * Resolves the middleware from the manifest, and returns the `onRequest` function. If `onRequest` isn't there,
    * it returns a no-op function
@@ -240,51 +233,16 @@ class Pipeline {
     } else if (this.middleware) {
       const middlewareInstance = await this.middleware();
       const onRequest = middlewareInstance.onRequest ?? NOOP_MIDDLEWARE_FN;
-      const internalMiddlewares = [onRequest];
       if (this.manifest.checkOrigin) {
-        internalMiddlewares.unshift(createOriginCheckMiddleware());
+        this.resolvedMiddleware = sequence(createOriginCheckMiddleware(), onRequest);
+      } else {
+        this.resolvedMiddleware = onRequest;
       }
-      this.resolvedMiddleware = sequence(...internalMiddlewares);
       return this.resolvedMiddleware;
     } else {
       this.resolvedMiddleware = NOOP_MIDDLEWARE_FN;
       return this.resolvedMiddleware;
     }
-  }
-  setActions(actions) {
-    this.resolvedActions = actions;
-  }
-  async getActions() {
-    if (this.resolvedActions) {
-      return this.resolvedActions;
-    } else if (this.actions) {
-      return await this.actions();
-    }
-    return NOOP_ACTIONS_MOD;
-  }
-  async getAction(path) {
-    const pathKeys = path.split(".").map((key) => decodeURIComponent(key));
-    let { server } = await this.getActions();
-    if (!server || !(typeof server === "object")) {
-      throw new TypeError(
-        `Expected \`server\` export in actions file to be an object. Received ${typeof server}.`
-      );
-    }
-    for (const key of pathKeys) {
-      if (!(key in server)) {
-        throw new AstroError({
-          ...ActionNotFoundError,
-          message: ActionNotFoundError.message(pathKeys.join("."))
-        });
-      }
-      server = server[key];
-    }
-    if (typeof server !== "function") {
-      throw new TypeError(
-        `Expected handler for action ${pathKeys.join(".")} to be a function. Received ${typeof server}.`
-      );
-    }
-    return server;
   }
 }
 
@@ -423,7 +381,7 @@ const consoleLogDestination = {
   write(event) {
     let dest = console.error;
     if (levels[event.level] < levels["error"]) {
-      dest = console.info;
+      dest = console.log;
     }
     if (event.label === "SKIP_FORMAT") {
       dest(event.message);
@@ -495,25 +453,21 @@ function createModuleScriptElementWithSrc(src, base, assetsPrefix) {
   };
 }
 
-function redirectTemplate({
-  status,
-  absoluteLocation,
-  relativeLocation,
-  from
-}) {
+function redirectTemplate({ status, location, from }) {
   const delay = status === 302 ? 2 : 0;
   return `<!doctype html>
-<title>Redirecting to: ${relativeLocation}</title>
-<meta http-equiv="refresh" content="${delay};url=${relativeLocation}">
+<title>Redirecting to: ${location}</title>
+<meta http-equiv="refresh" content="${delay};url=${location}">
 <meta name="robots" content="noindex">
-<link rel="canonical" href="${absoluteLocation}">
+<link rel="canonical" href="${location}">
 <body>
-	<a href="${relativeLocation}">Redirecting ${from ? `from <code>${from}</code> ` : ""}to <code>${relativeLocation}</code></a>
+	<a href="${location}">Redirecting ${from ? `from <code>${from}</code> ` : ""}to <code>${location}</code></a>
 </body>`;
 }
 
 class AppPipeline extends Pipeline {
-  static create({
+  #manifestData;
+  static create(manifestData, {
     logger,
     manifest,
     runtimeMode,
@@ -541,6 +495,7 @@ class AppPipeline extends Pipeline {
       void 0,
       defaultRoutes
     );
+    pipeline.#manifestData = manifestData;
     return pipeline;
   }
   headElements(routeData) {
@@ -575,8 +530,7 @@ class AppPipeline extends Pipeline {
       routes: this.manifest?.routes.map((r) => r.routeData),
       trailingSlash: this.manifest.trailingSlash,
       buildFormat: this.manifest.buildFormat,
-      base: this.manifest.base,
-      outDir: this.serverLike ? this.manifest.buildClientDir : this.manifest.outDir
+      base: this.manifest.base
     });
     const componentInstance = await this.getComponentByRoute(routeData);
     return { newUrl, pathname, componentInstance, routeData };
@@ -621,6 +575,7 @@ class App {
   #baseWithoutTrailingSlash;
   #pipeline;
   #adapterLogger;
+  #renderOptionsDeprecationWarningShown = false;
   constructor(manifest, streaming = true) {
     this.#manifest = manifest;
     this.#manifestData = {
@@ -628,7 +583,7 @@ class App {
     };
     ensure404Route(this.#manifestData);
     this.#baseWithoutTrailingSlash = removeTrailingForwardSlash(this.#manifest.base);
-    this.#pipeline = this.#createPipeline(streaming);
+    this.#pipeline = this.#createPipeline(this.#manifestData, streaming);
     this.#adapterLogger = new AstroIntegrationLogger(
       this.#logger.options,
       this.#manifest.adapterName
@@ -640,11 +595,12 @@ class App {
   /**
    * Creates a pipeline by reading the stored manifest
    *
+   * @param manifestData
    * @param streaming
    * @private
    */
-  #createPipeline(streaming = false) {
-    return AppPipeline.create({
+  #createPipeline(manifestData, streaming = false) {
+    return AppPipeline.create(manifestData, {
       logger: this.#logger,
       manifest: this.#manifest,
       runtimeMode: "production",
@@ -691,28 +647,15 @@ class App {
       return pathname;
     }
   }
-  /**
-   * Given a `Request`, it returns the `RouteData` that matches its `pathname`. By default, prerendered
-   * routes aren't returned, even if they are matched.
-   *
-   * When `allowPrerenderedRoutes` is `true`, the function returns matched prerendered routes too.
-   * @param request
-   * @param allowPrerenderedRoutes
-   */
-  match(request, allowPrerenderedRoutes = false) {
+  match(request) {
     const url = new URL(request.url);
     if (this.#manifest.assets.has(url.pathname)) return void 0;
     let pathname = this.#computePathnameFromDomain(request);
     if (!pathname) {
       pathname = prependForwardSlash(this.removeBase(url.pathname));
     }
-    let routeData = matchRoute(decodeURI(pathname), this.#manifestData);
-    if (!routeData) return void 0;
-    if (allowPrerenderedRoutes) {
-      return routeData;
-    } else if (routeData.prerender) {
-      return void 0;
-    }
+    let routeData = matchRoute(pathname, this.#manifestData);
+    if (!routeData || routeData.prerender) return void 0;
     return routeData;
   }
   #computePathnameFromDomain(request) {
@@ -764,7 +707,7 @@ class App {
   }
   #redirectTrailingSlash(pathname) {
     const { trailingSlash } = this.#manifest;
-    if (pathname === "/" || isInternalPath(pathname)) {
+    if (pathname === "/" || pathname.startsWith("/_")) {
       return pathname;
     }
     const path = collapseDuplicateTrailingSlashes(pathname, trailingSlash !== "never");
@@ -789,23 +732,14 @@ class App {
     let addCookieHeader;
     const url = new URL(request.url);
     const redirect = this.#redirectTrailingSlash(url.pathname);
-    const prerenderedErrorPageFetch = renderOptions?.prerenderedErrorPageFetch ?? fetch;
     if (redirect !== url.pathname) {
       const status = request.method === "GET" ? 301 : 308;
-      return new Response(
-        redirectTemplate({
-          status,
-          relativeLocation: url.pathname,
-          absoluteLocation: redirect,
-          from: request.url
-        }),
-        {
-          status,
-          headers: {
-            location: redirect + url.search
-          }
+      return new Response(redirectTemplate({ status, location: redirect, from: request.url }), {
+        status,
+        headers: {
+          location: redirect + url.search
         }
-      );
+      });
     }
     addCookieHeader = renderOptions?.addCookieHeader;
     clientAddress = renderOptions?.clientAddress ?? Reflect.get(request, clientAddressSymbol);
@@ -823,12 +757,7 @@ class App {
       if (typeof locals !== "object") {
         const error = new AstroError(LocalsNotAnObject);
         this.#logger.error(null, error.stack);
-        return this.#renderError(request, {
-          status: 500,
-          error,
-          clientAddress,
-          prerenderedErrorPageFetch
-        });
+        return this.#renderError(request, { status: 500, error, clientAddress });
       }
     }
     if (!routeData) {
@@ -837,19 +766,9 @@ class App {
       this.#logger.debug("router", "RouteData:\n" + routeData);
     }
     if (!routeData) {
-      routeData = this.#manifestData.routes.find(
-        (route) => route.component === "404.astro" || route.component === DEFAULT_404_COMPONENT
-      );
-    }
-    if (!routeData) {
       this.#logger.debug("router", "Astro hasn't found routes that match " + request.url);
       this.#logger.debug("router", "Here's the available routes:\n", this.#manifestData);
-      return this.#renderError(request, {
-        locals,
-        status: 404,
-        clientAddress,
-        prerenderedErrorPageFetch
-      });
+      return this.#renderError(request, { locals, status: 404, clientAddress });
     }
     const pathname = this.#getPathnameFromRequest(request);
     const defaultStatus = this.#getDefaultStatusCode(routeData, pathname);
@@ -870,13 +789,7 @@ class App {
       response = await renderContext.render(await mod.page());
     } catch (err) {
       this.#logger.error(null, err.stack || err.message || String(err));
-      return this.#renderError(request, {
-        locals,
-        status: 500,
-        error: err,
-        clientAddress,
-        prerenderedErrorPageFetch
-      });
+      return this.#renderError(request, { locals, status: 500, error: err, clientAddress });
     } finally {
       await session?.[PERSIST_SYMBOL]();
     }
@@ -888,8 +801,7 @@ class App {
         // We don't have an error to report here. Passing null means we pass nothing intentionally
         // while undefined means there's no error
         error: response.status === 500 ? null : void 0,
-        clientAddress,
-        prerenderedErrorPageFetch
+        clientAddress
       });
     }
     if (response.headers.has(REROUTE_DIRECTIVE_HEADER)) {
@@ -928,8 +840,7 @@ class App {
     response: originalResponse,
     skipMiddleware = false,
     error,
-    clientAddress,
-    prerenderedErrorPageFetch
+    clientAddress
   }) {
     const errorRoutePath = `/${status}${this.#manifest.trailingSlash === "always" ? "/" : ""}`;
     const errorRouteData = matchRoute(errorRoutePath, this.#manifestData);
@@ -942,8 +853,8 @@ class App {
           url
         );
         if (statusURL.toString() !== request.url) {
-          const response2 = await prerenderedErrorPageFetch(statusURL.toString());
-          const override = { status, removeContentEncodingHeaders: true };
+          const response2 = await fetch(statusURL.toString());
+          const override = { status };
           return this.#mergeResponses(response2, originalResponse, override);
         }
       }
@@ -971,8 +882,7 @@ class App {
             status,
             response: originalResponse,
             skipMiddleware: true,
-            clientAddress,
-            prerenderedErrorPageFetch
+            clientAddress
           });
         }
       } finally {
@@ -984,18 +894,12 @@ class App {
     return response;
   }
   #mergeResponses(newResponse, originalResponse, override) {
-    let newResponseHeaders = newResponse.headers;
-    if (override?.removeContentEncodingHeaders) {
-      newResponseHeaders = new Headers(newResponseHeaders);
-      newResponseHeaders.delete("Content-Encoding");
-      newResponseHeaders.delete("Content-Length");
-    }
     if (!originalResponse) {
       if (override !== void 0) {
         return new Response(newResponse.body, {
           status: override.status,
           statusText: newResponse.statusText,
-          headers: newResponseHeaders
+          headers: newResponse.headers
         });
       }
       return newResponse;
@@ -1006,7 +910,7 @@ class App {
     } catch {
     }
     const mergedHeaders = new Map([
-      ...Array.from(newResponseHeaders),
+      ...Array.from(newResponse.headers),
       ...Array.from(originalResponse.headers)
     ]);
     const newHeaders = new Headers();
@@ -1070,17 +974,13 @@ function apply() {
 }
 
 class NodeApp extends App {
-  headersMap = void 0;
-  setHeadersMap(headers) {
-    this.headersMap = headers;
-  }
-  match(req, allowPrerenderedRoutes = false) {
+  match(req) {
     if (!(req instanceof Request)) {
       req = NodeApp.createRequest(req, {
         skipBody: true
       });
     }
-    return super.match(req, allowPrerenderedRoutes);
+    return super.match(req);
   }
   render(req, routeDataOrOptions, maybeLocals) {
     if (!(req instanceof Request)) {
@@ -1107,20 +1007,13 @@ class NodeApp extends App {
       return multiValueHeader?.toString()?.split(",").map((e) => e.trim())?.[0];
     };
     const forwardedProtocol = getFirstForwardedValue(req.headers["x-forwarded-proto"]);
-    const providedProtocol = isEncrypted ? "https" : "http";
-    const protocol = forwardedProtocol ?? providedProtocol;
+    const protocol = forwardedProtocol ?? (isEncrypted ? "https" : "http");
     const forwardedHostname = getFirstForwardedValue(req.headers["x-forwarded-host"]);
-    const providedHostname = req.headers.host ?? req.headers[":authority"];
-    const hostname = forwardedHostname ?? providedHostname;
+    const hostname = forwardedHostname ?? req.headers.host ?? req.headers[":authority"];
     const port = getFirstForwardedValue(req.headers["x-forwarded-port"]);
-    let url;
-    try {
-      const hostnamePort = getHostnamePort(hostname, port);
-      url = new URL(`${protocol}://${hostnamePort}${req.url}`);
-    } catch {
-      const hostnamePort = getHostnamePort(providedHostname, port);
-      url = new URL(`${providedProtocol}://${hostnamePort}`);
-    }
+    const portInHostname = typeof hostname === "string" && /:\d+$/.test(hostname);
+    const hostnamePort = portInHostname ? hostname : `${hostname}${port ? `:${port}` : ""}`;
+    const url = `${protocol}://${hostnamePort}${req.url}`;
     const options = {
       method: req.method || "GET",
       headers: makeRequestHeaders(req)
@@ -1182,11 +1075,6 @@ class NodeApp extends App {
     }
   }
 }
-function getHostnamePort(hostname, port) {
-  const portInHostname = typeof hostname === "string" && /:\d+$/.test(hostname);
-  const hostnamePort = portInHostname ? hostname : `${hostname}${port ? `:${port}` : ""}`;
-  return hostnamePort;
-}
 function makeRequestHeaders(req) {
   const headers = new Headers();
   for (const [name, value] of Object.entries(req.headers)) {
@@ -1239,10 +1127,7 @@ const ASTRO_PATH_PARAM = "x_astro_path";
 const ASTRO_LOCALS_HEADER = "x-astro-locals";
 const ASTRO_MIDDLEWARE_SECRET_HEADER = "x-astro-middleware-secret";
 
-const createExports = (manifest, {
-  middlewareSecret,
-  skewProtection
-}) => {
+const createExports = (manifest, { middlewareSecret, skewProtection }) => {
   const app = new NodeApp(manifest);
   const handler = async (req, res) => {
     const url = new URL(`https://example.com${req.url}`);
@@ -1266,24 +1151,12 @@ const createExports = (manifest, {
     if (skewProtection && process.env.VERCEL_SKEW_PROTECTION_ENABLED === "1") {
       req.headers["x-deployment-id"] = process.env.VERCEL_DEPLOYMENT_ID;
     }
-    const webResponse = await app.render(req, {
-      addCookieHeader: true,
-      clientAddress,
-      locals
-    });
+    const webResponse = await app.render(req, { addCookieHeader: true, clientAddress, locals });
     await NodeApp.writeResponse(webResponse, res);
   };
-  return {
-    default: handler
-  };
+  return { default: handler };
 };
 function start() {
 }
 
-const serverEntrypointModule = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  createExports,
-  start
-}, Symbol.toStringTag, { value: 'Module' }));
-
-export { start as a, createExports as c, serverEntrypointModule as s };
+export { createExports as c, start as s };

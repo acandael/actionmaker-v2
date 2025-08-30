@@ -268,5 +268,18 @@
 			"src": "^/$",
 			"dest": "_render"
 		}
-	]
+	],
+	"images": {
+		"domains": [],
+		"sizes": [
+			320,
+			640,
+			1280
+		],
+		"formats": [
+			"image/avif",
+			"image/webp"
+		],
+		"remotePatterns": []
+	}
 }

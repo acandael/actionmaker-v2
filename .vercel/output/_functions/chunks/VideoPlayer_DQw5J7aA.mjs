@@ -1,8 +1,7 @@
-import { b as createAstro, c as createComponent, a as renderTemplate, ap as defineScriptVars, r as renderComponent, e as addAttribute, m as maybeRenderHead } from './astro/server_Q0G1hIgh.mjs';
+import { c as createAstro, a as createComponent, f as renderTemplate, g as defineScriptVars, e as renderComponent, b as addAttribute, m as maybeRenderHead } from './astro/server_BeOFNrkS.mjs';
 import 'kleur/colors';
-import './index_MaT6fT73.mjs';
-import { $ as $$Image } from './_astro_assets_B1VbBFKz.mjs';
-import { g as getLangFromUrl, u as useTranslations } from './Footer_D0QNC7dQ.mjs';
+import { $ as $$Image } from './_astro_assets_BqFTDrm1.mjs';
+import { g as getLangFromUrl, u as useTranslations } from './Footer_BVbvPl8Q.mjs';
 import 'clsx';
 
 var __freeze = Object.freeze;
