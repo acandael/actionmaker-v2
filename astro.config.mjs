@@ -10,6 +10,7 @@ export default defineConfig({
   output: 'server',
   adapter: vercel({
     functionPerRoute: false,
+    edgeMiddleware: true,
   }),
   i18n: {
     defaultLocale: 'nl',
