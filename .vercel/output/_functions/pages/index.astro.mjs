@@ -1,9 +1,9 @@
-import { c as createAstro, a as createComponent, e as renderComponent, f as renderTemplate } from '../chunks/astro/server_BeOFNrkS.mjs';
+import { c as createAstro, a as createComponent, e as renderComponent, f as renderTemplate } from '../chunks/astro/server_DHpP_QjO.mjs';
 import 'kleur/colors';
 /* empty css                                   */
-import { $ as $$Layout } from '../chunks/Layout_DW7oPnfw.mjs';
-import { $ as $$Hero, a as $$TeamActivities, b as $$Features, c as $$Index$1, d as $$FAQ, e as $$CTA } from '../chunks/CTA_DwWXpYi2.mjs';
-import { g as getLangFromUrl } from '../chunks/Footer_BVbvPl8Q.mjs';
+import { $ as $$Layout } from '../chunks/Layout_BW7egNRh.mjs';
+import { $ as $$Hero, a as $$TeamActivities, b as $$Features, c as $$Index$1, d as $$FAQ, e as $$CTA } from '../chunks/CTA_lwFT79Ko.mjs';
+import { g as getLangFromUrl } from '../chunks/Footer_DWOiS65T.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro = createAstro("https://www.actionmaker.be");
