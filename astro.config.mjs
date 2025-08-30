@@ -11,6 +11,7 @@ export default defineConfig({
   adapter: vercel({
     functionPerRoute: false,
     edgeMiddleware: false,
+    imageService: true,
   }),
   i18n: {
     defaultLocale: 'nl',

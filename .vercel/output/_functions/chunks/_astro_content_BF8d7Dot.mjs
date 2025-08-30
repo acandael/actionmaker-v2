@@ -3,8 +3,8 @@ import { Traverse } from 'neotraverse/modern';
 import pLimit from 'p-limit';
 import { z } from 'zod';
 import { b as removeBase, i as isRemotePath, p as prependForwardSlash } from './path_BE3d7IIh.mjs';
-import { b as VALID_INPUT_FORMATS } from './consts_HRoi08cg.mjs';
-import { A as AstroError, ak as UnknownContentCollectionError, c as createComponent, al as RenderUndefinedEntryError, u as unescapeHTML, a as renderTemplate, am as renderUniqueStylesheet, an as renderScriptElement, ao as createHeadAndContent, r as renderComponent } from './astro/server_Q0G1hIgh.mjs';
+import { b as VALID_INPUT_FORMATS } from './consts_C6ST87xC.mjs';
+import { A as AstroError, ak as UnknownContentCollectionError, c as createComponent, al as RenderUndefinedEntryError, u as unescapeHTML, a as renderTemplate, am as renderUniqueStylesheet, an as renderScriptElement, ao as createHeadAndContent, r as renderComponent } from './astro/server_BRSFUN6r.mjs';
 import 'kleur/colors';
 import * as devalue from 'devalue';
 
@@ -66,7 +66,7 @@ class ImmutableDataStore {
    */
   static async fromModule() {
     try {
-      const data = await import('./_astro_data-layer-content_Chx2QAOW.mjs');
+      const data = await import('./_astro_data-layer-content_B3Hrvb7B.mjs');
       if (data.default instanceof Map) {
         return ImmutableDataStore.fromMap(data.default);
       }
@@ -225,7 +225,7 @@ const CONTENT_LAYER_IMAGE_REGEX = /__ASTRO_IMAGE_="([^"]+)"/g;
 async function updateImageReferencesInBody(html, fileName) {
   const { default: imageAssetMap } = await import('./content-assets_DleWbedO.mjs');
   const imageObjects = /* @__PURE__ */ new Map();
-  const { getImage } = await import('./_astro_assets_B1VbBFKz.mjs').then(n => n._);
+  const { getImage } = await import('./_astro_assets_0zZVo8EV.mjs').then(n => n._);
   for (const [_full, imagePath] of html.matchAll(CONTENT_LAYER_IMAGE_REGEX)) {
     try {
       const decodedImagePath = JSON.parse(imagePath.replaceAll("&#x22;", '"'));

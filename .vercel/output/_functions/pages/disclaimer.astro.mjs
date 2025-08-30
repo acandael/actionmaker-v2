@@ -1,6 +1,6 @@
-import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Q0G1hIgh.mjs';
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_BRSFUN6r.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout_pJVA2fED.mjs';
+import { $ as $$Layout } from '../chunks/Layout_CFiUvx_e.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Disclaimer = createComponent(($$result, $$props, $$slots) => {
