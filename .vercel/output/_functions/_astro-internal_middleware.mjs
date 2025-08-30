@@ -1,4 +1,4 @@
-import { d as defineMiddleware, s as sequence } from './chunks/index_BHxi6WAQ.mjs';
+import { d as defineMiddleware, s as sequence } from './chunks/index_BHwgmBd7.mjs';
 import 'es-module-lexer';
 import './chunks/astro-designed-error-pages_pNgtiGau.mjs';
 import 'kleur/colors';

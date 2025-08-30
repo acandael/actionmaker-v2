@@ -20,10 +20,10 @@ const salutations = [
   { value: "mx", label: "Mx" }
 ];
 const formSchema = z.object({
-  salutation: z.string().min(1, { error: "La salutation est obligatoire" }),
-  firstName: z.string().min(2, { error: "Le prénom est obligatoire" }),
-  lastName: z.string().min(2, { error: "Le nom de famille est obligatoire" }),
-  email: z.string().email({ error: "Adresse e-mail invalide" }),
+  salutation: z.string().min(1, { message: "La salutation est obligatoire" }),
+  firstName: z.string().min(2, { message: "Le prénom est obligatoire" }),
+  lastName: z.string().min(2, { message: "Le nom de famille est obligatoire" }),
+  email: z.string().email({ message: "Adresse e-mail invalide" }),
   phone: z.string().optional(),
   message: z.string().optional()
 });

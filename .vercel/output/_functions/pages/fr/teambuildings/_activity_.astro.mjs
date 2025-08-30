@@ -20,13 +20,13 @@ export { renderers } from '../../../renderers.mjs';
 
 const formSchema = z.object({
   activityTitle: z.string(),
-  firstName: z.string().min(2, { error: "Le prénom doit contenir au moins 2 caractères" }),
-  lastName: z.string().min(2, { error: "Le nom de famille doit contenir au moins 2 caractères" }),
-  email: z.string().email({ error: "Adresse e-mail invalide" }),
-  phone: z.string().min(10, { error: "Numéro de téléphone invalide" }),
-  date: z.string().min(1, { error: "La date est obligatoire" }),
-  groupSize: z.string().min(1, { error: "Le nombre de personnes est obligatoire" }),
-  hours: z.string().min(1, { error: "Le nombre d'heures est obligatoire" }),
+  firstName: z.string().min(2, { message: "Le prénom doit contenir au moins 2 caractères" }),
+  lastName: z.string().min(2, { message: "Le nom de famille doit contenir au moins 2 caractères" }),
+  email: z.string().email({ message: "Adresse e-mail invalide" }),
+  phone: z.string().min(10, { message: "Numéro de téléphone invalide" }),
+  date: z.string().min(1, { message: "La date est obligatoire" }),
+  groupSize: z.string().min(1, { message: "Le nombre de personnes est obligatoire" }),
+  hours: z.string().min(1, { message: "Le nombre d'heures est obligatoire" }),
   budget: z.string().optional(),
   location: z.string().optional(),
   message: z.string().optional()
