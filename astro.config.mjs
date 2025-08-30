@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
-import vercel from '@astrojs/vercel/serverless';
+import vercel from '@astrojs/vercel';
 import { fileURLToPath } from 'url';
 import tailwindcss from '@tailwindcss/vite';
 
@@ -18,7 +18,8 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     },
-    nodeVersion: '18.x',
+    nodeVersion: '20.x',
+    includeFiles: ['./dist/server/**/*'],
   }),
   i18n: {
     defaultLocale: 'nl',
