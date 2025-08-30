@@ -8,19 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://www.actionmaker.be',
   output: 'server',
-  adapter: vercel({
-    isr: false,
-    imageService: true,
-    imagesConfig: {
-      domains: [],
-      sizes: [320, 640, 1280],
-      formats: ['image/avif', 'image/webp'],
-    },
-    webAnalytics: {
-      enabled: true,
-    },
-    nodeVersion: '22.x',
-  }),
+  adapter: vercel(),
   i18n: {
     defaultLocale: 'nl',
     locales: ['nl', 'fr', 'en'],
