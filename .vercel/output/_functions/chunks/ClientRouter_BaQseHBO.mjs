@@ -1,5 +1,5 @@
 import { jsx, jsxs } from 'react/jsx-runtime';
-import 'react';
+import { useEffect } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
@@ -29,7 +29,7 @@ const formSchema = z.object({
 function BookingForm({ activityTitle, isGame, isCityGame }) {
   const form = useForm({
     resolver: zodResolver(formSchema),
-    mode: "onBlur",
+    mode: "onChange",
     reValidateMode: "onChange",
     defaultValues: {
       activityTitle,
@@ -45,11 +45,22 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
       message: ""
     }
   });
+  useEffect(() => {
+    {
+      console.log("Form state changed:", form.formState);
+      console.log("Form errors:", form.formState.errors);
+    }
+  }, [form.formState, form.formState.errors]);
   const onSubmit = async (data) => {
     try {
       const isValid = await form.trigger();
       if (!isValid) {
         console.log("Form validation errors:", form.formState.errors);
+        console.log("Form state:", form.formState);
+        await form.trigger();
+        setTimeout(() => {
+          console.log("After delay - Form errors:", form.formState.errors);
+        }, 100);
         toast.error("Vul alle verplichte velden in.");
         return;
       }
@@ -72,6 +83,25 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
     }
   };
   return /* @__PURE__ */ jsx(Card, { className: "p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300", children: /* @__PURE__ */ jsx(Form, { ...form, children: /* @__PURE__ */ jsxs("form", { onSubmit: form.handleSubmit(onSubmit), className: "space-y-8", children: [
+    /* @__PURE__ */ jsxs("div", { className: "p-4 bg-gray-100 rounded-lg text-xs", children: [
+      /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("strong", { children: "Form State Debug:" }) }),
+      /* @__PURE__ */ jsxs("p", { children: [
+        "Is Valid: ",
+        form.formState.isValid ? "Yes" : "No"
+      ] }),
+      /* @__PURE__ */ jsxs("p", { children: [
+        "Is Dirty: ",
+        form.formState.isDirty ? "Yes" : "No"
+      ] }),
+      /* @__PURE__ */ jsxs("p", { children: [
+        "Errors: ",
+        Object.keys(form.formState.errors).length
+      ] }),
+      /* @__PURE__ */ jsxs("p", { children: [
+        "Error Keys: ",
+        Object.keys(form.formState.errors).join(", ")
+      ] })
+    ] }),
     /* @__PURE__ */ jsx(
       FormField,
       {
@@ -97,6 +127,7 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
           render: ({ field }) => /* @__PURE__ */ jsxs(FormItem, { children: [
             /* @__PURE__ */ jsx(FormLabel, { children: "Voornaam" }),
             /* @__PURE__ */ jsx(FormControl, { children: /* @__PURE__ */ jsx(Input, { placeholder: "John", ...field }) }),
+            form.formState.errors.firstName && /* @__PURE__ */ jsx("p", { className: "text-sm font-medium text-destructive", children: form.formState.errors.firstName.message }),
             /* @__PURE__ */ jsx(FormMessage, {})
           ] })
         }
@@ -109,7 +140,8 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
           render: ({ field }) => /* @__PURE__ */ jsxs(FormItem, { children: [
             /* @__PURE__ */ jsx(FormLabel, { children: "Achternaam" }),
             /* @__PURE__ */ jsx(FormControl, { children: /* @__PURE__ */ jsx(Input, { placeholder: "Doe", ...field }) }),
-            /* @__PURE__ */ jsx(FormMessage, {})
+            /* @__PURE__ */ jsx(FormMessage, {}),
+            form.formState.errors.lastName && /* @__PURE__ */ jsx("p", { className: "text-sm font-medium text-destructive", children: form.formState.errors.lastName.message })
           ] })
         }
       )
@@ -232,21 +264,6 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
           "Verstuur aanvraag",
           /* @__PURE__ */ jsx(ArrowRight, { className: "w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" })
         ] })
-      }
-    ),
-    /* @__PURE__ */ jsx(
-      Button,
-      {
-        type: "button",
-        variant: "outline",
-        onClick: () => {
-          console.log("Form state:", form.formState);
-          console.log("Form errors:", form.formState.errors);
-          console.log("Form values:", form.getValues());
-          toast.info("Check console for form debug info");
-        },
-        className: "w-full",
-        children: "Debug Form (Production Only)"
       }
     ),
     /* @__PURE__ */ jsxs("p", { className: "text-sm text-center text-muted-foreground", children: [

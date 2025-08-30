@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
@@ -45,7 +45,7 @@ interface BookingFormProps {
 export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    mode: 'onBlur',
+    mode: 'onChange',
     reValidateMode: 'onChange',
     defaultValues: {
       activityTitle,
@@ -62,6 +62,14 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
     },
   });
 
+  // Debug form state changes in production
+  useEffect(() => {
+    if (import.meta.env.PROD) {
+      console.log('Form state changed:', form.formState);
+      console.log('Form errors:', form.formState.errors);
+    }
+  }, [form.formState, form.formState.errors]);
+
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     try {
       // Trigger validation manually to ensure errors are shown
@@ -69,6 +77,16 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
       
       if (!isValid) {
         console.log('Form validation errors:', form.formState.errors);
+        console.log('Form state:', form.formState);
+        
+        // Force a re-render to show validation errors
+        await form.trigger();
+        
+        // Add a small delay to ensure state updates
+        setTimeout(() => {
+          console.log('After delay - Form errors:', form.formState.errors);
+        }, 100);
+        
         toast.error('Vul alle verplichte velden in.');
         return;
       }
@@ -97,6 +115,17 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
     <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          {/* Debug section for production */}
+          {import.meta.env.PROD && (
+            <div className="p-4 bg-gray-100 rounded-lg text-xs">
+              <p><strong>Form State Debug:</strong></p>
+              <p>Is Valid: {form.formState.isValid ? 'Yes' : 'No'}</p>
+              <p>Is Dirty: {form.formState.isDirty ? 'Yes' : 'No'}</p>
+              <p>Errors: {Object.keys(form.formState.errors).length}</p>
+              <p>Error Keys: {Object.keys(form.formState.errors).join(', ')}</p>
+            </div>
+          )}
+          
           <FormField
             control={form.control}
             name="activityTitle"
@@ -130,6 +159,12 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
                   <FormControl>
                     <Input placeholder="John" {...field} />
                   </FormControl>
+                  {/* Custom error display for production debugging */}
+                  {form.formState.errors.firstName && (
+                    <p className="text-sm font-medium text-destructive">
+                      {form.formState.errors.firstName.message}
+                    </p>
+                  )}
                   <FormMessage />
                 </FormItem>
               )}
@@ -145,6 +180,12 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
                     <Input placeholder="Doe" {...field} />
                   </FormControl>
                   <FormMessage />
+                  {/* Custom error display for production debugging */}
+                  {form.formState.errors.lastName && (
+                    <p className="text-sm font-medium text-destructive">
+                      {form.formState.errors.lastName.message}
+                    </p>
+                  )}
                 </FormItem>
               )}
             />
