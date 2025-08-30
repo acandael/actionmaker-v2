@@ -44,6 +44,8 @@ interface BookingFormProps {
 export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    mode: 'onBlur',
+    reValidateMode: 'onChange',
     defaultValues: {
       activityTitle,
       firstName: '',
@@ -60,20 +62,34 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
   });
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    const promise = fetch('/api/booking', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
+    try {
+      // Trigger validation manually to ensure errors are shown
+      const isValid = await form.trigger();
+      
+      if (!isValid) {
+        console.log('Form validation errors:', form.formState.errors);
+        toast.error('Veuillez remplir tous les champs obligatoires.');
+        return;
+      }
 
-    toast.promise(promise, {
-      loading: 'Envoi de la demande...',
-      success: () => {
-        form.reset();
-        return 'Merci pour votre demande! Nous vous contacterons dans les 24 heures.';
-      },
-      error: 'Une erreur est survenue. Veuillez réessayer plus tard ou nous contacter directement.',
-    });
+      const promise = fetch('/api/booking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      toast.promise(promise, {
+        loading: 'Envoi de la demande...',
+        success: () => {
+          form.reset();
+          return 'Merci pour votre demande! Nous vous contacterons dans les 24 heures.';
+        },
+        error: 'Une erreur est survenue. Veuillez réessayer plus tard ou nous contacter directement.',
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast.error('Une erreur est survenue. Veuillez réessayer plus tard.');
+    }
   };
 
   return (

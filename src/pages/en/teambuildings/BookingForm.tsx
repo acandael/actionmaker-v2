@@ -45,6 +45,8 @@ interface BookingFormProps {
 export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    mode: 'onBlur',
+    reValidateMode: 'onChange',
     defaultValues: {
       activityTitle,
       firstName: '',
@@ -61,20 +63,34 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
   });
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    const promise = fetch('/api/booking', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
+    try {
+      // Trigger validation manually to ensure errors are shown
+      const isValid = await form.trigger();
+      
+      if (!isValid) {
+        console.log('Form validation errors:', form.formState.errors);
+        toast.error('Please fill in all required fields.');
+        return;
+      }
 
-    toast.promise(promise, {
-      loading: 'Sending request...',
-      success: () => {
-        form.reset();
-        return 'Thank you for your request! We will contact you within 24 hours.';
-      },
-      error: 'Something went wrong. Please try again later or contact us directly.',
-    });
+      const promise = fetch('/api/booking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      toast.promise(promise, {
+        loading: 'Sending request...',
+        success: () => {
+          form.reset();
+          return 'Thank you for your request! We will contact you within 24 hours.';
+        },
+        error: 'Something went wrong. Please try again later or contact us directly.',
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast.error('Something went wrong. Please try again later.');
+    }
   };
 
   return (

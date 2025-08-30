@@ -34,6 +34,8 @@ const formSchema = z.object({
 function BookingForm({ activityTitle, isGame, isCityGame }) {
   const form = useForm({
     resolver: zodResolver(formSchema),
+    mode: "onBlur",
+    reValidateMode: "onChange",
     defaultValues: {
       activityTitle,
       firstName: "",
@@ -49,19 +51,30 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
     }
   });
   const onSubmit = async (data) => {
-    const promise = fetch("/api/booking", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-    toast.promise(promise, {
-      loading: "Envoi de la demande...",
-      success: () => {
-        form.reset();
-        return "Merci pour votre demande! Nous vous contacterons dans les 24 heures.";
-      },
-      error: "Une erreur est survenue. Veuillez réessayer plus tard ou nous contacter directement."
-    });
+    try {
+      const isValid = await form.trigger();
+      if (!isValid) {
+        console.log("Form validation errors:", form.formState.errors);
+        toast.error("Veuillez remplir tous les champs obligatoires.");
+        return;
+      }
+      const promise = fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+      toast.promise(promise, {
+        loading: "Envoi de la demande...",
+        success: () => {
+          form.reset();
+          return "Merci pour votre demande! Nous vous contacterons dans les 24 heures.";
+        },
+        error: "Une erreur est survenue. Veuillez réessayer plus tard ou nous contacter directement."
+      });
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast.error("Une erreur est survenue. Veuillez réessayer plus tard.");
+    }
   };
   return /* @__PURE__ */ jsx(Card, { className: "p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300", children: /* @__PURE__ */ jsx(Form, { ...form, children: /* @__PURE__ */ jsxs("form", { onSubmit: form.handleSubmit(onSubmit), className: "space-y-8", children: [
     /* @__PURE__ */ jsx(

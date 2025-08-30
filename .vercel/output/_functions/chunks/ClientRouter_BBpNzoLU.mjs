@@ -29,6 +29,8 @@ const formSchema = z.object({
 function BookingForm({ activityTitle, isGame, isCityGame }) {
   const form = useForm({
     resolver: zodResolver(formSchema),
+    mode: "onBlur",
+    reValidateMode: "onChange",
     defaultValues: {
       activityTitle,
       firstName: "",
@@ -44,19 +46,30 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
     }
   });
   const onSubmit = async (data) => {
-    const promise = fetch("/api/booking", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-    toast.promise(promise, {
-      loading: "Aanvraag verzenden...",
-      success: () => {
-        form.reset();
-        return "Bedankt voor je aanvraag! We nemen binnen 24 uur contact met je op.";
-      },
-      error: "Er is iets misgegaan. Probeer het later opnieuw of neem contact met ons op."
-    });
+    try {
+      const isValid = await form.trigger();
+      if (!isValid) {
+        console.log("Form validation errors:", form.formState.errors);
+        toast.error("Vul alle verplichte velden in.");
+        return;
+      }
+      const promise = fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+      toast.promise(promise, {
+        loading: "Aanvraag verzenden...",
+        success: () => {
+          form.reset();
+          return "Bedankt voor je aanvraag! We nemen binnen 24 uur contact met je op.";
+        },
+        error: "Er is iets misgegaan. Probeer het later opnieuw of neem contact met ons op."
+      });
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast.error("Er is iets misgegaan. Probeer het later opnieuw.");
+    }
   };
   return /* @__PURE__ */ jsx(Card, { className: "p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300", children: /* @__PURE__ */ jsx(Form, { ...form, children: /* @__PURE__ */ jsxs("form", { onSubmit: form.handleSubmit(onSubmit), className: "space-y-8", children: [
     /* @__PURE__ */ jsx(
@@ -219,6 +232,21 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
           "Verstuur aanvraag",
           /* @__PURE__ */ jsx(ArrowRight, { className: "w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" })
         ] })
+      }
+    ),
+    /* @__PURE__ */ jsx(
+      Button,
+      {
+        type: "button",
+        variant: "outline",
+        onClick: () => {
+          console.log("Form state:", form.formState);
+          console.log("Form errors:", form.formState.errors);
+          console.log("Form values:", form.getValues());
+          toast.info("Check console for form debug info");
+        },
+        className: "w-full",
+        children: "Debug Form (Production Only)"
       }
     ),
     /* @__PURE__ */ jsxs("p", { className: "text-sm text-center text-muted-foreground", children: [

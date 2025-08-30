@@ -34,6 +34,8 @@ const formSchema = z.object({
 function BookingForm({ activityTitle, isGame, isCityGame }) {
   const form = useForm({
     resolver: zodResolver(formSchema),
+    mode: "onBlur",
+    reValidateMode: "onChange",
     defaultValues: {
       activityTitle,
       firstName: "",
@@ -49,19 +51,30 @@ function BookingForm({ activityTitle, isGame, isCityGame }) {
     }
   });
   const onSubmit = async (data) => {
-    const promise = fetch("/api/booking", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-    toast.promise(promise, {
-      loading: "Sending request...",
-      success: () => {
-        form.reset();
-        return "Thank you for your request! We will contact you within 24 hours.";
-      },
-      error: "Something went wrong. Please try again later or contact us directly."
-    });
+    try {
+      const isValid = await form.trigger();
+      if (!isValid) {
+        console.log("Form validation errors:", form.formState.errors);
+        toast.error("Please fill in all required fields.");
+        return;
+      }
+      const promise = fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+      toast.promise(promise, {
+        loading: "Sending request...",
+        success: () => {
+          form.reset();
+          return "Thank you for your request! We will contact you within 24 hours.";
+        },
+        error: "Something went wrong. Please try again later or contact us directly."
+      });
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast.error("Something went wrong. Please try again later.");
+    }
   };
   return /* @__PURE__ */ jsx(Card, { className: "p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300", children: /* @__PURE__ */ jsx(Form, { ...form, children: /* @__PURE__ */ jsxs("form", { onSubmit: form.handleSubmit(onSubmit), className: "space-y-8", children: [
     /* @__PURE__ */ jsx(

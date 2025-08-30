@@ -45,6 +45,8 @@ interface BookingFormProps {
 export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    mode: 'onBlur',
+    reValidateMode: 'onChange',
     defaultValues: {
       activityTitle,
       firstName: '',
@@ -61,20 +63,34 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
   });
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    const promise = fetch('/api/booking', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
+    try {
+      // Trigger validation manually to ensure errors are shown
+      const isValid = await form.trigger();
+      
+      if (!isValid) {
+        console.log('Form validation errors:', form.formState.errors);
+        toast.error('Vul alle verplichte velden in.');
+        return;
+      }
 
-    toast.promise(promise, {
-      loading: 'Aanvraag verzenden...',
-      success: () => {
-        form.reset();
-        return 'Bedankt voor je aanvraag! We nemen binnen 24 uur contact met je op.';
-      },
-      error: 'Er is iets misgegaan. Probeer het later opnieuw of neem contact met ons op.',
-    });
+      const promise = fetch('/api/booking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      toast.promise(promise, {
+        loading: 'Aanvraag verzenden...',
+        success: () => {
+          form.reset();
+          return 'Bedankt voor je aanvraag! We nemen binnen 24 uur contact met je op.';
+        },
+        error: 'Er is iets misgegaan. Probeer het later opnieuw of neem contact met ons op.',
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast.error('Er is iets misgegaan. Probeer het later opnieuw.');
+    }
   };
 
   return (
@@ -268,6 +284,8 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
               <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </span>
           </Button>
+
+
 
           <p className="text-sm text-center text-muted-foreground">
             Door het formulier te versturen ga je akkoord met onze{' '}

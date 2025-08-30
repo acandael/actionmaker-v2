@@ -19,7 +19,6 @@ export default defineConfig({
       enabled: true,
     },
     nodeVersion: '20.x',
-    includeFiles: ['./dist/server/**/*'],
   }),
   i18n: {
     defaultLocale: 'nl',

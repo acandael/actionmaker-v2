@@ -43,11 +43,12 @@ interface BookingFormProps {
 export function BookingForm({ activityTitle }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    mode: 'onBlur',
+    reValidateMode: 'onChange',
     defaultValues: {
       activityTitle,
       firstName: '',
       lastName: '',
-      email: '',
       phone: '',
       date: '',
       groupSize: '',
@@ -59,20 +60,34 @@ export function BookingForm({ activityTitle }: BookingFormProps) {
   });
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    const promise = fetch('/api/booking', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
+    try {
+      // Trigger validation manually to ensure errors are shown
+      const isValid = await form.trigger();
+      
+      if (!isValid) {
+        console.log('Form validation errors:', form.formState.errors);
+        toast.error('Vul alle verplichte velden in.');
+        return;
+      }
 
-    toast.promise(promise, {
-      loading: 'Aanvraag verzenden...',
-      success: () => {
-        form.reset();
-        return 'Bedankt voor je aanvraag! We nemen binnen 24 uur contact met je op.';
-      },
-      error: 'Er is iets misgegaan. Probeer het later opnieuw of neem contact met ons op.',
-    });
+      const promise = fetch('/api/booking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      toast.promise(promise, {
+        loading: 'Aanvraag verzenden...',
+        success: () => {
+          form.reset();
+          return 'Bedankt voor je aanvraag! We nemen binnen 24 uur contact met je op.';
+        },
+        error: 'Er is iets misgegaan. Probeer het later opnieuw of neem contact met ons op.',
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast.error('Er is iets misgegaan. Probeer het later opnieuw.');
+    }
   };
 
   return (
