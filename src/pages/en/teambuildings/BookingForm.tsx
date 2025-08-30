@@ -198,12 +198,6 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
                   <FormControl>
                     <Input placeholder="John" {...field} />
                   </FormControl>
-                  {/* Custom error display for production debugging */}
-                  {form.formState.errors.firstName && (
-                    <p className="text-sm font-medium text-destructive">
-                      {form.formState.errors.firstName.message}
-                    </p>
-                  )}
                   <FormMessage />
                 </FormItem>
               )}
@@ -341,6 +335,7 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
                 <FormControl>
                   <Textarea
                     placeholder="Any additional information or special requests"
+                    className="resize-none"
                     {...field}
                   />
                 </FormControl>
@@ -358,6 +353,9 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
               <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </span>
           </Button>
+
+
+
           <p className="text-sm text-center text-muted-foreground">
             By submitting this form, you agree to our{' '}
             <a href="/en/terms-of-service" className="text-red-600 hover:text-red-700 underline">

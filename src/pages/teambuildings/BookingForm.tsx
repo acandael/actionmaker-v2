@@ -198,12 +198,6 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
                   <FormControl>
                     <Input placeholder="John" {...field} />
                   </FormControl>
-                  {/* Custom error display for production debugging */}
-                  {form.formState.errors.firstName && (
-                    <p className="text-sm font-medium text-destructive">
-                      {form.formState.errors.firstName.message}
-                    </p>
-                  )}
                   <FormMessage />
                 </FormItem>
               )}
@@ -219,12 +213,6 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
                     <Input placeholder="Doe" {...field} />
                   </FormControl>
                   <FormMessage />
-                  {/* Custom error display for production debugging */}
-                  {form.formState.errors.lastName && (
-                    <p className="text-sm font-medium text-destructive">
-                      {form.formState.errors.lastName.message}
-                    </p>
-                  )}
                 </FormItem>
               )}
             />

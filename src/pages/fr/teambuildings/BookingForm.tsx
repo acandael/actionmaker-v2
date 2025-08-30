@@ -1,7 +1,7 @@
 'use client';
-import React from 'react';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
+
+import React, { useEffect } from 'react';
+import { useForm, type Resolver } from 'react-hook-form';
 import * as z from 'zod';
 import { Button } from '../../../components/ui/button';
 import { Input } from '../../../components/ui/input';
@@ -33,6 +33,46 @@ const formSchema = z.object({
   message: z.string().optional(),
 });
 
+// Custom resolver for Zod v4 compatibility with React Hook Form
+const customZodResolver: Resolver<z.infer<typeof formSchema>> = async (values) => {
+  try {
+    const validatedData = formSchema.parse(values);
+    return {
+      values: validatedData,
+      errors: {},
+    };
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      const fieldErrors: Record<string, { type: string; message: string }> = {};
+      
+      // In Zod v4, we need to use the issues property
+      const zodError = error as z.ZodError;
+      zodError.issues.forEach((issue) => {
+        const fieldName = issue.path.join('.');
+        fieldErrors[fieldName] = {
+          type: issue.code,
+          message: issue.message,
+        };
+      });
+      
+      return {
+        values: {},
+        errors: fieldErrors,
+      };
+    }
+    
+    return {
+      values: {},
+      errors: {
+        root: {
+          type: 'unknown',
+          message: 'Validation failed',
+        },
+      },
+    };
+  }
+};
+
 type FormData = z.infer<typeof formSchema>;
 
 interface BookingFormProps {
@@ -43,8 +83,8 @@ interface BookingFormProps {
 
 export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    mode: 'onBlur',
+    resolver: customZodResolver,
+    mode: 'onChange',
     reValidateMode: 'onChange',
     defaultValues: {
       activityTitle,
@@ -61,6 +101,14 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
     },
   });
 
+  // Debug form state changes in production
+  useEffect(() => {
+    if (import.meta.env.PROD) {
+      console.log('Form state changed:', form.formState);
+      console.log('Form errors:', form.formState.errors);
+    }
+  }, [form.formState, form.formState.errors]);
+
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     try {
       // Trigger validation manually to ensure errors are shown
@@ -68,6 +116,16 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
       
       if (!isValid) {
         console.log('Form validation errors:', form.formState.errors);
+        console.log('Form state:', form.formState);
+        
+        // Force a re-render to show validation errors
+        await form.trigger();
+        
+        // Add a small delay to ensure state updates
+        setTimeout(() => {
+          console.log('After delay - Form errors:', form.formState.errors);
+        }, 100);
+        
         toast.error('Veuillez remplir tous les champs obligatoires.');
         return;
       }
@@ -96,6 +154,17 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
     <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          {/* Debug section for production */}
+          {import.meta.env.PROD && (
+            <div className="p-4 bg-gray-100 rounded-lg text-xs">
+              <p><strong>Form State Debug:</strong></p>
+              <p>Is Valid: {form.formState.isValid ? 'Yes' : 'No'}</p>
+              <p>Is Dirty: {form.formState.isDirty ? 'Yes' : 'No'}</p>
+              <p>Errors: {Object.keys(form.formState.errors).length}</p>
+              <p>Error Keys: {Object.keys(form.formState.errors).join(', ')}</p>
+            </div>
+          )}
+          
           <FormField
             control={form.control}
             name="activityTitle"
@@ -284,6 +353,8 @@ export function BookingForm({ activityTitle, isGame, isCityGame }: BookingFormPr
               <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </span>
           </Button>
+
+
 
           <p className="text-sm text-center text-muted-foreground">
             En envoyant le formulaire, vous acceptez nos{' '}
