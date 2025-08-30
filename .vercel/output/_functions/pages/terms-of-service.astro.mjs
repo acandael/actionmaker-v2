@@ -1,6 +1,6 @@
-import { a as createComponent, e as renderComponent, f as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_DHpP_QjO.mjs';
+import { a as createComponent, e as renderComponent, f as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_BeOFNrkS.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout_BW7egNRh.mjs';
+import { $ as $$Layout } from '../chunks/Layout_DJmQXnz1.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$TermsOfService = createComponent(($$result, $$props, $$slots) => {

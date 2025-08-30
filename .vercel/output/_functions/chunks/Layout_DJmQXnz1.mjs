@@ -1,7 +1,7 @@
-import { c as createAstro, a as createComponent, b as addAttribute, r as renderSlot, d as renderHead, e as renderComponent, F as Fragment, f as renderTemplate, u as unescapeHTML } from './astro/server_DHpP_QjO.mjs';
+import { c as createAstro, a as createComponent, b as addAttribute, r as renderSlot, d as renderHead, e as renderComponent, F as Fragment, f as renderTemplate, u as unescapeHTML } from './astro/server_BeOFNrkS.mjs';
 import 'kleur/colors';
 /* empty css                           */
-import { g as getLangFromUrl, $ as $$Navbar, a as $$Footer } from './Footer_DWOiS65T.mjs';
+import { g as getLangFromUrl, $ as $$Navbar, a as $$Footer } from './Footer_suRChhcd.mjs';
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;

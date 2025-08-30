@@ -90,183 +90,196 @@
 		},
 		{
 			"src": "^/_server-islands/([^/]+?)/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/_image/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/api/booking/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/api/contact/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/biathlonschieten/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/bijlwerpen/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/boogschieten/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/contact/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/disclaimer/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/djembe/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/en/contact/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/en/disclaimer/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/en/over-actionmaker/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/en/teambuildings/([^/]+?)/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/en/teambuildings/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/en/terms-of-service/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/en/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/extreme-test/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/fr/contact/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/fr/disclaimer/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/fr/over-actionmaker/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/fr/teambuildings/([^/]+?)/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/fr/teambuildings/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/fr/terms-of-service/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/fr/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/jsonld-direct-test/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/jsonld-test/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/kunstsmeden/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/laserkleiduifschieten/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/over-actionmaker/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/pistoolschieten/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/redirect-test/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/roofvogelworkshop/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/scherminitiatie/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/simple-test/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/sitemap-0\\.xml/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/sitemap-index\\.xml/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/smaaktest/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/sumoworstelen/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/teambuildings/([^/]+?)/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/teambuildings/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/terms-of-service/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/test-jsonld/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/([^/]+?)/teambuildings/([^/]+?)/?$",
-			"dest": "_render"
+			"dest": "_middleware"
 		},
 		{
 			"src": "^/$",
-			"dest": "_render"
+			"dest": "_middleware"
 		}
-	]
+	],
+	"images": {
+		"domains": [],
+		"sizes": [
+			320,
+			640,
+			1280
+		],
+		"formats": [
+			"image/avif",
+			"image/webp"
+		],
+		"remotePatterns": []
+	}
 }

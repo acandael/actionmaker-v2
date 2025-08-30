@@ -1,6 +1,6 @@
 import { renderers } from './renderers.mjs';
-import { c as createExports } from './chunks/entrypoint_vh-7iXVi.mjs';
-import { manifest } from './manifest_DuFI_4tB.mjs';
+import { c as createExports } from './chunks/entrypoint_DTS63WeA.mjs';
+import { manifest } from './manifest_C5DfGREG.mjs';
 
 const serverIslandMap = new Map();;
 
@@ -72,15 +72,14 @@ const pageMap = new Map([
     ["src/pages/[lang]/teambuildings/[activity].astro", _page31],
     ["src/pages/index.astro", _page32]
 ]);
-
 const _manifest = Object.assign(manifest, {
     pageMap,
     serverIslandMap,
     renderers,
-    middleware: () => import('./_astro-internal_middleware.mjs')
+    middleware: undefined
 });
 const _args = {
-    "middlewareSecret": "7e3ae9ee-889e-4aef-b06f-313c2c53fb3e",
+    "middlewareSecret": "abf3f914-968b-4490-8d76-63230ea798c9",
     "skewProtection": false
 };
 const _exports = createExports(_manifest, _args);

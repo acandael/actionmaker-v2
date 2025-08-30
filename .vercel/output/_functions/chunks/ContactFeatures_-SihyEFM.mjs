@@ -2,11 +2,11 @@ import { jsx } from 'react/jsx-runtime';
 import * as React from 'react';
 import * as RadioGroupPrimitive from '@radix-ui/react-radio-group';
 import { Circle, Phone, Mail, ArrowUpDown, Users, Trophy } from 'lucide-react';
-import { c as cn, g as getLangFromUrl, u as useTranslations } from './Footer_DWOiS65T.mjs';
-import { c as createAstro, a as createComponent, e as renderComponent, f as renderTemplate, m as maybeRenderHead, b as addAttribute } from './astro/server_DHpP_QjO.mjs';
+import { c as cn, g as getLangFromUrl, u as useTranslations } from './Footer_suRChhcd.mjs';
+import { c as createAstro, a as createComponent, e as renderComponent, f as renderTemplate, m as maybeRenderHead, b as addAttribute } from './astro/server_BeOFNrkS.mjs';
 import 'kleur/colors';
-import { C as Card } from './card_Bnzrv0vE.mjs';
-import { $ as $$Image } from './_astro_assets_CkmtdyBb.mjs';
+import { C as Card } from './card_DtUTPmUM.mjs';
+import { $ as $$Image } from './_astro_assets_BqFTDrm1.mjs';
 import { c as contactImage } from './about-us_Lp9xK2RJ.mjs';
 
 const RadioGroup = React.forwardRef(({ className, ...props }, ref) => {
