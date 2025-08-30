@@ -1,4 +1,4 @@
-import '../chunks/_astro_content_CYMP1Ce-.mjs';
+import '../chunks/_astro_content_C7xrrZ7z.mjs';
 export { renderers } from '../renderers.mjs';
 
 async function GET() {
