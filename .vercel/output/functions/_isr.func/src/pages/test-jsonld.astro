@@ -1,0 +1,30 @@
+---
+// Create a simple test for JSON-LD
+const jsonld = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: 'Test Video',
+  description: 'This is a test video',
+  uploadDate: '2023-05-01',
+  embedUrl: 'https://example.com/video',
+  thumbnailUrl: 'https://example.com/thumbnail.jpg',
+});
+---
+
+<html>
+  <head>
+    <title>JSON-LD Test</title>
+    <script type="application/ld+json" set:html={jsonld} />
+  </head>
+  <body>
+    <h1>JSON-LD Test Page</h1>
+    <p>This page tests a simple JSON-LD implementation.</p>
+    <div style="background: #eee; padding: 20px; margin: 20px; border-radius: 8px;">
+      <h2>JSON-LD Content:</h2>
+      <pre>{jsonld}</pre>
+    </div>
+    <p>View the page source to see if the JSON-LD is in the head section.</p>
+    <a href="/en/teambuildings/indoor-scherminitiatie">Go back to activity page</a>
+  </body>
+</html>
+

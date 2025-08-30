@@ -9,8 +9,7 @@ export default defineConfig({
   site: 'https://www.actionmaker.be',
   output: 'server',
   adapter: vercel({
-    functionPerRoute: false,
-    edgeMiddleware: true,
+    isr: true,
   }),
   i18n: {
     defaultLocale: 'nl',
