@@ -1,10 +1,10 @@
-import { b as createAstro, c as createComponent, m as maybeRenderHead, r as renderComponent, a as renderTemplate, e as addAttribute } from './astro/server_BRSFUN6r.mjs';
+import { b as createAstro, c as createComponent, m as maybeRenderHead, r as renderComponent, a as renderTemplate, e as addAttribute } from './astro/server_Q0G1hIgh.mjs';
 import 'kleur/colors';
 import './index_MaT6fT73.mjs';
-import { $ as $$Image } from './_astro_assets_0zZVo8EV.mjs';
+import { $ as $$Image } from './_astro_assets_B1VbBFKz.mjs';
 import { c as contactImage } from './about-us_Lp9xK2RJ.mjs';
-import { g as getLangFromUrl, u as useTranslations, B as Button } from './Footer_Ba-Pl2Sz.mjs';
-import { C as Card } from './card_DJpJtknk.mjs';
+import { g as getLangFromUrl, u as useTranslations, B as Button } from './Footer_D0QNC7dQ.mjs';
+import { C as Card } from './card_QPsbPOGj.mjs';
 import { Users, Trophy, Calendar, Star, Heart, Shield, Target, ArrowRight } from 'lucide-react';
 /* empty css                                    */
 
