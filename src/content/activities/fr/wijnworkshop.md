@@ -1,10 +1,10 @@
 ---
 title: 'Wijnworkshop'
-description: "Ne dites pas simplement dégustation à cet atelier de vin dynamique. Lors de cette aventure interactive, vous apprendrez en groupe à vraiment comprendre le vin"
+description: 'Ne dites pas simplement dégustation à cet atelier de vin dynamique. Lors de cette aventure interactive, vous apprendrez en groupe à vraiment comprendre le vin'
 image: 'wijnworkshop/wijnworkshop-1.jpg'
 priority: 10
 features:
-  - "Une activité de groupe interactive et divertissante"
+  - 'Une activité de groupe interactive et divertissante'
   - 'Une magnifique sélection de vins'
   - 'Une compréhension durable du vin'
 gallery:
@@ -15,8 +15,8 @@ gallery:
     'wijnworkshop/wijnworkshop-5.jpg',
   ]
 categories: ['workshop']
-duration: '2-3 heures'
-groupSize: '1-15 personnes'
+duration: '1-3 heures'
+groupSize: '8-24 personnes'
 availability: 'Sur demande'
 ---
 

@@ -15,8 +15,8 @@ gallery:
     'wijnworkshop/wijnworkshop-5.jpg',
   ]
 categories: ['workshop']
-duration: '2-3 uur'
-groupSize: '1-15 personen'
+duration: '1-3 uur'
+groupSize: '8-24 personen'
 availability: 'Op aanvraag'
 ---
 

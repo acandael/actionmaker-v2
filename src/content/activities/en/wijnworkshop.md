@@ -4,7 +4,7 @@ description: "Don't just call it a tasting—this dynamic wine workshop is an in
 image: 'wijnworkshop/wijnworkshop-1.jpg'
 priority: 10
 features:
-  - "An interactive and entertaining group activity"
+  - 'An interactive and entertaining group activity'
   - 'A beautiful selection of wines'
   - 'A lasting understanding of wine'
 gallery:
@@ -15,8 +15,8 @@ gallery:
     'wijnworkshop/wijnworkshop-5.jpg',
   ]
 categories: ['workshop']
-duration: '2-3 hours'
-groupSize: '1-15 people'
+duration: '1-3 hours'
+groupSize: '8-24 people'
 availability: 'On request'
 ---
 
