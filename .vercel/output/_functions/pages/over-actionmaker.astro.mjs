@@ -1,7 +1,7 @@
-import { c as createComponent, r as renderComponent, a as renderTemplate } from '../chunks/astro/server_Q0G1hIgh.mjs';
+import { a as createComponent, e as renderComponent, f as renderTemplate } from '../chunks/astro/server_BeOFNrkS.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout_Bz_KP9pU.mjs';
-import { $ as $$AboutHero, a as $$Stats, b as $$Values, c as $$Founder, d as $$CTA } from '../chunks/CTA_XbTJzRI4.mjs';
+import { $ as $$Layout } from '../chunks/Layout_DCNOqE5-.mjs';
+import { $ as $$AboutHero, a as $$Stats, b as $$Values, c as $$Founder, d as $$CTA } from '../chunks/CTA_CqUPKdl2.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$OverActionmaker = createComponent(($$result, $$props, $$slots) => {

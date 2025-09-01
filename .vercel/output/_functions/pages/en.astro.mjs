@@ -1,8 +1,8 @@
-import { c as createComponent, r as renderComponent, a as renderTemplate } from '../chunks/astro/server_Q0G1hIgh.mjs';
+import { a as createComponent, e as renderComponent, f as renderTemplate } from '../chunks/astro/server_BeOFNrkS.mjs';
 import 'kleur/colors';
 /* empty css                                   */
-import { $ as $$Layout } from '../chunks/Layout_Bz_KP9pU.mjs';
-import { $ as $$Hero, a as $$TeamActivities, b as $$Features, c as $$Index$1, d as $$FAQ, e as $$CTA } from '../chunks/CTA_Bsr6NNcN.mjs';
+import { $ as $$Layout } from '../chunks/Layout_DCNOqE5-.mjs';
+import { $ as $$Hero, a as $$TeamActivities, b as $$Features, c as $$Index$1, d as $$FAQ, e as $$CTA } from '../chunks/CTA_BaEuC8I1.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {

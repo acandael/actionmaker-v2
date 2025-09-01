@@ -1,7 +1,6 @@
-import { b as createAstro, c as createComponent, m as maybeRenderHead, e as addAttribute, a as renderTemplate, r as renderComponent, aj as renderScript } from './astro/server_Q0G1hIgh.mjs';
+import { c as createAstro, a as createComponent, m as maybeRenderHead, b as addAttribute, f as renderTemplate, e as renderComponent, h as renderScript } from './astro/server_BeOFNrkS.mjs';
 import 'kleur/colors';
-import './index_MaT6fT73.mjs';
-import { $ as $$Image } from './_astro_assets_B1VbBFKz.mjs';
+import { $ as $$Image } from './_astro_assets_BqFTDrm1.mjs';
 import { jsx } from 'react/jsx-runtime';
 import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
@@ -9,7 +8,7 @@ import { cva } from 'class-variance-authority';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { ArrowRight, Phone, Mail, Facebook, Instagram } from 'lucide-react';
-import { g as getCollection } from './_astro_content_wjttSS60.mjs';
+import { g as getCollection } from './_astro_content_Dc0mdglE.mjs';
 
 function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -698,4 +697,4 @@ info@actionmaker.be
 ${" "} ${t("footer.development")} <a${addAttribute(`https://www.webmoov.be/${lang === "fr" ? "" : lang}`, "href")} target="_blank">Webmoov</a> </p> <div class="flex space-x-6"> <a${addAttribute(lang === "nl" ? "/terms-of-service" : `/${lang}/terms-of-service`, "href")} class="text-sm text-zinc-400 hover:text-white transition-colors"> ${t("footer.terms-of-service")} </a> <a${addAttribute(lang === "nl" ? "/disclaimer" : `/${lang}/disclaimer`, "href")} class="text-sm text-zinc-400 hover:text-white transition-colors"> ${t("footer.disclaimer")} </a> </div> </div> </div> </div> </footer>`;
 }, "/Users/anthonycandaele/Projects/ActionMaker/website/src/components/Footer/Footer.astro", void 0);
 
-export { $$Navbar as $, Button as B, ui as a, $$Footer as b, cn as c, getLangFromUrl as g, useTranslations as u };
+export { $$Navbar as $, Button as B, $$Footer as a, ui as b, cn as c, getLangFromUrl as g, useTranslations as u };

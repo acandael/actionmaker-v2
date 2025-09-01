@@ -1,6 +1,6 @@
 import { jsx } from 'react/jsx-runtime';
 import * as React from 'react';
-import { c as cn } from './Footer_CRbhKRCs.mjs';
+import { c as cn } from './Footer_CXfFBHF-.mjs';
 
 const Card = React.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsx(
   "div",
