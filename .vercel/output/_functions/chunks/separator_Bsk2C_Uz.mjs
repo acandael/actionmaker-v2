@@ -1,9 +1,9 @@
-import { b as createAstro, c as createComponent, m as maybeRenderHead, aj as renderScript, e as addAttribute, r as renderComponent, a as renderTemplate } from './astro/server_BRSFUN6r.mjs';
+import { b as createAstro, c as createComponent, m as maybeRenderHead, aj as renderScript, e as addAttribute, r as renderComponent, a as renderTemplate } from './astro/server_Q0G1hIgh.mjs';
 import 'kleur/colors';
-import { C as Card } from './card_CFzPTYDA.mjs';
+import { C as Card } from './card_Ca6Ege_o.mjs';
 import './index_MaT6fT73.mjs';
-import { $ as $$Image } from './_astro_assets_bCuCoaTR.mjs';
-import { g as getLangFromUrl, u as useTranslations, c as cn } from './Footer_Dn_7VF-N.mjs';
+import { $ as $$Image } from './_astro_assets_B1VbBFKz.mjs';
+import { g as getLangFromUrl, u as useTranslations, c as cn } from './Footer_CRbhKRCs.mjs';
 /* empty css                                 */
 import 'clsx';
 import { jsx } from 'react/jsx-runtime';

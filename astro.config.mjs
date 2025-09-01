@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
-import vercel from '@astrojs/vercel/serverless';
+import vercel from '@astrojs/vercel';
 import { fileURLToPath } from 'url';
 import tailwindcss from '@tailwindcss/vite';
 
@@ -8,18 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://www.actionmaker.be',
   output: 'server',
-  adapter: vercel({
-    imageService: true,
-    imagesConfig: {
-      domains: [],
-      sizes: [320, 640, 1280],
-      formats: ['image/avif', 'image/webp'],
-    },
-    webAnalytics: {
-      enabled: true,
-    },
-    nodeVersion: '20.x',
-  }),
+  adapter: vercel(),
   i18n: {
     defaultLocale: 'nl',
     locales: ['nl', 'fr', 'en'],

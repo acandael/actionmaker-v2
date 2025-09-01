@@ -2,7 +2,7 @@ import { jsx } from 'react/jsx-runtime';
 import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { useFormContext, FormProvider, Controller } from 'react-hook-form';
-import { c as cn } from './Footer_Dn_7VF-N.mjs';
+import { c as cn } from './Footer_CRbhKRCs.mjs';
 import * as LabelPrimitive from '@radix-ui/react-label';
 import { cva } from 'class-variance-authority';
 
