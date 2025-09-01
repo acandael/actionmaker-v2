@@ -1,0 +1,346 @@
+---
+import { getCollection } from 'astro:content';
+import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { ArrowRight, Users, Clock, Calendar, CheckCircle2 } from 'lucide-react';
+import { BookingForm } from '../../teambuildings/BookingForm.tsx';
+import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
+import VideoPlayer from '@/components/TeamActivityDetail/VideoPlayer.astro';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import Footer from '@/components/Footer/Footer.astro';
+import Navbar from '@/components/Navbar/Navbar.astro';
+import { Toaster } from '@/components/ui/sonner';
+import { ViewTransitions } from 'astro:transitions';
+import '@/styles/globals.css';
+
+// Get current locale
+const { lang = 'nl' } = Astro.params;
+// Type assertion to ensure lang is one of the supported languages
+const currentLang = lang === 'nl' || lang === 'en' || lang === 'fr' ? lang : 'nl';
+const t = useTranslations(currentLang);
+
+// Get the activity slug from the URL
+const { activity: activitySlug } = Astro.params;
+
+// Get all activities
+const allActivities = await getCollection('activities');
+
+// Find the activity in the specified language
+const activity = allActivities.find((a) => {
+  const fullId = `${currentLang}/${activitySlug}.md`;
+  return a.id === fullId;
+});
+
+if (!activity) {
+  return Astro.redirect('/404');
+}
+
+// Debug log to check activity data
+console.log('Activity data:', {
+  id: activity.id,
+  title: activity.data.title,
+  description: activity.data.description,
+  videoUrl: activity.data['video-url'],
+  hasVideo: !!activity.data['video-url'],
+  activitySlug,
+  currentLang,
+});
+
+const { Content } = await activity.render();
+
+// Import all images
+const imageImports = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/activities/**/*.{jpeg,jpg,png,gif,webp}',
+  {
+    eager: true,
+  }
+);
+
+// Get the hero image
+const imagePath = `/src/assets/activities/${activity.data.image}`;
+const heroImage = imageImports[imagePath]?.default;
+
+if (!heroImage) {
+  console.error(`Image not found: ${imagePath}`);
+  return Astro.redirect('/404');
+}
+
+// Get the images for the gallery
+const images = activity.data.gallery || [];
+
+// Get the first image as thumbnail
+const firstGalleryImage = images[0]
+  ? imageImports[`/src/assets/activities/${images[0]}`]?.default
+  : null;
+
+// Create a production-ready thumbnail URL
+// Extract just the filename from the path for use in production URLs
+const getImageFilename = (path: string) => {
+  if (!path) return null;
+  // Extract the filename from the full path
+  const parts = path.split('/');
+  return parts[parts.length - 1];
+};
+
+// Get image filenames for production URLs
+const firstGalleryImageFilename = images[0] ? getImageFilename(images[0]) : null;
+const heroImageFilename = activity.data.image ? getImageFilename(activity.data.image) : null;
+
+// Ensure thumbnailUrl is a fully qualified absolute URL with production domain
+// Use the hero image as fallback if no gallery images are available
+const thumbnailUrl = firstGalleryImageFilename
+  ? `https://actionmaker.be/images/activities/${activitySlug}/${firstGalleryImageFilename}`
+  : heroImageFilename
+    ? `https://actionmaker.be/images/activities/${activitySlug}/${heroImageFilename}`
+    : 'https://actionmaker.be/logo.png';
+
+// Format today's date as ISO 8601 for uploadDate
+const today = new Date().toISOString().split('T')[0];
+
+// Create the JSON-LD string directly
+const jsonldString = activity.data['video-url']
+  ? JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: activity.data.title,
+      description: activity.data.description,
+      uploadDate: today,
+      embedUrl: activity.data['video-url'],
+      ...(thumbnailUrl && { thumbnailUrl }),
+      duration: 'PT1H30M',
+      contentUrl: `https://actionmaker.be/videos/${activitySlug}.mp4`,
+      publisher: {
+        '@type': 'Organization',
+        name: 'Action Maker',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://actionmaker.be/logo.png',
+        },
+      },
+    })
+  : '';
+
+// Debug log for JSON-LD
+console.log('JSON-LD Debug:', {
+  activityTitle: activity.data.title,
+  hasVideoUrl: !!activity.data['video-url'],
+  jsonldLength: jsonldString.length,
+  thumbnailUrl,
+  jsonld: jsonldString,
+});
+
+// Store in locals for middleware
+if (Astro.locals) {
+  // @ts-ignore
+  Astro.locals.jsonld =
+    jsonldString ||
+    JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: activity.data.title,
+      description: activity.data.description,
+      uploadDate: today,
+      thumbnailUrl: thumbnailUrl || 'https://actionmaker.be/logo.png',
+      duration: 'PT1H30M',
+      contentUrl: `https://actionmaker.be/videos/${activitySlug}.mp4`,
+      publisher: {
+        '@type': 'Organization',
+        name: 'Action Maker',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://actionmaker.be/logo.png',
+        },
+      },
+    });
+}
+
+// Canonical URL creation - use the non-prefixed URL for default language
+const canonicalUrl =
+  currentLang === 'nl' ? Astro.url.href.replace(`/${lang}/`, '/') : Astro.url.href;
+const fullTitle = `${activity.data.title} - Action Maker`;
+---
+
+<!doctype html>
+<html lang={currentLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={activity.data.description} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="canonical" href={canonicalUrl} />
+    <ViewTransitions />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={activity.data.description} />
+    <meta property="og:image" property="og:image:secure_url" content="/logo.png" />
+    <meta property="og:image:alt" content={activity.data.description} />
+    <meta property="og:url" content={Astro.url.href} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="/logo.png" />
+    <meta property="twitter:image:alt" content={activity.data.description} />
+    <meta property="twitter:url" content={Astro.url.href} />
+    <meta property="twitter:title" content={fullTitle} />
+    <meta property="twitter:description" content={activity.data.description} />
+    <title>{fullTitle}</title>
+
+    <!-- JSON-LD script - always include with activity data -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(
+        {
+          '@context': 'https://schema.org',
+          '@type': 'VideoObject',
+          name: activity.data.title,
+          description: activity.data.description,
+          uploadDate: today,
+          embedUrl: activity.data['video-url'] || '',
+          thumbnailUrl: `https://actionmaker.be/images/activities/${activitySlug}/${activitySlug}-1.jpg`,
+          duration: 'PT1H30M',
+          contentUrl: `https://actionmaker.be/videos/${activitySlug}.mp4`,
+          publisher: {
+            '@type': 'Organization',
+            name: 'Action Maker',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://actionmaker.be/logo.png',
+            },
+          },
+        },
+        null,
+        2
+      )}
+    />
+  </head>
+  <body>
+    <Navbar />
+
+    {/* Hero Section */}
+    <section class="relative min-h-[60vh] flex items-center -mt-20">
+      <div class="absolute inset-0 z-0">
+        <Image
+          src={heroImage}
+          alt={activity.data.title}
+          width={1920}
+          height={1080}
+          class="w-full h-full object-cover"
+          quality="high"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-transparent">
+        </div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 py-24 mt-16">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+          {activity.data.title}
+        </h1>
+        <p class="text-xl text-white/90 max-w-2xl">{activity.data.description}</p>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid lg:grid-cols-3 gap-12">
+        {/* Main Content */}
+        <div class="lg:col-span-2">
+          <div class="prose prose-lg max-w-none mb-12">
+            <Content />
+
+            {
+              activity.data.features && (
+                <div class="mt-8 not-prose">
+                  <h3 class="text-xl font-semibold mb-4">Features</h3>
+                  <ul class="space-y-3">
+                    {activity.data.features.map((feature: string) => (
+                      <li class="flex items-center gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            }
+          </div>
+
+          {
+            activity.data['video-url'] && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-8">Activity Video</h2>
+                <VideoPlayer videoUrl={activity.data['video-url']} />
+              </div>
+            )
+          }
+
+          {
+            images.length > 0 && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-8">Gallery</h2>
+                <Gallery images={images} imageImports={imageImports} />
+              </div>
+            )
+          }
+
+          {/* Booking Form */}
+          <div id="booking-form" class="pt-12 border-t">
+            <h2 class="text-3xl font-bold mb-8">Book This Activity</h2>
+            <BookingForm
+              client:load
+              activityTitle={activity.data.title}
+              isGame={activity.data.isGame || false}
+              isCityGame={activity.data.isCityGame || false}
+            />
+          </div>
+        </div>
+
+        {/* Sidebar */}
+        <div class="lg:col-span-1">
+          <Card className="p-6 sticky top-24">
+            <div class="space-y-6">
+              <div class="flex items-center gap-4">
+                <Users className="h-5 w-5 text-muted-foreground" />
+                <div>
+                  <p class="text-sm text-muted-foreground">Group Size</p>
+                  <p class="font-medium">{activity.data.groupSize}</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <Clock className="h-5 w-5 text-muted-foreground" />
+                <div>
+                  <p class="text-sm text-muted-foreground">Duration</p>
+                  <p class="font-medium">{activity.data.duration}</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <Calendar className="h-5 w-5 text-muted-foreground" />
+                <div>
+                  <p class="text-sm text-muted-foreground">Availability</p>
+                  <p class="font-medium">{activity.data.availability || 'All year round'}</p>
+                </div>
+              </div>
+
+              <a class="block" href="#booking-form">
+                <Button className="w-full bg-red-600 hover:bg-red-700 text-white group">
+                  Request Quote
+                  <ArrowRight
+                    className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+                  />
+                </Button>
+              </a>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+    <Toaster client:only="react" />
+  </body>
+</html>

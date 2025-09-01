@@ -1,0 +1,23 @@
+---
+import '@/styles/globals.css';
+import Layout from '../../layouts/Layout.astro';
+import Hero from '@/components/Hero.astro';
+import Features from '@/components/Features.astro';
+import TeamActivities from '@/components/TeamActivities.astro';
+import Testimonials from '@/components/Testimonials/index.astro';
+import FAQ from '@/components/FAQ.astro';
+import CTA from '@/components/CTA.astro';
+---
+
+<Layout
+  title="Activités de Team Building | Action Maker"
+  isHomePage={true}
+  description="Découvrez nos activités de team building uniques et créez des expériences inoubliables pour votre équipe."
+>
+  <Hero />
+  <TeamActivities />
+  <Features />
+  <Testimonials />
+  <FAQ />
+  <CTA />
+</Layout>

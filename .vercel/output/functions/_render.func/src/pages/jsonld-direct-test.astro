@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import JsonLD from '../components/JsonLD.astro';
+
+// Manually create test data
+const title = 'JSON-LD Direct Test';
+const description = 'Testing JSON-LD prop passing';
+
+// Create structured data directly
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: 'Direct Test Video',
+  description: 'Testing direct jsonld prop',
+  uploadDate: '2023-01-01',
+  embedUrl: 'https://example.com/test-video',
+  thumbnailUrl: 'https://example.com/thumbnail.jpg',
+};
+
+// Convert to string for logging
+const jsonldString = JSON.stringify(jsonld);
+
+// Log what we're doing
+console.log('📝 DIRECT TEST PAGE:', {
+  jsonldLength: jsonldString.length,
+  jsonld: jsonldString,
+});
+
+// Also store in locals for middleware
+if (Astro.locals) {
+  // @ts-ignore
+  Astro.locals.jsonld = jsonldString;
+  console.log('📌 DIRECT TEST STORED IN LOCALS');
+}
+---
+
+<Layout title={title} description={description}>
+  <div style="padding: 2rem; max-width: 800px; margin: 0 auto;">
+    <h1>{title}</h1>
+    <p>{description}</p>
+
+    <div style="background: #f0f0f0; padding: 20px; margin: 20px 0; border-radius: 8px;">
+      <h2>JSON-LD Test:</h2>
+      <pre>{jsonldString}</pre>
+
+      <!-- Direct use of the JsonLD component -->
+      <div style="margin-top: 20px;">
+        <p><strong>Status:</strong> Using JsonLD component directly in page body</p>
+      </div>
+    </div>
+
+    <p>
+      <a
+        href="/en/teambuildings/indoor-scherminitiatie"
+        style="color: blue; text-decoration: underline; margin-right: 10px;">Go to Activity Page</a
+      >
+      <a href="/test-jsonld" style="color: blue; text-decoration: underline; margin-right: 10px;"
+        >View Component Test</a
+      >
+      <a href="/extreme-test" style="color: blue; text-decoration: underline;">View Extreme Test</a>
+    </p>
+  </div>
+
+  <!-- Add the JsonLD component in the body as well, just in case -->
+  <JsonLD data={jsonld} />
+</Layout>
