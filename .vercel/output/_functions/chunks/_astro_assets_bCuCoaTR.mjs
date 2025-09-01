@@ -1,6 +1,6 @@
 import { j as joinPaths, i as isRemotePath } from './path_BE3d7IIh.mjs';
-import { A as AstroError, a2 as ExpectedImage, a3 as LocalImageUsedWrongly, a4 as MissingImageDimension, a5 as UnsupportedImageFormat, a6 as IncompatibleDescriptorOptions, a7 as UnsupportedImageConversion, a8 as toStyleString, a9 as NoImageMetadata, aa as FailedToFetchRemoteImageDimensions, ab as ExpectedImageOptions, ac as ExpectedNotESMImage, ad as InvalidImageService, b as createAstro, c as createComponent, ae as ImageMissingAlt, m as maybeRenderHead, e as addAttribute, af as spreadAttributes, a as renderTemplate, ag as ExperimentalFontsNotEnabled, ah as FontFamilyNotFound, u as unescapeHTML } from './astro/server_Q0G1hIgh.mjs';
-import { D as DEFAULT_OUTPUT_FORMAT, V as VALID_SUPPORTED_FORMATS, a as DEFAULT_HASH_PROPS } from './consts_HRoi08cg.mjs';
+import { A as AstroError, a2 as ExpectedImage, a3 as LocalImageUsedWrongly, a4 as MissingImageDimension, a5 as UnsupportedImageFormat, a6 as IncompatibleDescriptorOptions, a7 as UnsupportedImageConversion, a8 as toStyleString, a9 as NoImageMetadata, aa as FailedToFetchRemoteImageDimensions, ab as ExpectedImageOptions, ac as ExpectedNotESMImage, ad as InvalidImageService, b as createAstro, c as createComponent, ae as ImageMissingAlt, m as maybeRenderHead, e as addAttribute, af as spreadAttributes, a as renderTemplate, ag as ExperimentalFontsNotEnabled, ah as FontFamilyNotFound, u as unescapeHTML } from './astro/server_BRSFUN6r.mjs';
+import { D as DEFAULT_HASH_PROPS, a as DEFAULT_OUTPUT_FORMAT, V as VALID_SUPPORTED_FORMATS } from './consts_C6ST87xC.mjs';
 import { t as typeHandlers, a as types } from './index_MaT6fT73.mjs';
 import * as mime from 'mrmime';
 import 'clsx';
@@ -178,15 +178,9 @@ function isLocalService(service) {
   }
   return "transform" in service;
 }
-function parseQuality(quality) {
-  let result = parseInt(quality);
-  if (Number.isNaN(result)) {
-    return quality;
-  }
-  return result;
-}
 const sortNumeric = (a, b) => a - b;
 const baseService = {
+  propertiesToHash: DEFAULT_HASH_PROPS,
   validateOptions(options) {
     if (!options.src || !isRemoteImage(options.src) && !isESMImportedImage(options.src)) {
       throw new AstroError({
@@ -507,7 +501,7 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      './sharp_BPsoT1ei.mjs'
+      './build-service_aqvZbCxV.mjs'
     ).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
@@ -769,7 +763,7 @@ const $$Font = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${preload && data.preloadData.map(({ url, type }) => renderTemplate`<link rel="preload"${addAttribute(url, "href")} as="font"${addAttribute(`font/${type}`, "type")} crossorigin>`)}<style>${unescapeHTML(data.css)}</style>`;
 }, "/Users/anthonycandaele/Projects/ActionMaker/website/node_modules/astro/components/Font.astro", void 0);
 
-const imageConfig = {"endpoint":{"route":"/_image"},"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[],"responsiveStyles":false};
+const imageConfig = {"endpoint":{"route":"/_image"},"service":{"entrypoint":"@astrojs/vercel/build-image-service","config":{"domains":[],"sizes":[320,640,1280],"formats":["image/avif","image/webp"]}},"domains":[],"remotePatterns":[],"responsiveStyles":false,"breakpoints":[320,640,1280]};
 							const getImage = async (options) => await getImage$1(options, imageConfig);
 
 const _astro_assets = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -782,4 +776,4 @@ const _astro_assets = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePrope
   isLocalService
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { $$Image as $, _astro_assets as _, isRemoteAllowed as a, baseService as b, getConfiguredImageService as g, imageConfig as i, parseQuality as p };
+export { $$Image as $, _astro_assets as _, isRemoteAllowed as a, isESMImportedImage as b, baseService as c, getConfiguredImageService as g, imageConfig as i };

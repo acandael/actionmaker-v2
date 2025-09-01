@@ -9,7 +9,16 @@ export default defineConfig({
   site: 'https://www.actionmaker.be',
   output: 'server',
   adapter: vercel({
-    runtime: 'nodejs20.x'
+    imageService: true,
+    imagesConfig: {
+      domains: [],
+      sizes: [320, 640, 1280],
+      formats: ['image/avif', 'image/webp'],
+    },
+    webAnalytics: {
+      enabled: true,
+    },
+    nodeVersion: '20.x',
   }),
   i18n: {
     defaultLocale: 'nl',
