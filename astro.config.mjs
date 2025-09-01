@@ -8,7 +8,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://www.actionmaker.be',
   output: 'server',
-  adapter: vercel(),
+  adapter: vercel({
+    runtime: 'nodejs22.x'
+  }),
   i18n: {
     defaultLocale: 'nl',
     locales: ['nl', 'fr', 'en'],
