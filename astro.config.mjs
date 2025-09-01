@@ -9,7 +9,7 @@ export default defineConfig({
   site: 'https://www.actionmaker.be',
   output: 'server',
   adapter: vercel({
-    runtime: 'nodejs22.x'
+    nodeVersion: '22.x'
   }),
   i18n: {
     defaultLocale: 'nl',
