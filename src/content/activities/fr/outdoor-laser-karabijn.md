@@ -10,11 +10,9 @@ availability: "Toute l'année"
 features: ['relaxation', 'dynamique de groupe', 'coaching']
 gallery:
   [
-    'outdoor-laser-karabijn/outdoor-laser-karabijn-2.jpg',
-    'outdoor-laser-karabijn/outdoor-laser-karabijn-3.jpg',
+    'outdoor-laser-karabijn/outdoor-laser-karabijn-1.jpg',
     'outdoor-laser-karabijn/outdoor-laser-karabijn-4.jpg',
     'outdoor-laser-karabijn/outdoor-laser-karabijn-5.jpg',
-    'outdoor-laser-karabijn/outdoor-laser-karabijn-6.jpg',
     'outdoor-laser-karabijn/outdoor-laser-karabijn-7.jpg',
   ]
 ---
