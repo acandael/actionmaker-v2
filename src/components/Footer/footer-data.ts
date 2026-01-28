@@ -136,6 +136,7 @@ export const footerLinks: FooterSection[] = [
       { id: 'roofvogelworkshop', url: '/teambuildings/roofvogelworkshop' },
       { id: 'djembe', url: '/teambuildings/djembe' },
       { id: 'alpacaworkshop', url: '/teambuildings/alpacaworkshop' },
+      { id: 'wijnworkshop', url: '/teambuildings/wijnworkshop' },
     ],
   },
 ];

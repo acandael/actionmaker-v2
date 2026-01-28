@@ -1,5 +1,5 @@
 ---
-title: 'Wijnworkshop'
+title: 'Atelier Vin'
 description: 'Ne dites pas simplement dégustation à cet atelier de vin dynamique. Lors de cette aventure interactive, vous apprendrez en groupe à vraiment comprendre le vin'
 image: 'wijnworkshop/wijnworkshop-1.jpg'
 priority: 10
