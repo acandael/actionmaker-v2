@@ -49,7 +49,7 @@ export const footerLinks: FooterSection[] = [
     links: [
       { id: 'outdoor-scherminitiatie', url: '/teambuildings/outdoor-scherminitiatie' },
       { id: 'outdoor-mobiele-escape-room', url: '/teambuildings/outdoor-mobiele-escape-room' },
-      { id: 'laser-kleiduifschieten', url: '/teambuildings/laser-kleiduifschieten' },
+      { id: 'laserkleiduifschieten', url: '/teambuildings/laserkleiduifschieten' },
       { id: 'dronevliegen', url: '/teambuildings/dronevliegen' },
       { id: 'bijlwerpen', url: '/teambuildings/bijlwerpen' },
       { id: 'outdoor-laser-karabijn', url: '/teambuildings/outdoor-laser-karabijn' },
@@ -105,7 +105,7 @@ export const footerLinks: FooterSection[] = [
     links: [
       { id: 'laser-schermen', url: '/teambuildings/laser-schermen' },
       { id: 'dronevliegen', url: '/teambuildings/dronevliegen' },
-      { id: 'laser-kleiduifschieten', url: '/teambuildings/laser-kleiduifschieten' },
+      { id: 'laserkleiduifschieten', url: '/teambuildings/laserkleiduifschieten' },
       { id: 'virtual-reality', url: '/teambuildings/virtual-reality' },
       { id: 'laser-biatlon', url: '/teambuildings/laser-biatlon' },
       { id: 'mobiele-escape-room', url: '/teambuildings/mobiele-escape-room' },
