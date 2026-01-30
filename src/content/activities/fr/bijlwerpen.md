@@ -1,7 +1,7 @@
 ---
 title: 'Lancer de Hache'
 description: 'Le lancer de hache est étonnamment facile, la plupart des gens réussissent à lancer la hache dans la cible dans les cinq à dix premiers lancers'
-image: 'bijlwerpen/bijlwerpen-1.jpg'
+image: 'bijlwerpen/bijlwerpen-3.jpg'
 video-url: 'https://iframe.mediadelivery.net/embed/369439/e79edaba-57fe-41d7-960f-d939c3353d80'
 priority: 4
 features:
@@ -10,12 +10,8 @@ features:
   - 'relaxation'
 gallery:
   [
-    'bijlwerpen/bijlwerpen-2.jpg',
     'bijlwerpen/bijlwerpen-3.jpg',
     'bijlwerpen/bijlwerpen-4.jpg',
-    'bijlwerpen/bijlwerpen-5.jpg',
-    'bijlwerpen/bijlwerpen-6.jpg',
-    'bijlwerpen/bijlwerpen-7.jpg',
   ]
 categories: ['outdoor', 'actief']
 duration: '30 minutes - 2 heures'
