@@ -12,7 +12,7 @@ features:
   - 'positief groepsgevoel'
   - 'samenspel'
   - 'communicatie'
-gallery: ['outdoor-djembe/outdoor-djembe-2.jpg']
+gallery: []
 ---
 
 Deze teambuilding is ideaal om de teamgeest te versterken. Als één team muziek maken creëert een unieke ervaring en zorgt voor een positief groepsgevoel. Het laat collega’s inzetten op samenspel en biedt hun een andere manier om met elkaar in communicatie te treden. De groepsdynamiek wordt hierdoor positief beïnvloed. Voorkennis is niet vereist. Dit kan gecombineerd worden met bijvoorbeeld ecopercussie

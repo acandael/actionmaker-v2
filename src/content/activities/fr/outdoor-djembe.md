@@ -8,7 +8,7 @@ duration: '30 minutes - 2 heures'
 groupSize: 'Maximum 250 personnes'
 availability: 'Sur demande'
 features: ['esprit', 'musique', 'culture']
-gallery: ['outdoor-djembe/outdoor-djembe-2.jpg']
+gallery: []
 ---
 
 L'atelier djembé est une expérience musicale unique qui rassemble les participants autour des rythmes africains. Sous la direction d'un percussionniste professionnel, les équipes apprennent les techniques de base du djembé et créent ensemble une performance musicale impressionnante.

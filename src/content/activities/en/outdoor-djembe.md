@@ -12,7 +12,7 @@ features:
   - 'Positive group feeling'
   - 'Playing together'
   - 'Communication'
-gallery: ['outdoor-djembe/outdoor-djembe-2.jpg']
+gallery: []
 ---
 
 This team building is ideal for strengthening team spirit. Making music together as a team creates a unique experience and provides a positive group feeling. It allows colleagues to focus on playing together and offers them a different way of communicating with each other. The group dynamics are positively influenced as a result. No prior knowledge is required. This can be combined with eco-percussion, for example.

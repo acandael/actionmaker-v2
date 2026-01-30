@@ -9,7 +9,6 @@ features:
   - 'Réparation de vaisseau spatial'
   - 'Communication spatiale'
 gallery:
-  - 'space-games/space-games-2.jpg'
   - 'space-games/space-games-3.jpg'
   - 'space-games/space-games-4.jpg'
   - 'space-games/space-games-5.jpg'

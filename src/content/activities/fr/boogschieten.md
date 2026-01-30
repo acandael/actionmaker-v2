@@ -10,7 +10,6 @@ features:
   - 'teamspirit'
 gallery:
   [
-    'boogschieten/boogschieten-2.jpg',
     'boogschieten/boogschieten-3.jpg',
     'boogschieten/boogschieten-4.jpg',
     'boogschieten/boogschieten-5.jpg',
