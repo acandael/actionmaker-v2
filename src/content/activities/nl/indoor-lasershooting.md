@@ -17,7 +17,7 @@ gallery:
   ]
 categories: ['indoor', 'innovaction']
 duration: '30 minuten - 2 uur'
-groupSize: '8-30 personen'
+groupSize: '6-50 personen'
 availability: 'Op aanvraag'
 ---
 

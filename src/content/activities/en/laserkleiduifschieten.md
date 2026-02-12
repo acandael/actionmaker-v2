@@ -15,12 +15,18 @@ features:
   - 'Competition element possible'
 gallery:
   [
+    'laserkleiduifschieten/laserkleiduifschieten-1.jpg',
     'laserkleiduifschieten/laserkleiduifschieten-2.jpg',
     'laserkleiduifschieten/laserkleiduifschieten-3.jpg',
     'laserkleiduifschieten/laserkleiduifschieten-4.jpg',
     'laserkleiduifschieten/laserkleiduifschieten-5.jpg',
     'laserkleiduifschieten/laserkleiduifschieten-6.jpg',
     'laserkleiduifschieten/laserkleiduifschieten-7.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-8.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-9.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-10.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-11.jpg',
+    'laserkleiduifschieten/laserkleiduifschieten-12.jpg',
   ]
 ---
 
