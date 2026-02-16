@@ -11,8 +11,8 @@ features:
   - 'Een Race tegen de Tijd: Zorg ervoor dat jullie de bekers vinden voordat de rivalen toeslaan.'
 gallery: ['gents-stadsspel/gents-stadsspel-2.jpg']
 categories: ['city-games']
-duration: '2-3 uur'
-groupSize: '1-15 personen'
+duration: '3-5 uur'
+groupSize: '2-100 personen'
 availability: 'Op aanvraag'
 ---
 

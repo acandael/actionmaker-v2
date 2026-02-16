@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, Clock, Calendar, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Users, Clock, Calendar, CheckCircle2, DoorOpen } from 'lucide-react';
 import { BookingForm } from './BookingForm.tsx';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import VideoPlayer from '@/components/TeamActivityDetail/VideoPlayer.astro';
@@ -284,6 +284,16 @@ const fullTitle = `${activity.data.title} - Action Maker`;
                 <div>
                   <p class="text-sm text-muted-foreground">Beschikbaarheid</p>
                   <p class="font-medium">{activity.data.availability || 'All year round'}</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <DoorOpen className="h-5 w-5 text-muted-foreground" />
+                <div>
+                  <p class="text-sm text-muted-foreground">Vrije toegang</p>
+                  <p class="font-medium">
+                    {activity.data.access || 'Geschikt voor vrije toegang en family days'}
+                  </p>
                 </div>
               </div>
 

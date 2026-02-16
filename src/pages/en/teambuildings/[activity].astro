@@ -3,7 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2, DoorOpen } from 'lucide-react';
 import { BookingForm } from './BookingForm.tsx';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import VideoPlayer from '@/components/TeamActivityDetail/VideoPlayer.astro';
@@ -154,6 +154,16 @@ const images = activity.data.gallery || [];
               <div>
                 <p class="text-sm text-muted-foreground">{t('activity.availability')}</p>
                 <p class="font-medium">{activity.data.availability}</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <DoorOpen className="h-5 w-5 text-muted-foreground" />
+              <div>
+                <p class="text-sm text-muted-foreground">Free admission</p>
+                <p class="font-medium">
+                  {activity.data.access || 'Suitable for free admission and family days'}
+                </p>
               </div>
             </div>
 

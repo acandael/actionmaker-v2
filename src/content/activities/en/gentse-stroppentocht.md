@@ -1,5 +1,5 @@
 ---
-title: 'Ghent City Game'
+title: 'Ghent Noose Tour'
 description: 'Team Building in Ghent: Discover, Play & Win!'
 image: 'gentse-stroppentocht/gentse-stroppentocht-1.jpg'
 priority: 1

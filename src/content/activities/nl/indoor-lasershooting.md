@@ -19,6 +19,7 @@ categories: ['indoor', 'innovaction']
 duration: '30 minuten - 2 uur'
 groupSize: '6-50 personen'
 availability: 'Op aanvraag'
+access: 'geschikt voor vrije toegang en family days'
 ---
 
 Wil jij je schietkunsten laten zien in een spectaculaire, maar volledig veilige setting? Indoor laser kleiduifschieten biedt spanning en plezier voor iedereen, zelfs voor de minder grote durfallen. Ideaal voor binnen of als de afstand te klein is voor het gewone laserkleiduifschieten.

@@ -11,8 +11,8 @@ features:
   - 'A Race Against Time: Make sure to find the cups before the rivals strike.'
 gallery: ['gents-stadsspel/gents-stadsspel-2.jpg']
 categories: ['city-games']
-duration: '2-3 heures'
-groupSize: '1-15 personnes'
+duration: '3-5 heures'
+groupSize: '2-100 personnes'
 availability: 'Sur demande'
 ---
 
