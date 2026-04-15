@@ -61,7 +61,7 @@ export const BookingFormEmail = ({
               <strong>Telefoon:</strong> {phone}
             </Text>
             <Text style={text}>
-              <strong>Datum:</strong> {date}
+              <strong>Datum:</strong> {date.split('-').reverse().join('-')}
             </Text>
             <Text style={text}>
               <strong>Aantal personen:</strong> {groupSize}
