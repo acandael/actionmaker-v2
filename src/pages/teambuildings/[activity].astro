@@ -1,9 +1,9 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, Clock, Calendar, CheckCircle2, DoorOpen } from 'lucide-react';
-import { BookingForm } from './BookingForm.tsx';
+import { BookingForm } from '@/components/TeamActivityDetail/BookingForm';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import VideoPlayer from '@/components/TeamActivityDetail/VideoPlayer.astro';
 import { Image } from 'astro:assets';
@@ -12,7 +12,7 @@ import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import Footer from '@/components/Footer/Footer.astro';
 import Navbar from '@/components/Navbar/Navbar.astro';
 import { Toaster } from '@/components/ui/sonner';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import '@/styles/globals.css';
 
 // Get current locale
@@ -26,16 +26,18 @@ const { activity: activitySlug } = Astro.params;
 const allActivities = await getCollection('activities');
 
 // For Dutch (default locale), look for activities in nl folder
-const activity = allActivities.find((a) => {
-  const fullId = `nl/${activitySlug}.md`;
-  return a.id === fullId;
-});
+const activity = allActivities.find((a) => a.id === `nl/${activitySlug}`);
 
 if (!activity) {
+  console.error(
+    `Activity not found: slug="${activitySlug}". Available matching IDs:`,
+    allActivities.filter((a) => a.id.includes(activitySlug ?? '')).map((a) => a.id)
+  );
+
   return Astro.redirect('/404');
 }
 
-const { Content } = await activity.render();
+const { Content } = await render(activity);
 
 // Import all images
 const imageImports = import.meta.glob<{ default: ImageMetadata }>(
@@ -157,7 +159,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <link rel="canonical" href={canonicalUrl} />
-    <ViewTransitions />
+    <ClientRouter />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -250,12 +252,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
           {/* Booking Form */}
           <div id="booking-form" class="pt-12 border-t">
             <!-- <h2 class="text-3xl font-bold mb-8">Boek deze activiteit</h2> -->
-            <BookingForm
-              client:visible
-              activityTitle={activity.data.title}
-              isGame={activity.data.isGame || false}
-              isCityGame={activity.data.isCityGame || false}
-            />
+            <BookingForm activityTitle={activity.data.title} isGame={false} lang="nl" client:load />
           </div>
         </div>
 

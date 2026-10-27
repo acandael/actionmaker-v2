@@ -1,7 +1,12 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
 const activities = defineCollection({
-  type: 'content',
+  loader: glob({
+    pattern: '**/*.md',
+    base: './src/content/activities',
+  }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -10,13 +15,7 @@ const activities = defineCollection({
     duration: z.string(),
     groupSize: z.string(),
     availability: z.string(),
-    priority: z.coerce
-      .number()
-      .int()
-      .default(999)
-      .transform((val) => {
-        return val;
-      }),
+    priority: z.coerce.number().int().default(999),
     features: z.array(z.string()),
     gallery: z.array(z.string()),
     'video-url': z.string().optional(),
@@ -26,7 +25,10 @@ const activities = defineCollection({
 });
 
 const categories = defineCollection({
-  type: 'data',
+  loader: glob({
+    pattern: '**/*.json',
+    base: './src/content/categories',
+  }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -36,7 +38,10 @@ const categories = defineCollection({
 });
 
 const testimonials = defineCollection({
-  type: 'data',
+  loader: glob({
+    pattern: '**/*.json',
+    base: './src/content/testimonials',
+  }),
   schema: z.object({
     name: z.string(),
     company: z.string(),
@@ -46,7 +51,10 @@ const testimonials = defineCollection({
 });
 
 const logos = defineCollection({
-  type: 'data',
+  loader: glob({
+    pattern: '**/*.json',
+    base: './src/content/logos',
+  }),
   schema: z.object({
     name: z.string(),
     image: z.string(),
@@ -54,7 +62,10 @@ const logos = defineCollection({
 });
 
 const faqs = defineCollection({
-  type: 'data',
+  loader: glob({
+    pattern: '**/*.json',
+    base: './src/content/faqs',
+  }),
   schema: z.object({
     question: z.string(),
     answer: z.string(),
@@ -62,7 +73,10 @@ const faqs = defineCollection({
 });
 
 const images = defineCollection({
-  type: 'data',
+  loader: glob({
+    pattern: '**/*.json',
+    base: './src/content/images',
+  }),
   schema: z.object({
     src: z.string(),
     alt: z.string().optional(),

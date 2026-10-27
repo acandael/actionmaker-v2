@@ -1,10 +1,10 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2, DoorOpen } from 'lucide-react';
-import { BookingForm } from './BookingForm.tsx';
+import { BookingForm } from '@/components/TeamActivityDetail/BookingForm';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import VideoPlayer from '@/components/TeamActivityDetail/VideoPlayer.astro';
 import { Image } from 'astro:assets';
@@ -22,14 +22,19 @@ const { activity: activitySlug } = Astro.params;
 const activities = await getCollection('activities');
 
 // Find the activity that matches the current locale and slug
-const activity = activities.find((activity) => activity.id === `${lang}/${activitySlug}.md`);
+const activity = activities.find((activity) => activity.id === `en/${activitySlug}`);
 
 if (!activity) {
+  console.error(`English activity not found: en/${activitySlug}`);
+  console.log(
+    'Available English activity IDs:',
+    activities.filter((activity) => activity.id.startsWith('en/')).map((activity) => activity.id)
+  );
   return Astro.redirect('/404');
 }
 
 // Get the rendered content
-const { Content } = await activity.render();
+const { Content } = await render(activity);
 
 // Import all images
 const imageImports = import.meta.glob<{ default: ImageMetadata }>(
@@ -120,12 +125,7 @@ const images = activity.data.gallery || [];
         {/* Booking Form */}
         <div id="booking-form" class="pt-12 border-t">
           <!-- <h2 class="text-3xl font-bold mb-8">{t('activity.booking-title')}</h2> -->
-          <BookingForm
-            client:load
-            activityTitle={activity.data.title}
-            isGame={activity.data.isGame}
-            isCityGame={activity.data.isCityGame}
-          />
+          <BookingForm activityTitle={activity.data.title} isGame={false} lang="en" client:load />
         </div>
       </div>
 

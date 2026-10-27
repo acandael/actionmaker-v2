@@ -1,10 +1,10 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, Clock, Euro, Calendar, CheckCircle2, DoorOpen } from 'lucide-react';
-import { BookingForm } from './BookingForm.tsx';
+import { ArrowRight, Users, Clock, Calendar, CheckCircle2, DoorOpen } from 'lucide-react';
+import { BookingForm } from '@/components/TeamActivityDetail/BookingForm';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import VideoPlayer from '@/components/TeamActivityDetail/VideoPlayer.astro';
 import { Image } from 'astro:assets';
@@ -21,16 +21,18 @@ const { activity: activitySlug } = Astro.params;
 const allActivities = await getCollection('activities');
 
 // For French locale, look for activities in fr folder
-const activity = allActivities.find((a) => {
-  const fullId = `fr/${activitySlug}.md`;
-  return a.id === fullId;
-});
+const activity = allActivities.find((a) => a.id === `fr/${activitySlug}`);
 
 if (!activity) {
+  console.error(`French activity not found: fr/${activitySlug}`);
+  console.log(
+    'Available French activity IDs:',
+    allActivities.filter((a) => a.id.startsWith('fr/')).map((a) => a.id)
+  );
   return Astro.redirect('/404');
 }
 
-const { Content } = await activity.render();
+const { Content } = await render(activity);
 
 // Import all images
 const imageImports = import.meta.glob<{ default: ImageMetadata }>(
@@ -115,12 +117,7 @@ const images = activity.data.gallery || [];
         {/* Booking Form */}
         <div id="booking-form" class="pt-12 border-t">
           <!-- <h2 class="text-3xl font-bold mb-8">{t('activity.booking-title')}</h2> -->
-          <BookingForm
-            activityTitle={activity.data.title}
-            isGame={activity.data.isGame}
-            isCityGame={activity.data.isCityGame}
-            client:load
-          />
+          <BookingForm activityTitle={activity.data.title} isGame={false} lang="fr" client:load />
         </div>
       </div>
 
