@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, Clock, Calendar, CheckCircle2 } from 'lucide-react';
-import { BookingForm } from '../../teambuildings/BookingForm.tsx';
+import { BookingForm } from '@/components/TeamActivityDetail/BookingForm';
 import Gallery from '@/components/TeamActivityDetail/Gallery.astro';
 import VideoPlayer from '@/components/TeamActivityDetail/VideoPlayer.astro';
 import { Image } from 'astro:assets';
@@ -12,7 +12,7 @@ import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import Footer from '@/components/Footer/Footer.astro';
 import Navbar from '@/components/Navbar/Navbar.astro';
 import { Toaster } from '@/components/ui/sonner';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import '@/styles/globals.css';
 
 // Get current locale
@@ -28,10 +28,7 @@ const { activity: activitySlug } = Astro.params;
 const allActivities = await getCollection('activities');
 
 // Find the activity in the specified language
-const activity = allActivities.find((a) => {
-  const fullId = `${currentLang}/${activitySlug}.md`;
-  return a.id === fullId;
-});
+const activity = allActivities.find((a) => a.id === `${currentLang}/${activitySlug}`);
 
 if (!activity) {
   return Astro.redirect('/404');
@@ -171,7 +168,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <link rel="canonical" href={canonicalUrl} />
-    <ViewTransitions />
+    <ClientRouter />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -294,6 +291,7 @@ const fullTitle = `${activity.data.title} - Action Maker`;
               activityTitle={activity.data.title}
               isGame={activity.data.isGame || false}
               isCityGame={activity.data.isCityGame || false}
+              lang={currentLang}
             />
           </div>
         </div>
