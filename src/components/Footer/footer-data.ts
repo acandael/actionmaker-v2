@@ -79,6 +79,7 @@ export const footerLinks: FooterSection[] = [
       { id: 'outdoor-james-bond', url: '/teambuildings/outdoor-james-bond' },
       { id: 'zweedse-games', url: '/teambuildings/zweedse-games' },
       { id: 'outdoor-voetbalmanie', url: '/teambuildings/outdoor-voetbalmanie' },
+      { id: 'kermis', url: '/teambuildings/kermis' },
     ],
   },
   {
