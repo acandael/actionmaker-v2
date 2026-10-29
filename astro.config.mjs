@@ -27,7 +27,7 @@ export default defineConfig({
     },
     '/djembe': {
       status: 302,
-      destination: '/teambuildings/djembe',
+      destination: '/teambuildings/indoor-djembe',
     },
     '/sumoworstelen': {
       status: 302,
