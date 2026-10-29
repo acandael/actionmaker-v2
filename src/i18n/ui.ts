@@ -384,7 +384,7 @@ export const ui = {
     'footer.sections.citygames': 'City Games',
 
     // Features
-    'features.title': 'Why Choose Action Maker',
+    'features.title': 'Why Choose',
     'features.flexible.title': 'Flexible',
     'features.flexible.description':
       'An unforeseen change at the last moment? No problem, we are flexible and can adapt your activity/team building to any circumstance.',
