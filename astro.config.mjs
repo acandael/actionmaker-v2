@@ -17,6 +17,10 @@ export default defineConfig({
     },
   },
   redirects: {
+    '/index.html': {
+      status: 302,
+      destination: '/',
+    },
     '/scherminitiatie': {
       status: 302,
       destination: '/teambuildings/indoor-scherminitiatie',
@@ -60,6 +64,26 @@ export default defineConfig({
     '/pistoolschieten': {
       status: 302,
       destination: '/teambuildings/luchtdruk-pistoolschieten',
+    },
+    '/fr/teambuildings/arrowtag': {
+      status: 302,
+      destination: '/fr/teambuildings/outdoor-arrow-tag',
+    },
+    '/fr/teambuildings/laser-biatlon': {
+      status: 302,
+      destination: '/fr/teambuildings/indoor-lasershooting',
+    },
+    '/fr/teambuildings/laser-schermen': {
+      status: 302,
+      destination: '/fr/teambuildings/indoor-laserschermen',
+    },
+    '/fr/teambuildings/middeleeuws-dag': {
+      status: 302,
+      destination: '/fr/teambuildings/middeleeuwse-dag',
+    },
+    '/fr/teambuildings/mobiele-escape-room': {
+      status: 302,
+      destination: '/fr/teambuildings/indoor-mobiele-escape-room',
     },
   },
   integrations: [react()],
