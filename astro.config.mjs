@@ -85,6 +85,22 @@ export default defineConfig({
       status: 302,
       destination: '/fr/teambuildings/indoor-mobiele-escape-room',
     },
+    '/fr/teambuildings/scherminitiatie': {
+      status: 302,
+      destination: '/fr/teambuildings/indoor-scherminitiatie',
+    },
+    '/fr/teambuildings/spy-academy': {
+      status: 302,
+      destination: '/fr/teambuildings/indoor-james-bond',
+    },
+    '/fr/teambuildings/volksspelen': {
+      status: 302,
+      destination: '/fr/teambuildings/outdoor-volksspelen',
+    },
+    '/en/teambuildings/mobiele-escape-room': {
+      status: 302,
+      destination: '/en/teambuildings/indoor-mobiele-escape-room',
+    },
   },
   integrations: [react()],
   prefetch: false,

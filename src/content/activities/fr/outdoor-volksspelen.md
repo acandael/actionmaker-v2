@@ -19,9 +19,9 @@ gallery:
     'outdoor-volksspelen/outdoor-volksspelen-7.jpg',
   ]
 categories: ['outdoor']
-duration: '30 minuten-3 uur'
-groupSize: '8 - 500 personen'
-availability: 'Op aanvraag'
+duration: '30 minutes -3 heures'
+groupSize: '8 - 500 personnes'
+availability: 'Sur demande'
 ---
 
 Revivez la convivialité d'antan avec une série de jeux populaires traditionnels. Cette activité nostalgique est parfaite si vous recherchez une animation décontractée, accessible et divertissante pour votre événement. Que ce soit pour un accès libre, une fête ou un team building, les jeux populaires rassemblent tout le monde.
