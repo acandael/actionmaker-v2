@@ -210,7 +210,7 @@ export function BookingForm({ activityTitle, lang = 'nl' }: BookingFormProps) {
   };
 
   return (
-    <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+    <Card className="p-4 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit, () => {
