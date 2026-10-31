@@ -33,14 +33,16 @@ const getLocalizedPath = (path: string) => {
       {/* Left Content */}
       <div class="space-y-12">
         <div class="space-y-6">
-          <h2 class="text-balance text-3xl md:text-5xl lg:text-5xl font-bold tracking-tight">
+          <h2
+            class="text-balance text-center lg:text-start text-2xl md:text-5xl lg:text-5xl font-bold tracking-tight"
+          >
             <span class="text-red-600">{t('cta.heading.highlight')}&nbsp;</span>
             {t('cta.heading.line1')}
             <br />
             <span class="text-red-600">{t('cta.heading.highlight')}&nbsp;</span>
             {t('cta.heading.line2')}
           </h2>
-          <p class="text-xl text-muted-foreground max-w-xl">
+          <p class="text-xl text-center lg:text-start text-muted-foreground max-w-xl">
             {t('cta.ontdek')}
           </p>
         </div>
@@ -50,8 +52,10 @@ const getLocalizedPath = (path: string) => {
           {
             stats.map(({ value, label }) => (
               <div class="space-y-2">
-                <div class="text-3xl font-bold text-green-600">{value}</div>
-                <div class="text-muted-foreground">{label}</div>
+                <div class="text-2xl lg:text-3xl text-center lg:text-start font-bold text-green-600">
+                  {value}
+                </div>
+                <div class="text-muted-foreground text-center lg:text-start">{label}</div>
               </div>
             ))
           }
