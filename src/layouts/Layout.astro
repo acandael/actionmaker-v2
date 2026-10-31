@@ -12,7 +12,7 @@ import Navbar from '@/components/Navbar/Navbar.astro';
 import Footer from '@/components/Footer/Footer.astro';
 import { getLangFromUrl } from '@/i18n/utils';
 
-const { title, isHomePage = false, description, jsonld } = Astro.props;
+const { title, isHomePage = false, isTeamActivityPage = false, description, jsonld } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 
 // Check for JSON-LD data from middleware
@@ -112,7 +112,7 @@ console.log('🧩 LAYOUT RECEIVED PROPS:', {
     )}
 
     <Navbar />
-    <main class:list={['min-h-screen lg:px-16 pb-32', { 'pt-20': !isHomePage }]}>
+    <main class:list={['min-h-screen', { 'pt-20': !isHomePage }]}>
       <slot />
     </main>
     <Footer />
