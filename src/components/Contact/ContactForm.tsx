@@ -94,12 +94,13 @@ export function ContactForm() {
   };
 
   return (
-    <div className="space-y-12 px-4 lg:px-8">
+    <div className="space-y-12 px-4">
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold tracking-tight">Heb je nog vragen?</h1>
-        <p className="text-lg text-muted-foreground max-w-2xl">
+        <h1 className="text-2xl text-center font-bold tracking-tight">Heb je nog vragen?</h1>
+        <p className="text-lg text-center text-muted-foreground max-w-2xl">
           Heb je nog vragen of heb je een idee voor een activiteit?
-          <br />
+        </p>
+        <p className="text-lg text-center text-muted-foreground max-w-2xl">
           Vraag vrijblijvend advies
         </p>
       </div>
