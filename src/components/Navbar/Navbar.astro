@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 import MobileMenu from './MobileMenu.astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import { languages } from '@/i18n/ui';
-import logo from '@/assets/logo.png';
+import Logo from '@/assets/logo.svg';
 import LanguageSelector from '../LanguageSelector.astro';
 
 const lang = getLangFromUrl(Astro.url);
@@ -30,7 +30,7 @@ const links = [
 >
   <div class="max-w-7xl mx-auto h-full px-4 flex items-center justify-between">
     <a href={getLocalizedPath('/')} class="flex items-center gap-2">
-      <Image src={logo} alt="Action Maker" width={150} height={76} />
+      <Logo />
     </a>
 
     <nav class="hidden md:flex items-center gap-8">
