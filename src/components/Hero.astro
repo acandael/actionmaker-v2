@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import heroImage from '../assets/hero.jpg';
@@ -40,8 +39,11 @@ const teamBuildingsUrl = lang === 'nl' ? '/teambuildings' : `/${lang}/teambuildi
         <h1 class="text-balance text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6">
           {t('home.hero.title')}
         </h1>
+        <p class="text-lg md:text-xl text-balance text-white/80 mb-6 md:mb-4">
+          {t('home.hero.paragraph1')}
+        </p>
         <p class="text-lg md:text-xl text-balance text-white/80 mb-6 md:mb-8">
-          {t('home.hero.subtitle')}
+          {t('home.hero.paragraph2')}
         </p>
       </div>
       <div class="flex justify-center">

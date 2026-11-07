@@ -10,8 +10,10 @@ export const ui = {
   nl: {
     // Home
     'home.hero.title': 'Originele teambuilding activiteiten in België',
-    'home.hero.subtitle':
-      'Op zoek naar een originele teambuilding in België? Action Maker organiseert verrassende en interactieve teambuilding activiteiten voor bedrijven, verenigingen en privé-groepen. Van actieve outdoor challenges en spannende citygames tot creatieve workshops: wij zorgen voor een onvergetelijke groepsbeleving.',
+    'home.hero.paragraph1':
+      'Op zoek naar een originele teambuilding? Action Maker organiseert verrassende en interactieve teambuilding activiteiten voor bedrijven, verenigingen en privé-groepen. ',
+    'home.hero.paragraph2':
+      'Van actieve outdoor challenges en spannende citygames tot creatieve workshops: wij zorgen voor een onvergetelijke groepsbeleving.',
     'home.hero.cta': 'Bekijk onze activiteiten/teambuildings',
 
     // Navigation
@@ -172,10 +174,12 @@ export const ui = {
   },
   fr: {
     // Home
-    'home.hero.title': 'Activités de team building originales en Belgique',
-    'home.hero.subtitle':
-      'À la recherche d’une activité de team building originale en Belgique ? Action Maker organise des activités de team building surprenantes et interactives pour les entreprises, les associations et les groupes privés. Des défis outdoor dynamiques et des jeux de piste urbains captivants aux ateliers créatifs : nous vous garantissons une expérience de groupe inoubliable.',
-    'home.hero.cta': 'Découvrez nos activités',
+    'home.hero.title': 'Activités de teambuilding originales en Belgique',
+    'home.hero.paragraph1':
+      'À la recherche d’une activité de teambuilding originale en Belgique ? Action Maker organise des activités de team building surprenantes et interactives pour les entreprises, les associations et les groupes privés. ',
+    'home.hero.paragraph2':
+      'Des défis outdoor dynamiques et des jeux de piste urbains captivants aux ateliers créatifs : nous vous garantissons une expérience de groupe inoubliable.',
+    'home.hero.cta': 'Découvrez nos teambuildings/activités',
 
     // Navigation
     'nav.home': 'Accueil',
@@ -333,10 +337,12 @@ export const ui = {
   },
   en: {
     // Home
-    'home.hero.title': 'Original Team Building Activities in Belgium',
-    'home.hero.subtitle':
-      'Looking for an original team building experience in Belgium? Action Maker organises surprising and interactive team building activities for companies, associations and private groups. From active outdoor challenges and exciting city games to creative workshops, we create unforgettable group experiences.',
-    'home.hero.cta': 'View our activities',
+    'home.hero.title': 'Original Teambuilding Activities in Belgium',
+    'home.hero.paragraph1':
+      'Looking for an original teambuilding experience in Belgium? Action Maker organises surprising and interactive team building activities for companies, associations and private groups. ',
+    'home.hero.paragraph2':
+      'From active outdoor challenges and exciting city games to creative workshops, we create unforgettable group experiences.',
+    'home.hero.cta': 'View our teambuildings/activities',
 
     // Navigation
     'nav.home': 'Home',
