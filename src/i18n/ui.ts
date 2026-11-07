@@ -9,8 +9,9 @@ export const defaultLang = 'nl';
 export const ui = {
   nl: {
     // Home
-    'home.hero.title': 'Een breed gamma van unieke teambuilding activiteiten',
-    'home.hero.subtitle': 'Versterk je team met een leuke dag zonder zorgen',
+    'home.hero.title': 'Originele teambuilding activiteiten in België',
+    'home.hero.subtitle':
+      'Op zoek naar een originele teambuilding in België? Action Maker organiseert verrassende en interactieve teambuilding activiteiten voor bedrijven, verenigingen en privé-groepen. Van actieve outdoor challenges en spannende citygames tot creatieve workshops: wij zorgen voor een onvergetelijke groepsbeleving.',
     'home.hero.cta': 'Bekijk onze activiteiten/teambuildings',
 
     // Navigation
@@ -171,8 +172,9 @@ export const ui = {
   },
   fr: {
     // Home
-    'home.hero.title': "Une large gamme d'activités de team building uniques",
-    'home.hero.subtitle': 'Renforcez votre équipe avec une journée agréable sans soucis',
+    'home.hero.title': 'Activités de team building originales en Belgique',
+    'home.hero.subtitle':
+      'À la recherche d’une activité de team building originale en Belgique ? Action Maker organise des activités de team building surprenantes et interactives pour les entreprises, les associations et les groupes privés. Des défis outdoor dynamiques et des jeux de piste urbains captivants aux ateliers créatifs : nous vous garantissons une expérience de groupe inoubliable.',
     'home.hero.cta': 'Découvrez nos activités',
 
     // Navigation
@@ -331,8 +333,9 @@ export const ui = {
   },
   en: {
     // Home
-    'home.hero.title': 'A wide range of unique teambuilding activities',
-    'home.hero.subtitle': 'Strengthen your team with a fun day without worries',
+    'home.hero.title': 'Original Team Building Activities in Belgium',
+    'home.hero.subtitle':
+      'Looking for an original team building experience in Belgium? Action Maker organises surprising and interactive team building activities for companies, associations and private groups. From active outdoor challenges and exciting city games to creative workshops, we create unforgettable group experiences.',
     'home.hero.cta': 'View our activities',
 
     // Navigation
