@@ -8,9 +8,8 @@ features:
   - 'instructeurs expérimentés'
   - 'techniques de base'
   - 'teamspirit'
-gallery:
-  [
-    'boogschieten/boogschieten-3.jpg',
+gallery: [
+    # 'boogschieten/boogschieten-3.jpg',
     'boogschieten/boogschieten-4.jpg',
     'boogschieten/boogschieten-5.jpg',
     'boogschieten/boogschieten-6.jpg',
