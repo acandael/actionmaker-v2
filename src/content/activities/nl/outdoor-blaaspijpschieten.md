@@ -1,7 +1,7 @@
 ---
 title: 'Blaaspijpschieten (Outdoor)'
 description: 'Blaaspijpschieten is erg populair. Een spannende en uitdagende activiteit voor alle leeftijden.'
-image: 'outdoor-blaaspijpschieten/outdoor-blaaspijpschieten-1.jpg'
+image: 'outdoor-blaaspijpschieten/outdoor-blaaspijpschieten-3.jpg'
 priority: 11
 features:
   - 'competitie'
@@ -9,11 +9,8 @@ features:
   - 'ontspanning'
 gallery:
   [
-    'outdoor-blaaspijpschieten/outdoor-blaaspijpschieten-2.jpg',
     'outdoor-blaaspijpschieten/outdoor-blaaspijpschieten-3.jpg',
     'outdoor-blaaspijpschieten/outdoor-blaaspijpschieten-4.jpg',
-    'outdoor-blaaspijpschieten/outdoor-blaaspijpschieten-5.jpg',
-    'outdoor-blaaspijpschieten/outdoor-blaaspijpschieten-6.jpg',
     'outdoor-blaaspijpschieten/outdoor-blaaspijpschieten-7.jpg',
   ]
 categories: ['outdoor']
